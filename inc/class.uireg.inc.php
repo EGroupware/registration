@@ -54,13 +54,13 @@
 			{
 				$this->lang_code=$code;
 			}
-			elseif(strlen($GLOBALS[HTTP_GET_VARS][lang_code])==2)
+			elseif(strlen($_GET['lang_code'])==2)
 			{
-				$this->lang_code=$GLOBALS[HTTP_GET_VARS][lang_code];
+				$this->lang_code=$_GET['lang_code'];
 			}
-			else//if($GLOBALS[HTTP_POST_VARS][lang_code]==2)
+			else//if($_POST]['lang_code']==2)
 			{
-				$this->lang_code=$GLOBALS[HTTP_POST_VARS][lang_code];
+				$this->lang_code=$_POST['lang_code'];
 			}
 
 			if ($this->lang_code)
@@ -87,6 +87,7 @@
 		function header($head_subj='')
 		{
 			$this->set_header_footer_blocks();
+			$this->template->set_var('charset',$GLOBALS['phpgw']->translation->charset());
 
 			if($head_subj)
 			{
@@ -381,10 +382,8 @@
 
 		function get_input_field ($field_info, $post_values)
 		{
-			$r_regs=$GLOBALS[HTTP_POST_VARS][r_reg]; 
-			$o_regs=$GLOBALS[HTTP_POST_VARS][o_reg]; 
-
-			
+			$r_regs=$_POST['r_reg'];
+			$o_regs=$_POST['o_reg'];
 
 			$post_value = $post_values[$field_info['field_name']];
 
@@ -530,8 +529,8 @@
 		{
 			$this->set_lang_code();
 
-			global $config;//, $reg_id;
-//			$reg_id=$GLOBALS[HTTP_GET_VARS][reg_id];
+			global $config;
+//			$reg_id=$_GET['reg_id'];
 
 			if ($config['activate_account'] == 'email')
 			{
