@@ -9,7 +9,7 @@
   </tr>
   <tr bgcolor="{row_on}">
    <td>{lang_use_trial_accounts}:</td>
-   <td><select name="newsettings[trial_accounts]"><option value="">{lang_no}</option><option value="True"{selected_ctrial_accounts_true}>{lang_yes}</option></select></td>
+   <td><select name="newsettings[trial_accounts]"><option value="">{lang_no}</option><option value="True"{selected_trial_accounts_True}>{lang_yes}</option></select></td>
   </tr>
   <tr bgcolor="{row_off}">
    <td>{lang_days_until_trial_accounts_expire}:</td>
