@@ -53,7 +53,7 @@
 		function header()
 		{
 			$this->set_header_footer_blocks();
-			$this->template->set_var('lang_header',lang('phpGroupWare - Account registration'));
+			$this->template->set_var('lang_header',lang('eGroupWare - Account registration'));
 			$this->template->pfp('out','header');
 		}
 
