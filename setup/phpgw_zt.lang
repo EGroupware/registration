@@ -34,7 +34,7 @@ immediately	admin	zt	立即
 male	registration	zt	男
 manage fields	admin	zt	管理欄位
 name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	zt	名稱(只能使用英、數字)
-not a user yet? register now	registration	zt	還沒成為會員？立刻註冊
+not a user yet? register now	login	zt	還沒成為會員？立刻註冊
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	zt	目前無法線上註冊，請聯絡網站管理員
 order	registration	zt	排序
 password is	admin	zt	密碼
