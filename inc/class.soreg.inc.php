@@ -219,7 +219,7 @@ roblems and abuse to'));
 			$reg_info['lid']    = $account_lid;
 			$reg_info['fields'] = $fields;
 
-			$account_id = $phpgw_info['user']['account_id'] = $phpgw->accounts->auto_add($account_lid,$fields['passwd'],False,False,0,'A');
+			$account_id = $phpgw_info['user']['account_id'] = $phpgw->accounts->auto_add($account_lid,$fields['passwd'],True,False,0,'A');
 
 			if (!$account_id)
 			{
