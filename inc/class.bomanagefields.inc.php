@@ -1,7 +1,7 @@
 <?php
 	/**************************************************************************\
-	* phpGroupWare - Registration                                              *
-	* http://www.phpgroupware.org                                              *
+	* eGroupWare - Registration                                              *
+	* http://www.egroupware.org                                              *
 	* This file written by Jason Wies (Zone) <zone@users.sourceforge.net>    *
 	* Based on calendar/inc/class.boholiday.inc.php by Mark Peters             *
 	* --------------------------------------------                             *

@@ -1,8 +1,8 @@
 <?php
 	/**************************************************************************\
-	* phpGroupWare - Registration                                              *
-	* http://www.phpgroupware.org                                              *
-	* This application written by Joseph Engo <jengo@phpgroupware.org>         *
+	* eGroupWare - Registration                                              *
+	* http://www.eGroupWare.org                                              *
+	* This application written by Joseph Engo <jengo@eGroupWare.org>         *
 	* Modified by Jason Wies (Zone) <zone@users.sourceforge.net>               *
 	* Modified by Loic Dachary <loic@gnu.org>                                  *
 	* --------------------------------------------                             *
@@ -43,18 +43,24 @@
 			global $config, $r_reg;
 
 			$so = createobject('registration.soreg');
+			$ui = createobject('registration.uireg');
 
+			if($GLOBALS[HTTP_POST_VARS][langchanged]=='true')
+			{
+				$ui->step1('',$r_reg,$o_reg);
+				exit;
+			}
+			
 			if (! $r_reg['loginid'])
 			{
 				$errors[] = lang('You must enter a username');
 			}
-
+			
 			if (! is_array($errors) && $so->account_exists($r_reg['loginid']))
 			{
 				$errors[] = lang('Sorry, that username is already taken.');
 			}
 
-			$ui = createobject('registration.uireg');
 			if (is_array($errors))
 			{
 				$ui->step1($errors,$r_reg,$o_reg);

@@ -1,7 +1,7 @@
 <?php
 	/**************************************************************************\
-	* phpGroupWare - Registration                                              *
-	* http://www.phpgroupware.org                                              *
+	* eGroupWare - Registration                                              *
+	* http://www.egroupware.org                                              *
 	* This application written by Joseph Engo <jengo@phpgroupware.org>         *
 	* --------------------------------------------                             *
 	* Funding for this program was provided by http://www.checkwithmom.com     *
@@ -24,9 +24,11 @@
 
 	// Note: This is current not a drop in install, it requires some manual installation
 	//       Take a look at the README file
-	$domain         = 'default';
-	$template_set   = 'default';
+	$domain         = 'default'; // move to ??
+	$template_set   = 'idots'; // move to config
+	$default_lang = 'en'; // move to config
 
+	
 	if ($menuaction)
 	{
 		list($app,$class,$method) = explode('.',$menuaction);
@@ -49,167 +51,11 @@
 	);
 	include('../header.inc.php');
 	include(PHPGW_INCLUDE_ROOT.'/phpgwapi/inc/common_functions.inc.php');
-	/*!
-	@function get_var
-	@abstract retrieve a value from either a POST, GET, COOKIE, SERVER or from a class variable.
-	@author skeeter
-	@discussion This function is used to retrieve a value from a user defined order of methods. 
-	@syntax get_var('id',array('HTTP_POST_VARS'||'POST','HTTP_GET_VARS'||'GET','HTTP_COOKIE_VARS'||'COOKIE','GLOBAL','DEFAULT'));
-	@example $this->id = get_var('id',array('HTTP_POST_VARS'||'POST','HTTP_GET_VARS'||'GET','HTTP_COOKIE_VARS'||'COOKIE','GLOBAL','DEFAULT'));
-	@param $variable name
-	@param $method ordered array of methods to search for supplied variable
-	@param $default_value (optional)
-   */
-   function get_var_old($variable,$method='any',$default_value='')
-   {
-	   if(!@is_array($method))
-	   {
-		   $method = array($method);
-	   }
-	   return reg_var($variable,$method,'any',$default_value,False);
-   }
+	//include(PHPGW_INCLUDE_ROOT.'/phpgwapi/inc/functions.inc.php');
 
-  function reg_var_old($varname, $method='any', $valuetype='alphanumeric',$default_value='',$register=True)
-   {
-	   if($method == 'any' || $method == array('any'))
-	   {
-		   $method = Array('POST','GET','COOKIE','SERVER','FILES','GLOBAL','DEFAULT');
-	   }
-	   elseif(!is_array($method))
-	   {
-		   $method = Array($method);
-	   }
-	   $cnt = count($method);
-	   for($i=0;$i<$cnt;$i++)
-	   {
-		   switch(strtoupper($method[$i]))
-		   {
-			   case 'DEFAULT':
-				   if($default_value)
-				   {
-					   $value = $default_value;
-					   $i = $cnt+1; /* Found what we were looking for, now we end the loop */
-				   }
-				   break;
-			   case 'GLOBAL':
-				   if(@isset($GLOBALS[$varname]))
-				   {
-					   $value = $GLOBALS[$varname];
-					   $i = $cnt+1;
-				   }
-				   break;
-			   case 'POST':
-			   case 'GET':
-			   case 'COOKIE':
-			   case 'SERVER':
-				   if(phpversion() >= '4.1.0')
-				   {
-					   $meth = '_'.strtoupper($method[$i]);
-				   }
-				   else
-				   {
-					   $meth = 'HTTP_'.strtoupper($method[$i]).'_VARS';
-				   }
-				   if(@isset($GLOBALS[$meth][$varname]))
-				   {
-					   $value = $GLOBALS[$meth][$varname];
-					   $i = $cnt+1;
-				   }
-				   break;
-			   case 'FILES':
-				   if(phpversion() >= '4.1.0')
-				   {
-					   $meth = '_FILES';
-				   }
-				   else
-				   {
-					   $meth = 'HTTP_POST_FILES';
-				   }
-				   if(@isset($GLOBALS[$meth][$varname]))
-				   {
-					   $value = $GLOBALS[$meth][$varname];
-					   $i = $cnt+1;
-				   }
-				   break;
-			   default:
-				   if(@isset($GLOBALS[strtoupper($method[$i])][$varname]))
-				   {
-					   $value = $GLOBALS[strtoupper($method[$i])][$varname];
-					   $i = $cnt+1;
-				   }
-				   break;
-		   }
-	   }
+	//phpgwapi/inc/functions.inc.php:
 
-	   if (@!isset($value))
-	   {
-		   $value = $default_value;
-	   }
-
-	   if (@!is_array($value))
-	   {
-		   if ($value == '')
-		   {
-			   $result = $value;
-		   }
-		   else
-		   {
-			   if (sanitize($value,$valuetype) == 1)
-			   {
-				   $result = $value;
-			   }
-			   else
-			   {
-				   $result = $default_value;
-			   }
-		   }
-	   }
-	   else
-	   {
-		   reset($value);
-		   while(list($k, $v) = each($value))
-		   {
-			   if ($v == '')
-			   {
-				   $result[$k] = $v;
-			   }
-			   else
-			   {
-				   if (is_array($valuetype))
-				   {
-					   $vt = $valuetype[$k];
-				   }
-				   else
-				   {
-					   $vt = $valuetype;
-				   }
-
-				   if (sanitize($v,$vt) == 1)
-				   {
-					   $result[$k] = $v;
-				   }
-				   else
-				   {
-					   if (is_array($default_value))
-					   {
-						   $result[$k] = $default_value[$k];
-					   }
-					   else
-					   {
-						   $result[$k] = $default_value;
-					   }
-				   }
-			   }
-		   }
-	   }
-	   if($register)
-	   {
-		   $GLOBALS['phpgw_info'][$GLOBALS['phpgw_info']['flags']['currentapp']][$varname] = $result;
-	   }
-	   return $result;
-   }
-
-
+	
 	function CreateObject_old($classname, $constructor_param = '')
 	{
 		global $phpgw, $phpgw_info, $phpgw_domain;
@@ -344,14 +190,14 @@
 
 	$phpgw->template      = createobject('phpgwapi.Template',PHPGW_APP_TPL);
 	$phpgw->translation   = createobject('phpgwapi.translation');
+
+	//$phpgw->translation->userlang=$default_lang;
 	
 	$c = createobject('phpgwapi.config','registration');
 	$c->read_repository();
 	$config = $c->config_data;
 
-	//$phpgw->template->get_var();
 	
-
 	if (! $sessionid)
 	{
 		$sessionid = $phpgw->session->create($config['anonymous_user'] . '@' . $domain,$config['anonymous_pass'],'text');

@@ -22,6 +22,7 @@
 		var $bomanagefields;
 		var $fields;
 		var $bo;
+		var $lang;
 		var $public_functions = array(
 			'step1'   => True,
 			'step2'   => True,
@@ -53,6 +54,14 @@
 		function header()
 		{
 			$this->set_header_footer_blocks();
+			
+			$this->lang=$GLOBALS[HTTP_POST_VARS][lang];
+			if ($this->lang)
+			{
+
+				$GLOBALS['phpgw_info']['user']['preferences']['common']['lang'] = $this->lang;
+				$GLOBALS['phpgw']->translation->init();	
+			}
 			$this->template->set_var('lang_header',lang('eGroupWare - Account registration'));
 			$this->template->pfp('out','header');
 		}
@@ -62,23 +71,50 @@
 			$this->template->pfp('out','footer');
 		}
 
+		function create_option_string($selected,$values)
+{
+	while (is_array($values) && list($var,$value) = each($values))
+	{
+		$s .= '<option value="' . $var . '"';
+		if ("$var" == "$selected")	// the "'s are necessary to force a string-compare
+		{
+			$s .= ' selected';
+		}
+		$s .= '>' . $value . '</option>';
+	}
+	return $s;
+}
 		function step1($errors = '',$r_reg = '',$o_reg = '')
 		{
 			global $config;
+
+			if($config['enable_registration']!="True")
+			{
+				$this->header();
+				echo '<br/><div align="center">';	
+				echo lang('On-line registration is not activated. Please contact the site administrator for more information about registration.');
+				echo '</div><br/>';
+				$this->footer();
+				exit;
+			}
+			
 
 			if ($errors && $config['username_is'] == 'http')
 			{
 				$this->simple_screen ('error_general.tpl', $GLOBALS['phpgw']->common->error_list ($errors));
 			}
 
-			$show_username_prompt = True;
-			/* Note that check_select_username () may not return */
-			$select_username = $this->bo->check_select_username ();
-			if (!$select_username || is_string ($select_username))
-			{
-				$this->simple_screen ('error_general.tpl', $GLOBALS['phpgw']->common->error_list (array ($select_username)));
-			}
+			//$show_username_prompt = True;
 
+		
+
+				/* Note that check_select_username () may not return */
+				$select_username = $this->bo->check_select_username ();
+				if (!$select_username || is_string ($select_username))
+				{
+					$this->simple_screen ('error_general.tpl', $GLOBALS['phpgw']->common->error_list (array ($select_username)));
+				}
+			
 			$this->header();
 			$this->template->set_file(array(
 				'_loginid_select' => 'loginid_select.tpl'
@@ -89,6 +125,21 @@
 			{
 				$this->template->set_var('errors',$GLOBALS['phpgw']->common->error_list($errors));
 			}
+			
+			$langs = $GLOBALS['phpgw']->translation->get_installed_langs();
+			foreach ($langs as $key => $name)	// if we have a translation use it
+			{
+				$trans = lang($name);
+				if ($trans != $name . '*')
+				{
+					$langs[$key] = $trans;
+				}
+			} 
+
+			$s .= $this->create_option_string($this->lang,$langs);
+			$this->template->set_var('selectbox_languages','<select name="lang" onChange="this.form.langchanged.value=\'true\';this.form.submit()">'.$s.'</select>');
+			$this->template->set_var('lang_choose_language',lang('Choose your language'));
+
 
 			$this->template->set_var('form_action',$GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.boreg.step1'));
 			$this->template->set_var('lang_username',lang('Username'));

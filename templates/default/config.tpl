@@ -15,6 +15,23 @@
     <td colspan="2"><b>{lang_Registration_settings}</b></td>
   </tr>
   <tr bgcolor="{row_on}">
+  <td>{lang_Enable_Registration?}</td>
+  <td>
+   <select name="newsettings[enable_registration]">
+	<option value=""{selected_enable_registration_False}>{lang_No}</option>
+	<option value="True"{selected_enable_registration_True}>{lang_Yes}</option>
+   </select>
+  </td>
+</tr>  <tr bgcolor="{row_off}">
+  <td>{lang_Register_link_at_login_screen?}</td>
+  <td>
+   <select name="newsettings[register_link]">
+	<option value=""{selected_register_link_False}>{lang_No}</option>
+	<option value="True"{selected_register_link_True}>{lang_Yes}</option>
+   </select>
+  </td>
+</tr>
+<tr bgcolor="{row_on}">
     <td>{lang_Use_trial_accounts?}</td>
     <td>
      <select name="newsettings[trial_accounts]">
