@@ -14,4 +14,5 @@
 
 	/* $Id$ */
 
-	$phpgw->db->query("delete from phpgw_reg_accounts where reg_dla <= '" . (time() -  7200) . "'",__LINE__,__FILE__);
+	$GLOBALS['phpgw']->db->query("delete from phpgw_reg_accounts where reg_dla <= '"
+		. (time() -  7200) . "'",__LINE__,__FILE__);
