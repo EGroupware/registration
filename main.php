@@ -22,7 +22,7 @@
 
 	// Note: This is current not a drop in install, it requires some manual installation
 	//       Take a look at the README file
-	$domain         = 'MySQL';
+	$domain         = 'default';
 	$template_set   = 'default';
 	$anonymous_user = 'anonymous';
 	$anonymous_pass = 'anonymous';
