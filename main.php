@@ -24,8 +24,6 @@
 	//       Take a look at the README file
 	$domain         = 'default';
 	$template_set   = 'default';
-	$anonymous_user = 'anonymous';
-	$anonymous_pass = 'anonymous';
 
 	if ($menuaction)
 	{
@@ -143,6 +141,13 @@
 	$phpgw->hooks         = createobject('phpgwapi.hooks');
 	$phpgw->session       = createobject('phpgwapi.sessions');
 
+	$phpgw->common->key  = md5($this->kp3 . $this->sessionid . $phpgw_info['server']['encryptkey']);
+	$phpgw->common->iv   = $phpgw_info['server']['mcrypt_iv'];
+
+	$cryptovars[0] = $phpgw->common->key;
+	$cryptovars[1] = $phpgw->common->iv;
+	$phpgw->crypto = createobject('phpgwapi.crypto', $cryptovars);
+
 	define('PHPGW_APP_ROOT', $phpgw->common->get_app_dir());
 	define('PHPGW_APP_INC', $phpgw->common->get_inc_dir());
 	define('PHPGW_APP_TPL', $phpgw->common->get_tpl_dir());
@@ -152,9 +157,13 @@
 	$phpgw->template      = createobject('phpgwapi.Template',PHPGW_APP_TPL);
 	$phpgw->translation   = createobject('phpgwapi.translation');
 
+	$c = createobject('phpgwapi.config','registration');
+	$c->read_repository();
+	$config = $c->config_data;
+
 	if (! $sessionid)
 	{
-		$sessionid = $phpgw->session->create($anonymous_user . '@' . $domain,$anonymous_pass);
+		$sessionid = $phpgw->session->create($config['anonymous_user'] . '@' . $domain,$config['anonymous_pass']);
 	}
 	else
 	{
@@ -165,15 +174,11 @@
 		}
 	}
 
-	$c = createobject('phpgwapi.config','registration');
-	$c->read_repository();
-	$config = $c->config_data;
-
 	if ($app && $class)
 	{
 		$obj = createobject(sprintf('%s.%s',$app,$class));
 
-		if ((is_array($obj->public_functions) && $obj->public_functions[$method]) && ! $invaild_data)
+		if ((is_array($obj->public_functions) && $obj->public_functions[$method]) && ! $invalid_data)
 		{
 			eval("\$obj->$method();");
 		}

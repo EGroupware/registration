@@ -1,5 +1,6 @@
 <!-- BEGIN form -->
 <center>{errors}</center>
+<!-- BEGIN input -->
 <form action="{form_action}" method="POST">
  <table border="0" width="40%" align="center">
   <tr>
@@ -12,4 +13,5 @@
   </tr>
  </table>
 </form>
+<!-- END input -->
 <!-- END form -->

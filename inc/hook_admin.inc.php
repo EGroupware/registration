@@ -16,7 +16,8 @@
 
 	$title = $appname;
 	$file = Array(
-		'Site Configuration'	=> $phpgw->link('/admin/config.php','appname=registration&set_configclass_appname=True')
+		'Site Configuration'	=> $phpgw->link('/admin/config.php','appname=registration&set_configclass_appname=True'),
+		'Manage Fields'	=> $phpgw->link ('/index.php', 'menuaction=registration.uimanagefields.admin')
 	);
 
 	display_section($appname,$title,$file);

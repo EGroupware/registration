@@ -17,13 +17,14 @@
 	/* Basic information about this app */
 	$setup_info['registration']['name']      = 'registration';
 	$setup_info['registration']['title']     = 'Registration';
-	$setup_info['registration']['version']   = '0.8.1';
+	$setup_info['registration']['version']   = '0.8.2';
 	$setup_info['registration']['app_order'] = '90';
 	$setup_info['registration']['enable']    = 1;
 
 	/* The tables this app creates */
 	$setup_info['registration']['tables']    = array(
-		'phpgw_reg_accounts'
+		'phpgw_reg_accounts',
+		'phpgw_reg_fields'
 	);
 
 	/* The hooks this app includes, needed for hooks registration */
