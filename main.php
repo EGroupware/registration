@@ -141,7 +141,7 @@
 	$phpgw->hooks         = createobject('phpgwapi.hooks');
 	$phpgw->session       = createobject('phpgwapi.sessions');
 
-	$phpgw->common->key  = md5($this->kp3 . $this->sessionid . $phpgw_info['server']['encryptkey']);
+	$phpgw->common->key  = md5($GLOBALS['kp3'] . $GLOBALS['sessionid'] . $phpgw_info['server']['encryptkey']);
 	$phpgw->common->iv   = $phpgw_info['server']['mcrypt_iv'];
 
 	$cryptovars[0] = $phpgw->common->key;
