@@ -23,7 +23,7 @@
 	// Note: This is current not a drop in install, it requires some manual installation
 	//       Take a look at the README file
 	$domain         = 'default';
-	$template_set   = 'default';
+	$template_set   = 'checkwithmom';
 
 	if ($menuaction)
 	{
@@ -163,14 +163,14 @@
 
 	if (! $sessionid)
 	{
-		$sessionid = $phpgw->session->create($config['anonymous_user'] . '@' . $domain,$config['anonymous_pass']);
+		$sessionid = $phpgw->session->create($config['anonymous_user'] . '@' . $domain,$config['anonymous_pass'],'text');
 	}
 	else
 	{
 		if (! $phpgw->session->verify())
 		{
 			// Lets hope this works
-			$sessionid = $phpgw->session->create($anonymous_user . '@' . $domain,$anonymous_pass);
+			$sessionid = $phpgw->session->create($config['anonymous_user'] . '@' . $domain,$config['anonymous_pass'],'text');
 		}
 	}
 
