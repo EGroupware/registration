@@ -51,9 +51,10 @@
 
 		function step1()
 		{
-			global $config;//, $r_reg;
+			global $config;
 
-			$r_reg=$_POST['r_reg'];
+			$r_reg=$_REQUEST['r_reg'];
+
 			$so = createobject('registration.soreg');
 			$ui = createobject('registration.uireg');
 
@@ -385,7 +386,7 @@
 
 		function check_select_password ()
 		{
-			global $config, $PHP_AUTH_PW;
+			global $config;
 
 			if ($config['password_is'] == 'choice')
 			{
@@ -393,7 +394,7 @@
 			}
 			elseif ($config['password_is'] == 'http')
 			{
-				if (!$PHP_AUTH_PW)
+				if (!$_SERVER['PHP_AUTH_PW'])
 				{
 					return "HTTP password is not set";
 				}
