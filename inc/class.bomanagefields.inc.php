@@ -208,14 +208,14 @@
 		function check_admin()
 		{
 			$admin = False;
-			if (@$phpgw_info['user']['apps']['admin'])
+			if (@$GLOBALS['phpgw_info']['user']['apps']['admin'])
 			{
 				$admin = True;
 			}
 				
 			if (!$admin)
 			{
-				Header ('Location: ' . $phpgw->link ('/index.php'));
+				Header ('Location: ' . $GLOBALS['phpgw']->link ('/index.php'));
 			}
 		}
 	}
