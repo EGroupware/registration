@@ -1,5 +1,7 @@
+<br>please contact the site administrator.	registration	sl	<br>Prosim obvestite oskrbnika strežnika.
 [unknown first name]	registration	sl	[neznano ime]
 [unknown last name]	registration	sl	[neznan priimek]
+account $account_lid record could not be found, report to site administrator	registration	sl	Zapis računa $account_lid ne obstaja, sporočite oskrbniku.
 account password retrieval	registration	sl	Prevzem uporabniškega gesla
 account registration	registration	sl	Registracija uporabniškega imena
 activate account	admin	sl	Aktiviranje uporabniškega imena
@@ -9,10 +11,11 @@ after you enter your username, instructions to change your password will be sent
 an error occured. please contact our technical support and let them know.	registration	sl	Prišlo je do napake. Prosim, posvetujte se s tehnično podporo.
 anonymous password	admin	sl	Geslo za anonimni dostop
 birthday	registration	sl	Rojstni dan
+challenge question	registration	sl	Izzivalno vprašanje
 change password for user	registration	sl	Spremenite geslo za uporabnika
 checkbox	registration	sl	Stikalo
 choose language	registration	sl	Izberi jezik
-choose your language	common	sl	Izberite svoj jezik
+choose your language	registration	sl	Izberite svoj jezik
 city	registration	sl	Mesto
 close window	registration	sl	Zaprite okno
 country	registration	sl	Država
@@ -50,6 +53,7 @@ on-line registration is not activated. please contact the site administrator for
 order	registration	sl	Razvrsti
 password is	admin	sl	Geslo je
 phone	registration	sl	Telefon
+problem sending email:	registration	sl	Težava pri pošiljanju E-pošte:
 re-enter password	registration	sl	Ponovite geslo
 re-enter your password	registration	sl	Ponovite vaše geslo
 register link at login screen?	admin	sl	Povezava na prijavo na prijavni strani?
@@ -58,7 +62,9 @@ registration settings	admin	sl	Nastavitve registracije
 remove	registration	sl	Odstrani
 report all problems and abuse to	registration	sl	Vse probleme in zlorabe sporoči na
 required	registration	sl	Zahtevano
+response	registration	sl	Odziv
 send email	admin	sl	Pošlji E-pošto
+sorry, no account exists for	registration	sl	Ni računa za
 sorry, that username does not exist.	registration	sl	Uporabniško ime ne obstaja
 sorry, that username is already taken.	registration	sl	Uporabniško ime je že uporabljeno
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	sl	Pri aktiviranju vašega računa je prišlo do težav. Upoštevajte, da so povezave, poslane preko E-pošte, veljavne le dve uri. Če menite, da je veljavnost povezave pretekla, zgolj ponovite prijavo. Sicer se posvetujte z oskrbnikom strežnika.
@@ -81,15 +87,19 @@ use trial accounts?	admin	sl	Uporabimo poskusne račune?
 username is	admin	sl	Uporabniško ime je
 values (for dropdown only; comma separated)	registration	sl	Vrednosti (le za izbirni seznam, ločeno z vejicami)
 we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	sl	Na vaš E-naslov je bilo poslano obvestilo o potrditvi. Na povezavo v njem morate klikniti v dveh urah. Če ne boste, lahko traja nekaj dni, preden bo vaše uporabniško ime spet na voljo.
+we have sent a mail to your email account: %s with your lost user ids.	registration	sl	Oskrbniku sem poslal sporočilo: %s z vašim izgubljenim uporabniškim imenom.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	sl	Na vaš enaslov smo poslali sporočilo z navodili za spremembo gesla. V roku dveh ur morate klikniti na povezavo na sporočilu. V nasprotnem primeru boste morali ponoviti postopek za menjavo gesla.
 wrong session	registration	sl	Napačna seja
 you have entered an invalid birthday	registration	sl	Vnesli ste neveljaven datum rojstnega dne
 you have entered an invalid email address	registration	sl	Vnesli ste neveljaven enaslov
 you must enter a password	registration	sl	Vnesti morate geslo
 you must enter a username	registration	sl	Vnesti morate uporabniško ime
+you must enter an email account	registration	sl	Vnesti morate E-poštni račun
 you must fill in all of the required fields	registration	sl	Vnesti morate vsa ostala zahtevana polja
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	sl	Zaprosili ste za spremembo gesla. Prosim, sledite spodnjemu URLju, da boste spremembo dokončali. Veljavnost povezave bo pretekla dve uri po odpošiljanju. Po tem času morate ponoviti celoten postopek.
 you specified a value for	registration	sl	Podali ste vrednost za
+you specified a value for %1 that is not a choice	registration	sl	Določili ste vrednost %1, ki ni na izbiro
 your account is now active!  click <a href="%1">here</a> to log into your account.	registration	sl	Vaš račun je sedaj aktiven! Prijavite se lahko na <a href="%1">vstopni strani</a>.
+your account is now active!  click <a href="%s">here</a> to log into your account.	registration	sl	Vaš račun je aktiviran! Kliknite <a href="%s">tukaj</a> da se prijavite v vaš račun.
 your password was changed. you can go back to the <a href="%1">login</a> page.	registration	sl	Vaše geslo je bilo spremenjeno. Lahko se vrnete na <a href="%1">vstopno stran</a>.
 zip/postal	registration	sl	Poštna številka
