@@ -1,0 +1,82 @@
+account password retrieval	registration	sv	Hämta lösenord
+account registration	registration	sv	Konto registrering
+activate account	admin	sv	Aktivera konto
+address	registration	sv	Adress
+after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	sv	Efter att du registrerat ett användarnamn skickas instruktioner om hur du ska ändra ditt lösenord till e-post adressen du anget.
+an error occured. please contact our technical support and let them know.	registration	sv	Ett fel uppstod. Var god och meddela support.
+anonymous password	admin	sv	Anonymas lösenord
+birthday	registration	sv	Födelsedag
+change password for user	registration	sv	Ändra lösenord
+checkbox	registration	sv	Kryssruta
+choose language	registration	sv	Välj språk
+choose your language	common	sv	Välj språk
+city	registration	sv	Stad
+close window	registration	sv	Stäng fönster
+country	registration	sv	Land
+current fields:	registration	sv	Aktuella fält:
+days until trial accounts expire	admin	sv	Dagar tills provkonto förfaller
+display terms of service?	admin	sv	Visa avtalet
+dropdown	registration	sv	Rullgardin
+egroupware - account registration	registration	sv	eGroupWare - konto registrering
+email address to display for support	admin	sv	E-post adress till support
+email address to send notices from	admin	sv	E-post adress att skicka meddelanden till
+enable registration?	admin	sv	Aktivera registrering
+enter your new password	registration	sv	Ange lösenord
+female	registration	sv	Kvinna
+gender	registration	sv	Kön
+http password	admin	sv	HTTP lösenord
+http username	admin	sv	HTTP användare
+i have read the terms and conditions and agree by them.	registration	sv	Jag har läst och godkänner avtalet
+if you did not request this account, simply ignore this message.	registration	sv	Var god och ignorera meddelandet om du inte begärt kontot
+if you did not request this change, simply ignore this message.	registration	sv	Var god och ignorera meddelandet om du inte begärt ändringen
+immediately	admin	sv	Omedelbart
+male	registration	sv	Man
+manage fields	admin	sv	Hantera fält
+name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	sv	Namn (tomt såvida inte text, textruta, rullgardin, kryssruta; annars numeriskt andast)
+not a user yet? register now	login	sv	Ännu inget konto? Registrera dig här
+on-line registration is not activated. please contact the site administrator for more information about registration.	registration	sv	Online registrering inte tillgänglig. Var god och kontakta support för mer information.
+order	registration	sv	Ordning
+password is	admin	sv	Lösenordet är
+phone	registration	sv	Telefon
+phpgroupware - account registration	registration	sv	phpGroupWare - konto registrering
+re-enter password	registration	sv	Återge lösenordet
+re-enter your password	registration	sv	Återge lösenordet
+register link at login screen?	admin	sv	Länk till registreringen på Startsidan?
+registration	common	sv	Registrering
+registration settings	admin	sv	Registrerings Alternativ
+remove	registration	sv	Radera
+report all problems and abuse to	registration	sv	Rapportera problem och missbruk till
+required	registration	sv	Krävs
+send email	admin	sv	Skicka e-post
+sorry, that username does not exist.	registration	sv	Användarnamnet finns inte
+sorry, that username is already taken.	registration	sv	Användarnamnet redan upptaget
+sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	sv	Det är tyvärr problem med att aktivera din registrering. Notera att länkar skickade med e-post bara är giltiga i 2 timmar, om du misstänkter att den har förfallit var god och kontakta support. I annat fall försök igen.
+state	registration	sv	Stat
+subject for confirmation email	admin	sv	Rubrik för bekräftelse meddelanden
+terms of service	registration	sv	Avtal
+terms of service text	admin	sv	Avtals text
+text	registration	sv	Text
+textarea	registration	sv	Text ruta
+the passwords you entered don't match	registration	sv	Lösenorden är inte lika
+the two passwords are not the same	registration	sv	Lösenorden är inte lika
+this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	sv	Detta är en bekräftelse på ditt nya konto. Klicka på länken innom 2 timmar för att aktivera det.
+type	registration	sv	Typ
+update/add	registration	sv	Uppdatera/Lägg till
+use html	admin	sv	Använd HTML
+use trial accounts?	admin	sv	Använd provkonton?
+username is	admin	sv	Användarnamnet är
+values (for dropdown only; comma separated)	registration	sv	Värden (endast komma separerad för rullgardin)
+we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	sv	En bekräftelse på ditt nya konto har skickats. Klicka på länken för att aktivera det innom 2 timmar. Om du inte hinner dröjer det några dagar innan ditt inloggnings ID blir tillgänligt för registrering igen.
+we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	sv	En bekräftelse på ditt nya konto har skickats. Klicka på länken för att aktivera det innom 2 timmar. Om du inte hinner måste du gå tillbaks till sidan för förlorade lösenord igen.
+wrong session	registration	sv	Fel session
+you have entered an invalid birthday	registration	sv	Ogiltig födelsedag
+you have entered an invalid email address	registration	sv	Ogiltig e-post adress
+you must enter a password	registration	sv	Ange lösenord
+you must enter a username	registration	sv	Ange användarnamn
+you must fill in all of the required fields	registration	sv	Fylla i begärda fält
+you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	sv	Följ URL för att byta lösenord. Klicka på länken för att aktivera det innom 2 timmar. Om du inte hinner måste du gå tillbaks till sidan för förlorade lösenord igen.
+you specified a value for	registration	sv	Ange väde för
+you specified a value for %1 that is not a choice	registration	sv	Du specificerade ett värde för %1 som inte tillgängligt
+your account is now active!  click <a href="%1">here</a> to log into your account.	registration	sv	Ditt konto är aktivt. Klicka <a href="%1">här</a> för att komma till inloggningen.
+your password was changed. you can go back to the <a href="%1">login</a> page.	registration	sv	Ditt lösenord är ändrat. Du kan gå tillbaks till <a href="%1">inloggningen</a>.
+zip/postal	registration	sv	Postnummer
