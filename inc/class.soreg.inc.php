@@ -30,7 +30,7 @@
 		{
 			global $phpgw;
 
-			$this->db->lock('phpgw_reg_accounts','phpgw_accounts');
+			$this->db->lock('phpgw_reg_accounts');
 			$this->db->query("select count(*) from phpgw_reg_accounts where reg_lid='$account_lid'",__LINE__,__FILE__);
 			$this->db->next_record();
 
