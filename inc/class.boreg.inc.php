@@ -1,8 +1,8 @@
 <?php
 	/**************************************************************************\
-	* eGroupWare - Registration                                              *
-	* http://www.eGroupWare.org                                              *
-	* This application written by Joseph Engo <jengo@eGroupWare.org>         *
+	* eGroupWare - Registration                                                *
+	* http://www.eGroupWare.org                                                *
+	* This application written by Joseph Engo <jengo@phprgoupware.org>         *
 	* Modified by Jason Wies (Zone) <zone@users.sourceforge.net>               *
 	* Modified by Loic Dachary <loic@gnu.org>                                  *
 	* Modified by Pim Snel <pim@egroupware.org>                                *
