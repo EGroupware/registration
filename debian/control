@@ -1,0 +1,16 @@
+Source: phpgroupware-registration
+Section: web
+Priority: optional
+Maintainer: Luca - De Whiskey's - De Vitis <luca@debian.org>
+Build-Depends: debhelper (>> 3.0.0)
+Standards-Version: 3.5.2
+
+Package: phpgroupware-registration
+Section: web
+Architecture: all
+Depends: phpgroupware (>= ${Source-Version}), php3-pgsql | php3-cgi-pgsql | php4-pgsql | php3-mysql | php3-cgi-mysql | php4-mysql
+Description: The phpGroupWare registration module.
+ This phpGroupWare module allows users to create phpGroupWare accounts
+ through a web interface. Site administrators can decide what pieces of
+ information are requested and if each is required or not.
+
