@@ -128,28 +128,28 @@
 					if ($post_value && (!ereg ('@', $post_value) || ! ereg ('\.', $post_value)))
 					{
 						if ($required == 'Y')
-			{
-				$errors[] = lang('You have entered an invaild email address');
+						{
+							$errors[] = lang('You have entered an invaild email address');
 							$missing_field[] = $name;
 						}
 					}
-			}
+				}
 
 				if ($type == 'birthday')
 				{
 					if (!checkdate ($a[$name . '_month'], $a[$name . '_day'], $a[$name . '_year']))
-			{
+					{
 						if ($required == 'Y')
-				{
+						{
 							$errors[] = lang ('You have entered an invalid birthday');
 							$missing_fields[] = $name;
 						}
+					}
+					else
+					{
+							$a[$name] = sprintf ('%s/%s/%s', $a[$name . '_month'], $a[$name . '_day'], $a[$name . '_year']);
+					}
 				}
-				else
-				{
-						$a[$name] = sprintf ('%s/%s/%s', $a[$name . '_month'], $a[$name . '_day'], $a[$name . '_year']);
-				}
-			}
 
 				if ($type == 'dropdown')
 				{
@@ -180,7 +180,7 @@
 
 			if (is_array ($o_reg))
 			{
-			reset($o_reg);
+				reset($o_reg);
 			}
 
 			if (is_array($missing_fields))
