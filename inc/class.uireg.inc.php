@@ -20,7 +20,8 @@
 		var $public_functions = array(
 			'step1'      => True,
 			'step2'      => True,
-			'email_sent' => True
+			'email_sent' => True,
+			'tos'        => True
 		);
 
 		function uireg()
@@ -138,6 +139,7 @@
 			$this->template->set_var('input_country',$sbox->form_select($r_reg['adr_one_countryname'],'r_reg[adr_one_countryname]'));
 			$this->template->set_var('input_state',$sbox->list_states('r_reg[adr_region]',$r_reg['adr_region']));
 
+			$this->template->set_var('tos_link',$phpgw->link('/registration/main.php','menuaction=registration.uireg.tos'));
 			$this->template->set_var('lang_tos_agree',lang('I have read the terms and conditions and agree by them.'));
 
 			$this->template->pfp('out','form');
@@ -174,4 +176,8 @@
 			$this->footer();		
 		}
 
+		function tos()
+		{
+			$this->simple_screen('tos.tpl');
+		}
 	}
