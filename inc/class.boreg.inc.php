@@ -5,6 +5,7 @@
 	* This application written by Joseph Engo <jengo@eGroupWare.org>         *
 	* Modified by Jason Wies (Zone) <zone@users.sourceforge.net>               *
 	* Modified by Loic Dachary <loic@gnu.org>                                  *
+	* Modified by Pim Snel <pim@egroupware.org>                                *
 	* --------------------------------------------                             *
 	* Funding for this program was provided by http://www.checkwithmom.com     *
 	* --------------------------------------------                             *
@@ -90,6 +91,7 @@
 			else
 			{
 				$GLOBALS['phpgw']->session->appsession('loginid','registration',$r_reg['loginid']);
+				
 				$ui->step2();
 			}
 		}

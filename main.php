@@ -1,15 +1,16 @@
 <?php
 	/**************************************************************************\
-	* eGroupWare - Registration                                              *
-	* http://www.egroupware.org                                              *
+	* eGroupWare - Registration                                                *
+	* http://www.egroupware.org                                                *
 	* This application written by Joseph Engo <jengo@phpgroupware.org>         *
+	* This application is havily modified by Pim Snel <pim@egroupware.org>     *
 	* --------------------------------------------                             *
 	* Funding for this program was provided by http://www.checkwithmom.com     *
+	* Funding for this program was provided by http://www.lingewoud.nl         *
 	* --------------------------------------------                             *
 	*  This program is free software; you can redistribute it and/or modify it *
 	*  under the terms of the GNU General Public License as published by the   *
-	*  Free Software Foundation; either version 2 of the License, or (at your  *
-	*  option) any later version.                                              *
+	*  Free Software Foundation; version 2 of the License                      *
 	\**************************************************************************/
 
 	/* $Id$ */
@@ -24,8 +25,8 @@
 
 	// Note: This is current not a drop in install, it requires some manual installation
 	//       Take a look at the README file
-   	$domain         = 'default'; // move to ??
-	$template_set   = 'idots'; // move to config
+   	$domain       = 'default'; // move to ??
+	$template_set = 'idots'; // move to config
 	$default_lang = 'en'; // move to config
 
 	
