@@ -388,8 +388,8 @@
 			if ($type == 'gender')
 			{
 				$values = array (
-					'Male',
-					'Female'
+					lang('Male'),
+					lang('Female')
 				);
 
 				$type = 'dropdown';
@@ -463,7 +463,19 @@
 
 			if ($type == 'country')
 			{
-				$rstring = $sbox->form_select ($post_value, $a . '[' . $name . ']');
+				$vselected=$post_value;
+				$aname=$a . '[' . $name . ']';
+				
+				$str = '<select name="'.$aname.'">'."\n"
+				. ' <option value="  "'.($vselected == '  '?' selected':'').'>'.lang('Select One').'</option>'."\n";
+				reset($sbox->country_array);
+				while(list($vkey,$vvalue) = each($sbox->country_array))
+				{
+					$str .= ' <option value="'.$vkey.'"'.($vselected == $vkey?' selected':'') . '>'.$vvalue.'</option>'."\n";
+				}
+				$str .= '</select>'."\n";
+
+				$rstring = $str;
 			}
 
 			if ($type == 'birthday')
@@ -475,6 +487,7 @@
 
 			return $rstring;
 		}
+		
 
 		function simple_screen($template_file, $text = '',$vars=false,$head_subj='')
 		{
