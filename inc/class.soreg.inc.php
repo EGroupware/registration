@@ -65,7 +65,7 @@
 			// We are not going to use link(), because we may not have the same sessionid by that time
 			// If we do, it will not affect it
 			$url = $GLOBALS['phpgw_info']['server']['webserver_url'] . "/registration/main.php";
-			if (substr($url,4) != 'http')
+			if (substr($url,0,4) != 'http')
 			{
 				$url = ($_SERVER['HTTPS'] ? 'https://' : 'http://') . ($GLOBALS['phpgw_info']['server']['hostname'] ? $GLOBALS['phpgw_info']['server']['hostname'] : $_SERVER['HTTP_HOST']) . $url;
 			}
