@@ -117,7 +117,7 @@
 		//
 		function lostpw1($account_lid)
 		{
-			global $SERVER_NAME, $config;
+			global $config;
 
 			$url = $GLOBALS['phpgw_info']['server']['webserver_url'] . "/registration/main.php";
 
@@ -159,7 +159,7 @@
 				$GLOBALS['phpgw']->template->set_var('activate_url',$url . '?menuaction=registration.boreg.lostpw2&reg_id=' . $reg_id);
 
 				$subject = $config['subject_lostpw'] ? lang($config['subject_lostpw']) : lang('Account password retrieval');
-				$noreply = $config['mail_nobody'] ? ('No reply <' . $config['mail_nobody'] . '>') : ('No reply <noreply@' . $SERVER_NAME . '>');
+				$noreply = $config['mail_nobody'] ? ('No reply <' . $config['mail_nobody'] . '>') : ('No reply <noreply@' . $_SERVER['SERVER_NAME'] . '>');
 
 				$smtp->msg('email',$info['email'],$subject,$GLOBALS['phpgw']->template->fp('out','message'),'','','',$noreply);
 			}
