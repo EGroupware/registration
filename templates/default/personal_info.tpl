@@ -27,27 +27,27 @@
   </tr>
 
   <tr>
-   <td width="1%">{missing_firstname}</td>
+   <td width="1%">{missing_n_given}</td>
    <td><b>{lang_firstname}</b></td>
-   <td><input name="r_reg[firstname]" value="{value_firstname}"></td>
+   <td><input name="r_reg[n_given]" value="{value_n_given}"></td>
   </tr>
 
   <tr>
-   <td width="1%">{missing_lastname}</td>
+   <td width="1%">{missing_n_family}</td>
    <td><b>{lang_lastname}</b></td>
-   <td><input name="r_reg[lastname]" value="{value_lastname}"></td>
+   <td><input name="r_reg[n_family]" value="{value_n_family}"></td>
   </tr>
 
   <tr>
-   <td width="1%">{missing_address}</td>
+   <td width="1%">{missing_value_adr_one_street}</td>
    <td><b>{lang_address}</b></td>
-   <td><input name="r_reg[address]" value="{value_address}"></td>
+   <td><input name="r_reg[adr_one_street]" value="{value_adr_one_street}"></td>
   </tr>
 
   <tr>
-   <td width="1%">{missing_city}</td>
+   <td width="1%">{missing_adr_one_locality}</td>
    <td><b>{lang_city}</b></td>
-   <td><input name="r_reg[city]" value="{value_city}"></td>
+   <td><input name="r_reg[adr_one_locality]" value="{value_adr_one_locality}"></td>
   </tr>
 
   <tr>
@@ -57,21 +57,21 @@
   </tr>
 
   <tr>
-   <td width="1%">{missing_zip}</td>
+   <td width="1%">{missing_adr_one_postalcode}</td>
    <td><b>{lang_zip}</b></td>
-   <td><input name="r_reg[zip]" value="{value_zip}"></td>
+   <td><input name="r_reg[adr_one_postalcode]" value="{value_adr_one_postalcode}"></td>
   </tr>
 
   <tr>
-   <td width="1%">{missing_country}</td>
+   <td width="1%">{missing_adr_one_countryname}</td>
    <td><b>{lang_country}</b></td>
-   <td>{input_country}</td>
+   <td>{input_countryname}</td>
   </tr>
 
   <tr>
-   <td width="1%">{missing_phone}</td>
+   <td width="1%">{missing_tel_home}</td>
    <td>{lang_phone}</td>
-   <td><input name="o_reg[phone]" value="{value_phone}"></td>
+   <td><input name="o_reg[tel_home]" value="{value_tel_home}"></td>
   </tr>
 
   <tr>

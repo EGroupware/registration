@@ -20,7 +20,8 @@
 		'phpgw_reg_accounts' => array(
 			'fd' => array(
 				'reg_id' => array('type' => 'char', 'precision' => 32,'nullable' => False),
-				'reg_account_id' => array('type' => 'int', 'precision' => 4,'nullable' => False),
+				'reg_lid' => array('type' => 'varchar', 'precision' => 255,'nullable' => False),
+				'reg_info' => array('type' => 'text', 'nullable' => False),
 				'reg_dla' => array('type' => 'int', 'precision' => 4,'nullable' => False)
 			),
 			'pk' => array(),

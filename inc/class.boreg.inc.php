@@ -33,14 +33,14 @@
 		{
 			global $phpgw, $r_reg;
 
-			//echo '<pre>'; print_r($r_reg); echo '</pre>';
+			$so = createobject('registration.soreg');
 
 			if (! $r_reg['loginid'])
 			{
 				$errors[] = lang('You must enter a username');
 			}
 
-			if (! is_array($errors) && $phpgw->accounts->exists($r_reg['loginid']))
+			if (! is_array($errors) && $so->account_exists($r_reg['loginid']))
 			{
 				$errors[] = lang('Sorry, that username is already used.');
 			}
@@ -66,7 +66,6 @@
 
 			while (list($name,$value) = each($r_reg))
 			{
-//				echo '<br>name: ' . $name . ' - value: ' . $value;
 				if (! $value)
 				{
 					$missing_fields[] = $name;
@@ -98,18 +97,8 @@
 
 			if (! is_array($errors))
 			{
-				$_fields = array(
-					'n_given'             => $fields['firstname'],
-					'n_family'            => $fields['lastname'],
-					'b_day'               => $bday,
-					'adr_one_street'      => $fields['address'],
-					'email'               => $fields['email'],
-					'adr_one_postalcode'  => $fields['zip'],
-					'adr_one_countryname' => $fields['country']
-				);
-
 				$so     = createobject('registration.soreg');
-				$reg_id = $so->step2($_fields, $r_reg['passwd']);
+				$reg_id = $so->step2($fields);
 			}
 
 			$ui = createobject('registration.uireg');
@@ -138,7 +127,7 @@
 				return False;
 			}
 
-			$so->activate_account($reg_info['reg_account_id']);
+			$so->create_account($reg_info['reg_lid'],$reg_info['reg_info']);
 			$so->delete_reg_info($reg_id);
 			$ui->simple_screen('welcome_message.tpl');
 		}

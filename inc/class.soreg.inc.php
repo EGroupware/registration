@@ -26,31 +26,33 @@
 			$this->db = $phpgw->db;		
 		}
 
-		function step2($fields, $passwd)
+		function account_exists($account_lid)
+		{
+			global $phpgw;
+
+			$this->db->lock('phpgw_reg_accounts');
+			$this->db->query("select count(*) from phpgw_reg_accounts where reg_lid='$account_lid'",__LINE__,__FILE__);
+			$this->db->next_record();
+
+			if ($phpgw->accounts->exists($account_lid) || $this->db->f(0))
+			{
+				return True;
+			}
+			else
+			{
+				// To prevent race conditions, reserve the account_lid
+				$this->db->query("insert into phpgw_reg_accounts values ('','$account_lid','','" . time() . "')",__LINE__,__FILE__);
+				$phpgw->session->appsession('loginid','registration',$account_lid);
+				$this->db->unlock();
+				return False;
+			}
+		}
+
+		function step2($fields)
 		{
 			global $phpgw_info, $phpgw, $SERVER_NAME, $PHP_SELF;
 
-			$contacts    = createobject('phpgwapi.contacts');
-			$accounts    = createobject('phpgwapi.accounts');
-			$smtp        = createobject('phpgwapi.send');
-			$account_lid = $phpgw->session->appsession('loginid','registration');
-
-			$account_id  = $accounts->auto_add($account_lid,$passwd,False,False,0,'L');
-//			$account_id  = $accounts->name2id($account_lid);
-
-			$accounts    = createobject('phpgwapi.accounts',$account_id);
-			$accounts->read_repository();
-			$accounts->data['firstname'] = $fields['n_given'];
-			$accounts->data['lastname']  = $fields['n_family'];
-			$accounts->save_repository();
-
-			$phpgw->db->transaction_begin();
-			$contacts->add($account_id,$fields,0,'P');
-
-			$this->reg_id = md5(time() . $account_lid . $phpgw->common->randomstring(32));
-			$phpgw->db->query("insert into phpgw_reg_accounts values ('" . $this->reg_id . "','"
-					. $account_id . "','" . time() . "')",__LINE__,__FILE__);
-			$phpgw->db->transaction_commit();
+			$smtp = createobject('phpgwapi.send');
 
 			// We are not going to use link(), becuase we may not have the same sessionid by that time
 			// If we do, it will not affect it
@@ -63,6 +65,13 @@
 				$url = 'http://';
 			}
 			$url .= $SERVER_NAME . $PHP_SELF;
+
+			$this->reg_id = md5(time() . $account_lid . $phpgw->common->randomstring(32));
+			$account_lid  = $phpgw->session->appsession('loginid','registration');
+
+			$phpgw->db->query("update phpgw_reg_accounts set reg_id='" . $this->reg_id . "', reg_dla='"
+					. time() . "', reg_info='" . base64_encode(serialize($fields))
+					. "' where reg_lid='$account_lid'",__LINE__,__FILE__);
 
 			$phpgw->template->set_file(array(
 				'message' => 'confirm_email.tpl'
@@ -86,8 +95,10 @@
 			if ($phpgw->db->f('reg_id'))
 			{
 				return array(
-					'reg_id'         => $phpgw->db->f('reg_id'),
-					'reg_account_id' => $phpgw->db->f('reg_account_id')
+					'reg_id'   => $phpgw->db->f('reg_id'),
+					'reg_lid'  => $phpgw->db->f('reg_lid'),
+					'reg_info' => $phpgw->db->f('reg_info'),
+					'reg_dla'  => $phpgw->db->f('reg_dla')
 				);
 			}
 			else
@@ -101,11 +112,27 @@
 			$this->db->query("delete from phpgw_reg_accounts where reg_id='$reg_id'",__LINE__,__FILE__);
 		}
 
-		function activate_account($account_id)
+		function create_account($account_lid,$reg_info)
 		{
-			global $config;
+			global $config, $phpgw;
 
-			$accounts = createobject('phpgwapi.accounts',$account_id);
+			$fields   = unserialize(base64_decode($reg_info));
+
+			$account_id = $phpgw->accounts->auto_add($account_lid,$fields['passwd'],False,False,0,'A');
+			$accounts   = createobject('phpgwapi.accounts',$account_id);
+			$contacts   = createobject('phpgwapi.contacts');
+
+			$phpgw->db->transaction_begin();
+			$accounts    = createobject('phpgwapi.accounts',$account_id);
+			$accounts->read_repository();
+			$accounts->data['firstname'] = $fields['n_given'];
+			$accounts->data['lastname']  = $fields['n_family'];
+			$accounts->save_repository();
+
+			$contacts->add($account_id,$fields,0,'P');
+
+			$phpgw->db->transaction_commit();
+
 			$accounts->read_repository();
 			if ($config['trial_accounts'])
 			{

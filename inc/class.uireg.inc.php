@@ -134,8 +134,8 @@
 			$this->template->set_var('lang_submit',lang('Submit'));
 
 			$sbox    = createobject('phpgwapi.sbox');
-			$this->template->set_var('input_country',$sbox->form_select($r_reg['country'],'r_reg[country]'));
-			$this->template->set_var('input_state',$sbox->list_states('r_reg[state]',$r_reg['state']));
+			$this->template->set_var('input_country',$sbox->form_select($r_reg['adr_one_countryname'],'r_reg[adr_one_countryname]'));
+			$this->template->set_var('input_state',$sbox->list_states('r_reg[adr_one_locality]',$r_reg['adr_one_locality']));
 
 			$this->template->set_var('lang_tos_agree',lang('I have read the terms and conditions and agree by them.'));
 
