@@ -34,13 +34,16 @@
 			$this->db->query("select count(*) from phpgw_reg_accounts where reg_lid='$account_lid'",__LINE__,__FILE__);
 			$this->db->next_record();
 
+			$phpgw->db->lock('phpgw_accounts');
 			if ($phpgw->accounts->exists($account_lid) || $this->db->f(0))
 			{
+				$phpgw->db->unlock();
 				$this->db->unlock();
 				return True;
 			}
 			else
 			{
+				$phpgw->db->unlock();
 				// To prevent race conditions, reserve the account_lid
 				$this->db->query("insert into phpgw_reg_accounts values ('','$account_lid','','" . time() . "')",__LINE__,__FILE__);
 				$this->db->unlock();
