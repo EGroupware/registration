@@ -2,7 +2,7 @@ account password retrieval	registration	de	Passwort wiedergewinnen
 account registration	registration	de	Benutzerkonto registrieren
 activate account	admin	de	Benutzerkonto aktivieren
 address	registration	de	Adresse
-after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	de	Nachdemm Sie einen Beutzernamen eingegeben haben, werden weitere Informationen, zum Ändern Ihres Passworts an die registrierte Email Adresse gesendet.
+after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	de	Nachdemm Sie einen Beutzernamen eingegeben haben, werden weitere Informationen zum Ändern Ihres Passworts an die registrierte Email Adresse gesendet.
 an error occured. please contact our technical support and let them know.	registration	de	Es ist ein Fehler aufgetreten. Bitte kontaktieren Sie den Support und informieren Sie diesen über den aufgetretenen Fehler
 anonymous password	admin	de	Gast Passwort
 birthday	registration	de	Geburtstag
@@ -17,7 +17,7 @@ current fields:	registration	de	Verfügbare Felder
 days until trial accounts expire	admin	de	Nach wieviel Tagen verfällt der Testzugang?
 display terms of service?	admin	de	Nutzungsbedingungen anzeigen
 dropdown	registration	de	Auswahlbox
-egroupware - account registration	registration	de	eGroupWare - Benutzerkonto Registrierung
+egroupware - account registration	registration	de	eGroupWare - Benutzer Registrierung
 email address to display for support	admin	de	Email Adresse welche für den Support benutzt werden soll
 email address to send notices from	admin	de	Email Adresse an welche Informationen gesendet werden sollen
 enable registration?	admin	de	Registrierung einschalten
@@ -29,7 +29,7 @@ http password	admin	de	HTTP Passwort
 http username	admin	de	HTTP Benutzername
 i have read the terms and conditions and agree by them.	registration	de	Ich habe die Nutzungsbedingungen gelesen und stimeme diesen zu.
 if you did not request this account, simply ignore this message.	registration	de	Falls Sie dieses Benutzerkonto nicht beantragt haben, ignorieren Sie diese Nachricht bitte.
-if you did not request this change, simply ignore this message.	registration	de	Falls Sie dieses Änderung Ihres Benutzerkonto nicht veranlast haben, ignorieren Sie diese Nachricht bitte.
+if you did not request this change, simply ignore this message.	registration	de	Falls Sie dieses Änderung Ihres Benutzerkonto nicht veranlasst haben, ignorieren Sie diese Nachricht bitte.
 immediately	admin	de	Sofort
 male	registration	de	Männlich
 manage fields	admin	de	Felder verwalten
@@ -38,7 +38,7 @@ not a user yet? register now	login	de	Noch kein Benutzer? Registrieren Sie sich 
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	de	Die Online Registrierung ist nicht aktiviert. Bitte kontaktieren Sie den Administrator der Seite für weitere Informationen
 order	registration	de	Sortierung
 password is	admin	de	Das Passwort ist
-phone	registration	de	Telefon Nummer
+phone	registration	de	Telefonnummer
 phpgroupware - account registration	registration	de	eGroupWare - Benutzer Registrierung
 re-enter password	registration	de	Passwort nochmals eingeben
 re-enter your password	registration	de	Bitte geben Sie Ihr Passwort nochmals ein
@@ -52,8 +52,8 @@ send email	admin	de	Email senden
 sorry, that username does not exist.	registration	de	Dieser Benutzername existiert nicht.
 sorry, that username is already taken.	registration	de	Dieser Benutzername ist schon vergeben
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	de	Entschuldigen Sie, wir haben Probleme Ihr Benutzerkonto zu aktivieren. Bitte beachten Sie, dass die per Mail gesendeten Links nur zwei Stunden gültig sind. Wenn diese Zeit abgelaufen war, versuchen Sie es einfach nochmal. Wenn nicht kontaktieren Sie bitte den Administrator.
-state	registration	de	Status
-subject for confirmation email	admin	de	Betreff für bestätigungs Email
+state	registration	de	Bundesstaat
+subject for confirmation email	admin	de	Betreff für Bestätigungsemail
 terms of service	registration	de	Nutzungsbedingungen
 terms of service text	admin	de	Inhalt der Nutzungsbedingungen
 text	registration	de	Text
@@ -64,19 +64,19 @@ this is a confirmation email for your new account.  click on the following link 
 type	registration	de	Typ
 update/add	registration	de	Ändern / Hinzufügen
 use html	admin	de	HTML benutzen
-use trial accounts?	admin	de	Test Konten benutzen?
+use trial accounts?	admin	de	Testzugänge benutzen?
 username is	admin	de	Benutzername ist
 values (for dropdown only; comma separated)	registration	de	Werte (für das Auswahlfeld, mit Komma getrennt)
-we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	de	Ein Bestätigungs Email wurde an Ihre Email Adresse gesendet. Sie müssen den Link innerhalb der Email innerhalb von 2 Stunden benutzen. Falls Sie dies nicht in der vorgegebenen Zeit machen, dauert es einige Tage bis Ihr Benutzername wieder verfügbar ist.
-we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	de	Eine Email wurde an Sie versendet, mit Informationen, wie Sie das Passwort ändern können. Bitte benutzen Sie den beinhalteten Link innerhalb von 2 Stunden. Falls Ihnen dies nicht möglich ist, müssen Sie nochmals die Prozedur für vergessenen Passworte ausführen.
+we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	de	Ein Bestätigungsemail wurde an Ihre Email Adresse versandt. Sie müssen den Link in der Email innerhalb von 2 Stunden benutzen. Falls Sie dies nicht in der vorgegebenen Zeit machen, dauert es einige Tage bis Ihr Benutzername wieder verfügbar ist.
+we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	de	Eine Email mit Informationen wie Sie ihr Passwort ändern können wurde an Sie versandt. Bitte benutzen Sie den enthalteten Link innerhalb von 2 Stunden. Falls Ihnen dies nicht möglich ist, müssen Sie nochmals die Prozedur für vergessenen Passworte ausführen.
 wrong session	registration	de	Falsche Session
 you have entered an invalid birthday	registration	de	Sie haben einen ungültigen Geburtstag eingegeben
-you have entered an invalid email address	registration	de	Die von Ihnen eingegebene
+you have entered an invalid email address	registration	de	Sie haben eine ungültige Emailadresse eingegeben
 you must enter a password	registration	de	Sie müssen ein Passwort angeben Email Adresse ist nicht gültig
 you must enter a username	registration	de	Sie müssen einen Benutzernamen angeben
 you must fill in all of the required fields	registration	de	Sie müssen alle benötigten Felder ausfällen
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	de	Sie wollen Ihr Password ändern. Bitte folgen sie dem unten angegebenen Link. Dieser Link verfällt nach zwei Stunden. Nach dieser Zeit, müssen Sie die Prozedur für vergessene Passworte nochmal ausführen.
 you specified a value for	registration	de	Bitte geben Sie einen Wert an für
-your account is now active!  click <a href="%1">here</a> to log into your account.	registration	de	Ihr Benutzerkonto ist aktiviert!. Klicken Sie <a href="%1">hier</a> um sie Anzumelden.
-your password was changed. you can go back to the <a href="%1">login</a> page.	registration	de	Ihr Passwort wurde geändert. Sie können zurück zur <a href="%1">Anmelde</a> Seite gehen.
+your account is now active!  click <a href="%1">here</a> to log into your account.	registration	de	Ihr Benutzerkonto ist aktiviert!. Klicken Sie <a href="%1">hier</a> um sich anzumelden.
+your password was changed. you can go back to the <a href="%1">login</a> page.	registration	de	Ihr Passwort wurde geändert. Sie können zurück zur <a href="%1">Anmelde Seite</a> gehen.
 zip/postal	registration	de	Postleitzahl
