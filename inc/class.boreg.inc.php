@@ -20,7 +20,6 @@
 		var $public_functions = array(
 			'step1' => True,
 			'step2' => True,
-			'step3' => True,
 			'step4' => True
 		);
 
@@ -156,7 +155,7 @@
 
 			$so->create_account($reg_info['reg_lid'],$reg_info['reg_info']);
 			$so->delete_reg_info($reg_id);
-			$ui->simple_screen('welcome_message.tpl');
+			$ui->welcome_screen();
 		}
 
 	}

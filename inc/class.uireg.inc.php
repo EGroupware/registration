@@ -20,7 +20,6 @@
 		var $public_functions = array(
 			'step1'      => True,
 			'step2'      => True,
-			'step3'      => True,
 			'email_sent' => True
 		);
 
@@ -161,5 +160,18 @@
 			$this->simple_screen('confirm_email_sent.tpl');
 		}
 
+		function welcome_screen()
+		{
+			global $phpgw_info;
+
+			$this->header();
+			$this->template->set_file(array(
+				'screen' => 'welcome_message.tpl'
+			));
+			$this->template->set_var('login_url',$phpgw_info['server']['webserver_url']);
+
+			$this->template->pfp('out','screen');
+			$this->footer();		
+		}
 
 	}
