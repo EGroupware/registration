@@ -58,7 +58,7 @@
 
 		function step2($fields,$send_mail=True)
 		{
-			global $config, $SERVER_NAME;
+			global $config;
 
 			$smtp = createobject('phpgwapi.send');
 
@@ -103,7 +103,7 @@
 			}
 
 			$subject = $config['subject_confirm'] ? lang($config['subject_confirm']) : lang('Account registration');
-			$noreply = $config['mail_nobody'] ? ('No reply <' . $config['mail_nobody'] . '>') : ('No reply <noreply@' . $SERVER_NAME . '>');
+			$noreply = $config['mail_nobody'] ? ('No reply <' . $config['mail_nobody'] . '>') : ('No reply <noreply@' . $_SERVER['SERVER_NAME'] . '>');
 
 			if ($send_mail)
 			{
