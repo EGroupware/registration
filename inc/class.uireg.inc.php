@@ -46,28 +46,33 @@
 			$this->set_lang_code();
 		}
 
+
+
 		function set_lang_code($code='')
 		{
 			if($code)
 			{
 				$this->lang_code=$code;
 			}
-			elseif(strlen($GLOBALS[lang_code])==2)
+			elseif(strlen($GLOBALS[HTTP_GET_VARS][lang_code])==2)
 			{
-				$this->lang_code=$GLOBALS[lang_code];
+				$this->lang_code=$GLOBALS[HTTP_GET_VARS][lang_code];
 			}
-			else
+			else//if($GLOBALS[HTTP_POST_VARS][lang_code]==2)
 			{
-				$this->lang=$GLOBALS[HTTP_POST_VARS][lang_code];
+				$this->lang_code=$GLOBALS[HTTP_POST_VARS][lang_code];
 			}
 
 			if ($this->lang_code)
 			{
-
 				$GLOBALS['phpgw_info']['user']['preferences']['common']['lang'] = $this->lang_code;
 				$GLOBALS['phpgw']->translation->init();	
 			}
-
+			else
+			{
+				$GLOBALS['phpgw_info']['user']['preferences']['common']['lang'] = $GLOBALS[default_lang];
+				$GLOBALS['phpgw']->translation->init();	
+			}
 		}
 
 		function set_header_footer_blocks()
@@ -161,7 +166,6 @@
 				unset($choosetrans);
 				$this->set_lang_code($key);
 				
-		//		$lang_choose_string.=$key.lang('Choose your language');
 				$choosetrans=lang('Choose your language');
 			
 				if($choosetrans!='Choose your language*' && $choosetrans!=$prevstring)
@@ -178,11 +182,15 @@
 				}
 			} 
 			$this->set_lang_code($comeback_code);
-			
+
+			$this->template->set_var('title',lang('Choose Language')); 
+			$this->template->set_var('illustration',$GLOBALS['phpgw']->common->image('registration','screen0_language'));
+				
 			$this->template->set_var('lang_choose_language',$lang_choose_string);
 
-
-			$s .= $this->create_option_string($this->lang_code,$langs);
+			$selected_lang=($this->lang_code?$this->lang_code:$GLOBALS[default_lang]);
+	
+			$s .= $this->create_option_string($selected_lang,$langs);
 			$this->template->set_var('selectbox_languages','<select name="lang_code" onChange="this.form.langchanged.value=\'true\';this.form.submit()">'.$s.'</select>');
 
 
@@ -372,7 +380,10 @@
 
 		function get_input_field ($field_info, $post_values)
 		{
-			global $r_regs, $o_regs;
+			$r_regs=$GLOBALS[HTTP_POST_VARS][r_reg]; 
+			$o_regs=$GLOBALS[HTTP_POST_VARS][o_reg]; 
+
+			
 
 			$post_value = $post_values[$field_info['field_name']];
 
@@ -518,7 +529,8 @@
 		{
 			$this->set_lang_code();
 
-			global $config, $reg_id;
+			global $config;//, $reg_id;
+//			$reg_id=$GLOBALS[HTTP_GET_VARS][reg_id];
 
 			if ($config['activate_account'] == 'email')
 			{
@@ -530,7 +542,7 @@
 			{
 
 				/* ($config['activate_account'] == 'immediately') */
-				$GLOBALS['phpgw']->redirect($GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.boreg.step4&lang_code='.$this->lang_code.'&reg_id=' . $reg_id));
+				$GLOBALS['phpgw']->redirect($GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.boreg.step4&lang_code='.$this->lang_code.'&reg_id=' . $this->bo->reg_id));
 			}
 		}
 
@@ -545,9 +557,9 @@
 			$this->set_lang_code();
 			$this->header();
 
-			$login_url=$GLOBALS['phpgw_info']['server']['webserver_url'];
-
-			$message=lang('Your account is now active!  Click <a href="%1">here</a> to log into your account.',$login_url);
+			$login_url=$GLOBALS['phpgw_info']['server']['webserver_url'].'/login.php';
+			
+			$message = lang('Your account is now active!  Click <a href="%1">here</a> to log into your account.',$login_url);
 
 			$this->template->set_file(array(
 				'screen' => 'welcome_message.tpl'

@@ -21,18 +21,32 @@
 	** session for it.
 	*/
 
+
+	// use other lang
+	/*!
+	@function lang
+	@abstract function to deal with multilanguage support
+	*/
+	function lang($key, $m1='', $m2='', $m3='', $m4='', $m5='', $m6='', $m7='', $m8='', $m9='', $m10='') 
+	{
+		global $phpgw;
+		$vars  = array($m1,$m2,$m3,$m4,$m5,$m6,$m7,$m8,$m9,$m10);
+		$value = $phpgw->translation->translate($key,$vars);
+		return $value;
+	}
+
 	$GLOBALS['sessionid'] = $GLOBALS['HTTP_GET_VARS']['sessionid'] ? $GLOBALS['HTTP_GET_VARS']['sessionid'] : $GLOBALS['HTTP_COOKIE_VARS']['sessionid'];
 
 	// Note: This is current not a drop in install, it requires some manual installation
 	//       Take a look at the README file
-   	$domain       = 'default'; // move to ??
-	$template_set = 'idots'; // move to config
-	$default_lang = 'en'; // move to config
+	$domain       = 'default'; // move to ??  but how ???
+	$template_set = 'idots'; // move to config but how ???
+	$default_lang = 'en'; // move to config    but how, we can't get langs in the default config!!!
 
-	
-	if ($menuaction)
+
+	if ($GLOBALS[HTTP_GET_VARS][menuaction])
 	{
-		list($app,$class,$method) = explode('.',$menuaction);
+		list($app,$class,$method) = explode('.',$GLOBALS[HTTP_GET_VARS][menuaction]);
 		if (! $app || ! $class || ! $method)
 		{
 			$invaild_data = True;
@@ -52,103 +66,9 @@
 	);
 	include('../header.inc.php');
 	include(PHPGW_INCLUDE_ROOT.'/phpgwapi/inc/common_functions.inc.php');
-	//include(PHPGW_INCLUDE_ROOT.'/phpgwapi/inc/functions.inc.php');
 
-	//phpgwapi/inc/functions.inc.php:
 
 	
-	function CreateObject_old($classname, $constructor_param = '')
-	{
-		global $phpgw, $phpgw_info, $phpgw_domain;
-		$classpart = explode (".", $classname);
-		$appname = $classpart[0];
-		$classname = $classpart[1];
-		if (!isset($phpgw_info['flags']['included_classes'][$classname])
-		|| !$phpgw_info['flags']['included_classes'][$classname])
-		{
-			$phpgw_info['flags']['included_classes'][$classname] = True;   
-			include(PHPGW_INCLUDE_ROOT.'/'.$appname.'/inc/class.'.$classname.'.inc.php');
-		}
-		if ($constructor_param == '')
-		{
-			$obj = new $classname;
-		}
-		else
-		{
-			$obj = new $classname($constructor_param);
-		}
-		return $obj;
-	}
-
-	/*!
-		@function print_debug
-		@abstract print debug data only when debugging mode is turned on.
-		@author jengo
-		@discussion This function is used for debugging data. 
-		@syntax print_debug('message');
-		@example print_debug('this is some debugging data');
-	*/
-	function print_debug_old($text='',$var='',$part='APP',$level='notused')
-	{
-		if ((strtoupper($part) == 'APP' && DEBUG_APP == True) || (strtoupper($part) == 'API' && DEBUG_API == True))
-		{
-			if ($var == '')
-			{
-				echo "debug: $text <br>\n";
-			}
-			else
-			{
-				echo "$text: $var<br>\n";
-			}			
-		}
-	}
-
-
-	/*!
-	@function lang
-	@abstract function to deal with multilanguage support
-	*/
-	function lang($key, $m1='', $m2='', $m3='', $m4='', $m5='', $m6='', $m7='', $m8='', $m9='', $m10='') 
-	{
-		global $phpgw;
-		$vars  = array($m1,$m2,$m3,$m4,$m5,$m6,$m7,$m8,$m9,$m10);
-		$value = $phpgw->translation->translate($key,$vars);
-		return $value;
-	}
-
-	function get_account_id_old($account_id = '',$default_id = '')
-	{
-		global $phpgw, $phpgw_info;
-
-		if (gettype($account_id) == 'integer')
-		{
-			return $account_id;
-		}
-		elseif ($account_id == '')
-		{
-			if ($default_id == '')
-			{
-				return $phpgw_info['user']['account_id'];
-			}
-			elseif (gettype($default_id) == 'string')
-			{
-				return $phpgw->accounts->name2id($default_id);
-			}
-			return intval($default_id);
-		}
-		elseif (gettype($account_id) == 'string')
-		{
-			if($phpgw->accounts->exists(intval($account_id)) == True)
-			{
-				return intval($account_id);
-			}
-			else
-			{
-				return $phpgw->accounts->name2id($account_id);
-			}
-		}
-	}
-
 	$phpgw_info['server'] = $phpgw_domain[$domain];
 	$phpgw                = createobject('phpgwapi.phpgw');
 	$phpgw->db            = createobject('phpgwapi.db');
@@ -158,7 +78,7 @@
 	$phpgw->db->User      = $phpgw_info['server']['db_user'];
 	$phpgw->db->Password  = $phpgw_info['server']['db_pass'];
 
-	/* Fill phpgw_info["server"] array */
+	// Fill phpgw_info["server"] array 
 	$phpgw->db->query("select * from phpgw_config WHERE config_app='phpgwapi'",__LINE__,__FILE__);
 	while ($phpgw->db->next_record())
 	{
@@ -193,12 +113,13 @@
 	$phpgw->translation   = createobject('phpgwapi.translation');
 
 	//$phpgw->translation->userlang=$default_lang;
-	
+
 	$c = createobject('phpgwapi.config','registration');
 	$c->read_repository();
+	
 	$config = $c->config_data;
 
-	
+
 	if (! $sessionid)
 	{
 		$sessionid = $phpgw->session->create($config['anonymous_user'] . '@' . $domain,$config['anonymous_pass'],'text');
@@ -226,3 +147,6 @@
 		$_obj = createobject('registration.uireg');
 		$_obj->step1();
 	}
+	
+
+

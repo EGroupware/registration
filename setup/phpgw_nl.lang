@@ -7,7 +7,7 @@ anonymous password	admin	nl	Anoniem wachtwoord
 birthday	registration	nl	Geboortedatum
 change password for user	registration	nl	Wijzig wachtwoord voor gebruiker
 checkbox	registration	nl	Checkbox
-choose your language	registration	nl	Kies uw taal
+choose your language	common	nl	Kies uw taal
 city	registration	nl	Woonplaats
 country	registration	nl	Land
 current fields:	registration	nl	Huidige velden:

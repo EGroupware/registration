@@ -24,6 +24,7 @@
 		var $fields;
 		var $so;
 		var $lang_code;
+		var $reg_id;
 		var $public_functions = array(
 			'step1' => True,
 			'step2' => True,
@@ -38,33 +39,21 @@
 			$this->so = createobject ('registration.soreg');
 			$this->bomanagefields = createobject ('registration.bomanagefields');
 			$this->fields = $this->bomanagefields->get_field_list ();
-			
-/*			if($GLOBALS[HTTP_POST_VARS][lang])
-			{
-				$this->lang=$GLOBALS[HTTP_POST_VARS][lang];
-			}
-			else
-			{
-				$this->lang=$GLOBALS[lang];
-			}
-			
-			
-			//var_dump($GLOBALS[HTTP_POST_VARS]);
-		
-		
-			if ($this->lang)
-		{
 
-			$GLOBALS['phpgw_info']['user']['preferences']['common']['lang'] = $this->lang;
-			$GLOBALS['phpgw']->translation->init();	
+			$_reg_id=($GLOBALS[HTTP_GET_VARS][reg_id]?$GLOBALS[HTTP_GET_VARS][reg_id]:$GLOBALS[HTTP_POST_VARS][reg_id]);
+			$this->reg_id=($_reg_id?$_reg_id:'');
+
+			// replace the old lang_code with this
+			//			$_lang_code=($GLOBALS[HTTP_GET_VARS][lang_code]?$GLOBALS[HTTP_GET_VARS][lang_code]:$GLOBALS[HTTP_POST_VARS][lang_code]);
+			//			$this->lang_code=($_lang_code?$_lang_code:'');
+			
 		}
-*/
-	}
 
 		function step1()
 		{
-			global $config, $r_reg;
+			global $config;//, $r_reg;
 
+			$r_reg=$GLOBALS[HTTP_POST_VARS][r_reg];
 			$so = createobject('registration.soreg');
 			$ui = createobject('registration.uireg');
 
@@ -99,12 +88,16 @@
 		function step2()
 		{
 			global $config, $r_reg, $o_reg, $PHP_AUTH_USER, $PHP_AUTH_PW;
-			$lang_to_pass=$GLOBALS[r_reg][lang_code];
+			
+			
+			$r_reg=$GLOBALS[HTTP_POST_VARS][r_reg];
+			$o_reg=$GLOBALS[HTTP_POST_VARS][o_reg];
+			
+			$lang_to_pass=$r_reg[lang_code];
 			$ui = createobject('registration.uireg');
 			$ui->set_lang_code($lang_to_pass);
 			
-		//	echo '<pre>'; print_r($r_reg); echo '</pre>';
-
+			//where is this for????
 			if ($config['password_is'] == 'http')
 			{
 				$r_reg['passwd'] = $r_reg['passwd_confirm'] = $PHP_AUTH_PW;
@@ -123,6 +116,7 @@
 				}
 				$fields[$name] = $value;
 			}
+
 			reset($r_reg);
 
 			if ($r_reg['adr_one_countryname'] == '  ')
@@ -231,26 +225,20 @@
 
 			if (is_array($errors))
 			{
-				//$ui->lang_code=$lang_to_pass;
-				//die($ui->lang_code);
 				$ui->step2($errors,$r_reg,$o_reg,$missing_fields);
 			}
 			else
 			{
-				//die($lang_to_pass);
-				// Redirect them so they don't hit refresh and make a mess
 				$GLOBALS['phpgw']->redirect($GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.uireg.ready_to_activate&lang_code='.$lang_to_pass.'&reg_id=' . $reg_id));
 			}
 		}
 
 		function step4()
 		{
-			global $reg_id;
-
 			$so = createobject('registration.soreg');
 			$ui = createobject('registration.uireg');
 			
-			$reg_info = $so->valid_reg($reg_id);
+			$reg_info = $so->valid_reg($this->reg_id);
 
 			if (! is_array($reg_info))
 			{
@@ -260,7 +248,7 @@
 			}
 
 			$so->create_account($reg_info['reg_lid'],$reg_info['reg_info']);
-			$so->delete_reg_info($reg_id);
+			$so->delete_reg_info($this->reg_id);
 			setcookie('sessionid');
 			setcookie('kp3');
 			setcookie('domain');
@@ -312,11 +300,10 @@
 		//
 		function lostpw2()
 		{
-			global $reg_id;
 
 			$so = createobject('registration.soreg');
 			$ui = createobject('registration.uireg');
-			$reg_info = $so->valid_reg($reg_id);
+			$reg_info = $so->valid_reg($this->reg_id);
 
 			if (! is_array($reg_info))
 			{
