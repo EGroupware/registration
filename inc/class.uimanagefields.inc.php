@@ -45,7 +45,7 @@
 
 			if (!isset ($message))
 			{
-				$message = get_var('messages',Array('GET'));
+				$message = $GLOBALS['HTTP_GET_VARS']['message'];
 			}
 
 			$var = array (

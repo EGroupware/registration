@@ -265,9 +265,9 @@
 			$accounts->data['status'] = 'A';
 			$accounts->save_repository();
 
-			if(@stat(PHPGW_SERVER_ROOT . '/messenger/inc/hook_registration.inc.php'))
-			{
-				include(PHPGW_SERVER_ROOT . '/messenger/inc/hook_registration.inc.php');
-			}
+			#if(@stat(PHPGW_SERVER_ROOT . '/messenger/inc/hook_registration.inc.php'))
+			#{
+			#	include(PHPGW_SERVER_ROOT . '/messenger/inc/hook_registration.inc.php');
+			#}
 		}
 	}

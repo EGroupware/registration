@@ -20,7 +20,7 @@
 	** session for it.
 	*/
 
-	$GLOBALS['sessionid'] = get_var('sessionid',Array('COOKIE','GET'));
+	$GLOBALS['sessionid'] = $GLOBALS['HTTP_GET_VARS']['sessionid'] ? $GLOBALS['HTTP_GET_VARS']['sessionid'] : $GLOBALS['HTTP_COOKIE_VARS']['sessionid'];
 
 	// Note: This is current not a drop in install, it requires some manual installation
 	//       Take a look at the README file
@@ -48,7 +48,7 @@
 		'currentapp' => $app
 	);
 	include('../header.inc.php');
-
+	
 	function CreateObject($classname, $constructor_param = '')
 	{
 		global $phpgw, $phpgw_info, $phpgw_domain;
@@ -70,6 +70,29 @@
 			$obj = new $classname($constructor_param);
 		}
 		return $obj;
+	}
+
+	/*!
+		@function print_debug
+		@abstract print debug data only when debugging mode is turned on.
+		@author jengo
+		@discussion This function is used for debugging data. 
+		@syntax print_debug('message');
+		@example print_debug('this is some debugging data');
+	*/
+	function print_debug($text='',$var='',$part='APP',$level='notused')
+	{
+		if ((strtoupper($part) == 'APP' && DEBUG_APP == True) || (strtoupper($part) == 'API' && DEBUG_API == True))
+		{
+			if ($var == '')
+			{
+				echo "debug: $text <br>\n";
+			}
+			else
+			{
+				echo "$text: $var<br>\n";
+			}			
+		}
 	}
 
 	/*!

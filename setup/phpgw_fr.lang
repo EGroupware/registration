@@ -21,6 +21,7 @@ report all problems and abuse to	registration	fr	Rapporter tous les problèmes et
 required	registration	fr	Nécessaire
 sorry, that username does not exist.	registration	fr	Désolé, ce nom d'utilisateur n'existe pas.
 sorry, that username is already taken.	registration	fr	Désolé, ce nom d'utilisateur est déjà pris.
+text	registration	fr	Texte
 textarea	registration	fr	Zone de texte
 the passwords you entered don't match	registration	fr	Les mots de passe que vous avez entré ne correspondent pas
 the two passwords are not the same	registration	fr	Les deux mots de passe ne sont pas les mêmes

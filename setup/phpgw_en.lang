@@ -21,6 +21,7 @@ report all problems and abuse to	registration	en	Report all problems and abuse t
 required	registration	en	Required
 sorry, that username does not exist.	registration	en	Sorry, that username does not exist.
 sorry, that username is already taken.	registration	en	Sorry, that username is already taken.
+text	registration	en	Text
 textarea	registration	en	Textarea
 the passwords you entered don't match	registration	en	The passwords you entered don't match
 the two passwords are not the same	registration	en	The two passwords are not the same
