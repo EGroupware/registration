@@ -167,7 +167,7 @@
 
 				if ($type == 'birthday')
 				{
-					if (!checkdate ($a[$name . '_month'], $a[$name . '_day'], $a[$name . '_year']))
+					if (!checkdate ((int) $a[$name . '_month'], (int) $a[$name . '_day'], (int) $a[$name . '_year']))
 					{
 						if ($required == 'Y')
 						{
@@ -195,7 +195,7 @@
 
 						if (!$ok)
 						{
-							$errors[] = lang ('You specified a value for ' . $text . ' that is not a choice');
+							$errors[] = lang ('You specified a value for %1 that is not a choice',$text);
 
 							$missing_fields[] = $name;
 						}
