@@ -1,7 +1,7 @@
 <?php
 	/**************************************************************************\
-	* phpGroupWare - Registration                                              *
-	* http://www.phpgroupware.org                                              *
+	* eGroupWare - Registration                                                *
+	* http://www.egroupware.org                                                *
 	* This application written by Joseph Engo <jengo@phpgroupware.org>         *
 	* Modified by Jason Wies (Zone) <zone@users.sourceforge.net>               *
 	* Modified by Loic Dachary <loic@gnu.org>                                  *

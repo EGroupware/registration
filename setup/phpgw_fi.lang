@@ -3,7 +3,7 @@ account registration	registration	fi	Tunnuksen luominen
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	fi	Annettuasi käyttäjätunnuksesi ohjeet salasanan vaihtamiseksi lähetetään rekisteröityessäsi antamaasi sähköpostiosoitteeseen.
 enter your new password	registration	fi	Anna uusi salasanasi
 i have read the terms and conditions and agree by them.	registration	fi	Olen lukenut palvelun käyttöehdot ja hyväksyn ne.
-phpgroupware - account registration	registration	fi	phpGroupWare - Tunnuksen luominen
+egroupware - account registration	registration	fi	eGroupWare - Tunnuksen luominen
 re-enter password	registration	fi	Salasana uudelleen
 re-enter your password	registration	fi	Anna salasanasi uudelleen
 registration	common	fi	Rekisteröityminen

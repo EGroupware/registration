@@ -13,7 +13,7 @@ i have read the terms and conditions and agree by them.	registration	fr	J'ai lu 
 name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	fr	Nom (vide ou alors Texte, Zone de texte, Boîte de sélection, Boîte à cocher; sinon alphanumérique seulement)
 order	registration	fr	Ordre
 phone	registration	fr	Téléphone
-phpgroupware - account registration	registration	fr	phpGroupWare - Enregistrement de comptes
+egroupware - account registration	registration	fr	eGroupWare - Enregistrement de comptes
 re-enter password	registration	fr	Ré-entrez le mot de passe
 re-enter your password	registration	fr	Ré-entrez votre mot de passe
 registration	common	fr	Enregistrement

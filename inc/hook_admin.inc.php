@@ -1,7 +1,7 @@
 <?php
 	/**************************************************************************\
-	* phpGroupWare - Registration                                              *
-	* http://www.phpgroupware.org                                              *
+	* eGroupWare - Registration                                                *
+	* http://www.egroupware.org                                                *
 	* This application written by Joseph Engo <jengo@phpgroupware.org>         *
 	* --------------------------------------------                             *
 	* Funding for this program was provided by http://www.checkwithmom.com     *
