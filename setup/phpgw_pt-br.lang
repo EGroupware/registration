@@ -1,0 +1,82 @@
+account password retrieval	registration	pt-br	Recuperar senha de acesso
+account registration	registration	pt-br	Registro de Acesso
+activate account	admin	pt-br	Ativar Conta
+address	registration	pt-br	Endereço
+after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	pt-br	Depois que você informar seu nome de usário, as instruções de como alterar sua senha, serão enviadas para o endereço e-mail que você usou para se cadastrar.
+an error occured. please contact our technical support and let them know.	registration	pt-br	Ocorreu um erro desconhecido. Por favor, contate seu suporte técnico e informe essa situação  .
+anonymous password	admin	pt-br	Senha para usuário anônimo
+birthday	registration	pt-br	Data de Nascimento
+change password for user	registration	pt-br	Alterar senha para um usuário
+checkbox	registration	pt-br	Caixa de Verificação
+choose language	registration	pt-br	Escolha o Idioma
+choose your language	common	pt-br	Escolha seu idioma
+city	registration	pt-br	Cidade
+close window	registration	pt-br	Fechar Janela
+country	registration	pt-br	País
+current fields:	registration	pt-br	Campos Atuais:
+days until trial accounts expire	admin	pt-br	Dias para a expiração de contas de teste
+display terms of service?	admin	pt-br	Mostrar termos de serviço?
+dropdown	registration	pt-br	Lista suspensa
+egroupware - account registration	registration	pt-br	eGroupWare - Registro de acesso
+email address to display for support	admin	pt-br	Endereço de e-mail para suporte
+email address to send notices from	admin	pt-br	Endereço de e-mail para o envio de notícias
+enable registration?	admin	pt-br	Ativar Registro de Acesso?
+enter your new password	registration	pt-br	Digite a sua nova senha
+female	registration	pt-br	Mulher
+gender	registration	pt-br	Sexo
+hi	registration	pt-br	Oi
+http password	admin	pt-br	Senha HTTP
+http username	admin	pt-br	Nome de usuário HTTP
+i have read the terms and conditions and agree by them.	registration	pt-br	Lí os termos e condições e estou de acordo com eles.
+if you did not request this account, simply ignore this message.	registration	pt-br	se você não requisitou essa conta, simplesmente ignore essa mensagem.
+if you did not request this change, simply ignore this message.	registration	pt-br	Se você não requisitou essa alteração, simplesmente ignore essa mensagem.
+immediately	admin	pt-br	Imediatamente
+male	registration	pt-br	Homem
+manage fields	admin	pt-br	Gerenciar Campos
+name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	pt-br	Nome (deixar em branco, exceto para campos de texto, áreas de texto, listas instanâneas, caixas de verificação)
+not a user yet? register now	registration	pt-br	Ainda não é um usário? Registre-se agora.
+on-line registration is not activated. please contact the site administrator for more information about registration.	registration	pt-br	O registro de acesso não está ativo. Por favor contate o administrador para maiores detalhes.
+order	registration	pt-br	Classificação
+password is	admin	pt-br	A senha é
+phone	registration	pt-br	Telefone
+phpgroupware - account registration	registration	pt-br	eGroupWare - Registro de Acesso
+re-enter password	registration	pt-br	Repita a senha
+re-enter your password	registration	pt-br	Repita sua senha
+register link at login screen?	admin	pt-br	Habilitar link para Registro de acesso na tela de conexão?
+registration	common	pt-br	Registro de Acesso
+registration settings	admin	pt-br	Configurações - Registro de Acesso
+remove	registration	pt-br	Remover
+report all problems and abuse to	registration	pt-br	informe todo e qualquer problema para
+required	registration	pt-br	Campo obrigatório
+send email	admin	pt-br	Enviar E-mail
+sorry, that username does not exist.	registration	pt-br	<em style="color: rgb(255, 0, 0);"><b>Desculpe, este usuário não existe.</b></em><br>
+sorry, that username is already taken.	registration	pt-br	<em style="color: rgb(255, 0, 0);"><b>Desculpe, este usuário já existe.</b></em><br>
+sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	pt-br	Desculpe, estamos com problemas para a ativação de sua conta para acesso. Verifique que o endereço de confirmação encaminhado para seu e-mail tem uma validade de no máximo duas horas. Caso você tenha expirado o prazo para ativação você precisa solicitar um reenvio. Se este não é o seu problema entre em contato com o administrador.
+state	registration	pt-br	Estado
+subject for confirmation email	admin	pt-br	Assunto para o e-mail de confirmação
+terms of service	registration	pt-br	Termos para o Acesso
+terms of service text	admin	pt-br	Texto dos termos de serviço
+text	registration	pt-br	Texto
+textarea	registration	pt-br	Área para texto
+the passwords you entered don't match	registration	pt-br	<em style="color: rgb(255, 0, 0);"><b>As senhas informadas não conferem</b></em><br>
+the two passwords are not the same	registration	pt-br	<em style="color: rgb(255, 0, 0);"><b>As duas senhas não são iguais</b></em><br>
+this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	pt-br	Este é um e-mail de confirmação da sua nova conta. clique no link abaixo para finalizar o processo de ativação da sua conta. Esse link irá expirar em 2 horas.
+type	registration	pt-br	Tipo
+update/add	registration	pt-br	Atualizar/Adicionar
+use html	admin	pt-br	Usar
+use trial accounts?	admin	pt-br	Usar contas para testes?
+username is	admin	pt-br	O Usuário é
+values (for dropdown only; comma separated)	registration	pt-br	Valores (Para listas suspensa apenas; campos separados por vírgula)
+we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	pt-br	Enviamos um e-mail para a confirmação de seu cadastro. Você deve clicar sobre o hyperlink enviado no máximo em até 2 horas para efetivar o cadastro. Caso você não o faça, o registro ficará indisponível para esta conta de e-mail por alguns dias, até ser liberado novamente.
+we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	pt-br	Foi enviado um e-mail com instruções de como alterar sua senha. Voc6e deverá clicar no link enviado em um período não superior a 2 horas. Se você não seguir essas instruções terá que voltar a tela de senhas perdidas.
+wrong session	registration	pt-br	Erro na sessão
+you have entered an invalid birthday	registration	pt-br	Você informou uma data de nascimento inválida
+you have entered an invalid email address	registration	pt-br	Você informou um endereço para e-mail inválido
+you must enter a password	registration	pt-br	Você precisa digitar uma senha
+you must enter a username	registration	pt-br	Você precisa digitar um nome de usuário
+you must fill in all of the required fields	registration	pt-br	Você precisa preencher os campos ( * )  obrigatórios
+you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	pt-br	Você requisitou uma mudança na sua senha. Por favor sigua a URL abaixo para executar essa mudança. Essa URL irá expirar em 2 horas, Depois desse período, você terá que por todo o procedimento novamente
+you specified a value for	registration	pt-br	Você especificou um valor para
+your account is now active!  click <a href="%1">here</a> to log into your account.	registration	pt-br	Sua conta está ativada!  Clique <a href="%1">aqui</a> para entrar no sistema.
+your password was changed. you can go back to the <a href="%1">login</a> page.	registration	pt-br	Sua senha foi alterada, você pode voltar a página de <a href="%1">conexão</a>.
+zip/postal	registration	pt-br	CEP
