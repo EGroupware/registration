@@ -220,9 +220,9 @@
 			if (! is_array($errors))
 			{
 				$so     = createobject('registration.soreg');
-				$reg_id = $so->step2($fields);
+				// only send mail if activation requires it
+				$reg_id = $so->step2($fields,$config['activate_account'] == 'email');
 			}
-
 
 			if (is_array($errors))
 			{

@@ -56,7 +56,7 @@
 			}
 		}
 
-		function step2($fields)
+		function step2($fields,$send_mail=True)
 		{
 			global $config, $SERVER_NAME;
 
@@ -65,17 +65,17 @@
 			// We are not going to use link(), because we may not have the same sessionid by that time
 			// If we do, it will not affect it
 			$url = $GLOBALS['phpgw_info']['server']['webserver_url'] . "/registration/main.php";
-
+			if (substr($url,4) != 'http')
+			{
+				$url = ($_SERVER['HTTPS'] ? 'https://' : 'http://') . ($GLOBALS['phpgw_info']['server']['hostname'] ? $GLOBALS['phpgw_info']['server']['hostname'] : $_SERVER['HTTP_HOST']) . $url;
+			}
 			$this->reg_id = md5(time() . $account_lid . $GLOBALS['phpgw']->common->randomstring(32));
 			$account_lid  = $GLOBALS['phpgw']->session->appsession('loginid','registration');
 
 			$GLOBALS['phpgw']->db->query("update phpgw_reg_accounts set reg_id='" . $this->reg_id . "', reg_dla='"
 				. time() . "', reg_info='" . base64_encode(serialize($fields))
 				. "' where reg_lid='$account_lid'",__LINE__,__FILE__);
-
-			
-			
-				
+	
 			$GLOBALS['phpgw']->template->set_file(array(
 				'message' => 'confirm_email.tpl'
 			));
@@ -105,8 +105,10 @@
 			$subject = $config['subject_confirm'] ? lang($config['subject_confirm']) : lang('Account registration');
 			$noreply = $config['mail_nobody'] ? ('No reply <' . $config['mail_nobody'] . '>') : ('No reply <noreply@' . $SERVER_NAME . '>');
 
-			$smtp->msg('email',$fields['email'],$subject,$GLOBALS['phpgw']->template->fp('out','message'),'','','',$noreply);
-
+			if ($send_mail)
+			{
+				$smtp->msg('email',$fields['email'],$subject,$GLOBALS['phpgw']->template->fp('out','message'),'','','',$noreply);
+			}
 			return $this->reg_id;
 		}
 
@@ -288,6 +290,7 @@
 				$accounts->data['expires'] = -1;
 			}
 			$accounts->data['status'] = 'A';
+			$accounts->data['email'] = $fields['email'];
 			$accounts->save_repository();
 
 			#if(@stat(PHPGW_SERVER_ROOT . '/messenger/inc/hook_registration.inc.php'))
