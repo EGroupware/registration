@@ -19,7 +19,7 @@
 	$setup_info['registration']['title']     = 'Registration';
 	$setup_info['registration']['version']   = '0.8.2';
 	$setup_info['registration']['app_order'] = '40';
-	$setup_info['registration']['enable']    = 1;
+	$setup_info['registration']['enable']    = 2;
 
 	/* The tables this app creates */
 	$setup_info['registration']['tables']    = array(

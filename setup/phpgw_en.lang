@@ -34,7 +34,7 @@ immediately	admin	en	Immediately
 male	registration	en	Male
 manage fields	admin	en	Manage Fields
 name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	en	Name (blank unless Text, Textarea, Dropdown, Checkbox; else alphanumeric only)
-not a user yet? register now	registration	en	Not a user yet? Register now
+not a user yet? register now	login	en	Not a user yet? Register now
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	en	On-line registration is not activated. Please contact the site administrator for more information about registration.
 order	registration	en	Order
 password is	admin	en	Password is

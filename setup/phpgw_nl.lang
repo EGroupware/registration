@@ -34,7 +34,7 @@ immediately	admin	nl	Per direct
 male	registration	nl	Man
 manage fields	admin	nl	Beheer invoervelden
 name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	nl	Naam (Laat leeg, tenzij type Text, Textarea, Dropdownmenu of Checkbox is; anders alleen alphanumeriek)
-not a user yet? register now	registration	nl	Nog niet een gebruiker? Registreer dan nu.
+not a user yet? register now	login	nl	Nog niet een gebruiker? Registreer dan nu.
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	nl	On-line registratie is niet geactiveerd. Neem a.u.b. contact op met de beheerder voor meer informatie over het verkrijgen van een eGroupWare-account
 order	registration	nl	Volgorde
 password is	admin	nl	Wachtwoord is
