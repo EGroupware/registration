@@ -2,8 +2,8 @@
 	/**************************************************************************\
 	* phpGroupWare - Registration                                              *
 	* http://www.phpgroupware.org                                              *
-	* This file written by Jason Wies (Zone) <zone@users.sourceforge.net>	   *
-	* Based on calendar/inc/class.soholiday.inc.php by Mark Peters	            *
+	* This file written by Jason Wies (Zone) <zone@users.sourceforge.net>      *
+	* Based on calendar/inc/class.soholiday.inc.php by Mark Peters             *
 	* --------------------------------------------                             *
 	*  This program is free software; you can redistribute it and/or modify it *
 	*  under the terms of the GNU General Public License as published by the   *
@@ -21,9 +21,7 @@
 
 		function somanagefields()
 		{
-			global $phpgw;
-
-			$this->db = $phpgw->db;
+			$this->db = $GLOBALS['phpgw']->db;
 
 			$this->db_fields = array ('field_name', 'field_text', 'field_type', 'field_values', 'field_required', 'field_order');
 		}
@@ -41,7 +39,9 @@
 			while (list ($num, $field) = each ($this->db_fields))
 			{
 				if ($num)
+				{
 					$sql .= ", ";
+				}
 				$sql .= "$field='$field_info[$field]'";
 			}
 
@@ -73,8 +73,8 @@
 				$sql2 .= "'$field_info[$field]'";
 			}
 
-			$sql .= ") VALUES ";
-			$sql2 .= ")";
+			$sql  .= ') VALUES ';
+			$sql2 .= ')';
 
 			$sql .= $sql2;
 
@@ -98,7 +98,9 @@
 			while (list ($num, $db_field_name) = each ($this->db_fields))
 			{
 				if ($num)
-					$sql .= ", ";
+				{
+					$sql .= ', ';
+				}
 				$sql .= $db_field_name;
 			}
 

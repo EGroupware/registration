@@ -3,8 +3,8 @@
 	* phpGroupWare - Registration                                              *
 	* http://www.phpgroupware.org                                              *
 	* This application written by Joseph Engo <jengo@phpgroupware.org>         *
-	* Modified by Jason Wies (Zone) <zone@users.sourceforge.net>		   *
-	* Modified by Loic Dachary <loic@gnu.org>				   *
+	* Modified by Jason Wies (Zone) <zone@users.sourceforge.net>               *
+	* Modified by Loic Dachary <loic@gnu.org>                                  *
 	* --------------------------------------------                             *
 	* Funding for this program was provided by http://www.checkwithmom.com     *
 	* --------------------------------------------                             *
@@ -40,7 +40,7 @@
 
 		function step1()
 		{
-			global $phpgw, $config, $r_reg;
+			global $config, $r_reg;
 
 			$so = createobject('registration.soreg');
 
@@ -61,14 +61,14 @@
 			}
 			else
 			{
-				$phpgw->session->appsession('loginid','registration',$r_reg['loginid']);
+				$GLOBALS['phpgw']->session->appsession('loginid','registration',$r_reg['loginid']);
 				$ui->step2();
 			}
 		}
 
 		function step2()
 		{
-			global $phpgw, $config, $r_reg, $o_reg, $PHP_AUTH_USER, $PHP_AUTH_PW;
+			global $config, $r_reg, $o_reg, $PHP_AUTH_USER, $PHP_AUTH_PW;
 			//echo '<pre>'; print_r($r_reg); echo '</pre>';
 
 			if ($config['password_is'] == 'http')
@@ -158,7 +158,7 @@
 						while (list (,$value) = each ($values))
 						{
 							if ($value == $post_value)
-			{
+							{
 								$ok = 1;
 							}
 						}
@@ -202,7 +202,7 @@
 			else
 			{
 				// Redirect them so they don't hit refresh and make a mess
-				$phpgw->redirect($phpgw->link('/registration/main.php','menuaction=registration.uireg.ready_to_activate&reg_id=' . $reg_id));
+				$GLOBALS['phpgw']->redirect($GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.uireg.ready_to_activate&reg_id=' . $reg_id));
 			}
 		}
 
@@ -233,7 +233,7 @@
 		//
 		function lostpw1()
 		{
-			global $phpgw, $r_reg;
+			global $r_reg;
 
 			$so = createobject('registration.soreg');
 
@@ -242,7 +242,7 @@
 				$errors[] = lang('You must enter a username');
 			}
 
-			if (! is_array($errors) && !$phpgw->accounts->exists($r_reg['loginid']))
+			if (! is_array($errors) && !$GLOBALS['phpgw']->accounts->exists($r_reg['loginid']))
 			{
 				$errors[] = lang('Sorry, that username does not exist.');
 			}
@@ -264,7 +264,7 @@
 			else
 			{
 				// Redirect them so they don't hit refresh and make a mess
-				$phpgw->redirect($phpgw->link('/registration/main.php','menuaction=registration.uireg.email_sent_lostpw'));
+				$GLOBALS['phpgw']->redirect($GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.uireg.email_sent_lostpw'));
 			}
 		}
 
@@ -296,9 +296,9 @@
 		//
 		function lostpw3()
 		{
-			global $r_reg, $phpgw;
+			global $r_reg;
 
-			$lid = $phpgw->session->appsession('loginid','registration');
+			$lid = $GLOBALS['phpgw']->session->appsession('loginid','registration');
 			if(!$lid) {
 			  $error[] = lang('Wrong session');
 			}
@@ -335,7 +335,7 @@
 
 		function check_select_username ()
 		{
-			global $phpgw, $config, $PHP_AUTH_USER;
+			global $config, $PHP_AUTH_USER;
 
 			if ($config['username_is'] == 'choice')
 			{
@@ -349,7 +349,7 @@
 				}
 				else
 				{
-					$phpgw->redirect ($phpgw->link ('/registration/main.php', 'menuaction=registration.boreg.step1&r_reg[loginid]=' . $PHP_AUTH_USER));
+					$GLOBALS['phpgw']->redirect ($GLOBALS['phpgw']->link ('/registration/main.php', 'menuaction=registration.boreg.step1&r_reg[loginid]=' . $PHP_AUTH_USER));
 				}
 			}
 
@@ -358,7 +358,7 @@
 
 		function check_select_password ()
 		{
-			global $phpgw, $config, $PHP_AUTH_PW;
+			global $config, $PHP_AUTH_PW;
 
 			if ($config['password_is'] == 'choice')
 			{

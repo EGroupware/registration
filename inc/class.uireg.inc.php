@@ -3,8 +3,8 @@
 	* phpGroupWare - Registration                                              *
 	* http://www.phpgroupware.org                                              *
 	* This application written by Joseph Engo <jengo@phpgroupware.org>         *
-	* Modified by Jason Wies (Zone) <zone@users.sourceforge.net>		   *
-	* Modified by Loic Dachary <loic@gnu.org>				   *
+	* Modified by Jason Wies (Zone) <zone@users.sourceforge.net>               *
+	* Modified by Loic Dachary <loic@gnu.org>                                  *
 	* --------------------------------------------                             *
 	* Funding for this program was provided by http://www.checkwithmom.com     *
 	* --------------------------------------------                             *
@@ -23,21 +23,19 @@
 		var $fields;
 		var $bo;
 		var $public_functions = array(
-			'step1'      => True,
-			'step2'      => True,
-			'lostpw1'           => True,
-			'lostpw3'   	    => True,
-			'lostpw4'   	    => True,
+			'step1'   => True,
+			'step2'   => True,
+			'lostpw1' => True,
+			'lostpw3' => True,
+			'lostpw4' => True,
 			'ready_to_activate' => True,
 			'email_sent_lostpw' => True,
-			'tos'        => True
+			'tos'     => True
 		);
 
 		function uireg()
 		{
-			global $phpgw;
-
-			$this->template = $phpgw->template;
+			$this->template = $GLOBALS['phpgw']->template;
 			$this->bo = createobject ('registration.boreg');
 			$this->bomanagefields = createobject ('registration.bomanagefields');
 			$this->fields = $this->bomanagefields->get_field_list ();
@@ -47,7 +45,7 @@
 		{
 			$this->template->set_file(array(
 				'_layout' => 'layout.tpl'
-			));		
+			));
 			$this->template->set_block('_layout','header');
 			$this->template->set_block('_layout','footer');
 		}
@@ -61,16 +59,16 @@
 
 		function footer()
 		{
-			$this->template->pfp('out','footer');		
+			$this->template->pfp('out','footer');
 		}
 
 		function step1($errors = '',$r_reg = '',$o_reg = '')
 		{
-			global $phpgw, $config;
+			global $config;
 
 			if ($errors && $config['username_is'] == 'http')
 			{
-				$this->simple_screen ('error_general.tpl', $phpgw->common->error_list ($errors));
+				$this->simple_screen ('error_general.tpl', $GLOBALS['phpgw']->common->error_list ($errors));
 			}
 
 			$show_username_prompt = True;
@@ -78,7 +76,7 @@
 			$select_username = $this->bo->check_select_username ();
 			if (!$select_username || is_string ($select_username))
 			{
-				$this->simple_screen ('error_general.tpl', $phpgw->common->error_list (array ($select_username)));
+				$this->simple_screen ('error_general.tpl', $GLOBALS['phpgw']->common->error_list (array ($select_username)));
 			}
 
 			$this->header();
@@ -89,10 +87,10 @@
 
 			if ($errors)
 			{
-				$this->template->set_var('errors',$phpgw->common->error_list($errors));
+				$this->template->set_var('errors',$GLOBALS['phpgw']->common->error_list($errors));
 			}
 
-			$this->template->set_var('form_action',$phpgw->link('/registration/main.php','menuaction=registration.boreg.step1'));
+			$this->template->set_var('form_action',$GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.boreg.step1'));
 			$this->template->set_var('lang_username',lang('Username'));
 			$this->template->set_var('lang_submit',lang('Submit'));
 
@@ -103,7 +101,7 @@
 
 		function step2($errors = '',$r_reg = '',$o_reg = '',$missing_fields='')
 		{
-			global $phpgw, $phpgw_info, $config;
+			global $config;
 
 			$show_password_prompt = True;
 			$select_password = $this->bo->check_select_password ();
@@ -124,7 +122,7 @@
 
 			if ($errors)
 			{
-				$this->template->set_var('errors',$phpgw->common->error_list($errors));
+				$this->template->set_var('errors',$GLOBALS['phpgw']->common->error_list($errors));
 			}
 
 			if ($missing_fields)
@@ -154,7 +152,7 @@
 				}
 			}
 
-			$this->template->set_var('form_action',$phpgw->link('/registration/main.php','menuaction=registration.boreg.step2'));
+			$this->template->set_var('form_action',$GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.boreg.step2'));
 			$this->template->set_var('lang_password',lang('Password'));
 			$this->template->set_var('lang_reenter_password',lang('Re-enter password'));
 			$this->template->set_var('lang_submit',lang('Submit'));
@@ -171,11 +169,11 @@
 			{
 				$input_field = $this->get_input_field ($field_info, $post_values);
 				$var = array (
-					'missing_indicator'	=> $missing[$field_info['field_name']] ? '<font color="#CC0000">*</font>' : '',
-					'bold_start'	=> $field_info['field_required'] == 'Y' ? '<b>' : '',
-					'bold_end'	=> $field_info['field_required'] == 'Y' ? '</b>' : '',
-					'lang_displayed_text'	=> lang ($field_info['field_text']),
-					'input_field'	=> $input_field
+					'missing_indicator' => $missing[$field_info['field_name']] ? '<font color="#CC0000">*</font>' : '',
+					'bold_start'  => $field_info['field_required'] == 'Y' ? '<b>' : '',
+					'bold_end'    => $field_info['field_required'] == 'Y' ? '</b>' : '',
+					'lang_displayed_text' => lang ($field_info['field_text']),
+					'input_field' => $input_field
 				);
 
 				$this->template->set_var ($var);
@@ -185,7 +183,7 @@
 
 			if ($config['display_tos'])
 			{
-			$this->template->set_var('tos_link',$phpgw->link('/registration/main.php','menuaction=registration.uireg.tos'));
+			$this->template->set_var('tos_link',$GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.uireg.tos'));
 			$this->template->set_var('lang_tos_agree',lang('I have read the terms and conditions and agree by them.'));
 				if ($r_reg['tos_agree'])
 				{
@@ -206,8 +204,6 @@
 		//
 		function lostpw1($errors = '',$r_reg = '')
 		{
-			global $phpgw;
-
 			$this->header();
 			$this->template->set_file(array(
 				'_lostpw_select' => 'lostpw_select.tpl'
@@ -216,10 +212,10 @@
 
 			if ($errors)
 			{
-				$this->template->set_var('errors',$phpgw->common->error_list($errors));
+				$this->template->set_var('errors',$GLOBALS['phpgw']->common->error_list($errors));
 			}
 
-			$this->template->set_var('form_action',$phpgw->link('/registration/main.php','menuaction=registration.boreg.lostpw1'));
+			$this->template->set_var('form_action',$GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.boreg.lostpw1'));
 			$this->template->set_var('lang_explain',lang('After you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.'));
 			$this->template->set_var('lang_username',lang('Username'));
 			$this->template->set_var('lang_submit',lang('Submit'));
@@ -233,8 +229,6 @@
 		//
 		function lostpw3($errors = '',$r_reg = '',$lid = '')
 		{
-			global $phpgw;
-
 			$this->header();
 			$this->template->set_file(array(
 				'_lostpw_change' => 'lostpw_change.tpl'
@@ -243,10 +237,10 @@
 
 			if ($errors)
 			{
-				$this->template->set_var('errors',$phpgw->common->error_list($errors));
+				$this->template->set_var('errors',$GLOBALS['phpgw']->common->error_list($errors));
 			}
 
-			$this->template->set_var('form_action',$phpgw->link('/registration/main.php','menuaction=registration.boreg.lostpw3'));
+			$this->template->set_var('form_action',$GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.boreg.lostpw3'));
 			$this->template->set_var('value_username', $lid);
 			$this->template->set_var('lang_changepassword',lang("Change password for user"));
 			$this->template->set_var('lang_enter_password',lang('Enter your new password'));
@@ -262,16 +256,14 @@
 		//
 		function lostpw4()
 		{
-			global $phpgw_info;
-
 			$this->header();
 			$this->template->set_file(array(
 				'screen' => 'lostpw_changed.tpl'
 			));
-			$this->template->set_var('login_url',$phpgw_info['server']['webserver_url']);
+			$this->template->set_var('login_url',$GLOBALS['phpgw_info']['server']['webserver_url']);
 
 			$this->template->pfp('out','screen');
-			$this->footer();		
+			$this->footer();
 		}
 
 		function get_input_field ($field_info, $post_values)
@@ -301,11 +293,17 @@
 			}
 
 			if ($required == 'Y')
+			{
 				$a = 'r_reg';
+			}
 			else
+			{
 				$a = 'o_reg';
+			}
 
-			if ($type == 'text' || $type == 'email' || $type == 'first_name' || $type == 'last_name' || $type == 'address' || $type == 'city' || $type == 'zip' || $type == 'phone')
+			if ($type == 'text' || $type == 'email' || $type == 'first_name' ||
+				$type == 'last_name' || $type == 'address' || $type == 'city' ||
+				$type == 'zip' || $type == 'phone')
 			{
 				$rstring = '<input type=text name="' . $a . '[' . $name . ']" value="' . $post_value . '">';
 			}
@@ -323,8 +321,7 @@
 				}
 				else
 				{
-					$rstring = '<select name="' . $a . '[' . $name . ']">
-							<option value=""> </option>';
+					$rstring = '<select name="' . $a . '[' . $name . ']"><option value=""> </option>';
 					while (list (,$value) = each ($values))
 					{
 						$value = trim ($value);
@@ -335,7 +332,7 @@
 							$selected = "selected";
 						}
 
-						$rstring .= '<option value="' . $value . '" ' .  $selected . '>' . $value . '</option>';
+						$rstring .= '<option value="' . $value . '" ' . $selected . '>' . $value . '</option>';
 					}
 
 					$rstring .= "</select>";
@@ -348,7 +345,7 @@
 				if ($post_value)
 					$checked = "checked";
 
-				$rstring = '<input type=checkbox name="' . $a . '[' .  $name . ']" ' . $checked . '>';
+				$rstring = '<input type=checkbox name="' . $a . '[' . $name . ']" ' . $checked . '>';
 			}
 
 			if ($type == 'birthday' || $type == 'state' || $type == 'country')
@@ -395,35 +392,34 @@
 
 		function ready_to_activate()
 		{
-			global $phpgw, $config, $reg_id;
+			global $config, $reg_id;
 
 			if ($config['activate_account'] == 'email')
-		{
-			$this->simple_screen('confirm_email_sent.tpl');
-		}
-			else	/* ($config['activate_account'] == 'immediately') */
 			{
-				$phpgw->redirect($phpgw->link('/registration/main.php','menuaction=registration.boreg.step4&reg_id=' . $reg_id));
+				$this->simple_screen('confirm_email_sent.tpl');
+			}
+			else
+			{
+				/* ($config['activate_account'] == 'immediately') */
+				$GLOBALS['phpgw']->redirect($GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.boreg.step4&reg_id=' . $reg_id));
 			}
 		}
 
 		function email_sent_lostpw()
 		{
 			$this->simple_screen('confirm_email_sent_lostpw.tpl');
- 		}
+		}
 
 		function welcome_screen()
 		{
-			global $phpgw_info;
-
 			$this->header();
 			$this->template->set_file(array(
 				'screen' => 'welcome_message.tpl'
 			));
-			$this->template->set_var('login_url',$phpgw_info['server']['webserver_url']);
+			$this->template->set_var('login_url',$GLOBALS['phpgw_info']['server']['webserver_url']);
 
 			$this->template->pfp('out','screen');
-			$this->footer();		
+			$this->footer();
 		}
 
 		function tos()

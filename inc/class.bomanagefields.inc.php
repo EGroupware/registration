@@ -2,8 +2,8 @@
 	/**************************************************************************\
 	* phpGroupWare - Registration                                              *
 	* http://www.phpgroupware.org                                              *
-	* This file written by Jason Wies (Zone) <zone@users.sourceforge.net>	   *
-	* Based on calendar/inc/class.boholiday.inc.php by Mark Peters	            *
+	* This file written by Jason Wies (Zone) <zone@users.sourceforge.net>    *
+	* Based on calendar/inc/class.boholiday.inc.php by Mark Peters             *
 	* --------------------------------------------                             *
 	*  This program is free software; you can redistribute it and/or modify it *
 	*  under the terms of the GNU General Public License as published by the   *
@@ -16,7 +16,7 @@
 	class bomanagefields
 	{
 		var $public_functions = Array(
-			'get_field_list'	=> True
+			'get_field_list' => True
 		);
 
 		var $debug = False;
@@ -27,8 +27,6 @@
 		
 		function bomanagefields()
 		{
-			global $phpgw_info;
-
 			$this->so = CreateObject ('registration.somanagefields');
 			$this->fields = $this->get_field_list ();
 		}
@@ -38,17 +36,17 @@
 			$current_fields = $this->get_field_list ();
 
 			$name_transforms = array (
-				'email'	=> 'email',
-				'first_name'	=> 'n_given',
-				'last_name'	=> 'n_family',
-				'address'	=> 'adr_one_street',
-				'city'	=> 'adr_one_locality',
-				'state'	=> 'adr_one_region',
-				'zip'	=> 'adr_one_postalcode',
-				'country'	=> 'adr_one_countryname',
-				'gender'	=> 'gender',
-				'phone'	=> 'tel_work',
-				'birthday'	=> 'bday'
+				'email'      => 'email',
+				'first_name' => 'n_given',
+				'last_name'  => 'n_family',
+				'address'    => 'adr_one_street',
+				'city'       => 'adr_one_locality',
+				'state'      => 'adr_one_region',
+				'zip'        => 'adr_one_postalcode',
+				'country'    => 'adr_one_countryname',
+				'gender'     => 'gender',
+				'phone'      => 'tel_work',
+				'birthday'  => 'bday'
 			);
 
 			reset ($fields);
@@ -155,7 +153,7 @@
 			if ($post_vars['reg_new_name'] != 'reg_new' && !$post_vars['reg_new_remove'])
 			{
 				$this->fields[$post_vars['reg_new_name']] = array (
-					'field_name'	=> 'reg_new'
+					'field_name' => 'reg_new'
 				);
 			}
 
@@ -174,14 +172,14 @@
 					{
 						unset ($this->fields[$name]);
 					}
-	
+
 					$updated_field_info = array (
-						'field_name'	=> $post_vars[$name . '_name'],
-						'field_text'	=> $post_vars[$name . '_text'],
-						'field_type'	=> $post_vars[$name . '_type'],
-						'field_values'	=> $post_vars[$name . '_values'],
-						'field_required'	=> $post_vars[$name . '_required'] ? 'Y' : 'N',
-						'field_order'	=> $post_vars[$name . '_order']
+						'field_name'   => $post_vars[$name . '_name'],
+						'field_text'   => $post_vars[$name . '_text'],
+						'field_type'   => $post_vars[$name . '_type'],
+						'field_values' => $post_vars[$name . '_values'],
+						'field_required' => $post_vars[$name . '_required'] ? 'Y' : 'N',
+						'field_order'  => $post_vars[$name . '_order']
 					);
 
 					$this->fields[$post_vars[$name . '_name']] = $updated_field_info;
@@ -209,8 +207,6 @@
 
 		function check_admin()
 		{
-			global $phpgw, $phpgw_info;
-
 			$admin = False;
 			if (@$phpgw_info['user']['apps']['admin'])
 			{
