@@ -24,6 +24,7 @@ enable registration?	admin	fr	Activer l'Enregistrement?
 enter your new password	registration	fr	Entrez votre nouveau mot de passe
 female	registration	fr	Féminin
 gender	registration	fr	Genre
+hi	registration	fr	Bonjour
 http password	admin	fr	Mot de passe HTTP
 http username	admin	fr	Utilisateur HTTP
 i have read the terms and conditions and agree by them.	registration	fr	J'ai lu les termes et conditions et je les accepte.
@@ -76,4 +77,5 @@ you must enter a username	registration	fr	Vous devez entrer un nom d'utilisateur
 you must fill in all of the required fields	registration	fr	Vous devez remplir tous les champs demandés
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	fr	Vous avez demandé de changer votre mot de passe. Veuillez svp suivre l'URL ci-dessous pour le faire. Cette URL expirera dans 2 heures. Passé ce délai, vous devrez recommencer la procédure de récupération de mot de passe.
 you specified a value for	registration	fr	Vous avez spécifié une valeur pour
+you specified a value for %1 that is not a choice	registration	fr	Vous avez specifié une valeur pour %1 mais ce n'est pas un choix possible
 zip/postal	registration	fr	Code Postal
