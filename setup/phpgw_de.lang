@@ -53,7 +53,7 @@ sorry, we are having a problem activating your account. note that links sent by 
 state	registration	de	Status
 subject for confirmation email	admin	de	Betreff für bestätigungs Email
 terms of service	registration	de	Nutzungsbedingungen
-terms of service text	admin	de	Nutzungsbedingungen Inhalt
+terms of service text	admin	de	Inhalt der Nutzungsbedingungen 
 text	registration	de	Text
 textarea	registration	de	Textfeld
 the passwords you entered don't match	registration	de	Die von Ihnen eingegebenen Passworte stimmen nicht überein.
