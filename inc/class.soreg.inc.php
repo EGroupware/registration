@@ -39,7 +39,7 @@
 //			echo "<br>";
 //			echo time();
 			
-			if (  $GLOBALS['phpgw']->accounts->exists($account_lid) || ( $this->db->f(0) && (time()-$this->db->f(0))<3600  ))
+			if (  $GLOBALS['phpgw']->accounts->exists($account_lid) || ( $this->db->f(0) && (time()-$this->db->f(0))<1800  ))
 			{
 				$GLOBALS['phpgw']->db->unlock();
 				$this->db->unlock();
