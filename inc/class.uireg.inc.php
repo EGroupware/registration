@@ -132,7 +132,7 @@
 				while (list(,$field) = each($missing_fields))
 				{
 					$missing[$field] = True;
-					$this->template->set_var('missing_' . $field,'<font color="CC0000">*</font>');
+					$this->template->set_var('missing_' . $field,'<font color="#CC0000">*</font>');
 				}
 			}
 
@@ -171,7 +171,7 @@
 			{
 				$input_field = $this->get_input_field ($field_info, $post_values);
 				$var = array (
-					'missing_indicator'	=> $missing[$field_info['field_name']] ? '<font color="CC0000">*</font>' : '',
+					'missing_indicator'	=> $missing[$field_info['field_name']] ? '<font color="#CC0000">*</font>' : '',
 					'bold_start'	=> $field_info['field_required'] == 'Y' ? '<b>' : '',
 					'bold_end'	=> $field_info['field_required'] == 'Y' ? '</b>' : '',
 					'lang_displayed_text'	=> lang ($field_info['field_text']),
