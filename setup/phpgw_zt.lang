@@ -1,4 +1,4 @@
-account password retrieval	registration	zt	索得帳號密碼
+account password retrieval	registration	zt	取得帳號密碼
 account registration	registration	zt	註冊帳號
 activate account	admin	zt	啟用帳號
 address	registration	zt	住址
@@ -17,6 +17,7 @@ current fields:	registration	zt	目前欄位：
 days until trial accounts expire	admin	zt	試用帳號過期日
 display terms of service?	admin	zt	顯示所有服務？
 dropdown	registration	zt	下拉式選單
+egroupware - account registration	registration	zt	eGroupWare - 帳號註冊
 email address to display for support	admin	zt	客服信箱
 email address to send notices from	admin	zt	系統訊息寄件人
 enable registration?	admin	zt	啟用註冊功能？
@@ -38,6 +39,7 @@ on-line registration is not activated. please contact the site administrator for
 order	registration	zt	排序
 password is	admin	zt	密碼
 phone	registration	zt	聯絡電話
+phpgroupware - account registration	registration	zt	EGROUPWARE - 帳號註冊
 re-enter password	registration	zt	重新輸入密碼
 re-enter your password	registration	zt	重新輸入您的密碼
 register link at login screen?	admin	zt	在登入視窗顯示註冊連結？
