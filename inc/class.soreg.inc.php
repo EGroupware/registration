@@ -36,14 +36,15 @@
 
 			if ($phpgw->accounts->exists($account_lid) || $this->db->f(0))
 			{
+				$this->db->unlock();
 				return True;
 			}
 			else
 			{
 				// To prevent race conditions, reserve the account_lid
 				$this->db->query("insert into phpgw_reg_accounts values ('','$account_lid','','" . time() . "')",__LINE__,__FILE__);
-				$phpgw->session->appsession('loginid','registration',$account_lid);
 				$this->db->unlock();
+				$phpgw->session->appsession('loginid','registration',$account_lid);
 				return False;
 			}
 		}
