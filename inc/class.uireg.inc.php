@@ -228,6 +228,8 @@
 			));
 			$this->template->set_block('_personal_info','form');
 			$this->template->set_var('lang_code',$this->lang_code);
+			$this->template->set_var('lang_username',lang('Username'));
+			$this->template->set_var('value_username',$GLOBALS['phpgw']->session->appsession('loginid','registration'));
 
 			if ($errors)
 			{
@@ -246,8 +248,7 @@
 			if (is_array($r_reg))
 			{
 				while (list($name,$value) = each($r_reg))
-				{
-					$post_values[$name] = $value;
+				{				$post_values[$name] = $value;
 					$this->template->set_var('value_' . $name,$value);
 				}
 			}

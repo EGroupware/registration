@@ -81,6 +81,7 @@
 			{
 				$GLOBALS['phpgw']->session->appsession('loginid','registration',$r_reg['loginid']);
 				
+				
 				$ui->step2();
 			}
 		}

@@ -30,11 +30,16 @@
 		function account_exists($account_lid)
 		{
 			$this->db->lock('phpgw_reg_accounts');
-			$this->db->query("select count(*) from phpgw_reg_accounts where reg_lid='$account_lid'",__LINE__,__FILE__);
+			$this->db->query("select `reg_dla` from phpgw_reg_accounts where reg_lid='$account_lid'",__LINE__,__FILE__);
 			$this->db->next_record();
 
 			$GLOBALS['phpgw']->db->lock('phpgw_accounts');
-			if ($GLOBALS['phpgw']->accounts->exists($account_lid) || $this->db->f(0))
+			
+//			echo (time()-$this->db->f(0));
+//			echo "<br>";
+//			echo time();
+			
+			if (  $GLOBALS['phpgw']->accounts->exists($account_lid) || ( $this->db->f(0) && (time()-$this->db->f(0))<3600  ))
 			{
 				$GLOBALS['phpgw']->db->unlock();
 				$this->db->unlock();

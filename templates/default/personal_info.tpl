@@ -26,6 +26,11 @@
 <table border="0" width="95%" align="center">
 <!-- BEGIN password -->
   <tr>
+  <td width="1%"></td>
+  <td><b>{lang_username}</b></td>
+  <td>{value_username}</td>
+ </tr>
+ <tr>
    <td width="1%">{missing_passwd}</td>
    <td><b>{lang_password}</b></td>
    <td><input type="password" name="r_reg[passwd]" value="{value_passwd}"></td>
