@@ -59,12 +59,11 @@
 		function step2($fields,$send_mail=True)
 		{
 			global $config;
-
 			$smtp = createobject('phpgwapi.send');
 
 			// We are not going to use link(), because we may not have the same sessionid by that time
 			// If we do, it will not affect it
-			$url = $GLOBALS['phpgw_info']['server']['webserver_url'] . "/registration/main.php";
+			$url = $GLOBALS['phpgw_info']['server']['hostname'] . "/registration/main.php";
 			if (substr($url,0,4) != 'http')
 			{
 				$url = ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $url;
@@ -108,7 +107,13 @@
 
 			if ($send_mail)
 			{
-				$smtp->msg('email',$fields['email'],$subject,$GLOBALS['phpgw']->template->fp('out','message'),'','','',$noreply);
+				$ret = $smtp->msg('email',$fields['email'],$subject,$GLOBALS['phpgw']->template->fp('out','message'),'','','',$noreply);
+				if ($ret != True)
+				{
+					print(lang("Problem Sending Email:").$smtp->desc) ;
+					print(lang("<br>Please Contact the site administrator.")) ;
+					exit() ;
+				}
 			}
 			return $this->reg_id;
 		}
@@ -119,9 +124,8 @@
 		function lostpw1($account_lid)
 		{
 			global $config;
-
-//			$url = $GLOBALS['phpgw_info']['server']['webserver_url'] . "/registration/main.php";
- 			$url = ($_SERVER['HTTPS'] ? 'https://' : 'http://').$GLOBALS['phpgw_info']['server']['hostname'] . "/registration/main.php";
+			
+			$url = ($_SERVER['HTTPS'] ? 'https://' : 'http://').$GLOBALS['phpgw_info']['server']['hostname'] . "/registration/main.php";
 
 			$error = '';
 
@@ -163,11 +167,17 @@
 				$subject = $config['subject_lostpw'] ? lang($config['subject_lostpw']) : lang('Account password retrieval');
 				$noreply = $config['mail_nobody'] ? ('No reply <' . $config['mail_nobody'] . '>') : ('No reply <noreply@' . $_SERVER['SERVER_NAME'] . '>');
 
-				$smtp->msg('email',$info['email'],$subject,$GLOBALS['phpgw']->template->fp('out','message'),'','','',$noreply);
+				$ret = $smtp->msg('email',$info['email'],$subject,$GLOBALS['phpgw']->template->fp('out','message'),'','','',$noreply);
+				if ($ret != True)
+				{
+					print(lang("Problem Sending Email:").$smtp->desc) ;
+					print(lang("<br>Please Contact the site administrator.")) ;
+					exit() ;
+				}
 			}
 			else
 			{
-				$error = "Account $account_lid record could not be found, report to site administrator";
+				$error = lang("Account $account_lid record could not be found, report to site administrator");
 			}
 
 			return $error;
@@ -378,7 +388,11 @@
 			
 			$ret = $smtp->msg('email',$info['email'],$subject,$GLOBALS['phpgw']->template->fp('out','message'),'','','',$noreply);
 			if ($ret != true)
-				$error = lang('unable to send email, contact your administrator.') ;
+				{
+					print(lang("Problem Sending Email:").$smtp->desc) ;
+					print(lang("<br>Please Contact the site administrator.")) ;
+					exit() ;
+				}
 			return $error;
 		}
 	}

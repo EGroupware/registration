@@ -1,5 +1,4 @@
-These are quick and simple instructions on how to install and use this app.  The more in depth
-ones will follow soon.
+These are quick and simple instructions on how to install and use this app.
 
 First, use setup3 to create your tables.
 
@@ -29,8 +28,3 @@ contains something like:
 
 INSERT INTO phpgw_config VALUES ('phpgwapi','smtp_server','localhost');
 INSERT INTO phpgw_config VALUES ('phpgwapi','smtp_port','25');
-
-The URI's you can use for linking:
-
-Registration: <a href="http://yoursite.com/registration/" target="_NEW">http://yoursite.com/registration/</a>
-Password Retrieval: <a href="http://yoursite.com/registration/main.php?menuaction=registration.boreg.lostpw1" target="_NEW">http://yoursite.com/registration/main.php?menuaction=registration.boreg.lostpw1</a>

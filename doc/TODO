@@ -1,11 +1,9 @@
-This is most a brain dump of what needs to be done:
+TODOs for registration app:
 - (!) Error checking
 - Cleaner layout
 - (!) Check for invailed char in certain fields, eg loginid
-- Fix numeric password bug (01234==1234)
 - Add challange question option to lostpw confirmation
-= Determin how to suppress lang(*) in admin defined fields
 - Add smart address entry (check with address book)
-= Set defau;t input fields for all pages (so that the cursor is in the right field)
-- Add Lost login id 
-- Lang settings for email conformations(s), add if blank notice
+- Add a user level account administration page (check with address book)
+- Add changes (registration,lostpw, and lost user id) to sitemgr login
+- Automatic change password needs to be added with grace period (not using email)
