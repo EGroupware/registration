@@ -125,11 +125,11 @@
 
 				if ($type == 'email')
 				{
-					if ($post_value && (!ereg ('@', $post_value) || ! ereg ('\.', $post_value)))
+					if ($post_value && (!ereg ('@', $post_value) || ! ereg ("\.", $post_value)))
 					{
 						if ($required == 'Y')
 						{
-							$errors[] = lang('You have entered an invaild email address');
+							$errors[] = lang('You have entered an invalid email address');
 							$missing_field[] = $name;
 						}
 					}
