@@ -17,7 +17,7 @@ days until trial accounts expire	admin	de	Nach wieviel Tagen verfällt der Testzu
 display terms of service?	admin	de	Nutzungsbedingungen anzeigen
 dropdown	registration	de	
 egroupware - account registration	registration	de	eGroupWare - Benutzerkonto Registrierung
-email address to display for support	admin	de	Email Adresse welche für den Support angezeit werden soll
+email address to display for support	admin	de	Email Adresse welche für den Support benutzt werden soll
 email address to send notices from	admin	de	Email Adresse an welche Informationen gesendet werden sollen
 enable registration?	admin	de	Registrierung einschalten
 enter your new password	registration	de	Bitte geben Sie das neue Passwort ein.
