@@ -20,6 +20,8 @@
 	** session for it.
 	*/
 
+	$GLOBALS['sessionid'] = get_var('sessionid',Array('COOKIE','GET'));
+
 	// Note: This is current not a drop in install, it requires some manual installation
 	//       Take a look at the README file
 	$domain         = 'default';
