@@ -11,14 +11,13 @@
 	*  Free Software Foundation; either version 2 of the License, or (at your  *
 	*  option) any later version.                                              *
 	\**************************************************************************/
-
 	/* $Id$ */
 
-	$title = $appname;
-	$file = Array(
+	$file = Array
+	(
 		'Site Configuration'	=> $GLOBALS['phpgw']->link('/index.php', 'menuaction=admin.uiconfig.index&appname=' . $appname),
 		'Manage Fields'      => $GLOBALS['phpgw']->link ('/index.php', 'menuaction=' . $appname . '.uimanagefields.admin')
 	);
 
-	display_section($appname,$title,$file);
+	display_section($appname,$file);
 ?>
