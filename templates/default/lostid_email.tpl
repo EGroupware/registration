@@ -1,8 +1,8 @@
-{Hi} {firstname}{lastname},
+{hi} {firstname} {lastname},
 
 {message1}
-	
-	{activate_url}
+
+{lostids}
 
 {message2}
 

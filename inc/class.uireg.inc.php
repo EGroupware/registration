@@ -31,6 +31,7 @@
 			'lostpw1' => True,
 			'lostpw3' => True,
 			'lostpw4' => True,
+			'lostid1' => True,
 			'ready_to_activate' => True,
 			'email_sent_lostpw' => True,
 			'tos'     => True
@@ -44,6 +45,13 @@
 			$this->fields = $this->bomanagefields->get_field_list ();
 
 			$this->set_lang_code();
+			$var = Array (
+				'website_title' => $GLOBALS['phpgw_info']['server']['site_title'] .'[Registration]',
+				'img_icon' => '../phpgwapi/images/'. $GLOBALS['phpgw_info']['server']['login_logo_file'],
+				'logo_url' => $GLOBALS['phpgw_info']['server']['login_logo_url'],
+				'logo_title' => $GLOBALS['phpgw_info']['server']['login_logo_title'],
+			) ;
+			$this->template->set_var($var) ;
 		}
 
 
@@ -95,7 +103,7 @@
 			}
 			else
 			{
-				$this->template->set_var('lang_header',lang('eGroupWare - Account registration'));
+				$this->template->set_var('lang_header',$GLOBALS['phpgw_info']['server']['site_title'].' - '.lang('Account registration'));
 			}
 
 			$this->template->pfp('out','header');
@@ -325,7 +333,8 @@
 			{
 				$this->template->set_var('errors',$GLOBALS['phpgw']->common->error_list($errors));
 			}
-
+			
+			$this->template->set_var('lang_lost_password',lang('Lost Password')) ;
 			$this->template->set_var('form_action',$GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.boreg.lostpw1'));
 			$this->template->set_var('lang_explain',lang('After you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.'));
 			$this->template->set_var('lang_username',lang('Username'));
@@ -372,14 +381,35 @@
 				'screen' => 'lostpw_changed.tpl'
 			));
 
-			$message=lang('Your password was changed. You can go back to the <a href="%1">login</a> page.',$GLOBALS['phpgw_info']['server']['webserver_url']);
-
+			$message=lang('Your password was changed. You can go back to the <a href="%1">login</a> page.',($_SERVER['HTTPS'] ? 'https://' : 'http://').$GLOBALS['phpgw_info']['server']['hostname']) ;
 			$this->template->set_var('message',$message);
 
 			$this->template->pfp('out','screen');
 			$this->footer();
 		}
 
+		function lostid1($errors = '',$r_reg = '')
+		{
+			$this->header();
+			$this->template->set_file(array(
+				'_lostid_select' => 'lostid_select.tpl'
+			));
+			$this->template->set_block('_lostid_select','form');
+
+			if ($errors)
+			{
+				$this->template->set_var('errors',$GLOBALS['phpgw']->common->error_list($errors));
+			}
+			$this->template->set_var('lang_lost_user_id',lang('Lost User Id')) ;
+			$this->template->set_var('form_action',$GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.boreg.lostid1'));
+			$this->template->set_var('lang_explain',lang('After you enter your email address, the user accounts associated with this email address will be mailed to that address.'));
+			$this->template->set_var('lang_email',lang('email address'));
+			$this->template->set_var('lang_submit',lang('Submit'));
+
+			$this->template->pfp('out','form');
+			$this->footer();
+		}
+		
 		function get_input_field ($field_info, $post_values)
 		{
 			$r_regs=$_POST['r_reg'];
@@ -551,15 +581,22 @@
 			$vars[message]=lang('We have sent a mail with instructions to change your password. You should follow the included link within two hours. If you do not, you will have to go to the lost password screen again.');
 			$this->simple_screen('confirm_email_sent_lostpw.tpl','',$vars);
 		}
+		
+		function email_sent_lostid($email)
+		{
+			$vars[message]=sprintf(lang("We have sent a mail to your email account: %s with your lost user ids."),$email);
+			$this->simple_screen('confirm_email_sent_lostpw.tpl','',$vars);
+		}
 
 		function welcome_screen()
 		{
 			$this->set_lang_code();
 			$this->header();
 
-			$login_url=$GLOBALS['phpgw_info']['server']['webserver_url'].'/login.php';
+			$login_url = ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $GLOBALS['phpgw_info']['server']['hostname'].'/login.php';
 			
-			$message = lang('Your account is now active!  Click <a href="%1">here</a> to log into your account.',$login_url);
+			$message = lang('Your account is now active!  Click <a href="%s">here</a> to log into your account.') ;
+			$message = sprintf($message,$login_url) ;
 
 			$this->template->set_file(array(
 				'screen' => 'welcome_message.tpl'

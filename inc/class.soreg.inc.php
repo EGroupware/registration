@@ -67,7 +67,7 @@
 			$url = $GLOBALS['phpgw_info']['server']['webserver_url'] . "/registration/main.php";
 			if (substr($url,0,4) != 'http')
 			{
-				$url = ($_SERVER['HTTPS'] ? 'https://' : 'http://') . ($GLOBALS['phpgw_info']['server']['hostname'] ? $GLOBALS['phpgw_info']['server']['hostname'] : $_SERVER['HTTP_HOST']) . $url;
+				$url = ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $url;
 			}
 			$this->reg_id = md5(time() . $account_lid . $GLOBALS['phpgw']->common->randomstring(32));
 			$account_lid  = $GLOBALS['phpgw']->session->appsession('loginid','registration');
@@ -82,6 +82,7 @@
 			
 			$GLOBALS['phpgw']->template->set_var('Hi',lang('Hi'));
 			$GLOBALS['phpgw']->template->set_var('message1',lang('This is a confirmation email for your new account.  Click on the following link to finish activating your account. This link will expire in 2 hours.'));
+
 			$GLOBALS['phpgw']->template->set_var('message2',lang('If you did not request this account, simply ignore this message.'));
 
 			if ($fields['n_given'])
@@ -91,7 +92,7 @@
 
 			if ($fields['n_family'])
 			{
-				$GLOBALS['phpgw']->template->set_var ('lastname', $fields['n_family'] . ' ');
+				$GLOBALS['phpgw']->template->set_var ('lastname', $fields['n_family']);
 			}
 
 			$GLOBALS['phpgw']->template->set_var ('activate_url',$url . '?menuaction=registration.boreg.step4&reg_id='. $this->reg_id);
@@ -119,7 +120,8 @@
 		{
 			global $config;
 
-			$url = $GLOBALS['phpgw_info']['server']['webserver_url'] . "/registration/main.php";
+//			$url = $GLOBALS['phpgw_info']['server']['webserver_url'] . "/registration/main.php";
+ 			$url = ($_SERVER['HTTPS'] ? 'https://' : 'http://').$GLOBALS['phpgw_info']['server']['hostname'] . "/registration/main.php";
 
 			$error = '';
 
@@ -224,7 +226,7 @@
 		{
 			global $config, $reg_info;
 
-			$fields             = unserialize(base64_decode($_reg_info));
+			$fields = unserialize(base64_decode($_reg_info));
 			$fields['lid'] = "*$account_lid*";
 			//$fields['lid'] = $account_lid;
 
@@ -297,5 +299,86 @@
 			#{
 			#	include(PHPGW_SERVER_ROOT . '/messenger/inc/hook_registration.inc.php');
 			#}
+		}
+		function getuserids($email)
+		{
+			$account_lid = null ;
+			$GLOBALS['phpgw']->db->query("select account_lid from phpgw_accounts where account_email='$email'") ;
+			while($GLOBALS['phpgw']->db->next_record())
+			{
+			
+			$account_lid[] = $GLOBALS['phpgw']->db->f('account_lid') ;
+			}
+			return $account_lid ;
+		}
+	
+		function lostid1($email)
+		{
+			global $config;
+			
+			$userids = $this->getuserids($email) ;
+			
+			$url = ($_SERVER['HTTPS'] ? 'https://' : 'http://').$GLOBALS['phpgw_info']['server']['hostname'] . "/registration/main.php";
+
+			$error = '';
+
+			$smtp = createobject('phpgwapi.send');
+
+			$GLOBALS['phpgw']->template->set_file(array('message' => 'lostid_email.tpl'));
+
+			// First find the first user in the address book with that account
+			$qrystmt = "SELECT * FROM phpgw_accounts,phpgw_addressbook WHERE phpgw_addressbook.owner=phpgw_accounts.account_id AND phpgw_accounts.account_email='$email' AND phpgw_addressbook.lid='*". $userids[1]."*'" ;
+
+			$GLOBALS['phpgw']->db->query($qrystmt,__LINE__,__FILE__);
+			$GLOBALS['phpgw']->db->next_record() ;
+			$info = array(
+				'firstname' => $GLOBALS['phpgw']->db->f('account_firstname'),
+				'lastname' => $GLOBALS['phpgw']->db->f('account_lastname'),
+				'email' => $email,
+			) ;
+			
+			// Go thru the usereds and find the names, 
+			for ($icount = 1 ; $icount < count($userids) ; $icount++)
+			{
+				$qrystmt ="SELECT * FROM phpgw_addressbook WHERE lid='*$userids[$icount]*'" ;
+				$GLOBALS['phpgw']->db->query($qrystmt,__LINE__,__FILE__);
+				$GLOBALS['phpgw']->db->next_record() ;
+				
+				// Hack to find a name
+				if ((is_null($info['firstname'])) || (is_null($info['lastname'])))
+				{
+					$info['firstname'] = $GLOBALS['phpgw']->db->f('account_firstname') ;
+					$info['lastname'] = $GLOBALS['phpgw']->db->f('account_lastname') ;
+				}
+				$useridlist = $useridlist . $GLOBALS['phpgw']->db->f('n_given') . ' ' . $GLOBALS['phpgw']->db->f('n_family') . ' = ' . $userids[$icount] . "\n" ;
+			}
+			if (is_null($info['firstname']))
+				$info['firstname'] = lang('[Unknown first name]') ;
+				
+			if (is_null($info['lastname']))
+				$info['lastname'] = lang('[Unknown last name]') ;
+			
+			$GLOBALS['phpgw']->template->set_var('hi',lang('Hi'));
+			$GLOBALS['phpgw']->template->set_var('firstname',$info['firstname']);
+			$GLOBALS['phpgw']->template->set_var('lastname',$info['lastname']);
+			$GLOBALS['phpgw']->template->set_var('message1', lang('lost_user_id_message'));
+					
+			// Send the mail that tell the user id
+			$GLOBALS['phpgw']->template->set_var('lostids',$useridlist) ;
+			
+			$subject = $config['subject_lostid'] ? lang($config['subject_lostpid']) : lang('Lost user account retrieval');
+			$noreply = $config['mail_nobody'] ? ('No reply <' . $config['mail_nobody'] . '>') : ('No reply <noreply@' . $_SERVER['SERVER_NAME'] . '>');
+			
+			// Debugging
+			//print('<PRE>') ;
+			//print_r($info) ;
+			//print_r($subject) ;
+			//print_r($noreply) ;
+			//print('</PRE>') ;
+			
+			$ret = $smtp->msg('email',$info['email'],$subject,$GLOBALS['phpgw']->template->fp('out','message'),'','','',$noreply);
+			if ($ret != true)
+				$error = lang('unable to send email, contact your administrator.') ;
+			return $error;
 		}
 	}

@@ -17,7 +17,6 @@ current fields:	registration	da	Nuværende felter:
 days until trial accounts expire	admin	da	Dage før prøvekonto udløber
 display terms of service?	admin	da	Vis betingelser?
 dropdown	registration	da	Dropdown boks
-egroupware - account registration	registration	da	eGroupWare - Konto registrering
 email address to display for support	admin	da	E-mail adresse som vises for support
 email address to send notices from	admin	da	E-mail adresse som bruges til at sende system beskeder fra
 enable registration?	admin	da	Aktivere registrering

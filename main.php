@@ -138,7 +138,6 @@
 	if ($app && $class)
 	{
 		$obj = createobject(sprintf('%s.%s',$app,$class));
-
 		if ((is_array($obj->public_functions) && $obj->public_functions[$method]) && ! $invalid_data)
 		{
 			eval("\$obj->$method();");
@@ -150,5 +149,4 @@
 		$_obj->step1();
 	}
 	
-
 

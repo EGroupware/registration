@@ -20,10 +20,17 @@
 	$oProc->query ("INSERT INTO phpgw_reg_fields (field_name, field_text, field_type, field_values, field_required, field_order) VALUES ('adr_one_countryname','Country','country','','Y',9)");
 	$oProc->query ("INSERT INTO phpgw_reg_fields (field_name, field_text, field_type, field_values, field_required, field_order) VALUES ('tel_work','Phone','phone','','N',10)");
 	$oProc->query ("INSERT INTO phpgw_reg_fields (field_name, field_text, field_type, field_values, field_required, field_order) VALUES ('gender','Gender','gender','','N',11)");
+	
+	$oProc->query ("INSERT INTO phpgw_reg_fields (field_name, field_text, field_type, field_values, field_required, field_order) VALUES ('challenge_question_1','Challenge1','challenge1','','N',100)");
+	$oProc->query ("INSERT INTO phpgw_reg_fields (field_name, field_text, field_type, field_values, field_required, field_order) VALUES ('challenge_question_2','Challenge2','challenge2','','N',100)");
+	$oProc->query ("INSERT INTO phpgw_reg_fields (field_name, field_text, field_type, field_values, field_required, field_order) VALUES ('challenge_question_3','Challenge3','challenge3','','N',100)");
 
 	$oProc->query ("DELETE FROM phpgw_config WHERE config_app='registration'");
 	$oProc->query ("INSERT INTO phpgw_config (config_app, config_name, config_value) VALUES ('registration','display_tos','True')");
 	$oProc->query ("INSERT INTO phpgw_config (config_app, config_name, config_value) VALUES ('registration','activate_account','email')");
 	$oProc->query ("INSERT INTO phpgw_config (config_app, config_name, config_value) VALUES ('registration','username_is','choice')");
 	$oProc->query ("INSERT INTO phpgw_config (config_app, config_name, config_value) VALUES ('registration','password_is','choice')");
+	$oProc->query ("INSERT INTO phpgw_config (config_app, config_name, config_value) VALUES ('registration','use_challenge','True')");
+	$oProc->query ("ALTER TABLE phpgw_accounts ADD COLUMN account_challenge varchar(100)") ;
+	$oProc->query ("ALTER TABLE phpgw_accounts ADD COLUMN account_response varchar(100)") ;
 ?>

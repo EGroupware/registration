@@ -74,7 +74,9 @@
 				'lang_phone'    => lang ('Phone'),
 				'lang_birthday' => lang ('Birthday'),
 				'lang_cancel'   => lang ('Cancel'),
-				'lang_update_add' => lang ('Update/Add')
+				'lang_update_add' => lang ('Update/Add'),
+				'lang_challenge' => lang('Challenge Question'),
+				'lang_response' => lang('Response')
 			);
 			$p->set_var ($var);
 
@@ -125,7 +127,9 @@
 					'field_type_selected_' . $field_info['field_type'] => 'selected',
 					'field_values' => $field_info['field_values'],
 					'field_required' => $field_required,
-					'field_order' => $field_info['field_order']
+					'field_order' => $field_info['field_order'],
+					'field_challenge' => '',
+					'field_response' => ''
 				);
 
 				$p->set_var ($var);
@@ -156,7 +160,9 @@
 				'field_values'   => '',
 				'field_required' => '',
 				'field_remove'   => '',
-				'field_order'    => ''
+				'field_order'    => '',
+				'field_challenge' => '',
+				'field_response' => ''
 			);
 
 			$p->set_var ($var);

@@ -17,7 +17,6 @@ current fields:	registration	zt	目前欄位：
 days until trial accounts expire	admin	zt	試用帳號過期日
 display terms of service?	admin	zt	顯示所有服務？
 dropdown	registration	zt	下拉式選單
-egroupware - account registration	registration	zt	eGroupWare - 帳號註冊
 email address to display for support	admin	zt	客服信箱
 email address to send notices from	admin	zt	系統訊息寄件人
 enable registration?	admin	zt	啟用註冊功能？

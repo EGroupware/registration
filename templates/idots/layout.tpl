@@ -39,7 +39,7 @@
 	</head>
 <body {body_tags}>
 
-<div id="divLogo"><a href="http://{logo_url}" target="_blank"><img src="../phpgwapi/templates/idots/images/logo.png" border="0" alt="{logo_title}" title="{logo_title}"/></a></div>
+<div id="divLogo"><a href="http://{logo_url}" target="_blank"><img src="{img_icon}" border="0" alt="{logo_title}" title="{logo_title}"></a></div>
 
 <div id="divMain">
 	<div id="divAppIconBar">

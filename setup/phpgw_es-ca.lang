@@ -14,7 +14,6 @@ current fields:	registration	es-ca	Camps actuals:
 days until trial accounts expire	admin	es-ca	Dies fins que caduqui el compte de prova
 display terms of service?	admin	es-ca	Mostrar les Condicions del Servei?
 dropdown	registration	es-ca	Llista Desplegable
-egroupware - account registration	registration	es-ca	eGroupWare - Registre de Comptes
 email address to display for support	admin	es-ca	Adreça de Correu a mostrar per suport
 email address to send notices from	admin	es-ca	Adreça de Correu per enviar noticies
 enable registration?	admin	es-ca	Activar Registre?

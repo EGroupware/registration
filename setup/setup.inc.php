@@ -17,7 +17,7 @@
 	/* Basic information about this app */
 	$setup_info['registration']['name']      = 'registration';
 	$setup_info['registration']['title']     = 'Registration';
-	$setup_info['registration']['version']   = '1.0.0';
+	$setup_info['registration']['version']   = '1.0.1';
 	$setup_info['registration']['app_order'] = '40';
 	$setup_info['registration']['enable']    = 2;
 

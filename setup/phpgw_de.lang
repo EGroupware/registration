@@ -17,7 +17,6 @@ current fields:	registration	de	Verfügbare Felder
 days until trial accounts expire	admin	de	Nach wieviel Tagen verfällt der Testzugang?
 display terms of service?	admin	de	Nutzungsbedingungen anzeigen
 dropdown	registration	de	Auswahlbox
-egroupware - account registration	registration	de	eGroupWare - Benutzer Registrierung
 email address to display for support	admin	de	Email Adresse welche für den Support benutzt werden soll
 email address to send notices from	admin	de	Email Adresse an welche Informationen gesendet werden sollen
 enable registration?	admin	de	Registrierung einschalten

@@ -18,16 +18,36 @@
   <td>{lang_Enable_Registration?}</td>
   <td>
    <select name="newsettings[enable_registration]">
-	<option value=""{selected_enable_registration_False}>{lang_No}</option>
+	<option value="False"{selected_enable_registration_False}>{lang_No}</option>
 	<option value="True"{selected_enable_registration_True}>{lang_Yes}</option>
    </select>
   </td>
-</tr>  <tr bgcolor="{row_off}">
+</tr>
+<tr bgcolor="{row_off}">
   <td>{lang_Register_link_at_login_screen?}</td>
   <td>
    <select name="newsettings[register_link]">
-	<option value=""{selected_register_link_False}>{lang_No}</option>
+	<option value="False"{selected_register_link_False}>{lang_No}</option>
 	<option value="True"{selected_register_link_True}>{lang_Yes}</option>
+   </select>
+  </td>
+</tr>
+</tr>
+<tr bgcolor="{row_on}">
+  <td>{lang_Lost_password_link_at_login_screen?}</td>
+  <td>
+   <select name="newsettings[lostpassword_link]">
+	<option value="False"{selected_lostpassword_link_False}>{lang_No}</option>
+	<option value="True"{selected_lostpassword_link_True}>{lang_Yes}</option>
+   </select>
+  </td>
+</tr>
+<tr bgcolor="{row_off}">
+  <td>{lang_Lost_user_id_link_at_login_screen?}</td>
+   <td>
+   <select name="newsettings[lostid_link]">
+	<option value="False"{selected_lostid_link_False}>{lang_No}</option>
+	<option value="True"{selected_lostid_link_True}>{lang_Yes}</option>
    </select>
   </td>
 </tr>
@@ -35,7 +55,7 @@
     <td>{lang_Use_trial_accounts?}</td>
     <td>
      <select name="newsettings[trial_accounts]">
-      <option value=""{selected_trial_accounts_False}>{lang_No}</option>
+      <option value="False"{selected_trial_accounts_False}>{lang_No}</option>
       <option value="True"{selected_trial_accounts_True}>{lang_Yes}</option>
      </select>
     </td>
@@ -107,7 +127,6 @@
  <td>
 	<textarea name="newsettings[tos_text]" cols="40" rows="20">{value_tos_text}</textarea>
 </td>
-</tr>  
 <!--<tr bgcolor="{row_off}">-->
 
 <!-- END body -->

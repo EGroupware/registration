@@ -20,7 +20,7 @@
 	}
 </script>
 
-<div align="center">{errors}</div>
+<div align="center"><font color=#FF0000 size=+2>{errors}</font></div>
 <form action="{form_action}" method="POST">
 <input type="hidden" name="r_reg[lang_code]" value="{lang_code}">
 <table border="0" width="95%" align="center">

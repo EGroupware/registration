@@ -1,5 +1,5 @@
 <!-- BEGIN form -->
-<center>{errors}</center>
+<center><font color=#FF0000 size=+2>{errors}</font></center>
 <!-- BEGIN input -->
 <form action="{form_action}" method="POST">
 

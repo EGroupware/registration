@@ -31,7 +31,8 @@
 			'step4' => True,
 			'lostpw1' => True,
 			'lostpw2' => True,
-			'lostpw3' => True
+			'lostpw3' => True,
+			'lostid1' => True,
 		);
 
 		function boreg()
@@ -51,7 +52,7 @@
 
 		function step1()
 		{
-			global $config;
+			//global $config;
 
 			$r_reg=$_REQUEST['r_reg'];
 
@@ -262,15 +263,15 @@
 		//
 		function lostpw1()
 		{
-			global $r_reg;
+			//var $r_reg;
 
+			$r_reg = $_REQUEST['r_reg'] ;
 			$so = createobject('registration.soreg');
-
+			
 			if (! $r_reg['loginid'])
 			{
 				$errors[] = lang('You must enter a username');
 			}
-
 			if (! is_array($errors) && !$GLOBALS['phpgw']->accounts->exists($r_reg['loginid']))
 			{
 				$errors[] = lang('Sorry, that username does not exist.');
@@ -324,7 +325,8 @@
 		//
 		function lostpw3()
 		{
-			global $r_reg;
+			//var $r_reg;
+			$r_reg = $_REQUEST['r_reg'] ;
 
 			$lid = $GLOBALS['phpgw']->session->appsession('loginid','registration');
 			if(!$lid) {
@@ -383,7 +385,46 @@
 
 			return True;
 		}
+		
+		function lostid1()
+		{
+			//var $config;
+			$r_reg = $_REQUEST['r_reg'] ;
+			$so = createobject('registration.soreg');
+			
+			if (! $r_reg['email'])
+			{
+				$errors[] = lang('You must enter an email account');
+			}
+			if (! is_array($errors))
+			{
+				$userids = $so->getuserids($r_reg['email']) ;
+				if (count($userids) == 0)
+				{
+					$errors[] = lang('Sorry, no account exists for '.$r_reg['email']);
+				}
+			}
 
+			if(! is_array($errors))
+			{
+			        $error = $so->lostid1($r_reg['email']);
+				if($error)
+				{
+				  $errors[] = $error;
+				}
+			}
+			
+			$ui = createobject('registration.uireg');
+			if (is_array($errors))
+			{
+				$ui->lostid1($errors,$r_reg);
+			}
+			else
+			{
+				$ui->email_sent_lostid($r_reg['email']);
+			}
+		}
+		
 		function check_select_password ()
 		{
 			global $config;
@@ -404,6 +445,11 @@
 				}
 			}
 
+			return True;
+		}
+		
+		function check_challenge()
+		{
 			return True;
 		}
 	}
