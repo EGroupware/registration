@@ -18,9 +18,10 @@
 	{
 		var $template;
 		var $public_functions = array(
-			'step1' => True,
-			'step2' => True,
-			'step3' => True
+			'step1'      => True,
+			'step2'      => True,
+			'step3'      => True,
+			'email_sent' => True
 		);
 
 		function uireg()
@@ -153,6 +154,10 @@
 			$this->footer();
 		}
 
+		function email_sent()
+		{
+			$this->simple_screen('confirm_email_sent.tpl');
+		}
 
 
 	}

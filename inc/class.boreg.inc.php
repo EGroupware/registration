@@ -108,8 +108,8 @@
 					'adr_one_countryname' => $fields['country']
 				);
 
-				$so = createobject('registration.soreg');
-				$reg_id = $so->step3($_fields, $r_reg['passwd']);
+				$so     = createobject('registration.soreg');
+				$reg_id = $so->step2($_fields, $r_reg['passwd']);
 			}
 
 			$ui = createobject('registration.uireg');
@@ -120,7 +120,7 @@
 			else
 			{
 				// Redirect them so they don't hit refresh and make a mess
-				$phpgw->redirect($phpgw->link('/registration/main.php','menuaction=registration.boreg.step4'));
+				$phpgw->redirect($phpgw->link('/registration/main.php','menuaction=registration.uireg.email_sent'));
 			}
 		}
 

@@ -26,7 +26,7 @@
 			$this->db = $phpgw->db;		
 		}
 
-		function step3($fields, $passwd)
+		function step2($fields, $passwd)
 		{
 			global $phpgw_info, $phpgw, $SERVER_NAME, $PHP_SELF;
 
@@ -35,8 +35,8 @@
 			$smtp        = createobject('phpgwapi.send');
 			$account_lid = $phpgw->session->appsession('loginid','registration');
 
-//			$accounts->auto_add($account_lid,$passwd,False,False,0,'L');
-			$account_id  = $accounts->name2id($account_lid);
+			$account_id  = $accounts->auto_add($account_lid,$passwd,False,False,0,'L');
+//			$account_id  = $accounts->name2id($account_lid);
 
 			$accounts    = createobject('phpgwapi.accounts',$account_id);
 			$accounts->read_repository();
@@ -69,7 +69,7 @@
 			));
 			$phpgw->template->set_var('firstname',$fields['n_given']);
 			$phpgw->template->set_var('lastname',$fields['n_family']);
-			$phpgw->template->set_var('activate_url',$url . '?menuaction=registration.uireg.step4&reg_id=' . $this->reg_id);
+			$phpgw->template->set_var('activate_url',$url . '?menuaction=registration.boreg.step4&reg_id=' . $this->reg_id);
 
 			$smtp->msg('email',$fields['email'],lang('Account registration'),$phpgw->template->fp('out','message'),'','','','No reply <noreply@' . $SERVER_NAME . '>');
 
