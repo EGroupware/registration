@@ -40,11 +40,11 @@
 			$this->bomanagefields = createobject ('registration.bomanagefields');
 			$this->fields = $this->bomanagefields->get_field_list ();
 
-			$_reg_id=($GLOBALS[HTTP_GET_VARS][reg_id]?$GLOBALS[HTTP_GET_VARS][reg_id]:$GLOBALS[HTTP_POST_VARS][reg_id]);
-			$this->reg_id=($_reg_id?$_reg_id:'');
+			$_reg_id=$_GET['reg_id']?$_GET['reg_id']:$_POST['reg_id'];
+			$this->reg_id=$_reg_id?$_reg_id:'';
 
 			// replace the old lang_code with this
-			//			$_lang_code=($GLOBALS[HTTP_GET_VARS][lang_code]?$GLOBALS[HTTP_GET_VARS][lang_code]:$GLOBALS[HTTP_POST_VARS][lang_code]);
+			//			$_lang_code=($_GET['lang_code']?$_GET['lang_code']:$_POST['lang_code']);
 			//			$this->lang_code=($_lang_code?$_lang_code:'');
 			
 		}
@@ -53,11 +53,11 @@
 		{
 			global $config;//, $r_reg;
 
-			$r_reg=$GLOBALS[HTTP_POST_VARS][r_reg];
+			$r_reg=$_POST['r_reg'];
 			$so = createobject('registration.soreg');
 			$ui = createobject('registration.uireg');
 
-			if($GLOBALS[HTTP_POST_VARS][langchanged]=='true')
+			if($_POST['langchanged']=='true')
 			{
 				$ui->step1('',$r_reg,$o_reg);
 				exit;
@@ -88,20 +88,20 @@
 
 		function step2()
 		{
-			global $config, $r_reg, $o_reg, $PHP_AUTH_USER, $PHP_AUTH_PW;
+			global $config, $r_reg, $o_reg;
 			
 			
-			$r_reg=$GLOBALS[HTTP_POST_VARS][r_reg];
-			$o_reg=$GLOBALS[HTTP_POST_VARS][o_reg];
+			$r_reg=$_POST['r_reg'];
+			$o_reg=$_POST['o_reg'];
 			
-			$lang_to_pass=$r_reg[lang_code];
+			$lang_to_pass=$r_reg['lang_code'];
 			$ui = createobject('registration.uireg');
 			$ui->set_lang_code($lang_to_pass);
 			
 			//where is this for????
 			if ($config['password_is'] == 'http')
 			{
-				$r_reg['passwd'] = $r_reg['passwd_confirm'] = $PHP_AUTH_PW;
+				$r_reg['passwd'] = $r_reg['passwd_confirm'] = $_SERVER['PHP_AUTH_PW'];
 			}
 
 			if (($config['display_tos']) && ! $r_reg['tos_agree'])
@@ -243,7 +243,7 @@
 
 			if (! is_array($reg_info))
 			{
-				$vars[error_msg]=lang('Sorry, we are having a problem activating your account. Note that links sent by e-mail are only valid during two hours. If you think this delay was expired, just retry. Otherwise, please contact the site administrator.');
+				$vars['error_msg']=lang('Sorry, we are having a problem activating your account. Note that links sent by e-mail are only valid during two hours. If you think this delay was expired, just retry. Otherwise, please contact the site administrator.');
 				$ui->simple_screen('error_confirm.tpl','',$vars);
 				return False;
 			}
@@ -330,12 +330,12 @@
 			  $error[] = lang('Wrong session');
 			}
 
-			if ($r_reg[passwd] != $r_reg[passwd_2])
+			if ($r_reg['passwd'] != $r_reg['passwd_2'])
 			{
 			    $errors[] = lang('The two passwords are not the same');
 			}
 
-			if (! $r_reg[passwd])
+			if (! $r_reg['passwd'])
 			{
 			    $errors[] = lang('You must enter a password');
 			}
@@ -343,7 +343,7 @@
 			if(! is_array($errors))
 			{
 			  $so = createobject('registration.soreg');
-			  $so->lostpw3($lid, $r_reg[passwd]);
+			  $so->lostpw3($lid, $r_reg['passwd']);
 			}
 
 			$ui = createobject('registration.uireg');
@@ -362,7 +362,7 @@
 
 		function check_select_username ()
 		{
-			global $config, $PHP_AUTH_USER;
+			global $config;
 
 			if ($config['username_is'] == 'choice')
 			{
@@ -370,13 +370,13 @@
 			}
 			elseif ($config['username_is'] == 'http')
 			{
-				if (!$PHP_AUTH_USER)
+				if (!$_SERVER['PHP_AUTH_USER'])
 				{
 					return "HTTP username is not set";
 				}
 				else
 				{
-					$GLOBALS['phpgw']->redirect ($GLOBALS['phpgw']->link ('/registration/main.php', 'menuaction=registration.boreg.step1&r_reg[loginid]=' . $PHP_AUTH_USER));
+					$GLOBALS['phpgw']->redirect ($GLOBALS['phpgw']->link ('/registration/main.php', 'menuaction=registration.boreg.step1&r_reg[loginid]=' . $_SERVER['PHP_AUTH_USER']));
 				}
 			}
 
