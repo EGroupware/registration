@@ -35,7 +35,9 @@
 		return $value;
 	}
 
-	$GLOBALS['sessionid'] = $GLOBALS['HTTP_GET_VARS']['sessionid'] ? $GLOBALS['HTTP_GET_VARS']['sessionid'] : $GLOBALS['HTTP_COOKIE_VARS']['sessionid'];
+	error_reporting(E_ALL & ~E_NOTICE);
+
+	$GLOBALS['sessionid'] = @$_GET['sessionid'] ? $_GET['sessionid'] : @$_COOKIE['sessionid'];
 
 	// Note: This is current not a drop in install, it requires some manual installation
 	//       Take a look at the README file
@@ -44,9 +46,9 @@
 	$default_lang = 'en'; // move to config    but how, we can't get langs in the default config!!!
 
 
-	if ($GLOBALS[HTTP_GET_VARS][menuaction])
+	if (@$_GET['menuaction'])
 	{
-		list($app,$class,$method) = explode('.',$GLOBALS[HTTP_GET_VARS][menuaction]);
+		list($app,$class,$method) = explode('.',$_GET['menuaction']);
 		if (! $app || ! $class || ! $method)
 		{
 			$invaild_data = True;
