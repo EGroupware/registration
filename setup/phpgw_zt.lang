@@ -1,82 +1,82 @@
-account password retrieval	registration	zt	¯Á±o±b¸¹±K½X
-account registration	registration	zt	µù¥U±b¸¹
-activate account	admin	zt	±Ò¥Î±b¸¹
-address	registration	zt	¦í§}
-after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	zt	¦b¿é¤J±zªº±b¸¹«á¡A¨t²Î·|¦Û°Ê±N­«·s²£¥Íªº±K½X±H¨ì±zµù¥Uªº«H½c¡C
-an error occured. please contact our technical support and let them know.	registration	zt	µo¥Í¿ù»~¡A½ĞÁpµ¸ºŞ²z¤H­û¡C
-anonymous password	admin	zt	³X«È±K½X
-birthday	registration	zt	¥Í¤é
-change password for user	registration	zt	­×§ï¨Ï¥ÎªÌªº±K½X
-checkbox	registration	zt	®Ö¿ï¤è¶ô
-choose language	registration	zt	¿ï¾Ü»y¨¥
-choose your language	common	zt	¿ï¾Ü±zªº»y¨¥
-city	registration	zt	¥«
-close window	registration	zt	Ãö³¬µøµ¡
-country	registration	zt	°ê®a
-current fields:	registration	zt	¥Ø«eÄæ¦ì¡G
-days until trial accounts expire	admin	zt	¸Õ¥Î±b¸¹¹L´Á¤é
-display terms of service?	admin	zt	Åã¥Ü©Ò¦³ªA°È¡H
-dropdown	registration	zt	¤U©Ô¦¡¿ï³æ
-egroupware - account registration	registration	zt	eGroupWare - ±b¸¹µù¥U
-email address to display for support	admin	zt	«ÈªA«H½c
-email address to send notices from	admin	zt	¨t²Î°T®§±H¥ó¤H
-enable registration?	admin	zt	±Ò¥Îµù¥U¥\¯à¡H
-enter your new password	registration	zt	¿é¤J±zªº±K½X
-female	registration	zt	¤k
-gender	registration	zt	©Ê§O
-hi	registration	zt	±z¦n
-http password	admin	zt	HTTP±K½X
-http username	admin	zt	HTTP±b¸¹
-i have read the terms and conditions and agree by them.	registration	zt	§Ú¤w¸gÅª¨ú¨Ï¥ÎªÌ±ø´Ú¨Ã¥B§¹¥ş¦P·N¡C
-if you did not request this account, simply ignore this message.	registration	zt	¦pªG±z±q¥¼µù¥U³o­Ó±b¸¹¡Aª½±µ§R°£³o­Ó°T®§´N¥i¥H¤F¡C
-if you did not request this change, simply ignore this message.	registration	zt	¦pªG±z¨Ã¥¼´£¥X¸ê®Æ²§°Êªº½Ğ¨D¡Aª½±µ§R°£³o­Ó°T®§´N¥i¥H¤F¡C
-immediately	admin	zt	¥ß§Y
-male	registration	zt	¨k
-manage fields	admin	zt	ºŞ²zÄæ¦ì
-name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	zt	¦WºÙ(¥u¯à¨Ï¥Î­^¡B¼Æ¦r)
-not a user yet? register now	registration	zt	ÁÙ¨S¦¨¬°·|­û¡H¥ß¨èµù¥U
-on-line registration is not activated. please contact the site administrator for more information about registration.	registration	zt	¥Ø«eµLªk½u¤Wµù¥U¡A½ĞÁpµ¸ºô¯¸ºŞ²z­û
-order	registration	zt	±Æ§Ç
-password is	admin	zt	±K½X
-phone	registration	zt	Ápµ¸¹q¸Ü
-phpgroupware - account registration	registration	zt	EGROUPWARE - ±b¸¹µù¥U
-re-enter password	registration	zt	­«·s¿é¤J±K½X
-re-enter your password	registration	zt	­«·s¿é¤J±zªº±K½X
-register link at login screen?	admin	zt	¦bµn¤Jµøµ¡Åã¥Üµù¥U³sµ²¡H
-registration	common	zt	µù¥U
-registration settings	admin	zt	µù¥U³]©w
-remove	registration	zt	²¾°£
-report all problems and abuse to	registration	zt	¦^³ø¿ù»~µ¹
-required	registration	zt	¥²¶ñ
-send email	admin	zt	¶Ç°e¶l¥ó
-sorry, that username does not exist.	registration	zt	©êºp¡A³o­Ó±b¸¹¤£¦s¦b¡C
-sorry, that username is already taken.	registration	zt	©êºp¡A³o­Ó±b¸¹¤w¸g¦³¤H¨Ï¥Î¡C
-sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	zt	©êºp¡A§Ú­ÌµLªk±Ò¥Î±zªº±b¸¹¡I±Ò¥Î±b¸¹ªº¤âÄò¥²¶·­n¦b¨â­ÓÄÁÀY¤º§¹¦¨¡A¦pªG±z¶W¹L¤F³o­Ó®É¶¡¡A½Ğ­«·sµù¥U¡C¦pªG¦³¨ä¥LºÃ°İ½Ğ¬¢ºô¯¸ºŞ²z­û¡C
-state	registration	zt	¶m/Âí/¥«
-subject for confirmation email	admin	zt	½T»{«H¨ç¼ĞÃD
-terms of service	registration	zt	¨Ï¥ÎªÌ±ø´Ú
-terms of service text	admin	zt	¨Ï¥ÎªÌ±ø´Ú¤º®e
-text	registration	zt	¤å¦r
-textarea	registration	zt	¤å¦r°Ï
-the passwords you entered don't match	registration	zt	±z¿é¤Jªº¨â­Ó±K½X¤£¦P
-the two passwords are not the same	registration	zt	¨â¦¸¿é¤Jªº±K½X¤£¤@­P
-this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	zt	³o¬O±zµù¥U±b¸¹ªº³qª¾«H¨ç¡AÂI¿ï¤U­±³sµ²¨Ó±Ò°Ê±zªº±b¸¹¡A³o­Ó³sµ²·|¦b¨â­Ó¤p®É«á¥¢®Ä¡I
-type	registration	zt	ºØÃş
-update/add	registration	zt	§ó·s/·s¼W
-use html	admin	zt	¨Ï¥ÎHTML
-use trial accounts?	admin	zt	¨Ï¥Î¸Õ¥Î±b¸¹¡H
-username is	admin	zt	±b¸¹¬O
-values (for dropdown only; comma separated)	registration	zt	¤U©Ô¦¡¿ï³æ¼Æ­È(³r¸¹¤À¹j)
-we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	zt	§Ú­Ì¤w¸g±N½T»{«H¨ç±H¥X¡A±z¥²¶·¦b¨â­ÓÄÁÀY¤º±q«H¤¤±Ò¥Î±b¸¹¡A¦pªG¶W¹L¤F³o­Ó®É¶¡¡A±z¥²¶·¦b¼Æ¤Ñ«á¤~¯à­«·sµù¥U¦P¼Ëªº±b¸¹¡C
-we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	zt	§Ú­Ì¤w¸g°e¥X§ó·s±K½Xªº½T»{«H¨ç¡A±z¥²¶·¦b¨â­ÓÄÁÀY¤º¨Ì¾Ú«H¤¤³sµ²§¹¦¨³]©w¡A§_«h±zªº±K½X¤£·|¦³¥ô¦ó²§°Ê¡C
-wrong session	registration	zt	¿ù»~ªº³s½u
-you have entered an invalid birthday	registration	zt	±z¿é¤J¤F¿ù»~ªº¥Í¤é
-you have entered an invalid email address	registration	zt	±z¿é¤J¤F¿ù»~ªº«H½c
-you must enter a password	registration	zt	±z¥²¶·¿é¤J±K½X
-you must enter a username	registration	zt	±z¥²¶·¿é¤J±b¸¹
-you must fill in all of the required fields	registration	zt	±z¥²¶·¶ñ¼g©Ò¦³¥²¶ñÄæ¦ì
-you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	zt	±zµo¥X­×§ï±K½Xªº½Ğ¨D¡A½ĞÂI¿ï¤U­±³sµ²¨Ó½T»{¡A³o­Ó³sµ²·|¦b¨â­ÓÄÁÀY«á¥¢®Ä¡C
-you specified a value for	registration	zt	±z«ü©w¼Æ­È
-your account is now active!  click <a href="%1">here</a> to log into your account.	registration	zt	±zªº±b¸¹¤w¸g±Ò¥Î¡IÂI¿ï<a href="%1">³o¸Ì</a>¨Óµn¤J¨t²Î¡C
-your password was changed. you can go back to the <a href="%1">login</a> page.	registration	zt	±zªº±b¸¹¤w¸g­×§ï¡IÂI¿ï<a href="%1">³o¸Ì</a>¨Ó­«·sµn¤J¨t²Î¡C
-zip/postal	registration	zt	¶l»¼°Ï¸¹
+account password retrieval	registration	zt	ç´¢å¾—å¸³è™Ÿå¯†ç¢¼
+account registration	registration	zt	è¨»å†Šå¸³è™Ÿ
+activate account	admin	zt	å•Ÿç”¨å¸³è™Ÿ
+address	registration	zt	ä½å€
+after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	zt	åœ¨è¼¸å…¥æ‚¨çš„å¸³è™Ÿå¾Œï¼Œç³»çµ±æœƒè‡ªå‹•å°‡é‡æ–°ç”¢ç”Ÿçš„å¯†ç¢¼å¯„åˆ°æ‚¨è¨»å†Šçš„ä¿¡ç®±ã€‚
+an error occured. please contact our technical support and let them know.	registration	zt	ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹è¯çµ¡ç®¡ç†äººå“¡ã€‚
+anonymous password	admin	zt	è¨ªå®¢å¯†ç¢¼
+birthday	registration	zt	ç”Ÿæ—¥
+change password for user	registration	zt	ä¿®æ”¹ä½¿ç”¨è€…çš„å¯†ç¢¼
+checkbox	registration	zt	æ ¸é¸æ–¹å¡Š
+choose language	registration	zt	é¸æ“‡èªè¨€
+choose your language	common	zt	é¸æ“‡æ‚¨çš„èªè¨€
+city	registration	zt	å¸‚
+close window	registration	zt	é—œé–‰è¦–çª—
+country	registration	zt	åœ‹å®¶
+current fields:	registration	zt	ç›®å‰æ¬„ä½ï¼š
+days until trial accounts expire	admin	zt	è©¦ç”¨å¸³è™ŸéæœŸæ—¥
+display terms of service?	admin	zt	é¡¯ç¤ºæ‰€æœ‰æœå‹™ï¼Ÿ
+dropdown	registration	zt	ä¸‹æ‹‰å¼é¸å–®
+egroupware - account registration	registration	zt	eGroupWare - å¸³è™Ÿè¨»å†Š
+email address to display for support	admin	zt	å®¢æœä¿¡ç®±
+email address to send notices from	admin	zt	ç³»çµ±è¨Šæ¯å¯„ä»¶äºº
+enable registration?	admin	zt	å•Ÿç”¨è¨»å†ŠåŠŸèƒ½ï¼Ÿ
+enter your new password	registration	zt	è¼¸å…¥æ‚¨çš„å¯†ç¢¼
+female	registration	zt	å¥³
+gender	registration	zt	æ€§åˆ¥
+hi	registration	zt	æ‚¨å¥½
+http password	admin	zt	HTTPå¯†ç¢¼
+http username	admin	zt	HTTPå¸³è™Ÿ
+i have read the terms and conditions and agree by them.	registration	zt	æˆ‘å·²ç¶“è®€å–ä½¿ç”¨è€…æ¢æ¬¾ä¸¦ä¸”å®Œå…¨åŒæ„ã€‚
+if you did not request this account, simply ignore this message.	registration	zt	å¦‚æœæ‚¨å¾æœªè¨»å†Šé€™å€‹å¸³è™Ÿï¼Œç›´æ¥åˆªé™¤é€™å€‹è¨Šæ¯å°±å¯ä»¥äº†ã€‚
+if you did not request this change, simply ignore this message.	registration	zt	å¦‚æœæ‚¨ä¸¦æœªæå‡ºè³‡æ–™ç•°å‹•çš„è«‹æ±‚ï¼Œç›´æ¥åˆªé™¤é€™å€‹è¨Šæ¯å°±å¯ä»¥äº†ã€‚
+immediately	admin	zt	ç«‹å³
+male	registration	zt	ç”·
+manage fields	admin	zt	ç®¡ç†æ¬„ä½
+name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	zt	åç¨±(åªèƒ½ä½¿ç”¨è‹±ã€æ•¸å­—)
+not a user yet? register now	registration	zt	é‚„æ²’æˆç‚ºæœƒå“¡ï¼Ÿç«‹åˆ»è¨»å†Š
+on-line registration is not activated. please contact the site administrator for more information about registration.	registration	zt	ç›®å‰ç„¡æ³•ç·šä¸Šè¨»å†Šï¼Œè«‹è¯çµ¡ç¶²ç«™ç®¡ç†å“¡
+order	registration	zt	æ’åº
+password is	admin	zt	å¯†ç¢¼
+phone	registration	zt	è¯çµ¡é›»è©±
+phpgroupware - account registration	registration	zt	EGROUPWARE - å¸³è™Ÿè¨»å†Š
+re-enter password	registration	zt	é‡æ–°è¼¸å…¥å¯†ç¢¼
+re-enter your password	registration	zt	é‡æ–°è¼¸å…¥æ‚¨çš„å¯†ç¢¼
+register link at login screen?	admin	zt	åœ¨ç™»å…¥è¦–çª—é¡¯ç¤ºè¨»å†Šé€£çµï¼Ÿ
+registration	common	zt	è¨»å†Š
+registration settings	admin	zt	è¨»å†Šè¨­å®š
+remove	registration	zt	ç§»é™¤
+report all problems and abuse to	registration	zt	å›å ±éŒ¯èª¤çµ¦
+required	registration	zt	å¿…å¡«
+send email	admin	zt	å‚³é€éƒµä»¶
+sorry, that username does not exist.	registration	zt	æŠ±æ­‰ï¼Œé€™å€‹å¸³è™Ÿä¸å­˜åœ¨ã€‚
+sorry, that username is already taken.	registration	zt	æŠ±æ­‰ï¼Œé€™å€‹å¸³è™Ÿå·²ç¶“æœ‰äººä½¿ç”¨ã€‚
+sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	zt	æŠ±æ­‰ï¼Œæˆ‘å€‘ç„¡æ³•å•Ÿç”¨æ‚¨çš„å¸³è™Ÿï¼å•Ÿç”¨å¸³è™Ÿçš„æ‰‹çºŒå¿…é ˆè¦åœ¨å…©å€‹é˜é ­å…§å®Œæˆï¼Œå¦‚æœæ‚¨è¶…éäº†é€™å€‹æ™‚é–“ï¼Œè«‹é‡æ–°è¨»å†Šã€‚å¦‚æœæœ‰å…¶ä»–ç–‘å•è«‹æ´½ç¶²ç«™ç®¡ç†å“¡ã€‚
+state	registration	zt	é„‰/é®/å¸‚
+subject for confirmation email	admin	zt	ç¢ºèªä¿¡å‡½æ¨™é¡Œ
+terms of service	registration	zt	ä½¿ç”¨è€…æ¢æ¬¾
+terms of service text	admin	zt	ä½¿ç”¨è€…æ¢æ¬¾å…§å®¹
+text	registration	zt	æ–‡å­—
+textarea	registration	zt	æ–‡å­—å€
+the passwords you entered don't match	registration	zt	æ‚¨è¼¸å…¥çš„å…©å€‹å¯†ç¢¼ä¸åŒ
+the two passwords are not the same	registration	zt	å…©æ¬¡è¼¸å…¥çš„å¯†ç¢¼ä¸ä¸€è‡´
+this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	zt	é€™æ˜¯æ‚¨è¨»å†Šå¸³è™Ÿçš„é€šçŸ¥ä¿¡å‡½ï¼Œé»é¸ä¸‹é¢é€£çµä¾†å•Ÿå‹•æ‚¨çš„å¸³è™Ÿï¼Œé€™å€‹é€£çµæœƒåœ¨å…©å€‹å°æ™‚å¾Œå¤±æ•ˆï¼
+type	registration	zt	ç¨®é¡
+update/add	registration	zt	æ›´æ–°/æ–°å¢
+use html	admin	zt	ä½¿ç”¨HTML
+use trial accounts?	admin	zt	ä½¿ç”¨è©¦ç”¨å¸³è™Ÿï¼Ÿ
+username is	admin	zt	å¸³è™Ÿæ˜¯
+values (for dropdown only; comma separated)	registration	zt	ä¸‹æ‹‰å¼é¸å–®æ•¸å€¼(é€—è™Ÿåˆ†éš”)
+we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	zt	æˆ‘å€‘å·²ç¶“å°‡ç¢ºèªä¿¡å‡½å¯„å‡ºï¼Œæ‚¨å¿…é ˆåœ¨å…©å€‹é˜é ­å…§å¾ä¿¡ä¸­å•Ÿç”¨å¸³è™Ÿï¼Œå¦‚æœè¶…éäº†é€™å€‹æ™‚é–“ï¼Œæ‚¨å¿…é ˆåœ¨æ•¸å¤©å¾Œæ‰èƒ½é‡æ–°è¨»å†ŠåŒæ¨£çš„å¸³è™Ÿã€‚
+we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	zt	æˆ‘å€‘å·²ç¶“é€å‡ºæ›´æ–°å¯†ç¢¼çš„ç¢ºèªä¿¡å‡½ï¼Œæ‚¨å¿…é ˆåœ¨å…©å€‹é˜é ­å…§ä¾æ“šä¿¡ä¸­é€£çµå®Œæˆè¨­å®šï¼Œå¦å‰‡æ‚¨çš„å¯†ç¢¼ä¸æœƒæœ‰ä»»ä½•ç•°å‹•ã€‚
+wrong session	registration	zt	éŒ¯èª¤çš„é€£ç·š
+you have entered an invalid birthday	registration	zt	æ‚¨è¼¸å…¥äº†éŒ¯èª¤çš„ç”Ÿæ—¥
+you have entered an invalid email address	registration	zt	æ‚¨è¼¸å…¥äº†éŒ¯èª¤çš„ä¿¡ç®±
+you must enter a password	registration	zt	æ‚¨å¿…é ˆè¼¸å…¥å¯†ç¢¼
+you must enter a username	registration	zt	æ‚¨å¿…é ˆè¼¸å…¥å¸³è™Ÿ
+you must fill in all of the required fields	registration	zt	æ‚¨å¿…é ˆå¡«å¯«æ‰€æœ‰å¿…å¡«æ¬„ä½
+you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	zt	æ‚¨ç™¼å‡ºä¿®æ”¹å¯†ç¢¼çš„è«‹æ±‚ï¼Œè«‹é»é¸ä¸‹é¢é€£çµä¾†ç¢ºèªï¼Œé€™å€‹é€£çµæœƒåœ¨å…©å€‹é˜é ­å¾Œå¤±æ•ˆã€‚
+you specified a value for	registration	zt	æ‚¨æŒ‡å®šæ•¸å€¼
+your account is now active!  click <a href="%1">here</a> to log into your account.	registration	zt	æ‚¨çš„å¸³è™Ÿå·²ç¶“å•Ÿç”¨ï¼é»é¸<a href="%1">é€™è£¡</a>ä¾†ç™»å…¥ç³»çµ±ã€‚
+your password was changed. you can go back to the <a href="%1">login</a> page.	registration	zt	æ‚¨çš„å¸³è™Ÿå·²ç¶“ä¿®æ”¹ï¼é»é¸<a href="%1">é€™è£¡</a>ä¾†é‡æ–°ç™»å…¥ç³»çµ±ã€‚
+zip/postal	registration	zt	éƒµéå€è™Ÿ
