@@ -88,7 +88,7 @@
 		{
 			$this->set_header_footer_blocks();
 			$this->template->set_var('charset',$GLOBALS['phpgw']->translation->charset());
-
+			$this->template->set_var('lang',$GLOBALS[phpgw_info][user][preferences][common][lang]);
 			if($head_subj)
 			{
 				$this->template->set_var('lang_header',$head_subj);
