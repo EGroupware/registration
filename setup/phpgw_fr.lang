@@ -1,0 +1,17 @@
+account password retrieval	registration	fr	Récupération de mot de passe
+account registration	registration	fr	Enregistrement de compte
+after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	fr	Après avoir entré votre nom d'utilisateur, les intructions pour changer votre mot de passe vont vous être envoyées par EMail à l'adresse que vous avez donné en vous enregistrant.
+enter your new password	registration	fr	Entrez votre nouveau mot de passe
+i have read the terms and conditions and agree by them.	registration	fr	J'ai lu les termes et conditions et je les accepte.
+phpgroupware - account registration	registration	fr	phpGroupWare - Enregistrement de comptes
+re-enter password	registration	fr	Ré-entrez le mot de passe
+re-enter your password	registration	fr	Ré-entrez votre mot de passe
+registration	common	fr	Enregistrement
+sorry, that username does not exist.	registration	fr	Désolé, ce nom d'utilisateur n'existe pas.
+sorry, that username is already taken.	registration	fr	Désolé, ce nom d'utilisateur est déjà pris.
+the two passwords are not the same	registration	fr	Les deux mots de passe ne sont pas les mêmes
+wrong session	registration	fr	Mauvaise session
+you have entered an invalid email address	registration	fr	Vous avez entré une adresse EMail invalide
+you must enter a password	registration	fr	Vous devez entrer un mot de passe
+you must enter a username	registration	fr	Vous devez entrer un nom d'utilisateur
+you must fill in all of the required fields	registration	fr	Vous devez remplir tous les champs demandés
