@@ -1,7 +1,10 @@
+[unknown first name]	registration	zt	[不明的名稱]
+[unknown last name]	registration	zt	[不明的姓氏]
 account password retrieval	registration	zt	取得帳號密碼
 account registration	registration	zt	註冊帳號
 activate account	admin	zt	啟用帳號
 address	registration	zt	住址
+after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	zt	帳號資訊將會寄送到您輸入的電子郵件位址。
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	zt	在輸入您的帳號後，系統會自動將重新產生的密碼寄到您註冊的信箱。
 an error occured. please contact our technical support and let them know.	registration	zt	發生錯誤，請聯絡管理人員。
 anonymous password	admin	zt	訪客密碼
@@ -18,6 +21,7 @@ days until trial accounts expire	admin	zt	試用帳號過期日
 display terms of service?	admin	zt	顯示所有服務？
 dropdown	registration	zt	下拉式選單
 egroupware - account registration	registration	zt	eGroupWare - 帳號註冊
+email address	registration	zt	電子郵件
 email address to display for support	admin	zt	客服信箱
 email address to send notices from	admin	zt	系統訊息寄件人
 enable registration?	admin	zt	啟用註冊功能？
@@ -31,6 +35,13 @@ i have read the terms and conditions and agree by them.	registration	zt	我已�
 if you did not request this account, simply ignore this message.	registration	zt	如果您從未註冊這個帳號，直接刪除這個訊息就可以了。
 if you did not request this change, simply ignore this message.	registration	zt	如果您並未提出資料異動的請求，直接刪除這個訊息就可以了。
 immediately	admin	zt	立即
+lost login id	login	zt	忘記帳號
+lost password	registration	zt	忘記密碼
+lost password link at login screen?	admin	zt	在登入畫面顯示遺失密碼查詢功能？
+lost user account retrieval	registration	zt	忘記帳號查詢
+lost user id	registration	zt	遺失的使用者帳號
+lost user id link at login screen?	admin	zt	在登入畫面顯示遺忘帳號查詢功能？
+lost_user_id_message	registration	zt	這個郵件剛剛註冊了下面資訊：
 male	registration	zt	男
 manage fields	admin	zt	管理欄位
 name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	zt	名稱(只能使用英、數字)
@@ -61,6 +72,9 @@ the passwords you entered don't match	registration	zt	您輸入的兩個密碼�
 the two passwords are not the same	registration	zt	兩次輸入的密碼不一致
 this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	zt	這是您註冊帳號的通知信函，點選下面連結來啟動您的帳號，這個連結會在兩個小時後失效！
 type	registration	zt	種類
+unable to send mail, contact your administrator	registration	zt	無法寄送郵件，請聯絡管理員
+unknown first name	registration	zt	未知的名稱
+unknown last name	registration	zt	未知的姓氏
 update/add	registration	zt	更新/新增
 use html	admin	zt	使用HTML
 use trial accounts?	admin	zt	使用試用帳號？
