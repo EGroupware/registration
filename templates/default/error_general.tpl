@@ -1,8 +1,7 @@
 <!-- BEGIN error_text -->
+<div align="center">
 <p>
-<center>
-An error occured.  Please contact our technical support and let them know.
-<p>
+{message}</p>
 {extra_text}
-</center>
+</div>
 <!-- END error_text -->

@@ -4,6 +4,7 @@ address	registration	fr	Adresse
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	fr	Après avoir entré votre nom d'utilisateur, les intructions pour changer votre mot de passe vont vous être envoyées par EMail à l'adresse que vous avez donné en vous enregistrant.
 change password for user	registration	fr	Changer le mot de passe pour l'utilisateur
 checkbox	registration	fr	Boîte à cocher
+choose your language	registration	fr	Choisissez votre langue
 current fields:	registration	fr	Champs actuels:
 dropdown	registration	fr	Boîte de sélection
 enter your new password	registration	fr	Entrez votre nouveau mot de passe

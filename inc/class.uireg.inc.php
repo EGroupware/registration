@@ -22,8 +22,9 @@
 		var $bomanagefields;
 		var $fields;
 		var $bo;
-		var $lang;
+		var $lang_code;
 		var $public_functions = array(
+			'welcome_screen' => True,
 			'step1'   => True,
 			'step2'   => True,
 			'lostpw1' => True,
@@ -40,6 +41,32 @@
 			$this->bo = createobject ('registration.boreg');
 			$this->bomanagefields = createobject ('registration.bomanagefields');
 			$this->fields = $this->bomanagefields->get_field_list ();
+
+			$this->set_lang_code();
+		}
+
+		function set_lang_code($code='')
+		{
+			if($code)
+			{
+				$this->lang_code=$code;
+			}
+			elseif(strlen($GLOBALS[lang_code])==2)
+			{
+				$this->lang_code=$GLOBALS[lang_code];
+			}
+			else
+			{
+				$this->lang=$GLOBALS[HTTP_POST_VARS][lang_code];
+			}
+
+			if ($this->lang_code)
+			{
+
+				$GLOBALS['phpgw_info']['user']['preferences']['common']['lang'] = $this->lang_code;
+				$GLOBALS['phpgw']->translation->init();	
+			}
+
 		}
 
 		function set_header_footer_blocks()
@@ -51,18 +78,19 @@
 			$this->template->set_block('_layout','footer');
 		}
 
-		function header()
+		function header($head_subj='')
 		{
 			$this->set_header_footer_blocks();
-			
-			$this->lang=$GLOBALS[HTTP_POST_VARS][lang];
-			if ($this->lang)
-			{
 
-				$GLOBALS['phpgw_info']['user']['preferences']['common']['lang'] = $this->lang;
-				$GLOBALS['phpgw']->translation->init();	
+			if($head_subj)
+			{
+				$this->template->set_var('lang_header',$head_subj);
 			}
-			$this->template->set_var('lang_header',lang('eGroupWare - Account registration'));
+			else
+			{
+				$this->template->set_var('lang_header',lang('eGroupWare - Account registration'));
+			}
+
 			$this->template->pfp('out','header');
 		}
 
@@ -72,18 +100,18 @@
 		}
 
 		function create_option_string($selected,$values)
-{
-	while (is_array($values) && list($var,$value) = each($values))
-	{
-		$s .= '<option value="' . $var . '"';
-		if ("$var" == "$selected")	// the "'s are necessary to force a string-compare
 		{
-			$s .= ' selected';
+			while (is_array($values) && list($var,$value) = each($values))
+			{
+				$s .= '<option value="' . $var . '"';
+				if ("$var" == "$selected")	// the "'s are necessary to force a string-compare
+				{
+					$s .= ' selected';
+				}
+				$s .= '>' . $value . '</option>';
+			}
+			return $s;
 		}
-		$s .= '>' . $value . '</option>';
-	}
-	return $s;
-}
 		function step1($errors = '',$r_reg = '',$o_reg = '')
 		{
 			global $config;
@@ -97,24 +125,22 @@
 				$this->footer();
 				exit;
 			}
-			
+
 
 			if ($errors && $config['username_is'] == 'http')
 			{
-				$this->simple_screen ('error_general.tpl', $GLOBALS['phpgw']->common->error_list ($errors));
+				$vars[message]=	lang('An error occured. Please contact our technical support and let them know.');
+				$this->simple_screen ('error_general.tpl', $GLOBALS['phpgw']->common->error_list ($errors),$vars);
 			}
 
-			//$show_username_prompt = True;
+			/* Note that check_select_username () may not return */
+			$select_username = $this->bo->check_select_username ();
+			if (!$select_username || is_string ($select_username))
+			{
+				$vars[message]=	lang('An error occured. Please contact our technical support and let them know.');
+				$this->simple_screen ('error_general.tpl', $GLOBALS['phpgw']->common->error_list (array ($select_username)),$vars);
+			}
 
-		
-
-				/* Note that check_select_username () may not return */
-				$select_username = $this->bo->check_select_username ();
-				if (!$select_username || is_string ($select_username))
-				{
-					$this->simple_screen ('error_general.tpl', $GLOBALS['phpgw']->common->error_list (array ($select_username)));
-				}
-			
 			$this->header();
 			$this->template->set_file(array(
 				'_loginid_select' => 'loginid_select.tpl'
@@ -125,20 +151,41 @@
 			{
 				$this->template->set_var('errors',$GLOBALS['phpgw']->common->error_list($errors));
 			}
-			
+
+			// temporary set all available langcodes
 			$langs = $GLOBALS['phpgw']->translation->get_installed_langs();
+			$comeback_code=$this->lang_code;
 			foreach ($langs as $key => $name)	// if we have a translation use it
 			{
+				unset($choosetrans);
+				$this->set_lang_code($key);
+				
+		//		$lang_choose_string.=$key.lang('Choose your language');
+				$choosetrans=lang('Choose your language');
+			
+				if($choosetrans!='Choose your language*' && $choosetrans!=$prevstring)
+				{
+					if($lang_choose_string) $lang_choose_string .='<br/> ';
+					$lang_choose_string .=$choosetrans;
+					$prevstring=$choosetrans;
+				}
+					
 				$trans = lang($name);
 				if ($trans != $name . '*')
 				{
 					$langs[$key] = $trans;
 				}
 			} 
+			$this->set_lang_code($comeback_code);
+			
+			$this->template->set_var('lang_choose_language',$lang_choose_string);
 
-			$s .= $this->create_option_string($this->lang,$langs);
-			$this->template->set_var('selectbox_languages','<select name="lang" onChange="this.form.langchanged.value=\'true\';this.form.submit()">'.$s.'</select>');
-			$this->template->set_var('lang_choose_language',lang('Choose your language'));
+
+			$s .= $this->create_option_string($this->lang_code,$langs);
+			$this->template->set_var('selectbox_languages','<select name="lang_code" onChange="this.form.langchanged.value=\'true\';this.form.submit()">'.$s.'</select>');
+
+
+
 
 
 			$this->template->set_var('form_action',$GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.boreg.step1'));
@@ -158,7 +205,8 @@
 			$select_password = $this->bo->check_select_password ();
 			if (is_string ($select_password))
 			{
-				$this->simple_screen ('error_general.tpl', $select_password);
+				$vars[message]=	lang('An error occured. Please contact our technical support and let them know.');
+				$this->simple_screen ('error_general.tpl', $select_password,$vars);
 			}
 			elseif (!$select_password)
 			{
@@ -170,6 +218,7 @@
 				'_personal_info' => 'personal_info.tpl'
 			));
 			$this->template->set_block('_personal_info','form');
+			$this->template->set_var('lang_code',$this->lang_code);
 
 			if ($errors)
 			{
@@ -234,8 +283,8 @@
 
 			if ($config['display_tos'])
 			{
-			$this->template->set_var('tos_link',$GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.uireg.tos'));
-			$this->template->set_var('lang_tos_agree',lang('I have read the terms and conditions and agree by them.'));
+				$this->template->set_var('tos_link',$GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.uireg.tos'));
+				$this->template->set_var('lang_tos_agree',lang('I have read the terms and conditions and agree by them.'));
 				if ($r_reg['tos_agree'])
 				{
 					$this->template->set_var('value_tos_agree', 'checked');
@@ -311,7 +360,10 @@
 			$this->template->set_file(array(
 				'screen' => 'lostpw_changed.tpl'
 			));
-			$this->template->set_var('login_url',$GLOBALS['phpgw_info']['server']['webserver_url']);
+
+			$message=lang('Your password was changed. You can go back to the <a href="%1">login</a> page.',$GLOBALS['phpgw_info']['server']['webserver_url']);
+
+			$this->template->set_var('message',$message);
 
 			$this->template->pfp('out','screen');
 			$this->footer();
@@ -353,8 +405,8 @@
 			}
 
 			if ($type == 'text' || $type == 'email' || $type == 'first_name' ||
-				$type == 'last_name' || $type == 'address' || $type == 'city' ||
-				$type == 'zip' || $type == 'phone')
+			$type == 'last_name' || $type == 'address' || $type == 'city' ||
+			$type == 'zip' || $type == 'phone')
 			{
 				$rstring = '<input type=text name="' . $a . '[' . $name . ']" value="' . $post_value . '">';
 			}
@@ -394,7 +446,7 @@
 			{
 				unset ($checked);
 				if ($post_value)
-					$checked = "checked";
+				$checked = "checked";
 
 				$rstring = '<input type=checkbox name="' . $a . '[' . $name . ']" ' . $checked . '>';
 			}
@@ -424,9 +476,11 @@
 			return $rstring;
 		}
 
-		function simple_screen($template_file, $text = '')
+		function simple_screen($template_file, $text = '',$vars=false,$head_subj='')
 		{
-			$this->header();
+			//$this->setLang();
+			$this->header($head_subj);
+
 			$this->template->set_file(array(
 				'screen' => $template_file
 			));
@@ -436,6 +490,11 @@
 				$this->template->set_var ('extra_text', $text);
 			}
 
+			if(is_array($vars))
+			{
+				$this->template->set_var ($vars);
+			}
+
 			$this->template->pfp('out','screen');
 			$this->footer();
 			exit;
@@ -443,31 +502,44 @@
 
 		function ready_to_activate()
 		{
+			$this->set_lang_code();
+
 			global $config, $reg_id;
 
 			if ($config['activate_account'] == 'email')
 			{
-				$this->simple_screen('confirm_email_sent.tpl');
+				$var[lang_email_confirm]=lang('We have sent a confirmation email to your email address. You must click on the link within 2 hours. If you do not, it may take a few days until your loginid will become available again.');
+
+				$this->simple_screen('confirm_email_sent.tpl','',$var);
 			}
 			else
 			{
+
 				/* ($config['activate_account'] == 'immediately') */
-				$GLOBALS['phpgw']->redirect($GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.boreg.step4&reg_id=' . $reg_id));
+				$GLOBALS['phpgw']->redirect($GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.boreg.step4&lang_code='.$this->lang_code.'&reg_id=' . $reg_id));
 			}
 		}
 
 		function email_sent_lostpw()
 		{
-			$this->simple_screen('confirm_email_sent_lostpw.tpl');
+			$vars[message]=lang('We have sent a mail with instructions to change your password. You should follow the included link within two hours. If you do not, you will have to go to the lost password screen again.');
+			$this->simple_screen('confirm_email_sent_lostpw.tpl','',$vars);
 		}
 
 		function welcome_screen()
 		{
+			$this->set_lang_code();
 			$this->header();
+
+			$login_url=$GLOBALS['phpgw_info']['server']['webserver_url'];
+
+			$message=lang('Your account is now active!  Click <a href="%1">here</a> to log into your account.',$login_url);
+
 			$this->template->set_file(array(
 				'screen' => 'welcome_message.tpl'
 			));
-			$this->template->set_var('login_url',$GLOBALS['phpgw_info']['server']['webserver_url']);
+
+			$this->template->set_var('lang_your_account_is_active',$message);
 
 			$this->template->pfp('out','screen');
 			$this->footer();
@@ -475,6 +547,10 @@
 
 		function tos()
 		{
-			$this->simple_screen('tos.tpl');
+			global $config;
+			$var[tos_text]= $config['tos_text'];
+			$var[lang_close_window]= '<a href="javascript:self.close()">'.lang('Close Window').'</a>';
+			
+			$this->simple_screen('tos.tpl','',$var,lang('Terms of Service'));
 		}
 	}

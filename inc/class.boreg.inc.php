@@ -22,6 +22,7 @@
 		var $bomanagefields;
 		var $fields;
 		var $so;
+		var $lang_code;
 		var $public_functions = array(
 			'step1' => True,
 			'step2' => True,
@@ -36,7 +37,28 @@
 			$this->so = createobject ('registration.soreg');
 			$this->bomanagefields = createobject ('registration.bomanagefields');
 			$this->fields = $this->bomanagefields->get_field_list ();
+			
+/*			if($GLOBALS[HTTP_POST_VARS][lang])
+			{
+				$this->lang=$GLOBALS[HTTP_POST_VARS][lang];
+			}
+			else
+			{
+				$this->lang=$GLOBALS[lang];
+			}
+			
+			
+			//var_dump($GLOBALS[HTTP_POST_VARS]);
+		
+		
+			if ($this->lang)
+		{
+
+			$GLOBALS['phpgw_info']['user']['preferences']['common']['lang'] = $this->lang;
+			$GLOBALS['phpgw']->translation->init();	
 		}
+*/
+	}
 
 		function step1()
 		{
@@ -75,7 +97,11 @@
 		function step2()
 		{
 			global $config, $r_reg, $o_reg, $PHP_AUTH_USER, $PHP_AUTH_PW;
-			//echo '<pre>'; print_r($r_reg); echo '</pre>';
+			$lang_to_pass=$GLOBALS[r_reg][lang_code];
+			$ui = createobject('registration.uireg');
+			$ui->set_lang_code($lang_to_pass);
+			
+		//	echo '<pre>'; print_r($r_reg); echo '</pre>';
 
 			if ($config['password_is'] == 'http')
 			{
@@ -136,7 +162,7 @@
 						if ($required == 'Y')
 						{
 							$errors[] = lang('You have entered an invalid email address');
-							$missing_field[] = $name;
+							$missing_fields[] = $name;
 						}
 					}
 				}
@@ -200,15 +226,18 @@
 				$reg_id = $so->step2($fields);
 			}
 
-			$ui = createobject('registration.uireg');
+
 			if (is_array($errors))
 			{
+				//$ui->lang_code=$lang_to_pass;
+				//die($ui->lang_code);
 				$ui->step2($errors,$r_reg,$o_reg,$missing_fields);
 			}
 			else
 			{
+				//die($lang_to_pass);
 				// Redirect them so they don't hit refresh and make a mess
-				$GLOBALS['phpgw']->redirect($GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.uireg.ready_to_activate&reg_id=' . $reg_id));
+				$GLOBALS['phpgw']->redirect($GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.uireg.ready_to_activate&lang_code='.$lang_to_pass.'&reg_id=' . $reg_id));
 			}
 		}
 
@@ -218,11 +247,13 @@
 
 			$so = createobject('registration.soreg');
 			$ui = createobject('registration.uireg');
+			
 			$reg_info = $so->valid_reg($reg_id);
 
 			if (! is_array($reg_info))
 			{
-				$ui->simple_screen('error_confirm.tpl');
+				$vars[error_msg]=lang('Sorry, we are having a problem activating your account. Note that links sent by e-mail are only valid during two hours. If you think this delay was expired, just retry. Otherwise, please contact the site administrator.');
+				$ui->simple_screen('error_confirm.tpl','',$vars);
 				return False;
 			}
 

@@ -67,9 +67,16 @@
 				. time() . "', reg_info='" . base64_encode(serialize($fields))
 				. "' where reg_lid='$account_lid'",__LINE__,__FILE__);
 
+			
+			
+				
 			$GLOBALS['phpgw']->template->set_file(array(
 				'message' => 'confirm_email.tpl'
 			));
+			
+			$GLOBALS['phpgw']->template->set_var('Hi',lang('Hi'));
+			$GLOBALS['phpgw']->template->set_var('message1',lang('This is a confirmation email for your new account.  Click on the following link to finish activating your account. This link will expire in 2 hours.'));
+			$GLOBALS['phpgw']->template->set_var('message2',lang('If you did not request this account, simply ignore this message.'));
 
 			if ($fields['n_given'])
 			{
@@ -133,6 +140,12 @@
 				$GLOBALS['phpgw']->template->set_file(array(
 					'message' => 'lostpw_email.tpl'
 				));
+
+				$GLOBALS['phpgw']->template->set_var('hi',lang('Hi'));
+				$GLOBALS['phpgw']->template->set_var('message1',lang('You requested to change your password. Please follow the URL below to do so. This URL will expire in two hours. After this delay you should go thru the lost password procedure again.'));
+				
+				$GLOBALS['phpgw']->template->set_var('message2',lang('If you did not request this change, simply ignore this message.'));
+
 				$GLOBALS['phpgw']->template->set_var('firstname',$info['firstname']);
 				$GLOBALS['phpgw']->template->set_var('lastname',$info['lastname']);
 				$GLOBALS['phpgw']->template->set_var('activate_url',$url . '?menuaction=registration.boreg.lostpw2&reg_id=' . $reg_id);

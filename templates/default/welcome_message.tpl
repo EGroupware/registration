@@ -1,5 +1,5 @@
-<center>
+<div align="center">
  <p>
-  Your account is now active!  Click <a href="{login_url}">here</a> to log into your account.
+  {lang_your_account_is_active}
  </p>
-</center>
+</div>

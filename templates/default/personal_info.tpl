@@ -20,9 +20,10 @@
 	}
 </script>
 
-<center>{errors}</center>
+<div align="center">{errors}</div>
 <form action="{form_action}" method="POST">
- <table border="0" width="75%" align="center">
+<input type="hidden" name="r_reg[lang_code]" value="{lang_code}">
+<table border="0" width="95%" align="center">
 <!-- BEGIN password -->
   <tr>
    <td width="1%">{missing_passwd}</td>

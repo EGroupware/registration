@@ -1,6 +1,5 @@
-<center>
+<div align="center">
  <p>
-  Your password was changed.
-  You can go back to the <a href="{login_url}">login</a> page.
+ {message}
  </p>
-</center>
+</div>

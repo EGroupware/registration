@@ -1,34 +1,66 @@
-account registration		nl	Acountregistratie
-address		nl	Adres
-after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.		nl	Nadat u uw gebruikersnaam hebt ingevoerd worden de instructies verzonden naar het emailadres dat u heeft ingevoerd bij de registratie. 
-change password for user		nl	Wijzig wachtwoord voor gebruiker
-checkbox		nl	Checkbox
-current fields:		nl	Huidige velden:
-dropdown		nl	Dropdown
-enter your new password		nl	Veor uw nieuwe wachtwoord in
-gender		nl	Geslacht
-i have read the terms and conditions and agree by them.		nl	I heb de voorwaarden en restricties gelezen en en ga ermee akkoord.
-order		nl	Volgorde
-phone		nl	Telefoon
-phpgroupware - account registration		nl	eGroupWare - Wachtwoord registratie
-re-enter password		nl	Voer wachtwoord opnieuw in
-re-enter your password		nl	Voer uw wachtwoord opnieuw in
-registration		nl	Registratie
-remove		nl	Verwijderen
-report all problems and abuse to		nl	Raporteer alle problemen en misbruik aan
-required		nl	Noodzakelijk
-sorry, that username does not exist.		nl	Excuses, deze gebruikersnaam bestaat niet.
-sorry, that username is already taken.		nl	Excuses, deze gebruikersnaam is reeds in gebruik.
-text		nl	Tekst
-textarea		nl	Textarea
-the passwords you entered don't match		nl	De wachtwoorden die u heeft ingevoerd zijn niet het zelfde.
-the two passwords are not the same		nl	De wachtwoorden die u heeft ingevoerd zijn niet het zelfde.
-type		nl	Type
-update/add		nl	Bijwerken / toevoegen
-wrong session		nl	Verkeerde sessie
-you have entered an invalid birthday		nl	U heeft een ongeldige geboortedatum ingevoerd.
-you have entered an invalid email address		nl	U heeft een ongeldig emailadres ingevoerd.
-you must enter a password		nl	U moet een wachtwoord invoeren.
-you must enter a username		nl	U moet een gebruiker invoeren.
-you must fill in all of the required fields		nl	U moet alle noodzakelijke velden invoeren.
-zip/postal		nl	ZIP / Postcode
+account password retrieval	registration	nl	Accountwachtwoord achterhalen
+account registration	registration	nl	Acountregistratie
+activate account	admin	nl	Activeer account
+address	registration	nl	Adres
+after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	nl	Nadat u uw gebruikersnaam hebt ingevoerd worden de instructies verzonden naar het emailadres dat u heeft ingevoerd bij de registratie.
+anonymous password	admin	nl	Anoniem wachtwoord
+birthday	registration	nl	Geboortedatum
+change password for user	registration	nl	Wijzig wachtwoord voor gebruiker
+checkbox	registration	nl	Checkbox
+choose your language	registration	nl	Kies uw taal
+city	registration	nl	Woonplaats
+country	registration	nl	Land
+current fields:	registration	nl	Huidige velden:
+days until trial accounts expire	admin	nl	Na hoeveel dagen verloopt een account
+display terms of service?	admin	nl	Algemene Voorwaarden weergeven?
+dropdown	registration	nl	Dropdown
+egroupware - account registration	registration	nl	eGroupWare - Accountregistratie
+email address to display for support	admin	nl	Emailadres om weer te geven voor support
+email address to send notices from	admin	nl	Emailadres om rapportages naar te suren
+enable registration?	admin	nl	Accountregistratiie activeren?
+enter your new password	registration	nl	Voer uw nieuwe wachtwoord in
+gender	registration	nl	Geslacht
+http password	admin	nl	HTTP Wachtwoord
+http username	admin	nl	HTTP Gebruikersnaam
+i have read the terms and conditions and agree by them.	registration	nl	I heb de voorwaarden en restricties gelezen en en ga ermee akkoord.
+immediately	admin	nl	Per direct
+manage fields	admin	nl	Beheer invoervelden
+name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	nl	Naam (Laat leeg, tenzij type Text, Textarea, Dropdownmenu of Checkbox is; anders alleen alphanumeriek)
+on-line registration is not activated. please contact the site administrator for more information about registration.	registration	nl	On-line registratie is niet geactiveerd. Neem a.u.b. contact op met de beheerder voor meer informatie over het verkrijgen van een eGroupWare-account
+order	registration	nl	Volgorde
+password is	admin	nl	Wachtwoord is
+phone	registration	nl	Telefoon
+phpgroupware - account registration	registration	nl	eGroupWare - Wachtwoord registratie
+re-enter password	registration	nl	Voer wachtwoord opnieuw in
+re-enter your password	registration	nl	Voer uw wachtwoord opnieuw in
+register link at login screen?	admin	nl	Link plaatsen naar accountregistratie op loginscherm?
+registration	common	nl	Registratie
+registration settings	admin	nl	Registratie instellingen
+remove	registration	nl	Verwijderen
+report all problems and abuse to	registration	nl	Raporteer alle problemen en misbruik aan
+required	registration	nl	Noodzakelijk
+send email	admin	nl	Email verzenden
+sorry, that username does not exist.	registration	nl	Excuses, deze gebruikersnaam bestaat niet.
+sorry, that username is already taken.	registration	nl	Excuses, deze gebruikersnaam is reeds in gebruik.
+sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	nl	Excuses, er lijkt een probleem te zijn ontstaan bij het activeren van uw account. Maak u erop attent dat links verzonden per email slechts 2 uur geldig zijn. Als uw link verlopen is, probeer dan uw zelf opnieuw aan te melden. Anders kunt u contact opnemen met de beheerder.
+state	registration	nl	Staat / Provincie / Streek
+subject for confirmation email	admin	nl	Onderwerp voor bevestigingsemail
+text	registration	nl	Tekst
+textarea	registration	nl	Textarea
+the passwords you entered don't match	registration	nl	De wachtwoorden die u heeft ingevoerd zijn niet het zelfde.
+the two passwords are not the same	registration	nl	De wachtwoorden die u heeft ingevoerd zijn niet het zelfde.
+type	registration	nl	Type
+update/add	registration	nl	Bijwerken / toevoegen
+use trial accounts?	admin	nl	Evaluatieaccounts gebruiken?
+username is	admin	nl	Gebruikers naam is
+values (for dropdown only; comma separated)	registration	nl	Waarden voor dropdown-menu's? (gescheiden  door komma's)
+we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	nl	Er is een bevestigingsemail verzonden naar uw emailadres. In deze email staat een link waarop uw binnen twee uur moet klikken om uw account te activeren. Als u dit niet doet kan het enige tijd duren voordat uw gekozen gebruikersnaam weer beschikbaar wordt.
+wrong session	registration	nl	Verkeerde sessie
+you have entered an invalid birthday	registration	nl	U heeft een ongeldige geboortedatum ingevoerd.
+you have entered an invalid email address	registration	nl	U heeft een ongeldig emailadres ingevoerd.
+you must enter a password	registration	nl	U moet een wachtwoord invoeren.
+you must enter a username	registration	nl	U moet een gebruiker invoeren.
+you must fill in all of the required fields	registration	nl	U moet alle noodzakelijke velden invoeren.
+you specified a value for	registration	nl	U heeft eeb invoerwaarde gespecificeerd voor
+your account is now active!  click <a href="%1">here</a> to log into your account.	registration	nl	U account is nu actief! Klik <a href="%1">hier</a> om in te loggen met uw nieuwe account.
+zip/postal	registration	nl	ZIP / Postcode

@@ -44,15 +44,7 @@
     <td>{lang_Days_until_trial_accounts_expire}:</td>
    <td><input name="newsettings[days_until_trial_account_expires]" value="{value_days_until_trial_account_expires}"></td>
   </tr>
-   <tr bgcolor="{row_on}">
-    <td>{lang_Display_Terms_of_Service?}</td>
-    <td>
-     <select name="newsettings[display_tos]">
-      <option value=""{selected_display_tos_False}>{lang_No}</option>
-      <option value="True"{selected_display_tos_True}>{lang_Yes}</option>
-     </select>
-    </td>
-   </tr>
+
    <tr>
    <tr bgcolor="{row_off}">
     <td>{lang_Activate_account}:</td>
@@ -101,7 +93,22 @@
    <td>{lang_Subject_for_confirmation_email}:</td>
    <td><input name="newsettings[subject_confirm]" value="{value_subject_confirm}"></td>
   </tr>
-  <tr bgcolor="{row_off}">
+   <tr bgcolor="{row_off}">
+  <td>{lang_Display_Terms_of_Service?}</td>
+  <td>
+   <select name="newsettings[display_tos]">
+	<option value=""{selected_display_tos_False}>{lang_No}</option>
+	<option value="True"{selected_display_tos_True}>{lang_Yes}</option>
+   </select>
+  </td>
+ </tr>
+ <tr bgcolor="{row_on}">
+ <td>{lang_Terms_of_Service_text} ({lang_use HTML})</td>
+ <td>
+	<textarea name="newsettings[tos_text]" cols="40" rows="20">{value_tos_text}</textarea>
+</td>
+</tr>  
+<!--<tr bgcolor="{row_off}">-->
 
 <!-- END body -->
 
