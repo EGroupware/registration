@@ -15,9 +15,9 @@
   </tr>
 
   <tr>
-   <td width="1%">{missing_birthday}</td>
+   <td width="1%">{missing_bday}</td>
    <td><b>{lang_birthday}</b></td>
-   <td>{input_bday_month} / {input_bday_day} / {input_bday_year}</td>
+   <td>{input_bday_month} / {input_bday_day} / <input maxlength="4" name="r_reg[bday_year]" value="{value_bday_year}" size="4"></td>
   </tr>
 
   <tr>
@@ -39,7 +39,7 @@
   </tr>
 
   <tr>
-   <td width="1%">{missing_value_adr_one_street}</td>
+   <td width="1%">{missing_adr_one_street}</td>
    <td><b>{lang_address}</b></td>
    <td><input name="r_reg[adr_one_street]" value="{value_adr_one_street}"></td>
   </tr>
@@ -51,7 +51,7 @@
   </tr>
 
   <tr>
-   <td width="1%">{missing_state}</td>
+   <td width="1%">{missing_adr_region}</td>
    <td><b>{lang_state}</b></td>
    <td>{input_state}</td>
   </tr>
@@ -65,7 +65,7 @@
   <tr>
    <td width="1%">{missing_adr_one_countryname}</td>
    <td><b>{lang_country}</b></td>
-   <td>{input_countryname}</td>
+   <td>{input_country}</td>
   </tr>
 
   <tr>

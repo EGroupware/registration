@@ -20,7 +20,12 @@
 	** session for it.
 	*/
 
-	$domain = 'test';
+	// Note: This is current not a drop in install, it requires some manual installation
+	//       Take a look at the README file
+	$domain         = 'test';
+	$template_set   = 'default';
+	$anonymous_user = 'anonymous';
+	$anonymous_pass = 'anonymous';
 
 	if ($menuaction)
 	{
@@ -114,7 +119,7 @@
 
 	$phpgw_info['server'] = $phpgw_domain[$domain];
 	$phpgw                = createobject('phpgwapi.phpgw');
-	$phpgw->db            = CreateObject('phpgwapi.db');
+	$phpgw->db            = createobject('phpgwapi.db');
 	$phpgw->db->Host      = $phpgw_info['server']['db_host'];
 	$phpgw->db->Type      = $phpgw_info['server']['db_type'];
 	$phpgw->db->Database  = $phpgw_info['server']['db_name'];
@@ -127,8 +132,7 @@
 	{
 		$phpgw_info['server'][$phpgw->db->f('config_name')] = stripslashes($phpgw->db->f('config_value'));
 	}
-
-//	echo '<pre>'; print_r($phpgw_info); echo '</pre>';
+	$phpgw_info['server']['template_set'] = $template_set;
 
 	$phpgw->common        = createobject('phpgwapi.common');
 	$phpgw->auth          = createobject('phpgwapi.auth');
@@ -150,14 +154,14 @@
 
 	if (! $sessionid)
 	{
-		$sessionid = $phpgw->session->create('anonymous@' . $domain,'anonymous');
+		$sessionid = $phpgw->session->create($anonymous_user . '@' . $domain,$anonymous_pass);
 	}
 	else
 	{
 		if (! $phpgw->session->verify())
 		{
 			// Lets hope this works
-			$sessionid = $phpgw->session->create('anonymous@' . $domain,'anonymous');
+			$sessionid = $phpgw->session->create($anonymous_user . '@' . $domain,$anonymous_pass);
 		}
 	}
 
@@ -179,5 +183,3 @@
 		$_obj = createobject('registration.uireg');
 		$_obj->step1();
 	}
-
-//	$phpgw->common->phpgw_footer();

@@ -112,11 +112,13 @@
 			$this->db->query("delete from phpgw_reg_accounts where reg_id='$reg_id'",__LINE__,__FILE__);
 		}
 
-		function create_account($account_lid,$reg_info)
+		function create_account($account_lid,$_reg_info)
 		{
-			global $config, $phpgw;
+			global $config, $phpgw, $reg_info;
 
-			$fields   = unserialize(base64_decode($reg_info));
+			$fields             = unserialize(base64_decode($_reg_info));
+			$reg_info['lid']    = $account_lid;
+			$reg_info['fields'] = $fields;
 
 			$account_id = $phpgw->accounts->auto_add($account_lid,$fields['passwd'],False,False,0,'A');
 			$accounts   = createobject('phpgwapi.accounts',$account_id);
@@ -144,6 +146,8 @@
 			}
 			$accounts->data['status']  = 'A';
 			$accounts->save_repository();
+
+			include(PHPGW_SERVER_ROOT . '/messenger/inc/hook_registration.inc.php');
 		}
 
 	}

@@ -133,9 +133,11 @@
 			$this->template->set_var('lang_female',lang('Female'));
 			$this->template->set_var('lang_submit',lang('Submit'));
 
-			$sbox    = createobject('phpgwapi.sbox');
+			$sbox = createobject('phpgwapi.sbox');
+			$this->template->set_var('input_bday_day',$sbox->getdays('r_reg[bday_day]',$r_reg['bday_day']));
+			$this->template->set_var('input_bday_month',$sbox->getmonthtext('r_reg[bday_month]',$r_reg['bday_month']));
 			$this->template->set_var('input_country',$sbox->form_select($r_reg['adr_one_countryname'],'r_reg[adr_one_countryname]'));
-			$this->template->set_var('input_state',$sbox->list_states('r_reg[adr_one_locality]',$r_reg['adr_one_locality']));
+			$this->template->set_var('input_state',$sbox->list_states('r_reg[adr_region]',$r_reg['adr_region']));
 
 			$this->template->set_var('lang_tos_agree',lang('I have read the terms and conditions and agree by them.'));
 

@@ -60,9 +60,12 @@
 		function step2()
 		{
 			global $phpgw, $r_reg, $o_reg;
-
 			//echo '<pre>'; print_r($r_reg); echo '</pre>';
-			//echo '<pre>'; print_r($o_reg); echo '</pre>';
+
+			if (! $r_reg['tos_agree'])
+			{
+				$missing_fields[] = 'tos_agree';
+			}
 
 			while (list($name,$value) = each($r_reg))
 			{
@@ -74,14 +77,38 @@
 			}
 			reset($r_reg);
 
-			if ($r_reg['country'] == '  ')
+			if ($r_reg['adr_one_countryname'] == '  ')
 			{
-				$missing_fields[] = 'country';
+				$missing_fields[] = 'adr_one_countryname';
 			}
 
 			if ($r_reg['passwd'] != $r_reg['passwd_confirm'])
 			{
 				$errors[] = lang("The passwords you entered don't match");
+				$missing_fields[] = 'passwd';
+				$missing_fields[] = 'passwd_confirm';
+			}
+
+			if ($r_reg['email'] && (! ereg('@',$r_reg['email']) || ! ereg('\.',$r_reg['email'])))
+			{
+				$errors[] = lang('You have entered an invaild email address');
+			}
+
+			if ($r_reg['bday_month'] || $r_reg['bday_day'] || $r_reg['bday_year'])
+			{
+				if (! checkdate($r_reg['bday_month'],$r_reg['bday_day'],$r_reg['bday_year']))
+				{
+					$errors[]          = lang('You have entered an invalid birthday');
+					$missing_fields[] = 'bday';
+				}
+				else
+				{
+					$r_reg['bday'] = sprintf('%s/%s/%s',$r_reg['bday_month'],$r_reg['bday_day'],$r_reg['bday_year']);
+				}
+			}
+			else
+			{
+				$missing_fields[] = 'bday';
 			}
 
 			while (is_array($o_reg) && list($name,$value) = each($o_reg))
