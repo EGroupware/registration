@@ -35,4 +35,10 @@
 		return $setup_info['registration']['currentver'];
 	}
 
+	$test[] = '0.8.2';
+	function registration_upgrade0_8_2()
+	{
+		$setup_info['registration']['currentver'] = '1.0.0';
+		return $setup_info['registration']['currentver'];
+	}
 ?>
