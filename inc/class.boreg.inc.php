@@ -2,7 +2,7 @@
 	/**************************************************************************\
 	* eGroupWare - Registration                                              *
 	* http://www.eGroupWare.org                                              *
-	* This application written by Joseph Engo <jengo@eGroupWare.org>         *
+	* This application written by Joseph Engo <jengo@phpgroupware.org>         *
 	* Modified by Jason Wies (Zone) <zone@users.sourceforge.net>               *
 	* Modified by Loic Dachary <loic@gnu.org>                                  *
 	* Modified by Pim Snel <pim@egroupware.org>                                *
