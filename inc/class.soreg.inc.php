@@ -218,6 +218,8 @@
 
 			$fields             = unserialize(base64_decode($_reg_info));
 			$fields['lid'] = "*$account_lid*";
+			//$fields['lid'] = $account_lid;
+
 
 			$reg_info['lid']    = $account_lid;
 			$reg_info['fields'] = $fields;
@@ -229,6 +231,7 @@
 				return False;
 			}
 
+			//var_dump($account_id);
 			$accounts   = createobject('phpgwapi.accounts',$account_id);
 			$contacts   = createobject('phpgwapi.contacts');
 
@@ -262,6 +265,9 @@
 				}
 			}
 
+			//var_dump($contact_fields);
+			//echo "ac<P>";
+			//die($account_id);	
 			$contacts->add($account_id,$contact_fields,0,'P');
 
 			$GLOBALS['phpgw']->db->transaction_commit();

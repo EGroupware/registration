@@ -24,7 +24,7 @@
 
 	// Note: This is current not a drop in install, it requires some manual installation
 	//       Take a look at the README file
-	$domain         = 'default'; // move to ??
+   	$domain         = 'default'; // move to ??
 	$template_set   = 'idots'; // move to config
 	$default_lang = 'en'; // move to config
 
