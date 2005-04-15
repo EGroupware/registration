@@ -1,17 +1,58 @@
 account password retrieval	registration	fi	Salasanan nouto
 account registration	registration	fi	Tunnuksen luominen
+activate account	admin	fi	Aktivoi tunnus
+address	registration	fi	Osoite
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	fi	Annettuasi käyttäjätunnuksesi ohjeet salasanan vaihtamiseksi lähetetään rekisteröityessäsi antamaasi sähköpostiosoitteeseen.
+an error occured. please contact our technical support and let them know.	registration	fi	Virhe tapahtui. Ota yhteyttä tekniseen tukeemme ja ilmoita asiasta.
+anonymous password	admin	fi	tuntematon salasana
+birthday	registration	fi	Syntymäpäivä
+change password for user	registration	fi	Muuta salasana käyttäjälle
+checkbox	registration	fi	Valinta
+choose language	registration	fi	Valitse kieli
+choose your language	common	fi	Valitse kielesi
+city	registration	fi	Kaupunki
+close window	registration	fi	Sulje
+country	registration	fi	Maa
+egroupware - account registration	registration	fi	eGroupware - tunnuksen luominen
+enable registration?	admin	fi	Aktivoi rekisteröityminen?
 enter your new password	registration	fi	Anna uusi salasanasi
+female	registration	fi	Nainen
+gender	registration	fi	sukupuoli
+hi	registration	fi	Terve!
+http password	admin	fi	HTTP salasana
+http username	admin	fi	HTTP käyttäjätunnus
 i have read the terms and conditions and agree by them.	registration	fi	Olen lukenut palvelun käyttöehdot ja hyväksyn ne.
-egroupware - account registration	registration	fi	eGroupWare - Tunnuksen luominen
+if you did not request this account, simply ignore this message.	registration	fi	Sivuuta tämä viesti jos et pyytänyt tätä tunnusta.
+if you did not request this change, simply ignore this message.	registration	fi	Sivuuta tämä viesti jos et pyytänyt tätä muutosta.
+male	registration	fi	Mies
+not a user yet? register now	login	fi	Etkö ole vielä käyttäjä? Rekisteröidy nyt.
+order	registration	fi	Järjestys
+password is	admin	fi	Salasana
+phone	registration	fi	Puhelin
+phpgroupware - account registration	registration	fi	phpGroupWare - Tunnuksen luominen
 re-enter password	registration	fi	Salasana uudelleen
 re-enter your password	registration	fi	Anna salasanasi uudelleen
 registration	common	fi	Rekisteröityminen
+registration settings	admin	fi	Rekisteröitymisen asetukset
+remove	registration	fi	Poista
+report all problems and abuse to	registration	fi	Raportoi kaikista ongelmista ja väärinkäytöstä
+send email	admin	fi	Lähetä sähköposti
 sorry, that username does not exist.	registration	fi	Valitan, käyttäjätunnusta ei löydy.
 sorry, that username is already taken.	registration	fi	Valitan, käyttäjätunnus on jo varattu
+text	registration	fi	Teksti
+textarea	registration	fi	Tekstialue
+the passwords you entered don't match	registration	fi	Salasanat eivät täsmää jotka kirjoiti.
 the two passwords are not the same	registration	fi	Salasanat eivät vastaa toisiaan
+type	registration	fi	Tyyppi
+update/add	registration	fi	Päivitä/Lisää
+use html	admin	fi	käytä HTML
+use trial accounts?	admin	fi	käytä kokeilu tunnuksia?
+username is	admin	fi	Käyttäjänimi
 wrong session	registration	fi	Väärä istunto
+you have entered an invalid birthday	registration	fi	Syntymäpäivä ei kelpaa
 you have entered an invalid email address	registration	fi	Sähköpostiosoite ei kelpaa
 you must enter a password	registration	fi	Anna salasana
 you must enter a username	registration	fi	Anna käyttäjätunnus
 you must fill in all of the required fields	registration	fi	Täytä kaikki pakolliset kentät
+your account is now active!  click <a href="%1">here</a> to log into your account.	registration	fi	Tunnuksesi on nyt aktiivinen! Paina <a href=%1> tästä kirjautuaksesi tiliisi.
+your password was changed. you can go back to the <a href="%1">login</a> page.	registration	fi	Salasanasi on muutettu. Voit mennä takaisin <a href=%1> kirjautumis </a> sivulle.
