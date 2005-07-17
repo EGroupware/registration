@@ -1,6 +1,27 @@
+<br>please contact the site administrator.	registration	es-es	<br>Por favor, póngase en contacto con el administrador del sitio
 [unknown first name]	registration	es-es	[nombre de pila desconocido]
 [unknown last name]	registration	es-es	[apellido desconocido]
+account $account_lid record could not be found, report to site administrator	registration	es-es	No se pudo encontrar el registro para la cuenta $account_lid. Informe al administrador del sitio.
+account password retrieval	registration	es-es	Recuperación de la contraseña de la cuenta
+account registration	registration	es-es	Registro de la cuenta
+activate account	admin	es-es	Activar cuenta
+address	registration	es-es	Dirección
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	es-es	Después de introducir la dirección de correo, las cuentas de correo asociadas con esta dirección de correo se enviarán a esa dirección.
+after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	es-es	Después de introducir su usuario, se le enviarán instrucciones por correo para cambiar la contraseña indicada al registrarse.
+an error occured. please contact our technical support and let them know.	registration	es-es	Ha ocurrido un error. Por favor, póngase en contacto con nuestro soporte técnico.
+anonymous password	admin	es-es	Contraseña anónima
+birthday	registration	es-es	Fecha de nacimiento
+challenge question	registration	es-es	Pregunta de verificación
+change password for user	registration	es-es	Cambiar contraseña para el usuario
+checkbox	registration	es-es	Casilla
+choose language	registration	es-es	Elegir idioma
+choose your language	registration	es-es	Elija el idioma
+city	registration	es-es	Ciudad
+close window	registration	es-es	Cerrar ventana
+country	registration	es-es	País
+current fields:	registration	es-es	Campos actuales:
+days until trial accounts expire	admin	es-es	Días hasta que expiren las cuentas de prueba
+display terms of service?	admin	es-es	¿Mostrar términos del servicio?
 dropdown	registration	es-es	Desplegable
 email address	registration	es-es	Dirección de correo electrónico
 email address to display for support	admin	es-es	Dirección de correo electrónico para soporte
@@ -31,6 +52,7 @@ on-line registration is not activated. please contact the site administrator for
 order	registration	es-es	Ordenar
 password is	admin	es-es	La contraseña es
 phone	registration	es-es	Teléfono
+problem sending email:	registration	es-es	Problema al enviar correo:
 re-enter password	registration	es-es	Confirmar contraseña
 re-enter your password	registration	es-es	Confirmar contraseña
 register link at login screen?	admin	es-es	¿Enlace de registro en la pantalla de inicio de sesión?
@@ -39,7 +61,9 @@ registration settings	admin	es-es	Configuración del autorregistro
 remove	registration	es-es	Borrar
 report all problems and abuse to	registration	es-es	Informar de todos los problemas y abusos a
 required	registration	es-es	Requerido
+response	registration	es-es	Respuesta
 send email	admin	es-es	Enviar correo
+sorry, no account exists for	registration	es-es	Lo sentimos, no existe la cuenta para
 sorry, that username does not exist.	registration	es-es	Lo sentimos, ese usuario no existe
 sorry, that username is already taken.	registration	es-es	Lo sentimos, ese usuario ya está cogido.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	es-es	Lo sentimos, estamos teniendo un problema en la activación de su cuenta. Tenga en cuenta que los enlaces que se envían por correo son válidos sólo durante dos horas. Si piensa que este período ya ha transcurrido, simplemente reinténtelo. Si no, por favor, póngase en contacto con el administrador del sitio.
@@ -52,6 +76,7 @@ textarea	registration	es-es	Area de texto
 the passwords you entered don't match	registration	es-es	Las contraseñas introducidas no coinciden
 the two passwords are not the same	registration	es-es	Las dos contraseñas son distintas
 this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	es-es	Este es un correo de confirmación para la nueva cuenta. Pulse en el enlace siguiente para finalizar la activación de la cuenta. Este enlace expirará en 2 horas.
+type	registration	es-es	Tipo
 unable to send mail, contact your administrator	registration	es-es	No se pudo enviar el correo. Póngase en contacto con el administrador.
 unknown first name	registration	es-es	Nombre de pila desconocido
 unknown last name	registration	es-es	Apellido desconocido
@@ -61,3 +86,17 @@ use trial accounts?	admin	es-es	¿Usar cuentas de prueba?
 username is	admin	es-es	El nombre de usuario es
 values (for dropdown only; comma separated)	registration	es-es	Valores (sólo para las listas desplegables, separadas por comas)
 we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	es-es	Hemos enviado un correo de confirmación a su dirección de correo electrónico. Debe pulsar en el enlace dentro de las siguientes 2 horas. Si no, el identificador puede tardar unos días en volver a estar disponible.
+we have sent a mail to your email account: %s with your lost user ids.	registration	es-es	Hemos enviado un correo a su cuenta: %s con sus ids de usuario perdidos.
+we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	es-es	Hemos enviado un correo con instrucciones para cambiar la contraseña. Debe pulsar el enlace incluido en un plazo de dos horas. Si no lo hace, tendrá que volver a la pantalla de contraseñas perdidas.
+wrong session	registration	es-es	Sesión incorrecta
+you have entered an invalid birthday	registration	es-es	La fecha de nacimiento introducida no es válida
+you have entered an invalid email address	registration	es-es	La dirección de correo electrónico introducida no es válida
+you must enter a password	registration	es-es	Debe introducir una contraseña
+you must enter a username	registration	es-es	Debe introducir un usuario
+you must enter an email account	registration	es-es	Debe introducir una cuenta de correo electrónico
+you must fill in all of the required fields	registration	es-es	Debe rellenar todos los campos obligatorios
+you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	es-es	Ha solicitado cambiar la contraseña. Por favor, vaya a la URL indicada debajo. Esta URL expirará en dos horas. Después de este plazo, debe repetir todo el procedimiento de contraseñas perdidas.
+you specified a value for %1 that is not a choice	registration	es-es	El valor especificado para %1 no es una opción
+your account is now active!  click <a href="%s">here</a> to log into your account.	registration	es-es	Su cuenta ha sido activada. Pulse <a href="%s">aquí</a> para iniciar sesión con su cuenta.
+your password was changed. you can go back to the <a href="%1">login</a> page.	registration	es-es	Se ha cambiado la contraseña. Puede volver a la página de <a href="%1">inicio de sesión</a>.
+zip/postal	registration	es-es	ZIP/Código postal
