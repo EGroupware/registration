@@ -27,7 +27,7 @@
 		
 		function bomanagefields()
 		{
-			$this->so = CreateObject ('registration.somanagefields');
+			$this->so =& CreateObject ('registration.somanagefields');
 			$this->fields = $this->get_field_list ();
 		}
 
@@ -208,14 +208,14 @@
 		function check_admin()
 		{
 			$admin = False;
-			if (@$GLOBALS['phpgw_info']['user']['apps']['admin'])
+			if (@$GLOBALS['egw_info']['user']['apps']['admin'])
 			{
 				$admin = True;
 			}
 				
 			if (!$admin)
 			{
-				Header ('Location: ' . $GLOBALS['phpgw']->link ('/index.php'));
+				Header ('Location: ' . $GLOBALS['egw']->link ('/index.php'));
 			}
 		}
 	}

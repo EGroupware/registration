@@ -26,30 +26,30 @@
 
 		function uimanagefields ()
 		{
-			$GLOBALS['phpgw']->nextmatches = CreateObject ('phpgwapi.nextmatchs');
+			$GLOBALS['egw']->nextmatches =& CreateObject ('phpgwapi.nextmatchs');
 
-			$this->bo = CreateObject ('registration.bomanagefields');
+			$this->bo =& CreateObject ('registration.bomanagefields');
 			$this->bo->check_admin ();
 			$this->base_url = $this->bo->base_url;
 		}
 
 		function admin ($message = NULL)
 		{
-			unset ($GLOBALS['phpgw_info']['flags']['noheader']);
-			unset ($GLOBALS['phpgw_info']['flags']['nonavbar']);
-			$GLOBALS['phpgw_info']['flags']['noappfooter'] = True;
-			$GLOBALS['phpgw']->common->phpgw_header ();
+			unset ($GLOBALS['egw_info']['flags']['noheader']);
+			unset ($GLOBALS['egw_info']['flags']['nonavbar']);
+			$GLOBALS['egw_info']['flags']['noappfooter'] = True;
+			$GLOBALS['egw']->common->egw_header ();
 
-			$p = $GLOBALS['phpgw']->template;
+			$p = $GLOBALS['egw']->template;
 			$p->set_file(Array('fields'=>'fields.tpl'));
 
 			if (!isset ($message))
 			{
-				$message = $GLOBALS['HTTP_GET_VARS']['message'];
+				$message = $_GET['message'];
 			}
 
 			$var = array (
-				'action_url' => $GLOBALS['phpgw']->link ($this->base_url, 'menuaction=registration.uimanagefields.submit'),
+				'action_url' => $GLOBALS['egw']->link ($this->base_url, 'menuaction=registration.uimanagefields.submit'),
 				'message'    => $message,
 				'lang_current_fields' => lang ('Current fields:'),
 				'lang_name_and_shortdesc' => lang ('Name (blank unless Text, Textarea, Dropdown, Checkbox; else alphanumeric only)'),
@@ -80,15 +80,15 @@
 			);
 			$p->set_var ($var);
 
-			$row_color = $GLOBALS['phpgw']->nextmatches->alternate_row_color ($row_color);
+			$row_color = $GLOBALS['egw']->nextmatches->alternate_row_color ($row_color);
 			$var = Array(
-				'row_off' => $GLOBALS['phpgw']->nextmatches->alternate_row_color ($row_color)
+				'row_off' => $GLOBALS['egw']->nextmatches->alternate_row_color ($row_color)
 			);
 			$p->set_var ($var);
 
-			$row_color = $GLOBALS['phpgw']->nextmatches->alternate_row_color ($row_color);
+			$row_color = $GLOBALS['egw']->nextmatches->alternate_row_color ($row_color);
 			$var = Array(
-				'row_on' => $GLOBALS['phpgw']->nextmatches->alternate_row_color ($row_color)
+				'row_on' => $GLOBALS['egw']->nextmatches->alternate_row_color ($row_color)
 			);
 			$p->set_var ($var);
 
@@ -175,15 +175,15 @@
 		{
 			$this->bo->check_admin ();
 
-			$post_vars = $GLOBALS['HTTP_POST_VARS'];
+			$post_vars = $_POST;
 
-			unset($GLOBALS['phpgw_info']['flags']['noheader']);
-			unset($GLOBALS['phpgw_info']['flags']['nonavbar']);
-			$GLOBALS['phpgw_info']['flags']['noappfooter'] = True;
+			unset($GLOBALS['egw_info']['flags']['noheader']);
+			unset($GLOBALS['egw_info']['flags']['nonavbar']);
+			$GLOBALS['egw_info']['flags']['noappfooter'] = True;
 
 			$this->bo->submit ($post_vars);
 
-			Header ('Location: ' . $GLOBALS['phpgw']->link ($this->base_url, 'menuaction=registration.uimanagefields.admin&message=Updated'));
+			Header ('Location: ' . $GLOBALS['egw']->link ($this->base_url, 'menuaction=registration.uimanagefields.admin&message=Updated'));
 		}
 	}
 ?>

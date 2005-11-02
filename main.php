@@ -67,8 +67,6 @@
 	);
 	include('../header.inc.php');
 	include(EGW_INCLUDE_ROOT.'/phpgwapi/inc/common_functions.inc.php');
-
-
 	
 	$GLOBALS['egw_info']['server'] = $GLOBALS['egw_domain'][$domain];
 	$GLOBALS['egw']                =& CreateObject('phpgwapi.egw');
@@ -80,7 +78,7 @@
 	$GLOBALS['egw']->db->Password  = $GLOBALS['egw_info']['server']['db_pass'];
 
 	// Fill phpgw_info["server"] array 
-	$GLOBALS['egw']->db->query("select * from phpgw_config WHERE config_app='phpgwapi'",__LINE__,__FILE__);
+	$GLOBALS['egw']->db->query("select * from egw_config WHERE config_app='phpgwapi'",__LINE__,__FILE__);
 	while ($GLOBALS['egw']->db->next_record())
 	{
 		$GLOBALS['egw_info']['server'][$GLOBALS['egw']->db->f('config_name')] = stripslashes($GLOBALS['egw']->db->f('config_value'));

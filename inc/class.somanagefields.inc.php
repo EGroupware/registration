@@ -21,7 +21,7 @@
 
 		function somanagefields()
 		{
-			$this->db = $GLOBALS['phpgw']->db;
+			$this->db = clone($GLOBALS['egw']->db);
 
 			$this->db_fields = array ('field_name', 'field_text', 'field_type', 'field_values', 'field_required', 'field_order');
 		}

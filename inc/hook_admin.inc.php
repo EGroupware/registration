@@ -16,8 +16,8 @@
 
 	$title = $appname;
 	$file = Array(
-		'Site Configuration'	=> $GLOBALS['phpgw']->link('/index.php', 'menuaction=admin.uiconfig.index&appname=' . $appname),
-		'Manage Fields'      => $GLOBALS['phpgw']->link ('/index.php', 'menuaction=' . $appname . '.uimanagefields.admin')
+		'Site Configuration'	=> $GLOBALS['egw']->link('/index.php', 'menuaction=admin.uiconfig.index&appname=' . $appname),
+		'Manage Fields'      => $GLOBALS['egw']->link ('/index.php', 'menuaction=' . $appname . '.uimanagefields.admin')
 	);
 
 	display_section($appname,$title,$file);

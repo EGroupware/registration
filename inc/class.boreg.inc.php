@@ -37,8 +37,8 @@
 
 		function boreg()
 		{
-			$this->so = createobject ('registration.soreg');
-			$this->bomanagefields = createobject ('registration.bomanagefields');
+			$this->so =& CreateObject ('registration.soreg');
+			$this->bomanagefields =& CreateObject ('registration.bomanagefields');
 			$this->fields = $this->bomanagefields->get_field_list ();
 
 			$_reg_id=$_GET['reg_id']?$_GET['reg_id']:$_POST['reg_id'];
@@ -56,8 +56,8 @@
 
 			$r_reg=$_REQUEST['r_reg'];
 
-			$so = createobject('registration.soreg');
-			$ui = createobject('registration.uireg');
+			$so =& CreateObject('registration.soreg');
+			$ui =& CreateObject('registration.uireg');
 
 			if($_POST['langchanged']=='true')
 			{
@@ -81,7 +81,7 @@
 			}
 			else
 			{
-				$GLOBALS['phpgw']->session->appsession('loginid','registration',$r_reg['loginid']);
+				$GLOBALS['egw']->session->appsession('loginid','registration',$r_reg['loginid']);
 				
 				
 				$ui->step2();
@@ -97,7 +97,7 @@
 			$o_reg=$_POST['o_reg'];
 			
 			$lang_to_pass=$r_reg['lang_code'];
-			$ui = createobject('registration.uireg');
+			$ui =& CreateObject('registration.uireg');
 			$ui->set_lang_code($lang_to_pass);
 			
 			//where is this for????
@@ -221,7 +221,7 @@
 
 			if (! is_array($errors))
 			{
-				$so     = createobject('registration.soreg');
+				$so     =& CreateObject('registration.soreg');
 				// only send mail if activation requires it
 				$reg_id = $so->step2($fields,$config['activate_account'] == 'email');
 			}
@@ -232,14 +232,14 @@
 			}
 			else
 			{
-				$GLOBALS['phpgw']->redirect($GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.uireg.ready_to_activate&lang_code='.$lang_to_pass.'&reg_id=' . $reg_id));
+				$GLOBALS['egw']->redirect($GLOBALS['egw']->link('/registration/main.php','menuaction=registration.uireg.ready_to_activate&lang_code='.$lang_to_pass.'&reg_id=' . $reg_id));
 			}
 		}
 
 		function step4()
 		{
-			$so = createobject('registration.soreg');
-			$ui = createobject('registration.uireg');
+			$so =& CreateObject('registration.soreg');
+			$ui =& CreateObject('registration.uireg');
 			
 			$reg_info = $so->valid_reg($this->reg_id);
 
@@ -266,27 +266,27 @@
 			//var $r_reg;
 
 			$r_reg = $_REQUEST['r_reg'] ;
-			$so = createobject('registration.soreg');
+			$so =& CreateObject('registration.soreg');
 			
 			if (! $r_reg['loginid'])
 			{
 				$errors[] = lang('You must enter a username');
 			}
-			if (! is_array($errors) && !$GLOBALS['phpgw']->accounts->exists($r_reg['loginid']))
+			if (! is_array($errors) && !$GLOBALS['egw']->accounts->exists($r_reg['loginid']))
 			{
 				$errors[] = lang('Sorry, that username does not exist.');
 			}
 
 			if(! is_array($errors))
 			{
-			        $error = $so->lostpw1($r_reg['loginid']);
+							$error = $so->lostpw1($r_reg['loginid']);
 				if($error)
 				{
-				  $errors[] = $error;
+					$errors[] = $error;
 				}
 			}
 			
-			$ui = createobject('registration.uireg');
+			$ui =& CreateObject('registration.uireg');
 			if (is_array($errors))
 			{
 				$ui->lostpw1($errors,$r_reg);
@@ -294,7 +294,7 @@
 			else
 			{
 				// Redirect them so they don't hit refresh and make a mess
-				$GLOBALS['phpgw']->redirect($GLOBALS['phpgw']->link('/registration/main.php','menuaction=registration.uireg.email_sent_lostpw'));
+				$GLOBALS['egw']->redirect($GLOBALS['egw']->link('/registration/main.php','menuaction=registration.uireg.email_sent_lostpw'));
 			}
 		}
 
@@ -304,8 +304,8 @@
 		function lostpw2()
 		{
 
-			$so = createobject('registration.soreg');
-			$ui = createobject('registration.uireg');
+			$so =& CreateObject('registration.soreg');
+			$ui =& CreateObject('registration.uireg');
 			$reg_info = $so->valid_reg($this->reg_id);
 
 			if (! is_array($reg_info))
@@ -328,36 +328,36 @@
 			//var $r_reg;
 			$r_reg = $_REQUEST['r_reg'] ;
 
-			$lid = $GLOBALS['phpgw']->session->appsession('loginid','registration');
+			$lid = $GLOBALS['egw']->session->appsession('loginid','registration');
 			if(!$lid) {
-			  $error[] = lang('Wrong session');
+				$error[] = lang('Wrong session');
 			}
 
 			if ($r_reg['passwd'] != $r_reg['passwd_2'])
 			{
-			    $errors[] = lang('The two passwords are not the same');
+					$errors[] = lang('The two passwords are not the same');
 			}
 
 			if (! $r_reg['passwd'])
 			{
-			    $errors[] = lang('You must enter a password');
+					$errors[] = lang('You must enter a password');
 			}
 
 			if(! is_array($errors))
 			{
-			  $so = createobject('registration.soreg');
-			  $so->lostpw3($lid, $r_reg['passwd']);
+				$so =& CreateObject('registration.soreg');
+				$so->lostpw3($lid, $r_reg['passwd']);
 			}
 
-			$ui = createobject('registration.uireg');
+			$ui =& CreateObject('registration.uireg');
 
 			if (is_array($errors))
 			{
-			  $ui->lostpw3($errors, $r_reg, $lid);
+				$ui->lostpw3($errors, $r_reg, $lid);
 			} 
 			else
 			{
-			  $ui->lostpw4();
+				$ui->lostpw4();
 			}
 
 			return True;
@@ -379,7 +379,7 @@
 				}
 				else
 				{
-					$GLOBALS['phpgw']->redirect ($GLOBALS['phpgw']->link ('/registration/main.php', 'menuaction=registration.boreg.step1&r_reg[loginid]=' . $_SERVER['PHP_AUTH_USER']));
+					$GLOBALS['egw']->redirect ($GLOBALS['egw']->link ('/registration/main.php', 'menuaction=registration.boreg.step1&r_reg[loginid]=' . $_SERVER['PHP_AUTH_USER']));
 				}
 			}
 
@@ -390,7 +390,7 @@
 		{
 			//var $config;
 			$r_reg = $_REQUEST['r_reg'] ;
-			$so = createobject('registration.soreg');
+			$so =& CreateObject('registration.soreg');
 			
 			if (! $r_reg['email'])
 			{
@@ -407,14 +407,14 @@
 
 			if(! is_array($errors))
 			{
-			        $error = $so->lostid1($r_reg['email']);
+							$error = $so->lostid1($r_reg['email']);
 				if($error)
 				{
-				  $errors[] = $error;
+					$errors[] = $error;
 				}
 			}
 			
-			$ui = createobject('registration.uireg');
+			$ui =& CreateObject('registration.uireg');
 			if (is_array($errors))
 			{
 				$ui->lostid1($errors,$r_reg);
