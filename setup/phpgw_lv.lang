@@ -1,23 +1,7 @@
-account password retrieval	registration	lv	Konta paroles atgūšana
-account registration	registration	lv	Konta reģistrācija
-activate account	admin	lv	Aktivizēt kontu
-address	registration	lv	Adrese
-after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	lv	Kad ievadīsi lietotājvārdu, uz e-pasta adresi, kuru norādīji reģistrējoties, tiks nosūtīti norādījumi, kā nomainīt paroli
-an error occured. please contact our technical support and let them know.	registration	lv	Notikusi kļūda. Lūdzu iznformējiet savu tehniskā atbalsta grupu
-anonymous password	admin	lv	Anonīmā parole
-birthday	registration	lv	Dzimšanas diena
-change password for user	registration	lv	Mainīt paroli lietotājam
-checkbox	registration	lv	izvēles rūtiņa
-choose language	registration	lv	Izvēlies valodu
-choose your language	common	lv	Izvēlies savu valodu
-city	registration	lv	Pilsēta
-close window	registration	lv	Aizvērt logu
-country	registration	lv	Valsts
-current fields:	registration	lv	Esošie lauki
-days until trial accounts expire	admin	lv	Dienas, kamēr derīgi izmēģinājuma konti
-display terms of service?	admin	lv	Parādīt apkalppošanas nosacījumus?
+[unknown first name]	registration	lv	[nezināms vārds]
+[unknown last name]	registration	lv	[nezināms uzvārds]
 dropdown	registration	lv	Nolaižamais lodziņš
-egroupware - account registration	registration	lv	eGroupWare- konta reģistrācija
+email address	registration	lv	e-pasta adrese
 email address to display for support	admin	lv	E-pasta adrese atbalstam
 email address to send notices from	admin	lv	E-pasta adrese, no kuras sūtīt paziņojumus
 enable registration?	admin	lv	Atļaut reģistrāciju?
@@ -30,14 +14,18 @@ i have read the terms and conditions and agree by them.	registration	lv	Esmu izl
 if you did not request this account, simply ignore this message.	registration	lv	Ja tu šō kontu nepieprasīji, vienkārši ignorē šo vēstuli
 if you did not request this change, simply ignore this message.	registration	lv	Ja tu nepieprasīji izmaiņas, vienkārši ignorē šo vēstuli
 immediately	admin	lv	Nekavējoties
+lost login id	login	lv	Pazudis pieteikšanās id
+lost password	registration	lv	Pazaudēta parole
+lost user account retrieval	registration	lv	Pazaudēta lietotāja konta izgūšana
+lost user id	registration	lv	Pazaudēts lietotāja id
+lost user id link at login screen?	admin	lv	Pazaudēta lietotāja id saite pieteikšanās logā?
 male	registration	lv	Vīrietis
-manage fields	admin	lv	Pārvaldīt lauukus
+manage fields	admin	lv	Pārvaldīt laukus
 not a user yet? register now	login	lv	Vēl neesi lietotājs? Reģistrēties tagad
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	lv	Tiešsaites reģīstrācija nav aktivizēta. Lūdzu sazinieties ar vietnes administratoru, lai iegūtu vairak informācijas par reģistrāciju
 order	registration	lv	Kārtība
 password is	admin	lv	Parole ir
 phone	registration	lv	Telefons
-phpgroupware - account registration	registration	lv	phpGroupWare- konta reģistrācija
 re-enter password	registration	lv	Vēlreiz ievadi paroli
 re-enter your password	registration	lv	Vēlreiz ievadi savu paroli
 register link at login screen?	admin	lv	Reģistrēt saiti pieteikšanās logā?
@@ -59,22 +47,12 @@ textarea	registration	lv	Teksta lauks
 the passwords you entered don't match	registration	lv	Ievadītās paroles nesakrīt
 the two passwords are not the same	registration	lv	Divas paroles nav vienādas
 this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	lv	Šī ir apstiprinājuma vēstule tavam jaunajam kontam. Uzklikšķini uz sekojošās saites, lai pabeigtu konta aktivēšanu. Šī saite derīga 2 stundas.
-type	registration	lv	Tips
+unable to send mail, contact your administrator	registration	lv	Nevar nosūtīt vēstuli, sazinieties ar savu administratoru.
+unknown first name	registration	lv	Nezināms vārds
+unknown last name	registration	lv	Nezināms uzvārds
 update/add	registration	lv	Atjaunināt/pievienot
 use html	admin	lv	lieto HTML
 use trial accounts?	admin	lv	Lietot izmēginajuma kontus?
 username is	admin	lv	Lietotājvārds ir
 values (for dropdown only; comma separated)	registration	lv	Vērtības (ar komatu atdalītas,tikai nolaižamajam lodziņam)
 we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	lv	Mēs nosūtījām apstiprinājuma vēstuli uz tavu e-pasta adresi. Tev jānoklikšķina uz saitēm divu stundu laikā. Ja to neizdarīsi, iespejams tavs pieteikšanās ID būs pieejams tikai pēc dažām dienām.
-we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	lv	Mēs nosūtījām vēstuli, kā nomainīt paroli. Tev jāseko pievienotajām saitēm divu stundu laikā. Ja nē, paroles logs atkal pazudīs.
-wrong session	registration	lv	Nepareiza sesija
-you have entered an invalid birthday	registration	lv	Tu esi ievadījis nederīgu dzimšanas dienu
-you have entered an invalid email address	registration	lv	Tu esi ievadījis nederīgu e-pasta adresi
-you must enter a password	registration	lv	Tev jaievada parole
-you must enter a username	registration	lv	Tev jāievada lietotājvārds
-you must fill in all of the required fields	registration	lv	Tev jāaizpilda visi pieprasītie lauki
-you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	lv	Tu pieprasīji paroles maiņu. Lūdzu seko URL, lai to izdarītu. Šis URL būs derīgs 2 stundas, pēc tam tev būs vēlreiz jāatkārto pazaudētas paroles procedūra.
-you specified a value for	registration	lv	Tu norādīji vērtību
-your account is now active!  click <a href="%1">here</a> to log into your account.	registration	lv	Tavs konts tagad ir aktīvs! Noklikšķini <a href="%1">šeit</a>, lai ieietu savā kontā.
-your password was changed. you can go back to the <a href="%1">login</a> page.	registration	lv	Tava parole tika nomainīta. Tu vari atgriezties uz <a href="%1">pieteikuma</a> lapu.
-zip/postal	registration	lv	LV
