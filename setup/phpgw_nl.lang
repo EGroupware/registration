@@ -1,22 +1,8 @@
-account password retrieval	registration	nl	Accountwachtwoord achterhalen
-account registration	registration	nl	Acountregistratie
-activate account	admin	nl	Activeer account
-address	registration	nl	Adres
-after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	nl	Nadat u uw gebruikersnaam hebt ingevoerd worden de instructies verzonden naar het emailadres dat u heeft ingevoerd bij de registratie.
-an error occured. please contact our technical support and let them know.	registration	nl	Er is een fout opgetreden. Neem a.u.b. contact op met onze technische supportafdeling.
-anonymous password	admin	nl	Anoniem wachtwoord
-birthday	registration	nl	Geboortedatum
-change password for user	registration	nl	Wijzig wachtwoord voor gebruiker
-checkbox	registration	nl	Checkbox
-choose language	registration	nl	Kies taal
-choose your language	common	nl	Kies uw taal
-city	registration	nl	Woonplaats
-close window	registration	nl	Sluit venster
-country	registration	nl	Land
-current fields:	registration	nl	Huidige velden:
-days until trial accounts expire	admin	nl	Na hoeveel dagen verloopt een account
-display terms of service?	admin	nl	Algemene Voorwaarden weergeven?
+[unknown first name]	registration	nl	[onbekende voornaam]
+[unknown last name]	registration	nl	[onbekende achternaam]
+after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	nl	Nadat u uw emailadres heeft ingevuld zullen de gebruikeraccounts die aan dit emailadres gekoppeld zijn naar dat emailadres verzonden worden.
 dropdown	registration	nl	Dropdown
+email address	registration	nl	emailadres
 email address to display for support	admin	nl	Emailadres om weer te geven voor support
 email address to send notices from	admin	nl	Emailadres om rapportages naar te suren
 enable registration?	admin	nl	Accountregistratiie activeren?
@@ -30,6 +16,13 @@ i have read the terms and conditions and agree by them.	registration	nl	I heb de
 if you did not request this account, simply ignore this message.	registration	nl	Als u niet gevraagd heeft om deze accountinformatie, negeer dan dit bericht.
 if you did not request this change, simply ignore this message.	registration	nl	Als u niet gevraagd heeft om deze verandering, negeer dan dit bericht.
 immediately	admin	nl	Per direct
+lost login id	login	nl	Login ID verloren
+lost password	registration	nl	Wachtwoord verloren
+lost password link at login screen?	admin	nl	Wachtwoord verloren link op het inlogscherm?
+lost user account retrieval	registration	nl	Verloren gebruikersaccount opzoeken
+lost user id	registration	nl	Gebruikers ID verloren
+lost user id link at login screen?	admin	nl	Verloren gebruikers ID link op het inlogscherm?
+lost_user_id_message	registration	nl	Hier zijn de gebruikersaccounts die verbonden zijn aan dit emailaccount:
 male	registration	nl	Man
 manage fields	admin	nl	Beheer invoervelden
 name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	nl	Naam (Laat leeg, tenzij type Text, Textarea, Dropdownmenu of Checkbox is; anders alleen alphanumeriek)
@@ -57,26 +50,14 @@ terms of service text	admin	nl	Gerbuiksvoorwaardentekst
 text	registration	nl	Tekst
 textarea	registration	nl	Textarea
 the passwords you entered don't match	registration	nl	De wachtwoorden die u heeft ingevoerd zijn niet het zelfde.
-the passwords you entered don\'t match	registration	nl	De wachtwoorden die u heeft ingevoerd zijn niet het zelfde.
-the passwords you entered don\\\'t match	registration	nl	De wachtwoorden die u heeft ingevoerd zijn niet het zelfde.
 the two passwords are not the same	registration	nl	De wachtwoorden die u heeft ingevoerd zijn niet het zelfde.
 this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	nl	Dit is een bevestigingsemail voor uw nieuwe account. Klik op de volgende link om de activatie van uw account af te ronden. Deze link is 2 uur geldig.
-type	registration	nl	Type
+unable to send mail, contact your administrator	registration	nl	Het is niet mogelijk om email te verzenden, neem contact op met uw beheerder.
+unknown first name	registration	nl	Onbekende voornaam
+unknown last name	registration	nl	Onbekende achternaam
 update/add	registration	nl	Bijwerken / toevoegen
 use html	admin	nl	gebruik HTML
 use trial accounts?	admin	nl	Evaluatieaccounts gebruiken?
 username is	admin	nl	Gebruikers naam is
 values (for dropdown only; comma separated)	registration	nl	Waarden voor dropdown-menu's? (gescheiden  door komma's)
 we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	nl	Er is een bevestigingsemail verzonden naar uw emailadres. In deze email staat een link waarop uw binnen twee uur moet klikken om uw account te activeren. Als u dit niet doet kan het enige tijd duren voordat uw gekozen gebruikersnaam weer beschikbaar wordt.
-we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	nl	We hebben u een email gezonden met instructie om uw wachtwoord te veranderen. Klik binnen twee uur op de ingesloten link. Als u langer dan twee uur wacht moet u zich opnieuw wenden tot het wachtwoord-kwijt-scherm.
-wrong session	registration	nl	Verkeerde sessie
-you have entered an invalid birthday	registration	nl	U heeft een ongeldige geboortedatum ingevoerd.
-you have entered an invalid email address	registration	nl	U heeft een ongeldig emailadres ingevoerd.
-you must enter a password	registration	nl	U moet een wachtwoord invoeren.
-you must enter a username	registration	nl	U moet een gebruiker invoeren.
-you must fill in all of the required fields	registration	nl	U moet alle noodzakelijke velden invoeren.
-you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	nl	U heeft een verzoek gedaan uw wachtwoord te wijzigen. Klik binnen twee uur op de volgende link om deze wijzig te bevestigen en af te ronden. Als u langer wacht moet u opniew een verzoek doen.
-you specified a value for	registration	nl	U heeft eeb invoerwaarde gespecificeerd voor
-your account is now active!  click <a href="%1">here</a> to log into your account.	registration	nl	U account is nu actief! Klik <a href="%1">hier</a> om in te loggen met uw nieuwe account.
-your password was changed. you can go back to the <a href="%1">login</a> page.	registration	nl	Uw wachtwoord is gewijzigd. Uw kunt terug gaan naar de <a href="%1">inlogpagina</a>.
-zip/postal	registration	nl	ZIP / Postcode
