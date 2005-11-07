@@ -1,23 +1,8 @@
-account password retrieval	registration	it	Recupero password account
-account registration	registration	it	Registrazione Account
-activate account	admin	it	Attiva Account
-address	registration	it	Indirizzo
-after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	it	Dopo aver inserito il tuo username, ti verranno inviate, all'indirizzo mail che hai specificato quando ti sei registrato, istruzioni su come cambiare la password.
-an error occured. please contact our technical support and let them know.	registration	it	E' accaduto un errore. Prego contatta il nostro supporto tecnico e faglielo sapere.
-anonymous password	admin	it	Password per anonimo
-birthday	registration	it	Compleanno
-change password for user	registration	it	Cambia password per utente
-checkbox	registration	it	RiquadroControllo
-choose language	registration	it	Scegli Lingua
-choose your language	common	it	Scegli la tua lingua
-city	registration	it	Città
-close window	registration	it	Chiudi finestra
-country	registration	it	Nazione
-current fields:	registration	it	Campi correnti:
-days until trial accounts expire	admin	it	Giorni prima che gli account di prova scadano
-display terms of service?	admin	it	Mostra i Termini di Servizio
+[unknown first name]	registration	it	[nome sconosciuto]
+[unknown last name]	registration	it	[cognome sconosciuto]
+after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	it	Dopo aver inserito il tuo indirizzo email, gli account utente associati con questo indirizzo email saranno inviati a quell'indirizzo.
 dropdown	registration	it	A discesa
-egroupware - account registration	registration	it	eGroupWare - Registrazione Account
+email address	registration	it	indirizzo email
 email address to display for support	admin	it	Indirizzo email da visualizzare per supporto
 email address to send notices from	admin	it	Indirizzo email da cui inviare notifiche
 enable registration?	admin	it	Abilita Registrazione?
@@ -31,6 +16,13 @@ i have read the terms and conditions and agree by them.	registration	it	Ho letto
 if you did not request this account, simply ignore this message.	registration	it	Se non hai richiesto questo account, semplicemente ignora questo messaggio.
 if you did not request this change, simply ignore this message.	registration	it	Se non hai richiesto questa modifica, semplicemente ignora questo messaggio.
 immediately	admin	it	Immediatamente
+lost login id	login	it	Id login persa
+lost password	registration	it	Password persa
+lost password link at login screen?	admin	it	Collegamento Password persa in schermata login?
+lost user account retrieval	registration	it	Recupero account utente perso
+lost user id	registration	it	Id Utente persa
+lost user id link at login screen?	admin	it	Collegamento id utente persa in schermata login?
+lost_user_id_message	registration	it	Di seguito gli account utente associati con questo indirizzo email:
 male	registration	it	Maschio
 manage fields	admin	it	Gestisci campi
 name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	it	Nome (in bianco tranne Testo, Casella di Testo, A discesa, Checkbox; altrimenti solo alfanumerico)
@@ -50,6 +42,7 @@ required	registration	it	Richiesto
 send email	admin	it	Invia email
 sorry, that username does not exist.	registration	it	Spiacente, questo username non esiste.
 sorry, that username is already taken.	registration	it	Spiacente, questo username è già stato preso.
+sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	it	Spiacente, stiamo avendo dei problemi per attivare il tuo account. Nota che i collegamenti inviati tramite email sono validi solo per due ore. Se pensi che questo tempo sia già passato, semplicemente riprova. Altrimenti, per favore contatta l'amministratore del sito.
 state	registration	it	Stato
 subject for confirmation email	admin	it	Oggetto per la mail di conferma
 terms of service	registration	it	Termini di Servizio
@@ -59,17 +52,12 @@ textarea	registration	it	Area di Testo
 the passwords you entered don't match	registration	it	Le password che hai inserito non corrispondono
 the two passwords are not the same	registration	it	Le due password non sono uguali
 this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	it	Questa è una mail di conferma per il tuo nuovo account. Clicca sul link seguente per terminare la procedura di attivazione del tuo account. Questo link scadrà tra 2 ore.
-type	registration	it	Tipo
+unable to send mail, contact your administrator	registration	it	Impossibile inviare posta, contatta il tuo amministratore.
+unknown first name	registration	it	Nome sconosciuto
+unknown last name	registration	it	Cognome sconosciuto
 update/add	registration	it	Aggiorna/Aggiungi
 use html	admin	it	usa HTML
 use trial accounts?	admin	it	Utilizzare account di prova?
 username is	admin	it	Il Nome Utente è
 values (for dropdown only; comma separated)	registration	it	Valori (Solo per A discesa; separati da virgole)
-wrong session	registration	it	Sessione non corretta
-you have entered an invalid birthday	registration	it	Hai inserito un compleanno non valido
-you have entered an invalid email address	registration	it	Hai inserito un indirizzo email non corretto
-you must enter a password	registration	it	Devi inserire una password
-you must enter a username	registration	it	Devi inserire uno username
-you must fill in all of the required fields	registration	it	Devi compilare tutti i campi obbligatori
-you specified a value for	registration	it	Hai specificato un valore per
-zip/postal	registration	it	C.A.P.
+we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	it	Abbiamo inviato una email di conferma al tuo indirizzo. Devi cliccare sul collegamento entro 2 ore. Se non lo fai, ci potranno volere alcuni giorni prima che la tua id login venga resa di nuovo disponibile.
