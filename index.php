@@ -14,4 +14,57 @@
 
 	/* $Id$ */
 
-	Header('Location: main.php');
+	/**
+	 * Check if we allow anon access and with which creditials
+	 * 
+	 * @param array &$anon_account anon account_info with keys 'login', 'passwd' and optional 'passwd_type'
+	 * @return boolean true if we allow anon access, false otherwise
+	 */
+	function registration_check_anon_access(&$anon_account)
+	{
+		$c =& CreateObject('phpgwapi.config','registration');
+		$c->read_repository();
+		$config =& $c->config_data;
+		unset($c);
+
+		if ($config['enable_registration'] == "True" && $config['anonymous_user'])
+		{
+			$anon_account = array(
+				'login'  => $config['anonymous_user'],
+				'passwd' => $config['anonymous_pass'],
+				'passwd_type' => 'text',
+			);
+			return true;
+		}
+		return false;
+	}
+	
+	$GLOBALS['egw_info']['flags'] = array(
+		'noheader'  => False,
+		'nonavbar' => True,
+		'currentapp' => 'registration',
+		'autocreate_session_callback' => 'registration_check_anon_access',
+	);
+	include('../header.inc.php');
+	
+	// config needs to be global in registration app
+	$c =& CreateObject('phpgwapi.config','registration');
+	$c->read_repository();
+	$config = $c->config_data;
+	
+	$app = 'registration';
+	if ($_GET['menuaction'])
+	{
+		list($a,$class,$method) = explode('.',$_GET['menuaction']);
+		if ($a && $class && $method)
+		{
+			$obj =& CreateObject($app. '.'. $class);
+			if (is_array($obj->public_functions) && $obj->public_functions[$method])
+			{
+				$obj->$method();
+				exit();
+			}
+		}
+	}
+	$_obj =& CreateObject('registration.uireg');
+	$_obj->step1();

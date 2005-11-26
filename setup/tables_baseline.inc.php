@@ -17,7 +17,7 @@
 
   // table array for registration
 	$phpgw_baseline = array(
-		'phpgw_reg_accounts' => array(
+		'egw_reg_accounts' => array(
 			'fd' => array(
 				'reg_id' => array('type' => 'char', 'precision' => 32,'nullable' => False),
 				'reg_lid' => array('type' => 'varchar', 'precision' => 255,'nullable' => False),

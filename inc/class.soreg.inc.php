@@ -21,11 +21,12 @@
 	{
 		var $reg_id;
 		var $db;
-		var $reg_table = 'phpgw_reg_accounts';
+		var $reg_table = 'egw_reg_accounts';
 
 		function soreg()
 		{
-			$this->db = clone($this->db);
+			$this->db = clone($GLOBALS['egw']->db);
+			$this->db->app = 'registration';
 		}
 
 		function account_exists($account_lid)
@@ -64,11 +65,8 @@
 
 			// We are not going to use link(), because we may not have the same sessionid by that time
 			// If we do, it will not affect it
-			$url = $GLOBALS['egw_info']['server']['hostname'] . "/registration/main.php";
-			if (substr($url,0,4) != 'http')
-			{
-				$url = ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $url;
-			}
+			$url = $GLOBALS['egw']->link('/registration/index.php');
+			
 			$account_lid  = $GLOBALS['egw']->session->appsession('loginid','registration');
 			$this->reg_id = md5(time() . $account_lid . $GLOBALS['egw']->common->randomstring(32));
 
@@ -130,7 +128,7 @@
 		{
 			global $config;
 			
-			$url = ($_SERVER['HTTPS'] ? 'https://' : 'http://').$GLOBALS['egw_info']['server']['hostname'] . "/registration/main.php";
+			$url = $GLOBALS['egw']->link('/registration/index.php');
 
 			$error = '';
 
@@ -240,15 +238,14 @@
 			$fields['lid'] = "*$account_lid*";
 			//$fields['lid'] = $account_lid;
 
-
 			$reg_info['lid']    = $account_lid;
 			$reg_info['fields'] = $fields;
 
-			$GLOBALS['auto_create_acct']['email'] = array(
+			$GLOBALS['auto_create_acct'] = array(
 				'firstname' => $fields['n_given'],
 				'lastname'  => $fields['n_family'],
 				'email'     => $fields['email'],
-			);		
+			);
 			$account_id = $GLOBALS['egw_info']['user']['account_id'] = $GLOBALS['egw']->accounts->auto_add($account_lid,$fields['passwd'],True,False,0,'A');
 
 			if (!$account_id)
@@ -313,7 +310,7 @@
 		{
 			global $config;
 			
-			$url = ($_SERVER['HTTPS'] ? 'https://' : 'http://').$GLOBALS['egw_info']['server']['hostname'] . "/registration/main.php";
+			$url = $GLOBALS['egw']->link('/registration/index.php');
 
 			$error = '';
 

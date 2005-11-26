@@ -92,7 +92,6 @@
 		{
 			global $config, $r_reg, $o_reg;
 			
-			
 			$r_reg=$_POST['r_reg'];
 			$o_reg=$_POST['o_reg'];
 			
@@ -232,7 +231,15 @@
 			}
 			else
 			{
-				$GLOBALS['egw']->redirect($GLOBALS['egw']->link('/registration/main.php','menuaction=registration.uireg.ready_to_activate&lang_code='.$lang_to_pass.'&reg_id=' . $reg_id));
+				$js = "this.location.href='".$GLOBALS['egw']->link('/registration/index.php',
+					array(
+						'menuaction' => 'registration.uireg.ready_to_activate',
+						'lang_code' => $lang_to_pass,
+						'reg_id' => $reg_id,
+					)
+				)."';";
+				echo "<script>$js</script>\n";
+				$GLOBALS['egw']->common->egw_exit();
 			}
 		}
 
@@ -294,7 +301,13 @@
 			else
 			{
 				// Redirect them so they don't hit refresh and make a mess
-				$GLOBALS['egw']->redirect($GLOBALS['egw']->link('/registration/main.php','menuaction=registration.uireg.email_sent_lostpw'));
+				$js = "this.location.href='".$GLOBALS['egw']->link('/registration/index.php',
+					array(
+						'menuaction' => 'registration.uireg.email_sent_lostpw',
+					)
+				)."';";
+				echo "<script>$js</script>\n";
+				$GLOBALS['egw']->common->egw_exit();
 			}
 		}
 
@@ -379,7 +392,14 @@
 				}
 				else
 				{
-					$GLOBALS['egw']->redirect ($GLOBALS['egw']->link ('/registration/main.php', 'menuaction=registration.boreg.step1&r_reg[loginid]=' . $_SERVER['PHP_AUTH_USER']));
+					$js = "this.location.href='".$GLOBALS['egw']->link('/registration/index.php',
+						array(
+							'menuaction' => 'registration.boreg.step1',
+							'r_reg[loginid]' => $_SERVER['PHP_AUTH_USER'],
+						)
+					)."';";
+					echo "<script>$js</script>\n";
+					$GLOBALS['egw']->common->egw_exit();
 				}
 			}
 
@@ -398,7 +418,7 @@
 			}
 			if (! is_array($errors))
 			{
-				$userids = $so->getuserids($r_reg['email']) ;
+				$userids=$GLOBALS['egw']->accounts->name2id($email,'account_email');
 				if (count($userids) == 0)
 				{
 					$errors[] = lang('Sorry, no account exists for '.$r_reg['email']);

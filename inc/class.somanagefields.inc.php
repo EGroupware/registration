@@ -33,7 +33,7 @@
 				$field_info['field_values'] = base64_encode (serialize ($field_info['field_values']));
 			}
 
-			$sql = "UPDATE phpgw_reg_fields SET ";
+			$sql = "UPDATE egw_reg_fields SET ";
 
 			reset ($this->db_fields);
 			while (list ($num, $field) = each ($this->db_fields))
@@ -58,7 +58,7 @@
 				$field_info['field_values'] = base64_encode (serialize ($field_info['field_values']));
 			}
 
-			$sql = "INSERT INTO phpgw_reg_fields (";
+			$sql = "INSERT INTO egw_reg_fields (";
 			$sql2 = "(";
 
 			reset ($this->db_fields);
@@ -85,7 +85,7 @@
 
 		function remove_field ($field_info)
 		{
-			$rv = $this->db->query ("DELETE FROM phpgw_reg_fields WHERE field_name='$field_info[field_name]'");
+			$rv = $this->db->query ("DELETE FROM egw_reg_fields WHERE field_name='$field_info[field_name]'");
 
 			return $rv;
 		}
@@ -104,7 +104,7 @@
 				$sql .= $db_field_name;
 			}
 
-			$sql .= " FROM phpgw_reg_fields ORDER BY field_order";
+			$sql .= " FROM egw_reg_fields ORDER BY field_order";
 			$this->db->query ($sql);
 			while ($this->db->next_record ())
 			{

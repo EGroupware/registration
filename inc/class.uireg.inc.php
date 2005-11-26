@@ -47,14 +47,13 @@
 			$this->set_lang_code();
 			$var = Array (
 				'website_title' => $GLOBALS['egw_info']['server']['site_title'] .'[Registration]',
-				'img_icon' => '../phpgwapi/images/'. $GLOBALS['egw_info']['server']['login_logo_file'],
+				'img_icon' => $GLOBALS['egw_info']['server']['login_logo_file'] ? 
+				'../phpgwapi/images/'.$GLOBALS['egw_info']['server']['login_logo_file'] : '../phpgwapi/templates/idots/images/logo.png',
 				'logo_url' => $GLOBALS['egw_info']['server']['login_logo_url'],
 				'logo_title' => $GLOBALS['egw_info']['server']['login_logo_title'],
 			) ;
 			$this->template->set_var($var) ;
 		}
-
-
 
 		function set_lang_code($code='')
 		{
@@ -95,8 +94,6 @@
 		function header($head_subj='')
 		{
 			$this->set_header_footer_blocks();
-			$this->template->set_var('charset',$GLOBALS['egw']->translation->charset());
-			$this->template->set_var('lang',$GLOBALS[phpgw_info][user][preferences][common][lang]);
 			if($head_subj)
 			{
 				$this->template->set_var('lang_header',$head_subj);
@@ -206,7 +203,7 @@
 
 
 
-			$this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/main.php','menuaction=registration.boreg.step1'));
+			$this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.boreg.step1'));
 			$this->template->set_var('lang_username',lang('Username'));
 			$this->template->set_var('lang_submit',lang('Submit'));
 
@@ -271,7 +268,7 @@
 				}
 			}
 
-			$this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/main.php','menuaction=registration.boreg.step2'));
+			$this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.boreg.step2'));
 			$this->template->set_var('lang_password',lang('Password'));
 			$this->template->set_var('lang_reenter_password',lang('Re-enter password'));
 			$this->template->set_var('lang_submit',lang('Submit'));
@@ -302,7 +299,7 @@
 
 			if ($config['display_tos'])
 			{
-				$this->template->set_var('tos_link',$GLOBALS['egw']->link('/registration/main.php','menuaction=registration.uireg.tos'));
+				$this->template->set_var('tos_link',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.uireg.tos'));
 				$this->template->set_var('lang_tos_agree',lang('I have read the terms and conditions and agree by them.'));
 				if ($r_reg['tos_agree'])
 				{
@@ -335,7 +332,7 @@
 			}
 			
 			$this->template->set_var('lang_lost_password',lang('Lost Password')) ;
-			$this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/main.php','menuaction=registration.boreg.lostpw1'));
+			$this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.boreg.lostpw1'));
 			$this->template->set_var('lang_explain',lang('After you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.'));
 			$this->template->set_var('lang_username',lang('Username'));
 			$this->template->set_var('lang_submit',lang('Submit'));
@@ -360,7 +357,7 @@
 				$this->template->set_var('errors',$GLOBALS['egw']->common->error_list($errors));
 			}
 
-			$this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/main.php','menuaction=registration.boreg.lostpw3'));
+			$this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.boreg.lostpw3'));
 			$this->template->set_var('value_username', $lid);
 			$this->template->set_var('lang_changepassword',lang("Change password for user"));
 			$this->template->set_var('lang_enter_password',lang('Enter your new password'));
@@ -381,7 +378,7 @@
 				'screen' => 'lostpw_changed.tpl'
 			));
 
-			$message=lang('Your password was changed. You can go back to the <a href="%1">login</a> page.',($_SERVER['HTTPS'] ? 'https://' : 'http://').$GLOBALS['egw_info']['server']['hostname']) ;
+			$message=lang('Your password was changed. You can go back to the <a href="%1">login</a> page.',$GLOBALS['egw']->link('/login.php'));
 			$this->template->set_var('message',$message);
 
 			$this->template->pfp('out','screen');
@@ -401,7 +398,7 @@
 				$this->template->set_var('errors',$GLOBALS['egw']->common->error_list($errors));
 			}
 			$this->template->set_var('lang_lost_user_id',lang('Lost User Id')) ;
-			$this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/main.php','menuaction=registration.boreg.lostid1'));
+			$this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.boreg.lostid1'));
 			$this->template->set_var('lang_explain',lang('After you enter your email address, the user accounts associated with this email address will be mailed to that address.'));
 			$this->template->set_var('lang_email',lang('email address'));
 			$this->template->set_var('lang_submit',lang('Submit'));
@@ -572,7 +569,15 @@
 			{
 
 				/* ($config['activate_account'] == 'immediately') */
-				$GLOBALS['egw']->redirect($GLOBALS['egw']->link('/registration/main.php','menuaction=registration.boreg.step4&lang_code='.$this->lang_code.'&reg_id=' . $this->bo->reg_id));
+				$js = "this.location.href='".$GLOBALS['egw']->link('/registration/index.php',
+					array(
+						'menuaction' => 'registration.boreg.step4',
+						'lang_code' => $this->lang_code,
+						'reg_id' => $this->bo->reg_id,
+					)
+				)."';";
+				echo "<script>$js</script>\n";
+				$GLOBALS['egw']->common->egw_exit();
 			}
 		}
 
@@ -593,7 +598,7 @@
 			$this->set_lang_code();
 			$this->header();
 
-			$login_url = ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $GLOBALS['egw_info']['server']['hostname'].'/login.php';
+			$login_url = $GLOBALS['egw']->link('/login.php');
 			
 			$message = lang('Your account is now active!  Click <a href="%s">here</a> to log into your account.') ;
 			$message = sprintf($message,$login_url) ;

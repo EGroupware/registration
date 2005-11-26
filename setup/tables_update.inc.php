@@ -48,3 +48,11 @@
 		$setup_info['registration']['currentver'] = '1.0.1';
 		return $setup_info['registration']['currentver'];
 	}
+	
+		$test[] = '1.0.1';
+	function registration_upgrade1_0_1()
+	{
+		$GLOBALS['egw_setup']->oProc->RenameTable('phpgw_reg_fields','egw_reg_fields');
+		$GLOBALS['egw_setup']->oProc->RenameTable('phpgw_reg_accounts','egw_reg_accounts');
+		return $GLOBALS['setup_info']['registration']['currentver'] = '1.2';
+	}
