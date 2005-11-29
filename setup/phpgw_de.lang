@@ -40,7 +40,7 @@ immediately	admin	de	Sofort
 lost login id	login	de	Benutzername vergessen
 lost password	login	de	Passwort vergessen
 lost password link at login screen?	admin	de	Link für Passwort vergessen auf der Login-Seite anzeigen?
-lost user account retrieval	registration	de	Wie oft dar versucht werden vergessene Benutzerdaten wiederzuerlangen?
+lost user account retrieval	registration	de	Vergessene Benutzerdaten wiedergewinnen
 lost user id	registration	de	Benutzername vergessen
 lost user id link at login screen?	admin	de	Link für Benutzername vergessen auf Login-Seite anzeigen?
 lost_user_id_message	registration	de	Dies sind die Benutzer die mit der Email-Adresse verbunden sind:
