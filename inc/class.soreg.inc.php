@@ -52,7 +52,7 @@
 					'reg_lid'  => $account_lid,
 					'reg_info' => '',
 					'reg_dla'  => time(),
-				),__LINE__,__FILE__);
+				),false,__LINE__,__FILE__);
 				$GLOBALS['egw']->session->appsession('loginid','registration',$account_lid);
 				return False;
 			}
@@ -65,7 +65,7 @@
 
 			// We are not going to use link(), because we may not have the same sessionid by that time
 			// If we do, it will not affect it
-			$url = $GLOBALS['egw']->link('/registration/index.php');
+			$url = ($_SERVER['HTTPS'] ? 'https://' : 'http://').$GLOBALS['egw_info']['server']['hostname'] . $GLOBALS['egw_info']['server']['webserver_url']. "/registration/index.php";
 			
 			$account_lid  = $GLOBALS['egw']->session->appsession('loginid','registration');
 			$this->reg_id = md5(time() . $account_lid . $GLOBALS['egw']->common->randomstring(32));
@@ -128,7 +128,7 @@
 		{
 			global $config;
 			
-			$url = $GLOBALS['egw']->link('/registration/index.php');
+			$url = ($_SERVER['HTTPS'] ? 'https://' : 'http://').$GLOBALS['egw_info']['server']['hostname'] . $GLOBALS['egw_info']['server']['webserver_url']. "/registration/index.php";
 
 			$error = '';
 
@@ -141,7 +141,7 @@
 				'reg_lid'  => $account_lid,
 				'reg_info' => '',
 				'reg_dla'  => time(),
-			),__LINE__,__FILE__);
+			),false,__LINE__,__FILE__);
 
 			//
 			// Send the mail that will allow to change the password
@@ -290,7 +290,7 @@
 			$this->db->transaction_commit();
 
 			$accounts->read_repository();
-			if ($config['trial_accounts'])
+			if ($config['trial_accounts'] != "False")
 			{
 				$accounts->data['expires'] = time() + ((60 * 60) * ($config['days_until_trial_account_expires'] * 24));
 			}
@@ -310,7 +310,7 @@
 		{
 			global $config;
 			
-			$url = $GLOBALS['egw']->link('/registration/index.php');
+			$url = ($_SERVER['HTTPS'] ? 'https://' : 'http://').$GLOBALS['egw_info']['server']['hostname'] . $GLOBALS['egw_info']['server']['webserver_url']. "/registration/index.php";
 
 			$error = '';
 

@@ -231,15 +231,7 @@
 			}
 			else
 			{
-				$js = "this.location.href='".$GLOBALS['egw']->link('/registration/index.php',
-					array(
-						'menuaction' => 'registration.uireg.ready_to_activate',
-						'lang_code' => $lang_to_pass,
-						'reg_id' => $reg_id,
-					)
-				)."';";
-				echo "<script>$js</script>\n";
-				$GLOBALS['egw']->common->egw_exit();
+				$GLOBALS['egw']->redirect($GLOBALS['egw']->link('/registration/index.php','menuaction=registration.uireg.ready_to_activate&lang_code='.$lang_to_pass.'&reg_id=' . $reg_id));
 			}
 		}
 
@@ -301,13 +293,7 @@
 			else
 			{
 				// Redirect them so they don't hit refresh and make a mess
-				$js = "this.location.href='".$GLOBALS['egw']->link('/registration/index.php',
-					array(
-						'menuaction' => 'registration.uireg.email_sent_lostpw',
-					)
-				)."';";
-				echo "<script>$js</script>\n";
-				$GLOBALS['egw']->common->egw_exit();
+				$GLOBALS['egw']->redirect($GLOBALS['egw']->link('/registration/index.php','menuaction=registration.uireg.email_sent_lostpw'));
 			}
 		}
 
@@ -392,14 +378,7 @@
 				}
 				else
 				{
-					$js = "this.location.href='".$GLOBALS['egw']->link('/registration/index.php',
-						array(
-							'menuaction' => 'registration.boreg.step1',
-							'r_reg[loginid]' => $_SERVER['PHP_AUTH_USER'],
-						)
-					)."';";
-					echo "<script>$js</script>\n";
-					$GLOBALS['egw']->common->egw_exit();
+					$GLOBALS['egw']->redirect ($GLOBALS['egw']->link ('/registration/index.php', 'menuaction=registration.boreg.step1&r_reg[loginid]=' . $_SERVER['PHP_AUTH_USER']));
 				}
 			}
 

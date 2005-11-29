@@ -40,7 +40,7 @@
 	}
 	
 	$GLOBALS['egw_info']['flags'] = array(
-		'noheader'  => False,
+		'noheader'  => True,
 		'nonavbar' => True,
 		'currentapp' => 'registration',
 		'autocreate_session_callback' => 'registration_check_anon_access',

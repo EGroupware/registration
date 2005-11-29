@@ -45,12 +45,15 @@
 			$this->fields = $this->bomanagefields->get_field_list ();
 
 			$this->set_lang_code();
+
 			$var = Array (
 				'website_title' => $GLOBALS['egw_info']['server']['site_title'] .'[Registration]',
-				'img_icon' => $GLOBALS['egw_info']['server']['login_logo_file'] ? 
-				'../phpgwapi/images/'.$GLOBALS['egw_info']['server']['login_logo_file'] : '../phpgwapi/templates/idots/images/logo.png',
-				'logo_url' => $GLOBALS['egw_info']['server']['login_logo_url'],
-				'logo_title' => $GLOBALS['egw_info']['server']['login_logo_title'],
+				'img_icon' => substr($GLOBALS['egw_info']['server']['login_logo_file'],0,4) == 'http' ? 
+					$GLOBALS['egw_info']['server']['login_logo_file'] :
+					$GLOBALS['egw']->common->image('phpgwapi',$GLOBALS['egw_info']['server']['login_logo_file'] ? 
+						$GLOBALS['egw_info']['server']['login_logo_file'] : 'logo'),
+				'logo_url' => $GLOBALS['egw_info']['server']['login_logo_url']?$GLOBALS['egw_info']['server']['login_logo_url']:'http://www.eGroupWare.org',
+				'logo_title' => $GLOBALS['egw_info']['server']['login_logo_title']?$GLOBALS['egw_info']['server']['login_logo_title']:'www.eGroupWare.org',
 			) ;
 			$this->template->set_var($var) ;
 		}
@@ -93,6 +96,7 @@
 
 		function header($head_subj='')
 		{
+			$GLOBALS['egw']->common->egw_header();
 			$this->set_header_footer_blocks();
 			if($head_subj)
 			{
@@ -569,15 +573,7 @@
 			{
 
 				/* ($config['activate_account'] == 'immediately') */
-				$js = "this.location.href='".$GLOBALS['egw']->link('/registration/index.php',
-					array(
-						'menuaction' => 'registration.boreg.step4',
-						'lang_code' => $this->lang_code,
-						'reg_id' => $this->bo->reg_id,
-					)
-				)."';";
-				echo "<script>$js</script>\n";
-				$GLOBALS['egw']->common->egw_exit();
+				$GLOBALS['egw']->redirect($GLOBALS['egw']->link('/registration/index.php','menuaction=registration.boreg.step4&lang_code='.$this->lang_code.'&reg_id=' . $this->bo->reg_id));
 			}
 		}
 
