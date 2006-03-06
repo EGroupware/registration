@@ -38,7 +38,7 @@ if you did not request this account, simply ignore this message.	registration	es
 if you did not request this change, simply ignore this message.	registration	es-es	Si no ha solicitado este cambio, simplemente ignore este mensaje.
 immediately	admin	es-es	Inmediatamente
 lost login id	login	es-es	Id de sesión perdido
-lost password	registration	es-es	Contraseña perdida
+lost password	login	es-es	Contraseña perdida
 lost password link at login screen?	admin	es-es	¿Enlace de contraseña perdida en la pantalla de inicio de sesión?
 lost user account retrieval	registration	es-es	Recuperación de contraseña perdida
 lost user id	registration	es-es	Id de usuario perdido
