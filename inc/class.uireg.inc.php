@@ -197,6 +197,7 @@
 			$this->template->set_var('illustration',$GLOBALS['egw']->common->image('registration','screen0_language'));
 				
 			$this->template->set_var('lang_choose_language',$lang_choose_string);
+			$this->template->set_var('lang_change',lang('change'));
 
 			$selected_lang=($this->lang_code?$this->lang_code:$GLOBALS[default_lang]);
 	
@@ -596,7 +597,7 @@
 
 			$login_url = $GLOBALS['egw']->link('/login.php');
 			
-			$message = lang('Your account is now active!'). ' <a href="%s">'. lang('Click to log into your account'). '</a>';
+			$message = lang('Your account is now active!'). ' <a href="%s" style="font-weight:bold;">'. lang('Click to log into your account'). '</a>';
 			$message = sprintf($message,$login_url) ;
 
 			$this->template->set_file(array(
