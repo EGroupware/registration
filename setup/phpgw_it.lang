@@ -1,7 +1,7 @@
 <br>please contact the site administrator.	registration	it	<br>Per favore contatta l'amministratore del sito.
 [unknown first name]	registration	it	[nome sconosciuto]
 [unknown last name]	registration	it	[cognome sconosciuto]
-account $account_lid record could not be found, report to site administrator	registration	it	Il record dell'account $account_lid non è stato trovato, avvisa l'amministratore del sito
+account %1 record could not be found, report to site administrator	registration	it	Il record dell'account %1 non è stato trovato, avvisa l'amministratore del sito
 account password retrieval	registration	it	Recupero password account
 account registration	registration	it	Registrazione account
 activate account	admin	it	Attivazione account

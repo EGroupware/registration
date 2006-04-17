@@ -9,7 +9,7 @@ birthday	registration	da	Føselsdag
 change password for user	registration	da	Ændre adgangskode for bruger
 checkbox	registration	da	Valg box
 choose language	registration	da	Vælg sprog
-choose your language	common	da	Vælg dit sprog
+choose your language	registration	da	Vælg dit sprog
 city	registration	da	By
 close window	registration	da	Luk vindue
 country	registration	da	Land
@@ -23,7 +23,6 @@ enable registration?	admin	da	Aktivere registrering
 enter your new password	registration	da	Indtast din nye adgangskode
 female	registration	da	Kvinde
 gender	registration	da	Køn
-hi	registration	da	
 http password	admin	da	HTTP adgangskode
 http username	admin	da	HTTP brugernavn
 i have read the terms and conditions and agree by them.	registration	da	Jeg har læst betingelsene og acceptere dem.
@@ -33,7 +32,7 @@ immediately	admin	da	Straks
 male	registration	da	Mand
 manage fields	admin	da	Administrere felter
 name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	da	Navn (blank hvis ikke Tekst, Tekstområde, Dropdown boks, Valg boks; ellers kun alfanumerisk)
-not a user yet? register now	registration	da	Ikke en bruger endnu? Registrere nu
+not a user yet? register now	login	da	Ikke en bruger endnu? Registrere nu
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	da	Online registrering er ikke aktiveret. Kontakt venligst systemadministratoren for mere information om registrering.
 order	registration	da	Rækkefølge
 password is	admin	da	Adgangskoden er
@@ -68,13 +67,12 @@ values (for dropdown only; comma separated)	registration	da	Værdier (til Dropdow
 we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	da	Vi har send en bekræftelses e-mail til din e-mail adresse. Du skal klikke på linket i e-mailen inden 2 timer. Hvis du ikke gør der kan det tage nogle dage før dit brugernavn vil være ledigt igen.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	da	Vi har send en e-amil med instruktioner som at ændre din adgangskode. Du bør åbne linket i e-mail inden for 2 timer. Hvis du ikke gør det, vil du blive nød til at bruge gemt adgangskode igen.
 wrong session	registration	da	Forkert session
+you can go back to the login page	registration	da	Du kan gå tilbage til login siden.
 you have entered an invalid birthday	registration	da	Du har indtastet en ugyldig føselsdag
 you have entered an invalid email address	registration	da	Du har indtastet en ugyldig e-mail adresse
 you must enter a password	registration	da	Du skal indtaste en adgangskode
 you must enter a username	registration	da	Du skal indtaste et brugernavn
 you must fill in all of the required fields	registration	da	Du skal udfylde alle krævede felter
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	da	Du har anmodet om at ændre din adgangskode. Brug venligst følgende link for at gøre det. Dette link virker kun i 2 timer. Efter den tid skal du igen anmode om at ændre adgangskoden igen.
-you specified a value for	registration	da	
-your account is now active!  click <a href="%1">here</a> to log into your account.	registration	da	Din konto er nu aktiv! Klik <a href="%1">her</a> for at logge ind.
-your password was changed. you can go back to the <a href="%1">login</a> page.	registration	da	Din adgangskode er ændret. Du kan gå tilbage til <a href="%1">login</a> siden.
+your password was changed.	registration	da	Din adgangskode er ændret.
 zip/postal	registration	da	Postnummer

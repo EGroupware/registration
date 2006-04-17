@@ -1,7 +1,7 @@
 <br>please contact the site administrator.	registration	de	<br> Bitte nehmen sie Kontakt mit dem Administrator auf
 [unknown first name]	registration	de	[Vornamen unbekannt]
 [unknown last name]	registration	de	[Nachnamen unbekannt]
-account $account_lid record could not be found, report to site administrator	registration	de	Es konnte kein Eintrag: Account: $account_lid gefunden werden. Bitte benachrichtigen sie den Adminsitrator
+account %1 record could not be found, report to site administrator	registration	de	Es konnte kein Eintrag: Account: %1 gefunden werden. Bitte benachrichtigen sie den Adminsitrator
 account password retrieval	registration	de	Passwort wiedergewinnen
 account registration	registration	de	Benutzerkonto registrieren
 activate account	admin	de	Benutzerkonto aktivieren
@@ -17,6 +17,7 @@ checkbox	registration	de	Checkbox
 choose language	registration	de	Sprache auswählen
 choose your language	registration	de	Wählen Sie Ihre Sprache
 city	registration	de	Stadt
+click to log into your account	registration	de	Klicken sie hier um sich bei ihrem Konto anzumelden.
 close window	registration	de	Fenster schließen
 country	registration	de	Land
 current fields:	registration	de	Verfügbare Felder
@@ -89,6 +90,7 @@ we have sent a confirmation email to your email address. you must click on the l
 we have sent a mail to your email account: %s with your lost user ids.	registration	de	Es wurde eine Nachricht an %s mit den verlohrenen Benutzerdaten gesendet.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	de	Eine Email mit Informationen wie Sie ihr Passwort ändern können wurde an Sie versandt. Bitte benutzen Sie den enthalteten Link innerhalb von 2 Stunden. Falls Ihnen dies nicht möglich ist, müssen Sie nochmals die Prozedur für vergessenen Passworte ausführen.
 wrong session	registration	de	Falsche Session
+you can go back to the login page	registration	de	Sie können zurück zur Anmelde Seite gehen.
 you have entered an invalid birthday	registration	de	Sie haben einen ungültigen Geburtstag eingegeben
 you have entered an invalid email address	registration	de	Sie haben eine ungültige Emailadresse eingegeben
 you must enter a password	registration	de	Sie müssen ein Passwort angeben Email Adresse ist nicht gültig
@@ -97,6 +99,6 @@ you must enter an email account	registration	de	Sie müssen eine Email-Adresse an
 you must fill in all of the required fields	registration	de	Sie müssen alle benötigten Felder ausfällen
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	de	Sie wollen Ihr Password ändern. Bitte folgen sie dem unten angegebenen Link. Dieser Link verfällt nach zwei Stunden. Nach dieser Zeit, müssen Sie die Prozedur für vergessene Passworte nochmal ausführen.
 you specified a value for %1 that is not a choice	registration	de	Ihr angegebener Wert für %1 ist keine gültige Angabe
-your account is now active!  click <a href="%s">here</a> to log into your account.	registration	de	Ihr Zugang ist jetzt aktiviert. Klicken sie <a href="%s">hier</a> um sich bei ihrem Konto anzumelden.
-your password was changed. you can go back to the <a href="%1">login</a> page.	registration	de	Ihr Passwort wurde geändert. Sie können zurück zur <a href="%1">Anmelde Seite</a> gehen.
+your account is now active!	registration	de	Ihr Zugang ist jetzt aktiviert.
+your password was changed.	registration	de	Ihr Passwort wurde geändert.
 zip/postal	registration	de	Postleitzahl

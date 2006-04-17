@@ -1,7 +1,7 @@
 <br>please contact the site administrator.	registration	pt-br	<br>Por favor, contacte o administrador do servidor
 [unknown first name]	registration	pt-br	[primeiro nome desconhecido]
 [unknown last name]	registration	pt-br	[último nome desconhecido]
-account $account_lid record could not be found, report to site administrator	registration	pt-br	Registro de conta $account_lid não pôde ser encontrado. Informe ao administrador do servidor.
+account %1 record could not be found, report to site administrator	registration	pt-br	Registro de conta %1 não pôde ser encontrado. Informe ao administrador do servidor.
 account password retrieval	registration	pt-br	Recuperar senha de acesso
 account registration	registration	pt-br	Registro de Acesso
 activate account	admin	pt-br	Ativar Conta
@@ -17,6 +17,7 @@ checkbox	registration	pt-br	Caixa de Verificação
 choose language	registration	pt-br	Escolha o Idioma
 choose your language	registration	pt-br	Escolha seu idioma
 city	registration	pt-br	Cidade
+click to log into your account	registration	pt-br	Clique aqui para fazer login.
 close window	registration	pt-br	Fechar Janela
 country	registration	pt-br	País
 current fields:	registration	pt-br	Campos Atuais:
@@ -89,6 +90,7 @@ we have sent a confirmation email to your email address. you must click on the l
 we have sent a mail to your email account: %s with your lost user ids.	registration	pt-br	Um mensagem foi enviada para seu e-mail: %s com seu nome de usuário.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	pt-br	Foi enviado um e-mail com instruções de como alterar sua senha. Você deverá clicar no link enviado em um período não superior a 2 horas. Se você não seguir essas instruções terá que voltar a tela de senhas perdidas.
 wrong session	registration	pt-br	Erro na sessão
+you can go back to the login page	registration	pt-br	Você pode voltar a página de conexão.
 you have entered an invalid birthday	registration	pt-br	Você informou uma data de nascimento inválida
 you have entered an invalid email address	registration	pt-br	Você informou um endereço para e-mail inválido
 you must enter a password	registration	pt-br	Você precisa digitar uma senha
@@ -97,6 +99,6 @@ you must enter an email account	registration	pt-br	Você precisa digitar um e-mai
 you must fill in all of the required fields	registration	pt-br	Você precisa preencher os campos ( * )  obrigatórios
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	pt-br	Você requisitou uma mudança na sua senha. Por favor sigua a URL abaixo para executar essa mudança. Essa URL irá expirar em 2 horas, Depois desse período, você terá que por todo o procedimento novamente
 you specified a value for %1 that is not a choice	registration	pt-br	Você especificou um valor para %1 que não é válido
-your account is now active!  click <a href="%s">here</a> to log into your account.	registration	pt-br	Sua conta está ativa! Clique <a href="%s">aqui</a> para fazer login.
-your password was changed. you can go back to the <a href="%1">login</a> page.	registration	pt-br	Sua senha foi alterada, você pode voltar a página de <a href="%1">conexão</a>.
+your account is now active!	registration	pt-br	Sua conta está ativa!
+your password was changed.	registration	pt-br	Sua senha foi alterada.
 zip/postal	registration	pt-br	CEP

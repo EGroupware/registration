@@ -1,7 +1,7 @@
 <br>please contact the site administrator.	registration	es-es	<br>Por favor, póngase en contacto con el administrador del sitio
 [unknown first name]	registration	es-es	[nombre de pila desconocido]
 [unknown last name]	registration	es-es	[apellido desconocido]
-account $account_lid record could not be found, report to site administrator	registration	es-es	No se pudo encontrar el registro para la cuenta $account_lid. Informe al administrador del sitio.
+account %1 record could not be found, report to site administrator	registration	es-es	No se pudo encontrar el registro para la cuenta %1. Informe al administrador del sitio.
 account password retrieval	registration	es-es	Recuperación de la contraseña de la cuenta
 account registration	registration	es-es	Registro de la cuenta
 activate account	admin	es-es	Activar cuenta
@@ -17,6 +17,7 @@ checkbox	registration	es-es	Casilla
 choose language	registration	es-es	Elegir idioma
 choose your language	registration	es-es	Elija el idioma
 city	registration	es-es	Ciudad
+click to log into your account	registration	es-es	Pulse para iniciar sesión con su cuenta.
 close window	registration	es-es	Cerrar ventana
 country	registration	es-es	País
 current fields:	registration	es-es	Campos actuales:
@@ -89,6 +90,7 @@ we have sent a confirmation email to your email address. you must click on the l
 we have sent a mail to your email account: %s with your lost user ids.	registration	es-es	Hemos enviado un correo a su cuenta: %s con sus ids de usuario perdidos.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	es-es	Hemos enviado un correo con instrucciones para cambiar la contraseña. Debe pulsar el enlace incluido en un plazo de dos horas. Si no lo hace, tendrá que volver a la pantalla de contraseñas perdidas.
 wrong session	registration	es-es	Sesión incorrecta
+you can go back to the login page	registration	es-es	Puede volver a la página de inicio de sesión.
 you have entered an invalid birthday	registration	es-es	La fecha de nacimiento introducida no es válida
 you have entered an invalid email address	registration	es-es	La dirección de correo electrónico introducida no es válida
 you must enter a password	registration	es-es	Debe introducir una contraseña
@@ -97,6 +99,6 @@ you must enter an email account	registration	es-es	Debe introducir una cuenta de
 you must fill in all of the required fields	registration	es-es	Debe rellenar todos los campos obligatorios
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	es-es	Ha solicitado cambiar la contraseña. Por favor, vaya a la URL indicada debajo. Esta URL expirará en dos horas. Después de este plazo, debe repetir todo el procedimiento de contraseñas perdidas.
 you specified a value for %1 that is not a choice	registration	es-es	El valor especificado para %1 no es una opción
-your account is now active!  click <a href="%s">here</a> to log into your account.	registration	es-es	Su cuenta ha sido activada. Pulse <a href="%s">aquí</a> para iniciar sesión con su cuenta.
-your password was changed. you can go back to the <a href="%1">login</a> page.	registration	es-es	Se ha cambiado la contraseña. Puede volver a la página de <a href="%1">inicio de sesión</a>.
+your account is now active!	registration	es-es	Su cuenta ha sido activada.
+your password was changed.	registration	es-es	Se ha cambiado la contraseña.
 zip/postal	registration	es-es	ZIP/Código postal

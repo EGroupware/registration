@@ -2,6 +2,7 @@
 [unknown first name]	registration	nl	[onbekende voornaam]
 [unknown last name]	registration	nl	[onbekende achternaam]
 account $account_lid record could not be found, report to site administrator	registration	nl	Account $account_lid record is niet gevonden, meld dit aan de beheerder
+account %1 record could not be found, report to site administrator	registration	nl	Account %1 record is niet gevonden, meld dit aan de beheerder
 account password retrieval	registration	nl	Account wachtwoord ophalen
 account registration	registration	nl	Account registratie
 activate account	admin	nl	Account activeren
@@ -17,6 +18,7 @@ checkbox	registration	nl	Vinkveld
 choose language	registration	nl	Kies taal
 choose your language	registration	nl	Kies uw taal
 city	registration	nl	Plaats
+click to log into your account	registration	nl	Klik hier om in uw account in te loggen.
 close window	registration	nl	Venster sluiten
 country	registration	nl	Land
 current fields:	registration	nl	Huidige velden:
@@ -89,6 +91,7 @@ we have sent a confirmation email to your email address. you must click on the l
 we have sent a mail to your email account: %s with your lost user ids.	registration	nl	We hebben een email gestuurd naar uw email account: %s met uw zoekgeraakte gebruikers ID's.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	nl	We hebben een email verzonden met instructies hoe u uw wachtwoord kunt wijzigen. U moet de link binnen twee uur opvolgen. Als u dat niet doet moet u opnieuw het wachtwoord vergeten scherm doorlopen.
 wrong session	registration	nl	Verkeerde sessie
+you can go back to the login page	registration	nl	U kunt nu terug gaan naar de login pagina.
 you have entered an invalid birthday	registration	nl	U heeft een ongeldige geboortedatum ingevuld
 you have entered an invalid email address	registration	nl	U heeft een ongeldig emailadres ingevuld
 you must enter a password	registration	nl	U moet een wachtwoord invullen
@@ -97,6 +100,8 @@ you must enter an email account	registration	nl	U moet een emailaccount invullen
 you must fill in all of the required fields	registration	nl	U moet alle verplichte velden invullen
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	nl	U heeft verzocht om uw wachtwoord te wijzigen. Klik op de onderstaande link om dit te doen. De URL verloopt over twee uur. Na deze termijn moet u opnieuw het wachtwoord vergeten scherm doorlopen.
 you specified a value for %1 that is not a choice	registration	nl	U vulde een waarde in voor %1 die niet tot de keuzemogelijkheden behoort
+your account is now active!	registration	nl	Uw account is nu geactiveerd!
 your account is now active!  click <a href="%s">here</a> to log into your account.	registration	nl	Uw account is nu geactiveerd! Klik <a href="%s">hier</a> om in uw account in te loggen.
+your password was changed.	registration	nl	Uw wachtwoord is gewijzigd.
 your password was changed. you can go back to the <a href="%1">login</a> page.	registration	nl	Uw wachtwoord is gewijzigd. U kunt nu terug gaan naar de <a href="%1">login</a> pagina.
 zip/postal	registration	nl	Postcode

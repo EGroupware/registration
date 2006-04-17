@@ -183,7 +183,7 @@
 			}
 			else
 			{
-				$error = lang("Account $account_lid record could not be found, report to site administrator");
+				$error = lang("Account %1 record could not be found, report to site administrator", $account_lid);
 			}
 
 			return $error;

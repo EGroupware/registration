@@ -382,7 +382,7 @@
 				'screen' => 'lostpw_changed.tpl'
 			));
 
-			$message=lang('Your password was changed. You can go back to the <a href="%1">login</a> page.',$GLOBALS['egw']->link('/login.php'));
+			$message=lang('Your password was changed.').' <a href="'.$GLOBALS['egw']->link('/login.php').'">'. lang('You can go back to the login page').'</a>';
 			$this->template->set_var('message',$message);
 
 			$this->template->pfp('out','screen');
@@ -596,7 +596,7 @@
 
 			$login_url = $GLOBALS['egw']->link('/login.php');
 			
-			$message = lang('Your account is now active!  Click <a href="%s">here</a> to log into your account.') ;
+			$message = lang('Your account is now active!'). ' <a href="%s">'. lang('Click to log into your account'). '</a>';
 			$message = sprintf($message,$login_url) ;
 
 			$this->template->set_file(array(

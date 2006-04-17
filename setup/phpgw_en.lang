@@ -1,7 +1,7 @@
 <br>please contact the site administrator.	registration	en	<br>Please Contact the site administrator.
 [unknown first name]	registration	en	[unknown first name]
 [unknown last name]	registration	en	[unknown last name]
-account $account_lid record could not be found, report to site administrator	registration	en	Account $account_lid record could not be found, report to site administrator
+account %1 record could not be found, report to site administrator	registration	en	Account %1 record could not be found, report to site administrator
 account password retrieval	registration	en	Account password retrieval
 account registration	registration	en	Account registration
 activate account	admin	en	Activate account
@@ -17,6 +17,7 @@ checkbox	registration	en	Checkbox
 choose language	registration	en	Choose Language
 choose your language	registration	en	Choose your language
 city	registration	en	City
+click to log into your account	registration	en	Click to log into your account
 close window	registration	en	Close Window
 country	registration	en	Country
 current fields:	registration	en	Current fields:
@@ -89,6 +90,7 @@ we have sent a confirmation email to your email address. you must click on the l
 we have sent a mail to your email account: %s with your lost user ids.	registration	en	We have sent a mail to your email account: %s with your lost user ids.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	en	We have sent a mail with instructions to change your password. You should follow the included link within two hours. If you do not, you will have to go to the lost password screen again.
 wrong session	registration	en	Wrong session
+you can go back to the login page	registration	en	You can go back to the login page
 you have entered an invalid birthday	registration	en	You have entered an invalid birthday
 you have entered an invalid email address	registration	en	You have entered an invalid email address
 you must enter a password	registration	en	You must enter a password
@@ -97,6 +99,6 @@ you must enter an email account	registration	en	You must enter an email account
 you must fill in all of the required fields	registration	en	You must fill in all of the required fields
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	en	You requested to change your password. Please follow the URL below to do so. This URL will expire in two hours. After this delay you should go thru the lost password procedure again.
 you specified a value for %1 that is not a choice	registration	en	You specified a value for %1 that is not a choice
-your account is now active!  click <a href="%s">here</a> to log into your account.	registration	en	Your account is now active!  Click <a href="%s">here</a> to log into your account.
-your password was changed. you can go back to the <a href="%1">login</a> page.	registration	en	Your password was changed. You can go back to the <a href="%1">login</a> page.
+your account is now active!	registration	en	Your account is now active!
+your password was changed.	registration	en	Your password was changed.
 zip/postal	registration	en	ZIP/Postal
