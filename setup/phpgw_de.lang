@@ -56,6 +56,7 @@ phone	registration	de	Telefonnummer
 problem sending email:	registration	de	Beim versenden der Email ist ein Fehler aufgetreten
 re-enter password	registration	de	Passwort nochmals eingeben
 re-enter your password	registration	de	Bitte geben Sie Ihr Passwort nochmals ein
+register	common	de	Registrieren
 register link at login screen?	admin	de	Möchten Sie eine Link zur Registrierung auf der Login Seite anzeigen
 registration	common	de	Registrierung
 registration settings	admin	de	Registrierungs Einstellungen
