@@ -1,12 +1,11 @@
 <br>please contact the site administrator.	registration	sl	<br>Prosim obvestite oskrbnika strežnika.
 [unknown first name]	registration	sl	[neznano ime]
 [unknown last name]	registration	sl	[neznan priimek]
-account $account_lid record could not be found, report to site administrator	registration	sl	Zapis računa $account_lid ne obstaja, sporočite oskrbniku.
 account %1 record could not be found, report to site administrator	registration	sl	Zapis računa %1 ne obstaja, sporočite oskrbniku.
 account password retrieval	registration	sl	Prevzem uporabniškega gesla
 account registration	registration	sl	Registracija uporabniškega imena
 activate account	admin	sl	Aktiviranje uporabniškega imena
-address	registration	sl	NAslov
+address	registration	sl	Naslov
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	sl	Po vpisu vašega E-naslova, bodo uporabniški računi, ki so povezani s tem E-naslovom poslani na ta naslov.
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	sl	Po vnosu uporabniškega imena vam bodo navodila o spremembi gesla poslana na enaslov, ki ste ga podali ob registraciji.
 an error occured. please contact our technical support and let them know.	registration	sl	Prišlo je do napake. Prosim, posvetujte se s tehnično podporo.
@@ -57,6 +56,7 @@ phone	registration	sl	Telefon
 problem sending email:	registration	sl	Težava pri pošiljanju E-pošte:
 re-enter password	registration	sl	Ponovite geslo
 re-enter your password	registration	sl	Ponovite vaše geslo
+register	common	sl	Registriraj
 register link at login screen?	admin	sl	Povezava na prijavo na prijavni strani?
 registration	common	sl	Prijava
 registration settings	admin	sl	Nastavitve registracije
@@ -101,7 +101,5 @@ you must fill in all of the required fields	registration	sl	Vnesti morate vsa os
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	sl	Zaprosili ste za spremembo gesla. Prosim, sledite spodnjemu URLju, da boste spremembo dokončali. Veljavnost povezave bo pretekla dve uri po odpošiljanju. Po tem času morate ponoviti celoten postopek.
 you specified a value for %1 that is not a choice	registration	sl	Določili ste vrednost %1, ki ni na izbiro
 your account is now active!	registration	sl	Vaš račun je aktiviran!
-your account is now active!  click <a href="%s">here</a> to log into your account.	registration	sl	Vaš račun je aktiviran! Kliknite <a href="%s">tukaj</a> da se prijavite v vaš račun.
 your password was changed.	registration	sl	Vaše geslo je bilo spremenjeno.
-your password was changed. you can go back to the <a href="%1">login</a> page.	registration	sl	Vaše geslo je bilo spremenjeno. Lahko se vrnete na <a href="%1">vstopno stran</a>.
 zip/postal	registration	sl	Poštna številka
