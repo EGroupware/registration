@@ -496,7 +496,7 @@
 
 			if ($type == 'birthday' || $type == 'state' || $type == 'country')
 			{
-				$sbox =& CreateObject ('phpgwapi.sbox');
+				$sbox =& CreateObject ('registration.sbox');
 			}
 
 			if ($type == 'state')
