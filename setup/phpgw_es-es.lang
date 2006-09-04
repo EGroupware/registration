@@ -56,6 +56,7 @@ phone	registration	es-es	Teléfono
 problem sending email:	registration	es-es	Problema al enviar correo:
 re-enter password	registration	es-es	Confirmar contraseña
 re-enter your password	registration	es-es	Confirmar contraseña
+register	common	es-es	registrarse
 register link at login screen?	admin	es-es	¿Enlace de registro en la pantalla de inicio de sesión?
 registration	common	es-es	Autorregistro
 registration settings	admin	es-es	Configuración del autorregistro
