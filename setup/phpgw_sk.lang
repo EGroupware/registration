@@ -23,6 +23,7 @@ country	registration	sk	Krajina
 current fields:	registration	sk	Súèasné polo¾ky:
 days until trial accounts expire	admin	sk	Dní do vypr¹ania skú¹obného úètu
 display terms of service?	admin	sk	Zobrazi» podmienky pou¾ívania?
+dropdown	registration	sk	Rozbaµovacie
 email address	registration	sk	E-mailová adresa
 email address to display for support	admin	sk	E-mailová adresa zobrazená podpornému tímu
 email address to send notices from	admin	sk	E-mailová adresa, z ktorej sa posielajú upozornenia
@@ -30,6 +31,7 @@ enable registration?	admin	sk	Zapnú» registráciu?
 enter your new password	registration	sk	Zadajte va¹e heslo
 female	registration	sk	®enské
 gender	registration	sk	Pohlavie
+hi	registration	sk	Ahoj
 http password	admin	sk	HTTP heslo
 http username	admin	sk	HTTP pou¾ívateµské meno
 i have read the terms and conditions and agree by them.	registration	sk	Preèítal/a som si podmienky a súhlasím s nimi.
@@ -65,7 +67,7 @@ sorry, no account exists for	registration	sk	¥utujem, neexistuje ¾iadny úèet pre
 sorry, that username does not exist.	registration	sk	¥utujem, takéto pou¾ívateµské meno neexistuje
 sorry, that username is already taken.	registration	sk	¥utujem, takéto pou¾ívateµské meno sa u¾ pou¾íva
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	sk	¥utujem, nastali problémy s aktiváciou Vá¹ho úètu. Upozornenie: odkazy odoslané e-mailom platia iba poèas 2 hodín. Ak si myslíte, ¾e tento èas u¾ vypr¹al, skúste to znovu. V opaènom prípade prosím kontaktujte správcu stránky.
-state	registration	sk	Stav
+state	registration	sk	©tát
 subject for confirmation email	admin	sk	Predmet pre potvrdzovací email
 terms of service	registration	sk	Podmienky pou¾ívania
 terms of service text	admin	sk	Text podmienok pou¾ívania
@@ -82,7 +84,8 @@ update/add	registration	sk	Aktualizova»/Prida»
 use html	admin	sk	pou¾i» HTML
 use trial accounts?	admin	sk	Pou¾i» skú¹obné úèty?
 username is	admin	sk	Pou¾ívateµské meno je
-we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	sk	Poslali sme Vám potvrdzovací email na Va¹u emailovú adresu. Musíte kliknú» na odkaz v nej, a to v priebehu 2 hodín. Ak to neurobíte, potrvá niekoµko dní kým Va¹e prihlasovacie ID bude opä» dostupné.
+values (for dropdown only; comma separated)	registration	sk	Hodnoty (Iba pre rozbaµovacie; oddelené èiarkou)
+we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	sk	Poslali sme Vám potvrdzovací email na Va¹u emailovú adresu. Musíte kliknú» na odkaz v òom, a to v priebehu 2 hodín. Ak to neurobíte, potrvá niekoµko dní kým Va¹e prihlasovacie ID bude opä» dostupné.
 we have sent a mail to your email account: %s with your lost user ids.	registration	sk	Poslali sme email na Vá¹ emailový úèet: %s s Va¹ími stratenými ID pou¾ívateµa.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	sk	Poslali sme email s pokynmi ohµadom zmeny Vá¹ho hesla. Prosím pou¾ite prilo¾ený odkaz do 2 hodín. Ak to neurobíte, budete musie» znovu nav¹tívi» stránku pre stratené heslá.
 wrong session	registration	sk	Nesprávne sedenie
