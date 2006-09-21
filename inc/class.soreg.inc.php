@@ -40,6 +40,16 @@
 //			echo "<br>";
 //			echo time();
 			
+			/* Run check method from auth class */
+			$auth =& CreateObject('phpgwapi.auth');
+			if(method_exists($auth,'registration_account_exists'))
+			{
+			   if($auth->registration_account_exists($account_lid))
+			   {
+				  return true;
+			   }
+			}
+
 			if ( $GLOBALS['egw']->accounts->exists($account_lid) || ( $this->db->f(0) && (time()-$this->db->f(0))<1800  ))
 			{
 				return True;
@@ -240,6 +250,16 @@
 
 			$reg_info['lid']    = $account_lid;
 			$reg_info['fields'] = $fields;
+
+			/* Run create account method from auth class if it exists*/
+			$auth =& CreateObject('phpgwapi.auth');
+			if(method_exists($auth,'registration_create_account'))
+			{
+			   if(!$auth->registration_create_account($account_lid,$fields['passwd'],$fields))
+			   {
+				  exit;
+			   }
+			}
 
 			$GLOBALS['auto_create_acct'] = array(
 				'firstname' => $fields['n_given'],
