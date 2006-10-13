@@ -26,9 +26,6 @@
 		var $lang_code;
 		var $reg_id;
 		var $public_functions = array(
-			'step1' => True,
-			'step2' => True,
-			'step4' => True,
 			'lostpw1' => True,
 			'lostpw2' => True,
 			'lostpw3' => True,
@@ -43,63 +40,15 @@
 
 			$_reg_id=$_GET['reg_id']?$_GET['reg_id']:$_POST['reg_id'];
 			$this->reg_id=$_reg_id?$_reg_id:'';
-
-			// replace the old lang_code with this
-			//			$_lang_code=($_GET['lang_code']?$_GET['lang_code']:$_POST['lang_code']);
-			//			$this->lang_code=($_lang_code?$_lang_code:'');
-			
 		}
 
-		function step1()
-		{
-			//global $config;
-
-			$r_reg=$_REQUEST['r_reg'];
-
-			$so =& CreateObject('registration.soreg');
-			$ui =& CreateObject('registration.uireg');
-
-			if($_POST['langchanged']=='true')
-			{
-				$ui->step1('',$r_reg,$o_reg);
-				exit;
-			}
-			
-			if (! $r_reg['loginid'])
-			{
-				$errors[] = lang('You must enter a username');
-			}
-			
-			if (! is_array($errors) && $so->account_exists($r_reg['loginid']))
-			{
-				$errors[] = lang('Sorry, that username is already taken.');
-			}
-
-			if (is_array($errors))
-			{
-				$ui->step1($errors,$r_reg,$o_reg);
-			}
-			else
-			{
-				$GLOBALS['egw']->session->appsession('loginid','registration',$r_reg['loginid']);
-				
-				
-				$ui->step2();
-			}
-		}
-
-		function step2()
+		function step2_validate_fields()
 		{
 			global $config, $r_reg, $o_reg;
-			
+
 			$r_reg=$_POST['r_reg'];
 			$o_reg=$_POST['o_reg'];
-			
-			$lang_to_pass=$r_reg['lang_code'];
-			$ui =& CreateObject('registration.uireg');
-			$ui->set_lang_code($lang_to_pass);
-			
-			//where is this for????
+
 			if ($config['password_is'] == 'http')
 			{
 				$r_reg['passwd'] = $r_reg['passwd_confirm'] = $_SERVER['PHP_AUTH_PW'];
@@ -218,43 +167,25 @@
 				$errors[] = lang('You must fill in all of the required fields');
 			}
 
-			if (! is_array($errors))
+/*			if (! is_array($errors))
 			{
-				$so     =& CreateObject('registration.soreg');
+				//$so     =& CreateObject('registration.soreg');
 				// only send mail if activation requires it
-				$reg_id = $so->step2($fields,$config['activate_account'] == 'email');
-			}
-
+			 }
+*/
 			if (is_array($errors))
 			{
-				$ui->step2($errors,$r_reg,$o_reg,$missing_fields);
+			   $ret_arr['errors']=$errors;
+			   $ret_arr['r_reg']=$r_reg;
+			   $ret_arr['o_reg']=$o_reg;
+			   $ret_arr['missing_fields']=$missing_fields;
 			}
 			else
 			{
-				$GLOBALS['egw']->redirect($GLOBALS['egw']->link('/registration/index.php','menuaction=registration.uireg.ready_to_activate&lang_code='.$lang_to_pass.'&reg_id=' . $reg_id));
-			}
-		}
-
-		function step4()
-		{
-			$so =& CreateObject('registration.soreg');
-			$ui =& CreateObject('registration.uireg');
-			
-			$reg_info = $so->valid_reg($this->reg_id);
-
-			if (! is_array($reg_info))
-			{
-				$vars['error_msg']=lang('Sorry, we are having a problem activating your account. Note that links sent by e-mail are only valid during two hours. If you think this delay was expired, just retry. Otherwise, please contact the site administrator.');
-				$ui->simple_screen('error_confirm.tpl','',$vars);
-				return False;
+			   $ret_arr['reg_id'] = $this->so->sendActivationLink($fields,$config['activate_account'] == 'email',$lang_to_pass);
 			}
 
-			$so->create_account($reg_info['reg_lid'],$reg_info['reg_info']);
-			$so->delete_reg_info($this->reg_id);
-			setcookie('sessionid');
-			setcookie('kp3');
-			setcookie('domain');
-			$ui->welcome_screen();
+			return $ret_arr;
 		}
 
 		//
@@ -378,7 +309,7 @@
 				}
 				else
 				{
-					$GLOBALS['egw']->redirect ($GLOBALS['egw']->link ('/registration/index.php', 'menuaction=registration.boreg.step1&r_reg[loginid]=' . $_SERVER['PHP_AUTH_USER']));
+					$GLOBALS['egw']->redirect($GLOBALS['egw']->link ('/registration/index.php', 'menuaction=registration.uireg.step1_validate&r_reg[loginid]=' . $_SERVER['PHP_AUTH_USER']));
 				}
 			}
 

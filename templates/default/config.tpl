@@ -102,18 +102,22 @@
    <td><input type="password" name="newsettings[anonymous_pass]" value="{value_anonymous_pass}"></td>
   </tr>
   <tr bgcolor="{row_on}">
+  <td>{lang_Name_Sender_to_send_notices_from}:</td>
+  <td><input name="newsettings[name_nobody]" value="{value_name_nobody}"></td>
+  </tr>
+  <tr bgcolor="{row_off}">
     <td>{lang_Email_address_to_send_notices_from}:</td>
     <td><input name="newsettings[mail_nobody]" value="{value_mail_nobody}"></td>
   </tr>
-  <tr bgcolor="{row_off}">
-   <td>{lang_Email_address_to_display_for_support}:</td>
-   <td><input name="newsettings[support_email]" value="{value_support_email}"></td>
-  </tr>
   <tr bgcolor="{row_on}">
+    <td>{lang_Email_address_to_display_for_support}:</td>
+    <td><input name="newsettings[support_email]" value="{value_support_email}"></td>
+  </tr>
+  <tr bgcolor="{row_off}">
    <td>{lang_Subject_for_confirmation_email}:</td>
    <td><input name="newsettings[subject_confirm]" value="{value_subject_confirm}"></td>
   </tr>
-   <tr bgcolor="{row_off}">
+   <tr bgcolor="{row_on}">
   <td>{lang_Display_Terms_of_Service?}</td>
   <td>
    <select name="newsettings[display_tos]">
@@ -122,7 +126,7 @@
    </select>
   </td>
  </tr>
- <tr bgcolor="{row_on}">
+ <tr bgcolor="{row_off}">
  <td>{lang_Terms_of_Service_text} ({lang_use HTML})</td>
  <td>
 	<textarea name="newsettings[tos_text]" cols="40" rows="20">{value_tos_text}</textarea>

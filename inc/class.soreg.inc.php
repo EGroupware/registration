@@ -22,11 +22,20 @@
 		var $reg_id;
 		var $db;
 		var $reg_table = 'egw_reg_accounts';
+		
+		var $noreply;
 
 		function soreg()
 		{
+		   error_reporting(E_ERROR);
+		   global $config;
+
 			$this->db = clone($GLOBALS['egw']->db);
 			$this->db->app = 'registration';
+
+			$nobody_name= ( $config['name_nobody'] ?  $config['name_nobody']  : 'No reply' );
+			$nobody_email= ( $config['mail_nobody'] ?  $config['mail_nobody']  : 'noreply@' . $_SERVER['SERVER_NAME'] );
+			$this->noreply = $nobody_name .' <' . $nobody_email . '>';
 		}
 
 		function account_exists($account_lid)
@@ -68,7 +77,7 @@
 			}
 		}
 
-		function step2($fields,$send_mail=True)
+		function sendActivationLink($fields,$send_mail=True,$lang_code)
 		{
 			global $config;
 			$smtp =& CreateObject('phpgwapi.send');
@@ -107,7 +116,8 @@
 				$GLOBALS['egw']->template->set_var ('lastname', $fields['n_family']);
 			}
 
-			$GLOBALS['egw']->template->set_var ('activate_url',$url . '?menuaction=registration.boreg.step4&reg_id='. $this->reg_id);
+			//$GLOBALS['egw']->template->set_var ('activate_url',$url . '?menuaction=registration.boreg.step4&reg_id='. $this->reg_id);
+			$GLOBALS['egw']->template->set_var ('activate_url',$url . '?aid='.$this->reg_id);
 
 			if ($config['support_email'])
 			{
@@ -116,11 +126,11 @@
 			}
 
 			$subject = $config['subject_confirm'] ? lang($config['subject_confirm']) : lang('Account registration');
-			$noreply = $config['mail_nobody'] ? ('No reply <' . $config['mail_nobody'] . '>') : ('No reply <noreply@' . $_SERVER['SERVER_NAME'] . '>');
+//			$noreply = $config['mail_nobody'] ? ('No reply <' . $config['mail_nobody'] . '>') : ('No reply <noreply@' . $_SERVER['SERVER_NAME'] . '>');
 
 			if ($send_mail)
 			{
-				$ret = $smtp->msg('email',$fields['email'],$subject,$GLOBALS['egw']->template->fp('out','message'),'','','',$noreply);
+			   $ret = $smtp->msg('email',$fields['email'],$subject,$GLOBALS['egw']->template->fp('out','message'),'','','',$this->noreply);
 				if ($ret != True)
 				{
 					print(lang("Problem Sending Email:").$smtp->desc) ;
@@ -181,9 +191,9 @@
 				$GLOBALS['egw']->template->set_var('activate_url',$url . '?menuaction=registration.boreg.lostpw2&reg_id=' . $reg_id);
 
 				$subject = $config['subject_lostpw'] ? lang($config['subject_lostpw']) : lang('Account password retrieval');
-				$noreply = $config['mail_nobody'] ? ('No reply <' . $config['mail_nobody'] . '>') : ('No reply <noreply@' . $_SERVER['SERVER_NAME'] . '>');
+				//$noreply = $config['mail_nobody'] ? ('No reply <' . $config['mail_nobody'] . '>') : ('No reply <noreply@' . $_SERVER['SERVER_NAME'] . '>');
 
-				$ret = $smtp->msg('email',$info['email'],$subject,$GLOBALS['egw']->template->fp('out','message'),'','','',$noreply);
+				$ret = $smtp->msg('email',$info['email'],$subject,$GLOBALS['egw']->template->fp('out','message'),'','','',$this->noreply);
 				if ($ret != True)
 				{
 					print(lang("Problem Sending Email:").$smtp->desc) ;
@@ -359,16 +369,9 @@
 			$GLOBALS['egw']->template->set_var('lostids',$GLOBALS['egw']->accounts->id2name($account_id));
 			
 			$subject = $config['subject_lostid'] ? lang($config['subject_lostpid']) : lang('Lost user account retrieval');
-			$noreply = $config['mail_nobody'] ? ('No reply <' . $config['mail_nobody'] . '>') : ('No reply <noreply@' . $_SERVER['SERVER_NAME'] . '>');
-			
-			// Debugging
-			//print('<PRE>') ;
-			//print_r($info) ;
-			//print_r($subject) ;
-			//print_r($noreply) ;
-			//print('</PRE>') ;
-			
-			$ret = $smtp->msg('email',$info['email'],$subject,$GLOBALS['egw']->template->fp('out','message'),'','','',$noreply);
+			//$noreply = $config['mail_nobody'] ? ('No reply <' . $config['mail_nobody'] . '>') : ('No reply <noreply@' . $_SERVER['SERVER_NAME'] . '>');
+
+			$ret = $smtp->msg('email',$info['email'],$subject,$GLOBALS['egw']->template->fp('out','message'),'','','',$this->noreply);
 			if ($ret != true)
 				{
 					print(lang("Problem Sending Email:").$smtp->desc) ;

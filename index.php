@@ -37,7 +37,15 @@
 			return true;
 		}
 		return false;
-	}
+	 }
+
+	 // if activation id is given header to activate method
+	 if(trim($_GET['aid']))
+	 {
+		header('Location:index.php?menuaction=registration.uireg.activate_account&reg_id='.$_GET['aid']);
+		exit;
+	 }
+	 
 	
 	$GLOBALS['egw_info']['flags'] = array(
 		'noheader'  => True,
@@ -67,4 +75,4 @@
 		}
 	}
 	$_obj =& CreateObject('registration.uireg');
-	$_obj->step1();
+	$_obj->step1_ChooseLangAndLoginName();
