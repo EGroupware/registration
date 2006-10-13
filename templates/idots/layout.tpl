@@ -23,7 +23,7 @@
 <td id="tdAppbox" valign="top">
 <div id="divAppboxHeader">{lang_header}</div>
 <div id="divAppbox">
-<table width="98%" cellpadding"0" cellspacing="0">
+<table width="98%" cellpadding="0" cellspacing="0">
 <tr><td>
 <!-- END header -->
 

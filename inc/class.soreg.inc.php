@@ -77,6 +77,7 @@
 			}
 		}
 
+		//split up in two functions
 		function sendActivationLink($fields,$send_mail=True,$lang_code)
 		{
 			global $config;
@@ -86,8 +87,18 @@
 			// If we do, it will not affect it
 			$url = ($_SERVER['HTTPS'] ? 'https://' : 'http://').$GLOBALS['egw_info']['server']['hostname'] . $GLOBALS['egw_info']['server']['webserver_url']. "/registration/index.php";
 			
+			//_debug_array($fields);
 			$account_lid  = $GLOBALS['egw']->session->appsession('loginid','registration');
+
+			//an error occured because the session could not be retrieved
+			if(!$account_lid)
+			{
+				return false;	
+			}
+			
+			
 			$this->reg_id = md5(time() . $account_lid . $GLOBALS['egw']->common->randomstring(32));
+			
 
 			$this->db->update($this->reg_table,array(
 				'reg_id' => $this->reg_id,

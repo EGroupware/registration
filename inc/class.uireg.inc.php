@@ -389,8 +389,13 @@
 	  {
 		 $this->step2_passAndInfo($valid_arr[errors],$valid_arr[r_reg],$valid_arr[o_reg],$valid_arr[missing_fields]);
 	  }
-	  else
+	  elseif(!$valid_arr['reg_id'])
 	  {
+		 $vars[message]=	lang('An error occured. Please remove your cookies and try again.');
+		 $this->simple_screen ('error_general.tpl', $GLOBALS['egw']->common->error_list ($errors),$vars);
+	  }
+	  else
+	  {	 
 		 $this->ready_to_activate($valid_arr['reg_id']);
 	  }
    }
