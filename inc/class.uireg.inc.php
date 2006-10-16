@@ -236,8 +236,13 @@
 
 	  function step1_validate()
 	  {
+		 global $config;
 		 $r_reg=$_REQUEST['r_reg'];
 
+		 if($config['conv7bit'])
+		 {
+			$r_reg['loginid']=$this->bo->to7bit($r_reg['loginid']);	
+		 }
 
 		 if($_POST['langchanged']=='true')
 		 {
@@ -648,6 +653,8 @@
 
 	  function get_input_field ($field_info, $post_values)
 	  {
+		 $this->tplsav2 = CreateObject('phpgwapi.tplsavant2');
+
 		 $r_regs=$_POST['r_reg'];
 		 $o_regs=$_POST['o_reg'];
 
@@ -698,11 +705,16 @@
 		 {
 			if (!is_array ($values))
 			{
-			   $rstring = "Error: Dropdown list '$name' has no values";
+			   $rstring = lang("Error: Dropdown list '%1' has no values",$name);
 			}
 			else
 			{
-			   $rstring = '<select name="' . $a . '[' . $name . ']"><option value=""> </option>';
+			   $this->tplsav2->values = $values;
+			   $this->tplsav2->inputname = $a . '[' . $name . ']';
+			   $this->tplsav2->post_value = $post_value;
+			   $rstring = $this->tplsav2->fetch('dropdown.tpl.php'); 
+			   
+			   /*$rstring = '<select name="' . $a . '[' . $name . ']"><option value=""> </option>';
 				  while (list (,$value) = each ($values))
 				  {
 					 $value = trim ($value);
@@ -717,6 +729,7 @@
 				  }
 
 				  $rstring .= "</select>";
+			   */
 			}
 		 }
 

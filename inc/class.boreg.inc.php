@@ -36,6 +36,14 @@
 		 $this->reg_id=$_reg_id?$_reg_id:'';
 	  }
 
+	  function to7bit($text,$from_enc) 
+	  {
+		 $text = mb_convert_encoding($text,'HTML-ENTITIES',$from_enc);
+		 $text = preg_replace( array( '/&szlig;/','/&(..)lig;/', '/&([aouAOU])uml;/','/&(.)[^;]*;/'), array('ss',"$1","$1".'e',"$1"),
+		 $text);
+		 return $text;
+	  }  
+
 	  function register_validate_fields()
 	  {
 		 global $config, $r_reg, $o_reg;
@@ -128,9 +136,9 @@
 			{
 			   if ($post_value)
 			   {
-				  while (list (,$value) = each ($values))
+				  foreach($values as $value)
 				  {
-					 if ($value == $post_value)
+					 if (trim($value) == trim($post_value))
 					 {
 						$ok = 1;
 					 }
@@ -176,10 +184,8 @@
 		 return $ret_arr;
 	  }
 
-
 	  function lostpassword_validate_login($r_reg)
 	  {
-
 		 if (! $r_reg['loginid'])
 		 {
 			$errors[] = lang('You must enter a username');
