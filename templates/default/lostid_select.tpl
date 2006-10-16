@@ -1,9 +1,13 @@
 <!-- BEGIN form -->
 <form action="{form_action}" method="POST">
  <h1 align="center">{lang_lost_user_id}</h1>
- <table border="0" width="40%" align="center">
+ <table border="0" style="width:600px;" align="center">
  <tr>
-	<td align="center" colspan="2"><font color=#FF0000 size="+2">{errors}</font></td>
+
+ <td align="center" colspan="2">
+ <div style="text-align:center;color:red" class="regerror">{errors}</div>
+ <!--<font color=#FF0000 size="+2">{errors}</font>-->
+ </td>
  </tr>
  <tr>
  	<td align="justify" colspan="2">{lang_explain}</td>

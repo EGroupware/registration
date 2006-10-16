@@ -1,6 +1,6 @@
 <!-- BEGIN form -->
 <form action="{form_action}" method="POST">
- <table border="0" width="40%" align="center">
+ <table border="0" style="width:500px;" align="center">
  <tr>
 	<td>&nbsp;</td>
 	<td align="center" colspan="2"><font size="+2"><b>{lang_lost_password}</b></font></td>
@@ -8,7 +8,9 @@
  <tr>
  <tr>
 	<td>&nbsp;</td>
- 	<td colspan="2">{errors}</td>
+		<td colspan="2">
+		<div style="text-align:center;color:red" class="regerror">{errors}</div>
+		</td>
 	<td>&nbsp;</td>
  </tr>
  <tr>

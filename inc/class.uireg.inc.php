@@ -26,18 +26,20 @@
 	  var $lang_code;
 	  var $reg_id;
 	  var $public_functions = array(
-		 'welcome_screen' => True,
 		 'step1_ChooseLangAndLoginName'   => True,
 		 'step1_validate'   => True,
 		 'step2_passAndInfo'   => True,
 		 'step2_validate'   => True,
-		 'lostpw1' => True,
-		 'lostpw3' => True,
-		 'lostpw4' => True,
-		 'lostid1' => True,
-		 'ready_to_activate' => True,
-		 'email_sent_lostpw' => True,
-		 'activate_account'=> True,
+		 //'welcome_screen' => True,
+		 //'ready_to_activate' => True,
+		 'step4_activate_account'=> True,
+		 'lostid_step1_ask_email'	=> True,
+		 'lostid_step2_validate_send'	=> True,
+		 'lostpw_step1_ask_login' => True,
+		 'lostpw_step2_validate_send' => True,
+		 'lostpw_step3_validate_reg_id' => True,
+		 'lostpw_step4_changepass' => True,
+		 'lostpw_step5_validate_newpass' => True,
 		 'tos'     => True
 	  );
 
@@ -152,7 +154,6 @@
 			exit;
 		 }
 
-
 		 if ($errors && $config['username_is'] == 'http')
 		 {
 			$vars[message]=	lang('An error occured. Please contact our technical support and let them know.');
@@ -235,12 +236,8 @@
 
 	  function step1_validate()
 	  {
-		 //global $config;
-
 		 $r_reg=$_REQUEST['r_reg'];
 
-		 //$so =& CreateObject('registration.soreg');
-		 //$ui =& CreateObject('registration.uireg');
 
 		 if($_POST['langchanged']=='true')
 		 {
@@ -312,417 +309,494 @@
 		 if (is_array($r_reg))
 		 {
 			while (list($name,$value) = each($r_reg))
-			{				$post_values[$name] = $value;
-			$this->template->set_var('value_' . $name,$value);
+			{				
+			   $post_values[$name] = $value;
+			   $this->template->set_var('value_' . $name,$value);
+			}
 		 }
-	  }
 
-	  if (is_array($o_reg))
-	  {
-		 while (list($name,$value) = each($o_reg))
+		 if (is_array($o_reg))
 		 {
-			$post_values[$name] = $value;
-			$this->template->set_var('value_' . $name,$value);
+			while (list($name,$value) = each($o_reg))
+			{
+			   $post_values[$name] = $value;
+			   $this->template->set_var('value_' . $name,$value);
+			}
 		 }
-	  }
 
-	  $this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.uireg.step2_validate'));
-	  $this->template->set_var('lang_password',lang('Password'));
-	  $this->template->set_var('lang_reenter_password',lang('Re-enter password'));
-	  $this->template->set_var('lang_submit',lang('Submit'));
+		 $this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.uireg.step2_validate'));
+		 $this->template->set_var('lang_password',lang('Password'));
+		 $this->template->set_var('lang_reenter_password',lang('Re-enter password'));
+		 $this->template->set_var('lang_submit',lang('Submit'));
 
-	  if (!$show_password_prompt)
-	  {
-		 $this->template->set_block ('form', 'password', 'empty');
-	  }
-
-	  $this->template->set_block ('form', 'other_fields_proto', 'other_fields_list');
-
-	  reset ($this->fields);
-	  while (list ($num, $field_info) = each ($this->fields))
-	  {
-		 $input_field = $this->get_input_field ($field_info, $post_values);
-		 $var = array (
-			'missing_indicator' => $missing[$field_info['field_name']] ? '<font color="#CC0000">*</font>' : '',
-			'bold_start'  => $field_info['field_required'] == 'Y' ? '<b>' : '',
-			   'bold_end'    => $field_info['field_required'] == 'Y' ? '</b>' : '',
-			'lang_displayed_text' => lang ($field_info['field_text']),
-			'input_field' => $input_field
-		 );
-
-		 $this->template->set_var ($var);
-
-		 $this->template->parse ('other_fields_list', 'other_fields_proto', True);
-	  }
-
-	  if ($config['display_tos'])
-	  {
-		 $this->template->set_var('tos_link',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.uireg.tos'));
-		 $this->template->set_var('lang_tos_agree',lang('I have read the terms and conditions and agree by them.'));
-		 if ($r_reg['tos_agree'])
+		 if (!$show_password_prompt)
 		 {
-			$this->template->set_var('value_tos_agree', 'checked');
+			$this->template->set_block ('form', 'password', 'empty');
 		 }
-	  }
-	  else
-	  {
-		 $this->template->set_block ('form', 'tos', 'blank');
-	  }
 
-	  $this->template->pfp('out','form');
-	  $this->footer();
-   }
+		 $this->template->set_block ('form', 'other_fields_proto', 'other_fields_list');
 
-   function step2_validate()
-   {
-	  global $config;
-
-	  $r_reg=$_POST['r_reg'];
-	  $o_reg=$_POST['o_reg'];
-
-	  $lang_to_pass=$r_reg['lang_code'];
-	  $this->set_lang_code($lang_to_pass);
-
-	  $valid_arr=$this->bo->step2_validate_fields($lang_to_pass);
-
-	  if($valid_arr[errors])
-	  {
-		 $this->step2_passAndInfo($valid_arr[errors],$valid_arr[r_reg],$valid_arr[o_reg],$valid_arr[missing_fields]);
-	  }
-	  elseif(!$valid_arr['reg_id'])
-	  {
-		 $vars[message]=	lang('An error occured. Please remove your cookies and try again.');
-		 $this->simple_screen ('error_general.tpl', $GLOBALS['egw']->common->error_list ($errors),$vars);
-	  }
-	  else
-	  {	 
-		 $this->ready_to_activate($valid_arr['reg_id']);
-	  }
-   }
-
-   function ready_to_activate($reg_id='')
-   {
-	  global $config;
-
-	  if ($config['activate_account'] == 'email')
-	  {
-		 $var[lang_email_confirm]=lang('We have sent a confirmation email to your email address. You must click on the link within 2 hours. If you do not, it may take a few days until your loginid will become available again.');
-
-		 $this->simple_screen('confirm_email_sent.tpl','',$var);
-	  }
-	  else
-	  {
-		 /* ($config['activate_account'] == 'immediately') */
-		 $GLOBALS['egw']->redirect($GLOBALS['egw']->link('/registration/index.php','?aid='.$reg_id));
-	  }
-   }
-
-   function activate_account()
-   {
-	  $reg_info = $this->bo->so->valid_reg($this->reg_id);
-
-	  if (! is_array($reg_info))
-	  {
-		 $vars['error_msg']=lang('Sorry, we are having a problem activating your account. Note that links sent by e-mail are only valid during two hours. If you think this delay was expired, just retry. Otherwise, please contact the site administrator.');
-
-		 $this->simple_screen('error_confirm.tpl','',$vars);
-
-		 return False;
-	  }
-
-	  $_fields = unserialize(base64_decode($reg_info['reg_info']));
-
-	  $this->set_lang_code($_fields['lang_code']);
-
-	  $this->bo->so->create_account($reg_info['reg_lid'],$reg_info['reg_info']);
-	  $this->bo->so->delete_reg_info($this->reg_id);
-
-	  setcookie('sessionid');
-	  setcookie('kp3');
-	  setcookie('domain');
-	  $this->welcome_screen();
-   }
-
-   function welcome_screen()
-   {
-	  $this->header();
-
-	  $login_url = $GLOBALS['egw']->link('/login.php');
-
-	  $message = lang('Your account is now active!'). ' <a href="%s" style="font-weight:bold;">'. lang('Click to log into your account'). '</a>';
-	  $message = sprintf($message,$login_url) ;
-
-	  $this->template->set_file(array(
-		 'screen' => 'welcome_message.tpl'
-	  ));
-
-	  $this->template->set_var('lang_your_account_is_active',$message);
-
-	  $this->template->pfp('out','screen');
-	  $this->footer();
-	  exit;
-   }
-
-   //
-   // username
-   //
-   function lostpw1($errors = '',$r_reg = '')
-   {
-	  $this->header();
-	  $this->template->set_file(array(
-		 '_lostpw_select' => 'lostpw_select.tpl'
-	  ));
-	  $this->template->set_block('_lostpw_select','form');
-
-	  if ($errors)
-	  {
-		 $this->template->set_var('errors',$GLOBALS['egw']->common->error_list($errors));
-	  }
-
-	  $this->template->set_var('lang_lost_password',lang('Lost Password')) ;
-	  $this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.boreg.lostpw1'));
-	  $this->template->set_var('lang_explain',lang('After you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.'));
-	  $this->template->set_var('lang_username',lang('Username'));
-	  $this->template->set_var('lang_submit',lang('Submit'));
-
-	  $this->template->pfp('out','form');
-	  $this->footer();
-   }
-
-   //
-   // change password
-   //
-   function lostpw3($errors = '',$r_reg = '',$lid = '')
-   {
-	  $this->header();
-	  $this->template->set_file(array(
-		 '_lostpw_change' => 'lostpw_change.tpl'
-	  ));
-	  $this->template->set_block('_lostpw_change','form');
-
-	  if ($errors)
-	  {
-		 $this->template->set_var('errors',$GLOBALS['egw']->common->error_list($errors));
-	  }
-
-	  $this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.boreg.lostpw3'));
-	  $this->template->set_var('value_username', $lid);
-	  $this->template->set_var('lang_changepassword',lang("Change password for user"));
-	  $this->template->set_var('lang_enter_password',lang('Enter your new password'));
-	  $this->template->set_var('lang_reenter_password',lang('Re-enter your password'));
-	  $this->template->set_var('lang_change',lang('Change'));
-
-	  $this->template->pfp('out','form');
-	  $this->footer();
-   }
-
-   //
-   // password was changed
-   //
-   function lostpw4()
-   {
-	  $this->header();
-	  $this->template->set_file(array(
-		 'screen' => 'lostpw_changed.tpl'
-	  ));
-
-	  $message=lang('Your password was changed.').' <a href="'.$GLOBALS['egw']->link('/login.php').'">'. lang('You can go back to the login page').'</a>';
-	  $this->template->set_var('message',$message);
-
-	  $this->template->pfp('out','screen');
-	  $this->footer();
-   }
-
-   function lostid1($errors = '',$r_reg = '')
-   {
-	  $this->header();
-	  $this->template->set_file(array(
-		 '_lostid_select' => 'lostid_select.tpl'
-	  ));
-	  $this->template->set_block('_lostid_select','form');
-
-	  if ($errors)
-	  {
-		 $this->template->set_var('errors',$GLOBALS['egw']->common->error_list($errors));
-	  }
-	  $this->template->set_var('lang_lost_user_id',lang('Lost User Id')) ;
-	  $this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.boreg.lostid1'));
-	  $this->template->set_var('lang_explain',lang('After you enter your email address, the user accounts associated with this email address will be mailed to that address.'));
-	  $this->template->set_var('lang_email',lang('email address'));
-	  $this->template->set_var('lang_submit',lang('Submit'));
-
-	  $this->template->pfp('out','form');
-	  $this->footer();
-   }
-
-   function get_input_field ($field_info, $post_values)
-   {
-	  $r_regs=$_POST['r_reg'];
-	  $o_regs=$_POST['o_reg'];
-
-	  $post_value = $post_values[$field_info['field_name']];
-
-	  $name = $field_info['field_name'];
-	  $values = explode (",", $field_info['field_values']);
-	  $required = $field_info['field_required'];
-	  $type = $field_info['field_type'];
-
-	  if (!$type)
-	  {
-		 $type = 'text';
-	  }
-
-	  if ($type == 'gender')
-	  {
-		 $values = array (
-			lang('Male'),
-			lang('Female')
-		 );
-
-		 $type = 'dropdown';
-	  }
-
-	  if ($required == 'Y')
-	  {
-		 $a = 'r_reg';
-	  }
-	  else
-	  {
-		 $a = 'o_reg';
-	  }
-
-	  if ($type == 'text' || $type == 'email' || $type == 'first_name' ||
-	  $type == 'last_name' || $type == 'address' || $type == 'city' ||
-	  $type == 'zip' || $type == 'phone')
-	  {
-		 $rstring = '<input type=text name="' . $a . '[' . $name . ']" value="' . $post_value . '">';
-	  }
-
-	  if ($type == 'textarea')
-	  {
-		 $rstring = '<textarea name="' . $a . '[' . $name . ']" value="' . $post_value . '" cols="40" rows="5">' . $post_value . '</textarea>';
-	  }
-
-	  if ($type == 'dropdown')
-	  {
-		 if (!is_array ($values))
+		 reset ($this->fields);
+		 while (list ($num, $field_info) = each ($this->fields))
 		 {
-			$rstring = "Error: Dropdown list '$name' has no values";
+			$input_field = $this->get_input_field ($field_info, $post_values);
+			$var = array (
+			   'missing_indicator' => $missing[$field_info['field_name']] ? '<font color="#CC0000">*</font>' : '',
+			   'bold_start'  => $field_info['field_required'] == 'Y' ? '<b>' : '',
+				  'bold_end'    => $field_info['field_required'] == 'Y' ? '</b>' : '',
+			   'lang_displayed_text' => lang ($field_info['field_text']),
+			   'input_field' => $input_field
+			);
+
+			$this->template->set_var ($var);
+
+			$this->template->parse ('other_fields_list', 'other_fields_proto', True);
+		 }
+
+		 if ($config['display_tos'])
+		 {
+			$this->template->set_var('tos_link',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.uireg.tos'));
+			$this->template->set_var('lang_tos_agree',lang('I have read the terms and conditions and agree by them.'));
+			if ($r_reg['tos_agree'])
+			{
+			   $this->template->set_var('value_tos_agree', 'checked');
+			}
 		 }
 		 else
 		 {
-			$rstring = '<select name="' . $a . '[' . $name . ']"><option value=""> </option>';
-			   while (list (,$value) = each ($values))
-			   {
-				  $value = trim ($value);
+			$this->template->set_block ('form', 'tos', 'blank');
+		 }
 
-				  unset ($selected);
-				  if ($value == $post_value)
-				  {
-					 $selected = "selected";
-				  }
+		 $this->template->pfp('out','form');
+		 $this->footer();
+	  }
 
-				  $rstring .= '<option value="' . $value . '" ' . $selected . '>' . $value . '</option>';
-			   }
+	  function step2_validate()
+	  {
+		 $r_reg=$_POST['r_reg'];
+		 $o_reg=$_POST['o_reg'];
 
-			   $rstring .= "</select>";
+		 $lang_to_pass=$r_reg['lang_code'];
+		 $this->set_lang_code($lang_to_pass);
+
+		 $valid_arr=$this->bo->register_validate_fields($lang_to_pass);
+
+		 if($valid_arr[errors])
+		 {
+			$this->step2_passAndInfo($valid_arr[errors],$valid_arr[r_reg],$valid_arr[o_reg],$valid_arr[missing_fields]);
+		 }
+		 elseif(!$valid_arr['reg_id'])
+		 {
+			$vars[message]=	lang('An error occured. Please remove your cookies and try again.');
+			$this->simple_screen ('error_general.tpl', $GLOBALS['egw']->common->error_list ($errors),$vars);
+		 }
+		 else
+		 {	 
+			$this->step3_ready_to_activate($valid_arr['reg_id']);
 		 }
 	  }
 
-	  if ($type == 'checkbox')
+	  function step3_ready_to_activate($reg_id='')
 	  {
-		 unset ($checked);
-		 if ($post_value)
-		 $checked = "checked";
+		 global $config;
 
-		 $rstring = '<input type=checkbox name="' . $a . '[' . $name . ']" ' . $checked . '>';
+		 if ($config['activate_account'] == 'email')
+		 {
+			$var[lang_email_confirm]=lang('We have sent a confirmation email to your email address. You must click on the link within 2 hours. If you do not, it may take a few days until your loginid will become available again.');
+
+			$this->simple_screen('confirm_email_sent.tpl','',$var);
+		 }
+		 else
+		 {
+			/* ($config['activate_account'] == 'immediately') */
+			$GLOBALS['egw']->redirect($GLOBALS['egw']->link('/registration/index.php','?aid='.$reg_id));
+		 }
 	  }
 
-	  if ($type == 'birthday' || $type == 'state' || $type == 'country')
+	  function step4_activate_account()
 	  {
-		 $sbox =& CreateObject ('registration.sbox');
+		 $reg_info = $this->bo->so->valid_reg($this->reg_id);
+
+		 if (! is_array($reg_info))
+		 {
+			$vars['error_msg']=lang('Sorry, we are having a problem activating your account. Note that links sent by e-mail are only valid during two hours. If you think this delay was expired, just retry. Otherwise, please contact the site administrator.');
+
+			$this->simple_screen('error_confirm.tpl','',$vars);
+
+			return False;
+		 }
+
+		 $_fields = unserialize(base64_decode($reg_info['reg_info']));
+
+		 $this->set_lang_code($_fields['lang_code']);
+		 
+		 //_debug_array($reg_info);
+
+		 //error_reporting(E_ALL);
+
+		 //echo $this->reg_id;
+		 //echo $reg_info['reg_id'];
+		 //echo $_GET['reg_id'];
+
+		 $this->bo->so->create_account($reg_info['reg_lid'],$reg_info['reg_info']);
+
+		 //_debug_array($db_arr);
+
+		 //echo $this->reg_id;
+		 //echo $reg_info['reg_id'];
+		 //echo $_GET['reg_id'];
+		 
+		 $this->bo->so->delete_reg_info($this->reg_id);
+
+		 setcookie('sessionid');
+		 setcookie('kp3');
+		 setcookie('domain');
+		 $this->step5_welcome_screen();
 	  }
 
-	  if ($type == 'state')
+	  function step5_welcome_screen()
 	  {
-		 $rstring = $sbox->list_states ($a . '[' . $name . ']', $post_value);
+		 $this->header();
+
+		 $login_url = $GLOBALS['egw']->link('/login.php');
+
+		 $message = lang('Your account is now active!'). ' <a href="%s" style="font-weight:bold;">'. lang('Click to log into your account'). '</a>';
+		 $message = sprintf($message,$login_url) ;
+
+		 $this->template->set_file(array(
+			'screen' => 'welcome_message.tpl'
+		 ));
+
+		 $this->template->set_var('lang_your_account_is_active',$message);
+
+		 $this->template->pfp('out','screen');
+		 $this->footer();
+		 exit;
 	  }
 
-	  if ($type == 'country')
-	  {
-		 $vselected=$post_value;
-		 $aname=$a . '[' . $name . ']';
 
-		 $str = '<select name="'.$aname.'">'."\n"
-			. ' <option value="  "'.($vselected == '  '?' selected':'').'>'.lang('Select One').'</option>'."\n";
-			reset($sbox->country_array);
-			while(list($vkey,$vvalue) = each($sbox->country_array))
+	  function lostpw_step1_ask_login($errors = '',$r_reg = '')
+	  {
+		 $this->header();
+		 $this->template->set_file(array(
+			'_lostpw_select' => 'lostpw_select.tpl'
+		 ));
+		 $this->template->set_block('_lostpw_select','form');
+
+		 if ($errors)
+		 {
+			$this->template->set_var('errors',$GLOBALS['egw']->common->error_list($errors));
+		 }
+
+		 $this->template->set_var('lang_lost_password',lang('Lost Password')) ;
+		 $this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.uireg.lostpw_step2_validate_send'));
+		 $this->template->set_var('lang_explain',lang('After you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.'));
+		 $this->template->set_var('lang_username',lang('Username'));
+		 $this->template->set_var('lang_submit',lang('Submit'));
+
+		 $this->template->pfp('out','form');
+		 $this->footer();
+	  }
+
+	  function lostpw_step2_validate_send()
+	  {
+		 $r_reg = $_REQUEST['r_reg'] ;
+		 $errors=$this->bo->lostpassword_validate_login($r_reg);
+
+		 if(is_array($errors))
+		 {
+			$this->lostpw_step1_ask_login($errors,$r_reg);
+			exit;
+		 }
+		 else
+		 {
+			$errors =$this->bo->so->lostpassword_send_email($r_reg['loginid']);
+			if(is_array($errors))
 			{
-			   $str .= ' <option value="'.$vkey.'"'.($vselected == $vkey?' selected':'') . '>'.$vvalue.'</option>'."\n";
+			   $this->simple_screen ('error_general.tpl', $GLOBALS['egw']->common->error_list ($errors),$vars);
 			}
-			$str .= '</select>'."\n";
-
-		 $rstring = $str;
+			else
+			{
+			   $vars[message]=lang('We have sent a mail with instructions to change your password. You should follow the included link within two hours. If you do not, you will have to go to the lost password screen again.');
+			   $this->simple_screen('confirm_email_sent_lostpw.tpl','',$vars);
+			}
+		 }
 	  }
 
-	  if ($type == 'birthday')
+	  function lostpw_step3_validate_reg_id()
 	  {
-		 $rstring = $sbox->getmonthtext ($a . '[' . $name . '_month]', $post_values[$name . '_month']);
-		 $rstring .= $sbox->getdays ($a . '[' . $name . '_day]', $post_values[$name . '_day']);
-		 $rstring .= $sbox->getyears ($a . '[' . $name . '_year]', $post_values[$name . '_year'], 1900, date ('Y') + 1);
+		 $reg_info = $this->bo->so->valid_reg($this->reg_id);
+
+		 if (! is_array($reg_info))
+		 {
+			$vars['error_msg']=lang('Sorry, we are having a problem retrieving the information needed for changing your password. Note that links sent by e-mail are only valid during two hours. If you think this delay was expired, just retry. Otherwise, please contact the site administrator.');
+			$this->simple_screen('error_confirm.tpl','',$vars);
+			return exit;
+		 }
+
+		 $account_id = $GLOBALS['egw']->accounts->name2id($reg_info['reg_lid']);
+
+		 $GLOBALS['egw']->session->appsession('loginid','registration',$reg_info['reg_lid']);
+		 $GLOBALS['egw']->session->appsession('id','registration',$account_id);
+
+		 $this->lostpw_step4_changepass('', '', $reg_info['reg_lid']);
+		 return True;
 	  }
 
-	  return $rstring;
-   }
-
-
-   function simple_screen($template_file, $text = '',$vars=false,$head_subj='')
-   {
-	  //$this->setLang();
-	  $this->header($head_subj);
-
-	  $this->template->set_file(array(
-		 'screen' => $template_file
-	  ));
-
-	  if ($text)
+	  function lostpw_step4_changepass($errors = '',$r_reg = '',$lid = '')
 	  {
-		 $this->template->set_var ('extra_text', $text);
+		 $this->header();
+		 $this->template->set_file(array(
+			'_lostpw_change' => 'lostpw_change.tpl'
+		 ));
+		 $this->template->set_block('_lostpw_change','form');
+
+		 if ($errors)
+		 {
+			$this->template->set_var('errors',$GLOBALS['egw']->common->error_list($errors));
+		 }
+
+		 $this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.uireg.lostpw_step5_validate_newpass'));
+		 $this->template->set_var('value_username', $lid);
+		 $this->template->set_var('lang_changepassword',lang("Change password for user"));
+		 $this->template->set_var('lang_enter_password',lang('Enter your new password'));
+		 $this->template->set_var('lang_reenter_password',lang('Re-enter your password'));
+		 $this->template->set_var('lang_change',lang('Change'));
+
+		 $this->template->pfp('out','form');
+		 $this->footer();
 	  }
 
-	  if(is_array($vars))
+	  function lostpw_step5_validate_newpass()
 	  {
-		 $this->template->set_var ($vars);
+		 $r_reg = $_REQUEST['r_reg'] ;
+		 $lid = $GLOBALS['egw']->session->appsession('loginid','registration');
+		 $errors= $this->bo->lostpw_validate_newpass($r_reg, $lid);
+
+		 if(! is_array($errors))
+		 {
+			$errors=$this->bo->so->change_password($lid, $r_reg['passwd']);
+		 }
+
+
+		 if (is_array($errors))
+		 {
+			$this->lostpw_step4_changepass($errors, $r_reg, $lid);
+			exit;
+		 } 
+		 else
+		 {
+			$this->header();
+			$this->template->set_file(array(
+			   'screen' => 'lostpw_changed.tpl'
+			));
+
+			$message=lang('Your password was changed.').' <a href="'.$GLOBALS['egw']->link('/login.php').'">'. lang('You can go back to the login page').'</a>';
+			$this->template->set_var('message',$message);
+
+			$this->template->pfp('out','screen');
+			$this->footer();
+
+		 }
 	  }
 
-	  $this->template->pfp('out','screen');
-	  $this->footer();
-	  exit;
+	  function lostid_step1_ask_email($errors = '',$r_reg = '')
+	  {
+		 $this->header();
+		 $this->template->set_file(array(
+			'_lostid_select' => 'lostid_select.tpl'
+		 ));
+		 $this->template->set_block('_lostid_select','form');
+
+		 if ($errors)
+		 {
+			$this->template->set_var('errors',$GLOBALS['egw']->common->error_list($errors));
+		 }
+		 $this->template->set_var('lang_lost_user_id',lang('Lost User Id')) ;
+		 $this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.uireg.lostid_step2_validate_send&lang_code='.$_GET['lang_code']));
+		 $this->template->set_var('lang_explain',lang('After you enter your email address, the user accounts associated with this email address will be mailed to that address.'));
+		 $this->template->set_var('lang_email',lang('email address'));
+		 $this->template->set_var('lang_submit',lang('Submit'));
+
+		 $this->template->pfp('out','form');
+		 $this->footer();
+	  }
+
+	  function lostid_step2_validate_send()
+	  {
+		 $r_reg = $_REQUEST['r_reg'] ;
+
+		 //check if email is associated
+		 $errors=$this->bo->lostid_check_account_and_email($r_reg['email']);
+		 if(is_array($errors))
+		 {
+			$this->lostid_step1_ask_email($errors);
+			exit;
+		 }
+
+		 //try to send email
+		 $errors = $this->bo->email_sent_lostid($r_reg['email']);
+		 if(is_array($errors))
+		 {
+			$this->lostid_step1_ask_email($errors);
+			exit;
+		 }
+
+		 $vars[message]=sprintf(lang("We have sent a mail to your email account: %s with your lost user ids."),$r_reg['email']).' <a href="'.$GLOBALS['egw']->link('/login.php').'">'. lang('You can go back to the login page').'</a>';
+		 $this->simple_screen('confirm_email_sent_lostpw.tpl','',$vars);
+	  }
+
+	  function get_input_field ($field_info, $post_values)
+	  {
+		 $r_regs=$_POST['r_reg'];
+		 $o_regs=$_POST['o_reg'];
+
+		 $post_value = $post_values[$field_info['field_name']];
+
+		 $name = $field_info['field_name'];
+		 $values = explode (",", $field_info['field_values']);
+		 $required = $field_info['field_required'];
+		 $type = $field_info['field_type'];
+
+		 if (!$type)
+		 {
+			$type = 'text';
+		 }
+
+		 if ($type == 'gender')
+		 {
+			$values = array (
+			   lang('Male'),
+			   lang('Female')
+			);
+
+			$type = 'dropdown';
+		 }
+
+		 if ($required == 'Y')
+		 {
+			$a = 'r_reg';
+		 }
+		 else
+		 {
+			$a = 'o_reg';
+		 }
+
+		 if ($type == 'text' || $type == 'email' || $type == 'first_name' ||
+		 $type == 'last_name' || $type == 'address' || $type == 'city' ||
+		 $type == 'zip' || $type == 'phone')
+		 {
+			$rstring = '<input type=text name="' . $a . '[' . $name . ']" value="' . $post_value . '">';
+		 }
+
+		 if ($type == 'textarea')
+		 {
+			$rstring = '<textarea name="' . $a . '[' . $name . ']" value="' . $post_value . '" cols="40" rows="5">' . $post_value . '</textarea>';
+		 }
+
+		 if ($type == 'dropdown')
+		 {
+			if (!is_array ($values))
+			{
+			   $rstring = "Error: Dropdown list '$name' has no values";
+			}
+			else
+			{
+			   $rstring = '<select name="' . $a . '[' . $name . ']"><option value=""> </option>';
+				  while (list (,$value) = each ($values))
+				  {
+					 $value = trim ($value);
+
+					 unset ($selected);
+					 if ($value == $post_value)
+					 {
+						$selected = "selected";
+					 }
+
+					 $rstring .= '<option value="' . $value . '" ' . $selected . '>' . $value . '</option>';
+				  }
+
+				  $rstring .= "</select>";
+			}
+		 }
+
+		 if ($type == 'checkbox')
+		 {
+			unset ($checked);
+			if ($post_value)
+			$checked = "checked";
+
+			$rstring = '<input type=checkbox name="' . $a . '[' . $name . ']" ' . $checked . '>';
+		 }
+
+		 if ($type == 'birthday' || $type == 'state' || $type == 'country')
+		 {
+			$sbox =& CreateObject ('registration.sbox');
+		 }
+
+		 if ($type == 'state')
+		 {
+			$rstring = $sbox->list_states ($a . '[' . $name . ']', $post_value);
+		 }
+
+		 if ($type == 'country')
+		 {
+			$vselected=$post_value;
+			$aname=$a . '[' . $name . ']';
+
+			$str = '<select name="'.$aname.'">'."\n"
+			   . ' <option value="  "'.($vselected == '  '?' selected':'').'>'.lang('Select One').'</option>'."\n";
+			   reset($sbox->country_array);
+			   while(list($vkey,$vvalue) = each($sbox->country_array))
+			   {
+				  $str .= ' <option value="'.$vkey.'"'.($vselected == $vkey?' selected':'') . '>'.$vvalue.'</option>'."\n";
+			   }
+			   $str .= '</select>'."\n";
+
+			$rstring = $str;
+		 }
+
+		 if ($type == 'birthday')
+		 {
+			$rstring = $sbox->getmonthtext ($a . '[' . $name . '_month]', $post_values[$name . '_month']);
+			$rstring .= $sbox->getdays ($a . '[' . $name . '_day]', $post_values[$name . '_day']);
+			$rstring .= $sbox->getyears ($a . '[' . $name . '_year]', $post_values[$name . '_year'], 1900, date ('Y') + 1);
+		 }
+
+		 return $rstring;
+	  }
+
+
+	  function simple_screen($template_file, $text = '',$vars=false,$head_subj='')
+	  {
+		 //$this->setLang();
+		 $this->header($head_subj);
+
+		 $this->template->set_file(array(
+			'screen' => $template_file
+		 ));
+
+		 if ($text)
+		 {
+			$this->template->set_var ('extra_text', $text);
+		 }
+
+		 if(is_array($vars))
+		 {
+			$this->template->set_var ($vars);
+		 }
+
+		 $this->template->pfp('out','screen');
+		 $this->footer();
+		 exit;
+	  }
+
+	  function tos()
+	  {
+		 global $config;
+		 $var[tos_text]= $config['tos_text'];
+		 $var[lang_close_window]= '<a href="javascript:self.close()">'.lang('Close Window').'</a>';
+
+		 $this->simple_screen('tos.tpl','',$var,lang('Terms of Service'));
+	  }
    }
-
-
-   function email_sent_lostpw()
-   {
-	  $vars[message]=lang('We have sent a mail with instructions to change your password. You should follow the included link within two hours. If you do not, you will have to go to the lost password screen again.');
-	  $this->simple_screen('confirm_email_sent_lostpw.tpl','',$vars);
-   }
-
-   function email_sent_lostid($email)
-   {
-	  $vars[message]=sprintf(lang("We have sent a mail to your email account: %s with your lost user ids."),$email);
-	  $this->simple_screen('confirm_email_sent_lostpw.tpl','',$vars);
-   }
-
-
-
-
-
-   function tos()
-   {
-	  global $config;
-	  $var[tos_text]= $config['tos_text'];
-	  $var[lang_close_window]= '<a href="javascript:self.close()">'.lang('Close Window').'</a>';
-
-	  $this->simple_screen('tos.tpl','',$var,lang('Terms of Service'));
-   }
-}

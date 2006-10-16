@@ -1,7 +1,7 @@
 <!-- BEGIN form -->
 <b>{lang_changepassword} {value_username}</b><hr><p>
 
-   <center><font color=#ff0000 size=+2>{errors}</font></center>
+<div style="text-align:center;color:red" class="regerror">{errors}</div>
 
    <form method="POST" action="{form_action}">
     <table border="0">

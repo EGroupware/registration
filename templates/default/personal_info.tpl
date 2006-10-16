@@ -12,7 +12,7 @@
 				tosWindow.close();
 			}
 		}
-		tosWindow = window.open("{tos_link}","tos","width=500,height=600,location=no,menubar=no,directories=no,toolbar=no,scrollbars=yes,resizable=yes,status=no");
+		tosWindow = window.open("{tos_link}","tos","width=700,height=600,location=no,menubar=no,directories=no,toolbar=no,scrollbars=yes,resizable=yes,status=no");
 		if (tosWindow.opener == null)
 		{
 			tosWindow.opener = window;
@@ -20,7 +20,7 @@
 	}
 </script>
 
-<div align="center"><font color=#FF0000 size=+2>{errors}</font></div>
+<div style="text-align:center;color:red" class="regerror">{errors}</div>
 <form action="{form_action}" method="POST">
 <input type="hidden" name="r_reg[lang_code]" value="{lang_code}">
 <table border="0" width="95%" align="center">

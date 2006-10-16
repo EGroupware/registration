@@ -42,9 +42,15 @@
 	 // if activation id is given header to activate method
 	 if(trim($_GET['aid']))
 	 {
-		header('Location:index.php?menuaction=registration.uireg.activate_account&reg_id='.$_GET['aid']);
+		header('Location:index.php?menuaction=registration.uireg.step4_activate_account&reg_id='.$_GET['aid']);
 		exit;
 	 }
+	 elseif(trim($_GET['pwid']))
+	 {
+		header('Location:index.php?menuaction=registration.uireg.lostpw_step3_validate_reg_id&reg_id='.$_GET['pwid']);
+		exit;
+	 }
+
 	 
 	
 	$GLOBALS['egw_info']['flags'] = array(
