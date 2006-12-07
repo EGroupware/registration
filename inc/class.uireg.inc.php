@@ -288,6 +288,13 @@
 			$show_password_prompt = False;
 		 }
 
+		 if(!$GLOBALS['egw']->session->appsession('loginid','registration'))
+		 {
+			$vars['message'] =lang('An unknown error occured. <a href="%1">Please try registering again.</a>',$GLOBALS['egw']->link('/registration/index.php'));
+			$this->simple_screen('error_general.tpl', '',$vars);
+			exit;
+		 }
+
 		 $this->header();
 		 $this->template->set_file(array(
 			'_personal_info' => 'personal_info.tpl'
@@ -295,6 +302,7 @@
 		 $this->template->set_block('_personal_info','form');
 		 $this->template->set_var('lang_code',$this->lang_code);
 		 $this->template->set_var('lang_username',lang('Username'));
+		 
 		 $this->template->set_var('value_username',$GLOBALS['egw']->session->appsession('loginid','registration'));
 
 		 if ($errors)
