@@ -263,12 +263,10 @@
 		 }
 		 $accounts->save_repository();
 
-		 /*
 		 if(@stat(EGW_SERVER_ROOT . '/messenger/inc/hook_registration.inc.php'))
 		 {
 			include(EGW_SERVER_ROOT . '/messenger/inc/hook_registration.inc.php');
 		 }
-		 */
 	  }
 
 	  /**
