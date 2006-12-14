@@ -276,6 +276,32 @@
 	  {
 		 global $config;
 
+		 if ($_GET['invite'])
+		 {
+			$userinfo = $GLOBALS['egw']->session->appsession('userinfo', 'registration');
+			if (empty($userinfo) || !is_array($userinfo))
+			{
+			   $warning_message = lang('Your registration code is missing or incorrect.');
+			}
+			elseif ($GLOBALS['egw']->session->appsession('time', 'registration') == 'false')
+			{
+			   $warning_massage = lang('Your login is not available. Time is expired');
+			}
+
+			if ($warning_message)
+			{
+			   $this->header();
+			   echo '<br/><div align="center">';
+				  echo $warning_message;
+				  echo '</div><br/>';
+			   $this->footer();
+			   exit;
+			}
+			$r_reg = $userinfo;
+		 }
+
+
+
 		 $show_password_prompt = True;
 		 $select_password = $this->bo->check_select_password ();
 		 if (is_string ($select_password))
@@ -422,7 +448,7 @@
 		 else
 		 {
 			/* ($config['activate_account'] == 'immediately') */
-			$GLOBALS['egw']->redirect($GLOBALS['egw']->link('/registration/index.php','?aid='.$reg_id));
+			$GLOBALS['egw']->redirect($GLOBALS['egw']->link('/registration/index.php','aid='.$reg_id));
 		 }
 	  }
 
@@ -438,6 +464,8 @@
 
 			return False;
 		 }
+
+		 $GLOBALS['egw']->hooks->single('after_registration', 'invite');
 
 		 $_fields = unserialize(base64_decode($reg_info['reg_info']));
 
