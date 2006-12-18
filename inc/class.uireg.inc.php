@@ -144,8 +144,8 @@
 	  {
 		 global $config;
 
-		 if($config['enable_registration']!="True")
-		 {
+               if($config['enable_registration']!="True")
+               {
 			$this->header();
 			echo '<br/><div align="center">';	
 			   echo lang('On-line registration is not activated. Please contact the site administrator for more information about registration.');
@@ -159,7 +159,6 @@
 			$vars[message]=	lang('An error occured. Please contact our technical support and let them know.');
 			$this->simple_screen ('error_general.tpl', $GLOBALS['egw']->common->error_list ($errors),$vars);
 		 }
-
 		 /* Note that check_select_username () may not return */
 		 $select_username = $this->bo->check_select_username ();
 		 if (!$select_username || is_string ($select_username))
@@ -248,7 +247,8 @@
 		 {
 			$this->step1_ChooseLangAndLoginName('',$r_reg,$o_reg);
 			exit;
-		 }
+               }
+
 
 		 if (! $r_reg['loginid'])
 		 {
@@ -266,7 +266,16 @@
 		 }
 		 else
 		 {
-			$GLOBALS['egw']->session->appsession('loginid','registration',$r_reg['loginid']);
+                        $GLOBALS['egw']->session->appsession('loginid','registration',$r_reg['loginid']);
+
+                        #for cybro invite application
+                        if ($GLOBALS['egw']->session->appsession('userinfo', 'registration'))
+                        {
+                                $GLOBALS['egw']->hooks->single('change_username', 'invite');
+
+                                $this->step2_passAndInfo('', $GLOBALS['egw']->session->appsession('userinfo', 'registration'));
+                                exit;
+                        }
 
 			$this->step2_passAndInfo();
 		 }
@@ -274,33 +283,32 @@
 
 	  function step2_passAndInfo($errors = '',$r_reg = '',$o_reg = '',$missing_fields='')
 	  {
-		 global $config;
+               global $config;
+               if ($_GET['regcode'])
+               {
+                       $GLOBALS['egw']->hooks->single('checkcode', 'invite');
 
-		 if ($_GET['invite'])
-		 {
 			$userinfo = $GLOBALS['egw']->session->appsession('userinfo', 'registration');
 			if (empty($userinfo) || !is_array($userinfo))
 			{
-			   $warning_message = lang('Your registration code is missing or incorrect.');
-			}
+                               $warning_message = lang('Your registration code is missing or incorrect.');
+                       }
 			elseif ($GLOBALS['egw']->session->appsession('time', 'registration') == 'false')
 			{
-			   $warning_massage = lang('Your login is not available. Time is expired');
+                               $warning_massage = lang('Your login is not available. Time is expired');
 			}
 
 			if ($warning_message)
 			{
-			   $this->header();
-			   echo '<br/><div align="center">';
-				  echo $warning_message;
-				  echo '</div><br/>';
-			   $this->footer();
-			   exit;
+                               $this->header();
+                               echo '<br/><div align="center">';
+                               echo $warning_message;
+                               echo '</div><br/>';
+                               $this->footer();
+                               exit;
 			}
 			$r_reg = $userinfo;
-		 }
-
-
+               }
 
 		 $show_password_prompt = True;
 		 $select_password = $this->bo->check_select_password ();
@@ -363,6 +371,8 @@
 			}
 		 }
 
+                $this->template->set_var('change_login_lid', $GLOBALS['egw']->link('/registration/index.php', 'menuaction=registration.uireg.step1_ChooseLangAndLoginName'));
+                $this->template->set_var('lang_change_login_lid', lang('Change login'));
 		 $this->template->set_var('form_action',$GLOBALS['egw']->link('/registration/index.php','menuaction=registration.uireg.step2_validate'));
 		 $this->template->set_var('lang_password',lang('Password'));
 		 $this->template->set_var('lang_reenter_password',lang('Re-enter password'));
@@ -454,8 +464,8 @@
 
 	  function step4_activate_account()
 	  {
-		 $reg_info = $this->bo->so->valid_reg($this->reg_id);
 
+		 $reg_info = $this->bo->so->valid_reg($this->reg_id);
 		 if (! is_array($reg_info))
 		 {
 			$vars['error_msg']=lang('Sorry, we are having a problem activating your account. Note that links sent by e-mail are only valid during two hours. If you think this delay was expired, just retry. Otherwise, please contact the site administrator.');
@@ -464,8 +474,6 @@
 
 			return False;
 		 }
-
-		 $GLOBALS['egw']->hooks->single('after_registration', 'invite');
 
 		 $_fields = unserialize(base64_decode($reg_info['reg_info']));
 
@@ -481,6 +489,7 @@
 
 		 $this->bo->so->create_account($reg_info['reg_lid'],$reg_info['reg_info']);
 
+                $GLOBALS['egw']->hooks->single('after_registration', 'invite');
 		 //_debug_array($db_arr);
 
 		 //echo $this->reg_id;

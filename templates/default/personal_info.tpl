@@ -25,6 +25,11 @@
 <input type="hidden" name="r_reg[lang_code]" value="{lang_code}">
 <table border="0" width="95%" align="center">
 <!-- BEGIN password -->
+<tr>
+       <td width="1%">&nbsp;</td>
+       <td>&nbsp;</td>
+       <td><a href="{change_login_lid}">{lang_change_login_lid}</a></td>
+</tr>
   <tr>
   <td width="1%"></td>
   <td><b>{lang_username}</b></td>
