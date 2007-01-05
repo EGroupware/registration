@@ -1,4 +1,4 @@
-<br>please contact the site administrator.	registration	sl	<br>Prosim obvestite oskrbnika strežnika.
+<br>please contact the site administrator.	registration	sl	<br>Prosim, obvestite oskrbnika strežnika.
 [unknown first name]	registration	sl	[neznano ime]
 [unknown last name]	registration	sl	[neznan priimek]
 account %1 record could not be found, report to site administrator	registration	sl	Zapis računa %1 ne obstaja, sporočite oskrbniku.
@@ -17,17 +17,17 @@ checkbox	registration	sl	Stikalo
 choose language	registration	sl	Izberi jezik
 choose your language	registration	sl	Izberite svoj jezik
 city	registration	sl	Mesto
-click to log into your account	registration	sl	Kliknite da se prijavite v vaš račun.
-close window	registration	sl	Zaprite okno
+click to log into your account	registration	sl	Kliknite, da se prijavite z vašim računom.
+close window	registration	sl	Zaprit okno
 country	registration	sl	Država
-current fields:	registration	sl	Izbrana polja:
+current fields:	registration	sl	Trenutna polja:
 days until trial accounts expire	admin	sl	Število dni veljavnosti poskusnih računov
 display terms of service?	admin	sl	Prikažem pogoje uporabe?
 dropdown	registration	sl	Izbirni meni
 email address	registration	sl	E-naslov
 email address to display for support	admin	sl	E-naslov za podporo
 email address to send notices from	admin	sl	E-naslov, s katerega se pošiljajo obvestila
-enable registration?	admin	sl	Omogočimo registracijo?
+enable registration?	admin	sl	Omogočim registracijo?
 enter your new password	registration	sl	Vpišite novo geslo
 female	registration	sl	Ženski
 gender	registration	sl	Spol
@@ -75,15 +75,15 @@ terms of service	registration	sl	Pogoji uporabe
 terms of service text	admin	sl	Besedilo pogojev uporabe
 text	registration	sl	Besedilo
 textarea	registration	sl	Besedilno polje
-the passwords you entered don't match	registration	sl	Vnešeni gesli se ne ujemata
+the passwords you entered don't match	registration	sl	Vneseni gesli se ne ujemata
 the two passwords are not the same	registration	sl	Gesli nista enaki
 this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	sl	To je sporočilo za potrditev vašega uporabniškega računa. Kliknite na naslednjo povezavo, da dokončate aktiviranje računa. Povezava bo pretekla dve uri po odpošiljanju sporočila.
-type	registration	sl	Tip
+type	registration	sl	Vrsta
 unable to send mail, contact your administrator	registration	sl	Ne morem poslati E-pošte, obvestite oskrbnika.
 unknown first name	registration	sl	Neznano ime
 unknown last name	registration	sl	Neznan priimek
 update/add	registration	sl	Posodobi / Dodaj
-use html	admin	sl	uporabi HTML
+use html	admin	sl	Uporabi HTML
 use trial accounts?	admin	sl	Uporabimo poskusne račune?
 username is	admin	sl	Uporabniško ime je
 values (for dropdown only; comma separated)	registration	sl	Vrednosti (le za izbirni seznam, ločeno z vejicami)
