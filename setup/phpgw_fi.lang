@@ -1,3 +1,7 @@
+<br>please contact the site administrator.	registration	fi	<br> Ota yhteyttä sivuston ylläpitäjään.
+[unknown first name]	registration	fi	[tuntematon etunimi]
+[unknown last name]	registration	fi	[tuntematon sukunimi]
+account %1 record could not be found, report to site administrator	registration	fi	Käyttäjätiliä %1 ei löydetty, ilmoita asiasta sivuston ylläpitäjälle.
 account password retrieval	registration	fi	Salasanan nouto
 account registration	registration	fi	Tunnuksen luominen
 activate account	admin	fi	Aktivoi tunnus
@@ -9,11 +13,14 @@ birthday	registration	fi	Syntymäpäivä
 change password for user	registration	fi	Muuta salasana käyttäjälle
 checkbox	registration	fi	Valinta
 choose language	registration	fi	Valitse kieli
-choose your language	common	fi	Valitse kielesi
+choose your language	registration	fi	Valitse kielesi
 city	registration	fi	Kaupunki
 close window	registration	fi	Sulje
 country	registration	fi	Maa
-egroupware - account registration	registration	fi	eGroupware - tunnuksen luominen
+days until trial accounts expire	admin	fi	Monenko päivän päästä käyttäjätunnus vanhenee
+display terms of service?	admin	fi	Näytä toimitusehdot
+email address	registration	fi	Sähköpostiosoite
+email address to display for support	admin	fi	Sähköpostiosoite näytetään käyttäjätuelle
 enable registration?	admin	fi	Aktivoi rekisteröityminen?
 enter your new password	registration	fi	Anna uusi salasanasi
 female	registration	fi	Nainen
@@ -24,35 +31,54 @@ http username	admin	fi	HTTP käyttäjätunnus
 i have read the terms and conditions and agree by them.	registration	fi	Olen lukenut palvelun käyttöehdot ja hyväksyn ne.
 if you did not request this account, simply ignore this message.	registration	fi	Sivuuta tämä viesti jos et pyytänyt tätä tunnusta.
 if you did not request this change, simply ignore this message.	registration	fi	Sivuuta tämä viesti jos et pyytänyt tätä muutosta.
+immediately	admin	fi	Välittömästi
+lost login id	login	fi	Kirjautumistunnus hävinnyt
+lost password	login	fi	Salasana hävinnyt
+lost password link at login screen?	admin	fi	Salasana linkki hävinnyt kirjautumisikkunasta
+lost user id	registration	fi	Käyttäjä ID hävinnyt
 male	registration	fi	Mies
+manage fields	admin	fi	Hallitse kenttiä
 not a user yet? register now	login	fi	Etkö ole vielä käyttäjä? Rekisteröidy nyt.
 order	registration	fi	Järjestys
 password is	admin	fi	Salasana
 phone	registration	fi	Puhelin
-phpgroupware - account registration	registration	fi	phpGroupWare - Tunnuksen luominen
+problem sending email:	registration	fi	Ongelma lähetettäessä sähköpostia:
 re-enter password	registration	fi	Salasana uudelleen
 re-enter your password	registration	fi	Anna salasanasi uudelleen
+register	common	fi	rekisteröidy
+register link at login screen?	admin	fi	Rekisteröitymislinkki kirjautumissivulla?
 registration	common	fi	Rekisteröityminen
 registration settings	admin	fi	Rekisteröitymisen asetukset
 remove	registration	fi	Poista
 report all problems and abuse to	registration	fi	Raportoi kaikista ongelmista ja väärinkäytöstä
+required	registration	fi	Pakollinen
 send email	admin	fi	Lähetä sähköposti
 sorry, that username does not exist.	registration	fi	Valitan, käyttäjätunnusta ei löydy.
 sorry, that username is already taken.	registration	fi	Valitan, käyttäjätunnus on jo varattu
+sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	fi	Valitettavasti käyttäjätilisi aktivoinnissa on ongelma. Sinulle sähköpostiin lähetetty aktivointilinkki on voimassa vain kaksi tuntia. Jos luulet että tämä aika on ylittynyt, yritä uudestaan. Muuten, ota yhteyttä sivuston ylläpitäjään.
+state	registration	fi	Tila
+terms of service	registration	fi	Toimitusehdot
+terms of service text	admin	fi	Toimitusehdot teksti
 text	registration	fi	Teksti
 textarea	registration	fi	Tekstialue
 the passwords you entered don't match	registration	fi	Salasanat eivät täsmää jotka kirjoiti.
 the two passwords are not the same	registration	fi	Salasanat eivät vastaa toisiaan
 type	registration	fi	Tyyppi
+unable to send mail, contact your administrator	registration	fi	Viestiä ei voida lähettää, ota yhteyttä pääkäyttäjään.
+unknown first name	registration	fi	Tuntematon etunimi
+unknown last name	registration	fi	Tuntematon sukunimi
 update/add	registration	fi	Päivitä/Lisää
 use html	admin	fi	käytä HTML
 use trial accounts?	admin	fi	käytä kokeilu tunnuksia?
 username is	admin	fi	Käyttäjänimi
 wrong session	registration	fi	Väärä istunto
+you can go back to the login page	registration	fi	Voit palata kirjautumissivulle
 you have entered an invalid birthday	registration	fi	Syntymäpäivä ei kelpaa
 you have entered an invalid email address	registration	fi	Sähköpostiosoite ei kelpaa
 you must enter a password	registration	fi	Anna salasana
 you must enter a username	registration	fi	Anna käyttäjätunnus
+you must enter an email account	registration	fi	Anna sähköpostiosoitteesi
 you must fill in all of the required fields	registration	fi	Täytä kaikki pakolliset kentät
-your account is now active!  click <a href="%1">here</a> to log into your account.	registration	fi	Tunnuksesi on nyt aktiivinen! Paina <a href=%1> tästä kirjautuaksesi tiliisi.
-your password was changed. you can go back to the <a href="%1">login</a> page.	registration	fi	Salasanasi on muutettu. Voit mennä takaisin <a href=%1> kirjautumis </a> sivulle.
+your account is now active!	registration	fi	Käyttäjätilisi on aktivoitu!
+your password was changed.	registration	fi	Salasanasi on vaihdettu.
+zip/postal	registration	fi	Postinumero
