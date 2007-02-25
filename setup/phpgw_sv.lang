@@ -6,27 +6,27 @@ account password retrieval	registration	sv	Hämta lösenord
 account registration	registration	sv	Konto registrering
 activate account	admin	sv	Aktivera konto
 address	registration	sv	Adress
-after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	sv	Efter att du anget e-post adress kommer användar konton tillhörande e-post adressen att underättas via den adressen.
-after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	sv	Efter att du registrerat ett användarnamn skickas instruktioner om hur du ska ändra ditt lösenord till e-post adressen du anget.
+after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	sv	Efter att du anget e-postadressen kommer tillhörande användarkonto att underättas.
+after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	sv	Efter att du registrerat ett användarnamn skickas instruktioner om hur du ska ändra ditt lösenord till e-postadressen du anget.
 an error occured. please contact our technical support and let them know.	registration	sv	Ett fel uppstod. Var god och meddela support.
-anonymous password	admin	sv	Anonymas lösenord
+anonymous password	admin	sv	Anonyma sessioners lösenord
 birthday	registration	sv	Födelsedag
-challenge question	registration	sv	Mot fråga
+challenge question	registration	sv	Motfråga
 change password for user	registration	sv	Ändra lösenord
 checkbox	registration	sv	Kryssruta
 choose language	registration	sv	Välj språk
 choose your language	registration	sv	Välj språk
 city	registration	sv	Stad
-click to log into your account	registration	sv	Klicka på här för att logga in.
+click to log into your account	registration	sv	Klicka på här för att logga in
 close window	registration	sv	Stäng fönster
 country	registration	sv	Land
 current fields:	registration	sv	Aktuella fält:
 days until trial accounts expire	admin	sv	Dagar tills provkonto förfaller
 display terms of service?	admin	sv	Visa avtalet
 dropdown	registration	sv	Rullgardin
-email address	registration	sv	E-post adress
-email address to display for support	admin	sv	E-post adress till support
-email address to send notices from	admin	sv	E-post adress att skicka meddelanden till
+email address	registration	sv	E-postadress
+email address to display for support	admin	sv	E-postadress till support
+email address to send notices from	admin	sv	E-postadress att skicka meddelanden till
 enable registration?	admin	sv	Aktivera registrering
 enter your new password	registration	sv	Ange lösenord
 female	registration	sv	Kvinna
@@ -39,15 +39,15 @@ if you did not request this account, simply ignore this message.	registration	sv
 if you did not request this change, simply ignore this message.	registration	sv	Var god och ignorera meddelandet om du inte begärt ändringen
 immediately	admin	sv	Omedelbart
 lost login id	login	sv	Glömt inloggnings ID
-lost password	login	sv	Glömt lösenord
+lost password	login	sv	Glömt lösenordet
 lost password link at login screen?	admin	sv	Glömt lösenordet länk på inloggnings sidan?
 lost user account retrieval	registration	sv	Glömt användarkonto återskapning
 lost user id	registration	sv	Glömt användar ID
 lost user id link at login screen?	admin	sv	Glömt användar ID på inloggnings sidan?
-lost_user_id_message	registration	sv	Här ar användarkonton tillhörande e-post kontot:
+lost_user_id_message	registration	sv	Här är användarkonton som tillhör e-postadressen:
 male	registration	sv	Man
 manage fields	admin	sv	Hantera fält
-name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	sv	Namn (tomt såvida inte text, textruta, rullgardin, kryssruta; annars numeriskt andast)
+name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	sv	Namn (tomt såvida inte text, textruta, rullgardin, kryssruta; annars numeriskt endast)
 not a user yet? register now	login	sv	Ännu inget konto? Registrera dig här
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	sv	Online registrering inte tillgänglig. Var god och kontakta support för mer information.
 order	registration	sv	Ordning
@@ -56,9 +56,10 @@ phone	registration	sv	Telefon
 problem sending email:	registration	sv	Problem att skicka e-post:
 re-enter password	registration	sv	Återge lösenordet
 re-enter your password	registration	sv	Återge lösenordet
+register	common	sv	Registrera
 register link at login screen?	admin	sv	Länk till registreringen på Startsidan?
 registration	common	sv	Registrering
-registration settings	admin	sv	Registrerings Alternativ
+registration settings	admin	sv	Registrering alternativ
 remove	registration	sv	Radera
 report all problems and abuse to	registration	sv	Rapportera problem och missbruk till
 required	registration	sv	Krävs
@@ -71,9 +72,9 @@ sorry, we are having a problem activating your account. note that links sent by 
 state	registration	sv	Stat
 subject for confirmation email	admin	sv	Rubrik för bekräftelse meddelanden
 terms of service	registration	sv	Avtal
-terms of service text	admin	sv	Avtals text
+terms of service text	admin	sv	Avtalstext
 text	registration	sv	Text
-textarea	registration	sv	Text ruta
+textarea	registration	sv	Textruta
 the passwords you entered don't match	registration	sv	Lösenorden är inte lika
 the two passwords are not the same	registration	sv	Lösenorden är inte lika
 this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	sv	Detta är en bekräftelse på ditt nya konto. Klicka på länken inom 2 timmar för att aktivera det.
@@ -92,10 +93,10 @@ we have sent a mail with instructions to change your password. you should follow
 wrong session	registration	sv	Fel session
 you can go back to the login page	registration	sv	Du kan gå tillbaks till inloggningen.
 you have entered an invalid birthday	registration	sv	Ogiltig födelsedag
-you have entered an invalid email address	registration	sv	Ogiltig e-post adress
+you have entered an invalid email address	registration	sv	Ogiltig e-postadress
 you must enter a password	registration	sv	Ange lösenord
 you must enter a username	registration	sv	Ange användarnamn
-you must enter an email account	registration	sv	Du måste ange en e-post adress
+you must enter an email account	registration	sv	Du måste ange en e-postadress
 you must fill in all of the required fields	registration	sv	Fylla i begärda fält
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	sv	Följ URL för att byta lösenord. Klicka på länken för att aktivera det innom 2 timmar. Om du inte hinner måste du gå tillbaks till sidan för förlorade lösenord igen.
 you specified a value for %1 that is not a choice	registration	sv	Du specificerade ett värde för %1 som inte tillgängligt
