@@ -144,6 +144,7 @@
 	  {
 		 global $config;
 
+		 //$this->bo->so->_cleanup_old_regs();
                if($config['enable_registration']!="True")
                {
 			$this->header();
@@ -464,7 +465,6 @@
 
 	  function step4_activate_account()
 	  {
-
 		 $reg_info = $this->bo->so->valid_reg($this->reg_id);
 		 if (! is_array($reg_info))
 		 {
@@ -476,27 +476,15 @@
 		 }
 
 		 $_fields = unserialize(base64_decode($reg_info['reg_info']));
-
 		 $this->set_lang_code($_fields['lang_code']);
 		 
-		 //_debug_array($reg_info);
+		 if($reg_info['reg_status']!='a')
+		 {
+			$this->bo->so->create_account($reg_info['reg_lid'],$reg_info['reg_info']);
+			$GLOBALS['egw']->hooks->single('after_registration', 'invite');
+		 }
 
-		 //error_reporting(E_ALL);
-
-		 //echo $this->reg_id;
-		 //echo $reg_info['reg_id'];
-		 //echo $_GET['reg_id'];
-
-		 $this->bo->so->create_account($reg_info['reg_lid'],$reg_info['reg_info']);
-
-                $GLOBALS['egw']->hooks->single('after_registration', 'invite');
-		 //_debug_array($db_arr);
-
-		 //echo $this->reg_id;
-		 //echo $reg_info['reg_id'];
-		 //echo $_GET['reg_id'];
-		 
-		 $this->bo->so->delete_reg_info($this->reg_id);
+		 $this->bo->so->set_activated($this->reg_id);
 
 		 setcookie('sessionid');
 		 setcookie('kp3');

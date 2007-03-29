@@ -56,3 +56,17 @@
 		$GLOBALS['egw_setup']->oProc->RenameTable('phpgw_reg_accounts','egw_reg_accounts');
 		return $GLOBALS['setup_info']['registration']['currentver'] = '1.2';
 	}
+
+	$test[] = '1.2';
+	function registration_upgrade1_2()
+	{
+		$GLOBALS['egw_setup']->oProc->AddColumn('egw_reg_accounts','reg_status',array(
+			'type' => 'varchar',
+			'precision' => '1',
+			'nullable' => False,
+			'default' => 'x'
+		));
+
+		return $GLOBALS['setup_info']['registration']['currentver'] = '1.3.001';
+	}
+?>

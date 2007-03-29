@@ -1,4 +1,4 @@
-<p><center>
-<font color=#ff0000 size=+2>{error_msg}</font>
+<div style="color:#ff0000;text-align:center;line-height:160%;">
+{error_msg}
 {extra_text}
-</center>
+</div>

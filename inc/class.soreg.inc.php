@@ -160,6 +160,19 @@
 		 }
 	  }
 
+	  /**
+	  * cleanup_old_regs: cleanup regs older then two hours 
+	  * 
+	  * @access private
+	  * @return void
+	  */
+	  function _cleanup_old_regs()
+	  {
+		 $sql='DELETE FROM '.$this->reg_table.' WHERE ('.time().'- reg_dla) > 1800';
+		 //die($sql);
+		 $this->db->query($sql,__LINE__,__FILE__);
+	  }
+
 	  function valid_reg($reg_id)
 	  {
 		 $this->db->select($this->reg_table,'*',array('reg_id' => $reg_id),__LINE__,__FILE__);
@@ -168,13 +181,39 @@
 		 {
 			return false;
 		 }
+		 
+		 //activation string is expired after 2 hours
+		 if($this->db->f(3) && (time()-$this->db->f(3))>1800)
+		 {
+			return false;
+		 }
 
 		 return array(
 			'reg_id'   => $this->db->f('reg_id'),
 			'reg_lid'  => $this->db->f('reg_lid'),
 			'reg_info' => $this->db->f('reg_info'),
-			'reg_dla'  => $this->db->f('reg_dla')
+			'reg_dla'  => $this->db->f('reg_dla'),
+			'reg_status'  => $this->db->f('reg_status')
 		 );
+	  }
+
+	  /**
+	  * set_activated change status to activated so Registration can tell the user to login
+	  * 
+	  * @param string $reg_id registration id sent by mail
+	  * @note status x means not activated, status a means created and activated 
+	  * @access public
+	  * @return void
+	  */
+	  function set_activated($reg_id)
+	  {
+		 $this->db->update($this->reg_table,array(
+			'reg_status' => 'a',
+			'reg_dla' => time()
+		 ),
+		 array(
+			'reg_id' => $reg_id,
+		 ),__LINE__,__FILE__);
 	  }
 
 	  function delete_reg_info($reg_id)
@@ -199,10 +238,12 @@
 		 {
 			if(!$auth->registration_create_account($account_lid,$fields['passwd'],$fields))
 			{
-			   echo lang("error occured");
+			   echo lang("13: error occured");
 			   exit;
 			}
 		 }
+
+		 $this->_cleanup_old_regs();
 
 		 $GLOBALS['auto_create_acct'] = array(
 			'firstname' => $fields['n_given'],
