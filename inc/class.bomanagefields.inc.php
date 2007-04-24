@@ -55,7 +55,7 @@
 				$orig_name = $field_info['field_name'];
 				unset ($changed);
 
-				if (($field_info['field_type'] == 'text' || $field_info['field_type'] == 'textarea' || $field_info['field_type'] == 'dropdown' || $field_info['field_type'] == 'checkbox') && !$field_info['field_name'])
+				if (($field_info['field_type'] == 'text' || $field_info['field_type'] == 'textarea' || $field_info['field_type'] == 'dropdown' || $field_info['field_type'] == 'dropdownfromtable' || $field_info['field_type'] == 'checkbox') && !$field_info['field_name'])
 				{
 					continue;
 				}
