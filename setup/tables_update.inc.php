@@ -69,4 +69,10 @@
 
 		return $GLOBALS['setup_info']['registration']['currentver'] = '1.3.001';
 	}
+
+	$test[] = '1.3.001';
+	function registration_upgrade1_3_001()
+	{
+		return $GLOBALS['setup_info']['registration']['currentver'] = '1.4';
+	}
 ?>

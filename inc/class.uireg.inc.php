@@ -746,23 +746,24 @@
 			   $this->tplsav2->inputname = $a . '[' . $name . ']';
 			   $this->tplsav2->post_value = $post_value;
 			   $rstring = $this->tplsav2->fetch('dropdown.tpl.php'); 
-			   
-			   /*$rstring = '<select name="' . $a . '[' . $name . ']"><option value=""> </option>';
-				  while (list (,$value) = each ($values))
-				  {
-					 $value = trim ($value);
+			}
+		 }
 
-					 unset ($selected);
-					 if ($value == $post_value)
-					 {
-						$selected = "selected";
-					 }
+		 if ($type == 'dropdownfromtable')
+		 {
+			if (!is_array($values) || count($values)<>3)
+			{
+			   $rstring = lang("Error: Dropdown From Table '%1' is not correctly configured",$name);
+			}
+			else
+			{
+			   $this->tplsav2->dropdown_arr=$this->bo->so->get_dropdownfromtable_values(trim($values[0]),trim($values[1]),trim($values[2]));
+			   //_debug_array($this->tplsav2->dropdown_arr);
 
-					 $rstring .= '<option value="' . $value . '" ' . $selected . '>' . $value . '</option>';
-				  }
-
-				  $rstring .= "</select>";
-			   */
+			   //$this->tplsav2->values = $values;
+			   $this->tplsav2->inputname = $a . '[' . $name . ']';
+			   $this->tplsav2->post_value = $post_value;
+			   $rstring = $this->tplsav2->fetch('dropdownfromtable.tpl.php'); 
 			}
 		 }
 

@@ -1,4 +1,4 @@
-<select name="<?=$this->inputname?>">
+<select name="<?php echo $this->inputname?>">
    <option value=""></option>
    <?php foreach($this->values as $value):?>
    <?php
@@ -9,7 +9,7 @@
 		 $selected = 'selected="selected"';
 	  }
    ?>
-   <option value="<?=trim($value)?>" <?=$selected?>><?=trim($value)?></option>
+   <option value="<?php echo trim($value)?>" <?php echo $selected?>><?php echo trim($value)?></option>
    <?php endforeach?>
 </select>
 

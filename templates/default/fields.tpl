@@ -27,6 +27,7 @@
 	<option {field_type_selected_text} value=text>{lang_text}</option>
 	<option {field_type_selected_textarea} value=textarea>{lang_textarea}</option>
 	<option {field_type_selected_dropdown} value=dropdown>{lang_dropdown}</option>
+	<option {field_type_selected_dropdownfromtable} value=dropdownfromtable>{lang_dropdownfromtable}</option>
 	<option {field_type_selected_checkbox} value=checkbox>{lang_checkbox}</option>
 	<option {field_type_selected_email} value=email>{lang_email}</option>
 	<option {field_type_selected_first_name} value=first_name>{lang_first_name}</option>

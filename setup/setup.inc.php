@@ -17,7 +17,7 @@
 	/* Basic information about this app */
 	$setup_info['registration']['name']      = 'registration';
 	$setup_info['registration']['title']     = 'Registration';
-	$setup_info['registration']['version']   = '1.3.001';
+	$setup_info['registration']['version']   = '1.4';
 	$setup_info['registration']['app_order'] = '40';
 	$setup_info['registration']['enable']    = 2;
 
@@ -31,6 +31,6 @@
 	/* Dependencies for this app to work */
 	$setup_info['registration']['depends'][] = array(
 		'appname'  => 'phpgwapi',
-		'versions' => Array('1.0.0','1.0.1','1.2','1.3')
+		'versions' => Array('1.3','1.4','1.5')
 	);
 ?>

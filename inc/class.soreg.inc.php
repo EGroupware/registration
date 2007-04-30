@@ -169,9 +169,34 @@
 	  function _cleanup_old_regs()
 	  {
 		 $sql='DELETE FROM '.$this->reg_table.' WHERE ('.time().'- reg_dla) > 1800';
-		 //die($sql);
 		 $this->db->query($sql,__LINE__,__FILE__);
 	  }
+
+	  /**
+	   * get_dropdownfromtable_values 
+	   * 
+	   * @param string $table_name 
+	   * @param string $valcolumn 
+	   * @param string $displaycolumn 
+	   * @access public
+	   * @return return array with select values. If query fails return false 
+	   */
+	   function get_dropdownfromtable_values($table_name,$valcolumn,$displaycolumn)
+	   {
+		  $qry=$this->db->select($table_name,"$valcolumn,$displaycolumn",'',__LINE__,__FILE__);
+		  if(!$qry)
+		  {
+			 return false;
+		  }
+		  $ret_arr=array();
+		  while($this->db->next_record()) 
+		  {
+			 $_arr['value'] = $this->db->f($valcolumn);
+			 $_arr['display'] = $this->db->f($displaycolumn);
+			 $ret_arr[]=$_arr;
+		  }
+		  return $ret_arr;
+	   }
 
 	  function valid_reg($reg_id)
 	  {
