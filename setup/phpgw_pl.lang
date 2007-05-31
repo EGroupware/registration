@@ -1,17 +1,88 @@
-account password retrieval	registration	pl	
+<br>please contact the site administrator.	registration	pl	<br />Skontaktuj siê z administratorem serwisu.
+[unknown first name]	registration	pl	[nieznane imiê]
+[unknown last name]	registration	pl	[nieznane nazwisko]
+account %1 record could not be found, report to site administrator	registration	pl	Wpis dla konta %1 nie zosta³ znaleziony - zg³o¶ to do administratora.
+account password retrieval	registration	pl	Odzyskiwanie has³a do konta
 account registration	registration	pl	Rejestracja konta
-after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	pl	
+activate account	admin	pl	Aktywuj konto
+address	registration	pl	Adres
+an error occured. please contact our technical support and let them know.	registration	pl	Wyst±pi³ b³±d. Proszê skontaktowaæ siê z pomoc± techniczn± i powiadomiæ j± o tym problemie.
+anonymous password	admin	pl	Has³o dostêpu anonimowego
+birthday	registration	pl	Data urodzin
+challenge question	registration	pl	Pytanie pomocnicze
+change password for user	registration	pl	Zmieñ has³o dla u¿ytkownika
+checkbox	registration	pl	Pola zaznaczenia
+choose language	registration	pl	Wybierz jêzyk
+choose your language	registration	pl	Wybierz Twój jêzyk
+city	registration	pl	Miasto
+click to log into your account	registration	pl	Kliknij, aby zalogowaæ siê do Twojego konta
+close window	registration	pl	Zamknij okno
+country	registration	pl	Kraj
+current fields:	registration	pl	Bie¿±ce pola:
+days until trial accounts expire	admin	pl	Liczba dni po których konto testowe wygasa
+display terms of service?	admin	pl	Pokazaæ dokument licencyjny 'Warunki u¿ytkowania'?
+dropdown	registration	pl	Lista rozwijalna
+email address	registration	pl	adres poczty elektronicznej
+email address to display for support	admin	pl	adres poczty elektronicznej do wiadomo¶ci pomocy technicznej
+email address to send notices from	admin	pl	adres poczty elektronicznej z którego bêd± wysy³ane powiadomienia
+enable registration?	admin	pl	Umo¿liwiæ rejestracjê?
 enter your new password	registration	pl	Podaj nowe has³o
+female	registration	pl	Kobieta
+gender	registration	pl	P³eæ
 i have read the terms and conditions and agree by them.	registration	pl	Przeczyta³em warunki umowy i zgadzam siê z nimi
-egroupware - account registration	registration	pl	
+if you did not request this account, simply ignore this message.	registration	pl	Je¿eli nie ¿±dana rejestracji tego konta, proszê zignorowaæ t± wiadomo¶æ.
+if you did not request this change, simply ignore this message.	registration	pl	Je¿eli nie ¿±dana rejestracji takiej zmiany, proszê zignorowaæ t± wiadomo¶æ.
+immediately	admin	pl	Natychmiast
+lost login id	login	pl	Zapomniano nazwê konta
+lost password	login	pl	Zapomniano has³o
+lost user account retrieval	registration	pl	Odzyskiwanie zagubionej nazwy u¿ytkownika
+lost_user_id_message	registration	pl	Oto lista kont u¿ytkowników, które s± skojarzone z tym adresem poczty elektronicznej:
+male	registration	pl	Mê¿czyzna
+manage fields	admin	pl	Zarz±dzaj polami
+not a user yet? register now	login	pl	Nie masz konta? Zapisz siê teraz!
+on-line registration is not activated. please contact the site administrator for more information about registration.	registration	pl	Samodzielne zak³adanie kont nie jest aktywowane. Proszê skontaktowaæ siê z administratorami serwisu w celu uzyskania dalszych informacji z zakresu rejestracji.
+order	registration	pl	Kolejno¶æ
+password is	admin	pl	Twoje has³o
+phone	registration	pl	Numer telefonu
+problem sending email:	registration	pl	Problem przy wysy³aniu wiadomo¶ci
 re-enter password	registration	pl	Powtórz has³o
 re-enter your password	registration	pl	Powtórz has³o
+register	common	pl	rejestracja
+register link at login screen?	admin	pl	Pokazywaæ adres rejestracji na ekranie logowania?
 registration	common	pl	Rejestracja
+registration settings	admin	pl	Ustawienia rejestracji
+remove	registration	pl	Usuñ
+report all problems and abuse to	registration	pl	Zg³aszaj wszelkie problemy i niechciane wiadomo¶ci do
+required	registration	pl	Wymagane
+response	registration	pl	Odpowied¼
+send email	admin	pl	Wy¶lij wiadomo¶æ
+sorry, no account exists for	registration	pl	Nie istnieje konto dla
 sorry, that username does not exist.	registration	pl	Podany u¿ytkownik nie istnieje
-sorry, that username is already taken.	registration	pl	
+sorry, that username is already taken.	registration	pl	Podana nazwa u¿ytkownika jest ju¿ zajêta.
+state	registration	pl	Stan
+subject for confirmation email	admin	pl	Temat wiadomo¶ci s³u¿±cej potwierdzeniu
+terms of service	registration	pl	Warunki u¿ytkowania
+terms of service text	admin	pl	Tekst Warunków u¿ytkowania
+the passwords you entered don't match	registration	pl	Podane has³a nie s± zgodne
 the two passwords are not the same	registration	pl	Podane has³a nie s± identyczne
-wrong session	registration	pl	
-you have entered an invalid email address	registration	pl	
+type	registration	pl	Typ
+unable to send mail, contact your administrator	registration	pl	Nie uda³o siê wys³aæ poczty elektronicznej, skontaktuj siê z administratorem.
+unknown first name	registration	pl	Nieznane imiê
+unknown last name	registration	pl	Nieznane nazwisko
+update/add	registration	pl	Aktualizuj/Dodaj
+use html	admin	pl	u¿yj HTML
+use trial accounts?	admin	pl	U¿ywaæ kont testowych?
+username is	admin	pl	Twoja nazwa u¿ytkownika
+wrong session	registration	pl	Nieprawid³owy klucz sesji
+you can go back to the login page	registration	pl	Mo¿na powróciæ na stronê logowania
+you have entered an invalid birthday	registration	pl	Wprowadzono nieprawid³ow± datê urodzenia
+you have entered an invalid email address	registration	pl	Podano nieprawid³owy adres poczty elektronicznej
 you must enter a password	registration	pl	Musisz podaæ has³o
 you must enter a username	registration	pl	Musisz podaæ nazwê u¿ytkownika
+you must enter an email account	registration	pl	Musisz podaæ nazwê konta poczty elektronicznej
 you must fill in all of the required fields	registration	pl	Musisz wype³niæ wszystkie wymagane pola
+you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	pl	Za¿±dano zmiany has³a. Proszê odwiedziæ poni¿szy odno¶nik, aby to zrobiæ. Wskazana strona zmiany has³a wyga¶nie po dwóch godzinach. Po up³ywie tego czasu nale¿y wykonaæ procedurê odzyskiwania has³a ponownie.
+you specified a value for %1 that is not a choice	registration	pl	Podano warto¶æ dla pola %1, która jest spoza dozwolnego zbioru
+your account is now active!	registration	pl	Twoje konto jest aktywne od tego momentu!
+your password was changed.	registration	pl	Twoje has³o zosta³o zmienione.
+zip/postal	registration	pl	Kod pocztowy
