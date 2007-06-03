@@ -1,0 +1,105 @@
+<br>please contact the site administrator.	registration	cs	<br>Kontatujte prosím administrátora webu.
+[unknown first name]	registration	cs	[neznámé køestní jméno]
+[unknown last name]	registration	cs	[neznámé pøíjmení]
+account %1 record could not be found, report to site administrator	registration	cs	Záznam pro úèet %1 nebyl nalezen, nahla¹te problém administrátorovi webu.
+account password retrieval	registration	cs	Získání hesla k úètu
+account registration	registration	cs	Registrace úètu
+activate account	admin	cs	Aktivovat úèet
+address	registration	cs	Adresa
+after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	cs	Poté, co zadáte svoji e-mailovou adresu, u¾ivatelské úèty k této adrese pøiøazené na ni budou odeslány.
+after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	cs	Poté, co zadáte své u¾ivatelské jméno, instrukce pro zmìnu Va¹eho hesla budou zaslány e-mailem na adresu, kterou jste uvedl(a) pøi registraci.
+an error occured. please contact our technical support and let them know.	registration	cs	Nastala chyba. Zkontaktujte prosím Va¹i technickou podporu a øeknìte jim o chybì.
+anonymous password	admin	cs	Anonymní heslo
+birthday	registration	cs	Narozeniny
+challenge question	registration	cs	Ovìøovací otázka
+change password for user	registration	cs	Zmìnit heslo u¾ivatele
+checkbox	registration	cs	Za¹krtávací políèko
+choose language	registration	cs	Zvolit jazyk
+choose your language	registration	cs	Zvolte svùj jazyk
+city	registration	cs	Mìsto
+click to log into your account	registration	cs	Kliknìte pro pøihlá¹ení ke svému úètu
+close window	registration	cs	Zavøít okno
+country	registration	cs	Zemì
+current fields:	registration	cs	Aktuální polo¾ky:
+days until trial accounts expire	admin	cs	Dny zbývající do vypr¹ení zku¹ebního úètu
+display terms of service?	admin	cs	Zobrazit Podmínky pou¾ívání slu¾by?
+dropdown	registration	cs	Rozbalovací
+email address	registration	cs	e-mailová adresa
+email address to display for support	admin	cs	E-mailová adresa pro zobrazení týmu podpory
+email address to send notices from	admin	cs	E-mailová adresa, ze které se zasílají upozornìní
+enable registration?	admin	cs	Povolit registraci?
+enter your new password	registration	cs	Zadejte Va¹e nové heslo
+female	registration	cs	®ena
+gender	registration	cs	Pohlaví
+hi	registration	cs	Ahoj
+http password	admin	cs	HTTP heslo
+http username	admin	cs	HTTP u¾ivatelské jméno
+i have read the terms and conditions and agree by them.	registration	cs	Pøeèetl(a) jsem si podmínky pou¾ívání slu¾by a souhlasím s nimi.
+if you did not request this account, simply ignore this message.	registration	cs	Pokud jste ne¾ádal(a) o tento úèet, jednodu¹e tuto zprávu ignorujte.
+if you did not request this change, simply ignore this message.	registration	cs	Pokud jste ne¾ádal(a) o tuto zmìnu, jednodu¹e tuto zprávu ignorujte.
+immediately	admin	cs	Okam¾itì
+lost login id	login	cs	Ztracené pøihla¹ovací id
+lost password	login	cs	Ztracené heslo
+lost password link at login screen?	admin	cs	Zobrazovat odkaz pro ztrátu hesla na pøihla¹ovací obrazovce?
+lost user account retrieval	registration	cs	Získání ztraceného u¾ivatelského úètu
+lost user id	registration	cs	Ztracené u¾ivatelské id
+lost user id link at login screen?	admin	cs	Zobrazovat odkaz pro ztrátu u¾iv. id na pøihla¹ovací obrazovce?
+lost_user_id_message	registration	cs	Zde jsou u¾ivatelské úèty pøiøazené k tomuto po¹tovnímu úètu:
+male	registration	cs	Mu¾
+manage fields	admin	cs	Spravovat polo¾ky
+name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	cs	Název (prázdné s výjimkou Textu, Textové oblasti, Rozbalovacího menu, Za¹krtávacího políèka; jinak jen alfanumerické)
+not a user yet? register now	login	cs	Nejste u¾ivatelem? Zaregistrujte se
+on-line registration is not activated. please contact the site administrator for more information about registration.	registration	cs	On-line registrace není aktivována. Zkontaktujte prosím administrátora webu pro více informací k registraci.
+order	registration	cs	Poøadí
+password is	admin	cs	Heslo je
+phone	registration	cs	Telefon
+problem sending email:	registration	cs	Problém s odesíláním e-mailu:
+re-enter password	registration	cs	Zadejte heslo znovu
+re-enter your password	registration	cs	Zadejte znovu své heslo
+register	common	cs	registrovat
+register link at login screen?	admin	cs	Odkaz pro registraci na pøihla¹ovací obrazovce?
+registration	common	cs	Registrace
+registration settings	admin	cs	Nastavení registrace
+remove	registration	cs	Odstranit
+report all problems and abuse to	registration	cs	Hlásit v¹echny problémy a zneu¾ívání (komu)
+required	registration	cs	Vy¾adováno
+response	registration	cs	Odpovìï
+send email	admin	cs	Odeslat e-mail
+sorry, no account exists for	registration	cs	Lituji, neexistuje úèet pro
+sorry, that username does not exist.	registration	cs	Lituji, takové u¾ivatelské jméno neexistuje
+sorry, that username is already taken.	registration	cs	Lituji, takové u¾ivatelské jméno se ji¾ pou¾ívá
+sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	cs	Lituji, ale máme problémy s aktivací Va¹eho úètu. Pamatujte, ¾e odkazy zasílané e-mailem jsou platné jen dvì hodiny. Pokud se domníváte, ¾e jen vypr¹ela stanovená lhùta, zkuste se zaregistrovat znovu. V opaèném pøípadì kontaktujte prosím administrátora.
+state	registration	cs	Stát
+subject for confirmation email	admin	cs	Pøedmìt e-mailu s potvrzením
+terms of service	registration	cs	Podmínky pou¾ívání slu¾by
+terms of service text	admin	cs	Text Podmínek pou¾ívání slu¾by
+text	registration	cs	Text
+textarea	registration	cs	Textová oblast
+the passwords you entered don't match	registration	cs	Zadaná hesla se neshodují
+the two passwords are not the same	registration	cs	Tato dvì hesla se neshodují
+this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	cs	Toto je e-mail s potvrzením registrace Va¹eho nového úètu. Kliknìte na následující odkaz pro dokonèení aktivace Va¹eho úètu. Tento odkaz vypr¹í za dvì hodiny.
+type	registration	cs	Typ
+unable to send mail, contact your administrator	registration	cs	Nemohu odeslat e-mail, kontaktujte Va¹eho administrátora.
+unknown first name	registration	cs	Neznámé køestní jméno
+unknown last name	registration	cs	Neznámé pøíjmení
+update/add	registration	cs	Aktualizovat/Pøidat
+use html	admin	cs	pou¾ívat HTML
+use trial accounts?	admin	cs	Pou¾ívat zku¹ební úèty?
+username is	admin	cs	U¾ivatelské jméno je
+values (for dropdown only; comma separated)	registration	cs	Hodnoty (jen pro rozbalovací menu; oddìlené èárkami)
+we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	cs	E-mail s potvrzením jsme odeslali na Va¹i emailovou adresu. Na odkaz obsa¾ený ve zprávì musíte kliknout do 2 hodin. Pokud tak neuèiníte, mù¾e trvat nìkolik dní, ne¾ bude Va¹e pøihla¹ovací id opìt k dispozici.
+we have sent a mail to your email account: %s with your lost user ids.	registration	cs	Zprávu s Va¹imi ztracenými id jsme odeslali a Va¹i e-mailovou adresu: %s
+we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	cs	Zaslali jsme Vám e-mail s instrukcemi pro zmìnu Va¹eho hesla. Obsa¾ený odkaz by jste mìl(a) nav¹tívit bìhem dvou hodin. Pokud tak neuèiníte, budete muset znovu pou¾ít stránku pro ztracená hesla.
+wrong session	registration	cs	Chybná relace
+you can go back to the login page	registration	cs	Mù¾ete se vrátit zpìt na pøihla¹ovací obrazovku
+you have entered an invalid birthday	registration	cs	Zadal(a) jste neplatné narozeniny
+you have entered an invalid email address	registration	cs	Zadal(a) jste neplatnou e-mailovou adresu
+you must enter a password	registration	cs	Musíte zadat heslo
+you must enter a username	registration	cs	Musíte zadat u¾ivatelské jméno
+you must enter an email account	registration	cs	Musíte zadat e-mailový úèet
+you must fill in all of the required fields	registration	cs	Musíte vyplnit v¹echny po¾adované polo¾ky
+you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	cs	Za¾ádal(a) jste o zmìnu Va¹eho hesla. Pokud tak chcete uèinit, následujte prosím URL uvedené ní¾e. Uvedený odkaz vypr¹í za dvì hodiny. Po této lhùtì budete muset zopakovat celou proceduru zmìny hesla.
+you specified a value for %1 that is not a choice	registration	cs	Zadal(a) jste hodnotu pro %1, která není povolená
+your account is now active!	registration	cs	Vá¹ úèet je teï aktivní!
+your password was changed.	registration	cs	Va¹e heslo bylo zmìnìno.
+zip/postal	registration	cs	PSÈ
