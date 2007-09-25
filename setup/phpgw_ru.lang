@@ -1,7 +1,7 @@
 <br>please contact the site administrator.	registration	ru	<br>Пожалуйста, обратитесь к администратору сайта
 [unknown first name]	registration	ru	[неизвестное имя]
 [unknown last name]	registration	ru	[неизвестное фамилия]
-account $account_lid record could not be found, report to site administrator	registration	ru	Не найдена запись $account_lid учетной записи, сообщите администратору сайта
+account %1 record could not be found, report to site administrator	registration	ru	Запись для учетной записи %1 не может быть найдена, сообщите администратору сайта
 account password retrieval	registration	ru	Восстановление пароля учетной записи
 account registration	registration	ru	Регистрация учетной записи
 activate account	admin	ru	Активировать учетную запись
@@ -17,6 +17,7 @@ checkbox	registration	ru	Галочка
 choose language	registration	ru	Выбрать язык
 choose your language	registration	ru	Выбирите Ваш язык
 city	registration	ru	Город
+click to log into your account	registration	ru	Нажмите для того, чтобы войти в учетную запись
 close window	registration	ru	Закрыть окно
 country	registration	ru	Страна
 current fields:	registration	ru	Текущие поля:
@@ -55,6 +56,7 @@ phone	registration	ru	Телефон
 problem sending email:	registration	ru	Проблемы с отправкой почты
 re-enter password	registration	ru	Введите пароль еще раз
 re-enter your password	registration	ru	Введите Ваш пароль еще раз
+register	common	ru	зарегистрировать
 register link at login screen?	admin	ru	Ссылка на регистрацию на экране входа?
 registration	common	ru	Регистрация
 registration settings	admin	ru	Установки регистрации
@@ -89,6 +91,7 @@ we have sent a confirmation email to your email address. you must click on the l
 we have sent a mail to your email account: %s with your lost user ids.	registration	ru	Мы выслали почтовое сообщение на Ваш адрес электронной почты: %s с вашыми утерянными идентификаторами пользователя.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	ru	Мы выслали почтовое сообщение с инструкциями по смене вашего пароля. Вы должны следовать включенной ссылкев течении двух часов. Если Вы этого не сделаете Вы опять попадете на страницу утерянного пароля.
 wrong session	registration	ru	Неверный сеанс
+you can go back to the login page	registration	ru	Вы можете вернуться на страницу регистрации в системе
 you have entered an invalid birthday	registration	ru	Вы ввели неверную дату рождения
 you have entered an invalid email address	registration	ru	Вы ввели неверный адрес электронной почты
 you must enter a password	registration	ru	Вы должны ввести пароль
@@ -97,6 +100,6 @@ you must enter an email account	registration	ru	Вы должны ввести учетную запись 
 you must fill in all of the required fields	registration	ru	Вы должны заполнить все необходимые поля
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	ru	Вы запросили изменения Вашего пароля. Проследуйте по ссылке, указанной ниже. Эта ссылка действительна в течении 2 часов. После этого периода Вы должны пройти процедуру потерянного пароля заново.
 you specified a value for %1 that is not a choice	registration	ru	Вы определили значение для %1, которого нет в выборе
-your account is now active!  click <a href="%s">here</a> to log into your account.	registration	ru	Ваша учетная запись активна! Кликните <a href="%s">здесь</a> чтобы войти в систему.
-your password was changed. you can go back to the <a href="%1">login</a> page.	registration	ru	Ваш пароль был изменен. Вы можете вернуться на страницу <a href="%1">входа</a>.
+your account is now active!	registration	ru	Ваша учетная запись сейчас активна!
+your password was changed.	registration	ru	Ваш пароль был изменен
 zip/postal	registration	ru	Индекс
