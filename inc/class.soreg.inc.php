@@ -81,7 +81,8 @@
 
 		 // We are not going to use link(), because we may not have the same sessionid by that time
 		 // If we do, it will not affect it
-		 $url = ($_SERVER['HTTPS'] ? 'https://' : 'http://').$GLOBALS['egw_info']['server']['hostname'] . $GLOBALS['egw_info']['server']['webserver_url']. "/registration/index.php";
+		 $url = $GLOBALS['egw_info']['server']['webserver_url']. '/registration/index.php';
+		 if ($url{0} == '/') $url = ($_SERVER['HTTPS'] ? 'https://' : 'http://').$_SERVER['SERVER_NAME'].$url;
 
 		 $account_lid  = $GLOBALS['egw']->session->appsession('loginid','registration');
 
@@ -373,7 +374,8 @@
 	  {
 		 global $config;
 
-		 $url = ($_SERVER['HTTPS'] ? 'https://' : 'http://').$GLOBALS['egw_info']['server']['hostname'] . $GLOBALS['egw_info']['server']['webserver_url']. "/registration/index.php";
+		 $url = $GLOBALS['egw_info']['server']['webserver_url']. '/registration/index.php';
+		 if ($url{0} == '/') $url = ($_SERVER['HTTPS'] ? 'https://' : 'http://').$_SERVER['SERVER_NAME'].$url;
 
 		 $error = '';
 
