@@ -1,0 +1,120 @@
+13: error occured	registration	gl	13: ocorreu un erro
+<br>please contact the site administrator.	registration	gl	<br>Contacte co administrador do sitio.
+[unknown first name]	registration	gl	[nome descoñecido]
+[unknown last name]	registration	gl	[apelido descoñecido]
+account %1 record could not be found, report to site administrator	registration	gl	Non foi posible localizar o rexistro da conta %1. Informe ao administrador do sitio
+account password retrieval	registration	gl	Recuperación do contrasinal da conta
+account registration	registration	gl	Rexistro da conta
+activate account	admin	gl	Activar conta
+address	registration	gl	Enderezo
+after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	gl	Unha vez introducido o enderezo de correo electrónico, as contas de usuario asociadas a ese enderezo envíanse a el.
+after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	gl	Unha vez introducido o nome de usuario, as instrucións para mudar de contrasinal envíanse por correo electrónico ao enderezo sinalado ao rexistrarse.
+an error occured while updating your password. please contact the site administrator.	registration	gl	Ocorreu un erro mentres se actualizaba o seu contrasinal. Contacte co administrador do sitio.
+an error occured. please contact our technical support and let them know.	registration	gl	Ocorreu un erro. Contacte co noso soporte técnico.
+an error occured. please remove your cookies and try again.	registration	gl	Ocorreu un erro. Elimine as súas cookies e ténteo de novo.
+an unknown error occured. <a href="%1">please try registering again.</a>	registration	gl	Ocorreu un erro descoñecido. <a href="%1">Tente rexistrarse de novo</a>
+anonymous password	admin	gl	Contrasinal anónimo
+birthday	registration	gl	Aniversario
+challenge question	registration	gl	Pregunta de proba
+change login	registration	gl	Cambiar contrasinal
+change password for user	registration	gl	Mudar contrasinal do usuario
+checkbox	registration	gl	Caixa de verificación
+choose language	registration	gl	Escoller idioma
+choose your language	registration	gl	Escolla o seu idioma
+city	registration	gl	Cidade
+click to log into your account	registration	gl	Prema para iniciar sesión na súa conta
+close window	registration	gl	Pechar ventá
+convert user login id to 7 bit string	admin	gl	Convertir o identificador de inicio de sesión do usuario a unha cadea de 7 bits
+country	registration	gl	País
+current fields:	registration	gl	Campos actuais:
+days until trial accounts expire	admin	gl	Días até que caduquen as contas de proba
+display terms of service?	admin	gl	Desexa mostrar os termos do servizo?
+dropdown	registration	gl	Despregable
+dropdown from table	registration	gl	Despregable desde a táboa
+email address	registration	gl	Enderezo de correo electrónico
+email address to display for support	admin	gl	Enderezo de correo electrónico para soporte
+email address to send notices from	admin	gl	Enderezo de correo electrónico desde o cal se envían avisos
+enable registration?	admin	gl	Desexa activar o rexistro?
+enter your new password	registration	gl	Introduza o seu novo contrasinal
+error: dropdown from table '%1' is not correctly configured	registration	gl	Erro: O despregable desde a táboa '%1'non está correctamente configurado
+error: dropdown list '%1' has no values	registration	gl	Erro: A lista despregable '%1' non ten valores
+female	registration	gl	Muller
+gender	registration	gl	Sexo
+hi	registration	gl	Ola
+http password	admin	gl	Contrasinal HTTP
+http username	admin	gl	Nome de usuario HTTP
+i have read the terms and conditions and agree by them.	registration	gl	Lin os termos e condicións e estou de acordo con eles.
+if you did not request this account, simply ignore this message.	registration	gl	Se non solicitou esta conta, ignore esta mensaxe.
+if you did not request this change, simply ignore this message.	registration	gl	Se non solicitou esta modificación, ignore esta mensaxe.
+immediately	admin	gl	Inmediatamente
+lost login id	login	gl	Perdeuse o ID de inicio de sesión
+lost password	login	gl	Perdeuse o contrasinal
+lost password link at login screen?	admin	gl	Perdeuse a ligazón do contrasinal na pantalla de inicio de sesión?
+lost user account retrieval	registration	gl	Recuperación de contrasinal perdido
+lost user id	registration	gl	Perdeuse o ID de usuario
+lost user id link at login screen?	admin	gl	Perdeuse a ligazón do ID de usuario na pantalla de inicio de sesión?
+lost_user_id_message	registration	gl	Contas de usuario asociadas a esta conta de correo:
+male	registration	gl	Home
+manage fields	admin	gl	Administrar campos
+name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	gl	Nmoe (en branco excepto Texto, Área de texto, Caixa de verificación; caso contrario, só alfanumérico)
+not a user yet? register now	login	gl	Aínda non é usuario? Rexístrese xa
+on-line registration is not activated. please contact the site administrator for more information about registration.	registration	gl	O rexistro en liña non está activo. Contacte co administrador do  sitio para obter máis información sobre o rexistro.
+order	registration	gl	Ordenar
+password is	admin	gl	O contrasinal é
+phone	registration	gl	Teléfono
+please contact the site administrator.	registration	gl	Contacte co administrador do sitio
+problem sending email:	registration	gl	Houbo un problema ao enviar correo:
+re-enter password	registration	gl	Confirmar contrasinal
+re-enter your password	registration	gl	Confirme o seu contrasinal
+register	common	gl	Rexistro
+register link at login screen?	admin	gl	Desexa activar unha ligazón do rexistro na pantalla de inicio de sesión?
+registration	common	gl	Rexistro
+registration settings	admin	gl	Configuración do rexistro
+remove	registration	gl	Eliminar
+report all problems and abuse to	registration	gl	Informar de todos os problemas e uso indebido a
+required	registration	gl	Requirido
+response	registration	gl	Resposta
+send email	admin	gl	Enviar correo
+sorry, no account exists for	registration	gl	Desculpe. Non hai ningunha conta para
+sorry, that username does not exist.	registration	gl	Desculpe. Ese nome de usuario non existe.
+sorry, that username is already taken.	registration	gl	Desculpe. Ese nome de usuario xa está a ser utilizado.
+sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	gl	Desculpe. Estamos a ter un problema na activación da súa conta. Non esqueza que as ligazóns enviadas por correo electrónico teñen unha validez de dúas horas. Se xulga que xa superou ese período de tempo, tente de novo. Se non, contacte co administrador do sitio.
+sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	gl	Desculpe. Estamos a ter un problema recollendo a información necesario para cambiar o seu contrasinal. Teña en conta que as ligazóns enviadas por correo electrónico só son válidas durante dúas horas. Se pensa que puido ter pasado este tempo, reinténteo. Doutro xeito, contacte co administrador do sitio.
+state	registration	gl	Estado
+subject for confirmation email	admin	gl	Asunto para correo electrónico de confirmación
+terms of service	registration	gl	Termos do servizo
+terms of service text	admin	gl	Texto dos termos do servizo
+text	registration	gl	Texto
+textarea	registration	gl	Área de texto
+the passwords you entered don't match	registration	gl	Os contrasinais introducidos non coinciden
+the two passwords are not the same	registration	gl	Os dous contrasinais son diferentes
+this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	gl	Este é un correo de confirmación da súa nova conta. Para finalizar a activación, prema a ligazón. Non esqueza que a ligazón ten unha validez de dúas horas.
+type	registration	gl	Tipo
+unable to send mail, contact your administrator	registration	gl	Non foi posible enviar o correo. Contacte co administrador.
+unknown first name	registration	gl	Nome descoñecido
+unknown last name	registration	gl	Apelido descoñecido
+update/add	registration	gl	Actualizar/Engadir
+use html	admin	gl	usar HTML
+use trial accounts?	admin	gl	Desexa usar contas de proba?
+username is	admin	gl	O nome de usuario é
+values 'for dropdown': comma separated), for 'dropdown from table': table,valuefield,displayfield	registration	gl	Valores 'Para despregable': separados por comas, Para 'Despregable desde a táboa': táboa,campovalor,campoamostrar
+values (for dropdown only; comma separated)	registration	gl	Valores (Só para menú despregable, separados por comas)
+we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	gl	Enviámoslle un correo de confirmación ao seu enderezo de correo electrónico. Dispón de dúas horas para premer a ligazón. Se non o fai, o seu ID de inicio de sesión pode demorar uns días en voltar a estar dispoñible.
+we have sent a mail to your email account: %s with your lost user ids.	registration	gl	Enviámoslle un correo á súa conta %s cos ID de usuario que perdeu.
+we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	gl	Enviámoslle un correo con instrucións para mudar o seu contrasinal. Dispón de dúas horas para premer a ligazón. Se non o fai, terá que voltar á pantalla de contrasinais perdidos.
+wrong session	registration	gl	Sesión incorrecta
+you can go back to the login page	registration	gl	Volva á páxina de inicio de sesión
+you have entered an invalid birthday	registration	gl	O aniversario introducido non é válido
+you have entered an invalid email address	registration	gl	O enderezo de correo electrónico introducido non é válido
+you must enter a password	registration	gl	Introduza un contrasinal
+you must enter a username	registration	gl	Introduza un nome de usuario
+you must enter an email account	registration	gl	Introduza unha conta de correo electrónico
+you must enter an email address	registration	gl	Introduza unha dirección de correo electrónico
+you must fill in all of the required fields	registration	gl	Encha todos os campos obrigatorios
+you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	gl	Solicitou mudar o contrasinal. Para iso, diríxase ao URL indicado. Teña en conta que ese URL caducará en dúas horas. Pasado ese prazo, terá que repetir todo o procedemento de recuperación de contrasinais perdidos.
+you specified a value for %1 that is not a choice	registration	gl	O valor especificado para %1 non é opcional.
+your account is now active!	registration	gl	A súa conta xa está activada
+your login is not available. time is expired	registration	gl	O seu inicio de sesión non está dispoñible. O tempo expirou
+your password was changed.	registration	gl	O seu contrasinal foi modificado
+your registration code is missing or incorrect.	registration	gl	Falta o seu código de rexistro ou é incorrecto
+zip/postal	registration	gl	Código postal
