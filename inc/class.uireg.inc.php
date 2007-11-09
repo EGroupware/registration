@@ -846,4 +846,42 @@
 
 		 $this->simple_screen('tos.tpl','',$var,lang('Terms of Service'));
 	  }
+
+	  /**
+	  * hooks to build projectmanager's sidebox-menu plus the admin and preferences sections
+	  *
+	  * @param string/array $args hook args
+	  */
+	  function all_hooks($args)
+	  {
+		 $appname = 'registration';
+		 $location = is_array($args) ? $args['location'] : $args;
+
+		 if ($GLOBALS['egw_info']['user']['apps']['admin'] && $location != 'preferences')
+		 {
+
+			$title = $appname;
+			$file = Array(
+			   'Site Configuration'	=> $GLOBALS['egw']->link('/index.php', 'menuaction=admin.uiconfig.index&appname=' . $appname),
+			   'Manage Fields'      => $GLOBALS['egw']->link ('/index.php', 'menuaction=' . $appname . '.uimanagefields.admin')
+			);
+
+			display_section($appname,$title,$file);
+
+			if ($location == 'admin')
+			{
+			   display_section($appname,$file);
+			}
+			else
+			{
+			   display_sidebox($appname,lang('Admin'),$file);
+			}
+		 }
+
+
+	  }
+
+
+
+
    }

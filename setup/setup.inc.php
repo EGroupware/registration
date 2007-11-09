@@ -25,7 +25,8 @@
 	$setup_info['registration']['tables']    = array('egw_reg_accounts','egw_reg_fields');
 
 	/* The hooks this app includes, needed for hooks registration */
-	$setup_info['registration']['hooks'][] = 'admin';
+	#$setup_info['registration']['hooks'][] = 'admin';
+	$setup_info['registration']['hooks']['admin'] = 'registration.uireg.all_hooks';
 	$setup_info['registration']['hooks'][] = 'logout';
 
 	/* Dependencies for this app to work */
