@@ -1,104 +1,104 @@
 <br>please contact the site administrator.	registration	pt-br	<br>Por favor, contacte o administrador do servidor
 [unknown first name]	registration	pt-br	[primeiro nome desconhecido]
-[unknown last name]	registration	pt-br	[˙ltimo nome desconhecido]
-account %1 record could not be found, report to site administrator	registration	pt-br	Registro de conta %1 n„o pÙde ser encontrado. Informe ao administrador do servidor.
+[unknown last name]	registration	pt-br	[√∫ltimo nome desconhecido]
+account %1 record could not be found, report to site administrator	registration	pt-br	Registro de conta %1 n√£o p√¥de ser encontrado. Informe ao administrador do servidor.
 account password retrieval	registration	pt-br	Recuperar senha de acesso
 account registration	registration	pt-br	Registro de Acesso
 activate account	admin	pt-br	Ativar Conta
-address	registration	pt-br	EndereÁo
-after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	pt-br	ApÛs vocÍ informar o endereÁo de e-mail, as contas de usu·rios associadas a este e-mail ser„o notificados por ele.
-after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	pt-br	Depois que vocÍ informar seu nome de us·rio, as instruÁıes de como alterar sua senha, ser„o enviadas para o endereÁo e-mail que vocÍ usou para se cadastrar.
-an error occured. please contact our technical support and let them know.	registration	pt-br	Ocorreu um erro desconhecido. Por favor, contate seu suporte tÈcnico e informe essa situaÁ„o  .
-anonymous password	admin	pt-br	Senha para usu·rio anÙnimo
+address	registration	pt-br	Endere√ßo
+after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	pt-br	Ap√≥s voc√™ informar o endere√ßo de e-mail, as contas de usu√°rios associadas a este e-mail ser√£o notificados por ele.
+after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	pt-br	Depois que voc√™ informar seu nome de us√°rio, as instru√ß√µes de como alterar sua senha, ser√£o enviadas para o endere√ßo e-mail que voc√™ usou para se cadastrar.
+an error occured. please contact our technical support and let them know.	registration	pt-br	Ocorreu um erro desconhecido. Por favor, contate seu suporte t√©cnico e informe essa situa√ß√£o  .
+anonymous password	admin	pt-br	Senha para usu√°rio an√¥nimo
 birthday	registration	pt-br	Data de Nascimento
 challenge question	registration	pt-br	Pergunta de teste
-change password for user	registration	pt-br	Alterar senha para um usu·rio
-checkbox	registration	pt-br	Caixa de VerificaÁ„o
+change password for user	registration	pt-br	Alterar senha para um usu√°rio
+checkbox	registration	pt-br	Caixa de Verifica√ß√£o
 choose language	registration	pt-br	Escolha o Idioma
 choose your language	registration	pt-br	Escolha seu idioma
 city	registration	pt-br	Cidade
 click to log into your account	registration	pt-br	Clique aqui para fazer login.
 close window	registration	pt-br	Fechar Janela
-country	registration	pt-br	PaÌs
+country	registration	pt-br	Pa√≠s
 current fields:	registration	pt-br	Campos Atuais:
-days until trial accounts expire	admin	pt-br	Dias para a expiraÁ„o de contas de teste
-display terms of service?	admin	pt-br	Mostrar termos de serviÁo?
+days until trial accounts expire	admin	pt-br	Dias para a expira√ß√£o de contas de teste
+display terms of service?	admin	pt-br	Mostrar termos de servi√ßo?
 dropdown	registration	pt-br	Lista suspensa
-email address	registration	pt-br	EndereÁo de e-mail
-email address to display for support	admin	pt-br	EndereÁo de e-mail para suporte
-email address to send notices from	admin	pt-br	EndereÁo de e-mail para o envio de notÌcias
+email address	registration	pt-br	Endere√ßo de e-mail
+email address to display for support	admin	pt-br	Endere√ßo de e-mail para suporte
+email address to send notices from	admin	pt-br	Endere√ßo de e-mail para o envio de not√≠cias
 enable registration?	admin	pt-br	Ativar Registro de Acesso?
 enter your new password	registration	pt-br	Digite a sua nova senha
 female	registration	pt-br	Mulher
 gender	registration	pt-br	Sexo
 hi	registration	pt-br	Oi
 http password	admin	pt-br	Senha HTTP
-http username	admin	pt-br	Nome de usu·rio HTTP
-i have read the terms and conditions and agree by them.	registration	pt-br	LÌ os termos e condiÁıes e estou de acordo com eles.
-if you did not request this account, simply ignore this message.	registration	pt-br	se vocÍ n„o requisitou essa conta, simplesmente ignore essa mensagem.
-if you did not request this change, simply ignore this message.	registration	pt-br	Se vocÍ n„o requisitou essa alteraÁ„o, simplesmente ignore essa mensagem.
+http username	admin	pt-br	Nome de usu√°rio HTTP
+i have read the terms and conditions and agree by them.	registration	pt-br	L√≠ os termos e condi√ß√µes e estou de acordo com eles.
+if you did not request this account, simply ignore this message.	registration	pt-br	se voc√™ n√£o requisitou essa conta, simplesmente ignore essa mensagem.
+if you did not request this change, simply ignore this message.	registration	pt-br	Se voc√™ n√£o requisitou essa altera√ß√£o, simplesmente ignore essa mensagem.
 immediately	admin	pt-br	Imediatamente
-lost login id	login	pt-br	Recuperar nome de usu·rio
+lost login id	login	pt-br	Recuperar nome de usu√°rio
 lost password	login	pt-br	Recuperar senha
-lost password link at login screen?	admin	pt-br	Link para recuperaÁ„o da senha na tela de conex„o ?
-lost user account retrieval	registration	pt-br	RecuperaÁ„o de nome de usu·rio
-lost user id	registration	pt-br	Recuperar nome de usu·rio
-lost user id link at login screen?	admin	pt-br	Link para recuperaÁ„o do nome de usu·rio na tela de conex„o
-lost_user_id_message	registration	pt-br	Aqui est„o os usu·rios associados a este e-mail:
+lost password link at login screen?	admin	pt-br	Link para recupera√ß√£o da senha na tela de conex√£o ?
+lost user account retrieval	registration	pt-br	Recupera√ß√£o de nome de usu√°rio
+lost user id	registration	pt-br	Recuperar nome de usu√°rio
+lost user id link at login screen?	admin	pt-br	Link para recupera√ß√£o do nome de usu√°rio na tela de conex√£o
+lost_user_id_message	registration	pt-br	Aqui est√£o os usu√°rios associados a este e-mail:
 male	registration	pt-br	Homem
 manage fields	admin	pt-br	Gerenciar Campos
-name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	pt-br	Nome (deixar em branco, exceto para campos de texto, ·reas de texto, listas instan‚neas, caixas de verificaÁ„o)
-not a user yet? register now	login	pt-br	Ainda n„o È um usu·rio? Registre-se agora.
-on-line registration is not activated. please contact the site administrator for more information about registration.	registration	pt-br	O registro de acesso n„o est· ativo. Por favor contate o administrador para maiores detalhes.
-order	registration	pt-br	ClassificaÁ„o
-password is	admin	pt-br	A senha È
+name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	pt-br	Nome (deixar em branco, exceto para campos de texto, √°reas de texto, listas instan√¢neas, caixas de verifica√ß√£o)
+not a user yet? register now	login	pt-br	Ainda n√£o √© um usu√°rio? Registre-se agora.
+on-line registration is not activated. please contact the site administrator for more information about registration.	registration	pt-br	O registro de acesso n√£o est√° ativo. Por favor contate o administrador para maiores detalhes.
+order	registration	pt-br	Classifica√ß√£o
+password is	admin	pt-br	A senha √©
 phone	registration	pt-br	Telefone
 problem sending email:	registration	pt-br	Problemas enviando e-mail:
 re-enter password	registration	pt-br	Repita a senha
 re-enter your password	registration	pt-br	Repita sua senha
-register link at login screen?	admin	pt-br	Habilitar link para Registro de acesso na tela de conex„o?
+register link at login screen?	admin	pt-br	Habilitar link para Registro de acesso na tela de conex√£o?
 registration	common	pt-br	Registro de Acesso
-registration settings	admin	pt-br	ConfiguraÁıes - Registro de Acesso
+registration settings	admin	pt-br	Configura√ß√µes - Registro de Acesso
 remove	registration	pt-br	Remover
 report all problems and abuse to	registration	pt-br	informe todo e qualquer problema para
-required	registration	pt-br	Campo obrigatÛrio
+required	registration	pt-br	Campo obrigat√≥rio
 response	registration	pt-br	Resposta
 send email	admin	pt-br	Enviar E-mail
 sorry, no account exists for	registration	pt-br	Desculpe, nenhuma conta existe para
-sorry, that username does not exist.	registration	pt-br	<em style="color: rgb(255, 0, 0);"><b>Desculpe, este usu·rio n„o existe.</b></em><br>
-sorry, that username is already taken.	registration	pt-br	<em style="color: rgb(255, 0, 0);"><b>Desculpe, este usu·rio j· existe.</b></em><br>
-sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	pt-br	Desculpe, estamos com problemas para a ativaÁ„o de sua conta para acesso. Verifique que o endereÁo de confirmaÁ„o encaminhado para seu e-mail tem uma validade de no m·ximo duas horas. Caso vocÍ tenha expirado o prazo para ativaÁ„o vocÍ precisa solicitar um reenvio. Se este n„o È o seu problema entre em contato com o administrador.
+sorry, that username does not exist.	registration	pt-br	<em style="color: rgb(255, 0, 0);"><b>Desculpe, este usu√°rio n√£o existe.</b></em><br>
+sorry, that username is already taken.	registration	pt-br	<em style="color: rgb(255, 0, 0);"><b>Desculpe, este usu√°rio j√° existe.</b></em><br>
+sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	pt-br	Desculpe, estamos com problemas para a ativa√ß√£o de sua conta para acesso. Verifique que o endere√ßo de confirma√ß√£o encaminhado para seu e-mail tem uma validade de no m√°ximo duas horas. Caso voc√™ tenha expirado o prazo para ativa√ß√£o voc√™ precisa solicitar um reenvio. Se este n√£o √© o seu problema entre em contato com o administrador.
 state	registration	pt-br	Estado
-subject for confirmation email	admin	pt-br	Assunto para o e-mail de confirmaÁ„o
+subject for confirmation email	admin	pt-br	Assunto para o e-mail de confirma√ß√£o
 terms of service	registration	pt-br	Termos para o Acesso
-terms of service text	admin	pt-br	Texto dos termos de serviÁo
+terms of service text	admin	pt-br	Texto dos termos de servi√ßo
 text	registration	pt-br	Texto
-textarea	registration	pt-br	¡rea para texto
-the passwords you entered don't match	registration	pt-br	<em style="color: rgb(255, 0, 0);"><b>As senhas informadas n„o conferem</b></em><br>
-the two passwords are not the same	registration	pt-br	<em style="color: rgb(255, 0, 0);"><b>As duas senhas n„o s„o iguais</b></em><br>
-this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	pt-br	Este È um e-mail de confirmaÁ„o da sua nova conta. clique no link abaixo para finalizar o processo de ativaÁ„o da sua conta. Esse link ir· expirar em 2 horas.
+textarea	registration	pt-br	√Årea para texto
+the passwords you entered don't match	registration	pt-br	<em style="color: rgb(255, 0, 0);"><b>As senhas informadas n√£o conferem</b></em><br>
+the two passwords are not the same	registration	pt-br	<em style="color: rgb(255, 0, 0);"><b>As duas senhas n√£o s√£o iguais</b></em><br>
+this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	pt-br	Este √© um e-mail de confirma√ß√£o da sua nova conta. clique no link abaixo para finalizar o processo de ativa√ß√£o da sua conta. Esse link ir√° expirar em 2 horas.
 type	registration	pt-br	Tipo
-unable to send mail, contact your administrator	registration	pt-br	E-mail n„o pÙde ser enviado. Informe ao administrador do servidor
+unable to send mail, contact your administrator	registration	pt-br	E-mail n√£o p√¥de ser enviado. Informe ao administrador do servidor
 unknown first name	registration	pt-br	Primeiro nome desconhecido
-unknown last name	registration	pt-br	⁄ltimo nome desconhecido
+unknown last name	registration	pt-br	√öltimo nome desconhecido
 update/add	registration	pt-br	Atualizar/Adicionar
 use html	admin	pt-br	Usar
 use trial accounts?	admin	pt-br	Usar contas para testes?
-username is	admin	pt-br	O Usu·rio È
-values (for dropdown only; comma separated)	registration	pt-br	Valores (Para listas suspensa apenas; campos separados por vÌrgula)
-we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	pt-br	Enviamos um e-mail para a confirmaÁ„o de seu cadastro. VocÍ deve clicar sobre o hyperlink enviado no m·ximo em atÈ 2 horas para efetivar o cadastro. Caso vocÍ n„o o faÁa, o registro ficar· indisponÌvel para esta conta de e-mail por alguns dias, atÈ ser liberado novamente.
-we have sent a mail to your email account: %s with your lost user ids.	registration	pt-br	Um mensagem foi enviada para seu e-mail: %s com seu nome de usu·rio.
-we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	pt-br	Foi enviado um e-mail com instruÁıes de como alterar sua senha. VocÍ dever· clicar no link enviado em um perÌodo n„o superior a 2 horas. Se vocÍ n„o seguir essas instruÁıes ter· que voltar a tela de senhas perdidas.
-wrong session	registration	pt-br	Erro na sess„o
-you can go back to the login page	registration	pt-br	VocÍ pode voltar a p·gina de conex„o.
-you have entered an invalid birthday	registration	pt-br	VocÍ informou uma data de nascimento inv·lida
-you have entered an invalid email address	registration	pt-br	VocÍ informou um endereÁo para e-mail inv·lido
-you must enter a password	registration	pt-br	VocÍ precisa digitar uma senha
-you must enter a username	registration	pt-br	VocÍ precisa digitar um nome de usu·rio
-you must enter an email account	registration	pt-br	VocÍ precisa digitar um e-mail
-you must fill in all of the required fields	registration	pt-br	VocÍ precisa preencher os campos ( * )  obrigatÛrios
-you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	pt-br	VocÍ requisitou uma mudanÁa na sua senha. Por favor sigua a URL abaixo para executar essa mudanÁa. Essa URL ir· expirar em 2 horas, Depois desse perÌodo, vocÍ ter· que por todo o procedimento novamente
-you specified a value for %1 that is not a choice	registration	pt-br	VocÍ especificou um valor para %1 que n„o È v·lido
-your account is now active!	registration	pt-br	Sua conta est· ativa!
+username is	admin	pt-br	O Usu√°rio √©
+values (for dropdown only; comma separated)	registration	pt-br	Valores (Para listas suspensa apenas; campos separados por v√≠rgula)
+we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	pt-br	Enviamos um e-mail para a confirma√ß√£o de seu cadastro. Voc√™ deve clicar sobre o hyperlink enviado no m√°ximo em at√© 2 horas para efetivar o cadastro. Caso voc√™ n√£o o fa√ßa, o registro ficar√° indispon√≠vel para esta conta de e-mail por alguns dias, at√© ser liberado novamente.
+we have sent a mail to your email account: %s with your lost user ids.	registration	pt-br	Um mensagem foi enviada para seu e-mail: %s com seu nome de usu√°rio.
+we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	pt-br	Foi enviado um e-mail com instru√ß√µes de como alterar sua senha. Voc√™ dever√° clicar no link enviado em um per√≠odo n√£o superior a 2 horas. Se voc√™ n√£o seguir essas instru√ß√µes ter√° que voltar a tela de senhas perdidas.
+wrong session	registration	pt-br	Erro na sess√£o
+you can go back to the login page	registration	pt-br	Voc√™ pode voltar a p√°gina de conex√£o.
+you have entered an invalid birthday	registration	pt-br	Voc√™ informou uma data de nascimento inv√°lida
+you have entered an invalid email address	registration	pt-br	Voc√™ informou um endere√ßo para e-mail inv√°lido
+you must enter a password	registration	pt-br	Voc√™ precisa digitar uma senha
+you must enter a username	registration	pt-br	Voc√™ precisa digitar um nome de usu√°rio
+you must enter an email account	registration	pt-br	Voc√™ precisa digitar um e-mail
+you must fill in all of the required fields	registration	pt-br	Voc√™ precisa preencher os campos ( * )  obrigat√≥rios
+you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	pt-br	Voc√™ requisitou uma mudan√ßa na sua senha. Por favor sigua a URL abaixo para executar essa mudan√ßa. Essa URL ir√° expirar em 2 horas, Depois desse per√≠odo, voc√™ ter√° que por todo o procedimento novamente
+you specified a value for %1 that is not a choice	registration	pt-br	Voc√™ especificou um valor para %1 que n√£o √© v√°lido
+your account is now active!	registration	pt-br	Sua conta est√° ativa!
 your password was changed.	registration	pt-br	Sua senha foi alterada.
 zip/postal	registration	pt-br	CEP

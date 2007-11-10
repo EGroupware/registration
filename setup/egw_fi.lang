@@ -1,105 +1,105 @@
-<br>please contact the site administrator.	registration	fi	<br> Ota yhteytt‰ sivuston yll‰pit‰j‰‰n.
+<br>please contact the site administrator.	registration	fi	<br> Ota yhteytt√§ sivuston yll√§pit√§j√§√§n.
 [unknown first name]	registration	fi	[tuntematon etunimi]
 [unknown last name]	registration	fi	[tuntematon sukunimi]
-account %1 record could not be found, report to site administrator	registration	fi	K‰ytt‰j‰tili‰ %1 ei lˆydy, ilmoita asiasta sivuston yll‰pit‰j‰lle.
+account %1 record could not be found, report to site administrator	registration	fi	K√§ytt√§j√§tili√§ %1 ei l√∂ydy, ilmoita asiasta sivuston yll√§pit√§j√§lle.
 account password retrieval	registration	fi	Salasanan nouto
 account registration	registration	fi	Tunnuksen luominen
 activate account	admin	fi	Aktivoi tunnus
 address	registration	fi	Osoite
-after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	fi	Kun annat s‰hkˆpostiosoitteesi, k‰ytt‰j‰tilisi aktivointi l‰hetet‰‰n t‰h‰n osoitteeseen.
-after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	fi	Annettuasi k‰ytt‰j‰tunnuksesi ohjeet salasanan vaihtamiseksi l‰hetet‰‰n rekisterˆityess‰si antamaasi s‰hkˆpostiosoitteeseen.
-an error occured. please contact our technical support and let them know.	registration	fi	Virhe tapahtui. Ota yhteytt‰ tekniseen tukeemme ja ilmoita asiasta.
+after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	fi	Kun annat s√§hk√∂postiosoitteesi, k√§ytt√§j√§tilisi aktivointi l√§hetet√§√§n t√§h√§n osoitteeseen.
+after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	fi	Annettuasi k√§ytt√§j√§tunnuksesi ohjeet salasanan vaihtamiseksi l√§hetet√§√§n rekister√∂ityess√§si antamaasi s√§hk√∂postiosoitteeseen.
+an error occured. please contact our technical support and let them know.	registration	fi	Virhe tapahtui. Ota yhteytt√§ tekniseen tukeemme ja ilmoita asiasta.
 anonymous password	admin	fi	tuntematon salasana
-birthday	registration	fi	Syntym‰p‰iv‰
+birthday	registration	fi	Syntym√§p√§iv√§
 challenge question	registration	fi	Varmistus kysymys
-change password for user	registration	fi	Muuta salasana k‰ytt‰j‰lle
+change password for user	registration	fi	Muuta salasana k√§ytt√§j√§lle
 checkbox	registration	fi	Valintaruutu
 choose language	registration	fi	Valitse kieli
 choose your language	registration	fi	Valitse kielesi
 city	registration	fi	Kaupunki
-click to log into your account	registration	fi	Paina kirjautuaksesi k‰ytt‰j‰tilill‰si
+click to log into your account	registration	fi	Paina kirjautuaksesi k√§ytt√§j√§tilill√§si
 close window	registration	fi	Sulje ikkuna
 country	registration	fi	Maa
-current fields:	registration	fi	Nykyiset kent‰t:
-days until trial accounts expire	admin	fi	Monenko p‰iv‰n p‰‰st‰ k‰ytt‰j‰tunnus vanhenee
-display terms of service?	admin	fi	N‰yt‰ toimitusehdot
+current fields:	registration	fi	Nykyiset kent√§t:
+days until trial accounts expire	admin	fi	Monenko p√§iv√§n p√§√§st√§ k√§ytt√§j√§tunnus vanhenee
+display terms of service?	admin	fi	N√§yt√§ toimitusehdot
 dropdown	registration	fi	Pudotusvalikko
-email address	registration	fi	S‰hkˆpostiosoite
-email address to display for support	admin	fi	S‰hkˆpostiosoite n‰ytet‰‰n k‰ytt‰j‰tuelle
-email address to send notices from	admin	fi	S‰hkˆpostiosoite l‰hett‰‰ huomautukset
-enable registration?	admin	fi	Salli rekisterˆityminen?
+email address	registration	fi	S√§hk√∂postiosoite
+email address to display for support	admin	fi	S√§hk√∂postiosoite n√§ytet√§√§n k√§ytt√§j√§tuelle
+email address to send notices from	admin	fi	S√§hk√∂postiosoite l√§hett√§√§ huomautukset
+enable registration?	admin	fi	Salli rekister√∂ityminen?
 enter your new password	registration	fi	Anna uusi salasanasi
 female	registration	fi	Nainen
 gender	registration	fi	sukupuoli
 hi	registration	fi	Terve!
 http password	admin	fi	HTTP salasana
-http username	admin	fi	HTTP k‰ytt‰j‰tunnus
-i have read the terms and conditions and agree by them.	registration	fi	Olen lukenut palvelun k‰yttˆehdot ja hyv‰ksyn ne.
-if you did not request this account, simply ignore this message.	registration	fi	Sivuuta t‰m‰ viesti jos et pyyt‰nyt t‰t‰ tunnusta.
-if you did not request this change, simply ignore this message.	registration	fi	Sivuuta t‰m‰ viesti jos et pyyt‰nyt t‰t‰ muutosta.
-immediately	admin	fi	V‰littˆm‰sti
-lost login id	login	fi	Kirjautumistunnus h‰vinnyt
-lost password	login	fi	Salasana h‰vinnyt
-lost password link at login screen?	admin	fi	Salasana linkki h‰vinnyt kirjautumisikkunasta
-lost user account retrieval	registration	fi	K‰ytt‰j‰tilin nouto h‰vinnyt
-lost user id	registration	fi	K‰ytt‰j‰ ID h‰vinnyt
-lost user id link at login screen?	admin	fi	K‰ytt‰j‰n id linkki h‰vinnyt kirjautumisruudusta
-lost_user_id_message	registration	fi	N‰m‰ k‰ytt‰j‰tilit viittaavat t‰h‰n s‰hkˆpostitiliin:
+http username	admin	fi	HTTP k√§ytt√§j√§tunnus
+i have read the terms and conditions and agree by them.	registration	fi	Olen lukenut palvelun k√§ytt√∂ehdot ja hyv√§ksyn ne.
+if you did not request this account, simply ignore this message.	registration	fi	Sivuuta t√§m√§ viesti jos et pyyt√§nyt t√§t√§ tunnusta.
+if you did not request this change, simply ignore this message.	registration	fi	Sivuuta t√§m√§ viesti jos et pyyt√§nyt t√§t√§ muutosta.
+immediately	admin	fi	V√§litt√∂m√§sti
+lost login id	login	fi	Kirjautumistunnus h√§vinnyt
+lost password	login	fi	Salasana h√§vinnyt
+lost password link at login screen?	admin	fi	Salasana linkki h√§vinnyt kirjautumisikkunasta
+lost user account retrieval	registration	fi	K√§ytt√§j√§tilin nouto h√§vinnyt
+lost user id	registration	fi	K√§ytt√§j√§ ID h√§vinnyt
+lost user id link at login screen?	admin	fi	K√§ytt√§j√§n id linkki h√§vinnyt kirjautumisruudusta
+lost_user_id_message	registration	fi	N√§m√§ k√§ytt√§j√§tilit viittaavat t√§h√§n s√§hk√∂postitiliin:
 male	registration	fi	Mies
-manage fields	admin	fi	Hallitse kentti‰
-name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	fi	Nimi (tyhj‰ ellei ole Tekstikentt‰, Tekstialue, Pudotusvalikkoa, Valintalaatikko; muuten Aakkosnumeerinen (Vain tavallisista kirjain- ja numeromerkeist‰ koostuva)
-not a user yet? register now	login	fi	Etkˆ ole viel‰ k‰ytt‰j‰? Rekisterˆidy nyt.
-on-line registration is not activated. please contact the site administrator for more information about registration.	registration	fi	On-line rekisterˆinti ei ole aktiivinen. Ota yhteytt‰ sivuston yll‰pit‰j‰‰n saadaksesi lis‰tietoa rekisterˆitymisest‰.
+manage fields	admin	fi	Hallitse kentti√§
+name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	fi	Nimi (tyhj√§ ellei ole Tekstikentt√§, Tekstialue, Pudotusvalikkoa, Valintalaatikko; muuten Aakkosnumeerinen (Vain tavallisista kirjain- ja numeromerkeist√§ koostuva)
+not a user yet? register now	login	fi	Etk√∂ ole viel√§ k√§ytt√§j√§? Rekister√∂idy nyt.
+on-line registration is not activated. please contact the site administrator for more information about registration.	registration	fi	On-line rekister√∂inti ei ole aktiivinen. Ota yhteytt√§ sivuston yll√§pit√§j√§√§n saadaksesi lis√§tietoa rekister√∂itymisest√§.
 order	registration	fi	Tilaa
 password is	admin	fi	Salasana on
 phone	registration	fi	Puhelin
-problem sending email:	registration	fi	Ongelma l‰hetett‰ess‰ s‰hkˆpostia:
+problem sending email:	registration	fi	Ongelma l√§hetett√§ess√§ s√§hk√∂postia:
 re-enter password	registration	fi	Salasana uudelleen
 re-enter your password	registration	fi	Anna salasanasi uudelleen
-register	common	fi	rekisterˆidy
-register link at login screen?	admin	fi	Rekisterˆitymislinkki kirjautumissivulla?
-registration	common	fi	Rekisterˆityminen
-registration settings	admin	fi	Rekisterˆitymisen asetukset
+register	common	fi	rekister√∂idy
+register link at login screen?	admin	fi	Rekister√∂itymislinkki kirjautumissivulla?
+registration	common	fi	Rekister√∂ityminen
+registration settings	admin	fi	Rekister√∂itymisen asetukset
 remove	registration	fi	Poista
-report all problems and abuse to	registration	fi	Raportoi kaikista ongelmista ja v‰‰rink‰ytˆst‰
+report all problems and abuse to	registration	fi	Raportoi kaikista ongelmista ja v√§√§rink√§yt√∂st√§
 required	registration	fi	Pakollinen
 response	registration	fi	Vastaus
-send email	admin	fi	L‰het‰ s‰hkˆposti
-sorry, no account exists for	registration	fi	Valitettavasti mik‰‰n k‰ytt‰j‰tili ei sis‰ll‰
-sorry, that username does not exist.	registration	fi	Valitan, k‰ytt‰j‰tunnusta ei lˆydy.
-sorry, that username is already taken.	registration	fi	Valitan, k‰ytt‰j‰tunnus on jo varattu
-sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	fi	Valitettavasti k‰ytt‰j‰tilisi aktivoinnissa on ongelma. Sinulle s‰hkˆpostiin l‰hetetty aktivointilinkki on voimassa vain kaksi tuntia. Jos luulet ett‰ t‰m‰ aika on ylittynyt, yrit‰ uudestaan. Muuten, ota yhteytt‰ sivuston yll‰pit‰j‰‰n.
+send email	admin	fi	L√§het√§ s√§hk√∂posti
+sorry, no account exists for	registration	fi	Valitettavasti mik√§√§n k√§ytt√§j√§tili ei sis√§ll√§
+sorry, that username does not exist.	registration	fi	Valitan, k√§ytt√§j√§tunnusta ei l√∂ydy.
+sorry, that username is already taken.	registration	fi	Valitan, k√§ytt√§j√§tunnus on jo varattu
+sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	fi	Valitettavasti k√§ytt√§j√§tilisi aktivoinnissa on ongelma. Sinulle s√§hk√∂postiin l√§hetetty aktivointilinkki on voimassa vain kaksi tuntia. Jos luulet ett√§ t√§m√§ aika on ylittynyt, yrit√§ uudestaan. Muuten, ota yhteytt√§ sivuston yll√§pit√§j√§√§n.
 state	registration	fi	Tila
-subject for confirmation email	admin	fi	Vahvistuss‰hkˆpostin otsikko
+subject for confirmation email	admin	fi	Vahvistuss√§hk√∂postin otsikko
 terms of service	registration	fi	Toimitusehdot
 terms of service text	admin	fi	Toimitusehdot teksti
 text	registration	fi	Teksti
 textarea	registration	fi	Tekstialue
-the passwords you entered don't match	registration	fi	Salasanat eiv‰t t‰sm‰‰ jotka kirjoiti.
-the two passwords are not the same	registration	fi	Salasanat eiv‰t vastaa toisiaan
-this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	fi	T‰m‰ on k‰ytt‰j‰tilisi vahvistus viesti. Paina alla olevaa linkki‰ aktivoidaksesi k‰ytt‰j‰tilisi. T‰m‰ linkki on voimassa vain 2 tuntia.
+the passwords you entered don't match	registration	fi	Salasanat eiv√§t t√§sm√§√§ jotka kirjoiti.
+the two passwords are not the same	registration	fi	Salasanat eiv√§t vastaa toisiaan
+this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	fi	T√§m√§ on k√§ytt√§j√§tilisi vahvistus viesti. Paina alla olevaa linkki√§ aktivoidaksesi k√§ytt√§j√§tilisi. T√§m√§ linkki on voimassa vain 2 tuntia.
 type	registration	fi	Tyyppi
-unable to send mail, contact your administrator	registration	fi	Viesti‰ ei voida l‰hett‰‰, ota yhteytt‰ p‰‰k‰ytt‰j‰‰n.
+unable to send mail, contact your administrator	registration	fi	Viesti√§ ei voida l√§hett√§√§, ota yhteytt√§ p√§√§k√§ytt√§j√§√§n.
 unknown first name	registration	fi	Tuntematon etunimi
 unknown last name	registration	fi	Tuntematon sukunimi
-update/add	registration	fi	P‰ivit‰ / Lis‰‰
-use html	admin	fi	k‰yt‰ HTML
-use trial accounts?	admin	fi	k‰yt‰ kokeilu tunnuksia?
-username is	admin	fi	K‰ytt‰j‰nimi on
+update/add	registration	fi	P√§ivit√§ / Lis√§√§
+use html	admin	fi	k√§yt√§ HTML
+use trial accounts?	admin	fi	k√§yt√§ kokeilu tunnuksia?
+username is	admin	fi	K√§ytt√§j√§nimi on
 values (for dropdown only; comma separated)	registration	fi	Arvot (Vain pudotusvalikossa; pilkulla erotettuna)
-we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	fi	Olemme l‰hett‰neet vahvistus viestin s‰hkˆpostiosoitteesi. Sinun pit‰‰ avata linkki 2 tunnin kuluessa sen l‰hetyksest‰. Mik‰li et ehdi tehd‰ sit‰, joudut odottamaan pari p‰iv‰‰ ennen kuin k‰ytt‰j‰tunnuksesi vapautuu uutta yrityst‰ varten.
-we have sent a mail to your email account: %s with your lost user ids.	registration	fi	Olemme l‰hett‰neet s‰hkˆpostiisi: &s unohtamasi k‰ytt‰j‰tunnuksesi.
-we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	fi	Olemme l‰hett‰neet s‰hkˆpostiisi ohjeet salasanan vaihtamisesta. Siirry viestiss‰ olevan linkin kautta sivulle kahden tunnin sis‰ll‰. Mik‰li aikaraja ylittyy, sinun pit‰‰ pyyt‰‰ salasanasi uudestaan.
-wrong session	registration	fi	V‰‰r‰ istunto
+we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	fi	Olemme l√§hett√§neet vahvistus viestin s√§hk√∂postiosoitteesi. Sinun pit√§√§ avata linkki 2 tunnin kuluessa sen l√§hetyksest√§. Mik√§li et ehdi tehd√§ sit√§, joudut odottamaan pari p√§iv√§√§ ennen kuin k√§ytt√§j√§tunnuksesi vapautuu uutta yrityst√§ varten.
+we have sent a mail to your email account: %s with your lost user ids.	registration	fi	Olemme l√§hett√§neet s√§hk√∂postiisi: &s unohtamasi k√§ytt√§j√§tunnuksesi.
+we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	fi	Olemme l√§hett√§neet s√§hk√∂postiisi ohjeet salasanan vaihtamisesta. Siirry viestiss√§ olevan linkin kautta sivulle kahden tunnin sis√§ll√§. Mik√§li aikaraja ylittyy, sinun pit√§√§ pyyt√§√§ salasanasi uudestaan.
+wrong session	registration	fi	V√§√§r√§ istunto
 you can go back to the login page	registration	fi	Voit palata kirjautumissivulle
-you have entered an invalid birthday	registration	fi	Syntym‰p‰iv‰ ei kelpaa
-you have entered an invalid email address	registration	fi	S‰hkˆpostiosoite ei kelpaa
+you have entered an invalid birthday	registration	fi	Syntym√§p√§iv√§ ei kelpaa
+you have entered an invalid email address	registration	fi	S√§hk√∂postiosoite ei kelpaa
 you must enter a password	registration	fi	Anna salasana
-you must enter a username	registration	fi	Anna k‰ytt‰j‰tunnus
-you must enter an email account	registration	fi	Anna s‰hkˆpostiosoitteesi
-you must fill in all of the required fields	registration	fi	T‰yt‰ kaikki pakolliset kent‰t
-you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	fi	Pyysitte uutta salasanaa. Siirry sivullemme viestiss‰ olevasta linkist‰ aktivoidaksesi uuden salasanan. T‰m‰ osoite on voimassa vain kaksi tuntia. Mik‰li et k‰y sivulla kahden tunnin sis‰ll‰, joudut pyyt‰m‰‰n salasanaa uudestaan.
-you specified a value for %1 that is not a choice	registration	fi	M‰‰ritit arvon kohtaan %1 joka ei ole kelvollinen
-your account is now active!	registration	fi	K‰ytt‰j‰tilisi on aktivoitu!
+you must enter a username	registration	fi	Anna k√§ytt√§j√§tunnus
+you must enter an email account	registration	fi	Anna s√§hk√∂postiosoitteesi
+you must fill in all of the required fields	registration	fi	T√§yt√§ kaikki pakolliset kent√§t
+you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	fi	Pyysitte uutta salasanaa. Siirry sivullemme viestiss√§ olevasta linkist√§ aktivoidaksesi uuden salasanan. T√§m√§ osoite on voimassa vain kaksi tuntia. Mik√§li et k√§y sivulla kahden tunnin sis√§ll√§, joudut pyyt√§m√§√§n salasanaa uudestaan.
+you specified a value for %1 that is not a choice	registration	fi	M√§√§ritit arvon kohtaan %1 joka ei ole kelvollinen
+your account is now active!	registration	fi	K√§ytt√§j√§tilisi on aktivoitu!
 your password was changed.	registration	fi	Salasanasi on vaihdettu.
 zip/postal	registration	fi	Postinumero
