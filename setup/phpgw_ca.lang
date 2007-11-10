@@ -59,6 +59,4 @@ you have entered an invalid email address	registration	ca	Heu entrat una adreça 
 you must enter a password	registration	ca	Heu d'entrar una contrasenya
 you must enter a username	registration	ca	Heu d'entrar un nom d'usuari
 you must fill in all of the required fields	registration	ca	Heu d'omplir els camps obligatoris
-you specified a value for	registration	ca	Heu d'establir un valor per
-your account is now active!  click <a href="%1">here</a> to log into your account.	registration	ca	El vostre compte ja és actiu!  Premeu <a href="%1">aqui</a> per connectar-vos al vostre compte.
 zip/postal	registration	ca	Codi Postal
