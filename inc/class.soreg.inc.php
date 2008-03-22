@@ -20,6 +20,9 @@
    class soreg
    {
 	  var $reg_id;
+	  /**
+	   * @var egw_db
+	   */
 	  var $db;
 	  var $reg_table = 'egw_reg_accounts';
 
@@ -31,7 +34,7 @@
 		 global $config;
 
 		 $this->db = clone($GLOBALS['egw']->db);
-		 $this->db->app = 'registration';
+		 $this->db->set_app('registration');
 
 		 $nobody_name= ( $config['name_nobody'] ?  $config['name_nobody']  : 'No reply' );
 		 $nobody_email= ( $config['mail_nobody'] ?  $config['mail_nobody']  : 'noreply@' . $_SERVER['SERVER_NAME'] );
