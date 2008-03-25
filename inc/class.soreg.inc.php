@@ -348,11 +348,6 @@
 	  */
 	  function workaround_felami_register_hooks($with_felami=false)
 	  {
-		 if (!is_object($GLOBALS['egw']->hooks))
-		 {
-			$GLOBALS['egw']->hooks =& CreateObject('phpgwapi.hooks');
-		 }
-
 		 if($with_felami)
 		 {
 			$GLOBALS['egw']->hooks->hooks();

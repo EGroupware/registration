@@ -26,8 +26,6 @@
 
 		function uimanagefields ()
 		{
-			$GLOBALS['egw']->nextmatches =& CreateObject ('phpgwapi.nextmatchs');
-
 			$this->bo =& CreateObject ('registration.bomanagefields');
 			$this->bo->check_admin ();
 			$this->base_url = $this->bo->base_url;
