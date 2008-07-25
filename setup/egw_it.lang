@@ -17,6 +17,7 @@ checkbox	registration	it	Checkbox
 choose language	registration	it	Scegli una lingua
 choose your language	registration	it	Scegli la tua lingua
 city	registration	it	Città
+click to log into your account	registration	it	Clicca su log per restare loggato
 close window	registration	it	Chiudi finestra
 country	registration	it	Stato
 current fields:	registration	it	Campi correnti:
@@ -55,6 +56,7 @@ phone	registration	it	Telefono
 problem sending email:	registration	it	Problema durante invio Email:
 re-enter password	registration	it	Re-inserisci password
 re-enter your password	registration	it	Re-inserisci la tua password
+register	common	it	Registrati
 register link at login screen?	admin	it	Link Registrati nella schermata di Login?
 registration	common	it	Registrazione
 registration settings	admin	it	Impostazioni Registrazione
@@ -86,11 +88,18 @@ use trial accounts?	admin	it	Utilizzare account di prova?
 username is	admin	it	Il Nome Utente è
 values (for dropdown only; comma separated)	registration	it	Valori (Solo per A discesa; separati da virgole)
 we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	it	Abbiamo inviato una email di conferma al tuo indirizzo. Devi cliccare sul collegamento entro 2 ore. Se non lo fai, ci potranno volere alcuni giorni prima che la tua id login venga resa di nuovo disponibile.
+we have sent a mail to your email account: %s with your lost user ids.	registration	it	Abbiamo spedito una email alla tua casella : %s con il tuo nome utente che hai perso
+we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	it	Ti abbiamo spedito un'email con le istruzione per cambiare la tua password. Devi cliccare sul seguente link entro due ore . Se non seguirai queste istruzioni dovrai richiedere la procedura di cambio password.
 wrong session	registration	it	Sessione errata
+you can go back to the login page	registration	it	Puoi tornare alla pagine di login
 you have entered an invalid birthday	registration	it	Hai inserito un compleanno non valido
 you have entered an invalid email address	registration	it	Hai inserito un indirizzo email non valido
 you must enter a password	registration	it	Devi inserire una password
 you must enter a username	registration	it	Devi inserire un nome utente
 you must enter an email account	registration	it	Devi inserire un account email
 you must fill in all of the required fields	registration	it	Devi compilare tutti i campi richiesti
+you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	it	Hai richiesto di cambiare la tua password. Per cortesia clicca su link di seguito . Questo link avrà una durata di due ore . Dopo questo tempo dovrai rifare la procedura per richiedere il cambio password.
+you specified a value for %1 that is not a choice	registration	it	Hai specificato un valore per 1% ma non è una scelta valida
+your account is now active!	registration	it	Il tuo account ora è attivo !
+your password was changed.	registration	it	La tua password è stata cambiata
 zip/postal	registration	it	ZIP/Postale
