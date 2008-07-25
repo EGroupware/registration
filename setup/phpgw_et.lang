@@ -1,0 +1,72 @@
+<br>please contact the site administrator.	registration	et	<br>Palun kontakteeru lehe administraatoriga..
+[unknown first name]	registration	et	[tundmatu eesnimi]
+[unknown last name]	registration	et	[tundmatu perekonnanimi]
+account %1 record could not be found, report to site administrator	registration	et	Kontot %1 ei leitud, raporteeri lehe administraatorile
+account password retrieval	registration	et	Konto parooli taastamine
+account registration	registration	et	Konto registreerimine
+activate account	admin	et	Aktiveeri konto
+address	registration	et	Aadress
+anonymous password	admin	et	Anonüümkasutaja parool
+birthday	registration	et	Sünnipäev
+choose language	registration	et	Vali Keel
+choose your language	registration	et	Vali oma keel
+city	registration	et	Linn
+click to log into your account	registration	et	Logimiseks oma kontole vajuta siia
+close window	registration	et	Sule Aken
+country	registration	et	Riik
+current fields:	registration	et	Kehtivad väljad:
+display terms of service?	admin	et	Näita Kasutustinfimusi
+email address	registration	et	email aadress
+enable registration?	admin	et	Luba registreerimine ?
+enter your new password	registration	et	Sisesta oma uus parool
+female	registration	et	Naine
+gender	registration	et	Sugu
+hi	registration	et	Tere
+http password	admin	et	HTTP Parool
+http username	admin	et	HTTP Kasutajanimi
+i have read the terms and conditions and agree by them.	registration	et	Lugesin kasutus eeskrju ja nõustun nendega.
+immediately	admin	et	Koheselt
+lost login id	login	et	Kaotasid logimise id
+lost password	login	et	Kaotasid parooli
+male	registration	et	Mees
+manage fields	admin	et	Manageeri välju
+not a user yet? register now	login	et	Pole veel kasutaja? Registreeru siit
+on-line registration is not activated. please contact the site administrator for more information about registration.	registration	et	On-line registreerumine pole aktiveeritud. Saamaks rohkem infot kontakteeru lehe administraatoriga.
+password is	admin	et	Parool on
+phone	registration	et	Telefon
+re-enter password	registration	et	Korda parooli
+re-enter your password	registration	et	Korda oma parooli
+register	common	et	registreeru
+register link at login screen?	admin	et	Registreerumise link login aknas?
+registration	common	et	Registreerimine
+registration settings	admin	et	Registreerimise setingud
+remove	registration	et	Eemalda
+required	registration	et	Nõutav
+response	registration	et	Vastus
+send email	admin	et	Saada Email
+sorry, that username does not exist.	registration	et	Vabandust, seda kasutajanime pole.
+sorry, that username is already taken.	registration	et	Vabandust, kasutajanimi juba võetud.
+terms of service	registration	et	Kasutus Eeskirjad
+terms of service text	admin	et	Kasutus Eeskirjad tekst
+text	registration	et	Tekst
+textarea	registration	et	Tekstiväli
+the passwords you entered don't match	registration	et	Parool mida sisestasid ei ühti
+the two passwords are not the same	registration	et	Kaks parooli ei ühti
+unable to send mail, contact your administrator	registration	et	Ei saa maili saata, kontakteeru administraatoriga.
+unknown first name	registration	et	Tundmatu eesnimi
+unknown last name	registration	et	Tundmatu perekonnanimi
+update/add	registration	et	Uuenda/ Lisa
+use html	admin	et	kasuta HTML
+use trial accounts?	admin	et	Kasuta trial kontosid?
+username is	admin	et	Kasutajanimi on
+wrong session	registration	et	Vale sessioon
+you can go back to the login page	registration	et	Võid minna tagasi login lehele
+you have entered an invalid birthday	registration	et	Sisestasid vigase sünnipäeva
+you have entered an invalid email address	registration	et	Sisestasid vigase email aadressi
+you must enter a password	registration	et	Pead sisestama parooli
+you must enter a username	registration	et	Pead sisestama kasutajanime
+you must enter an email account	registration	et	Pead sisestama email aadressi
+you must fill in all of the required fields	registration	et	Pead täitma kõik nõutavad väljad
+your account is now active!	registration	et	Sinu konto on nüüd aktiivne!
+your password was changed.	registration	et	Sinu parool on muudetud.
+zip/postal	registration	et	Indeks
