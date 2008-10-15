@@ -79,15 +79,15 @@
 			);
 			$p->set_var ($var);
 
-			$row_color = $GLOBALS['egw']->nextmatches->alternate_row_color ($row_color);
+			$row_color = $GLOBALS['egw']->nextmatchs->alternate_row_color ($row_color);
 			$var = Array(
-				'row_off' => $GLOBALS['egw']->nextmatches->alternate_row_color ($row_color)
+				'row_off' => $GLOBALS['egw']->nextmatchs->alternate_row_color ($row_color)
 			);
 			$p->set_var ($var);
 
-			$row_color = $GLOBALS['egw']->nextmatches->alternate_row_color ($row_color);
+			$row_color = $GLOBALS['egw']->nextmatchs->alternate_row_color ($row_color);
 			$var = Array(
-				'row_on' => $GLOBALS['egw']->nextmatches->alternate_row_color ($row_color)
+				'row_on' => $GLOBALS['egw']->nextmatchs->alternate_row_color ($row_color)
 			);
 			$p->set_var ($var);
 
