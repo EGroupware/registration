@@ -54,9 +54,9 @@
 
 		 $var = Array (
 			'website_title' => $GLOBALS['egw_info']['server']['site_title'] .'[Registration]',
-			'img_icon' => substr($GLOBALS['egw_info']['server']['login_logo_file'],0,4) == 'http' ? 
+			'img_icon' => substr($GLOBALS['egw_info']['server']['login_logo_file'],0,4) == 'http' ?
 			$GLOBALS['egw_info']['server']['login_logo_file'] :
-			$GLOBALS['egw']->common->image('phpgwapi',$GLOBALS['egw_info']['server']['login_logo_file'] ? 
+			$GLOBALS['egw']->common->image('phpgwapi',$GLOBALS['egw_info']['server']['login_logo_file'] ?
 			$GLOBALS['egw_info']['server']['login_logo_file'] : 'logo'),
 			'logo_url' => $GLOBALS['egw_info']['server']['login_logo_url']?$GLOBALS['egw_info']['server']['login_logo_url']:'http://www.eGroupWare.org',
 			'logo_title' => $GLOBALS['egw_info']['server']['login_logo_title']?$GLOBALS['egw_info']['server']['login_logo_title']:'www.eGroupWare.org',
@@ -73,7 +73,7 @@
 		 {
 			$this->lang_code=$code;
 		 }
-		 elseif($_GET['lang_code']) 
+		 elseif($_GET['lang_code'])
 		 {
 			$this->lang_code=$_GET['lang_code'];
 		 }
@@ -93,7 +93,7 @@
 		 }
 
 		 $GLOBALS['egw_info']['user']['preferences']['common']['lang'] = $this->lang_code;
-		 $GLOBALS['egw']->translation->init();	
+		 $GLOBALS['egw']->translation->init();
 	  }
 
 	  function set_header_footer_blocks()
@@ -148,7 +148,7 @@
                if($config['enable_registration']!="True")
                {
 			$this->header();
-			echo '<br/><div align="center">';	
+			echo '<br/><div align="center">';
 			   echo lang('On-line registration is not activated. Please contact the site administrator for more information about registration.');
 			   echo '</div><br/>';
 			$this->footer();
@@ -196,12 +196,12 @@
 			   {
 
 				  $lang_choose_string .='<div style="margin:2px;">'.$choosetrans.'</div>';
-				  $italic=true; 
+				  $italic=true;
 			   }
 			   else
 			   {
 				  $lang_choose_string .='<div style="margin:2px;font-style: italic">'.$choosetrans.'</div>';
-				  unset($italic); 
+				  unset($italic);
 			   }
 			   $prevstring=$choosetrans;
 			}
@@ -211,10 +211,10 @@
 			{
 			   $langs[$key] = $trans;
 			}
-		 } 
+		 }
 		 $this->set_lang_code($comeback_code);
 
-		 $this->template->set_var('title',lang('Choose Language')); 
+		 $this->template->set_var('title',lang('Choose Language'));
 		 $this->template->set_var('illustration',$GLOBALS['egw']->common->image('registration','screen0_language'));
 
 		 $this->template->set_var('lang_choose_language',$lang_choose_string);
@@ -241,7 +241,7 @@
 
 		 if($config['conv7bit'])
 		 {
-			$r_reg['loginid']=$this->bo->to7bit($r_reg['loginid']);	
+			$r_reg['loginid']=$this->bo->to7bit($r_reg['loginid']);
 		 }
 
 		 if($_POST['langchanged']=='true')
@@ -337,7 +337,7 @@
 		 $this->template->set_block('_personal_info','form');
 		 $this->template->set_var('lang_code',$this->lang_code);
 		 $this->template->set_var('lang_username',lang('Username'));
-		 
+
 		 $this->template->set_var('value_username',$GLOBALS['egw']->session->appsession('loginid','registration'));
 
 		 if ($errors)
@@ -357,7 +357,7 @@
 		 if (is_array($r_reg))
 		 {
 			while (list($name,$value) = each($r_reg))
-			{				
+			{
 			   $post_values[$name] = $value;
 			   $this->template->set_var('value_' . $name,$value);
 			}
@@ -441,7 +441,7 @@
 			$this->simple_screen ('error_general.tpl', $GLOBALS['egw']->common->error_list ($errors),$vars);
 		 }
 		 else
-		 {	 
+		 {
 			$this->step3_ready_to_activate($valid_arr['reg_id']);
 		 }
 	  }
@@ -477,7 +477,7 @@
 
 		 $_fields = unserialize(base64_decode($reg_info['reg_info']));
 		 $this->set_lang_code($_fields['lang_code']);
-		 
+
 		 if($reg_info['reg_status']!='a')
 		 {
 			$this->bo->so->create_account($reg_info['reg_lid'],$reg_info['reg_info']);
@@ -621,7 +621,7 @@
 		 {
 			$this->lostpw_step4_changepass($errors, $r_reg, $lid);
 			exit;
-		 } 
+		 }
 		 else
 		 {
 			$this->header();
@@ -745,7 +745,7 @@
 			   $this->tplsav2->values = $values;
 			   $this->tplsav2->inputname = $a . '[' . $name . ']';
 			   $this->tplsav2->post_value = $post_value;
-			   $rstring = $this->tplsav2->fetch('dropdown.tpl.php'); 
+			   $rstring = $this->tplsav2->fetch('dropdown.tpl.php');
 			}
 		 }
 
@@ -763,7 +763,7 @@
 			   //$this->tplsav2->values = $values;
 			   $this->tplsav2->inputname = $a . '[' . $name . ']';
 			   $this->tplsav2->post_value = $post_value;
-			   $rstring = $this->tplsav2->fetch('dropdownfromtable.tpl.php'); 
+			   $rstring = $this->tplsav2->fetch('dropdownfromtable.tpl.php');
 			}
 		 }
 
@@ -866,8 +866,6 @@
 			   'Manage Fields'      => $GLOBALS['egw']->link ('/index.php', 'menuaction=' . $appname . '.uimanagefields.admin')
 			);
 
-			display_section($appname,$title,$file);
-
 			if ($location == 'admin')
 			{
 			   display_section($appname,$file);
@@ -877,11 +875,5 @@
 			   display_sidebox($appname,lang('Admin'),$file);
 			}
 		 }
-
-
 	  }
-
-
-
-
    }
