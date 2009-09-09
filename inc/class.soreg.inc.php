@@ -19,6 +19,11 @@
 
    class soreg
    {
+   	  /**
+   	   * Expiration timeout for registration app in seconds (7200 = 2h)
+   	   */
+   	  const EXPIRE_TIMEOUT = 7200;
+
 	  var $reg_id;
 	  /**
 	   * @var egw_db
@@ -58,7 +63,7 @@
 			}
 		 }
 
-		 if ( $GLOBALS['egw']->accounts->exists($account_lid) || ( $this->db->f(0) && (time()-$this->db->f(0))<1800  ))
+		 if ( $GLOBALS['egw']->accounts->exists($account_lid) || ( $this->db->f(0) && (time()-$this->db->f(0)) < self::EXPIRE_TIMEOUT))
 		 {
 			return True;
 		 }
@@ -92,7 +97,7 @@
 		 //an error occured because the session could not be retrieved
 		 if(!$account_lid)
 		 {
-			return false;	
+			return false;
 		 }
 
 		 $this->reg_id = md5(time() . $account_lid . $GLOBALS['egw']->common->randomstring(32));
@@ -165,25 +170,25 @@
 	  }
 
 	  /**
-	  * cleanup_old_regs: cleanup regs older then two hours 
-	  * 
+	  * cleanup_old_regs: cleanup regs older then two hours
+	  *
 	  * @access private
 	  * @return void
 	  */
 	  function _cleanup_old_regs()
 	  {
-		 $sql='DELETE FROM '.$this->reg_table.' WHERE ('.time().'- reg_dla) > 1800';
+		 $sql='DELETE FROM '.$this->reg_table.' WHERE ('.time().'- reg_dla) > '.(int)self::EXPIRE_TIMEOUT;
 		 $this->db->query($sql,__LINE__,__FILE__);
 	  }
 
 	  /**
-	   * get_dropdownfromtable_values 
-	   * 
-	   * @param string $table_name 
-	   * @param string $valcolumn 
-	   * @param string $displaycolumn 
+	   * get_dropdownfromtable_values
+	   *
+	   * @param string $table_name
+	   * @param string $valcolumn
+	   * @param string $displaycolumn
 	   * @access public
-	   * @return return array with select values. If query fails return false 
+	   * @return return array with select values. If query fails return false
 	   */
 	   function get_dropdownfromtable_values($table_name,$valcolumn,$displaycolumn)
 	   {
@@ -193,7 +198,7 @@
 			 return false;
 		  }
 		  $ret_arr=array();
-		  while($this->db->next_record()) 
+		  while($this->db->next_record())
 		  {
 			 $_arr['value'] = $this->db->f($valcolumn);
 			 $_arr['display'] = $this->db->f($displaycolumn);
@@ -206,13 +211,13 @@
 	  {
 		 $this->db->select($this->reg_table,'*',array('reg_id' => $reg_id),__LINE__,__FILE__);
 
-		 if (!$this->db->next_record()) 
+		 if (!$this->db->next_record())
 		 {
 			return false;
 		 }
-		 
+
 		 //activation string is expired after 2 hours
-		 if($this->db->f(3) && (time()-$this->db->f(3))>1800)
+		 if($this->db->f(3) && (time()-$this->db->f(3)) > self::EXPIRE_TIMEOUT)
 		 {
 			return false;
 		 }
@@ -228,9 +233,9 @@
 
 	  /**
 	  * set_activated change status to activated so Registration can tell the user to login
-	  * 
+	  *
 	  * @param string $reg_id registration id sent by mail
-	  * @note status x means not activated, status a means created and activated 
+	  * @note status x means not activated, status a means created and activated
 	  * @access public
 	  * @return void
 	  */
@@ -340,9 +345,9 @@
 	  }
 
 	  /**
-	  * workaround_register_hooks: fixes a blank screen bug when a autoadd hook for felamimail in processed 
-	  * 
-	  * @param mixed $with_felami 
+	  * workaround_register_hooks: fixes a blank screen bug when a autoadd hook for felamimail in processed
+	  *
+	  * @param mixed $with_felami
 	  * @access public
 	  * @return void
 	  */
