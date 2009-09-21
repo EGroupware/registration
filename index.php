@@ -16,7 +16,7 @@
 
 	/**
 	 * Check if we allow anon access and with which creditials
-	 * 
+	 *
 	 * @param array &$anon_account anon account_info with keys 'login', 'passwd' and optional 'passwd_type'
 	 * @return boolean true if we allow anon access, false otherwise
 	 */
@@ -40,19 +40,17 @@
 	 }
 
 	 // if activation id is given header to activate method
-	 if(trim(@$_GET['aid']))
+	 if(isset($_GET['aid']) && preg_match('/^[0-9a-f]{32}$/',$_GET['aid']))
 	 {
 		header('Location:index.php?menuaction=registration.uireg.step4_activate_account&reg_id='.$_GET['aid']);
 		exit;
 	 }
-	 elseif(trim(@$_GET['pwid']))
+	 if(isset($_GET['pwid']) && preg_match('/^[0-9a-f]{32}$/',$_GET['pwid']))
 	 {
 		header('Location:index.php?menuaction=registration.uireg.lostpw_step3_validate_reg_id&reg_id='.$_GET['pwid']);
 		exit;
 	 }
 
-	 
-	
 	$GLOBALS['egw_info']['flags'] = array(
 		'noheader'  => True,
 		'nonavbar' => True,
@@ -60,12 +58,12 @@
 		'autocreate_session_callback' => 'registration_check_anon_access',
 	);
 	include('../header.inc.php');
-	
+
 	// config needs to be global in registration app
 	$c =& CreateObject('phpgwapi.config','registration');
 	$c->read_repository();
 	$config = $c->config_data;
-	
+
 	$app = 'registration';
 	if ($_GET['menuaction'])
 	{
