@@ -15,27 +15,27 @@ http username	admin	no	HTTP Brukernavn
 i have read the terms and conditions and agree by them.	registration	no	Jeg har lest betingelsene og forbeholdene og aksepterer disse
 if you did not request this account, simply ignore this message.	registration	no	Dersom du ikke forespurte etter denne kontoen; ignorer denne meldingen
 if you did not request this change, simply ignore this message.	registration	no	Dersom du ikke forespurte denne endringen; ignorer denne meldingen
-immediately	admin	no	Straks
-lost login id	login	no	Siste loginident
+immediately	registration	no	Straks
+lost login id	registration	no	Siste loginident
 lost password	registration	no	Glemt passordet
-lost password link at login screen?	admin	no	Lenke om glemt passord i innloggingsbildet
+lost password link at login screen?	registration	no	Lenke om glemt passord i innloggingsbildet
 lost user account retrieval	registration	no	Gjenfinne glemt brukerident
 lost user id	registration	no	Glemt brukerident
-lost user id link at login screen?	admin	no	Lenke om glemt brukerident i innloggingsbildet
+lost user id link at login screen?	registration	no	Lenke om glemt brukerident i innloggingsbildet
 lost_user_id_message	registration	no	Her er brukerkontiene tilknyttet denne e-mailadressen.
 male	registration	no	Kjønn
-manage fields	admin	no	Håndtere felt
+manage fields	registration	no	Håndtere felt
 name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	no	Navn (blank unntatt for tekst, tekstområde, nedtrekksmeny, sjekkboks; ellers kun alfanumerisk)
-not a user yet? register now	login	no	Ikke registrert bruker ennå?  Registrer nå
+not a user yet? register now	registration	no	Ikke registrert bruker ennå?  Registrer nå
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	no	Online-registrering er ikke aktivert.  Kontakt EDB-ansvarlig for mer informasjon om registrering.
 order	registration	no	Sortering
-password is	admin	no	Passord er
+password is	registration	no	Passord er
 phone	registration	no	Telefon
 re-enter password	registration	no	Skriv inn passord på nytt
 re-enter your password	registration	no	Skriv inn passord ditt på nytt
-register link at login screen?	admin	no	Registrere link på påloggingssiden?
-registration	common	no	Registrering
-registration settings	admin	no	Innstillinger for registrering
+register link at login screen?	registration	no	Registrere link på påloggingssiden?
+registration	registration	no	Registrering
+registration settings	registration	no	Innstillinger for registrering
 remove	registration	no	Fjerne
 report all problems and abuse to	registration	no	Rapporter alle feil og forstyrelser til
 required	registration	no	Nødvendig
@@ -56,8 +56,8 @@ unable to send mail, contact your administrator	registration	no	Ikke i stand til
 unknown first name	registration	no	Ukjent fornavn
 unknown last name	registration	no	Ukent etternavn
 update/add	registration	no	Oppdater/registrer
-use html	admin	no	bruk HTML
-use trial accounts?	admin	no	Bruke prøvekonti?
-username is	admin	no	Brukernavn er
+use html	registration	no	bruk HTML
+use trial accounts?	registration	no	Bruke prøvekonti?
+username is	registration	no	Brukernavn er
 values (for dropdown only; comma separated)	registration	no	Verdier (For nedtrekk, kommaseparert)
 we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	no	Vi har sendt en bekreftelse e-mail til din e-mailadresse.  Du må benytte deg av denne innen 2 timer.  Dersom du ikke gjør dette kan det ta noen dager før din logonident blir tilgjengelig igjen.
