@@ -1,3 +1,4 @@
+13: error occured	registration	fr	13: Une erreur est survenue
 <br>please contact the site administrator.	registration	fr	<br> Veuillez contacter l'administrateur du site
 [unknown first name]	registration	fr	[prénom inconnu]
 [unknown last name]	registration	fr	[nom de famille inconnu]
@@ -11,9 +12,11 @@ after you enter your username, instructions to change your password will be sent
 an error occured while updating your password. please contact the site administrator.	registration	fr	Une erreur s'est produite lors de la mise à jour de votre mot de passe. Veuillez contacter l'administrateur.
 an error occured. please contact our technical support and let them know.	registration	fr	Une erreur s'est produite. Veuillez contacter le support.
 an error occured. please remove your cookies and try again.	registration	fr	Une erreur s'est produite. Veuillez supprimer vos cookies et réessayer.
+an unknown error occured. <a href="%1?sessionid=cf6044818e99308a9bf7b5df239c5399">please try registering again.</a>	registration	fr	Une erreur inconnue est survenue. <a href="%1?sessionid=cf6044818e99308a9bf7b5df239c5399">Essayez de vous ré-enregistrer.</a>
 anonymous password	admin	fr	Mot de passe anonyme
 birthday	registration	fr	Anniversaire
 challenge question	registration	fr	Question de référence
+change login	registration	fr	Changer d'identifiant
 change password for user	registration	fr	Changer le mot de passe pour l'utilisateur
 checkbox	registration	fr	Boîte à cocher
 choose language	registration	fr	Choisissez la Langue
@@ -27,12 +30,13 @@ current fields:	registration	fr	Champs actuels:
 days until trial accounts expire	admin	fr	Nombre de jours jusqu'à ce que le compte de test expire
 display terms of service?	admin	fr	Afficher les termes et conditions?
 dropdown	registration	fr	Menu déroulant
+dropdown from table	registration	fr	Déposer depuis le tableau
 email address	registration	fr	adresse e-mail
 email address to display for support	admin	fr	Adresse e-mail à afficher pour le support
 email address to send notices from	admin	fr	Adresse e-mail à partir de laquelle les messages peuvent être envoyés
 enable registration?	admin	fr	Activer l'Enregistrement?
 enter your new password	registration	fr	Introduisez votre nouveau mot de passe
-error occured	registration	fr	Une erreur s'est produite
+error: dropdown from table '%1' is not correctly configured	registration	fr	Erreur: le dépôt depuisle tableau '%1' n'est pas configuré correctement
 error: dropdown list '%1' has no values	registration	fr	Erreur: la liste déroulante '%1' est vide
 female	registration	fr	Féminin
 gender	registration	fr	Sexe
@@ -94,6 +98,7 @@ update/add	registration	fr	Mettre à jour/Ajouter
 use html	admin	fr	utiliser HTML
 use trial accounts?	admin	fr	Utiliser des comptes à l'essai?
 username is	admin	fr	L'utilisateur est
+values 'for dropdown': comma separated), for 'dropdown from table': table,valuefield,displayfield	registration	fr	Valeurs 'For Dropdown': séparées par des virgules), pour 'Dropdown From Table': table,valuefield,displayfield
 values (for dropdown only; comma separated)	registration	fr	Valeurs (Pour Liste déroulante seulement; séparées par des virgules)
 we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	fr	Nous vous avons envoyé un e-mail de confirmation. Vous devez cliquer sur le lien dans les 2 heures. Si vous ne le faites pas, il faudra quelques jours pour que votre compte (loginid) soit disponible à nouveau.
 we have sent a mail to your email account: %s with your lost user ids.	registration	fr	Nous avons envoyé un mail à votre adresse e-mail %s avec vos IDs perdus.
@@ -110,5 +115,7 @@ you must fill in all of the required fields	registration	fr	Vous devez remplir t
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	fr	Vous avez demandé de changer votre mot de passe. Veuillez svp suivre l'URL ci-dessous pour le faire. Cette URL expirera dans 2 heures. Passé ce délai, vous devrez recommencer la procédure de récupération de mot de passe.
 you specified a value for %1 that is not a choice	registration	fr	Vous avez specifié une valeur pour %1 mais ce n'est pas un choix possible
 your account is now active!	registration	fr	Votre compte est actif maintenant!
+your login is not available. time is expired	registration	fr	Votre identifiant n'est pas disponible. Le temps est expiré
 your password was changed.	registration	fr	Votre mot de passe a été modifié.
+your registration code is missing or incorrect.	registration	fr	Votre code d'enregistrement est manquant ou incorrect.
 zip/postal	registration	fr	Code Postal
