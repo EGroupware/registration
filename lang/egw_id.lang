@@ -1,0 +1,50 @@
+account registration	registration	id	Pendaftaran Akoun
+activate account	admin	id	Aktifkan Akoun
+address	registration	id	Alamat
+anonymous password	admin	id	Anonymous password
+birthday	registration	id	HUT
+challenge question	registration	id	Challenge Question
+change login	registration	id	Change login
+checkbox	registration	id	Checkbox
+choose language	registration	id	Pilih Bahasa
+choose your language	registration	id	Pilih bahasa anda
+city	registration	id	Kota
+close window	registration	id	Tutup jendela
+country	registration	id	Negara
+current fields:	registration	id	Current fields:
+dropdown	registration	id	Dropdown
+email address	registration	id	alamat email
+enable registration?	admin	id	Bolehkan Pendaftaran?
+enter your new password	registration	id	Masukan password baru anda
+female	registration	id	Perempuan
+gender	registration	id	Jender
+hi	registration	id	Hai
+http password	admin	id	HTTP Password
+http username	admin	id	HTTP Username
+immediately	admin	id	Segera saja
+lost login id	login	id	Lupa LoginID
+lost password	login	id	Lupa password
+lost_user_id_message	registration	id	Here are the user accounts assoicated with this mail account:
+male	registration	id	Laki-laki
+manage fields	admin	id	Manage Fields
+order	registration	id	Urutan
+password is	admin	id	Password yaitu
+phone	registration	id	Telepon
+re-enter password	registration	id	Ulangi masukan Password
+re-enter your password	registration	id	Ulangi masukan Password
+register	common	id	daftar
+registration	common	id	Pendaftaran
+registration settings	admin	id	Pengaturan Pendaftaran
+remove	registration	id	Buang
+required	registration	id	Diperlukan
+response	registration	id	Tanggapan
+send email	admin	id	Kirim Email
+state	registration	id	Provinsi
+text	registration	id	Teks
+textarea	registration	id	Textarea
+type	registration	id	Tipe
+update/add	registration	id	Perbarui/Tambah
+use html	admin	id	gunakan HTML
+username is	admin	id	Nama pengguna yaitu
+wrong session	registration	id	Wrong session
+zip/postal	registration	id	Kodepos
