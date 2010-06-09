@@ -20,6 +20,7 @@
 	$setup_info['registration']['version']   = '1.4';
 	$setup_info['registration']['app_order'] = '40';
 	$setup_info['registration']['enable']    = 2;
+	$setup_info['registration']['license']   = 'GPL';
 
 	/* The tables this app creates */
 	$setup_info['registration']['tables']    = array('egw_reg_accounts','egw_reg_fields');
