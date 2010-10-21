@@ -59,6 +59,9 @@
 	);
 	include('../header.inc.php');
 
+	// force idots template set, even if user has eg. jDots, which would redirect to create it's framework
+	$GLOBALS['egw_info']['server']['template_set'] = 'idots';
+	
 	// config needs to be global in registration app
 	$c =& CreateObject('phpgwapi.config','registration');
 	$c->read_repository();

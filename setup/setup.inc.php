@@ -19,6 +19,9 @@ $setup_info['registration']['app_order'] = '40';
 $setup_info['registration']['enable']    = 2;
 $setup_info['registration']['license']   = 'GPL';
 
+// RB: never install by default, only via setup
+$setup_info['registration']['only_db'] = array('never');
+
 /* The tables this app creates */
 $setup_info['registration']['tables']    = array('egw_reg_accounts','egw_reg_fields');
 
