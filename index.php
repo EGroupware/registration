@@ -1,16 +1,17 @@
 <?php
-	/**************************************************************************\
-	* phpGroupWare - Registration                                              *
-	* http://www.phpgroupware.org                                              *
-	* This application written by Joseph Engo <jengo@phpgroupware.org>         *
-	* --------------------------------------------                             *
-	* Funding for this program was provided by http://www.checkwithmom.com     *
-	* --------------------------------------------                             *
-	*  This program is free software; you can redistribute it and/or modify it *
-	*  under the terms of the GNU General Public License as published by the   *
-	*  Free Software Foundation; either version 2 of the License, or (at your  *
-	*  option) any later version.                                              *
-	\**************************************************************************/
+	/*********************************************************************************\
+	* eGroupWare - Registration                                                       *
+	* http://www.egroupware.org                                                       *
+	*                                                                                 *
+	* This application originally written by Joseph Engo <jengo@phpgroupware.org>     *
+	* Funding for this program originally provided by http://www.checkwithmom.com     *
+	***********************************************************************************
+	* @link http://www.egroupware.org
+	* @author Nathan Gray
+	* @package registration
+	* @copyright (c) 2011 by Nathan Gray
+	* @license http://opensource.org/licenses/gpl-license.php GPL - GNU General Public License
+	\*
 
 	/* $Id$ */
 
@@ -22,12 +23,8 @@
 	 */
 	function registration_check_anon_access(&$anon_account)
 	{
-		$c =& CreateObject('phpgwapi.config','registration');
-		$c->read_repository();
-		$config =& $c->config_data;
-		unset($c);
-
-		if ($config['enable_registration'] == "True" && $config['anonymous_user'])
+		$config = config::read('registration');
+		if ($config['enable_registration'] && $config['anonymous_user'])
 		{
 			$anon_account = array(
 				'login'  => $config['anonymous_user'],
@@ -39,16 +36,10 @@
 		return false;
 	 }
 
-	 // if activation id is given header to activate method
-	 if(isset($_GET['aid']) && preg_match('/^[0-9a-f]{32}$/',$_GET['aid']))
+	 // if confirmation id is given, redirect to confirm
+	 if(isset($_GET['confirm']) && preg_match('/^[0-9a-f]{32}$/',$_GET['confirm']))
 	 {
-		header('Location:index.php?menuaction=registration.uireg.step4_activate_account&reg_id='.$_GET['aid']);
-		exit;
-	 }
-	 if(isset($_GET['pwid']) && preg_match('/^[0-9a-f]{32}$/',$_GET['pwid']))
-	 {
-		header('Location:index.php?menuaction=registration.uireg.lostpw_step3_validate_reg_id&reg_id='.$_GET['pwid']);
-		exit;
+		$_GET['menuaction'] = 'registration.registration_ui.confirm';
 	 }
 
 	$GLOBALS['egw_info']['flags'] = array(
@@ -62,11 +53,6 @@
 	// force idots template set, even if user has eg. jDots, which would redirect to create it's framework
 	$GLOBALS['egw_info']['server']['template_set'] = 'idots';
 	
-	// config needs to be global in registration app
-	$c =& CreateObject('phpgwapi.config','registration');
-	$c->read_repository();
-	$config = $c->config_data;
-
 	$app = 'registration';
 	if ($_GET['menuaction'])
 	{
@@ -76,10 +62,10 @@
 			$obj =& CreateObject($app. '.'. $class);
 			if (is_array($obj->public_functions) && $obj->public_functions[$method])
 			{
-				$obj->$method();
-				exit();
+				echo $obj->$method();
+				common::egw_exit();
 			}
 		}
 	}
-	$_obj =& CreateObject('registration.uireg');
-	$_obj->step1_ChooseLangAndLoginName();
+	ExecMethod('registration.registration_ui.register');
+	common::egw_exit();

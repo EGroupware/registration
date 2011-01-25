@@ -16,33 +16,24 @@
   /* $Id$ */
 
   // table array for registration
-	$phpgw_baseline = array(
-		'egw_reg_accounts' => array(
-			'fd' => array(
-				'reg_id' => array('type' => 'varchar','precision' => '32','nullable' => False),
-				'reg_lid' => array('type' => 'varchar','precision' => '255','nullable' => False),
-				'reg_info' => array('type' => 'text','nullable' => False),
-				'reg_dla' => array('type' => 'int','precision' => '4','nullable' => False),
-				'reg_status' => array('type' => 'varchar','precision' => '1','nullable' => False,'default' => 'x')
-			),
-			'pk' => array(),
-			'fk' => array(),
-			'ix' => array(),
-			'uc' => array()
+$phpgw_baseline = array(
+	'egw_registration' => array(
+		'fd' => array(
+			'reg_id' => array('type' => 'auto','nullable' => False),
+			'contact_id' => array('type' => 'int','precision' => '4','nullable' => False),
+			'status' => array('type' => 'varchar','precision' => '1','nullable' => False,'default' => '0'),
+			'ip' => array('type' => 'varchar','precision' => '20'),
+			'timestamp' => array('type' => 'timestamp'),
+			'register_code' => array('type' => 'varchar','precision' => '40'),
+			'post_confirm_hook' => array('type' => 'varchar','precision' => '255'),
+			'sitemgr_version' => array('type' => 'int','precision' => '4','comment' => 'Key for the sitemgr block info'),
+			'account_lid' => array('type' => 'varchar','precision' => '64'),
+			'password' => array('type' => 'varchar','precision' => '100')
 		),
-		'egw_reg_fields' => array(
-			'fd' => array(
-				'field_name' => array('type' => 'varchar','precision' => '255','nullable' => False),
-				'field_text' => array('type' => 'text','nullable' => False),
-				'field_type' => array('type' => 'varchar','precision' => '255','nullable' => False),
-				'field_values' => array('type' => 'text'),
-				'field_required' => array('type' => 'char','precision' => '1','nullable' => False),
-				'field_order' => array('type' => 'int','precision' => '4','nullable' => False)
-			),
-			'pk' => array(),
-			'fk' => array(),
-			'ix' => array(),
-			'uc' => array()
-		)
-	);
+		'pk' => array('reg_id'),
+		'fk' => array('contact_id' => 'egw_addressbook.contact_id','sitemgr_version' => 'egw_sitemgr_content.version_id'),
+		'ix' => array(),
+		'uc' => array()
+	)
+);
 ?>

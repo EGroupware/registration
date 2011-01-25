@@ -76,3 +76,30 @@ function registration_upgrade1_4()
 {
 	return $GLOBALS['setup_info']['registration']['currentver'] = '1.8';
 }
+
+function registration_upgrade1_8()
+{
+	$GLOBALS['egw_setup']->oProc->CreateTable('egw_registration',array(
+		'fd' => array(
+			'reg_id' => array('type' => 'auto','nullable' => False),
+			'contact_id' => array('type' => 'int','precision' => '4','nullable' => False),
+			'status' => array('type' => 'varchar','precision' => '1','nullable' => False,'default' => '0'),
+			'ip' => array('type' => 'varchar','precision' => '20'),
+			'timestamp' => array('type' => 'timestamp'),
+			'register_code' => array('type' => 'varchar','precision' => '40'),
+			'post_confirm_hook' => array('type' => 'varchar','precision' => '255'),
+			'sitemgr_version' => array('type' => 'int','precision' => '4','comment' => 'Key for the sitemgr block info'),
+			'account_lid' => array('type' => 'varchar','precision' => '64'),
+			'password' => array('type' => 'varchar','precision' => '100')
+		),
+		'pk' => array('reg_id'),
+		'fk' => array('contact_id' => 'egw_addressbook.contact_id'),
+		'ix' => array(),
+		'uc' => array()
+	));
+
+	$GLOBALS['egw_setup']->oProc->DropTable('egw_reg_accounts');
+	$GLOBALS['egw_setup']->oProc->DropTable('egw_reg_fields');
+	return $GLOBALS['setup_info']['registration']['currentver'] = '1.9.001';
+}
+

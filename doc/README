@@ -1,30 +1,42 @@
 These are quick and simple instructions on how to install and use this app.
 
-First, use setup3 to create your tables.
 
-Next, you will need to create an anonymous account.  Do this by
+You will need to create an anonymous account.  Do this by
 creating a normal user account with just permissions to the
-registration app.
-
-Create a group called 'users', this will be the default group that all
-users belong to.  So, you can give and take permissions to an entire
-group, instead of every single user.
-
-In main.php, there is a config section towards the top.
-	$domain         - Which domain to use out of the header.inc.php file, most will use default
-	$template_set   - Template set to use, this allows site to create there own layout
+registration app.  Or, you can use the same user as for Sitemgr, and
+add permissions to registration app.
 
 Login as admin user, go to the Administration menu, click on the
 Site Configuration link for the registration application. Insert the
-anonymous user and password.
+anonymous user and password, and fill in the other fields as desired.
 
-You can customize what input the user is asked to enter by logging in as
-an admin user, and going to Administration-&gt;Registration-&gt;Manage Fields.
-You don't need any fields, but you will need an 'email' field if you wish
-to use the Lost Password functions.
+You can customize what input the user is asked to enter by selecting the
+'Registration fields'.  Some fields are required (name, email) so you cannot
+choose them from the list.
 
 Make sure phpgwapi.send is properly configured, i.e. the database
 contains something like:
 
-INSERT INTO phpgw_config VALUES ('phpgwapi','smtp_server','localhost');
-INSERT INTO phpgw_config VALUES ('phpgwapi','smtp_port','25');
+INSERT INTO egw_config VALUES ('phpgwapi','smtp_server','localhost');
+
+Registration also has a sitemgr module which allows for more customization.
+You can create a page as you want it, and point the login module's link to it.
+
+After the user enters their information, a confirmation link will be emailed to them.
+If they click on the link before it expires, the registration is completed.  
+If a confirmation link expires, the user's information is purged.
+
+Developers:
+-----------
+Registration supports a 'registration' hook, so you can register for other
+things / apps using the same process.  The hook should return an array with the 
+keys 'name', 'pre_check' and 'post_confirm_hook'.  It is also acceptable to return
+an array with several name/pre_check/post_confirm_hook sub-arrays for multiple options
+per application.
+
+Name should be an un-translated [human] reference.  
+pre_check and post_confirm_hook should be methods in the standard ExecMethod style.
+pre_check is optional, and will be called with the data about to be saved.  It should return
+true or an error message.
+post_confirm_hook does not need to return anything, and is called after the confirmation is 
+completed.
