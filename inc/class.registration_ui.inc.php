@@ -92,14 +92,16 @@ class registration_ui {
 			$fields = explode(',',$config['show']);
 			$data['show'] += array_combine($fields, array_fill(0,count($fields),true));
 		}
-
+		$data += $content;
 		if($content['submitit']) {
-                        if ((isset($content['captcha_result']) && $content['captcha'] != $content['captcha_result']) || // no correct captcha OR
+                        if (isset($data['show']['captcha']) && 
+				((isset($content['captcha_result']) && $content['captcha'] != $content['captcha_result']) || // no correct captcha OR
                                 (time() - $content['start_time'] < 10 &&                                // bot indicator (less then 10 sec to fill out the form and
-                                !$GLOBALS['egw_info']['etemplate']['java_script']))     // javascript disabled)
+                                !$GLOBALS['egw_info']['etemplate']['java_script'])))     // javascript disabled)
                         {
                                 $captcha_fail = true;
                                 $template->set_validation_error('captcha',lang('Wrong - try again ...'));
+				unset($content['captcha']);
                         }
 
 			if(!$captcha_fail) {
@@ -130,6 +132,7 @@ class registration_ui {
 								// Send out confirmation link
 								$msg = registration_bo::send_confirmation($config, $registration);
 							}
+							$account_ok = true;
 						}
 					}
 				} catch (egw_exception $e) {
@@ -152,6 +155,10 @@ class registration_ui {
 			$preserv['captcha_result'] = $num1-$num2;
                 }
 		$preserve['start_time'] = time();
+
+		if($account_ok) {
+			$readonlys['__ALL__'] = true;
+		}
 
 		// Display form
 		$GLOBALS['egw_info']['flags'] = array(
@@ -216,9 +223,10 @@ class registration_ui {
 	 */
 	public function lost_password($content = array()) {
 
+		$data = $content;
 		// Deal with incoming
 		if($content['wait'] && $content['wait'] > time()) {
-			$data['message'] = lang('Hack reduction - please wait %1 seconds and try again.', $content['wait'] - time());
+			$data['message'] = lang('Abuse reduction - please wait %1 seconds and try again.', $content['wait'] - time());
 			$data['username'] = $content['username'];
 			unset($content['username']);
 		}
@@ -226,11 +234,10 @@ class registration_ui {
 			// Find username
 			$account_id = $GLOBALS['egw']->accounts->name2id($content['username']);
 			if($account_id) {
-				$addressbook = new addressbook_bo();
-				$account = $addressbook->read("account:$account_id");
+				$account = $GLOBALS['egw']->accounts->read($account_id);
 				$info = array(
-					'contact_id'	=> $account['id'],
-					'email'		=> $account['email'],
+					'contact_id'	=> $account['person_id'],
+					'email'		=> $account['account_email'],
 					'timestamp'	=> time() + $this->expiry * 3600,
 					'post_confirm_hook' => 'registration.registration_ui.change_password'
 				);
