@@ -359,8 +359,8 @@ class registration_ui {
 			$data['message'] = lang('Anonymous user needs access to registration application');
 		}
 
-		if(!$data['name_nobody']) $data['name_nobody'] = 'noreply@'.$GLOBALS['egw_info']['server']['mail_suffix'];
-		if(!$data['mail_nobody']) $data['mail_nobody'] = 'eGroupWare '.lang('registration');
+		if(!$data['name_nobody']) $data['name_nobody'] = 'eGroupWare '.lang('registration');
+		if(!$data['mail_nobody']) $data['mail_nobody'] = 'noreply@'.$GLOBALS['egw_info']['server']['mail_suffix'];
 
 		// Get the addressbooks with the right permissions
 		$sel_options['pending_addressbook'] = registration_bo::get_allowed_addressbooks(registration_bo::PENDING);
