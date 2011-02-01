@@ -128,7 +128,7 @@ class registration_bo extends bo_tracking {
 		if($config['tos_text']) $message .= "\n" . lang('terms of service') . "\n" . $config['tos_text'];
 		if($config['support_email']) $message .= "\n" . $config['support_email'];
 
-		$mail = new egw_mailer();
+		$mail = new send();
 		$mail->From = $config['mail_nobody'] ? $config['mail_nobody'] : 'noreply@'.$GLOBALS['egw_info']['server']['mail_suffix'];
 		$mail->FromName = $config['name_nobody'] ? $config['name_nobody'] : 'eGroupWare '.lang('registration');
 		$mail->AddAddress($reg_info['email'], $reg_info['n_fileas']);
