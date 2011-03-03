@@ -115,6 +115,10 @@ class module_registration_form extends sitemgr_module
 				'default' => 'registration.registration_form',
 			),
 		);
+		if($this->block->arguments['register_for'] == 'account')
+		{
+			$this->block->arguments['fields'][] = 'n_fn';
+		}
 		return parent::get_user_interface();
 	}
         function get_content(&$arguments, $properties) {
