@@ -121,7 +121,12 @@ class registration_bo extends bo_tracking {
 	public function send_confirmation($arguments, $reg_info) {
 		$config = config::read('registration');
 		$time = egw_time::to($reg_info['timestamp']) . ' (' . $arguments['expiry'] . ' ' . lang('hours') . ')';
-		$link = html::link($arguments['link'],  array('confirm' => $reg_info['register_code']));
+		if(substr($arguments['link'] ,0,4) == 'http') {
+			$link = $arguments['link'] . '&confirm='.$reg_info['register_code'];
+		} else {
+			$link = html::link($arguments['link'],  array('confirm' => $reg_info['register_code']));
+		}
+		
 		$subject = $arguments['subject'] ? $arguments['subject'] : lang('subject for confirmation email title: %1', $arguments['title']);
 		$message = $arguments['message'] ? $arguments['message'] : lang('confirmation email for %1 expires %2 link: %3', $arguments['title'], $time, $link);
 
