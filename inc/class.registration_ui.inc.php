@@ -384,9 +384,9 @@ class registration_ui {
 			'adr_one_locality'     => lang('city').' + '.lang('zip code'),
 			'sep3'                 => '----------------------------',
 		);
-		foreach($uicontacts->customfields as $name => $data)
+		foreach($uicontacts->customfields as $name => $cf_data)
 		{
-			$sel_options['show']['#'.$name] = $data['label'];
+			$sel_options['show']['#'.$name] = $cf_data['label'];
 		}
 		$sel_options['show'] += array(
 			'sep4'                 => '----------------------------',
