@@ -242,7 +242,7 @@ class registration_ui {
 					'post_confirm_hook' => 'registration.registration_ui.change_password'
 				);
 				$reg_id = registration_bo::save($info, false);
-				$info = registration_bo::read($reg_id);
+				$info += registration_bo::read($reg_id);
 				$arguments = array(
 					'link'	=> '/registration/',
 					'title'	=> lang('Lost Password'),
