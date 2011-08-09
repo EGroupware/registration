@@ -160,6 +160,12 @@ class registration_ui {
 			$readonlys['__ALL__'] = true;
 		}
 
+		translation::add_app('addressbook');
+		if($data['show']['adr_one_locality']) {
+			$bo_addressbook = new addressbook_bo();
+			$data['show']['adr_one_locality']  = $bo_addressbook->addr_format_by_country($data['adr_one_countryname']);
+		}
+
 		// Display form
 		$GLOBALS['egw_info']['flags'] = array(
 			'noheader'  => True,

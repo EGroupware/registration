@@ -199,6 +199,8 @@ class registration_sitemgr extends addressbook_contactform
 		if ($msg) $preserv['msg'] = $msg;
 		$content['message'] = $msg;
 
+		translation::add_app('addressbook');
+
 		// a simple calculation captcha
 		$num1 = rand(1,99);
 		$num2 = rand(1,99);
