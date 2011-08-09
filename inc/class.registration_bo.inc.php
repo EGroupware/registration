@@ -46,7 +46,10 @@ class registration_bo extends bo_tracking {
 		$reg_info = self::$so->read((int)$reg_id);
 		if($reg_info && $reg_info['contact_id']) {
 			$addressbook = new addressbook_bo();
-			$reg_info += $addressbook->read($reg_info['contact_id']);
+			$contact = $addressbook->read($reg_info['contact_id']);
+			if($contact && is_array($contact)) {
+				$reg_info += $contact;
+			}
 		}
 		return $reg_info;
 	}

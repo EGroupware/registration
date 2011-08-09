@@ -51,6 +51,24 @@ class registration_ui {
 		
 		$registration = registration_bo::read($reg_id);
 
+		if($content && $registration['status'] == registration_bo::PENDING && $GLOBALS['egw_info']['user']['apps']['admin']) {
+			if($content['cancel']) {
+				// Cancel pending registration
+				$addressbook = new addressbook_bo();
+				if(!$addressbook->delete($registration['contact_id'])) {
+					$msg = lang('%1 needs permission to delete - address remains.', common::grab_owner_name($addressbook->user));
+				}
+				registration_bo::delete($registration['reg_id']);
+				$registration = registration_bo::read($reg_id);
+				$msg .= lang('Canceled');
+			}
+			if($content['register']) {
+				// Push through pending registration
+				$registration = registration_bo::confirm($registration['register_code']);
+				$mgs .= lang('Registered');
+			}
+		}
+
 		switch ($registration['status']) {
 			case registration_bo::PENDING:
 				$registration['timestamp_label'] = lang('Expires');
@@ -66,6 +84,18 @@ class registration_ui {
 		);
 
 		$sel_options['status'] = registration_bo::$status_list;
+
+		$registration['no_actions'] = !$GLOBALS['egw_info']['user']['apps']['admin'] || $registration['status'] != registration_bo::PENDING;
+		if(!$registration['no_actions']) {
+			// Check ACL on target addressbooks
+			$addressbook = new addressbook_bo();
+			if(!in_array($registration['owner'], array_keys($addressbook->get_addressbooks(EGW_ACL_DELETE)))) {
+				$msg .= lang('You don\'t have delete permission, address will be left if you manually register or cancel.');
+			}
+		}
+
+		$registration['msg'] = $msg;
+		$preserv['reg_id'] = $reg_id;
 
 		$GLOBALS['egw_info']['flags']['app_header'] = lang('registration');
 		$template = new etemplate('registration.view');

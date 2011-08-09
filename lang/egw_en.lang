@@ -1,3 +1,7 @@
+%1 needs permission to delete - address remains.	registration	en	%1 needs permission to delete - address remains.
+%s days	registration	en	%s days
+%s hours	registration	en	%s hours
+%s please calculate the result	registration	en	%s please calculate the result
 13: error occured	registration	en	13: error occured
 <br>please contact the site administrator.	registration	en	<br>Please contact the site administrator.
 [unknown first name]	registration	en	[unknown first name]
@@ -10,6 +14,7 @@ account registration	registration	en	Account registration
 activate account	admin	en	Activate account
 address	registration	en	Address
 address line 2	registration	en	Address line 2
+addressbook the contacts should be saved to before they are confirmed	registration	en	Addressbook the contacts should be saved to before they are confirmed
 addressbook the contacts should be saved to before they are confirmed.	registration	en	Address book the contacts should be saved to before they are confirmed.
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	en	After you enter your email address, the user accounts associated with this email address will be mailed to that address.
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	en	After you enter your username, instructions to change your password will be sent to you by email to the address you gave when you registered.
@@ -18,7 +23,10 @@ an error occured. please contact our technical support and let them know.	regist
 an error occured. please remove your cookies and try again.	registration	en	An error occurred. Please remove your cookies and try again.
 an unknown error occured. <a href="%1">please try registering again.</a>	registration	en	An unknown error occurred. <a href="%1">Please try registering again.</a>
 anonymous password	admin	en	Anonymous password
+anonymous user	registration	en	Anonymous user
 anonymous user needs access to registration application	registration	en	Anonymous user needs access to registration application
+business phone	registration	en	Business phone
+canceled	registration	en	Canceled
 change password for user	registration	en	Change password for user
 city	registration	en	City
 confirm	registration	en	Confirm
@@ -33,7 +41,9 @@ display terms of service?	admin	en	Display terms of service?
 email address	registration	en	Email address
 email address to display for support	admin	en	Email address to display for support
 email address to send notices from	admin	en	Email address to send notices from
+enable registration	registration	en	Enable registration
 enable registration?	admin	en	Enable registration?
+enter password	registration	en	Enter password
 enter your new password	registration	en	Enter your new password
 expires	registration	en	Expires
 fax	registration	en	Fax
@@ -47,8 +57,13 @@ i have read the terms and conditions and agree by them.	registration	en	I have r
 if you did not request this account, simply ignore this message.	registration	en	If you did not request this account, simply ignore this message.
 if you did not request this change, simply ignore this message.	registration	en	If you did not request this change, simply ignore this message.
 immediately	admin	en	Immediately
+internet	registration	en	Internet
+ip	registration	en	IP
+login id	registration	en	Login ID
+login page	registration	en	Login page
 lost login id	login	en	Lost login ID
 lost password	login	en	Lost password
+lost password link	registration	en	Lost password link
 lost password link at login screen?	admin	en	Lost password link at login screen?
 lost user account retrieval	registration	en	Lost user account retrieval
 lost user id	registration	en	Lost user ID
@@ -67,16 +82,18 @@ re-enter password	registration	en	Re-enter password
 re-enter your password	registration	en	Re-enter your password
 register	common	en	Register
 register link at login screen?	admin	en	Register link at login screen?
-registered	common	en	Registered
+registered	registration	en	Registered
+registered accounts expire	registration	en	Registered accounts expire
 registration	common	en	Registration
 registration complete	registration	en	Registration complete
+registration expires after	registration	en	Registration expires after
+registration fields	registration	en	Registration fields
 registration settings	admin	en	Registration settings
 remove	registration	en	Remove
 report all problems and abuse to	registration	en	Report all problems and abuse to
 required	registration	en	Required
 response	registration	en	Response
 send email	admin	en	Send email
-sorry, no account exists for	registration	en	Sorry, no account exists for
 sorry, no account exists for %1	registration	en	Sorry, no account exists for %1
 sorry, that username does not exist.	registration	en	Sorry, that user name does not exist.
 sorry, that username is already taken.	registration	en	Sorry, that user name is already taken.
@@ -110,6 +127,8 @@ work phone	registration	en	Work phone
 wrong - try again ...	registration	en	Wrong - try again ...
 wrong session	registration	en	Wrong session
 you can go back to the login page	registration	en	You can go back to the login page
+you don't have delete permission, address will be left if you manually register or cancel.	registration	en	You don\'t have delete permission, address will be left if you manually register or cancel.
+you don\'t have delete permission, address will be left if you manually register or cancel.	registration	en	You don\'t have delete permission, address will be left if you manually register or cancel.
 you have entered an invalid birthday	registration	en	You have entered an invalid birthday
 you have entered an invalid email address	registration	en	You have entered an invalid email address
 you must enter a password	registration	en	You must enter a password
@@ -123,5 +142,4 @@ your account is now active!	registration	en	Your account is now active!
 your login is not available. time is expired	registration	en	Your login is not available. Time is expired
 your password was changed.	registration	en	Your password was changed.
 your registration code is missing or incorrect.	registration	en	Your registration code is missing or incorrect.
-zip code	registration	en	zip code
 zip/postal	registration	en	ZIP/Postal
