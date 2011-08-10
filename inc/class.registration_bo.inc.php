@@ -231,6 +231,7 @@ class registration_bo extends bo_tracking {
 	 * @param account optional array of info populated from $registration to be passed to user command
 	 */
 	public static function check_account($registration, &$account = array()) {
+		$config = config::read('registration');
 		$account = array(
 			'account_lid'		=> $registration['account_lid'],
 			'account_firstname'	=> $registration['n_given'],
@@ -238,8 +239,8 @@ class registration_bo extends bo_tracking {
 			'account_email'		=> $registration['email'],
 			'account_passwd'	=> $registration['password'],
 			'account_active'	=> true,
-			'account_primary_group'	=> $version['primary_group'],
-			'account_groups'	=> $version['groups'],
+			'account_primary_group'	=> $config['primary_group'],
+			'account_groups'	=> $config['groups'],
 			'account_expires'	=> null,
 			'changepassword'        => true,
 			'mustchangepassword'    => true,
