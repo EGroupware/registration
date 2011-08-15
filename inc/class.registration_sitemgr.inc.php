@@ -118,8 +118,12 @@ class registration_sitemgr extends addressbook_contactform
 						$registration = registration_bo::read($reg_id);
 						if ($registration['contact_id'])
 						{
-							// Send out confirmation link
-							$msg = registration_bo::send_confirmation($arguments, $registration);
+							$config = config::read('registration');
+							if($arguments['register_for'] == 'account' && !$config['no_email'])
+							{
+								// Send out confirmation link
+								$msg = registration_bo::send_confirmation($arguments, $registration);
+							}
 
 							// check for fileuploads and attach the found files
 							foreach($content as $name => $value)

@@ -124,9 +124,6 @@ class registration_bo extends bo_tracking {
 	public function send_confirmation($arguments, $reg_info) {
 		$config = config::read('registration');
 
-		// If this is turned on, admin will manually process registrations
-		if($config['no_email']) return false;
-
 		$time = egw_time::to($reg_info['timestamp']) . ' (' . $arguments['expiry'] . ' ' . lang('hours') . ')';
 		if(substr($arguments['link'] ,0,4) == 'http') {
 			$link = $arguments['link'] . '&confirm='.$reg_info['register_code'];

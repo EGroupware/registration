@@ -154,13 +154,18 @@ class registration_ui {
 							$reg_id = false;
 						}
 
-						if($reg_id) {
+						if($reg_id)
+						{
 							$registration = registration_bo::read($reg_id);
 							if ($registration['contact_id'])
 							{
 								$config['title'] = lang('account registration');
-								// Send out confirmation link
-								$msg = registration_bo::send_confirmation($config, $registration);
+								// If this is turned on, admin will manually process registrations
+								if(!$config['no_email'])
+								{
+									// Send out confirmation link
+									$msg = registration_bo::send_confirmation($config, $registration);
+								}
 							}
 							$account_ok = true;
 						}
@@ -345,7 +350,7 @@ class registration_ui {
          */
         public function confirm() {
 		$GLOBALS['egw_info']['flags'] = array(
-			'app_header' => lang('Confirm')
+			'app_header' => lang('Confirm registration')
 		);
 		common::egw_header();
                 $register_code = ($_GET['confirm'] && preg_match('/^[0-9a-f]{32}$/',$_GET['confirm'])) ? $_GET['confirm'] : false;
