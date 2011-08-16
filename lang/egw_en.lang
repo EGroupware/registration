@@ -30,6 +30,7 @@ custom etemplate for the contactform	registration	en	Custom eTemplate for the co
 days until trial accounts expire	admin	en	Days until trial accounts expire
 department	registration	en	Department
 display terms of service?	admin	en	Display terms of service?
+do not send account registration email (manual processing by admin)	admin	en	Do not send account registration email (manual processing by admin)
 email address	registration	en	Email address
 email address to display for support	admin	en	Email address to display for support
 email address to send notices from	admin	en	Email address to send notices from
