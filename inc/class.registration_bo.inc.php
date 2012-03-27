@@ -134,7 +134,7 @@ class registration_bo extends bo_tracking {
 		$subject = $arguments['subject'] ? $arguments['subject'] : lang('subject for confirmation email title: %1', $arguments['title']);
 		$message = $arguments['message'] ? $arguments['message'] : lang('confirmation email for %1 expires %2 link: %3', $arguments['title'], $time, $link);
 
-		if($config['tos_text']) $message .= "\n" . lang('terms of service') . "\n" . $config['tos_text'];
+		if($config['tos_text']) $message .= "\n" . $config['tos_text'];
 		if($config['support_email']) $message .= "\n" . $config['support_email'];
 
 		$mail = new send();
@@ -212,7 +212,7 @@ class registration_bo extends bo_tracking {
 
 		// Run post confirmation code
 		if($registration['post_confirm_hook']) {
-			ExecMethod($registration['post_confirm_hook'], $registration);
+			$registration = ExecMethod($registration['post_confirm_hook'], $registration);
 		}
 
 		// Update link
@@ -355,13 +355,21 @@ class registration_bo extends bo_tracking {
 		$query = array('status' => self::PENDING, 'timestamp <= ' . $expire);
 
 		// Clear contact information
-		$expired = self::$so->search($query, array('reg_id','contact_id'));
+		$expired = self::$so->search($query, array('reg_id','contact_id','post_confirm_hook'));
 		if(is_array($expired)) {
 			$addressbook = new addressbook_bo();
 			foreach($expired as $record) {
 				// Clear registration
-				if(!$addressbook->delete($record['contact_id'])) {
-					echo $addressbook->user . ' needs permission to delete';
+				if($record['post_confirm_hook']) {
+					$record = self::read($record['reg_id']);
+					$record = ExecMethod2($record['post_confirm_hook'], $record);
+				}
+
+				if($record['contact_id'])
+				{
+					if(!$addressbook->delete($record['contact_id'])) {
+						echo $addressbook->user . ' needs permission to delete';
+					}
 				}
 				self::$so->delete($record['reg_id']);
 			}
