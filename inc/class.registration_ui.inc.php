@@ -124,7 +124,7 @@ class registration_ui {
 		}
 		$data += $content;
 		if($content['submitit']) {
-                        if (isset($data['show']['captcha']) && 
+                        if (isset($data['show']['captcha']) &&
 				((isset($content['captcha_result']) && $content['captcha'] != $content['captcha_result']) || // no correct captcha OR
                                 (time() - $content['start_time'] < 10 &&                                // bot indicator (less then 10 sec to fill out the form and
                                 !$GLOBALS['egw_info']['etemplate']['java_script'])))     // javascript disabled)
@@ -234,7 +234,7 @@ class registration_ui {
 				$info = array(
 					'contact_id'	=> $account['id'],
 					'email'		=> $content['email'],
-					'timestamp'	=> time(), 
+					'timestamp'	=> time(),
 					'n_fileas'	=> $account['n_fileas']
 				);
 				$arguments = array(
@@ -314,6 +314,11 @@ class registration_ui {
 	public function change_password($content) {
 		$preserv = $content;
 
+		// Make sure registration is valid - skip when being called from purge
+		if($content['reg_id'] && $content['status'] != registration_bo::CONFIRMED)
+		{
+			return;
+		}
 		if($content['password'] && $content['password'] != $content['password2']) {
 			unset($content['submit']);
 			$data['message'] = lang('The two passwords are not the same');
@@ -376,6 +381,13 @@ class registration_ui {
 			
 		if($content['save']) {
 			unset($content['save']);
+
+			// Update async job to run as this user
+			$async = new asyncservice();
+			$job = $async->read('registration-purge');
+			$job = $job['registration-purge'];
+			$job['account_id'] = $content['anonymous_user'];
+			$async->write($job, true);
 
 			// Widget gives ID, code wants username
 			$content['anonymous_user'] = $GLOBALS['egw']->accounts->id2name($content['anonymous_user']);
