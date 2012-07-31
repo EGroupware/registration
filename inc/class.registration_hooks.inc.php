@@ -51,7 +51,7 @@ class registration_hooks {
 	 */
 	static function search_link($location) {
 		return array(
-			'query' => 'registration.registration_bo.link_query',
+		//	'query' => 'registration.registration_bo.link_query',
 			'title' => 'registration.registration_bo.link_title',
 		//	'titles' => 'registration.registration_bo.link_titles',
 			'view' => array(
@@ -65,4 +65,3 @@ class registration_hooks {
 		);
 	}
 }
-?>
