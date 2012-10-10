@@ -187,6 +187,12 @@ class registration_bo extends bo_tracking {
 
 			// Anon user has no rights to edit accounts - you can't do this
 			//$addressbook->merge(array($registration['contact_id'], $account_id));
+			foreach($account as $key => &$value)
+			{
+				if(!$value) $value = $address[$key];
+			}
+
+			$addressbook->save($account, true);
 
 			// Registering an account creates a new addressbook entry.  Delete the old one.
 			if(!$addressbook->delete($registration['contact_id'])) echo 'Could not delete old address';
@@ -254,9 +260,9 @@ class registration_bo extends bo_tracking {
 	 * Get a list of things you can register for
 	 *
 	 * Registration supports a 'registration' hook, so you can register for other
-	 * things / apps using the same process.  
+	 * things / apps using the same process.
 	 * The hook should return an array with the keys 'name', 'pre_check' and 'post_confirm_hook'.
-	 * It is also acceptable to return an array with several name/pre_check/post_confirm_hook 
+	 * It is also acceptable to return an array with several name/pre_check/post_confirm_hook
 	 * sub-arrays for multiple options per application.
 	 *
 	 * Name should be an un-translated [human] reference.  If you want multiple options, name
@@ -264,7 +270,7 @@ class registration_bo extends bo_tracking {
 	 * pre_check and post_confirm_hook should be methods in the standard ExecMethod style.
 	 * pre_check is optional, and will be called with the data about to be saved.  It should return
 	 * true or an error message.
-	 * post_confirm_hook does not need to return anything, and is called after the confirmation is 
+	 * post_confirm_hook does not need to return anything, and is called after the confirmation is
 	 * completed.
 	 *
 	 * @return array
@@ -322,15 +328,15 @@ class registration_bo extends bo_tracking {
 	}
 
 	/**
-	 * Get a list of pages with registration blocks 
-	 * 
+	 * Get a list of pages with registration blocks
+	 *
 	 * The list is used for login module "Register" link
 	 */
 	public static function get_blocks() {
 		$modules = new Modules_BO();
 		$module_id = $modules->getmoduleid('registration_form');
 		$blocks = $GLOBALS['Common_BO']->content->so->getallblocks(
-			$GLOBALS['Common_BO']->cats->getpermittedcatsWrite(), 
+			$GLOBALS['Common_BO']->cats->getpermittedcatsWrite(),
 			$GLOBALS['Common_BO']->getstates('Edit')
 		);
 		$reg_blocks = array();
