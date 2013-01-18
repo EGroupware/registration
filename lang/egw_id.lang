@@ -1,50 +1,54 @@
+%s hours	registration	id	%s jam
 account registration	registration	id	Pendaftaran Akoun
 activate account	admin	id	Aktifkan Akoun
 address	registration	id	Alamat
+address line 2	registration	id	Alamat Baris 2
 anonymous password	admin	id	Anonymous password
-birthday	registration	id	HUT
-challenge question	registration	id	Challenge Question
-change login	registration	id	Change login
-checkbox	registration	id	Checkbox
-choose language	registration	id	Pilih Bahasa
-choose your language	registration	id	Pilih bahasa anda
+anonymous user	registration	id	Anonymous user
+business phone	registration	id	Telepon Bisnis
+canceled	registration	id	Dibatalkan
 city	registration	id	Kota
-close window	registration	id	Tutup jendela
-country	registration	id	Negara
-current fields:	registration	id	Current fields:
-dropdown	registration	id	Dropdown
+confirm	registration	id	konfirmasi
+department	registration	id	Departemen
 email address	registration	id	alamat email
 enable registration?	admin	id	Bolehkan Pendaftaran?
 enter your new password	registration	id	Masukan password baru anda
-female	registration	id	Perempuan
-gender	registration	id	Jender
-hi	registration	id	Hai
+expires	registration	id	Kadaluarsa
+fax	registration	id	Fax
+global options	admin	id	Opsi Global
+home phone	registration	id	Telepon Rumah
+hours	registration	id	jam
 http password	admin	id	HTTP Password
 http username	admin	id	HTTP Username
 immediately	admin	id	Segera saja
+internet	registration	id	Internet
+ip	registration	id	IP
 lost login id	login	id	Lupa LoginID
 lost password	login	id	Lupa password
-lost_user_id_message	registration	id	Here are the user accounts assoicated with this mail account:
-male	registration	id	Laki-laki
-manage fields	admin	id	Manage Fields
+mobile phone	registration	id	Telepon Bergerak
 order	registration	id	Urutan
-password is	admin	id	Password yaitu
-phone	registration	id	Telepon
+prefix	registration	id	Sebutan/Gelar
 re-enter password	registration	id	Ulangi masukan Password
 re-enter your password	registration	id	Ulangi masukan Password
 register	common	id	daftar
+registered	registration	id	terdaftar
 registration	common	id	Pendaftaran
 registration settings	admin	id	Pengaturan Pendaftaran
 remove	registration	id	Buang
 required	registration	id	Diperlukan
 response	registration	id	Tanggapan
 send email	admin	id	Kirim Email
-state	registration	id	Provinsi
+street	registration	id	Jalan
 text	registration	id	Teks
-textarea	registration	id	Textarea
+the two passwords are not the same	registration	id	Kedua password tidak sama
+there was an error saving your data :-(	registration	id	Ada kesalahan dalam menyimpan data anda :-(
 type	registration	id	Tipe
 update/add	registration	id	Perbarui/Tambah
 use html	admin	id	gunakan HTML
 username is	admin	id	Nama pengguna yaitu
+verification	registration	id	Pengujian
+work phone	registration	id	Telepon Kerja
+wrong - try again ...	registration	id	Keliru - coba lagi...
 wrong session	registration	id	Wrong session
+you must enter a password	registration	id	Anda harus mengisikan password
 zip/postal	registration	id	Kodepos

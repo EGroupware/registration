@@ -1,0 +1,24 @@
+address line 2	registration	ko	주소 2
+anonymous password	admin	ko	익명 암호
+anonymous user	registration	ko	익명 사용자
+business phone	registration	ko	업무 전화
+canceled	registration	ko	취소됨
+city	registration	ko	도시
+confirm	registration	ko	확인
+department	registration	ko	부서
+enter your new password	registration	ko	새로운 암호를 입력
+expires	registration	ko	만료
+fax	registration	ko	팩스
+home phone	registration	ko	집전화
+hours	registration	ko	시간
+ip	registration	ko	IP
+mobile phone	registration	ko	이동전화
+prefix	registration	ko	접두어
+re-enter password	registration	ko	비밀번호 재입력
+re-enter your password	registration	ko	새로운 암호 확인
+registered	registration	ko	등록됨
+remove	registration	ko	삭제
+street	registration	ko	주소
+the two passwords are not the same	registration	ko	두 비밀번호가 다릅니다
+work phone	registration	ko	직장 전화
+you must enter a password	registration	ko	패스워드를 입력해야 합니다.

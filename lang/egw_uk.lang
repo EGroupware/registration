@@ -1,0 +1,25 @@
+address line 2	registration	uk	Рядок 2
+anonymous user	registration	uk	Анонімний користувач
+business phone	registration	uk	Телефон
+canceled	registration	uk	Відмінено
+city	registration	uk	Місто
+confirm	registration	uk	Підтвердити
+department	registration	uk	Департамент
+enter your new password	registration	uk	Введіть новий пароль
+expires	registration	uk	Обмежено
+fax	registration	uk	Факс
+home phone	registration	uk	Телефон
+hours	registration	uk	години
+ip	registration	uk	IP
+mobile phone	registration	uk	Мобільний телефон
+order	registration	uk	Послідовність
+prefix	registration	uk	Префікс
+re-enter password	registration	uk	Перевведіть пароль
+re-enter your password	registration	uk	Введіть пароль ще раз
+remove	registration	uk	Видалити
+street	registration	uk	Вулиця
+text	registration	uk	Текст
+the two passwords are not the same	registration	uk	Паролі не співпадають
+type	registration	uk	Тип
+work phone	registration	uk	Робочий телефон
+you must enter a password	registration	uk	Необхідно ввести пароль
