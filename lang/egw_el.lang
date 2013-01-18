@@ -1,0 +1,26 @@
+address line 2	registration	el	Γραμμή Διευθύνσεων 2
+anonymous password	admin	el	Κωδικός ανωνύμου
+city	registration	el	Πόλη
+confirm	registration	el	Επιβεβαίωση
+contact fields to show	registration	el	Πεδία επαφών προς προβολή
+custom etemplate for the contactform	registration	el	Προσαρμογή eΤαμπλέτας για τη φόρμα επαφών
+department	registration	el	Τμήμα
+email address	registration	el	διεύθυνση email
+expires	registration	el	Λήγει
+fax	registration	el	Fax
+home phone	registration	el	Τηλέφωνο οικίας
+hours	registration	el	Ωρες
+mobile phone	registration	el	Κινητό τηλέφωνο
+order	registration	el	Ταξινόμηση
+prefix	registration	el	Πρόθεμα
+re-enter password	registration	el	Ξανα-εισάγετε το συνθηματικό
+remove	registration	el	αφαίρεση
+street	registration	el	Οδός
+the anonymous user has probably no add rights for this addressbook.	registration	el	Ο ανώνυμος χρήστης δεν έχει πιθανότατα δικαίωμα προσθήκης σε αυτό το βιβλίο διευθύνσεων
+the anonymous user needs add rights for it!	registration	el	Ο ανώνυμος χρήστης χρειάζεται δικαιώματα για να προσθέσει σε αυτό!
+the two passwords are not the same	registration	el	Τα δυο συνθηματικά δέν είναι ίδια
+there was an error saving your data :-(	registration	el	Υπήρξε ένα σφάλμα κατά την αποθήκευση των δεδομένων σας :-(
+verification	registration	el	Επαλήθευση
+work phone	registration	el	Τηλέφωνο Εργασίας
+wrong - try again ...	registration	el	Λάθος - προσπαθήστε ξανά ...
+zip code	registration	el	Τ.Κ.

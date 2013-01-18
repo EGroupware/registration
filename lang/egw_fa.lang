@@ -5,31 +5,27 @@ account password retrieval	registration	fa	دریافت گذرواژه حساب 
 account registration	registration	fa	ثبت حساب کاربری
 activate account	admin	fa	فعال سازی حساب کاربری
 address	registration	fa	نشانی
+address line 2	registration	fa	آدرس خط دوم
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	fa	پس از وارد کردن رایانامه، حساب کاربری که به این رایانامه تخصیص یافته برای شما ارسال می شود
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	fa	پس از وارد کردن نام کاربری خود، راهنمای تغییر گذرواژه - توسط رایانامه ای که زمان ثبت نام داده اید - برای شما ارسال خواهد شد.
 an error occured. please contact our technical support and let them know.	registration	fa	خطائی پیش آمده لطفا به بخش پشتیبانی خبر دهید تا آنها هم بدانند
 anonymous password	admin	fa	گذرواژه کاربر بی نام
-birthday	registration	fa	تاریخ تولد
-challenge question	registration	fa	سؤال چالشی
 change password for user	registration	fa	تغییر گذرواژه برای کاربر
-checkbox	registration	fa	جعبه انتخاب
-choose language	registration	fa	زبان را انتخاب کنید
-choose your language	registration	fa	زبان خود را انتخاب کنید
 city	registration	fa	شهر
-close window	registration	fa	بستن پنجره
-country	registration	fa	کشور
-current fields:	registration	fa	فیلدهای فعلی:
+confirm	registration	fa	تأیید
 days until trial accounts expire	admin	fa	مدت(روز) تا حسابها منقضی شوند
+department	registration	fa	قسمت
 display terms of service?	admin	fa	نمایش نحوه خدمات دهی؟
-dropdown	registration	fa	پائین افتادنی
 email address	registration	fa	نشانی رایانامه
 email address to display for support	admin	fa	نشانی رایانامه برای نمایش جهت پشتیبانی
 email address to send notices from	admin	fa	نشانی رایانامه ای که از طرف آن ازسال می شود
 enable registration?	admin	fa	فعال سازی ثبت نام؟
 enter your new password	registration	fa	گذرواژه جدید خود را وارد کنید
-female	registration	fa	زن
-gender	registration	fa	جنسیت
-hi	registration	fa	سلام
+expires	registration	fa	انقضاء
+fax	registration	fa	فکس
+global options	admin	fa	گزینه های عمومی
+home phone	registration	fa	تلفن منزل
+hours	registration	fa	ساعت
 http password	admin	fa	گذرواژه HTTP
 http username	admin	fa	نام کاربری HTTP
 i have read the terms and conditions and agree by them.	registration	fa	من همه قوانین و شروط را خواندم و قبول دارم
@@ -37,25 +33,22 @@ if you did not request this account, simply ignore this message.	registration	fa
 if you did not request this change, simply ignore this message.	registration	fa	اگر شما این تغییرات را درخواست نکردید، خیلی ساده این پیام را نادیده بگیرید
 immediately	admin	fa	فوری
 lost login id	login	fa	فراموشی شناسه کاربری
-lost password	registration	fa	فراموشی گذرواژه
+lost password	login	fa	فراموشی گذرواژه
 lost password link at login screen?	admin	fa	پیوند گذرواژه در صفحه ورود را فراموش کردید؟
 lost user account retrieval	registration	fa	دریافت حساب کاربری را فراموش کردید؟
 lost user id	registration	fa	فراموشی شناسه کاربری
 lost user id link at login screen?	admin	fa	پیوند شناسه کاربری در صفحه ورود را فراموش کردید؟
-lost_user_id_message	registration	fa	اینجا حسابهای کاربری وجود دارند که با این رایانامه ایجاد شده اند:
-male	registration	fa	مرد
-manage fields	admin	fa	مدیریت فیلدها
-name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	fa	نام (خالی، متن، محدوده متنی، پائین افتادنی، جعبه انتخاب، در غیر اینصورت حرف/رقم فقط قید شود
+mobile phone	registration	fa	تلفن همراه
 not a user yet? register now	login	fa	شناسه کاربری ندارید؟ هم اکنون ثبت نام کنید.
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	fa	ثبت نام برخط فعال نشده است لطفا با مدیر سایت برای دریافت اطلاعات بیشتر تماس بگیرید
 order	registration	fa	ترتیب
-password is	admin	fa	سبک گذرواژه
-phone	registration	fa	تلفن
+prefix	registration	fa	پیش شماره
 problem sending email:	registration	fa	خطا در ارسال رایانامه:
 re-enter password	registration	fa	گذرواژه را دوباره واردکنید
 re-enter your password	registration	fa	گذرواژه را دوباره واردکنید
 register	common	fa	ثبت نام
 register link at login screen?	admin	fa	پیوند ثبت نام در صفحه ورود باشد؟
+registered	common	fa	ثبت شده
 registration	common	fa	ثبت نام
 registration settings	admin	fa	تنظیمات ثبت نام
 remove	registration	fa	حذف
@@ -66,13 +59,10 @@ send email	admin	fa	ارسال رایانامه
 sorry, no account exists for	registration	fa	متأسفانه هیچ حساب کاربری موجود نیست برای
 sorry, that username does not exist.	registration	fa	متأسفانه نام کاربری موجود نیست
 sorry, that username is already taken.	registration	fa	متأسفانه نام کاربری قبلا ثبت شده است
-state	registration	fa	استان
-subject for confirmation email	admin	fa	موضوع برای رایانامه تأییدیه
+street	registration	fa	خیابان
 terms of service	registration	fa	شرایط خدمات
 terms of service text	admin	fa	متن شرایط خدمات
 text	registration	fa	متن
-textarea	registration	fa	محدوده متنی
-the passwords you entered don't match	registration	fa	گذرواژه هائی که وارد کردید، یکسان نیستند
 the two passwords are not the same	registration	fa	دو گذرواژه یکسان نیستند
 type	registration	fa	نوع
 unable to send mail, contact your administrator	registration	fa	ناتوان از ارسال رایانامه. با مدیر سیستم تماس بگیرید
@@ -83,9 +73,9 @@ use html	admin	fa	استفاده از زنگام
 use trial accounts?	admin	fa	استفاده از حسابهای آزمایشی؟
 username is	admin	fa	سبک شناسه کاربری
 values (for dropdown only; comma separated)	registration	fa	مقادیر(فقط برای پائین افتادنی، جدا کردن با ویرگول)
-we have sent a confirmation email to your email address. you must click on the link within 2 hours. if you do not, it may take a few days until your loginid will become available again.	registration	fa	ما یک رایانامه تأییدیه برای شما ارسال کردیم. تا دو ساعت دیگر روی پیوند ارسال شده در آن رایانامه کلیک کنید، در غیر اینصورت ممکن از چندین روز برای فعال سازی مجدد طول بکشد
 we have sent a mail to your email account: %s with your lost user ids.	registration	fa	ما یک رایانامه به نشانی رایانامه حسابتان ارسال کردیم: %s که شامل شناسه کاربری گم شده شماست
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	fa	ما یک رایانامه شامل راهنمای تغییر گذرواژه برایتن ارسال کردیم. برای استفاده از آن فقط تا دو ساعت دیگر وقت دارید. در غیر اینصورت باید مجددا در صفحه اصلی پیوند مربوط به فراموشی گذرواژه را دنبال کنید
+work phone	registration	fa	شماره محل کار
 wrong session	registration	fa	نشست غلط
 you have entered an invalid birthday	registration	fa	شما تاریخ تولد نادرست وارد نمودید
 you have entered an invalid email address	registration	fa	شما نشانی رایانامه غلط وارد کردید
@@ -95,6 +85,5 @@ you must enter an email account	registration	fa	شما باید یک رایان�
 you must fill in all of the required fields	registration	fa	شما باید همه فیلدهای لازم(*) را پرکنید
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	fa	شما درخواست کردید که گذرواژه خود را تغییر دهید. لطفا از URL زیر برای این کار استفاده کنید. این URL تا دو ساعت دیگر منقضی میشود.
 you specified a value for %1 that is not a choice	registration	fa	شما مقداری را برای %1 مشخص کردید که جزو انتخابها نبوده است
-your account is now active!  click <a href="%s">here</a> to log into your account.	registration	fa	حساب شما اکنون فعال شده است. <a href="%s">اینجا</a> کلیک کنید تا با حساب کاربریتان وارد شوید
-your password was changed. you can go back to the <a href="%1">login</a> page.	registration	fa	گذرواژه شما تغییر یافت. شما میتوانید اکنون به <a href="%1">صفحه ورود</a> برگردید
+zip code	registration	fa	کد پستی
 zip/postal	registration	fa	کد پستی

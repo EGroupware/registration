@@ -1,0 +1,27 @@
+address line 2	registration	bg	Адрес ред 2
+city	registration	bg	Град
+confirm	registration	bg	Потвърди
+contact fields to show	registration	bg	Полета на контакта, които да се показват
+custom etemplate for the contactform	registration	bg	eTemplate по избор за формата за контакти
+department	registration	bg	Отдел
+email address	registration	bg	E-Mail адрес
+enter your new password	registration	bg	Въведете нова парола
+fax	registration	bg	Факс
+home phone	registration	bg	Домашен телефон
+hours	registration	bg	часа
+mobile phone	registration	bg	Мобилен телефон
+order	registration	bg	Ред
+prefix	registration	bg	Префикс
+re-enter password	registration	bg	Въведете отново паролата
+re-enter your password	registration	bg	Въведете отново паролата
+registered	common	bg	регистрирано
+remove	registration	bg	премахване
+street	registration	bg	Улица
+the anonymous user has probably no add rights for this addressbook.	registration	bg	Анонимният потребител вероятно няма право да добавя в този адресен указател.
+the two passwords are not the same	registration	bg	Паролите не съвпадат
+there was an error saving your data :-(	registration	bg	Грешка при запис на данните Ви :-(
+verification	registration	bg	Проверка
+work phone	registration	bg	Служебен телефон
+wrong - try again ...	registration	bg	Грешка - опитайте отново
+you must enter a password	registration	bg	Трябва да въведете парола
+zip code	registration	bg	Пощенски код

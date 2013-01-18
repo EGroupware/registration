@@ -1,0 +1,11 @@
+anonymous password	admin	lo	ລະຫັດຜ່ານຜູ້ບໍ່ປະສົງອອກນາມ
+email address	registration	lo	ທີ່ຢູ່ email
+enter your new password	registration	lo	ໃສ່ລະຫັດຜ່ານໃໝ່ຂອງທ່ານ
+expires	registration	lo	ໝົດອາຍຸ
+hours	registration	lo	ຊົ່ວໂມງ
+order	registration	lo	Order
+re-enter password	registration	lo	ພິມລະຫັດຜ່ານອີກ
+re-enter your password	registration	lo	ໃສ່ລະຫັດຜ່ານໃໝ່ຊໍ້າຄືນອີກ
+remove	registration	lo	ລຶບອອກ
+the two passwords are not the same	registration	lo	ລະຫັດຜ່ານທັງ2ບໍ່ກົງກັນ
+you must enter a password	registration	lo	ທ່ານຕ້ອງໃສ່ລະຫັດຜ່ານ

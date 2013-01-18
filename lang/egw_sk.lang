@@ -1,7 +1,3 @@
-%1 needs permission to delete - address remains.	registration	sk	%1 potrebuje oprávnenie k odstráneniu - adresa ostáva.
-%s days	registration	sk	%s dní
-%s hours	registration	sk	%s hodín
-%s please calculate the result	registration	sk	%s prosím vypočitajte výsledok
 13: error occured	registration	sk	13: nastala chyba
 <br>please contact the site administrator.	registration	sk	<br> Prosím kontaktujte správcu tejto stránky.
 [unknown first name]	registration	sk	[neznáme meno]
@@ -14,7 +10,6 @@ account registration	registration	sk	Registrácia účtu
 activate account	admin	sk	Aktivácia účtu
 address	registration	sk	Adresa
 address line 2	registration	sk	Adresa riadok 2
-addressbook the contacts should be saved to before they are confirmed	registration	sk	Adresár, do ktorého sa majú uložiť kontakty pred potvrdením
 addressbook the contacts should be saved to before they are confirmed.	registration	sk	Adresár, do ktorého sa majú uložiť kontakty pred potvrdením.
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	sk	Keď zadáte svoju E-mailovú adresy, používateľské účty súvisiace s touto adresou sa budú posielať na túto adresu.
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	sk	Keď zadáte svoje používateľské meno, pokyny k zmene Vášho hesla budú odoslané na E-mailovú adresu, ktorú ste uviedli pri registrácii.
@@ -23,10 +18,7 @@ an error occured. please contact our technical support and let them know.	regist
 an error occured. please remove your cookies and try again.	registration	sk	Nastala chyba. Prosím odstráňte svoje cookies a skúste to znovu.
 an unknown error occured. <a href="%1">please try registering again.</a>	registration	sk	Nastala neznáma chyba <a href="%1">Prosím, skúste sa zaregistrovať znovu.</a>
 anonymous password	admin	sk	Anonymné heslo
-anonymous user	registration	sk	Anonymný používateľ
 anonymous user needs access to registration application	registration	sk	Anonymný používateľ potrebuje prístup k aplikácii Registrácia
-business phone	registration	sk	Telefón (práca)
-canceled	registration	sk	Zrušené
 change password for user	registration	sk	Zmeniť heslo používateľa
 city	registration	sk	Mesto
 confirm	registration	sk	Potvrdiť
@@ -42,9 +34,7 @@ do not send account registration email (manual processing by admin)	admin	sk	Nep
 email address	registration	sk	E-mailová adresa
 email address to display for support	admin	sk	E-mailová adresa zobrazená podpornému tímu
 email address to send notices from	admin	sk	E-mailová adresa, z ktorej sa posielajú upozornenia
-enable registration	registration	sk	Zapnúť registráciu
 enable registration?	admin	sk	Zapnúť registráciu?
-enter password	registration	sk	Zadajte heslo
 enter your new password	registration	sk	Zadajte vaše heslo
 expires	registration	sk	Vyprší
 fax	registration	sk	Fax
@@ -58,13 +48,8 @@ i have read the terms and conditions and agree by them.	registration	sk	Prečít
 if you did not request this account, simply ignore this message.	registration	sk	Ak ste o tento účet nežiadali, prosím ignorujte túto správu.
 if you did not request this change, simply ignore this message.	registration	sk	Ak ste nežiadali o túto zmenu, prosím ignorujte túto správu.
 immediately	admin	sk	Neodkladne
-internet	registration	sk	Internet
-ip	registration	sk	IP
-login id	registration	sk	ID prihlásenia
-login page	registration	sk	Prihlasovacia stránka
 lost login id	login	sk	Stratené prihlasovacie ID
 lost password	login	sk	Stratené heslo
-lost password link	registration	sk	Odkaz pre stratené heslo
 lost password link at login screen?	admin	sk	Stratený odkaz hesla na prihlasovacej stránke?
 lost user account retrieval	registration	sk	Stratené obnovenie hesla účtu
 lost user id	registration	sk	Stratené používateľské ID
@@ -83,18 +68,16 @@ re-enter password	registration	sk	Zadajte heslo znovu
 re-enter your password	registration	sk	Zadajte heslo znovu
 register	common	sk	registrovať
 register link at login screen?	admin	sk	Odkaz na registráciu na prihlasovacej stránke?
-registered	registration	sk	Registrovaný
-registered accounts expire	registration	sk	Registrované účty vypršia
+registered	common	sk	Registrovaný
 registration	common	sk	Registrácia
 registration complete	registration	sk	Registrácia je hotová
-registration expires after	registration	sk	Registrácia vyprší po
-registration fields	registration	sk	Polia registrácie
 registration settings	admin	sk	Nastavenia Registrácie
 remove	registration	sk	Odstrániť
 report all problems and abuse to	registration	sk	Všetky problémy a zneužitia hlásiť (komu)
 required	registration	sk	Povinné
 response	registration	sk	Odpoveď
 send email	admin	sk	Poslať E-mail
+sorry, no account exists for	registration	sk	Ľutujem, neexistuje žiadny účet pre
 sorry, no account exists for %1	registration	sk	Ľutujem, pre %1 neexistuje žiadny účet
 sorry, that username does not exist.	registration	sk	Ľutujem, takéto používateľské meno neexistuje
 sorry, that username is already taken.	registration	sk	Ľutujem, takéto používateľské meno sa už používa
@@ -127,7 +110,6 @@ work phone	registration	sk	Telefón (práca)
 wrong - try again ...	registration	sk	Chyba - skúste znovu...
 wrong session	registration	sk	Nesprávna relácia
 you can go back to the login page	registration	sk	Môžete sa vrátiť na prihlasovaciu stránku
-you don't have delete permission, address will be left if you manually register or cancel.	registration	sk	Nemáte oprávnenie odstraňovať, adresa ostane ak ručne zaregistrujete alebo zrušíte.
 you have entered an invalid birthday	registration	sk	Zadali ste nesprávny dátum narodenia
 you have entered an invalid email address	registration	sk	Zadali ste nesprávnu E-mailovú adresu
 you must enter a password	registration	sk	Musíte zadať heslo
@@ -141,4 +123,5 @@ your account is now active!	registration	sk	Váš účet je odteraz aktívny!
 your login is not available. time is expired	registration	sk	Vaše prihlásenie nie je dostupné. Čas vypršal
 your password was changed.	registration	sk	Vaše heslo bolo zmenené.
 your registration code is missing or incorrect.	registration	sk	Váš registračný kód chýba, alebo je chybný.
+zip code	registration	sk	PSČ
 zip/postal	registration	sk	PSČ
