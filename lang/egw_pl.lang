@@ -86,7 +86,7 @@ subject for confirmation email	admin	pl	Temat wiadomości służącej potwierdze
 terms of service	registration	pl	Warunki użytkowania
 terms of service text	admin	pl	Tekst Warunków użytkowania
 text	registration	pl	Tekst
-textarea	registration	pl	Obszar tekstowy
+textarea	registration	pl	Obszar tekstu
 the passwords you entered don't match	registration	pl	Podane hasła nie są zgodne
 the two passwords are not the same	registration	pl	Podane hasła nie są identyczne
 this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	pl	To jest email potwierdzający dla twojego nowego konta. Kliknij na poniższy link aby dokończyć aktywację konta. Ten link utraci ważność w 2 godziny.

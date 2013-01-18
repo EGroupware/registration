@@ -1,0 +1,12 @@
+anonymous password	admin	ko	익명 암호
+birthday	registration	ko	생일
+city	registration	ko	도시
+country	registration	ko	국가
+enter your new password	registration	ko	새로운 암호를 입력
+phone	registration	ko	통화
+re-enter password	registration	ko	비밀번호 재입력
+re-enter your password	registration	ko	새로운 암호 확인
+remove	registration	ko	삭제
+state	registration	ko	주
+the two passwords are not the same	registration	ko	두 비밀번호가 다릅니다
+you must enter a password	registration	ko	패스워드를 입력해야 합니다.
