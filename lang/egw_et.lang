@@ -17,7 +17,7 @@ choose language	registration	et	Vali Keel
 choose your language	registration	et	Vali oma keel
 city	registration	et	Linn
 click to log into your account	registration	et	Logimiseks oma kontole vajuta siia
-close window	registration	et	Sule Aken
+close window	registration	et	Sulge aken
 country	registration	et	Riik
 current fields:	registration	et	Kehtivad väljad:
 days until trial accounts expire	admin	et	Mitme päevapärast ajutised kontod kaotavad kehtivuse
@@ -44,7 +44,7 @@ manage fields	admin	et	Manageeri välju
 not a user yet? register now	login	et	Pole veel kasutaja? Registreeru siit
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	et	On-line registreerumine pole aktiveeritud. Saamaks rohkem infot kontakteeru lehe administraatoriga.
 password is	admin	et	Parool on
-phone	registration	et	Telefon
+phone	registration	et	Telefonikõne
 please contact the site administrator.	registration	et	Palun kontakteeru lehe administraatoriga.
 problem sending email:	registration	et	Probleem Emaili Saatmisel:
 re-enter password	registration	et	Korda parooli

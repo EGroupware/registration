@@ -37,7 +37,7 @@ not a user yet? register now	login	no	Ikke registrert bruker ennå?  Registrer n
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	no	Online-registrering er ikke aktivert.  Kontakt EDB-ansvarlig for mer informasjon om registrering.
 order	registration	no	Sortering
 password is	admin	no	Passord er
-phone	registration	no	Telefon
+phone	registration	no	Telefonoppkall
 re-enter password	registration	no	Skriv inn passord på nytt
 re-enter your password	registration	no	Skriv inn passord ditt på nytt
 register link at login screen?	admin	no	Registrere link på påloggingssiden?
@@ -50,7 +50,7 @@ send email	admin	no	Send e-mail
 sorry, that username does not exist.	registration	no	Beklager, brukernavn finnes ikke
 sorry, that username is already taken.	registration	no	Beklager, brukernavn allerede registrert
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	no	Beklager men vi har et problem med å aktivere din konto. Husk at lenker sendt via e-mail kun er gyldige i to timer.  Dersom du tror denne tiden var overskredet, prøv igjen.  Eller må du ta kontakt med EDB-ansvarlig
-state	registration	no	Status
+state	registration	no	Fylke
 subject for confirmation email	admin	no	Tema på bekreftelsesmail.
 terms of service	registration	no	Betingelser
 terms of service text	admin	no	Tekst for betingelser

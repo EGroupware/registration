@@ -50,7 +50,7 @@ not a user yet? register now	login	fa	شناسه کاربری ندارید؟ ه�
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	fa	ثبت نام برخط فعال نشده است لطفا با مدیر سایت برای دریافت اطلاعات بیشتر تماس بگیرید
 order	registration	fa	ترتیب
 password is	admin	fa	سبک گذرواژه
-phone	registration	fa	تلفن
+phone	registration	fa	تماس تلفنی
 problem sending email:	registration	fa	خطا در ارسال رایانامه:
 re-enter password	registration	fa	گذرواژه را دوباره واردکنید
 re-enter your password	registration	fa	گذرواژه را دوباره واردکنید
@@ -71,7 +71,7 @@ subject for confirmation email	admin	fa	موضوع برای رایانامه ت�
 terms of service	registration	fa	شرایط خدمات
 terms of service text	admin	fa	متن شرایط خدمات
 text	registration	fa	متن
-textarea	registration	fa	محدوده متنی
+textarea	registration	fa	محدوده متن
 the passwords you entered don't match	registration	fa	گذرواژه هائی که وارد کردید، یکسان نیستند
 the two passwords are not the same	registration	fa	دو گذرواژه یکسان نیستند
 type	registration	fa	نوع

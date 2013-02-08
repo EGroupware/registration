@@ -18,7 +18,7 @@ birthday	registration	zh	出生日期
 challenge question	registration	zh	安全提问
 change login	registration	zh	更改登录
 change password for user	registration	zh	修改用户密码
-checkbox	registration	zh	复选框
+checkbox	registration	zh	选择框
 choose language	registration	zh	选择语言
 choose your language	registration	zh	选择您的语言
 city	registration	zh	城市
@@ -62,7 +62,7 @@ not a user yet? register now	login	zh	不是用户？ 现在注册
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	zh	在线注册没有激活。请与网站管理员联系了解关于注册的更多信息。
 order	registration	zh	排序
 password is	admin	zh	密码是
-phone	registration	zh	电话
+phone	registration	zh	函电
 please contact the site administrator.	registration	zh	请联系网站管理员。
 problem sending email:	registration	zh	发送邮件问题：
 re-enter password	registration	zh	重输密码
@@ -81,12 +81,12 @@ sorry, that username does not exist.	registration	zh	抱歉，那用户名不存
 sorry, that username is already taken.	registration	zh	抱歉，那用户名已经被采取。
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	zh	抱歉，我们有一个问题激活您的帐户。注意在两小时内通过电子邮件链接是唯一有效的。如果您认为延迟送达是过期的，请再试。否则，请与站点管理员联系。
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	zh	对不起，为更改您的密码，我们需要检索所需要的信息。注意在两小时内通过电子邮件发送的链接是唯一有效的。如果你认为因迟延交付过期，可以再试。否则，请联络网站管理员。
-state	registration	zh	状态
+state	registration	zh	省/自治区
 subject for confirmation email	admin	zh	主题为确认邮件
 terms of service	registration	zh	服务条款
 terms of service text	admin	zh	服务条款文本
 text	registration	zh	文本
-textarea	registration	zh	文本框
+textarea	registration	zh	文字区
 the passwords you entered don't match	registration	zh	您输入的密码不匹配
 the two passwords are not the same	registration	zh	二个密码不是相同
 this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	zh	这封确认电子邮件为您新的帐户。点击以下链接完成激活您的帐户。这个链接在2个小时后将到期。

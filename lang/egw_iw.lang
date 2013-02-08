@@ -38,7 +38,7 @@ not a user yet? register now	login	iw	עדיין לא משתמש? הרשם עכ�
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	iw	.רישום מקונן לא פעיל. נא ליצור קשר עם המנהל לקבלת מידע נוסף בדבר הרישום
 order	registration	iw	סדר
 password is	admin	iw	הסיסמא הוא
-phone	registration	iw	טלפון
+phone	registration	iw	שיחת טלפון
 re-enter password	registration	iw	הכנס שוב את הסיסמא
 re-enter your password	registration	iw	הכנס שוב את הסיסמא שלך
 register link at login screen?	admin	iw	?לרשום קישור במסך הכניסה
@@ -51,7 +51,7 @@ send email	admin	iw	שלח דוא"ל
 sorry, that username does not exist.	registration	iw	מצטער, שם משתמש זה לא קיים
 sorry, that username is already taken.	registration	iw	מצטער, שם משתמש זה כבר בשימוש
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	iw	מצטער, יש בעיה בהפעלת החשבון שלך. שים לב שהקישורים הנשלחים בדואר אלקטרוני פועלים למשך שעתיים בלבד. אם לדעתך זמן זה עבר, נסה שוב. אחרת, נה לדווח למנהל
-state	registration	iw	מצב
+state	registration	iw	מדינה
 subject for confirmation email	admin	iw	נושא לדוא"ל של האישרור
 terms of service	registration	iw	תנאי שרות
 terms of service text	admin	iw	טקסט של תנאי שרות

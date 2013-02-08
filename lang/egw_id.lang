@@ -6,7 +6,7 @@ birthday	registration	id	HUT
 challenge question	registration	id	Challenge Question
 change login	registration	id	Change login
 checkbox	registration	id	Checkbox
-choose language	registration	id	Pilih Bahasa
+choose language	registration	id	Choose language
 choose your language	registration	id	Pilih bahasa anda
 city	registration	id	Kota
 close window	registration	id	Tutup jendela
@@ -29,7 +29,7 @@ male	registration	id	Laki-laki
 manage fields	admin	id	Manage Fields
 order	registration	id	Urutan
 password is	admin	id	Password yaitu
-phone	registration	id	Telepon
+phone	registration	id	Panggilan Telepon
 re-enter password	registration	id	Ulangi masukan Password
 re-enter your password	registration	id	Ulangi masukan Password
 register	common	id	daftar

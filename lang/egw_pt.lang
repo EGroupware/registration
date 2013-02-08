@@ -16,7 +16,7 @@ checkbox	registration	pt	Caixa de selecção
 choose language	registration	pt	Escolher idioma
 choose your language	registration	pt	Escolha o seu idioma
 city	registration	pt	Cidade
-close window	registration	pt	Fechar janela
+close window	registration	pt	Fecha janela
 country	registration	pt	País
 current fields:	registration	pt	Campos actuais:
 days until trial accounts expire	admin	pt	Dias até expirar contas de teste
@@ -50,7 +50,7 @@ not a user yet? register now	login	pt	Ainda não é um utilizador? Registe-se ag
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	pt	O registo em linha não está activado. Por favor, contacte o administrador do sítio para mais informações sobre o registo.
 order	registration	pt	Ordem
 password is	admin	pt	A senha é
-phone	registration	pt	Telefone
+phone	registration	pt	Chamada telefónica
 problem sending email:	registration	pt	Problema ao enviar mensagens
 re-enter password	registration	pt	Re-insira a senha
 re-enter your password	registration	pt	Re-insira a sua senha
@@ -67,7 +67,7 @@ sorry, no account exists for	registration	pt	Lamentamos, mas não existe nenhuma
 sorry, that username does not exist.	registration	pt	Lamentamos, mas esse nome de utilizador não existe.
 sorry, that username is already taken.	registration	pt	Lamentamos, mas esse nome de utilizador já existe.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	pt	Lamentamos, mas ocorreu um problema ao activar a sua conta. Tenha em atenção que as ligações, enviadas por correio electrónico, são válidas apenas por duas horas. Se pensa que esse tempo expirou, tente novamente. Caso contrário, contacte o administrador do sítio.
-state	registration	pt	Estado
+state	registration	pt	Bairro
 subject for confirmation email	admin	pt	Título para mensagem de confirmação
 terms of service	registration	pt	Termos de Serviço
 terms of service text	admin	pt	Texto dos Termos de Serviço

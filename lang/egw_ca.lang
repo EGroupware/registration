@@ -6,12 +6,12 @@ after you enter your username, instructions to change your password will be sent
 anonymous password	admin	ca	Contrasenya Anònima
 birthday	registration	ca	Aniversari
 change password for user	registration	ca	Canviar contrasenya de l'usuari
-checkbox	registration	ca	Casella de Verificació
+checkbox	registration	ca	Casilla
 choose language	registration	ca	Elija idioma
 choose your language	registration	ca	Trieu el vostre idioma
 city	registration	ca	Població
 close window	registration	ca	Tancar finestra
-country	registration	ca	Pais
+country	registration	ca	País
 current fields:	registration	ca	Camps actuals:
 days until trial accounts expire	admin	ca	Dies fins que caduqui el compte de prova
 display terms of service?	admin	ca	Mostrar les Condicions del Servei?
@@ -31,7 +31,7 @@ name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	r
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	ca	No està activat el Registre En Linia. Contacteu amb l'administrador del lloc per més informació sobre el registre.
 order	registration	ca	Ordre
 password is	admin	ca	La Contrasenya és
-phone	registration	ca	Telèfon
+phone	registration	ca	Trucada Telefònica
 re-enter password	registration	ca	Torneu a entrar la contrasenya
 re-enter your password	registration	ca	Torneu a entrar la contrasenya
 register link at login screen?	admin	ca	Enllaç al Registre a la pantalla de connexió?
@@ -44,10 +44,10 @@ send email	admin	ca	Enviar Correu
 sorry, that username does not exist.	registration	ca	Aquest nom d'usuari no existeix.
 sorry, that username is already taken.	registration	ca	Aquest nom d'usuari ja està ocupat.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	ca	Perdó, tenim un problema activant el vostre compte. Teniu en compte que els enllaços enviats per correu son vàlids només durant dues hores. Si penseu que aquest interval ha caducat, només teniu que tornar a provar. Altrament, contacteu amb l'administrador del lloc.
-state	registration	ca	Estat
+state	registration	ca	Província
 subject for confirmation email	admin	ca	Assumpte pel correu de confirmació
 text	registration	ca	Text
-textarea	registration	ca	Àrea de Text
+textarea	registration	ca	Area de texto
 the passwords you entered don't match	registration	ca	Les contrasenyes entrades no coincideixen
 the two passwords are not the same	registration	ca	Les dues contrasenyes no son iguals
 type	registration	ca	Tipus

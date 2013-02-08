@@ -15,12 +15,12 @@ anonymous password	admin	fr	Mot de passe anonyme
 birthday	registration	fr	Anniversaire
 challenge question	registration	fr	Question de référence
 change password for user	registration	fr	Changer le mot de passe pour l'utilisateur
-checkbox	registration	fr	Boîte à cocher
-choose language	registration	fr	Choisissez la Langue
+checkbox	registration	fr	Case à cocher
+choose language	registration	fr	Sélectionnez la langue
 choose your language	registration	fr	Choisissez votre langue
 city	registration	fr	Ville
 click to log into your account	registration	fr	Cliquez pour entrer dans votre compte
-close window	registration	fr	Fermer Fenêtre
+close window	registration	fr	Fermer la fenêtre
 convert user login id to 7 bit string	admin	fr	Convertissez l'ID login à une chaîne de 7 bit
 country	registration	fr	Pays
 current fields:	registration	fr	Champs actuels:
@@ -57,7 +57,7 @@ not a user yet? register now	login	fr	Pas encore enregistré? S'enregistrer main
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	fr	L'enregistrement en ligne n'est pas activé. Veuillez contacter votre administrateur pour plus d'informations sur l'enregistrement.
 order	registration	fr	Ordre
 password is	admin	fr	Le mot de passe est
-phone	registration	fr	Téléphone
+phone	registration	fr	Appel téléphonique
 please contact the site administrator.	registration	fr	Veuillez contacter l'administrateur du site.
 problem sending email:	registration	fr	Problème à l'envoi de l'e-mail:
 re-enter password	registration	fr	Ré-entrez le mot de passe
@@ -76,12 +76,12 @@ sorry, that username does not exist.	registration	fr	Désolé, ce nom d'utilisat
 sorry, that username is already taken.	registration	fr	Désolé, ce nom d'utilisateur existe déjà.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	fr	Désolé mais nous avons des problèmes pour activer votre compte. Notez que le lien envoyé par e-mail n'est valable que pendant 2 heures. Si vous pensez que ce délai a expiré, réessayez. Sinon contactez votre administrateur.
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	fr	Désolé mais nous avons des problèmes pour récupérer l'information nécessaire pour changer le mot de passe. Notez que le lien envoyé par e-mail n'est valable que pendant 2 heures. Si vous pensez que ce délai a expiré, réessayez. Sinon, contactez votre administrateur.
-state	registration	fr	Pays
+state	registration	fr	Région
 subject for confirmation email	admin	fr	Sujet pour e-mail de confirmation
 terms of service	registration	fr	Termes et Conditions
 terms of service text	admin	fr	Texte des Termes et Conditions
 text	registration	fr	Texte
-textarea	registration	fr	Zone de texte
+textarea	registration	fr	ChampTexte
 the passwords you entered don't match	registration	fr	Les mots de passe que vous avez entrés ne correspondent pas
 the two passwords are not the same	registration	fr	Les deux mots de passe ne sont pas les mêmes
 this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	fr	C'est un e-mail de confirmation pour votre nouveau compte. Cliquez sur le lien suivant pour terminer l'activation de votre compte. Ce lien expirera dans 2 heures.

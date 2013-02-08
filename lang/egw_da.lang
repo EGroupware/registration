@@ -5,13 +5,13 @@ address	registration	da	Adresse
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	da	Efter du indtaster dit brugernavn, instruktioner om at ændre din adgangskode vil blive sendt til din e-mail adresse du gav under registreringen.
 an error occured. please contact our technical support and let them know.	registration	da	Der skete en fejl. Underret venligst vores tekniske support.
 anonymous password	admin	da	Anonym adgangskode
-birthday	registration	da	Føselsdag
+birthday	registration	da	Fødselsdag
 change password for user	registration	da	Ændre adgangskode for bruger
-checkbox	registration	da	Valg box
-choose language	registration	da	Vælg sprog
+checkbox	registration	da	Afkrydsningsboks
+choose language	registration	da	Vælg et sprog
 choose your language	registration	da	Vælg dit sprog
 city	registration	da	By
-close window	registration	da	Luk vindue
+close window	registration	da	luk vindue
 country	registration	da	Land
 current fields:	registration	da	Nuværende felter:
 days until trial accounts expire	admin	da	Dage før prøvekonto udløber
@@ -37,7 +37,7 @@ not a user yet? register now	login	da	Ikke en bruger endnu? Registrere nu
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	da	Online registrering er ikke aktiveret. Kontakt venligst systemadministratoren for mere information om registrering.
 order	registration	da	Rækkefølge
 password is	admin	da	Adgangskoden er
-phone	registration	da	Telefon
+phone	registration	da	Telefon besked
 re-enter password	registration	da	Genindtast adgangskode
 re-enter your password	registration	da	Genindtast din adgangskode
 register link at login screen?	admin	da	Link til registrering på login siden?
@@ -50,7 +50,7 @@ send email	admin	da	Send e-mail
 sorry, that username does not exist.	registration	da	Beklager, det brugernavn findes ikke.
 sorry, that username is already taken.	registration	da	Beklager, det brugernavn er allerede brugt.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	da	Beklager, vi har problemer med at aktivere din konto. Vær opmærksom på at linkene sendt via e-mails kun er gyldige i 2 timer. Hvis du tror tiden er udløbet, så prøv igen. Eller, kontakt venligst systemadministratoren.
-state	registration	da	Stat
+state	registration	da	Land
 subject for confirmation email	admin	da	Emne for bekræftelses e-mail
 terms of service	registration	da	Betingelser
 terms of service text	admin	da	Betingelses tekst
