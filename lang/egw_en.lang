@@ -30,6 +30,7 @@ canceled	registration	en	Canceled
 change password for user	registration	en	Change password for user
 city	registration	en	City
 confirm	registration	en	Confirm
+confirm registration	registration	en	Confirm registration
 confirmation email for %1 expires %2 link: %3	registration	en	This is a confirmation email for %1.  Please click the following link to complete the process.  %3  This link will expire %2.
 confirmed addressbook.	registration	en	Confirmed address book
 contact fields to show	registration	en	Contact fields to show
@@ -128,7 +129,6 @@ work phone	registration	en	Work phone
 wrong - try again ...	registration	en	Wrong - try again ...
 wrong session	registration	en	Wrong session
 you can go back to the login page	registration	en	You can go back to the login page
-you don't have delete permission, address will be left if you manually register or cancel.	registration	en	You don\'t have delete permission, address will be left if you manually register or cancel.
 you don\'t have delete permission, address will be left if you manually register or cancel.	registration	en	You don\'t have delete permission, address will be left if you manually register or cancel.
 you have entered an invalid birthday	registration	en	You have entered an invalid birthday
 you have entered an invalid email address	registration	en	You have entered an invalid email address
@@ -143,4 +143,5 @@ your account is now active!	registration	en	Your account is now active!
 your login is not available. time is expired	registration	en	Your login is not available. Time is expired
 your password was changed.	registration	en	Your password was changed.
 your registration code is missing or incorrect.	registration	en	Your registration code is missing or incorrect.
+zip code	registration	en	zip code
 zip/postal	registration	en	ZIP/Postal
