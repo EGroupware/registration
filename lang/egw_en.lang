@@ -22,6 +22,7 @@ anonymous user needs access to registration application	registration	en	Anonymou
 change password for user	registration	en	Change password for user
 city	registration	en	City
 confirm	registration	en	Confirm
+confirm registration	registration	en	Confirm registration
 confirmation email for %1 expires %2 link: %3	registration	en	This is a confirmation email for %1.  Please click the following link to complete the process.  %3  This link will expire %2.
 confirmed addressbook.	registration	en	Confirmed address book
 contact fields to show	registration	en	Contact fields to show
