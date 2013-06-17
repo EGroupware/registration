@@ -1,14 +1,14 @@
 13: error occured	registration	ru	13: произошла ошибка
 <br>please contact the site administrator.	registration	ru	<br>Пожалуйста, обратитесь к администратору сайта
 [unknown first name]	registration	ru	[неизвестное имя]
-[unknown last name]	registration	ru	[неизвестное фамилия]
-account %1 record could not be found, report to site administrator	registration	ru	Запись для учетной записи %1 не может быть найдена, сообщите администратору сайта
+[unknown last name]	registration	ru	[неизвестная фамилия]
+account %1 record could not be found, report to site administrator	registration	ru	Учетная запись %1 не найдена, сообщите администратору сайта
 account password retrieval	registration	ru	Восстановление пароля учетной записи
 account registration	registration	ru	Регистрация учетной записи
 activate account	admin	ru	Активировать учетную запись
 address	registration	ru	Адрес
-after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	ru	После введения вашего адреса электронной почты учетные записи, ассоциированные с этим адресом, будут отправлен по этому адресу.
-after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	ru	После введения вашего имени пользователя инструкции по смене вашего пароля будут отправлены Вам електронной почтой по адресу который Вы дали при регистрации.
+after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	ru	После введения вашего адреса электронной почты учетные записи, ассоциированные с этим адресом, будут отправлен по этому адресу
+after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	ru	После введения вашего имени пользователя инструкции по смене вашего пароля будут отправлены Вам електронной почтой по адресу который Вы дали при регистрации
 an error occured while updating your password. please contact the site administrator.	registration	ru	Произошла ошибка при изменении Вашего пароля. Пожалуйста, обратитесь к администратору сайта.
 an error occured. please contact our technical support and let them know.	registration	ru	Ошибка. Пожалуйста, дайте знать нашей службе технической поддержки.
 an error occured. please remove your cookies and try again.	registration	ru	Произошла ошибка. Пожалуйста, удалите свои кукисы и попробуйте снова.
@@ -18,7 +18,7 @@ birthday	registration	ru	Дата рождения
 challenge question	registration	ru	Сложный вопрос
 change login	registration	ru	Изменить имя входа
 change password for user	registration	ru	Изменить пароль дял пользователя
-checkbox	registration	ru	Флажек
+checkbox	registration	ru	Флажок
 choose language	registration	ru	Выбирите Язык
 choose your language	registration	ru	Выбирите Ваш язык
 city	registration	ru	Город
@@ -28,7 +28,7 @@ convert user login id to 7 bit string	admin	ru	Конвертировать ид
 country	registration	ru	Страна
 current fields:	registration	ru	Текущие поля:
 days until trial accounts expire	admin	ru	Дней до окончания действия временных учетных записей
-display terms of service?	admin	ru	Отображать Срок действия Сервиса?
+display terms of service?	admin	ru	Отображать срок действия сервиса?
 dropdown	registration	ru	Сброс
 dropdown from table	registration	ru	Выпадающий список Из Таблицы
 email address	registration	ru	адрес электронной почты
@@ -57,14 +57,14 @@ lost_user_id_message	registration	ru	Здесь находятся учетны�
 male	registration	ru	Мужской
 manage fields	admin	ru	Управление Полями
 name (blank unless text, textarea, dropdown, checkbox; else alphanumeric only)	registration	ru	Имя (пусто для полей типа Текст, Текстовая область, Сброс, Галочка); иначе - только буквы и цифры)
-name sender to send notices from	admin	ru	Имя Отправителя, от которого высылать извещение
+name sender to send notices from	admin	ru	Имя отправителя, от которого высылать извещение
 not a user yet? register now	login	ru	Не зарегистрированы? Начать регистрацию
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	ru	Регистрация не активирована. Пожалуйста, обратитесь к администратору сайта для получения информации о регистрации.
 order	registration	ru	Порядок
 password is	admin	ru	Пароль
 phone	registration	ru	Телефонный Звонок
 please contact the site administrator.	registration	ru	Пожалуйста, Обратитесь к администратору сайта.
-problem sending email:	registration	ru	Проблемы с отправкой почты
+problem sending email:	registration	ru	Проблема с отправкой почты
 re-enter password	registration	ru	Введите пароль еще раз
 re-enter your password	registration	ru	Введите Ваш пароль еще раз
 register	common	ru	зарегистрировать
@@ -77,11 +77,11 @@ required	registration	ru	Требуется
 response	registration	ru	Отклик
 send email	admin	ru	Отправить почту
 sorry, no account exists for	registration	ru	Извините, не существует учетной записи для
-sorry, that username does not exist.	registration	ru	Извините, это имя пользователя не существует.
-sorry, that username is already taken.	registration	ru	Извините, это имя пользователя уже занято.
-sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	ru	Извините, у нас проблема с активацией учетной записи. Заметьте, что ссылки, высланные по электронной почте, действительна только два часа. Если Вы думаете, что этот интервал будет превышен - просто повторите. Иначе - обратитесь к администратору сайта.
+sorry, that username does not exist.	registration	ru	Извините, это имя пользователя не существует
+sorry, that username is already taken.	registration	ru	Извините, это имя пользователя уже занято
+sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	ru	Извините, у нас проблема с активацией учетной записи. Заметьте, что ссылки высланные по электронной почте, действительны только два часа. Если Вы полагаете, что этот интервал может быть превышен - повторите регистрацию. Иначе обратитесь к администратору сайта.
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	ru	Извините, у нас проблемы при получении информации, необходимой для изменения Вашего пароля. Заметьте, что ссылка, высланная на ваш e-mail, действительна только два часа. Если Вы считаете, что это время прошло - просто повторите. Иначе - обратитесь к администратору сайта.
-state	registration	ru	Штат
+state	registration	ru	Регион
 subject for confirmation email	admin	ru	Предмет для подтверждения электронного адреса
 terms of service	registration	ru	Период действия (terms) Сервиса
 terms of service text	admin	ru	Текст Периода действия Сервиса
@@ -91,7 +91,7 @@ the passwords you entered don't match	registration	ru	Введенные Вам�
 the two passwords are not the same	registration	ru	Два пароля не одинаковы
 this is a confirmation email for your new account.  click on the following link to finish activating your account. this link will expire in 2 hours.	registration	ru	Это - электронное письмо для подтверждения вашей новой учетной записи. Кликните по следующей ссылке для завершения активации вашей учетной записи. Ссылка действительна в течении 2 часов.
 type	registration	ru	Тип
-unable to send mail, contact your administrator	registration	ru	Невозможно отправить почту, обратитесь к Вашему администратору
+unable to send mail, contact your administrator	registration	ru	Невозможно отправить почту, обратитесь к вашему администратору
 unknown first name	registration	ru	Неизвестное имя
 unknown last name	registration	ru	Неизвестная фамилия
 update/add	registration	ru	Обновить/Добавить
@@ -118,4 +118,4 @@ your account is now active!	registration	ru	Ваша учетная запись
 your login is not available. time is expired	registration	ru	Ваше имя для входа недействительно. Просрочено.
 your password was changed.	registration	ru	Ваш пароль был изменен
 your registration code is missing or incorrect.	registration	ru	Ваше регистрационный код отсутствует или некорректен.
-zip/postal	registration	ru	Индекс
+zip/postal	registration	ru	ZIP/Почтовый индекс
