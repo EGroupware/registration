@@ -93,4 +93,5 @@ you requested to change your password. please follow the url below to do so. thi
 you specified a value for %1 that is not a choice	registration	it	Hai specificato un valore per 1% ma non è una scelta valida
 your account is now active!	registration	it	Il tuo account ora è attivo !
 your password was changed.	registration	it	La tua password è stata cambiata
+zip code	registration	it	CAP
 zip/postal	registration	it	ZIP/Postale
