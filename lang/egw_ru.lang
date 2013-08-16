@@ -27,6 +27,7 @@ canceled	registration	ru	Отменено
 change password for user	registration	ru	Изменить пароль дял пользователя
 city	registration	ru	Город
 confirm	registration	ru	Подтвердить
+confirm registration	registration	ru	Подтвердить регистрацию
 confirmation email for %1 expires %2 link: %3	registration	ru	Email подтверждения для %1. Пожалуйста пройдите по ссылке для завершения. %3 Действие ссылки истекает %2.
 confirmed addressbook.	registration	ru	Книга подтвержденных адресов
 contact fields to show	registration	ru	Отобразить поля контакта
