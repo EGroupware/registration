@@ -102,4 +102,5 @@ you requested to change your password. please follow the url below to do so. thi
 you specified a value for %1 that is not a choice	registration	fr	Vous avez specifié une valeur pour %1 mais ce n'est pas un choix possible
 your account is now active!	registration	fr	Votre compte est actif maintenant!
 your password was changed.	registration	fr	Votre mot de passe a été modifié.
+zip code	registration	fr	Code postal
 zip/postal	registration	fr	Code Postal
