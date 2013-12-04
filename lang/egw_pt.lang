@@ -89,4 +89,5 @@ you must enter an email account	registration	pt	É necessário inserir uma conta
 you must fill in all of the required fields	registration	pt	É necessário preencher todos os campos obrigatórios
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	pt	Solicitou a alteração de senha. Por favor, clique na URL em baixo para o fazer. Esta URL expira dentro de duas horas. Se a alteração da senha não for feita neste período de tempo, será necessário passar pelo procedimento de senha perdida novamente.
 you specified a value for %1 that is not a choice	registration	pt	O valor especificado para %1 não é uma opção
+zip code	registration	pt	Código postal
 zip/postal	registration	pt	Código postal

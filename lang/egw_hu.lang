@@ -113,4 +113,5 @@ your account is now active!	registration	hu	Felhasználói azonosítója most m�
 your login is not available. time is expired	registration	hu	Felhasználói azonosítója érvénytelen. Lejárt az ideje.
 your password was changed.	registration	hu	Jelszava megváltozott.
 your registration code is missing or incorrect.	registration	hu	Regisztrációs kódja hiányzik vagy hibás.
+zip code	registration	hu	Irányítószám
 zip/postal	registration	hu	Postai irányítószám

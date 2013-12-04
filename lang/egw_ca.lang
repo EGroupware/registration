@@ -60,4 +60,5 @@ you have entered an invalid email address	registration	ca	Heu entrat una adreça
 you must enter a password	registration	ca	Heu d'entrar una contrasenya
 you must enter a username	registration	ca	Heu d'entrar un nom d'usuari
 you must fill in all of the required fields	registration	ca	Heu d'omplir els camps obligatoris
+zip code	registration	ca	Codi postal
 zip/postal	registration	ca	Codi Postal

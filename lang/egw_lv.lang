@@ -63,3 +63,4 @@ username is	admin	lv	Lietotājvārds ir
 values (for dropdown only; comma separated)	registration	lv	Vērtības (ar komatu atdalītas,tikai nolaižamajam lodziņam)
 work phone	registration	lv	Darba telefons
 you must enter a password	registration	lv	Tev jaievada parole
+zip code	registration	lv	Pasta inekss

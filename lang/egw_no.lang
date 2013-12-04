@@ -65,3 +65,4 @@ username is	admin	no	Brukernavn er
 values (for dropdown only; comma separated)	registration	no	Verdier (For nedtrekk, kommaseparert)
 work phone	registration	no	Telefon arbeid
 you must enter a password	registration	no	Du må skrive inn et passord
+zip code	registration	no	Postnummer

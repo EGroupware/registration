@@ -100,4 +100,5 @@ you requested to change your password. please follow the url below to do so. thi
 you specified a value for %1 that is not a choice	registration	zh-tw	您指定的 %1 數值不包含在選項中
 your account is now active!	registration	zh-tw	您的帳號已經啟用
 your password was changed.	registration	zh-tw	您的密碼已經修改
+zip code	registration	zh-tw	郵遞區號
 zip/postal	registration	zh-tw	郵遞區號

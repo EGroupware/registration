@@ -127,7 +127,6 @@ work phone	registration	sk	Telefón (práca)
 wrong - try again ...	registration	sk	Chyba - skúste znovu...
 wrong session	registration	sk	Nesprávna relácia
 you can go back to the login page	registration	sk	Môžete sa vrátiť na prihlasovaciu stránku
-you don't have delete permission, address will be left if you manually register or cancel.	registration	sk	Nemáte oprávnenie odstraňovať, adresa ostane ak ručne zaregistrujete alebo zrušíte.
 you have entered an invalid birthday	registration	sk	Zadali ste nesprávny dátum narodenia
 you have entered an invalid email address	registration	sk	Zadali ste nesprávnu E-mailovú adresu
 you must enter a password	registration	sk	Musíte zadať heslo
@@ -141,4 +140,5 @@ your account is now active!	registration	sk	Váš účet je odteraz aktívny!
 your login is not available. time is expired	registration	sk	Vaše prihlásenie nie je dostupné. Čas vypršal
 your password was changed.	registration	sk	Vaše heslo bolo zmenené.
 your registration code is missing or incorrect.	registration	sk	Váš registračný kód chýba, alebo je chybný.
+zip code	registration	sk	PSČ
 zip/postal	registration	sk	PSČ

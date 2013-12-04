@@ -22,3 +22,4 @@ the two passwords are not the same	registration	eu	Bi pasahitzak ez dira berdina
 type	registration	eu	mota
 work phone	registration	eu	Laneko telefonoa
 you must enter a password	registration	eu	Pasahitz bat sartu behar duzu
+zip code	registration	eu	ZIP kodea

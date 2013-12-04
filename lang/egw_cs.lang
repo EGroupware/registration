@@ -115,4 +115,5 @@ your account is now active!	registration	cs	Váš účet je teď aktivní!
 your login is not available. time is expired	registration	cs	Vaše přihlášení je neplatné. Vypršel časový limit.
 your password was changed.	registration	cs	Vaše heslo bylo změněno.
 your registration code is missing or incorrect.	registration	cs	Váš registrační kód chybí nebo je neplatný.
+zip code	registration	cs	PSČ
 zip/postal	registration	cs	PSČ

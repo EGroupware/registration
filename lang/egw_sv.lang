@@ -92,4 +92,5 @@ you requested to change your password. please follow the url below to do so. thi
 you specified a value for %1 that is not a choice	registration	sv	Du specificerade ett värde för %1 som inte tillgängligt
 your account is now active!	registration	sv	Ditt konto är nu aktivt!
 your password was changed.	registration	sv	Ditt lösenord är ändrat.
+zip code	registration	sv	Postnummer
 zip/postal	registration	sv	Postnummer

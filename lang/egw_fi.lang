@@ -103,4 +103,5 @@ you requested to change your password. please follow the url below to do so. thi
 you specified a value for %1 that is not a choice	registration	fi	Määritit arvon kohtaan %1 joka ei ole kelvollinen
 your account is now active!	registration	fi	Käyttäjätilisi on aktivoitu!
 your password was changed.	registration	fi	Salasanasi on vaihdettu.
+zip code	registration	fi	Postinumero
 zip/postal	registration	fi	Postinumero

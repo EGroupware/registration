@@ -88,4 +88,5 @@ you must enter an email account	registration	fa	شما باید یک رایان�
 you must fill in all of the required fields	registration	fa	شما باید همه فیلدهای لازم(*) را پرکنید
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	fa	شما درخواست کردید که گذرواژه خود را تغییر دهید. لطفا از URL زیر برای این کار استفاده کنید. این URL تا دو ساعت دیگر منقضی میشود.
 you specified a value for %1 that is not a choice	registration	fa	شما مقداری را برای %1 مشخص کردید که جزو انتخابها نبوده است
+zip code	registration	fa	کد پستی
 zip/postal	registration	fa	کد پستی

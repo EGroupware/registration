@@ -69,4 +69,5 @@ you must enter a username	registration	iw	עליך להכניס שם כניסה
 you must fill in all of the required fields	registration	iw	עליך למלא את כל שדות החובה
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	iw	ביקשת לשנות את סיסמתך. אנא הקלק על הקישור המצורף כדי לבצע זאת. תוקפו של קישור זה יפוג בעוד שעתיים. אם יפוג יהיה עליך לחזור ולבצע את תהליך סיסמה אבודה שוב
 you specified a value for %1 that is not a choice	registration	iw	ציינת ערך עבור %1 שאינו בין האפשרויות
+zip code	registration	iw	מיקוד
 zip/postal	registration	iw	מיקוד

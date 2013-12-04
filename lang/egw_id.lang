@@ -51,4 +51,5 @@ work phone	registration	id	Telepon Kerja
 wrong - try again ...	registration	id	Keliru - coba lagi...
 wrong session	registration	id	Wrong session
 you must enter a password	registration	id	Anda harus mengisikan password
+zip code	registration	id	Kodepos
 zip/postal	registration	id	Kodepos

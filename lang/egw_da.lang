@@ -70,4 +70,5 @@ you must enter a username	registration	da	Du skal indtaste et brugernavn
 you must fill in all of the required fields	registration	da	Du skal udfylde alle krævede felter
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	da	Du har anmodet om at ændre din adgangskode. Brug venligst følgende link for at gøre det. Dette link virker kun i 2 timer. Efter den tid skal du igen anmode om at ændre adgangskoden igen.
 your password was changed.	registration	da	Din adgangskode er ændret.
+zip code	registration	da	Postnummer
 zip/postal	registration	da	Postnummer
