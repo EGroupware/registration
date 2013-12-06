@@ -129,6 +129,7 @@ work phone	registration	de	Tel dienstl.
 wrong - try again ...	registration	de	Falsch - nochmal versuchen ...
 wrong session	registration	de	Falsche Session
 you can go back to the login page	registration	de	Sie können zurück zur Anmelde Seite gehen.
+you don't have delete permission, address will be left if you manually register or cancel.	registration	de	Sie haben keine Erlaubnis zu löschen, Adresse  wird beibehalten wenn sie sich manuell registrieren oder abbrechen
 you have entered an invalid birthday	registration	de	Sie haben einen ungültigen Geburtstag eingegeben
 you have entered an invalid email address	registration	de	Sie haben eine ungültige E-Mail-Adresse eingegeben
 you must enter a password	registration	de	Sie müssen ein Passwort angeben
