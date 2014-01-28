@@ -8,7 +8,7 @@
 [unknown last name]	registration	de	[Nachnamen unbekannt]
 abuse reduction - please wait %1 seconds and try again.	registration	de	Missbrauchs Verdacht erkannt - Bitte warten Sie %1 Sekunden und versuchen Sie es dann nochmal
 account	registration	de	Benutzer
-account %1 record could not be found, report to site administrator	registration	de	Es konnte kein Eintrag: Account: %1 gefunden werden. Bitte benachrichtigen sie den Adminsitrator
+account %1 record could not be found, report to site administrator	registration	de	Es konnte kein Eintrag: Account: %1 gefunden werden. Bitte benachrichtigen sie denAdministrator
 account password retrieval	registration	de	Passwort wiedergewinnen
 account registration	registration	de	Benutzerkonto registrieren
 activate account	admin	de	Benutzerkonto aktivieren
