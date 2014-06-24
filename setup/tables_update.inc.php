@@ -33,8 +33,7 @@ function registration_upgrade0_8_1()
 
 function registration_upgrade0_8_2()
 {
-	$setup_info['registration']['currentver'] = '1.0.1';
-	return $setup_info['registration']['currentver'];
+	return $setup_info['registration']['currentver'] = '1.0.1';
 }
 
 
@@ -77,6 +76,7 @@ function registration_upgrade1_4()
 	return $GLOBALS['setup_info']['registration']['currentver'] = '1.8';
 }
 
+
 function registration_upgrade1_8()
 {
 	$GLOBALS['egw_setup']->oProc->CreateTable('egw_registration',array(
@@ -103,3 +103,8 @@ function registration_upgrade1_8()
 	return $GLOBALS['setup_info']['registration']['currentver'] = '1.9.001';
 }
 
+
+function registration_upgrade1_9_001()
+{
+	return $GLOBALS['setup_info']['registration']['currentver'] = '14.1';
+}
