@@ -120,6 +120,7 @@ update/add	registration	fr	Mettre à jour/Ajouter
 use html	admin	fr	utiliser HTML
 use trial accounts?	admin	fr	Utiliser des comptes à l'essai?
 username is	admin	fr	L'utilisateur est
+values 'for dropdown': comma separated), for 'dropdown from table': table,valuefield,displayfield	registration	fr	Valeur pour le dropdown (séparé par des virgules), pour un dropdown depuis une table : table, champ valeur, champ affiché
 values (for dropdown only; comma separated)	registration	fr	Valeurs (Pour Liste déroulante seulement; séparées par des virgules)
 verification	registration	fr	Vérification
 we have sent a mail to your email account: %s with your lost user ids.	registration	fr	Nous avons envoyé un mail à votre adresse e-mail %s avec vos IDs perdus.
@@ -128,6 +129,7 @@ work phone	registration	fr	Téléphone (bureau)
 wrong - try again ...	registration	fr	Faux - essayer à nouveau...
 wrong session	registration	fr	Mauvaise session
 you can go back to the login page	registration	fr	Vous pouvez retourner à la page de connexion.
+you don\'t have delete permission, address will be left if you manually register or cancel.	registration	fr	Vous n\'avez pas les droits de suppression, l'adresse restera si vous vous enregistrez manuellement ou si vous annulez.
 you have entered an invalid birthday	registration	fr	Vous avez entré une date d'anniversaire invalide
 you have entered an invalid email address	registration	fr	Vous avez entré une adresse email invalide
 you must enter a password	registration	fr	Vous devez entrer un mot de passe
