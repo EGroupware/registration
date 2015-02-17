@@ -30,6 +30,7 @@ canceled	registration	sk	Zrušené
 change password for user	registration	sk	Zmeniť heslo používateľa
 city	registration	sk	Mesto
 confirm	registration	sk	Potvrdiť
+confirm registration	registration	sk	Potvrdiť registráciu
 confirmation email for %1 expires %2 link: %3	registration	sk	Toto je potvrdzovacia správa pre %1. Ak chcete dokončiť proces, kliknite na nasledujúci odkaz. %3 Tento odkaz vyprší %2.
 confirmed addressbook.	registration	sk	Potvrdený adresár
 contact fields to show	registration	sk	Polia kontaktu ktoré sa zobrazia
@@ -127,6 +128,7 @@ work phone	registration	sk	Telefón (práca)
 wrong - try again ...	registration	sk	Chyba - skúste znovu...
 wrong session	registration	sk	Nesprávna relácia
 you can go back to the login page	registration	sk	Môžete sa vrátiť na prihlasovaciu stránku
+you don\'t have delete permission, address will be left if you manually register or cancel.	registration	sk	Nemáte právo odstraňovať, adresa sa ponechá ak zaregistrujete ručne alebo vyberiete zrušiť.
 you have entered an invalid birthday	registration	sk	Zadali ste nesprávny dátum narodenia
 you have entered an invalid email address	registration	sk	Zadali ste nesprávnu E-mailovú adresu
 you must enter a password	registration	sk	Musíte zadať heslo
