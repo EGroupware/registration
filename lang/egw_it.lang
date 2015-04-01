@@ -1,3 +1,5 @@
+%s hours	registration	it	%s ore
+%s please calculate the result	registration	it	%s per favore calcolare il risultato
 <br>please contact the site administrator.	registration	it	<br>Per favore contatta l'amministratore del sito.
 [unknown first name]	registration	it	[nome sconosciuto]
 [unknown last name]	registration	it	[cognome sconosciuto]
@@ -18,6 +20,9 @@ canceled	registration	it	Cancellato
 change password for user	registration	it	Cambia password per utente
 city	registration	it	Città
 confirm	registration	it	conferma
+confirmed addressbook.	registration	it	Rubrica confermata
+contact fields to show	registration	it	Campi di contatto da mostrare
+custom etemplate for the contactform	registration	it	Template personalizzato per il modulo di contatto
 days until trial accounts expire	admin	it	Giorni prima della scadenza account di prova
 department	registration	it	Dipartimento
 display terms of service?	admin	it	Visualizza termini del servizio?
@@ -37,6 +42,7 @@ i have read the terms and conditions and agree by them.	registration	it	Ho letto
 if you did not request this account, simply ignore this message.	registration	it	Se non hai richiesto questo account, semplicemente ignora questo messaggio.
 if you did not request this change, simply ignore this message.	registration	it	Se non hai richiesto questa modifica, semplicemente ignora questo messaggio.
 immediately	admin	it	Immediatamente
+internet	registration	it	Internet
 ip	registration	it	IP
 lost login id	login	it	Id login persa
 lost password	login	it	Password persa
@@ -69,8 +75,12 @@ street	registration	it	Via
 terms of service	registration	it	Termini di Servizio
 terms of service text	admin	it	Testo Termini di Servizio
 text	registration	it	Testo
+the anonymous user has probably no add rights for this addressbook.	registration	it	L'utente anonimo non ha permessi di inserimento per questa rubrica
+the anonymous user needs add rights for it!	registration	it	L'utente anonimo ha bisogno di permessi di inserimento
 the two passwords are not the same	registration	it	Le due password non sono uguali
+there was an error saving your data :-(	registration	it	ERRORE durante il salvataggio dei dati!
 type	registration	it	Tipo
+unable to process confirmation.	registration	it	Impossibile processare la conferma
 unable to send mail, contact your administrator	registration	it	Impossibile inviare posta, contatta il tuo amministratore.
 unknown first name	registration	it	Nome sconosciuto
 unknown last name	registration	it	Cognome sconosciuto
@@ -79,9 +89,11 @@ use html	admin	it	usa HTML
 use trial accounts?	admin	it	Utilizzare account di prova?
 username is	admin	it	Il Nome Utente è
 values (for dropdown only; comma separated)	registration	it	Valori (Solo per A discesa; separati da virgole)
+verification	registration	it	Verifica
 we have sent a mail to your email account: %s with your lost user ids.	registration	it	Abbiamo spedito una email alla tua casella : %s con il tuo nome utente che hai perso
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	it	Ti abbiamo spedito un'email con le istruzione per cambiare la tua password. Devi cliccare sul seguente link entro due ore . Se non seguirai queste istruzioni dovrai richiedere la procedura di cambio password.
 work phone	registration	it	Telefono Ufficio
+wrong - try again ...	registration	it	Errato - riprovare ...
 wrong session	registration	it	Sessione errata
 you can go back to the login page	registration	it	Puoi tornare alla pagine di login
 you have entered an invalid birthday	registration	it	Hai inserito un compleanno non valido
