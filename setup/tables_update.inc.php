@@ -108,3 +108,9 @@ function registration_upgrade1_9_001()
 {
 	return $GLOBALS['setup_info']['registration']['currentver'] = '14.1';
 }
+
+
+function registration_upgrade14_1()
+{
+	return $GLOBALS['setup_info']['registration']['currentver'] = '16.1';
+}
