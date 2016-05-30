@@ -1,5 +1,5 @@
 <?php
-	/*********************************************************************************\
+/**\
 	* eGroupWare - Registration                                                       *
 	* http://www.egroupware.org                                                       *
 	*                                                                                 *
@@ -15,6 +15,8 @@
 
 	/* $Id$ */
 
+use EGroupware\Api;
+
 	/**
 	 * Check if we allow anon access and with which creditials
 	 *
@@ -23,7 +25,7 @@
 	 */
 	function registration_check_anon_access(&$anon_account)
 	{
-		$config = config::read('registration');
+		$config = Api\Config::read('registration');
 		if ($config['enable_registration'] && $config['anonymous_user'])
 		{
 			$anon_account = array(
@@ -36,11 +38,11 @@
 		return false;
 	 }
 
-	 // if confirmation id is given, redirect to confirm
-	 if(isset($_GET['confirm']) && preg_match('/^[0-9a-f]{32}$/',$_GET['confirm']))
-	 {
-		$_GET['menuaction'] = 'registration.registration_ui.confirm';
-	 }
+	// if confirmation id is given, redirect to confirm
+	if(isset($_GET['confirm']) && preg_match('/^[0-9a-f]{32}$/',$_GET['confirm']))
+	{
+	   $_GET['menuaction'] = 'registration.registration_ui.confirm';
+	}
 
 	$GLOBALS['egw_info']['flags'] = array(
 		'noheader'  => True,
@@ -63,9 +65,9 @@
 			if (is_array($obj->public_functions) && $obj->public_functions[$method])
 			{
 				echo $obj->$method();
-				common::egw_exit();
+				exit();
 			}
 		}
 	}
 	ExecMethod('registration.registration_ui.register');
-	common::egw_exit();
+	exit();

@@ -10,6 +10,10 @@
  * @version $Id$
  */
 
+use EGroupware\Api;
+use EGroupware\Api\Link;
+use EGroupware\Api\Vfs;
+
 /**
  * SiteMgr contact form for registration
  *
@@ -90,7 +94,7 @@ class registration_sitemgr extends addressbook_contactform
 					$account_ok = true;
 					try {
 						registration_bo::check_account($content);
-					} catch (egw_exception $e) {
+					} catch (Api\Exception $e) {
 						$msg = $e->getMessage();
 						$account_ok = false;
 					}
@@ -100,7 +104,7 @@ class registration_sitemgr extends addressbook_contactform
 					$account_ok = true;
 				}
 
-				$contact = new addressbook_bo();
+				$contact = new Api\Contacts();
 				if ($account_ok && $content['owner'])	// save the contact in the addressbook
 				{
 					$content['private'] = 0;	// in case default_private is set
@@ -118,7 +122,7 @@ class registration_sitemgr extends addressbook_contactform
 						$registration = registration_bo::read($reg_id);
 						if ($registration['contact_id'])
 						{
-							$config = config::read('registration');
+							$config = Api\Config::read('registration');
 							if($arguments['register_for'] == 'account' && !$config['no_email'])
 							{
 								// Send out confirmation link
@@ -134,9 +138,9 @@ class registration_sitemgr extends addressbook_contactform
 									// the anonymous user to have run rights for addressbook AND
 									// edit rights for the addressbook used to store the new entry,
 									// which is clearly not wanted securitywise
-									egw_vfs::$is_root = true;
-									egw_link::link('addressbook',$registration['contact_id'],egw_link::VFS_APPNAME,$value,$name);
-									egw_vfs::$is_root = false;
+									Vfs::$is_root = true;
+									Link::link('addressbook',$registration['contact_id'],Link::VFS_APPNAME,$value,$name);
+									Vfs::$is_root = false;
 								}
 							}
 
@@ -175,7 +179,7 @@ class registration_sitemgr extends addressbook_contactform
 				static $contact;
 				if (is_null($contact))
 				{
-					$contact = new addressbook_bo();
+					$contact = new Api\Contacts();
 				}
 				$content['show']['custom'.$custom] = true;
 				$content['customfield'][$custom] = $name;
@@ -203,7 +207,7 @@ class registration_sitemgr extends addressbook_contactform
 		if ($msg) $preserv['msg'] = $msg;
 		$content['message'] = $msg;
 
-		translation::add_app('addressbook');
+		Api\Translation::add_app('addressbook');
 
 		// a simple calculation captcha
 		$num1 = rand(1,99);

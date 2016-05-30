@@ -10,13 +10,15 @@
  * @version $Id$
  */
 
+use EGroupware\Api;
+
 /**
  * General storage object for Registration
  *
  * Registrant information is actually stored in the addressbook.  Registration only
  * needs to (permanently) store IP and timestamp, and what they registered for.
  */
-class registration_so extends so_sql {
+class registration_so extends Api\Storage\Base {
 
 	public function __construct() {
 		parent::__construct(

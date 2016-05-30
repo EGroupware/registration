@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- $Id$ -->
+<overlay>
+	<template id="registration.lost_username" template="" lang="" group="0" version="1.9.001">
+		<grid width="50%">
+			<columns>
+				<column/>
+			</columns>
+			<rows>
+				<row disabled="!@message">
+					<description id="message" span="all" class="message"/>
+				</row>
+				<row>
+					<description value="After you enter your email address, the user accounts associated with this email address will be mailed to that address."/>
+				</row>
+				<row>
+					<url-email align="center" label="Email" id="email" options="35"/>
+				</row>
+				<row>
+					<button align="center" label="Submit" id="submit"/>
+				</row>
+			</rows>
+		</grid>
+	</template>
+</overlay>

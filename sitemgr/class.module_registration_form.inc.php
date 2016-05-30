@@ -10,6 +10,8 @@
  * @version $Id$
  */
 
+use EGroupware\Api;
+
 /**
  * SiteMgr registration form
  */
@@ -36,7 +38,7 @@ class module_registration_form extends sitemgr_module
 	 */
 	function get_user_interface()
 	{
-		$GLOBALS['egw']->translation->add_app('registration');
+		Api\Translation::add_app('registration');
 
 		$uicontacts = new addressbook_ui();
 

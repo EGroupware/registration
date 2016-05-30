@@ -9,6 +9,8 @@
  * @version $Id$
  */
 
+use EGroupware\Api;
+
 /**
  * Class containing administration, configuration and other hooks
  */
@@ -59,6 +61,7 @@ class registration_hooks {
 			),
 			'view_id' => 'reg_id',
 			'view_list'     =>      'registration.registration_ui.index',
+			'view_popup' => "300x200"
 		//	'add' => array(
 		//		'menuaction' => 'registration.registration_ui.edit'
 		//	),

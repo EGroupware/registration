@@ -10,6 +10,10 @@
  * @version $Id$
  */
 
+use EGroupware\Api;
+use EGroupware\Api\Link;
+use EGroupware\Api\Acl;
+
 /**
  * General business object for Registration
  * Both the sitemgr module and the login page UI pull from here.
@@ -17,9 +21,11 @@
 
 require_once(EGW_INCLUDE_ROOT . '/sitemgr/inc/class.Content_BO.inc.php');
 
-class registration_bo extends bo_tracking {
+class registration_bo extends Api\Storage\Tracking {
 
 	protected static $so;
+
+	public static $mail_account = null;
 
 	const PENDING = 1;
 	const CONFIRMED = 2;
@@ -37,6 +43,30 @@ class registration_bo extends bo_tracking {
 		if(!is_object(self::$so)) {
 			self::$so = new registration_so();
 		}
+
+		self::$mail_account = null;
+
+		$config = Api\Config::read('registration');
+		$anonymous_user = $GLOBALS['egw']->accounts->name2id($config['anonymous_user']);
+		if($data['anonymous_user'])
+		{
+			foreach(EGroupware\Api\Mail\Account::search($anonymous_user,false) as $account)
+			{
+				if(EGroupware\Api\Mail\Account::check_access(Acl::EDIT, $account))
+				{
+					self::$mail_account = $account;
+				}
+			}
+		}
+
+		if(!self::$mail_account)
+		{
+			$account = EGroupware\Api\Mail\Account::get_default(true);
+			if($account && is_object($account) && EGroupware\Api\Mail\Account::check_access(Acl::EDIT, $account))
+			{
+				self::$mail_account = $account;
+			}
+		}
 	}
 
 	/**
@@ -45,7 +75,7 @@ class registration_bo extends bo_tracking {
 	public static function read($reg_id) {
 		$reg_info = self::$so->read((int)$reg_id);
 		if($reg_info && $reg_info['contact_id']) {
-			$addressbook = new addressbook_bo();
+			$addressbook = new Api\Contacts();
 			$contact = $addressbook->read($reg_info['contact_id']);
 			if($contact && is_array($contact)) {
 				$reg_info += $contact;
@@ -64,23 +94,23 @@ class registration_bo extends bo_tracking {
 		// Check account & password
 		if($values['account_lid']) {
 			if(!$values['password']) {
-				throw new egw_exception_wrong_userinput(lang('You must enter a password'));
+				throw new Api\Exception\WrongUserinput(lang('You must enter a password'));
 			}
 			if(self::$so->read(array('account_lid' => $values['account_lid'])) ||
 				$GLOBALS['egw']->accounts->exists($values['account_lid']) !== 0) {
-				throw new egw_exception(lang('Sorry, that username is already taken.'));
+				throw new Api\Exception(lang('Sorry, that username is already taken.'));
 			}
 		}
 
 		// If there's contact info, store it in addressbook
-		$addressbook = new addressbook_bo();
+		$addressbook = new Api\Contacts();
 		$contact_fields = $addressbook->contact_fields;
 		unset($contact_fields['email']); // Always present
 		unset($contact_fields['id']); // Address already there
 		if(array_intersect_key($contact_fields,$values)) {
 			$result = $addressbook->save($values);
 			if(!$result) {
-				throw new egw_exception_no_permission($addressbook->error);
+				throw new Api\Exception\NoPermission($addressbook->error);
 				return False;
 			}
 
@@ -91,18 +121,18 @@ class registration_bo extends bo_tracking {
 		// Check pre-confirm, add in post-confirm hook, if registering for a hooked app
 		if(strpos($values['register_for'], ':') !== False) {
 			list($app, $name) = explode(':', $values['register_for']);
-			$hook = $GLOBALS['egw']->hooks->single('registration', $app);
+			$hook = Api\Hooks::single('registration', $app);
 			if($hook['post_confirm_hook']) $values['post_confirm_hook'] = $hook['post_confirm_hook'];
 			if($hook['pre_check']) {
 				$result = ExecMethod($hook['pre_check'], $values);
-				if($result !== true) throw new egw_exception($result);
+				if($result !== true) throw new Api\Exception($result);
 			}
 		}
 
 		$result = self::$so->save($values);
 		if(!$result && $link) {
 			// Link
-			egw_link::link('registration', self::$so->data['reg_id'], 'addressbook', $values['contact_id']);
+			Link::link('registration', self::$so->data['reg_id'], 'addressbook', $values['contact_id']);
 		}
 		if(!$result) {
 			return self::$so->data['reg_id'];
@@ -122,13 +152,13 @@ class registration_bo extends bo_tracking {
 	 * Send an email with a confirmation link
 	 */
 	public function send_confirmation($arguments, $reg_info) {
-		$config = config::read('registration');
+		$config = Api\Config::read('registration');
 
-		$time = egw_time::to($reg_info['timestamp']) . ' (' . $arguments['expiry'] . ' ' . lang('hours') . ')';
+		$time = Api\DateTime::to($reg_info['timestamp']) . ' (' . $arguments['expiry'] . ' ' . lang('hours') . ')';
 		if(substr($arguments['link'] ,0,4) == 'http') {
 			$link = $arguments['link'] . '&confirm='.$reg_info['register_code'];
 		} else {
-			$link = html::link($arguments['link'],  array('confirm' => $reg_info['register_code']));
+			$link = Api\Html::link($arguments['link'],  array('confirm' => $reg_info['register_code']));
 		}
 		
 		$subject = $arguments['subject'] ? $arguments['subject'] : lang('subject for confirmation email title: %1', $arguments['title']);
@@ -137,19 +167,15 @@ class registration_bo extends bo_tracking {
 		if($config['tos_text']) $message .= "\n" . $config['tos_text'];
 		if($config['support_email']) $message .= "\n" . $config['support_email'];
 
-		$mail = new send();
+		$mail = new Api\Mailer(self::$mail_account);
 		$mail->From = $config['mail_nobody'] ? $config['mail_nobody'] : 'noreply@'.$GLOBALS['egw_info']['server']['mail_suffix'];
 		$mail->FromName = $config['name_nobody'] ? $config['name_nobody'] : 'eGroupWare '.lang('registration');
 		$mail->AddAddress($reg_info['email'], $reg_info['n_fileas']);
 		if($config['support_email']) $mail->AddReplyTo($config['support_email']);
 		$mail->Subject = $subject;
 		$mail->Body = $message;
-
-		if(!$mail->Send()) {
-			return "Error: " . $mail->ErrorInfo;
-		} else {
-			return "Confirmation message sent";
-		}
+		
+		return "Confirmation message sent";
 	}
 
 	/**
@@ -163,7 +189,7 @@ class registration_bo extends bo_tracking {
 		if(!$registration) return false;
 
 		// Load address
-		$addressbook = new addressbook_bo();
+		$addressbook = new Api\Contacts();
 		$address = $addressbook->read($registration['contact_id']);
 
 		// Load settings
@@ -173,7 +199,7 @@ class registration_bo extends bo_tracking {
 			$config = $content->getversion($registration['sitemgr_version']);
 		} else {
 			// Login page - use global config
-			$config = config::read('registration');
+			$config = Api\Config::read('registration');
 			if($registration['account_lid']) $config['register_for'] = 'account';
 		}
 
@@ -199,7 +225,7 @@ class registration_bo extends bo_tracking {
 			$registration['contact_id'] = $account['id'];
 
 			// Link to the new contact
-			egw_link::link('registration', $registration['reg_id'], 'addressbook', $account['id']);
+			Link::link('registration', $registration['reg_id'], 'addressbook', $account['id']);
 
 		} elseif ($config['confirmed_addressbook']) {
 			// Move address
@@ -210,7 +236,7 @@ class registration_bo extends bo_tracking {
 
 		// Finish registration
 		$registration['status'] = self::CONFIRMED;
-		$registration['ip'] = egw_session::getuser_ip();
+		$registration['ip'] = Api\Session::getuser_ip();
 		$registration['timestamp'] = time();
 		$registration['account_lid'] = null;
 		$registration['password'] = null;
@@ -222,7 +248,7 @@ class registration_bo extends bo_tracking {
 		}
 
 		// Update link
-		egw_link::notify_update('registration', $registration_code);
+		Link::notify_update('registration', $registration_code);
 
 		return $registration;
 	}
@@ -234,7 +260,7 @@ class registration_bo extends bo_tracking {
 	 * @param account optional array of info populated from $registration to be passed to user command
 	 */
 	public static function check_account($registration, &$account = array()) {
-		$config = config::read('registration');
+		$config = Api\Config::read('registration');
 		$account = array(
 			'account_lid'		=> $registration['account_lid'],
 			'account_firstname'	=> $registration['n_given'],
@@ -282,7 +308,7 @@ class registration_bo extends bo_tracking {
 		);
 
 		// Poll registration hook
-		$hooks = $GLOBALS['egw']->hooks->process('registration');
+		$hooks = Api\Hooks::process('registration');
 		foreach($hooks as $appname => $app) {
 			if(!is_array($app[0])) $app = Array($app);
 			foreach($app as $result) {
@@ -304,26 +330,31 @@ class registration_bo extends bo_tracking {
 	 * @return array of addressbook_id => name
 	 */
 	public static function get_allowed_addressbooks($use = self::PENDING) {
-		if($use == self::CONFIRMED) {
-			$perms = EGW_ACL_ADD;
-		} elseif ($use == self::PENDING) {
+		if($use == self::CONFIRMED)
+		{
+			$perms = Acl::ADD;
+		}
+		elseif ($use == self::PENDING)
+		{
 			$perms = EGW_ACL_READ|EGW_ACL_ADD|EGW_ACL_DELETE;
-		} else {
+		}
+		else
+		{
 			return array();
 		}
 
-		$config = config::read('registration');
-                $anonymous_user = $GLOBALS['egw']->accounts->name2id($config['anonymous_user']);
+		$config = Api\Config::read('registration');
+		$anonymous_user = $GLOBALS['egw']->accounts->name2id($config['anonymous_user']);
 
-                // Shuffle stuff to get the anon user's addressbook grants
-                $user = $GLOBALS['egw_info']['user']['account_id'];
-                $GLOBALS['egw_info']['user']['account_id'] = $anonymous_user;
-                $acl = new acl($anonymous_user);
-                $addressbook = new addressbook_bo();
-                $addressbook->grants = $acl->get_grants('addressbook',false);
-                $addressbooks = $addressbook->get_addressbooks($perms);
-                $GLOBALS['egw_info']['user']['account_id'] = $user;
-		
+		// Shuffle stuff to get the anon user's addressbook grants
+		$user = $GLOBALS['egw_info']['user']['account_id'];
+		$GLOBALS['egw_info']['user']['account_id'] = $anonymous_user;
+		$acl = new Acl($anonymous_user);
+		$addressbook = new Api\Contacts();
+		$addressbook->grants = $acl->get_grants('addressbook',false);
+		$addressbooks = $addressbook->get_addressbooks($perms);
+		$GLOBALS['egw_info']['user']['account_id'] = $user;
+
 		return $addressbooks;
 	}
 
@@ -332,7 +363,8 @@ class registration_bo extends bo_tracking {
 	 *
 	 * The list is used for login module "Register" link
 	 */
-	public static function get_blocks() {
+	public static function get_blocks()
+	{
 		$modules = new Modules_BO();
 		$module_id = $modules->getmoduleid('registration_form');
 		$blocks = $GLOBALS['Common_BO']->content->so->getallblocks(
@@ -340,10 +372,12 @@ class registration_bo extends bo_tracking {
 			$GLOBALS['Common_BO']->getstates('Edit')
 		);
 		$reg_blocks = array();
-		foreach($blocks as &$block) {
+		foreach($blocks as &$block)
+		{
 			// getallblocks() doesn't fully populate the block object
 			$block = $GLOBALS['Common_BO']->content->getblock($block->id, false);
-			if($block->module_id == $module_id) {
+			if($block->module_id == $module_id)
+			{
 				$page = $GLOBALS['Common_BO']->pages->getPage($block->page_id);
 				$title = $GLOBALS['Common_BO']->content->getlangblocktitle($block->id, $GLOBALS['egw_info']['user']['preferences']['common']['lang']);
 				$reg_blocks[$page->name] = $title;
@@ -356,24 +390,28 @@ class registration_bo extends bo_tracking {
 	/**
 	 * Purge any unconfirmed registrations that have expired
 	 */
-	public static function purge_expired() {
+	public static function purge_expired()
+	{
 		$expire = $GLOBALS['egw']->db->quote($GLOBALS['egw']->db->to_timestamp(time()));
 		$query = array('status' => self::PENDING, 'timestamp <= ' . $expire);
 
 		// Clear contact information
 		$expired = self::$so->search($query, array('reg_id','contact_id','post_confirm_hook'));
-		if(is_array($expired)) {
-			$addressbook = new addressbook_bo();
+		if(is_array($expired))
+		{
+			$addressbook = new Api\Contacts();
 			foreach($expired as $record) {
 				// Clear registration
-				if($record['post_confirm_hook']) {
+				if($record['post_confirm_hook'])
+				{
 					$record = self::read($record['reg_id']);
 					$record = ExecMethod2($record['post_confirm_hook'], $record);
 				}
 
 				if($record['contact_id'])
 				{
-					if(!$addressbook->delete($record['contact_id'])) {
+					if(!$addressbook->delete($record['contact_id']))
+					{
 						echo $addressbook->user . ' needs permission to delete';
 					}
 				}
@@ -386,8 +424,10 @@ class registration_bo extends bo_tracking {
 	/**
 	 * To be able to supply link titles
 	 */
-	public static function link_title($entry) {
-		if(!is_array($entry)) {
+	public static function link_title($entry)
+	{
+		if(!is_array($entry))
+		{
 			$entry = self::read($entry);
 		}
 		if(!$entry) return 'Error';
@@ -395,22 +435,24 @@ class registration_bo extends bo_tracking {
 		$title = '';
 
 		// Load settings
-		if($entry['sitemgr_version']) {
+		if($entry['sitemgr_version'])
+		{
 			$content = new Content_BO();
 			$block_id = $content->so->getblockidforversion($entry['sitemgr_version']);
 			$title = $content->getlangblocktitle($block_id, $GLOBALS['egw_info']['user']['preferences']['common']['lang']);
 			$title .= ' ';
 		}
 		
-		switch($entry['status']) {
+		switch($entry['status'])
+		{
 			case self::PENDING:
-				$title .= lang(self::$status_list[$entry['status']]) . ': ' . lang('Expires') . ' ' . egw_time::to($entry['timestamp']);
+				$title .= lang(self::$status_list[$entry['status']]) . ': ' . lang('Expires') . ' ' . Api\DateTime::to($entry['timestamp']);
 				break;
 			case self::CONFIRMED:
-				$title .= lang(self::$status_list[$entry['status']]) . ': ' . egw_time::to($entry['timestamp']) . ' [' . $entry['ip'] . ']';
+				$title .= lang(self::$status_list[$entry['status']]) . ': ' . Api\DateTime::to($entry['timestamp']) . ' [' . $entry['ip'] . ']';
 				break;
 			default:
-				$title .= lang(self::$status_list[$entry['status']]) . ': ' . egw_time::to($entry['timestamp']) . ' [' . $entry['ip'] . ']';
+				$title .= lang(self::$status_list[$entry['status']]) . ': ' . Api\DateTime::to($entry['timestamp']) . ' [' . $entry['ip'] . ']';
 				break;
 		}
 

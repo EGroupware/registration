@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<!-- $Id$ -->
+<overlay>
+	<template id="registration.config" template="" lang="" group="0" version="1.9.001">
+		<grid>
+			<columns>
+				<column/>
+				<column/>
+			</columns>
+			<rows>
+				<row disabled="!@message">
+					<description id="message" span="all" class="message"/>
+					<description/>
+				</row>
+				<row class="th">
+					<description value="Global options" span="all"/>
+				</row>
+				<row>
+					<description value="Anonymous user"/>
+					<menulist>
+						<menupopup type="select-account" id="anonymous_user" needed="1"/>
+					</menulist>
+				</row>
+				<row>
+					<description value="Anonymous password"/>
+					<passwd id="anonymous_pass" needed="1"/>
+				</row>
+				<row>
+					<description value="Registered accounts expire"/>
+					<menulist>
+						<menupopup type="select-number" label="%s days" id="accounts_expire" options="Never,1,30,,"/>
+					</menulist>
+				</row>
+				<row>
+					<description value="Account primary group"/>
+					<menulist>
+						<menupopup type="select-account" id="primary_group" account_type="groups"/>
+					</menulist>
+				</row>
+				<row valign="top">
+					<description value="Account groups"/>
+					<listbox type="select-account" id="groups" rows="5" account_type="groups"/>
+				</row>
+				<row>
+					<description value="Do not send account registration email (manual processing by admin)"/>
+					<checkbox id="no_email"/>
+				</row>
+				<row>
+					<description value="Name Sender to send notices from"/>
+					<textbox id="name_nobody"/>
+				</row>
+				<row>
+					<description value="Email address to send notices from"/>
+					<url-email id="mail_nobody"/>
+				</row>
+				<row>
+					<description value="Email address to display for support"/>
+					<url-email id="support_email"/>
+				</row>
+				<row>
+					<description value="Terms of Service text"/>
+					<description/>
+				</row>
+				<row>
+					<textbox multiline="true" id="tos_text" rows="5" cols="80" span="all"/>
+				</row>
+				<row class="th">
+					<description value="Login page" span="all"/>
+				</row>
+				<row>
+					<description value="Enable registration"/>
+					<menulist>
+						<menupopup type="select-bool" id="enable_registration"/>
+					</menulist>
+				</row>
+				<row>
+					<description value="Register link at login screen"/>
+					<menulist>
+						<menupopup type="select-bool" id="register_link"/>
+					</menulist>
+				</row>
+				<row>
+					<description value="Registration fields"/>
+					<listbox id="show" rows="5"/>
+				</row>
+				<row>
+					<description value="Addressbook the contacts should be saved to before they are confirmed"/>
+					<menulist>
+						<menupopup id="pending_addressbook"/>
+					</menulist>
+				</row>
+				<row>
+					<description value="Registration expires after"/>
+					<textbox type="integer" label="%s hours" id="expiry" needed="1" min="1" max="48"/>
+				</row>
+				<row>
+					<description value="Lost password link"/>
+					<menulist>
+						<menupopup type="select-bool" id="lostpassword_link"/>
+					</menulist>
+				</row>
+				<row>
+					<description value="Lost user ID"/>
+					<menulist>
+						<menupopup type="select-bool" id="lostid_link"/>
+					</menulist>
+				</row>
+				<row>
+					<description/>
+					<description/>
+				</row>
+				<row>
+					<hbox span="all">
+						<button label="Save" id="save"/>
+						<button label="Cancel" id="cancel"/>
+					</hbox>
+				</row>
+			</rows>
+		</grid>
+	</template>
+</overlay>

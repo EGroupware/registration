@@ -10,6 +10,11 @@
  * @version $Id$
  */
 
+use EGroupware\Api;
+use EGroupware\Api\Egw;
+use EGroupware\Api\Acl;
+use EGroupware\Api\Etemplate;
+
 /**
  * User interface for Registration
  *
@@ -32,7 +37,7 @@ class registration_ui {
 	protected $expiry = 2; // hours
 
 	public function __construct() {
-		$config = config::read('registration');
+		$config = Api\Config::read('registration');
 		$this->expiry = $config['expiry'];
 	}
 
@@ -54,9 +59,9 @@ class registration_ui {
 		if($content && $registration['status'] == registration_bo::PENDING && $GLOBALS['egw_info']['user']['apps']['admin']) {
 			if($content['cancel']) {
 				// Cancel pending registration
-				$addressbook = new addressbook_bo();
+				$addressbook = new Api\Contacts();
 				if(!$addressbook->delete($registration['contact_id'])) {
-					$msg = lang('%1 needs permission to delete - address remains.', common::grab_owner_name($addressbook->user));
+					$msg = lang('%1 needs permission to delete - address remains.', Api\Accounts::username($addressbook->user));
 				}
 				registration_bo::delete($registration['reg_id']);
 				$registration = registration_bo::read($reg_id);
@@ -88,8 +93,9 @@ class registration_ui {
 		$registration['no_actions'] = !$GLOBALS['egw_info']['user']['apps']['admin'] || $registration['status'] != registration_bo::PENDING;
 		if(!$registration['no_actions']) {
 			// Check ACL on target addressbooks
-			$addressbook = new addressbook_bo();
-			if(!in_array($registration['owner'], array_keys($addressbook->get_addressbooks(EGW_ACL_DELETE)))) {
+			$addressbook = new Api\Contacts();
+			if(!in_array($registration['owner'], array_keys($addressbook->get_addressbooks(Acl::DELETE))))
+			{
 				$msg .= lang('You don\'t have delete permission, address will be left if you manually register or cancel.');
 			}
 		}
@@ -115,7 +121,7 @@ class registration_ui {
 			'password'	=> true,
 			'email'		=> true
 		);
-		$config = config::read('registration');
+		$config = Api\Config::read('registration');
 		$template = new etemplate('registration.registration_form');
 
 		if($config['show']) {
@@ -123,23 +129,25 @@ class registration_ui {
 			$data['show'] += array_combine($fields, array_fill(0,count($fields),true));
 		}
 		$data += $content;
-		if($content['submitit']) {
-                        if (isset($data['show']['captcha']) &&
+		if($content['submitit'])
+		{
+			if (isset($data['show']['captcha']) &&
 				((isset($content['captcha_result']) && $content['captcha'] != $content['captcha_result']) || // no correct captcha OR
-                                (time() - $content['start_time'] < 10 &&                                // bot indicator (less then 10 sec to fill out the form and
-                                !$GLOBALS['egw_info']['etemplate']['java_script'])))     // javascript disabled)
-                        {
-                                $captcha_fail = true;
-                                $template->set_validation_error('captcha',lang('Wrong - try again ...'));
+					(time() - $content['start_time'] < 10 &&                                // bot indicator (less then 10 sec to fill out the form and
+					!$GLOBALS['egw_info']['etemplate']['java_script'])))     // javascript disabled)
+			{
+				$captcha_fail = true;
+				$template->set_validation_error('captcha',lang('Wrong - try again ...'));
 				unset($content['captcha']);
-                        }
+			}
 
-			if(!$captcha_fail) {
+			if(!$captcha_fail)
+			{
 				$config['register_for'] = 'account';
 				// Check for account info
 				try {
 					registration_bo::check_account($content);
-					$contact = new addressbook_bo();
+					$contact = new Api\Contacts();
 					if ($config['pending_addressbook'])   // save the contact in the addressbook
 					{
 						$content['owner'] = $config['pending_addressbook'];
@@ -170,7 +178,7 @@ class registration_ui {
 							$account_ok = true;
 						}
 					}
-				} catch (egw_exception $e) {
+				} catch (Api\Exception $e) {
 					$msg = $e->getMessage();
 					$account_ok = false;
 				}
@@ -179,7 +187,7 @@ class registration_ui {
 		if($msg) $data['message'] = $msg;
 
 		// a simple calculation captcha
-                if (in_array('captcha',$data['show'])) {
+		if (in_array('captcha',$data['show'])) {
 			$num1 = rand(1,99);
 			$num2 = rand(1,99);
 			if ($num2 > $num1)      // keep the result positive
@@ -188,16 +196,19 @@ class registration_ui {
 			}
 			$data['captcha_task'] = sprintf('%d - %d =',$num1,$num2);
 			$preserv['captcha_result'] = $num1-$num2;
-                }
+		}
 		$preserve['start_time'] = time();
 
-		if($account_ok) {
+		if($account_ok)
+		{
 			$readonlys['__ALL__'] = true;
+			Api\Framework::message($msg ? $msg : 'Registration pending');
 		}
 
-		translation::add_app('addressbook');
-		if($data['show']['adr_one_locality']) {
-			$bo_addressbook = new addressbook_bo();
+		Api\Translation::add_app('addressbook');
+		if($data['show']['adr_one_locality'])
+		{
+			$bo_addressbook = new Api\Contacts();
 			$data['show']['adr_one_locality']  = $bo_addressbook->addr_format_by_country($data['adr_one_countryname']);
 		}
 
@@ -215,6 +226,7 @@ class registration_ui {
 	 */
 	public function lost_username($content = array()) {
 
+		$data = array();
 		// Deal with incoming
 		if($content && $content['email']) {
 			// Find usernames
@@ -311,7 +323,8 @@ class registration_ui {
 	}
 
 	// Callback after clicking lost password confirm link
-	public function change_password($content) {
+	public function change_password($content)
+	{
 		$preserv = $content;
 
 		// Make sure registration is valid - skip when being called from purge
@@ -319,19 +332,22 @@ class registration_ui {
 		{
 			return;
 		}
-		if($content['password'] && $content['password'] != $content['password2']) {
+		if($content['password'] && $content['password'] != $content['password2'])
+		{
 			unset($content['submit']);
 			$data['message'] = lang('The two passwords are not the same');
 		}
-		if($content['submit']) {
+		if($content['submit'])
+		{
 			// Get account ID
-			$addressbook = new addressbook_bo();
+			$addressbook = new Api\Contacts();
 			$contact = $addressbook->read($content['contact_id']);
 			$account_id = $contact['account_id'];
 
 			// Change password
 			$auth =& CreateObject('phpgwapi.auth');
-			if($auth->change_password(false, $content['password'], $account_id)) {
+			if($auth->change_password(false, $content['password'], $account_id))
+			{
 				// No need to keep this record
 				registration_bo::delete($content['reg_id']);
 				$data['message'] = lang('Your password was changed.');
@@ -347,47 +363,60 @@ class registration_ui {
 		);
 		$template = new etemplate('registration.change_password');
 		$template->exec('registration.registration_ui.change_password', $data,$sel_options,$readonlys,$preserv);
-		common::egw_exit();
+		exit();
 	}
 
-        /**
-         * Confirm link - used for password change and account registration from the login page.
-         */
-        public function confirm() {
+	/**
+	 * Confirm link - used for password change and account registration from the login page.
+	 */
+	public function confirm()
+	{
 		$GLOBALS['egw_info']['flags'] = array(
 			'app_header' => lang('Confirm registration')
 		);
-		common::egw_header();
-                $register_code = ($_GET['confirm'] && preg_match('/^[0-9a-f]{32}$/',$_GET['confirm'])) ? $_GET['confirm'] : false;
-                if($register_code && registration_bo::confirm($register_code)) {
-                        echo lang('Registration complete');
-                } else {
-                        echo lang('Unable to process confirmation.');
-                }
+		echo $GLOBALS['egw']->framework->header();
+
+        $register_code = ($_GET['confirm'] && preg_match('/^[0-9a-f]{32}$/',$_GET['confirm'])) ? $_GET['confirm'] : false;
+
+		if($register_code && registration_bo::confirm($register_code))
+		{
+				echo lang('Registration complete');
+		}
+		else
+		{
+				echo lang('Unable to process confirmation.');
+		}
 		common::parse_navbar();
-		common::egw_footer();
-        }
+		echo $GLOBALS['egw']->framework->footer();
+	}
 
 	/**
-	 * eTemplate based config
+	 * eTemplate based Api\Config
 	 */
-	function config($content = array()) {
-		if(!$GLOBALS['egw_info']['user']['apps']['admin']) {
-			egw::redirect_link('/index.php');
+	function config($content = array())
+	{
+		if(!$GLOBALS['egw_info']['user']['apps']['admin'])
+		{
+			Egw::redirect_link('/index.php');
 		}
-		if($content['cancel']) {
-			egw::redirect_link('/admin/index.php');
+		if($content['cancel'])
+		{
+			Egw::redirect_link('/admin/index.php');
 		}
-			
-		if($content['save']) {
+
+		if($content['save'])
+		{
 			unset($content['save']);
 
 			// Update async job to run as this user
-			$async = new asyncservice();
+			$async = new Api\Asyncservice();
 			$job = $async->read('registration-purge');
 			$job = $job['registration-purge'];
 			$job['account_id'] = $content['anonymous_user'];
-			$async->write($job, true);
+			if(!$async->write($job, true))
+			{
+				$async->set_timer(array('hour' => '*'),'registration-purge','registration.registration_bo.purge_expired',null, $content['anonymous_user']);
+			}
 
 			// Widget gives ID, code wants username
 			$content['anonymous_user'] = $GLOBALS['egw']->accounts->id2name($content['anonymous_user']);
@@ -396,8 +425,9 @@ class registration_ui {
 			if(!$content['accounts_expire']) $content['accounts_expire'] = -1;
 
 			// Save
-			foreach($content as $key => $value) {
-				config::save_value($key, $value, 'registration');
+			foreach($content as $key => $value)
+			{
+				Api\Config::save_value($key, $value, 'registration');
 			}
 		}
 		
@@ -408,13 +438,20 @@ class registration_ui {
 		$data['anonymous_user'] = $GLOBALS['egw']->accounts->name2id($data['anonymous_user']);
 
 		$anon_apps = $GLOBALS['egw']->acl->get_user_applications($data['anonymous_user']);
-		if($anon_apps['registration'] != EGW_ACL_READ) {
+		if($anon_apps['registration'] != Acl::READ)
+		{
 			$data['message'] = lang('Anonymous user needs access to registration application');
 		}
 
 		if(!$data['name_nobody']) $data['name_nobody'] = 'eGroupWare '.lang('registration');
 		if(!$data['mail_nobody']) $data['mail_nobody'] = 'noreply@'.$GLOBALS['egw_info']['server']['mail_suffix'];
 
+		// Check for a mail account
+		if(!registration_bo::$mail_account)
+		{
+			Api\Framework::message('No mail account', 'error');
+			error_log("BAD");
+		}
 		// Get the addressbooks with the right permissions
 		$sel_options['pending_addressbook'] = registration_bo::get_allowed_addressbooks(registration_bo::PENDING);
 
@@ -449,7 +486,7 @@ class registration_ui {
 		);
 
 		$GLOBALS['egw_info']['flags']['app_header'] = lang('Site Configuration');
-		$template = new etemplate('registration.config');
+		$template = new Etemplate('registration.config');
 		$template->exec('registration.registration_ui.config', $data,$sel_options,$readonlys,$preserv);
 	}
 }

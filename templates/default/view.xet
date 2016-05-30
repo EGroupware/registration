@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- $Id$ -->
+<overlay>
+	<template id="registration.view" template="" lang="" group="0" version="1.9.001">
+		<grid width="100%">
+			<columns>
+				<column/>
+				<column/>
+			</columns>
+			<rows>
+				<row class="dialogHeader">
+					<description value="Status"/>
+					<menulist>
+						<menupopup id="status" readonly="true"/>
+					</menulist>
+				</row>
+				<row disabled="!@ip">
+					<description value="IP" id="ip" no_lang="1"/>
+				</row>
+				<row>
+					<date-time label="@timestamp_label" id="timestamp" readonly="true"/>
+				</row>
+				<row>
+					<link-list id="links" readonly="true"/>
+				</row>
+				<row class="dialogFooterToolbar" disabled="@no_actions">
+					<hbox>
+						<button label="Register" id="register"/>
+						<button label="Cancel" id="cancel"/>
+					</hbox>
+				</row>
+			</rows>
+		</grid>
+	</template>
+</overlay>

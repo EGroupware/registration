@@ -9,9 +9,11 @@
  * @version $Id$
  */
 
+use EGroupware\Api;
+
 // Install expiry timer
 $anonymous = $GLOBALS['egw_setup']->add_account($anonuser='anonymous','SiteMgr','User',$anonpasswd='anonymous','NoGroup');
-$async = new asyncservice();
+$async = new Api\Asyncservice();
 $async->set_timer(array('hour' => '*'),'registration-purge','registration.registration_bo.purge_expired',null, $anonymous);
 
 // Default configuration
