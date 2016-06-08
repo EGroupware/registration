@@ -19,8 +19,6 @@ use EGroupware\Api\Acl;
  * Both the sitemgr module and the login page UI pull from here.
  */
 
-require_once(EGW_INCLUDE_ROOT . '/sitemgr/inc/class.Content_BO.inc.php');
-
 class registration_bo extends Api\Storage\Tracking {
 
 	protected static $so;
@@ -160,7 +158,7 @@ class registration_bo extends Api\Storage\Tracking {
 		} else {
 			$link = Api\Html::link($arguments['link'],  array('confirm' => $reg_info['register_code']));
 		}
-		
+
 		$subject = $arguments['subject'] ? $arguments['subject'] : lang('subject for confirmation email title: %1', $arguments['title']);
 		$message = $arguments['message'] ? $arguments['message'] : lang('confirmation email for %1 expires %2 link: %3', $arguments['title'], $time, $link);
 
@@ -174,7 +172,7 @@ class registration_bo extends Api\Storage\Tracking {
 		if($config['support_email']) $mail->AddReplyTo($config['support_email']);
 		$mail->Subject = $subject;
 		$mail->Body = $message;
-		
+
 		return "Confirmation message sent";
 	}
 
@@ -193,8 +191,9 @@ class registration_bo extends Api\Storage\Tracking {
 		$address = $addressbook->read($registration['contact_id']);
 
 		// Load settings
-		if($registration['sitemgr_version']) {
+		if($registration['sitemgr_version'] && file_exist(EGW_SERVER_ROOT.'/sitemgr')) {
 			// All the settings (more than from login page) are set in the block
+			include_once(EGW_INCLUDE_ROOT . '/sitemgr/inc/class.Content_BO.inc.php');
 			$content = new Content_BO();
 			$config = $content->getversion($registration['sitemgr_version']);
 		} else {
@@ -318,7 +317,7 @@ class registration_bo extends Api\Storage\Tracking {
 		return $list;
 	}
 
-	
+
 	/**
 	 * Get a list of addressbooks that can be used by registration
 	 *
@@ -442,7 +441,7 @@ class registration_bo extends Api\Storage\Tracking {
 			$title = $content->getlangblocktitle($block_id, $GLOBALS['egw_info']['user']['preferences']['common']['lang']);
 			$title .= ' ';
 		}
-		
+
 		switch($entry['status'])
 		{
 			case self::PENDING:
