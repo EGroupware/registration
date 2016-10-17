@@ -467,7 +467,7 @@ class registration_ui
 			}
 		}
 		
-		$data = config::read('registration');
+		$data = Api\Config::read('registration');
 
 
 		// Code uses username, widget wants ID
