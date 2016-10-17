@@ -46,7 +46,7 @@ class registration_bo extends Api\Storage\Tracking {
 
 		$config = Api\Config::read('registration');
 		$anonymous_user = $GLOBALS['egw']->accounts->name2id($config['anonymous_user']);
-		if($data['anonymous_user'])
+		if($anonymous_user)
 		{
 			foreach(EGroupware\Api\Mail\Account::search($anonymous_user,false) as $account)
 			{
@@ -70,12 +70,15 @@ class registration_bo extends Api\Storage\Tracking {
 	/**
 	 * Read registration information, given the ID
 	 */
-	public static function read($reg_id) {
+	public static function read($reg_id)
+	{
 		$reg_info = self::$so->read((int)$reg_id);
-		if($reg_info && $reg_info['contact_id']) {
+		if($reg_info && $reg_info['contact_id'])
+		{
 			$addressbook = new Api\Contacts();
 			$contact = $addressbook->read($reg_info['contact_id']);
-			if($contact && is_array($contact)) {
+			if($contact && is_array($contact))
+			{
 				$reg_info += $contact;
 			}
 		}
@@ -85,17 +88,21 @@ class registration_bo extends Api\Storage\Tracking {
 	/**
 	 * Store registration information
 	 */
-	public static function save($values, $link = true) {
+	public static function save($values, $link = true)
+	{
 		if(!$values['status']) $values['status'] = self::PENDING;
 		if(!$values['register_code']) $values['register_code'] = md5(time());
 
 		// Check account & password
-		if($values['account_lid']) {
-			if(!$values['password']) {
+		if($values['account_lid'])
+		{
+			if(!$values['password'])
+			{
 				throw new Api\Exception\WrongUserinput(lang('You must enter a password'));
 			}
 			if(self::$so->read(array('account_lid' => $values['account_lid'])) ||
-				$GLOBALS['egw']->accounts->exists($values['account_lid']) !== 0) {
+				$GLOBALS['egw']->accounts->exists($values['account_lid']) !== 0)
+			{
 				throw new Api\Exception(lang('Sorry, that username is already taken.'));
 			}
 		}
@@ -105,9 +112,11 @@ class registration_bo extends Api\Storage\Tracking {
 		$contact_fields = $addressbook->contact_fields;
 		unset($contact_fields['email']); // Always present
 		unset($contact_fields['id']); // Address already there
-		if(array_intersect_key($contact_fields,$values)) {
+		if(array_intersect_key($contact_fields,$values))
+		{
 			$result = $addressbook->save($values);
-			if(!$result) {
+			if(!$result)
+			{
 				throw new Api\Exception\NoPermission($addressbook->error);
 				return False;
 			}
@@ -117,22 +126,32 @@ class registration_bo extends Api\Storage\Tracking {
 		}
 
 		// Check pre-confirm, add in post-confirm hook, if registering for a hooked app
-		if(strpos($values['register_for'], ':') !== False) {
+		if(strpos($values['register_for'], ':') !== False)
+		{
 			list($app, $name) = explode(':', $values['register_for']);
 			$hook = Api\Hooks::single('registration', $app);
-			if($hook['post_confirm_hook']) $values['post_confirm_hook'] = $hook['post_confirm_hook'];
-			if($hook['pre_check']) {
+			if($hook['post_confirm_hook'])
+			{
+				$values['post_confirm_hook'] = $hook['post_confirm_hook'];
+			}
+			if($hook['pre_check'])
+			{
 				$result = ExecMethod($hook['pre_check'], $values);
-				if($result !== true) throw new Api\Exception($result);
+				if($result !== true)
+				{
+					throw new Api\Exception($result);
+				}
 			}
 		}
 
 		$result = self::$so->save($values);
-		if(!$result && $link) {
+		if(!$result && $link)
+		{
 			// Link
 			Link::link('registration', self::$so->data['reg_id'], 'addressbook', $values['contact_id']);
 		}
-		if(!$result) {
+		if(!$result)
+		{
 			return self::$so->data['reg_id'];
 		}
 		return false;
@@ -142,20 +161,25 @@ class registration_bo extends Api\Storage\Tracking {
 	 * Removes a registration record.
 	 * Does not remove associated contact (it may be used)
 	 */
-	public static function delete($reg_id) {
+	public static function delete($reg_id)
+	{
 		self::$so->delete($reg_id);
 	}
 
 	/**
 	 * Send an email with a confirmation link
 	 */
-	public function send_confirmation($arguments, $reg_info) {
+	public static function send_confirmation($arguments, $reg_info)
+	{
 		$config = Api\Config::read('registration');
 
 		$time = Api\DateTime::to($reg_info['timestamp']) . ' (' . $arguments['expiry'] . ' ' . lang('hours') . ')';
-		if(substr($arguments['link'] ,0,4) == 'http') {
+		if(substr($arguments['link'] ,0,4) == 'http')
+		{
 			$link = $arguments['link'] . '&confirm='.$reg_info['register_code'];
-		} else {
+		}
+		else
+		{
 			$link = Api\Html::link($arguments['link'],  array('confirm' => $reg_info['register_code']));
 		}
 
@@ -181,7 +205,8 @@ class registration_bo extends Api\Storage\Tracking {
 	 *
 	 * Everything has been set up already, now finish it off.
 	 */
-	public static function confirm($registration_code) {
+	public static function confirm($registration_code)
+	{
 		$registration = self::$so->read(array('register_code' => $registration_code, 'status' => self::PENDING));
 
 		if(!$registration) return false;
@@ -191,18 +216,22 @@ class registration_bo extends Api\Storage\Tracking {
 		$address = $addressbook->read($registration['contact_id']);
 
 		// Load settings
-		if($registration['sitemgr_version'] && file_exist(EGW_SERVER_ROOT.'/sitemgr')) {
+		if($registration['sitemgr_version'] && file_exist(EGW_SERVER_ROOT.'/sitemgr'))
+		{
 			// All the settings (more than from login page) are set in the block
 			include_once(EGW_INCLUDE_ROOT . '/sitemgr/inc/class.Content_BO.inc.php');
 			$content = new Content_BO();
 			$config = $content->getversion($registration['sitemgr_version']);
-		} else {
+		}
+		else
+		{
 			// Login page - use global config
 			$config = Api\Config::read('registration');
 			if($registration['account_lid']) $config['register_for'] = 'account';
 		}
 
-		if($config['register_for'] == 'account' && self::check_account(array_merge($registration + $address), $account)) {
+		if($config['register_for'] == 'account' && self::check_account(array_merge($registration + $address), $account))
+		{
 			// Add a new account
 			$command = new admin_cmd_edit_user(false, $account, $account['password']);
 			$command->run();
@@ -226,7 +255,9 @@ class registration_bo extends Api\Storage\Tracking {
 			// Link to the new contact
 			Link::link('registration', $registration['reg_id'], 'addressbook', $account['id']);
 
-		} elseif ($config['confirmed_addressbook']) {
+		}
+		elseif ($config['confirmed_addressbook'])
+		{
 			// Move address
 			$address['owner'] = $config['confirmed_addressbook'];
 			$result = $addressbook->save($address, true);
@@ -242,7 +273,8 @@ class registration_bo extends Api\Storage\Tracking {
 		$result = self::$so->save($registration);
 
 		// Run post confirmation code
-		if($registration['post_confirm_hook']) {
+		if($registration['post_confirm_hook'])
+		{
 			$registration = ExecMethod($registration['post_confirm_hook'], $registration);
 		}
 
@@ -258,7 +290,8 @@ class registration_bo extends Api\Storage\Tracking {
 	 * @param registration array
 	 * @param account optional array of info populated from $registration to be passed to user command
 	 */
-	public static function check_account($registration, &$account = array()) {
+	public static function check_account($registration, &$account = array())
+	{
 		$config = Api\Config::read('registration');
 		$account = array(
 			'account_lid'		=> $registration['account_lid'],
@@ -300,7 +333,8 @@ class registration_bo extends Api\Storage\Tracking {
 	 *
 	 * @return array
 	 */
-	public static function register_apps_list() {
+	public static function register_apps_list()
+	{
 		$list = array(
 			'account'	=> lang('Account'),
 			'other'		=> lang('Other')
@@ -308,9 +342,11 @@ class registration_bo extends Api\Storage\Tracking {
 
 		// Poll registration hook
 		$hooks = Api\Hooks::process('registration');
-		foreach($hooks as $appname => $app) {
+		foreach($hooks as $appname => $app)
+		{
 			if(!is_array($app[0])) $app = Array($app);
-			foreach($app as $result) {
+			foreach($app as $result)
+			{
 				$list[$appname . ':' . $result['name']] = lang($result['name']);
 			}
 		}
@@ -399,7 +435,8 @@ class registration_bo extends Api\Storage\Tracking {
 		if(is_array($expired))
 		{
 			$addressbook = new Api\Contacts();
-			foreach($expired as $record) {
+			foreach($expired as $record)
+			{
 				// Clear registration
 				if($record['post_confirm_hook'])
 				{

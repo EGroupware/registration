@@ -21,7 +21,8 @@ use EGroupware\Api\Etemplate;
  * The user interface for the sitemgr module is in registration_sitemgr.
  * This file is for the normal eGW bits.
  */
-class registration_ui {
+class registration_ui
+{
 
 	// Directly accessable functions (via URL)
 	public $public_functions = array(
@@ -36,12 +37,14 @@ class registration_ui {
 
 	protected $expiry = 2; // hours
 
-	public function __construct() {
+	public function __construct()
+	{
 		$config = Api\Config::read('registration');
 		$this->expiry = $config['expiry'];
 	}
 
-	public function index() {
+	public function index()
+	{
 	}
 
 	/**
@@ -49,15 +52,18 @@ class registration_ui {
 	 *
 	 * @param content
 	 */
-	public function view($content = array()) {
+	public function view($content = array())
+	{
 		$reg_id = ($_GET['reg_id'] && preg_match('/^[0-9]+$/',$_GET['reg_id'])) ? $_GET['reg_id'] : $content['reg_id'];
 
 		if(!$reg_id) return lang('Missing registration');
 		
 		$registration = registration_bo::read($reg_id);
 
-		if($content && $registration['status'] == registration_bo::PENDING && $GLOBALS['egw_info']['user']['apps']['admin']) {
-			if($content['cancel']) {
+		if($content && $registration['status'] == registration_bo::PENDING && $GLOBALS['egw_info']['user']['apps']['admin'])
+		{
+			if($content['cancel'])
+			{
 				// Cancel pending registration
 				$addressbook = new Api\Contacts();
 				if(!$addressbook->delete($registration['contact_id'])) {
@@ -67,14 +73,16 @@ class registration_ui {
 				$registration = registration_bo::read($reg_id);
 				$msg .= lang('Canceled');
 			}
-			if($content['register']) {
+			if($content['register'])
+			{
 				// Push through pending registration
 				$registration = registration_bo::confirm($registration['register_code']);
 				$mgs .= lang('Registered');
 			}
 		}
 
-		switch ($registration['status']) {
+		switch ($registration['status'])
+		{
 			case registration_bo::PENDING:
 				$registration['timestamp_label'] = lang('Expires');
 				break;
@@ -91,7 +99,8 @@ class registration_ui {
 		$sel_options['status'] = registration_bo::$status_list;
 
 		$registration['no_actions'] = !$GLOBALS['egw_info']['user']['apps']['admin'] || $registration['status'] != registration_bo::PENDING;
-		if(!$registration['no_actions']) {
+		if(!$registration['no_actions'])
+		{
 			// Check ACL on target addressbooks
 			$addressbook = new Api\Contacts();
 			if(!in_array($registration['owner'], array_keys($addressbook->get_addressbooks(Acl::DELETE))))
@@ -113,7 +122,8 @@ class registration_ui {
 	 *
 	 * This is a mirror of the sitemgr module registering an account, available outside of sitemgr.
 	 */
-	public static function register($content = array()) {
+	public static function register($content = array())
+	{
 		// Fields to show
 		$data['show'] = array(
 			'account_lid'	=> true,
@@ -124,7 +134,8 @@ class registration_ui {
 		$config = Api\Config::read('registration');
 		$template = new etemplate('registration.registration_form');
 
-		if($config['show']) {
+		if($config['show'])
+		{
 			$fields = explode(',',$config['show']);
 			$data['show'] += array_combine($fields, array_fill(0,count($fields),true));
 		}
@@ -155,9 +166,12 @@ class registration_ui {
 
 						// Set timestap to expiry, so we don't have to save both
 						$content['timestamp'] = time() + ($config['expiry'] * 3600);
-						try {
+						try
+						{
 							$reg_id = registration_bo::save($content);
-						} catch (Exception $e) {
+						}
+						catch (Exception $e)
+						{
 							$msg = $e->getMessage();
 							$reg_id = false;
 						}
@@ -178,16 +192,22 @@ class registration_ui {
 							$account_ok = true;
 						}
 					}
-				} catch (Api\Exception $e) {
+				}
+				catch (Api\Exception $e)
+				{
 					$msg = $e->getMessage();
 					$account_ok = false;
 				}
 			}
 		}
-		if($msg) $data['message'] = $msg;
+		if($msg)
+		{
+			$data['message'] = $msg;
+		}
 
 		// a simple calculation captcha
-		if (in_array('captcha',$data['show'])) {
+		if (in_array('captcha',$data['show']))
+		{
 			$num1 = rand(1,99);
 			$num2 = rand(1,99);
 			if ($num2 > $num1)      // keep the result positive
@@ -216,7 +236,8 @@ class registration_ui {
 		$GLOBALS['egw_info']['flags'] = array(
 			'noheader'  => True,
 			'nonavbar' => True,
-			'app_header' => lang('account registration')
+			'app_header' => lang('account registration'),
+			'currentapp' => 'registration'
 		);
 		$template->exec('registration.registration_ui.register', $data,$sel_options,$readonlys,$preserv);
 	}
@@ -224,11 +245,13 @@ class registration_ui {
 	/**
 	 * Send lost user ID(s)
 	 */
-	public function lost_username($content = array()) {
+	public function lost_username($content = array())
+	{
 
 		$data = array();
 		// Deal with incoming
-		if($content && $content['email']) {
+		if($content && $content['email'])
+		{
 			// Find usernames
 			$query = array(
 				'type'		=> 'accounts',
@@ -236,10 +259,12 @@ class registration_ui {
 				'query'		=> $content['email']
 			);
 			$accounts = $GLOBALS['egw']->accounts->search($query);
-			if($accounts) {
+			if($accounts)
+			{
 				// Build list
 				$account_list = array();
-				foreach($accounts as $id => $account) {
+				foreach($accounts as $id => $account)
+				{
 					$account_list[] = $account['account_lid'];
 				}
 				// Don't need the confirmation, just send the email and discard
@@ -256,7 +281,9 @@ class registration_ui {
 				$data['message'] = registration_bo::send_confirmation($arguments, $info);
 				$readonlys['submit'] = true;
 				$readonlys['email'] = true;
-			} else {
+			}
+			else
+			{
 				$data['message'] = lang('Sorry, no account exists for %1', $content['email']);
 			}
 		}
@@ -265,7 +292,8 @@ class registration_ui {
 		$GLOBALS['egw_info']['flags'] = array(
 			'noheader'  => True,
 			'nonavbar' => True,
-			'app_header' => lang('Lost user ID')
+			'app_header' => lang('Lost user ID'),
+			'currentapp' => 'registration'
 		);
 		$template = new etemplate('registration.lost_username');
 		$template->exec('registration.registration_ui.lost_username', $data,$sel_options,$readonlys,$preserv);
@@ -274,19 +302,23 @@ class registration_ui {
 	/**
 	 * Reset lost password
 	 */
-	public function lost_password($content = array()) {
+	public function lost_password($content = array())
+	{
 
 		$data = $content;
 		// Deal with incoming
-		if($content['wait'] && $content['wait'] > time()) {
+		if($content['wait'] && $content['wait'] > time())
+		{
 			$data['message'] = lang('Abuse reduction - please wait %1 seconds and try again.', $content['wait'] - time());
 			$data['username'] = $content['username'];
 			unset($content['username']);
 		}
-		if($content && $content['username']) {
+		if($content && $content['username'])
+		{
 			// Find username
 			$account_id = $GLOBALS['egw']->accounts->name2id($content['username']);
-			if($account_id) {
+			if($account_id)
+			{
 				$account = $GLOBALS['egw']->accounts->read($account_id);
 				$info = array(
 					'contact_id'	=> $account['person_id'],
@@ -304,7 +336,9 @@ class registration_ui {
 				$data['message'] = registration_bo::send_confirmation($arguments, $info);
 				$readonlys['submit'] = true;
 				$readonlys['username'] = true;
-			} else {
+			}
+			else
+			{
 				$data['message'] = lang('Sorry, that username does not exist.');
 				// Start a timer to prevent excessive use
 				$preserv['wait'] = time() + 10; // wait 10s
@@ -315,7 +349,8 @@ class registration_ui {
 		$GLOBALS['egw_info']['flags'] = array(
 			'noheader'  => True,
 			'nonavbar' => True,
-			'app_header' => lang('Lost password')
+			'app_header' => lang('Lost password'),
+			'currentapp' => 'registration'
 		);
 
 		$template = new etemplate('registration.lost_password');
@@ -359,7 +394,8 @@ class registration_ui {
 		$GLOBALS['egw_info']['flags'] = array(
 			'noheader'  => True,
 			'nonavbar' => True,
-			'app_header' => lang('Enter your new password')
+			'app_header' => lang('Enter your new password'),
+			'currentapp' => 'registration'
 		);
 		$template = new etemplate('registration.change_password');
 		$template->exec('registration.registration_ui.change_password', $data,$sel_options,$readonlys,$preserv);
@@ -380,11 +416,11 @@ class registration_ui {
 
 		if($register_code && registration_bo::confirm($register_code))
 		{
-				echo lang('Registration complete');
+			echo lang('Registration complete');
 		}
 		else
 		{
-				echo lang('Unable to process confirmation.');
+			echo lang('Unable to process confirmation.');
 		}
 		common::parse_navbar();
 		echo $GLOBALS['egw']->framework->footer();
@@ -457,7 +493,7 @@ class registration_ui {
 
 		// Copied from sitemgr module
 		$uicontacts = new addressbook_ui();
-                $sel_options['show'] = array(
+            $sel_options['show'] = array(
 			'org_name'             => lang('Company'),
 			'org_unit'             => lang('Department'),
 			//	'n_fn'                 => lang('Prefix').', '.lang('Firstname').' + '.lang('Lastname'), //Required

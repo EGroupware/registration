@@ -1,0 +1,11 @@
+/**
+ * Registration app
+ */
+
+body > form[id^=registration-]
+{
+	display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
