@@ -52,8 +52,8 @@ use EGroupware\Api;
 	);
 	include('../header.inc.php');
 
-	// force idots template set, even if user has eg. jDots, which would redirect to create it's framework
-	$GLOBALS['egw_info']['server']['template_set'] = 'idots';
+	// force default' template set, even if user has eg. jDots, which would redirect to create its framework
+	$GLOBALS['egw_info']['server']['template_set'] = 'default';
 	
 	$app = 'registration';
 	if ($_GET['menuaction'])
