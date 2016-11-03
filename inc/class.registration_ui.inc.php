@@ -361,6 +361,7 @@ class registration_ui
 	public function change_password($content)
 	{
 		$preserv = $content;
+		$data = array();
 
 		// Make sure registration is valid - skip when being called from purge
 		if($content['reg_id'] && $content['status'] != registration_bo::CONFIRMED)
@@ -385,8 +386,8 @@ class registration_ui
 			{
 				// No need to keep this record
 				registration_bo::delete($content['reg_id']);
-				$data['message'] = lang('Your password was changed.');
-				$data['done'] = true;
+
+				return Egw::redirect_link('/login.php',array( 'cd' => lang('Your password was changed.')));
 			}
 		}
 
@@ -410,20 +411,18 @@ class registration_ui
 		$GLOBALS['egw_info']['flags'] = array(
 			'app_header' => lang('Confirm registration')
 		);
-		echo $GLOBALS['egw']->framework->header();
 
         $register_code = ($_GET['confirm'] && preg_match('/^[0-9a-f]{32}$/',$_GET['confirm'])) ? $_GET['confirm'] : false;
 
 		if($register_code && registration_bo::confirm($register_code))
 		{
-			echo lang('Registration complete');
+			$msg = lang('Registration complete');
 		}
 		else
 		{
-			echo lang('Unable to process confirmation.');
+			$msg = lang('Unable to process confirmation.');
 		}
-		common::parse_navbar();
-		echo $GLOBALS['egw']->framework->footer();
+		Egw::redirect_link('/login.php',array( 'cd' => lang('Confirm registration') . ': ' . $msg));
 	}
 
 	/**

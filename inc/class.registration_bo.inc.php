@@ -182,6 +182,8 @@ class registration_bo extends Api\Storage\Tracking {
 		{
 			$link = Api\Html::link($arguments['link'],  array('confirm' => $reg_info['register_code']));
 		}
+		$link = ($_SERVER['HTTPS'] || $GLOBALS['egw_info']['server']['enforce_ssl'] ? 'https://' : 'http://').
+					($GLOBALS['egw_info']['server']['hostname'] ? $GLOBALS['egw_info']['server']['hostname'] : $_SERVER['HTTP_HOST']).$link;
 
 		$subject = $arguments['subject'] ? $arguments['subject'] : lang('subject for confirmation email title: %1', $arguments['title']);
 		$message = $arguments['message'] ? $arguments['message'] : lang('confirmation email for %1 expires %2 link: %3', $arguments['title'], $time, $link);
@@ -194,8 +196,9 @@ class registration_bo extends Api\Storage\Tracking {
 		$mail->FromName = $config['name_nobody'] ? $config['name_nobody'] : 'eGroupWare '.lang('registration');
 		$mail->AddAddress($reg_info['email'], $reg_info['n_fileas']);
 		if($config['support_email']) $mail->AddReplyTo($config['support_email']);
-		$mail->Subject = $subject;
-		$mail->Body = $message;
+		$mail->addHeader('Subject', trim($subject));
+		$mail->setBody($message);
+		$mail->send();
 
 		return "Confirmation message sent";
 	}
