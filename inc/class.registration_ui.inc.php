@@ -317,7 +317,7 @@ class registration_ui
 			$data['username'] = $content['username'];
 			unset($content['username']);
 		}
-		if ($content['goTologin'])
+		if ($content['gologin'])
 		{
 			return Egw::redirect_link('/login.php');
 		}
