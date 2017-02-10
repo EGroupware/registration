@@ -4,8 +4,36 @@
 
 body > form[id^=registration-]
 {
-	display: flex;
-    align-items: center;
-    padding: 10px;
+	padding: 10px;
     justify-content: center;
+    height: 470px;
+    border-radius: 10px;
+    border: 1px solid silver;
+    width: 300px;
+    margin: 10% auto;
+}
+
+span#registration-lost_password_message,
+#registration-lost_password_username,
+.login_recovery_description,
+#registration-lost_username_message {
+	font-size: 12pt;
+}
+
+#registration-lost_password_username, #registration-lost_username_email {
+	height: 35px;
+    width: 91%;
+    border: none;
+    border-bottom: 1px solid silver;
+}
+#registration-lost_password_username:focus,  #registration-lost_username_email:focus {
+	outline: none;
+}
+button.login_recovery_btn {
+	height: 30px;
+    width: 200px;
+    background: #0a5ca5;
+    border-radius: 3px;
+    color: white;
+	font-size: 12pt;
 }

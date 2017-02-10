@@ -57,7 +57,7 @@ class registration_ui
 		$reg_id = ($_GET['reg_id'] && preg_match('/^[0-9]+$/',$_GET['reg_id'])) ? $_GET['reg_id'] : $content['reg_id'];
 
 		if(!$reg_id) return lang('Missing registration');
-		
+
 		$registration = registration_bo::read($reg_id);
 
 		if($content && $registration['status'] == registration_bo::PENDING && $GLOBALS['egw_info']['user']['apps']['admin'])
@@ -249,6 +249,10 @@ class registration_ui
 	{
 
 		$data = array();
+		if ($content['gologin'])
+		{
+			return Egw::redirect_link('/login.php');
+		}
 		// Deal with incoming
 		if($content && $content['email'])
 		{
@@ -312,6 +316,10 @@ class registration_ui
 			$data['message'] = lang('Abuse reduction - please wait %1 seconds and try again.', $content['wait'] - time());
 			$data['username'] = $content['username'];
 			unset($content['username']);
+		}
+		if ($content['goTologin'])
+		{
+			return Egw::redirect_link('/login.php');
 		}
 		if($content && $content['username'])
 		{
@@ -465,7 +473,7 @@ class registration_ui
 				Api\Config::save_value($key, $value, 'registration');
 			}
 		}
-		
+
 		$data = Api\Config::read('registration');
 
 
