@@ -110,7 +110,7 @@ the anonymous user has probably no add rights for this addressbook.	registration
 the anonymous user needs add rights for it!	registration	fr	L'utilisateur anonyme doit avoir des droits d'ajout !
 the two passwords are not the same	registration	fr	Les deux mots de passe ne sont pas les mêmes
 there was an error saving your data :-(	registration	fr	ERREUR à l'enregistrement de données !
-this module displays a registration form, and sends a confirmation email.	registration	fr	Ce module affiche un formulaire d'enregistrement (à eGroupware) et envoie une confirmation par email.
+this module displays a registration form, and sends a confirmation email.	registration	fr	Ce module affiche un formulaire d'enregistrement (à EGroupware) et envoie une confirmation par email.
 type	registration	fr	Type
 unable to process confirmation.	registration	fr	Incapable de procéder à la confirmation
 unable to send mail, contact your administrator	registration	fr	Impossible d'envoyer l'e-mail, veuillez contacter votre administration
