@@ -5,7 +5,6 @@
  * @license http://opensource.org/licenses/gpl-license.php GPL - GNU General Public License
  * @package registration
  * @link http://www.egroupware.org
- * @version $Id$
  */
 
 function registration_upgrade0_8_1()
@@ -113,4 +112,10 @@ function registration_upgrade1_9_001()
 function registration_upgrade14_1()
 {
 	return $GLOBALS['setup_info']['registration']['currentver'] = '16.1';
+}
+
+
+function registration_upgrade16_1()
+{
+	return $GLOBALS['setup_info']['registration']['currentver'] = '17.1';
 }
