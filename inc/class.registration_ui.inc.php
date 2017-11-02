@@ -57,7 +57,7 @@ class registration_ui
 		$reg_id = ($_GET['reg_id'] && preg_match('/^[0-9]+$/',$_GET['reg_id'])) ? $_GET['reg_id'] : $content['reg_id'];
 
 		if(!$reg_id) return lang('Missing registration');
-		
+
 		$registration = registration_bo::read($reg_id);
 
 		if($content && $registration['status'] == registration_bo::PENDING && $GLOBALS['egw_info']['user']['apps']['admin'])
@@ -284,7 +284,8 @@ class registration_ui
 			}
 			else
 			{
-				$data['message'] = lang('Sorry, no account exists for %1', $content['email']);
+				// Unknown email, but don't tell them that
+				$data['message'] = lang('we have sent a mail to your email account: %1 with your lost user ids.	', $content['email']);
 			}
 		}
 
@@ -339,7 +340,10 @@ class registration_ui
 			}
 			else
 			{
-				$data['message'] = lang('Sorry, that username does not exist.');
+				// Invalid username, but give the same message to avoid telling
+				// them that
+				$data['message'] = lang('we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.');
+
 				// Start a timer to prevent excessive use
 				$preserv['wait'] = time() + 10; // wait 10s
 			}
@@ -465,7 +469,7 @@ class registration_ui
 				Api\Config::save_value($key, $value, 'registration');
 			}
 		}
-		
+
 		$data = Api\Config::read('registration');
 
 
