@@ -41,6 +41,11 @@ class registration_ui
 	{
 		$config = Api\Config::read('registration');
 		$this->expiry = $config['expiry'];
+		if($_GET['lang_code'])
+		{
+			$GLOBALS['egw_info']['user']['preferences']['common']['lang'] = substr($_GET['lang_code'],0,2);
+		}
+		Api\Translation::init();
 	}
 
 	public function index()
@@ -288,7 +293,8 @@ class registration_ui
 			}
 			else
 			{
-				$data['message'] = lang('Sorry, no account exists for %1', $content['email']);
+				// Unknown email, but don't tell them that
+				$data['message'] = lang('we have sent a mail to your email account: %1 with your lost user ids.	', $content['email']);
 			}
 		}
 
@@ -347,7 +353,9 @@ class registration_ui
 			}
 			else
 			{
-				$data['message'] = lang('Sorry, that username does not exist.');
+				// Invalid username, but give the same message to avoid telling
+				// them that
+				$data['message'] = lang('we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.');
 				// Start a timer to prevent excessive use
 				$preserv['wait'] = time() + 10; // wait 10s
 			}

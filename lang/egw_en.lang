@@ -50,6 +50,7 @@ enter your new password	registration	en	Enter your new password
 expires	registration	en	Expires
 fax	registration	en	Fax
 global options	admin	en	Global options
+go back to login	registration	en	Go back to login
 home phone	registration	en	Home phone
 hours	registration	en	Hours
 how long to confirm before registration expires? (hours)	registration	en	How long to confirm before registration expires? (hours)
@@ -96,8 +97,6 @@ report all problems and abuse to	registration	en	Report all problems and abuse t
 required	registration	en	Required
 response	registration	en	Response
 send email	admin	en	Send email
-sorry, no account exists for %1	registration	en	Sorry, no account exists for %1
-sorry, that username does not exist.	registration	en	Sorry, that user name does not exist.
 sorry, that username is already taken.	registration	en	Sorry, that user name is already taken.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	en	Sorry, we are having a problem activating your account. Note that links sent by email are only valid during two hours. If you think this delay was expired, just retry. Otherwise, please contact the site administrator.
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	en	Sorry, we are having a problem retrieving the information needed for changing your password. Note that links sent by email are only valid during two hours. If you think this delay was expired, just retry. Otherwise, please contact the site administrator.
@@ -123,7 +122,7 @@ username is	admin	en	Username is
 values 'for dropdown': comma separated), for 'dropdown from table': table,valuefield,displayfield	registration	en	Values 'for drop down': comma separated), For 'Drop down from table': table, value field, display field
 values (for dropdown only; comma separated)	registration	en	Values -for drop down only, comma separated.
 verification	registration	en	Verification
-we have sent a mail to your email account: %s with your lost user ids.	registration	en	We have sent a mail to your email account: %s with your lost user IDs.
+we have sent a mail to your email account: %1 with your lost user ids.	registration	en	We have sent a mail to your email account: %1 with your lost user IDs.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	en	We have sent a mail with instructions to change your password. You should follow the included link within two hours. If you do not, you will have to go to the lost password screen again.
 work phone	registration	en	Work phone
 wrong - try again ...	registration	en	Wrong - try again ...
