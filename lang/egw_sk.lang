@@ -50,6 +50,7 @@ enter your new password	registration	sk	Zadajte vaše heslo
 expires	registration	sk	Vyprší
 fax	registration	sk	Fax
 global options	admin	sk	Globálne možnosti
+go back to login	registration	sk	Naspäť na prihlásenie
 home phone	registration	sk	Telefón (domov)
 hours	registration	sk	Hodín
 how long to confirm before registration expires? (hours)	registration	sk	Po koľko hodín umožniť potvrdenie pred vypršaním registrácie?
@@ -122,7 +123,7 @@ use trial accounts?	admin	sk	Použiť skúšobné účty?
 username is	admin	sk	Používateľské meno je
 values (for dropdown only; comma separated)	registration	sk	Hodnoty (Iba pre rozbaľovacie; oddelené čiarkou)
 verification	registration	sk	Overenie
-we have sent a mail to your email account: %s with your lost user ids.	registration	sk	Poslali sme správu na Váš E-mailový účet: %s s Vašími stratenými ID používateľa.
+we have sent a mail to your email account: %1 with your lost user ids.	registration	sk	Na vašu e-mailovú adresu %1 sme poslali správu s vaším strateným ID.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	sk	Poslali sme E-mail s pokynmi ohľadom zmeny Vášho hesla. Prosím použite priložený odkaz do 2 hodín. Ak to neurobíte, budete musieť znovu navštíviť stránku pre stratené heslá.
 work phone	registration	sk	Telefón (práca)
 wrong - try again ...	registration	sk	Chyba - skúste znovu...
