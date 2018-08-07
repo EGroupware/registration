@@ -30,7 +30,7 @@ class registration_hooks {
 
 			$title = $appname;
 			$file = Array(
-				'Site Configuration'	=> $GLOBALS['egw']->link('/index.php', 'menuaction=registration.registration_ui.config'),
+				'Site Configuration'	=> $GLOBALS['egw']->link('/index.php', 'menuaction=registration.registration_ui.config&ajax=true'),
 			);
 
 			if ($location == 'admin')
