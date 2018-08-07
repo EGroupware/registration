@@ -13,7 +13,7 @@
 					<description/>
 				</row>
 				<row class="th">
-					<description value="Global options" span="all"/>
+					<description value="Global options" span="all" class="subHeader"/>
 				</row>
 				<row>
 					<description value="Anonymous user"/>
@@ -65,7 +65,7 @@
 					<textbox multiline="true" id="tos_text" rows="5" cols="80" span="all"/>
 				</row>
 				<row class="th">
-					<description value="Login page" span="all"/>
+					<description value="Login page" span="all" class="subHeader"/>
 				</row>
 				<row>
 					<description value="Enable registration"/>
@@ -117,5 +117,11 @@
 				</row>
 			</rows>
 		</grid>
+		<styles>
+			span.subHeader {
+				font-weight: bold;
+				font-size: 110%;
+			}
+		</styles>
 	</template>
 </overlay>
