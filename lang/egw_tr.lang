@@ -1,21 +1,21 @@
 address line 2	registration	tr	Adres 2. sat?r?
-anonymous user	registration	tr	Anonim kullanýcý
+anonymous user	registration	tr	Anonim kullanÄ±cÄ±
 business phone	registration	tr	?? Telefon
-canceled	registration	tr	Ýptal Edildi
+canceled	registration	tr	Ä°ptal Edildi
 city	registration	tr	?ehir
-department	registration	tr	Bölüm
+department	registration	tr	BÃ¶lÃ¼m
 expires	registration	tr	Sona Eriyor
 fax	registration	tr	Fax
 home phone	registration	tr	Ev tel
 hours	registration	tr	saat
 ip	registration	tr	IP
 mobile phone	registration	tr	Mobil Tel
-order	registration	tr	Sýralama
-prefix	registration	tr	Önek
-re-enter password	registration	tr	Þifreyi yeniden giriniz
-remove	registration	tr	Kaldýr
+order	registration	tr	SÄ±ralama
+prefix	registration	tr	Ã–nek
+re-enter password	registration	tr	Åžifreyi yeniden giriniz
+remove	registration	tr	KaldÄ±r
 street	registration	tr	Cadde
 text	registration	tr	Metin
-the two passwords are not the same	registration	tr	Ýki þifre birbirinden farklý
+the two passwords are not the same	registration	tr	Ä°ki ÅŸifre birbirinden farklÄ±
 work phone	registration	tr	?? tel
 zip code	registration	tr	Posta Kodu
