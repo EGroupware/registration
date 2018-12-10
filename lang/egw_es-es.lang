@@ -4,6 +4,7 @@
 <br>please contact the site administrator.	registration	es-es	<br>Por favor, póngase en contacto con el administrador del sitio
 [unknown first name]	registration	es-es	[nombre de pila desconocido]
 [unknown last name]	registration	es-es	[apellido desconocido]
+account	registration	es-es	Cuenta
 account %1 record could not be found, report to site administrator	registration	es-es	No se pudo encontrar el registro para la cuenta %1. Informe al administrador del sitio.
 account password retrieval	registration	es-es	Recuperación de la contraseña de la cuenta
 account registration	registration	es-es	Registro de la cuenta
@@ -73,7 +74,6 @@ report all problems and abuse to	registration	es-es	Informar de todos los proble
 required	registration	es-es	Requerido
 response	registration	es-es	Respuesta
 send email	admin	es-es	Enviar correo
-sorry, that username does not exist.	registration	es-es	Lo sentimos, ese usuario no existe
 sorry, that username is already taken.	registration	es-es	Lo sentimos, ese usuario ya está cogido.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	es-es	Lo sentimos, estamos teniendo un problema en la activación de su cuenta. Tenga en cuenta que los enlaces que se envían por correo son válidos sólo durante dos horas. Si piensa que este período ya ha transcurrido, simplemente reinténtelo. Si no, por favor, póngase en contacto con el administrador del sitio.
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	es-es	Lo sentimos. En este instante tenemos un problema al recuperar la información necesaria para cambiar la contraseña. Tenga en cuenta que los enlaces enviados por correo electrónico tienen una validez de sólo dos horas. Si piensa que este retardo ha expirado, simplemente reintentelo. Si no, por favor, póngase en contacto con el administrador del sitio.
@@ -96,7 +96,6 @@ username is	admin	es-es	El nombre de usuario es
 values 'for dropdown': comma separated), for 'dropdown from table': table,valuefield,displayfield	registration	es-es	Valores 'Para el desplegable': separadas por comas). Para 'Desplegable a partir de tabla': tabla, valor del campo, campo a mostrar
 values (for dropdown only; comma separated)	registration	es-es	Valores (sólo para las listas desplegables, separadas por comas)
 verification	registration	es-es	Verificación
-we have sent a mail to your email account: %s with your lost user ids.	registration	es-es	Hemos enviado un correo a su cuenta: %s con sus ids de usuario perdidos.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	es-es	Hemos enviado un correo con instrucciones para cambiar la contraseña. Debe pulsar el enlace incluido en un plazo de dos horas. Si no lo hace, tendrá que volver a la pantalla de contraseñas perdidas.
 work phone	registration	es-es	Teléfono del trabajo
 wrong - try again ...	registration	es-es	Incorrecto. Vuelva a intentarlo...
