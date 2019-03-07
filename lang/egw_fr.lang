@@ -16,6 +16,7 @@ address	registration	fr	Adresse
 address line 2	registration	fr	Adresse ligne 2
 addressbook the contacts should be saved to before they are confirmed	registration	fr	Le carnet d'adresses vers lequel enregistrer les contacts avant qu'ils ne soit confirmés.
 addressbook the contacts should be saved to before they are confirmed.	registration	fr	Le carnet d'adresses vers lequel enregistrer les contacts avant qu'ils ne soit confirmés.
+admin	registration	fr	Admin
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	fr	Lorsque vous avez introduit votre adresse e-mail, le compte utilisateur correspondant à cette adresse e-mail sera envoyé à cette adresse.
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	fr	Lorsque vous avez introduit votre nom d'utilisateur, les intructions pour changer votre mot de passe vous seront envoyées par EMail à l'adresse que vous avez introduite lors de votre enregistrement.
 an error occured while updating your password. please contact the site administrator.	registration	fr	Une erreur s'est produite lors de la mise à jour de votre mot de passe. Veuillez contacter l'administrateur.
@@ -29,6 +30,7 @@ business phone	registration	fr	Téléphone (bureau)
 canceled	registration	fr	Annulé
 change password for user	registration	fr	Changer le mot de passe pour l'utilisateur
 city	registration	fr	Ville
+company	registration	fr	Organisation
 confirm	registration	fr	confirmer
 confirm registration	registration	fr	Confirmer l'enregistrement
 confirmation email for %1 expires %2 link: %3	registration	fr	Ceci est une confirmation par email de %1. Veuillez cliquer sur le lien suivant pour terminer le processus d'enregistrement. %3 Ce lien va expirer %2.
@@ -40,7 +42,8 @@ days until trial accounts expire	admin	fr	Nombre de jours jusqu'à ce que le com
 department	registration	fr	Département
 display terms of service?	admin	fr	Afficher les termes et conditions?
 do not send account registration email (manual processing by admin)	admin	fr	Ne pas envoyer un email d'enregistrement (procédure manuelle d'activation par l'administrateur)
-email address	registration	fr	adresse e-mail
+email	registration	fr	email
+email address	registration	fr	Adresse e-mail
 email address to display for support	admin	fr	Adresse e-mail à afficher pour le support
 email address to send notices from	admin	fr	Adresse e-mail à partir de laquelle les messages peuvent être envoyés
 enable registration	registration	fr	Activer l'enregistrement
@@ -49,7 +52,9 @@ enter password	registration	fr	Entrer un mot de passe
 enter your new password	registration	fr	Introduisez votre nouveau mot de passe
 expires	registration	fr	Expire
 fax	registration	fr	Fax
+firstname	registration	fr	Prénom
 global options	admin	fr	Options globales
+go back to login	registration	fr	Revenir à la page de connexion
 home phone	registration	fr	Téléphone (domicile)
 hours	registration	fr	Heures
 how long to confirm before registration expires? (hours)	registration	fr	Combien de temps avant que la demande d'enregistrement n'expire ? (heures)
@@ -61,6 +66,7 @@ if you did not request this change, simply ignore this message.	registration	fr	
 immediately	admin	fr	Immédiatement
 internet	registration	fr	Internet
 ip	registration	fr	IP
+lastname	registration	fr	Nom
 login id	registration	fr	ID de connexion
 login page	registration	fr	Page de connexion
 lost login id	login	fr	ID de connexion perdu
@@ -71,12 +77,15 @@ lost user account retrieval	registration	fr	Récupération du compte utilisateur
 lost user id	registration	fr	ID utilisateur perdu
 lost user id link at login screen?	admin	fr	Avez-vous perdu le lien vers l'ID utilisateur sur l'écran de connexion ?
 lost_user_id_message username: %1	registration	fr	Comptes utilisateur associés avec ce compte mail : %1
+message	registration	fr	message
 missing registration	registration	fr	Enregistrement manquant
 mobile phone	registration	fr	Téléphone portable
 name sender to send notices from	admin	fr	Nom de l'expéditeur des messages envoyés
+none	registration	fr	Aucun
 not a user yet? register now	login	fr	Pas encore enregistré? S'enregistrer maintenant
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	fr	L'enregistrement en ligne n'est pas activé. Veuillez contacter votre administrateur pour plus d'informations sur l'enregistrement.
 order	registration	fr	Ordre
+other	registration	fr	Autre
 please contact the site administrator.	registration	fr	Veuillez contacter l'administrateur du site.
 prefix	registration	fr	Préfixe
 problem sending email:	registration	fr	Problème à l'envoi de l'e-mail:
@@ -96,8 +105,7 @@ report all problems and abuse to	registration	fr	Rapporter tous les problèmes e
 required	registration	fr	Nécessaire
 response	registration	fr	Réponse
 send email	admin	fr	Envoyer l'e-mail
-sorry, no account exists for %1	registration	fr	Désol, aucun compte n'existe pour %1
-sorry, that username does not exist.	registration	fr	Désolé, ce nom d'utilisateur n'existe pas.
+site configuration	registration	fr	Configuration du site
 sorry, that username is already taken.	registration	fr	Désolé, ce nom d'utilisateur existe déjà.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	fr	Désolé mais nous avons des problèmes pour activer votre compte. Notez que le lien envoyé par e-mail n'est valable que pendant 2 heures. Si vous pensez que ce délai a expiré, réessayez. Sinon contactez votre administrateur.
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	fr	Désolé mais nous avons des problèmes pour récupérer l'information nécessaire pour changer le mot de passe. Notez que le lien envoyé par e-mail n'est valable que pendant 2 heures. Si vous pensez que ce délai a expiré, réessayez. Sinon, contactez votre administrateur.
@@ -117,18 +125,20 @@ unable to send mail, contact your administrator	registration	fr	Impossible d'env
 unknown first name	registration	fr	Prénom inconnu
 unknown last name	registration	fr	Nom de famille inconnu
 update/add	registration	fr	Mettre à jour/Ajouter
+url	registration	fr	URL
 use html	admin	fr	utiliser HTML
 use trial accounts?	admin	fr	Utiliser des comptes à l'essai?
 username is	admin	fr	L'utilisateur est
 values 'for dropdown': comma separated), for 'dropdown from table': table,valuefield,displayfield	registration	fr	Valeur pour le dropdown (séparé par des virgules), pour un dropdown depuis une table : table, champ valeur, champ affiché
 values (for dropdown only; comma separated)	registration	fr	Valeurs (Pour Liste déroulante seulement; séparées par des virgules)
 verification	registration	fr	Vérification
-we have sent a mail to your email account: %s with your lost user ids.	registration	fr	Nous avons envoyé un mail à votre adresse e-mail %s avec vos IDs perdus.
+we have sent a mail to your email account: %1 with your lost user ids.	registration	fr	Nous avons envoyé un email sur l'adresse enregistré sur votre compte : %1 avec votre login ID perdu.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	fr	Nous vous avons envoyé un e-mail contenant les instructions pour modifier votre mot de passe. Vous devrez cliquer sur le lien dans les 2 heures. Si vous ne le faites pas, il faudra retourner à nouveau sur l'écran de récupération de mot de passe.
 work phone	registration	fr	Téléphone (bureau)
 wrong - try again ...	registration	fr	Faux - essayer à nouveau...
 wrong session	registration	fr	Mauvaise session
 you can go back to the login page	registration	fr	Vous pouvez retourner à la page de connexion.
+you don't have delete permission, address will be left if you manually register or cancel.	registration	fr	Vous n'avez pas les droits de suppression, l'adresse restera si vous vous enregistrez manuellement ou si vous annulez.
 you don\'t have delete permission, address will be left if you manually register or cancel.	registration	fr	Vous n\'avez pas les droits de suppression, l'adresse restera si vous vous enregistrez manuellement ou si vous annulez.
 you have entered an invalid birthday	registration	fr	Vous avez entré une date d'anniversaire invalide
 you have entered an invalid email address	registration	fr	Vous avez entré une adresse email invalide
