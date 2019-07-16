@@ -119,3 +119,13 @@ function registration_upgrade16_1()
 {
 	return $GLOBALS['setup_info']['registration']['currentver'] = '17.1';
 }
+
+/**
+ * Bump version to 19.1
+ *
+ * @return string
+ */
+function registration_upgrade17_1()
+{
+	return $GLOBALS['setup_info']['registration']['currentver'] = '19.1';
+}

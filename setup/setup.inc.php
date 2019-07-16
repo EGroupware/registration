@@ -11,7 +11,7 @@
 /* Basic information about this app */
 $setup_info['registration']['name']      = 'registration';
 $setup_info['registration']['title']     = 'Registration';
-$setup_info['registration']['version']   = '17.1';
+$setup_info['registration']['version']   = '19.1';
 $setup_info['registration']['app_order'] = '40';
 $setup_info['registration']['enable']    = 2;
 $setup_info['registration']['license']   = 'GPL';
@@ -26,6 +26,6 @@ $setup_info['registration']['hooks']['search_link'] = 'registration_hooks::searc
 /* Dependencies for this app to work */
 $setup_info['registration']['depends'][] = array(
 	'appname'  => 'api',
-	'versions' => Array('17.1')
+	'versions' => Array('19.1')
 );
 
