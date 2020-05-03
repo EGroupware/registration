@@ -6,11 +6,15 @@ body > form[id^=registration-]
 {
 	padding: 10px;
     justify-content: center;
-    height: 470px;
     border-radius: 10px;
     border: 1px solid silver;
-    width: 300px;
+    width: fit-content;
     margin: 10% auto;
+}
+
+span.redItalic {
+    color: red;
+    font-style: italic;
 }
 
 span#registration-lost_password_message,
@@ -31,9 +35,13 @@ span#registration-lost_password_message,
 }
 button.login_recovery_btn {
 	height: 30px;
-    width: 200px;
+    width: 150px;
     background: #0a5ca5;
     border-radius: 3px;
     color: white;
 	font-size: 12pt;
+    text-align: center;
+}
+input.inputFullWidth, select.inputFullWidth {
+    width: 96.5%;
 }

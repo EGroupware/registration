@@ -19,8 +19,11 @@ use EGroupware\Api\Acl;
  * Both the sitemgr module and the login page UI pull from here.
  */
 
-class registration_bo extends Api\Storage\Tracking {
-
+class registration_bo extends Api\Storage\Tracking
+{
+	/**
+	 * @var registration_so
+	 */
 	protected static $so;
 
 	public static $mail_account = null;
@@ -91,7 +94,7 @@ class registration_bo extends Api\Storage\Tracking {
 	public static function save($values, $link = true)
 	{
 		if(!$values['status']) $values['status'] = self::PENDING;
-		if(!$values['register_code']) $values['register_code'] = md5(time());
+		if(!$values['register_code']) $values['register_code'] = Api\Auth::randomstring(40);
 
 		// Check account & password
 		if($values['account_lid'])
@@ -144,6 +147,7 @@ class registration_bo extends Api\Storage\Tracking {
 			}
 		}
 
+		$values['ip'] = Api\Session::getuser_ip();
 		$result = self::$so->save($values);
 		if(!$result && $link)
 		{
@@ -299,12 +303,11 @@ class registration_bo extends Api\Storage\Tracking {
 			'account_lastname'	=> $registration['n_family'],
 			'account_email'		=> $registration['email'],
 			'account_passwd'	=> $registration['password'],
+			'account_passwd2'	=> $registration['password2'],
 			'account_active'	=> true,
-			'account_primary_group'	=> $config['primary_group'],
+			'account_primary_group'	=> $registration['primary_group'] ?: $config['primary_group'],
 			'account_groups'	=> $config['groups'],
 			'account_expires'	=> null,
-			'changepassword'        => true,
-			'mustchangepassword'    => true,
 		);
 		// Just check for validity, don't actually run
 		// Schedule in the future to get the checks, then delete it.

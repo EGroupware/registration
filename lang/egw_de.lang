@@ -9,7 +9,9 @@
 abuse reduction - please wait %1 seconds and try again.	registration	de	Missbrauchs Verdacht erkannt - Bitte warten Sie %1 Sekunden und versuchen Sie es dann nochmal
 account	registration	de	Benutzer
 account %1 record could not be found, report to site administrator	registration	de	Es konnte kein Eintrag: Account: %1 gefunden werden. Bitte benachrichtigen sie denAdministrator
+account groups	registration	de	Gruppen für den Benutzer
 account password retrieval	registration	de	Passwort wiedergewinnen
+account primary group	registration	de	Primäre Gruppe
 account registration	registration	de	Benutzerkonto registrieren
 activate account	admin	de	Benutzerkonto aktivieren
 address	registration	de	Adresse
@@ -22,12 +24,14 @@ an error occured while updating your password. please contact the site administr
 an error occured. please contact our technical support and let them know.	registration	de	Es ist ein Fehler aufgetreten. Bitte kontaktieren Sie den Support und informieren Sie diesen über den aufgetretenen Fehler
 an error occured. please remove your cookies and try again.	registration	de	Es ist ein Fehler aufgetreten. Bitte löschen Sie Ihre Cookies im Browser und versuchen Sie es erneut.
 an unknown error occured. <a href="%1">please try registering again.</a>	registration	de	Es ist ein Fehler aufgetreten <a href="%1">Bitte versuchen Sie sich erneut zu registrieren</a>
-anonymous password	admin	de	Gast Passwort
+anonymous password	admin	de	Passwort anonymer Benutzer
 anonymous user	registration	de	Anonymer Benutzer
 anonymous user needs access to registration application	registration	de	Der Anonymer Benutzer benötigt die Berechtigung auf die Anwendung Registrierung
+ask user	registration	de	Benutzer fragen
 business phone	registration	de	Tel. geschäftl.
 canceled	registration	de	Abgesagt
 change password for user	registration	de	Password für Benutzer ändern
+choose your organization	registration	de	Wählen Sie Ihre Organisation
 city	registration	de	Stadt
 confirm	registration	de	bestätigen
 confirm registration	registration	de	Registrierung bestätigen
@@ -84,21 +88,22 @@ problem sending email:	registration	de	Beim Versenden der E-Mail ist ein Fehler 
 re-enter password	registration	de	Passwort nochmals eingeben
 re-enter your password	registration	de	Bitte geben Sie Ihr Passwort nochmals ein
 register	common	de	Registrieren
+register link at login screen	registration	de	Möchten Sie eine Link zur Registrierung auf der Login Seite anzeigen
 register link at login screen?	admin	de	Möchten Sie eine Link zur Registrierung auf der Login Seite anzeigen
 registered	registration	de	registriert
 registered accounts expire	registration	de	Registrierter Zugang läuft aus
 registration	common	de	Registrierung
 registration complete	registration	de	Abschluss der Registrierung
 registration expires after	registration	de	Registrierter Zugang läuft aus nach
-registration fields	registration	de	Fehler der Registrierung
+registration fields	registration	de	Felder der Registrierung
 registration settings	admin	de	Registrierungseinstellungen
 remove	registration	de	Löschen
+repeat	registration	de	Wiederholen
 report all problems and abuse to	registration	de	Bitte melden Sie alle Probleme und Missbräuche an
 required	registration	de	Benötigt
 response	registration	de	Antwort
+select multiple to let the user choose	registration	de	Mehrere auswählen um den Benutzer seine wählen kann
 send email	admin	de	E-Mail senden
-sorry, no account exists for %1	registration	de	Es gibt leider keinen Zugang für %1
-sorry, that username does not exist.	registration	de	Dieser Benutzername existiert nicht.
 sorry, that username is already taken.	registration	de	Dieser Benutzername ist schon vergeben
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	de	Entschuldigen Sie, wir haben Probleme Ihr Benutzerkonto zu aktivieren. Bitte beachten Sie, dass die per Mail gesendeten Links nur zwei Stunden gültig sind. Wenn diese Zeit abgelaufen war, versuchen Sie es einfach nochmal. Wenn nicht kontaktieren Sie bitte den Administrator.
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	de	Entschuldigung, aber wir haben eine Problem Ihre Informationen zu bekommen, die nötig sind, um Ihr Passwort zu ändern. Bitte beachten Sie das der Link den Sie via E-Mail erhalten haben nur 2 Stunden gültig ist. Wenn Sie denken, das Die Zeit abgelaufen ist, versuchen Sie es erneut. Andernfalls benachrichtigen Sie den Administrator.
@@ -118,6 +123,7 @@ unable to send mail, contact your administrator	registration	de	Es war nicht mö
 unknown first name	registration	de	Vorname unbekannt
 unknown last name	registration	de	Nachname unbekannt
 update/add	registration	de	Ändern / Hinzufügen
+use email address	registration	de	Benutze E-Mail Adresse
 use html	admin	de	HTML benutzen
 use trial accounts?	admin	de	Testzugänge benutzen?
 username is	admin	de	Benutzername ist
@@ -126,10 +132,12 @@ values (for dropdown only; comma separated)	registration	de	Werte (für das Ausw
 verification	registration	de	Verifikation
 we have sent a mail to your email account: %1 with your lost user ids.	registration	de	Wir haben eine E-Mail an Ihr E-Mail-Konto geschickt: %1 mit Ihren verlorenen Benutzer-IDs.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	de	Eine E-Mail mit Informationen wie Sie ihr Passwort ändern können wurde an Sie versandt. Bitte benutzen Sie den enthaltenen Link innerhalb von 2 Stunden. Falls Ihnen dies nicht möglich ist, müssen Sie nochmals die Prozedur für vergessenen Passworte ausführen.
+what to use as username	registration	de	Was soll als Benutzername verwendet werden
 work phone	registration	de	Tel dienstl.
 wrong - try again ...	registration	de	Falsch - nochmal versuchen ...
 wrong session	registration	de	Falsche Session
 you can go back to the login page	registration	de	Sie können zurück zur Anmelde Seite gehen.
+you don't have delete permission, address will be left if you manually register or cancel.	registration	de	Sie haben keine Löschberechtigung. Die Adresse bleibt erhalten, wenn Sie sich manuell anmelden oder abmelden.
 you don\'t have delete permission, address will be left if you manually register or cancel.	registration	de	Sie haben keine Löschberechtigung. Die Adresse bleibt erhalten, wenn Sie sich manuell anmelden oder abmelden.
 you have entered an invalid birthday	registration	de	Sie haben einen ungültigen Geburtstag eingegeben
 you have entered an invalid email address	registration	de	Sie haben eine ungültige E-Mail-Adresse eingegeben

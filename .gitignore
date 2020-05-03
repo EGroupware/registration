@@ -1,0 +1,5 @@
+*.old
+*.old.xet
+*.old.lang
+*.old.inc.php
+/.idea/

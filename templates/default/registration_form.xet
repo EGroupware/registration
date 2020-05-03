@@ -1,36 +1,34 @@
 <?xml version="1.0"?>
-<!-- $Id$ -->
+<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2//EN" "http://www.egroupware.org/etemplate2.dtd">
 <overlay>
 	<template id="addressbook.contactform" template="" lang="" group="0" version="1.5.001">
-		<grid border="0">
+		<grid width="600px">
 			<columns>
+				<column width="20px"/>
+				<column width="150px"/>
 				<column/>
 				<column/>
 				<column/>
 				<column/>
-				<column/>
-				<column/>
-				<column/>
+				<column width="10px"/>
 			</columns>
 			<rows>
 				<row disabled="!@show[org_name]">
 					<image src="home"/>
 					<description value="Company"/>
-					<textbox id="org_name" size="64" maxlength="64" span="4"/>
-					<description/>
+					<textbox id="org_name" size="64" maxlength="64" span="4" class="inputFullWidth"/>
 				</row>
 				<row disabled="!@show[org_unit]">
 					<description/>
 					<description value="Department"/>
-					<textbox id="org_unit" size="64" maxlength="64" span="4"/>
-					<description/>
+					<textbox id="org_unit" size="64" maxlength="64" span="4" class="inputFullWidth"/>
 				</row>
 				<row valign="top" disabled="!@show[n_fn]">
 					<image src="accounts"/>
 					<description value="Contact"/>
 					<textbox blur="Prefix" id="n_prefix" size="10" maxlength="64"/>
-					<textbox align="center" id="n_given" size="20" maxlength="64"/>
-					<textbox align="right" id="n_family" needed="1" size="22" maxlength="64" span="2"/>
+					<textbox blur="Firstname" align="center" id="n_given" size="20" maxlength="64"/>
+					<textbox blur="Lastname" align="right" id="n_family" needed="1" size="22" maxlength="64" span="2"/>
 					<description value="*" class="redItalic"/>
 				</row>
 				<row disabled="!@show[sep1]">
@@ -39,38 +37,33 @@
 				<row disabled="!@show[email]">
 					<image src="email.png"/>
 					<description value="Email"/>
-					<textbox id="email" needed="1" size="64" maxlength="64" validator="/^[a-z0-9._-]+@[a-z0-9-]+(\.[a-z0-9-]+)+$/i" span="4"/>
+					<url-email id="email" needed="1" size="64" maxlength="64" span="4" class="inputFullWidth"/>
 					<description value="*" class="redItalic"/>
 				</row>
 				<row disabled="!@show[tel_work]">
 					<image src="phone"/>
 					<description value="Business phone"/>
-					<textbox id="tel_work" size="64" maxlength="64" span="4"/>
-					<description/>
+					<textbox id="tel_work" size="64" maxlength="64" span="4" class="inputFullWidth"/>
 				</row>
 				<row disabled="!@show[tel_cell]">
 					<description/>
 					<description value="Mobile phone"/>
-					<textbox id="tel_cell" size="64" maxlength="64" span="4"/>
-					<description/>
+					<textbox id="tel_cell" size="64" maxlength="64" span="4" class="inputFullWidth"/>
 				</row>
 				<row disabled="!@show[tel_fax]">
 					<description/>
 					<description value="Fax"/>
-					<textbox id="tel_fax" size="64" maxlength="64" span="4"/>
-					<description/>
+					<textbox id="tel_fax" size="64" maxlength="64" span="4" class="inputFullWidth"/>
 				</row>
 				<row disabled="!@show[tel_home]">
 					<description/>
 					<description value="Home phone"/>
-					<textbox id="tel_home" size="64" maxlength="64" span="4"/>
-					<description/>
+					<textbox id="tel_home" size="64" maxlength="64" span="4" class="inputFullWidth"/>
 				</row>
 				<row disabled="!@show[url]">
 					<image src="internet"/>
 					<description value="Internet"/>
-					<textbox id="url" size="64" maxlength="64" span="4"/>
-					<description/>
+					<textbox id="url" size="64" maxlength="64" span="4" class="inputFullWidth"/>
 				</row>
 				<row disabled="!@show[sep2]">
 					<hrule span="all"/>
@@ -78,14 +71,13 @@
 				<row disabled="!@show[adr_one_street]">
 					<image src="home"/>
 					<description value="Street"/>
-					<textbox id="adr_one_street" needed="1" size="64" maxlength="64" span="4"/>
+					<textbox id="adr_one_street" needed="1" size="64" maxlength="64" span="4" class="inputFullWidth"/>
 					<description value="*" class="redItalic"/>
 				</row>
 				<row disabled="!@show[adr_one_street2]">
 					<description/>
 					<description/>
-					<textbox id="adr_one_street2" size="64" maxlength="64" span="4"/>
-					<description/>
+					<textbox id="adr_one_street2" size="64" maxlength="64" span="4" class="inputFullWidth"/>
 				</row>
 				<row valign="top" disabled="!@show[adr_one_locality]=postcode_city">
 					<description/>
@@ -108,14 +100,13 @@
 				<row disabled="!@show[custom1]">
 					<image src="gear"/>
 					<description value="@customlabel[1]"/>
-					<textbox id="@customfield[1]" needed="1" size="64" span="4"/>
+					<textbox id="@customfield[1]" needed="1" size="64" span="4" class="inputFullWidth"/>
 					<description value="*" class="redItalic"/>
 				</row>
 				<row disabled="!@show[custom2]">
 					<description/>
 					<description value="@customlabel[2]"/>
-					<textbox id="@customfield[2]" size="64" span="4"/>
-					<description/>
+					<textbox id="@customfield[2]" size="64" span="4" class="inputFullWidth"/>
 				</row>
 				<row disabled="!@show[sep4]">
 					<hrule span="all"/>
@@ -123,7 +114,7 @@
 				<row valign="top" disabled="!@show[note]">
 					<image src="edit.png"/>
 					<description value="Message"/>
-					<textbox multiline="true" id="note" needed="1" rows="5" cols="45" span="4" class="width100"/>
+					<textbox multiline="true" id="note" needed="1" rows="5" cols="45" span="4" class="inputFullWidth"/>
 				</row>
 				<row disabled="!@show[sep5]">
 					<hrule span="all"/>
@@ -135,14 +126,15 @@
 					<textbox label="%s please calculate the result" id="captcha" needed="1" size="3" span="3"/>
 					<description value="*" class="redItalic"/>
 				</row>
-				<row>
+				<row valign="center">
 					<description/>
 					<description/>
-					<button label="Submit" id="submitit"/>
-					<description align="right" value="required fields *" span="all" class="redItalic"/>
-					<description/>
-					<description/>
-					<description/>
+					<hbox span="all">
+						<button label="Submit" class="login_recovery_btn" id="submitit"/>
+						<button align="center" class="login_recovery_btn" id="gologin" label="Go back to login"
+							onclick="location.href='../login.php';"/>
+						<description align="right" value="required fields *" class="redItalic"/>
+					</hbox>
 				</row>
 			</rows>
 		</grid>
@@ -151,45 +143,43 @@
 		</styles>
 	</template>
 	<template id="registration.registration_form" template="" lang="" group="0" version="1.9.001">
-		<grid>
+		<grid width="600px">
 			<columns>
+				<column width="20px"/>
+				<column width="150px"/>
 				<column/>
-				<column/>
-				<column/>
-				<column/>
-				<column/>
-				<column/>
+				<column width="10px"/>
 			</columns>
 			<rows>
 				<row disabled="!@message">
 					<description id="message" span="all" class="message"/>
-					<description/>
-					<description/>
-					<description/>
-					<description/>
-					<description/>
 				</row>
 				<row disabled="!@show[account_lid]">
 					<image/>
 					<description value="Login ID"/>
-					<hbox id="account_lid" needed="1">
-						<textbox id="account_lid" needed="1"/>
-						<description value="*" class="redItalic"/>
-					</hbox>
-					<description/>
-					<description/>
-					<description/>
+					<textbox id="account_lid" needed="1" maxlength="64" validator="/^[a-z][a-z0-9@._-]+$/" class="inputFullWidth" tabindex="1"/>
+					<description value="*" class="redItalic"/>
+				</row>
+				<row disabled="!@show[account_email]">
+					<image src="email.png"/>
+					<description value="Email"/>
+					<url-email id="account_email" needed="1" maxlength="64" class="inputFullWidth" tabindex="2"/>
+					<description value="*" class="redItalic"/>
 				</row>
 				<row disabled="!@show[password]">
 					<description/>
 					<description value="Password"/>
 					<hbox>
-						<textbox id="password" needed="1"/>
-						<description value="*" class="redItalic"/>
+						<passwd id="password" needed="1" tabindex="3"/>
+						<passwd label="Repeat" id="password2" needed="1" align="right" tabindex="4"/>
 					</hbox>
+					<description value="*" class="redItalic"/>
+				</row>
+				<row disabled="!@show[primary_group]">
 					<description/>
-					<description/>
-					<description/>
+					<description value="Choose your organization"/>
+					<select id="primary_group" needed="1" tabindex="5" class="inputFullWidth"/>
+					<description value="*" class="redItalic"/>
 				</row>
 				<row disabled="!@show[account_lid]">
 					<hrule span="all"/>
