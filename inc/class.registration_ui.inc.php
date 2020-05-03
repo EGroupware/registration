@@ -141,9 +141,30 @@ class registration_ui
 
 		if($config['show'])
 		{
-			$fields = explode(',',$config['show']);
+			if (!is_array($fields = $config['show'])) $fields = explode(',', $fields);
 			$data['show'] += array_combine($fields, array_fill(0,count($fields),true));
 		}
+
+		// what to use as account_lid, default ask user
+		switch ($config['username'])
+		{
+			case 'email':
+				$data['show']['account_email'] = true;
+				unset($data['show']['email'], $data['show']['account_lid']);
+				break;
+		}
+		// did user need to choose a primary group
+		$primary_groups = is_array($config['primary_group']) ? $config['primary_group'] : explode(',', $config['primary_group']);
+		if ($primary_groups > 1)
+		{
+			$data['show']['primary_group'] = true;
+			$sel_options['primary_group'] = [];
+			foreach($primary_groups as $group)
+			{
+				$sel_options['primary_group'][$group] = Api\Accounts::id2name($group);	// id2name to not show Group prefix
+			}
+		}
+
 		$data += $content;
 		if($content['submitit'])
 		{
@@ -159,6 +180,18 @@ class registration_ui
 
 			if(!$captcha_fail)
 			{
+				// what to use as account_lid, default ask user
+				switch($config['username'])
+				{
+					case 'email':
+						$content['account_lid'] = $content['email'] = $content['account_email'];
+						break;
+				}
+				// if user did NOT has to choose a primary group, use the once from config
+				if ($primary_groups <= 1 || empty($content['primary_group']))
+				{
+					$content['primary_group'] = $primary_groups[0];
+				}
 				$config['register_for'] = 'account';
 				// Check for account info
 				try {
@@ -428,7 +461,7 @@ class registration_ui
 			'app_header' => lang('Confirm registration')
 		);
 
-        $register_code = ($_GET['confirm'] && preg_match('/^[0-9a-f]{32}$/',$_GET['confirm'])) ? $_GET['confirm'] : false;
+        $register_code = ($_GET['confirm'] && preg_match('/^[0-9a-zA-Z]{40}$/', $_GET['confirm'])) ? $_GET['confirm'] : false;
 
 		if($register_code && registration_bo::confirm($register_code))
 		{

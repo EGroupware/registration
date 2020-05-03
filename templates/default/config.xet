@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<!-- $Id$ -->
+<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2//EN" "http://www.egroupware.org/etemplate2.dtd">
 <overlay>
 	<template id="registration.config" template="" lang="" group="0" version="1.9.001">
 		<grid>
 			<columns>
-				<column/>
-				<column/>
+				<column width="300px"/>
+				<column width="400px"/>
 			</columns>
 			<rows>
 				<row disabled="!@message">
@@ -27,19 +27,25 @@
 				</row>
 				<row>
 					<description value="Registered accounts expire"/>
-					<menulist>
-						<menupopup type="select-number" label="%s days" id="accounts_expire" options="Never,1,30,,"/>
-					</menulist>
+					<select-number label="%s days" id="accounts_expire" options="Never,1,30"/>
 				</row>
 				<row>
-					<description value="Account primary group"/>
-					<menulist>
-						<menupopup type="select-account" id="primary_group" account_type="groups"/>
-					</menulist>
+					<description value="What to use as username"/>
+					<select id="username">
+						<option value="">Ask user</option>
+						<option value="email">Use email address</option>
+					</select>
+				</row>
+				<row>
+					<vbox>
+						<description value="Account primary group"/>
+						<description value="Select multiple to let the user choose"/>
+					</vbox>
+					<taglist-account id="primary_group" account_type="groups" class="et2_fullWidth"/>
 				</row>
 				<row valign="top">
 					<description value="Account groups"/>
-					<listbox type="select-account" id="groups" rows="5" account_type="groups"/>
+					<taglist-account id="groups" account_type="groups" class="et2_fullWidth"/>
 				</row>
 				<row>
 					<description value="Do not send account registration email (manual processing by admin)"/>
@@ -47,15 +53,15 @@
 				</row>
 				<row>
 					<description value="Name Sender to send notices from"/>
-					<textbox id="name_nobody"/>
+					<textbox id="name_nobody" class="et2_fullWidth"/>
 				</row>
 				<row>
 					<description value="Email address to send notices from"/>
-					<url-email id="mail_nobody"/>
+					<url-email id="mail_nobody" class="et2_fullWidth"/>
 				</row>
 				<row>
 					<description value="Email address to display for support"/>
-					<url-email id="support_email"/>
+					<url-email id="support_email" class="et2_fullWidth"/>
 				</row>
 				<row>
 					<description value="Terms of Service text"/>

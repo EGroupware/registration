@@ -129,3 +129,14 @@ function registration_upgrade17_1()
 {
 	return $GLOBALS['setup_info']['registration']['currentver'] = '19.1';
 }
+
+function registration_upgrade19_1()
+{
+	$GLOBALS['egw_setup']->oProc->AddColumn('egw_registration','primary_group',array(
+		'type' => 'int',
+		'precision' => '4'
+	));
+
+	return $GLOBALS['setup_info']['registration']['currentver'] = '19.1.001';
+}
+

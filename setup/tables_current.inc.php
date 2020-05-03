@@ -28,7 +28,8 @@ $phpgw_baseline = array(
 			'post_confirm_hook' => array('type' => 'varchar','precision' => '255'),
 			'sitemgr_version' => array('type' => 'int','precision' => '4','comment' => 'Key for the sitemgr block info'),
 			'account_lid' => array('type' => 'varchar','precision' => '64'),
-			'password' => array('type' => 'varchar','precision' => '100')
+			'password' => array('type' => 'varchar','precision' => '100'),
+			'primary_group' => array('type' => 'int','precision' => '4')
 		),
 		'pk' => array('reg_id'),
 		'fk' => array('contact_id' => 'egw_addressbook.contact_id','sitemgr_version' => 'egw_sitemgr_content.version_id'),

@@ -39,7 +39,7 @@ use EGroupware\Api;
 	 }
 
 	// if confirmation id is given, redirect to confirm
-	if(isset($_GET['confirm']) && preg_match('/^[0-9a-f]{32}$/',$_GET['confirm']))
+	if(!empty($_GET['confirm']))
 	{
 	   $_GET['menuaction'] = 'registration.registration_ui.confirm';
 	}

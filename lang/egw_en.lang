@@ -9,7 +9,9 @@
 abuse reduction - please wait %1 seconds and try again.	registration	en	Abuse reduction - please wait %1 seconds and try again.
 account	registration	en	Account
 account %1 record could not be found, report to site administrator	registration	en	Account %1 record could not be found, report to site administrator
+account groups	registration	en	Account groups
 account password retrieval	registration	en	Account password retrieval
+account primary group	registration	en	Account primary group
 account registration	registration	en	Account registration
 activate account	admin	en	Activate account
 address	registration	en	Address
@@ -25,9 +27,11 @@ an unknown error occured. <a href="%1">please try registering again.</a>	registr
 anonymous password	admin	en	Anonymous password
 anonymous user	registration	en	Anonymous user
 anonymous user needs access to registration application	registration	en	Anonymous user needs access to registration application
+ask user	registration	en	Ask user
 business phone	registration	en	Business phone
 canceled	registration	en	Canceled
 change password for user	registration	en	Change password for user
+choose your organization	registration	en	Choose your organization
 city	registration	en	City
 confirm	registration	en	Confirm
 confirm registration	registration	en	Confirm registration
@@ -84,6 +88,7 @@ problem sending email:	registration	en	Problem sending email:
 re-enter password	registration	en	Re-enter password
 re-enter your password	registration	en	Re-enter your password
 register	common	en	Register
+register link at login screen	registration	en	Register link at login screen
 register link at login screen?	admin	en	Register link at login screen?
 registered	registration	en	Registered
 registered accounts expire	registration	en	Registered accounts expire
@@ -93,9 +98,11 @@ registration expires after	registration	en	Registration expires after
 registration fields	registration	en	Registration fields
 registration settings	admin	en	Registration settings
 remove	registration	en	Remove
+repeat	registration	en	Repeat
 report all problems and abuse to	registration	en	Report all problems and abuse to
 required	registration	en	Required
 response	registration	en	Response
+select multiple to let the user choose	registration	en	Select multiple to let the user choose
 send email	admin	en	Send email
 sorry, that username is already taken.	registration	en	Sorry, that user name is already taken.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	en	Sorry, we are having a problem activating your account. Note that links sent by email are only valid during two hours. If you think this delay was expired, just retry. Otherwise, please contact the site administrator.
@@ -116,6 +123,7 @@ unable to send mail, contact your administrator	registration	en	Unable to send m
 unknown first name	registration	en	Unknown first name
 unknown last name	registration	en	Unknown last name
 update/add	registration	en	Update/Add
+use email address	registration	en	Use email address
 use html	admin	en	Use HTML
 use trial accounts?	admin	en	Use trial accounts?
 username is	admin	en	Username is
@@ -124,10 +132,12 @@ values (for dropdown only; comma separated)	registration	en	Values -for drop dow
 verification	registration	en	Verification
 we have sent a mail to your email account: %1 with your lost user ids.	registration	en	We have sent a mail to your email account: %1 with your lost user IDs.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	en	We have sent a mail with instructions to change your password. You should follow the included link within two hours. If you do not, you will have to go to the lost password screen again.
+what to use as username	registration	en	What to use as username
 work phone	registration	en	Work phone
 wrong - try again ...	registration	en	Wrong - try again ...
 wrong session	registration	en	Wrong session
 you can go back to the login page	registration	en	You can go back to the login page
+you don't have delete permission, address will be left if you manually register or cancel.	registration	en	You don't have delete permission, address will be left if you manually register or cancel.
 you don\'t have delete permission, address will be left if you manually register or cancel.	registration	en	You don\'t have delete permission, address will be left if you manually register or cancel.
 you have entered an invalid birthday	registration	en	You have entered an invalid birthday
 you have entered an invalid email address	registration	en	You have entered an invalid email address
