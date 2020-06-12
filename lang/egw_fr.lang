@@ -2,6 +2,7 @@
 %s days	registration	fr	%s jours
 %s hours	registration	fr	%s heures
 %s please calculate the result	registration	fr	%s calculez s'il vous plait le résultat
+*	registration	fr	*
 13: error occured	registration	fr	13 : erreur
 <br>please contact the site administrator.	registration	fr	<br> Veuillez contacter l'administrateur du site
 [unknown first name]	registration	fr	[prénom inconnu]
@@ -9,14 +10,15 @@
 abuse reduction - please wait %1 seconds and try again.	registration	fr	Prévention des abus - veuillez attendre %1 secondes et essayer à nouveau
 account	registration	fr	Compte
 account %1 record could not be found, report to site administrator	registration	fr	Enregistrement Compte %1 est introuvable, contactez l'administrateur du site
+account groups	registration	fr	Groupes du compte
 account password retrieval	registration	fr	Récupération de mot de passe
+account primary group	registration	fr	Groupe primaire du compte
 account registration	registration	fr	Enregistrement de compte
 activate account	admin	fr	Activer le compte
 address	registration	fr	Adresse
 address line 2	registration	fr	Adresse ligne 2
 addressbook the contacts should be saved to before they are confirmed	registration	fr	Le carnet d'adresses vers lequel enregistrer les contacts avant qu'ils ne soit confirmés.
 addressbook the contacts should be saved to before they are confirmed.	registration	fr	Le carnet d'adresses vers lequel enregistrer les contacts avant qu'ils ne soit confirmés.
-admin	registration	fr	Admin
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	fr	Lorsque vous avez introduit votre adresse e-mail, le compte utilisateur correspondant à cette adresse e-mail sera envoyé à cette adresse.
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	fr	Lorsque vous avez introduit votre nom d'utilisateur, les intructions pour changer votre mot de passe vous seront envoyées par EMail à l'adresse que vous avez introduite lors de votre enregistrement.
 an error occured while updating your password. please contact the site administrator.	registration	fr	Une erreur s'est produite lors de la mise à jour de votre mot de passe. Veuillez contacter l'administrateur.
@@ -30,7 +32,6 @@ business phone	registration	fr	Téléphone (bureau)
 canceled	registration	fr	Annulé
 change password for user	registration	fr	Changer le mot de passe pour l'utilisateur
 city	registration	fr	Ville
-company	registration	fr	Organisation
 confirm	registration	fr	confirmer
 confirm registration	registration	fr	Confirmer l'enregistrement
 confirmation email for %1 expires %2 link: %3	registration	fr	Ceci est une confirmation par email de %1. Veuillez cliquer sur le lien suivant pour terminer le processus d'enregistrement. %3 Ce lien va expirer %2.
@@ -42,7 +43,6 @@ days until trial accounts expire	admin	fr	Nombre de jours jusqu'à ce que le com
 department	registration	fr	Département
 display terms of service?	admin	fr	Afficher les termes et conditions?
 do not send account registration email (manual processing by admin)	admin	fr	Ne pas envoyer un email d'enregistrement (procédure manuelle d'activation par l'administrateur)
-email	registration	fr	email
 email address	registration	fr	Adresse e-mail
 email address to display for support	admin	fr	Adresse e-mail à afficher pour le support
 email address to send notices from	admin	fr	Adresse e-mail à partir de laquelle les messages peuvent être envoyés
@@ -52,7 +52,6 @@ enter password	registration	fr	Entrer un mot de passe
 enter your new password	registration	fr	Introduisez votre nouveau mot de passe
 expires	registration	fr	Expire
 fax	registration	fr	Fax
-firstname	registration	fr	Prénom
 global options	admin	fr	Options globales
 go back to login	registration	fr	Revenir à la page de connexion
 home phone	registration	fr	Téléphone (domicile)
@@ -66,7 +65,6 @@ if you did not request this change, simply ignore this message.	registration	fr	
 immediately	admin	fr	Immédiatement
 internet	registration	fr	Internet
 ip	registration	fr	IP
-lastname	registration	fr	Nom
 login id	registration	fr	ID de connexion
 login page	registration	fr	Page de connexion
 lost login id	login	fr	ID de connexion perdu
@@ -77,22 +75,20 @@ lost user account retrieval	registration	fr	Récupération du compte utilisateur
 lost user id	registration	fr	ID utilisateur perdu
 lost user id link at login screen?	admin	fr	Avez-vous perdu le lien vers l'ID utilisateur sur l'écran de connexion ?
 lost_user_id_message username: %1	registration	fr	Comptes utilisateur associés avec ce compte mail : %1
-message	registration	fr	message
 missing registration	registration	fr	Enregistrement manquant
 mobile phone	registration	fr	Téléphone portable
 name sender to send notices from	admin	fr	Nom de l'expéditeur des messages envoyés
-none	registration	fr	Aucun
 not a user yet? register now	login	fr	Pas encore enregistré? S'enregistrer maintenant
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	fr	L'enregistrement en ligne n'est pas activé. Veuillez contacter votre administrateur pour plus d'informations sur l'enregistrement.
 order	registration	fr	Ordre
-other	registration	fr	Autre
 please contact the site administrator.	registration	fr	Veuillez contacter l'administrateur du site.
 prefix	registration	fr	Préfixe
 problem sending email:	registration	fr	Problème à l'envoi de l'e-mail:
 re-enter password	registration	fr	Ré-entrez le mot de passe
 re-enter your password	registration	fr	Ré-entrez votre mot de passe
 register	common	fr	Enregistrez-vous
-register link at login screen?	admin	fr	Enregistrement sur l'écran de login?
+register link at login screen	registration	fr	Lien enregistrement sur l'écran de connexion
+register link at login screen?	admin	fr	Lien enregistrement sur l'écran de connexion ?
 registered	registration	fr	Enregistré
 registered accounts expire	registration	fr	Les comptes enregistrés expirent
 registration	common	fr	Enregistrement
@@ -103,12 +99,13 @@ registration settings	admin	fr	Paramètres d'enregistrement
 remove	registration	fr	Enlever
 report all problems and abuse to	registration	fr	Rapporter tous les problèmes et abus à
 required	registration	fr	Nécessaire
+required fields *	registration	fr	champs requis *
 response	registration	fr	Réponse
 send email	admin	fr	Envoyer l'e-mail
-site configuration	registration	fr	Configuration du site
 sorry, that username is already taken.	registration	fr	Désolé, ce nom d'utilisateur existe déjà.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	fr	Désolé mais nous avons des problèmes pour activer votre compte. Notez que le lien envoyé par e-mail n'est valable que pendant 2 heures. Si vous pensez que ce délai a expiré, réessayez. Sinon contactez votre administrateur.
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	fr	Désolé mais nous avons des problèmes pour récupérer l'information nécessaire pour changer le mot de passe. Notez que le lien envoyé par e-mail n'est valable que pendant 2 heures. Si vous pensez que ce délai a expiré, réessayez. Sinon, contactez votre administrateur.
+stadt	registration	fr	Ville
 street	registration	fr	Rue
 subject for confirmation email title: %1	registration	fr	%1 email de confirmation
 terms of service	registration	fr	Termes et Conditions
@@ -125,7 +122,6 @@ unable to send mail, contact your administrator	registration	fr	Impossible d'env
 unknown first name	registration	fr	Prénom inconnu
 unknown last name	registration	fr	Nom de famille inconnu
 update/add	registration	fr	Mettre à jour/Ajouter
-url	registration	fr	URL
 use html	admin	fr	utiliser HTML
 use trial accounts?	admin	fr	Utiliser des comptes à l'essai?
 username is	admin	fr	L'utilisateur est
