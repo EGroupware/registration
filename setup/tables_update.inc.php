@@ -140,3 +140,12 @@ function registration_upgrade19_1()
 	return $GLOBALS['setup_info']['registration']['currentver'] = '19.1.001';
 }
 
+/**
+ * Bump version to 20.1
+ *
+ * @return string
+ */
+function registration_upgrade19_1_001()
+{
+	return $GLOBALS['setup_info']['registration']['currentver'] = '20.1';
+}
