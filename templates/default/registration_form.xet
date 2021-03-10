@@ -189,5 +189,8 @@
 				</row>
 			</rows>
 		</grid>
+		<styles>
+			.et2_container {height: initial;}
+		</styles>
 	</template>
 </overlay>

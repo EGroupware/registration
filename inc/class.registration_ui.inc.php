@@ -278,6 +278,7 @@ class registration_ui
 			'currentapp' => 'registration'
 		);
 		$template->exec('registration.registration_ui.register', $data,$sel_options,$readonlys,$preserv);
+		Api\Framework::includeCSS("/pixelegg/css/pixelegg.css");
 	}
 
 	/**
