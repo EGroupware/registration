@@ -58,7 +58,7 @@ use EGroupware\Api;
 		list($a,$class,$method) = explode('.',$_GET['menuaction']);
 		if ($a && $class && $method)
 		{
-			$obj =& CreateObject($app. '.'. $class);
+			$obj = CreateObject($app. '.'. $class);
 			if (is_array($obj->public_functions) && $obj->public_functions[$method])
 			{
 				echo $obj->$method();

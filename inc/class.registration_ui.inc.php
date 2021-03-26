@@ -472,6 +472,11 @@ class registration_ui
 		{
 			$msg = lang('Unable to process confirmation.');
 		}
+		// delete cookies to NOT use link-registry of anonymous user stored in session
+		Api\Session::egw_setcookie('sessionid');
+		Api\Session::egw_setcookie('kp3');
+		Api\Session::egw_setcookie('domain');
+
 		Egw::redirect_link('/login.php',array( 'cd' => lang('Confirm registration') . ': ' . $msg));
 	}
 
