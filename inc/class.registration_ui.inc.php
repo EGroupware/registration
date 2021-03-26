@@ -82,7 +82,7 @@ class registration_ui
 			{
 				// Push through pending registration
 				$registration = registration_bo::confirm($registration['register_code']);
-				$mgs .= lang('Registered');
+				$msg .= lang('Registered');
 			}
 		}
 
@@ -118,8 +118,8 @@ class registration_ui
 		$preserv['reg_id'] = $reg_id;
 
 		$GLOBALS['egw_info']['flags']['app_header'] = lang('registration');
-		$template = new etemplate('registration.view');
-		$template->exec('registration.registration_ui.view', $registration,$sel_options,$readonlys,$preserv);
+		$template = new Etemplate('registration.view');
+		$template->exec('registration.registration_ui.view', $registration,$sel_options,[],$preserv);
 	}
 
 	/**
@@ -137,7 +137,7 @@ class registration_ui
 			'email'		=> true
 		);
 		$config = Api\Config::read('registration');
-		$template = new etemplate('registration.registration_form');
+		$template = new Etemplate('registration.registration_form');
 
 		if($config['show'])
 		{
@@ -339,8 +339,8 @@ class registration_ui
 			'app_header' => lang('Lost user ID'),
 			'currentapp' => 'registration'
 		);
-		$template = new etemplate('registration.lost_username');
-		$template->exec('registration.registration_ui.lost_username', $data,$sel_options,$readonlys,$preserv);
+		$template = new Etemplate('registration.lost_username');
+		$template->exec('registration.registration_ui.lost_username', $data,$sel_options,$readonlys);
 	}
 
 	/**
@@ -403,7 +403,7 @@ class registration_ui
 			'currentapp' => 'registration'
 		);
 
-		$template = new etemplate('registration.lost_password');
+		$template = new Etemplate('registration.lost_password');
 		$template->exec('registration.registration_ui.lost_password', $data,$sel_options,$readonlys,$preserv);
 	}
 
@@ -431,7 +431,7 @@ class registration_ui
 			$account_id = $contact['account_id'];
 
 			// Change password
-			$auth =& CreateObject('phpgwapi.auth');
+			$auth = new Api\Auth();
 			if($auth->change_password(false, $content['password'], $account_id))
 			{
 				// No need to keep this record
@@ -448,8 +448,8 @@ class registration_ui
 			'app_header' => lang('Enter your new password'),
 			'currentapp' => 'registration'
 		);
-		$template = new etemplate('registration.change_password');
-		$template->exec('registration.registration_ui.change_password', $data,$sel_options,$readonlys,$preserv);
+		$template = new Etemplate('registration.change_password');
+		$template->exec('registration.registration_ui.change_password', $data,$sel_options,[],$preserv);
 		exit();
 	}
 
@@ -577,6 +577,6 @@ class registration_ui
 
 		$GLOBALS['egw_info']['flags']['app_header'] = lang('Site Configuration');
 		$template = new Etemplate('registration.config');
-		$template->exec('registration.registration_ui.config', $data,$sel_options,$readonlys,$preserv);
+		$template->exec('registration.registration_ui.config', $data,$sel_options);
 	}
 }
