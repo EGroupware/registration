@@ -309,6 +309,10 @@ class registration_bo extends Api\Storage\Tracking
 			'account_groups'	=> $config['groups'],
 			'account_expires'	=> null,
 		);
+		if(!in_array($account['account_primary_group'],$account['account_groups']))
+		{
+			$account['account_groups'][] = $account['account_primary_group'];
+		}
 		// Just check for validity, don't actually run
 		// Schedule in the future to get the checks, then delete it.
 		$command = new admin_cmd_edit_user(false, $account, $registration['password']);
