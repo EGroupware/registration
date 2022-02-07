@@ -88,13 +88,13 @@ problem sending email:	registration	de	Beim Versenden der E-Mail ist ein Fehler 
 re-enter password	registration	de	Passwort nochmals eingeben
 re-enter your password	registration	de	Bitte geben Sie Ihr Passwort nochmals ein
 register	common	de	Registrieren
-register link at login screen	registration	de	Möchten Sie eine Link zur Registrierung auf der Login Seite anzeigen
-register link at login screen?	admin	de	Möchten Sie eine Link zur Registrierung auf der Login Seite anzeigen
+register link at login screen	registration	de	Möchten Sie einen Link zur Registrierung auf der Login Seite anzeigen
+register link at login screen?	admin	de	Möchten Sie einen Link zur Registrierung auf der Login Seite anzeigen
 registered	registration	de	registriert
-registered accounts expire	registration	de	Registrierter Zugang läuft aus
+registered accounts expire	registration	de	Registrierter Zugang läuft ab
 registration	common	de	Registrierung
 registration complete	registration	de	Abschluss der Registrierung
-registration expires after	registration	de	Registrierter Zugang läuft aus nach
+registration expires after	registration	de	Registrierter Zugang läuft ab nach
 registration fields	registration	de	Felder der Registrierung
 registration settings	admin	de	Registrierungseinstellungen
 remove	registration	de	Löschen
