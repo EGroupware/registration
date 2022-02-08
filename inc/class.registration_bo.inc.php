@@ -298,16 +298,16 @@ class registration_bo extends Api\Storage\Tracking
 	{
 		$config = Api\Config::read('registration');
 		$account = array(
-			'account_lid'		=> $registration['account_lid'],
-			'account_firstname'	=> $registration['n_given'],
-			'account_lastname'	=> $registration['n_family'],
-			'account_email'		=> $registration['email'],
-			'account_passwd'	=> $registration['password'],
-			'account_passwd2'	=> $registration['password2'],
-			'account_active'	=> true,
-			'account_primary_group'	=> $registration['primary_group'] ?: $config['primary_group'],
-			'account_groups'	=> $config['groups'],
-			'account_expires'	=> null,
+			'account_lid'           => $registration['account_lid'],
+			'account_firstname'     => $registration['n_given'],
+			'account_lastname'      => $registration['n_family'],
+			'account_email'         => $registration['email'],
+			'account_passwd'        => $registration['password'],
+			'account_passwd2'       => $registration['password2'],
+			'account_active'        => true,
+			'account_primary_group' => $registration['primary_group'] ?: $config['primary_group'],
+			'account_groups'        => $config['groups'] ?: [],
+			'account_expires'       => null,
 		);
 		if(!in_array($account['account_primary_group'],$account['account_groups']))
 		{
