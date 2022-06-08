@@ -234,7 +234,7 @@ class registration_bo extends Api\Storage\Tracking
 			if($registration['account_lid']) $config['register_for'] = 'account';
 		}
 
-		if($config['register_for'] === 'account' && self::check_account(array_merge($registration, $address ?? []), $account))
+		if($config['register_for'] === 'account' && self::check_account(array_merge($address ?? [], $registration), $account))
 		{
 			// Add a new account
 			$command = new admin_cmd_edit_user(false, $account, $account['password']);
