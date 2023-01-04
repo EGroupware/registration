@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2//EN" "http://www.egroupware.org/etemplate2.dtd">
+<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2.0//EN" "https://www.egroupware.org/etemplate2.0.dtd">
 <overlay>
 	<template id="registration.config" template="" lang="" group="0" version="1.9.001">
 		<grid>
@@ -9,117 +9,105 @@
 			</columns>
 			<rows>
 				<row disabled="!@message">
-					<description id="message" span="all" class="message"/>
-					<description/>
+					<et2-description  id="message" span="all" class="message"></et2-description>
+					<et2-description></et2-description>
 				</row>
 				<row class="th">
-					<description value="Global options" span="all" class="subHeader"/>
+					<et2-description  value="Global options" span="all" class="subHeader"></et2-description>
 				</row>
 				<row>
-					<description value="Anonymous user"/>
-					<menulist>
-						<menupopup type="select-account" id="anonymous_user" needed="1"/>
-					</menulist>
+					<et2-description  value="Anonymous user"></et2-description>
+					<et2-select-account  id="anonymous_user" required="1"></et2-select-account>
 				</row>
 				<row>
-					<description value="Anonymous password"/>
-					<passwd id="anonymous_pass" needed="1"/>
+					<et2-description  value="Anonymous password"></et2-description>
+					<et2-password  id="anonymous_pass" required="1"></et2-password>
 				</row>
 				<row>
-					<description value="Registered accounts expire"/>
-					<select-number label="%s days" id="accounts_expire" options="Never,1,30"/>
+					<et2-description  value="Registered accounts expire"></et2-description>
+					<et2-select-number  label="%s days" id="accounts_expire" min="1" max="30" emptyLabel="Never"></et2-select-number>
 				</row>
 				<row>
-					<description value="What to use as username"/>
-					<select id="username">
+					<et2-description  value="What to use as username"></et2-description>
+					<et2-select  id="username">
 						<option value="">Ask user</option>
 						<option value="email">Use email address</option>
-					</select>
+					</et2-select>
 				</row>
 				<row>
-					<vbox>
-						<description value="Account primary group"/>
-						<description value="Select multiple to let the user choose"/>
-					</vbox>
-					<taglist-account id="primary_group" account_type="groups" class="et2_fullWidth"/>
+					<et2-vbox>
+						<et2-description  value="Account primary group"></et2-description>
+						<et2-description  value="Select multiple to let the user choose"></et2-description>
+					</et2-vbox>
+					<et2-select-account  id="primary_group" multiple="true" accountType="groups"></et2-select-account>
 				</row>
 				<row valign="top">
-					<description value="Account groups"/>
-					<taglist-account id="groups" account_type="groups" class="et2_fullWidth"/>
+					<et2-description  value="Account groups"></et2-description>
+					<et2-select-account  id="groups" multiple="true" accountType="groups"></et2-select-account>
 				</row>
 				<row>
-					<description value="Do not send account registration email (manual processing by admin)"/>
-					<checkbox id="no_email"/>
+					<et2-description  value="Do not send account registration email (manual processing by admin)"></et2-description>
+					<et2-checkbox  id="no_email"></et2-checkbox>
 				</row>
 				<row>
-					<description value="Name Sender to send notices from"/>
-					<textbox id="name_nobody" class="et2_fullWidth"/>
+					<et2-description  value="Name Sender to send notices from"></et2-description>
+					<et2-textbox  id="name_nobody"></et2-textbox>
 				</row>
 				<row>
-					<description value="Email address to send notices from"/>
-					<url-email id="mail_nobody" class="et2_fullWidth"/>
+					<et2-description  value="Email address to send notices from"></et2-description>
+					<et2-url-email  id="mail_nobody"></et2-url-email>
 				</row>
 				<row>
-					<description value="Email address to display for support"/>
-					<url-email id="support_email" class="et2_fullWidth"/>
+					<et2-description  value="Email address to display for support"></et2-description>
+					<et2-url-email  id="support_email"></et2-url-email>
 				</row>
 				<row>
-					<description value="Terms of Service text"/>
-					<description/>
+					<et2-description  value="Terms of Service text"></et2-description>
+					<et2-description></et2-description>
 				</row>
 				<row>
-					<textbox multiline="true" id="tos_text" rows="5" cols="80" span="all"/>
+					<et2-textarea  id="tos_text" rows="5" cols="80" span="all"></et2-textarea>
 				</row>
 				<row class="th">
-					<description value="Login page" span="all" class="subHeader"/>
+					<et2-description  value="Login page" span="all" class="subHeader"></et2-description>
 				</row>
 				<row>
-					<description value="Enable registration"/>
-					<menulist>
-						<menupopup type="select-bool" id="enable_registration"/>
-					</menulist>
+					<et2-description  value="Enable registration"></et2-description>
+					<et2-select-bool  id="enable_registration"></et2-select-bool>
 				</row>
 				<row>
-					<description value="Register link at login screen"/>
-					<menulist>
-						<menupopup type="select-bool" id="register_link"/>
-					</menulist>
+					<et2-description  value="Register link at login screen"></et2-description>
+					<et2-select-bool  id="register_link"></et2-select-bool>
 				</row>
 				<row>
-					<description value="Registration fields"/>
-					<listbox id="show" rows="5"/>
+					<et2-description  value="Registration fields"></et2-description>
+					<et2-select  id="show" rows="5" multiple="1"></et2-select>
 				</row>
 				<row>
-					<description value="Addressbook the contacts should be saved to before they are confirmed"/>
-					<menulist>
-						<menupopup id="pending_addressbook"/>
-					</menulist>
+					<et2-description  value="Addressbook the contacts should be saved to before they are confirmed"></et2-description>
+					<et2-select  id="pending_addressbook"></et2-select>
 				</row>
 				<row>
-					<description value="Registration expires after"/>
-					<textbox type="integer" label="%s hours" id="expiry" needed="1" min="1" max="48"/>
+					<et2-description  value="Registration expires after"></et2-description>
+					<et2-number  label="%s hours" id="expiry" min="1" max="48" precision="0" required="1"></et2-number>
 				</row>
 				<row>
-					<description value="Lost password link"/>
-					<menulist>
-						<menupopup type="select-bool" id="lostpassword_link"/>
-					</menulist>
+					<et2-description  value="Lost password link"></et2-description>
+					<et2-select-bool  id="lostpassword_link"></et2-select-bool>
 				</row>
 				<row>
-					<description value="Lost user ID"/>
-					<menulist>
-						<menupopup type="select-bool" id="lostid_link"/>
-					</menulist>
+					<et2-description  value="Lost user ID"></et2-description>
+					<et2-select-bool  id="lostid_link"></et2-select-bool>
 				</row>
 				<row>
-					<description/>
-					<description/>
+					<et2-description></et2-description>
+					<et2-description></et2-description>
 				</row>
 				<row>
-					<hbox span="all">
-						<button label="Save" id="save"/>
-						<button label="Cancel" id="cancel"/>
-					</hbox>
+					<et2-hbox  span="all">
+						<et2-button  label="Save" id="save"></et2-button>
+						<et2-button  label="Cancel" id="cancel"></et2-button>
+					</et2-hbox>
 				</row>
 			</rows>
 		</grid>

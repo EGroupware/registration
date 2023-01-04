@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2//EN" "http://www.egroupware.org/etemplate2.dtd">
+<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2.0//EN" "https://www.egroupware.org/etemplate2.0.dtd">
 <overlay>
 	<template id="registration.view" template="" lang="" group="0" version="1.9.001">
 		<grid width="100%">
@@ -9,25 +9,23 @@
 			</columns>
 			<rows>
 				<row class="dialogHeader">
-					<description value="Status"/>
-					<menulist>
-						<menupopup id="status" readonly="true"/>
-					</menulist>
+					<et2-description  value="Status"></et2-description>
+					<et2-select  id="status" readonly="true"></et2-select>
 				</row>
 				<row disabled="!@ip">
-					<description value="IP" id="ip" no_lang="1"/>
+					<et2-description  value="IP" id="ip" noLang="1"></et2-description>
 				</row>
 				<row>
-					<date-time label="@timestamp_label" id="timestamp" readonly="true"/>
+					<et2-date-time  label="@timestamp_label" id="timestamp" readonly="true"></et2-date-time>
 				</row>
 				<row>
-					<link-list id="links" readonly="true"/>
+					<et2-link-list  id="links" readonly="true"></et2-link-list>
 				</row>
 				<row class="dialogFooterToolbar" disabled="@no_actions">
-					<hbox>
-						<button label="Register" id="register"/>
-						<button label="Cancel" id="cancel"/>
-					</hbox>
+					<et2-hbox>
+						<et2-button  label="Register" id="register"></et2-button>
+						<et2-button  label="Cancel" id="cancel"></et2-button>
+					</et2-hbox>
 				</row>
 			</rows>
 		</grid>

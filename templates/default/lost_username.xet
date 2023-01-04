@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2//EN" "http://www.egroupware.org/etemplate2.dtd">
+<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2.0//EN" "https://www.egroupware.org/etemplate2.0.dtd">
 <overlay>
 	<template id="registration.lost_username" template="" lang="" group="0" version="1.9.001">
 		<grid width="100%">
@@ -8,19 +8,19 @@
 			</columns>
 			<rows>
 				<row height="150px">
-					<description class="login_recovery_description" value="After you enter your email address, the user accounts associated with this email address will be mailed to that address."/>
+					<et2-description  class="login_recovery_description" value="After you enter your email address, the user accounts associated with this email address will be mailed to that address."></et2-description>
 				</row>
 				<row height="100px">
-					<url-email blur="Email" id="email" options="35"/>
+					<et2-url-email  id="email" options="35" placeholder="Email"></et2-url-email>
 				</row>
 				<row disabled="!@message">
-					<description id="message" span="all" class="message"/>
+					<et2-description  id="message" span="all" class="message"></et2-description>
 				</row>
 				<row height="100px">
-					<button align="center" class="login_recovery_btn"  label="Submit" id="submit"/>
+					<et2-button  align="center" class="login_recovery_btn" label="Submit" id="submit"></et2-button>
 				</row>
 				<row>
-					<button id="gologin" align="center" class="login_recovery_btn" label="Go back to login" />
+					<et2-button  id="gologin" align="center" class="login_recovery_btn" label="Go back to login"></et2-button>
 				</row>
 			</rows>
 		</grid>
