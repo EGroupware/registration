@@ -1,0 +1,156 @@
+%1 needs permission to delete - address remains.	registration	km	%1 ត្រូវការការអនុញ្ញាតដើម្បីលុប - អាសយដ្ឋាននៅតែមាន។
+%s days	registration	km	%s ថ្ងៃ។
+%s hours	registration	km	%s ម៉ោង
+%s please calculate the result	registration	km	%s សូមគណនាលទ្ធផល
+13: error occured	registration	km	13: កំហុសបានកើតឡើង
+<br>please contact the site administrator.	registration	km	<br>សូមទាក់ទងអ្នកគ្រប់គ្រងគេហទំព័រ។
+[unknown first name]	registration	km	[មិនស្គាល់ឈ្មោះ]
+[unknown last name]	registration	km	[មិនស្គាល់នាមត្រកូល]
+abuse reduction - please wait %1 seconds and try again.	registration	km	ការកាត់បន្ថយការបំពាន - សូមរង់ចាំ%1 វិនាទី ហើយព្យាយាមម្តងទៀត។
+account	registration	km	គណនី
+account %1 record could not be found, report to site administrator	registration	km	រកមិនឃើញគណនី%1 រាយការណ៍ទៅអ្នកគ្រប់គ្រងគេហទំព័រ
+account groups	registration	km	ក្រុមគណនី
+account password retrieval	registration	km	ការទាញយកពាក្យសម្ងាត់គណនី
+account primary group	registration	km	ក្រុមចម្បងនៃគណនី
+account registration	registration	km	ការចុះឈ្មោះគណនី
+activate account	admin	km	ធ្វើឱ្យគណនីសកម្ម
+address	registration	km	អាស័យដ្ឋាន
+address line 2	registration	km	អ​ស​យ​ដ្ឋាន​ខ្សែ​រ​ទី 2
+addressbook the contacts should be saved to before they are confirmed	registration	km	សៀវភៅអាសយដ្ឋានទំនាក់ទំនងគួរតែត្រូវបានរក្សាទុកមុនពេលពួកគេត្រូវបានបញ្ជាក់
+addressbook the contacts should be saved to before they are confirmed.	registration	km	សៀវភៅអាសយដ្ឋានទំនាក់ទំនងគួរតែត្រូវបានរក្សាទុកមុនពេលពួកគេត្រូវបានបញ្ជាក់។
+after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	km	បន្ទាប់ពីអ្នកបញ្ចូលអាសយដ្ឋានអ៊ីមែលរបស់អ្នក គណនីអ្នកប្រើប្រាស់ដែលភ្ជាប់ជាមួយអាសយដ្ឋានអ៊ីមែលនេះនឹងត្រូវបានផ្ញើទៅអាសយដ្ឋាននោះ។
+after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	km	បន្ទាប់​ពី​អ្នក​បញ្ចូល​ឈ្មោះ​អ្នក​ប្រើ​របស់​អ្នក ការណែនាំ​ក្នុង​ការ​ផ្លាស់​ប្តូរ​ពាក្យ​សម្ងាត់​របស់​អ្នក​នឹង​ត្រូវ​បាន​ផ្ញើ​ទៅ​អ្នក​តាម​អ៊ីមែល​ទៅ​កាន់​អាសយដ្ឋាន​ដែល​អ្នក​បាន​ផ្តល់​ឱ្យ​ពេល​អ្នក​បាន​ចុះឈ្មោះ។
+an error occured while updating your password. please contact the site administrator.	registration	km	កំហុសបានកើតឡើងខណៈពេលកំពុងធ្វើបច្ចុប្បន្នភាពពាក្យសម្ងាត់របស់អ្នក។ សូមទាក់ទងអ្នកគ្រប់គ្រងគេហទំព័រ។
+an error occured. please contact our technical support and let them know.	registration	km	កំហុស​មួយ​បាន​កើត​ឡើង។ សូមទាក់ទងផ្នែកជំនួយបច្ចេកទេស។
+an error occured. please remove your cookies and try again.	registration	km	កំហុស​មួយ​បាន​កើត​ឡើង។ សូមលុបខូគីរបស់អ្នកចេញ ហើយព្យាយាមម្តងទៀត។
+an unknown error occured. <a href="%1">please try registering again.</a>	registration	km	កំហុសមិនស្គាល់បានកើតឡើង។ <a href="%1">សូមព្យាយាមចុះឈ្មោះម្តងទៀត។</a>
+anonymous password	admin	km	ពាក្យសម្ងាត់អនាមិក
+anonymous user	registration	km	អ្នកប្រើប្រាស់អនាមិក
+anonymous user needs access to registration application	registration	km	អ្នកប្រើប្រាស់អនាមិកត្រូវការចូលប្រើកម្មវិធីចុះឈ្មោះ
+ask user	registration	km	សួរអ្នកប្រើប្រាស់
+business phone	registration	km	ទូរស័ព្ទអាជីវកម្ម
+canceled	registration	km	បានលុបចោល
+change password for user	registration	km	ផ្លាស់ប្តូរពាក្យសម្ងាត់សម្រាប់អ្នកប្រើប្រាស់
+choose your organization	registration	km	ជ្រើសរើសស្ថាប័នរបស់អ្នក។
+city	registration	km	ទីក្រុង
+confirm	registration	km	បញ្ជាក់
+confirm registration	registration	km	បញ្ជាក់ការចុះឈ្មោះ
+confirmation email for %1 expires %2 link: %3	registration	km	នេះជាអ៊ីមែលបញ្ជាក់សម្រាប់%1។ សូមចុចលើតំណខាងក្រោមដើម្បីបញ្ចប់ដំណើរការ។ %3 តំណនេះនឹងផុតកំណត់ %2 ។
+confirmed addressbook.	registration	km	សៀវភៅអាសយដ្ឋានដែលបានបញ្ជាក់
+contact fields to show	registration	km	វាលទំនាក់ទំនងដើម្បីបង្ហាញ
+convert user login id to 7 bit string	admin	km	បំប្លែងលេខសម្គាល់ការចូលរបស់អ្នកប្រើទៅជាខ្សែអក្សរ 7 ប៊ីត
+custom etemplate for the contactform	registration	km	គំរូ eTemplate ផ្ទាល់ខ្លួនសម្រាប់ទម្រង់ទំនាក់ទំនង
+days until trial accounts expire	admin	km	ថ្ងៃរហូតដល់គណនីសាកល្បងផុតកំណត់
+department	registration	km	នាយកដ្ឋាន
+display terms of service?	admin	km	បង្ហាញលក្ខខណ្ឌនៃសេវាកម្ម?
+do not send account registration email (manual processing by admin)	admin	km	កុំផ្ញើអ៊ីមែលចុះឈ្មោះគណនី (ដំណើរការដោយដៃដោយអ្នកគ្រប់គ្រង)
+email address	registration	km	អាស័យ​ដ្ឋាន​អ៊ី​ម៉េ​ល
+email address to display for support	admin	km	អាសយដ្ឋានអ៊ីមែលដែលត្រូវបង្ហាញសម្រាប់ជំនួយ
+email address to send notices from	admin	km	អាសយដ្ឋានអ៊ីមែលដើម្បីផ្ញើការជូនដំណឹងពី
+enable registration	registration	km	បើកការចុះឈ្មោះ
+enable registration?	admin	km	បើកការចុះឈ្មោះ?
+enter password	registration	km	បញ្ចូលពាក្យសម្ងាត់
+enter your new password	registration	km	បញ្ចូលពាក្យសម្ងាត់ថ្មីរបស់អ្នក។
+expires	registration	km	ផុតកំណត់
+fax	registration	km	ទូរសារ
+global options	admin	km	ជម្រើសសកល
+go back to login	registration	km	ត្រលប់ទៅការចូល
+home phone	registration	km	ទូរស័ព្ទផ្ទះ
+hours	registration	km	ម៉ោង
+how long to confirm before registration expires? (hours)	registration	km	តើត្រូវបញ្ជាក់រយៈពេលប៉ុន្មានមុនពេលចុះឈ្មោះផុតកំណត់? (ម៉ោង)
+http password	admin	km	ពាក្យសម្ងាត់ HTTP
+http username	admin	km	ឈ្មោះអ្នកប្រើ HTTP
+i have read the terms and conditions and agree by them.	registration	km	ខ្ញុំ​បាន​អាន​លក្ខខណ្ឌ​នានា ហើយ​យល់​ព្រម​ដោយ​ពួកគេ។
+if you did not request this account, simply ignore this message.	registration	km	ប្រសិនបើអ្នកមិនបានស្នើសុំគណនីនេះទេ គ្រាន់តែមិនអើពើនឹងសារនេះ។
+if you did not request this change, simply ignore this message.	registration	km	ប្រសិនបើអ្នកមិនបានស្នើសុំការផ្លាស់ប្តូរនេះទេ គ្រាន់តែមិនអើពើនឹងសារនេះ។
+immediately	admin	km	ភ្លាមៗ
+internet	registration	km	អ៊ីនធឺណិត
+ip	registration	km	អាយភី
+login id	registration	km	លេខ​សម្គាល់​ការ​ចូល
+login page	registration	km	ទំព័រចូល
+lost login id	login	km	បាត់លេខសម្គាល់ការចូល
+lost password	login	km	បាត់ពាក្យសម្ងាត់
+lost password link	registration	km	បាត់តំណពាក្យសម្ងាត់
+lost password link at login screen?	admin	km	បាត់តំណពាក្យសម្ងាត់នៅអេក្រង់ចូល?
+lost user account retrieval	registration	km	ការទាញយកគណនីអ្នកប្រើប្រាស់ដែលបាត់បង់
+lost user id	registration	km	បាត់លេខសម្គាល់អ្នកប្រើប្រាស់
+lost user id link at login screen?	admin	km	បាត់តំណលេខសម្គាល់អ្នកប្រើប្រាស់នៅអេក្រង់ចូល?
+lost_user_id_message username: %1	registration	km	គណនីអ្នកប្រើប្រាស់ដែលភ្ជាប់ជាមួយគណនីអ៊ីមែលនេះ៖ %1
+missing registration	registration	km	បាត់ការចុះឈ្មោះ
+mobile phone	registration	km	ទូរស័ព្ទចល័ត
+name sender to send notices from	admin	km	ឈ្មោះអ្នកផ្ញើដើម្បីផ្ញើការជូនដំណឹងពី
+not a user yet? register now	login	km	មិនទាន់ជាអ្នកប្រើប្រាស់មែនទេ? ចុះឈ្មោះ​ឥឡូវនេះ។
+on-line registration is not activated. please contact the site administrator for more information about registration.	registration	km	ការចុះឈ្មោះតាមអ៊ីនធឺណិតមិនត្រូវបានធ្វើឱ្យសកម្មទេ។ សូមទាក់ទងអ្នកគ្រប់គ្រងគេហទំព័រសម្រាប់ព័ត៌មានបន្ថែមអំពីការចុះឈ្មោះ។
+order	registration	km	បញ្ជាទិញ
+please contact the site administrator.	registration	km	ទាក់ទងអ្នកគ្រប់គ្រងគេហទំព័រ។
+prefix	registration	km	បុព្វបទ
+problem sending email:	registration	km	មានបញ្ហាក្នុងការផ្ញើអ៊ីមែល៖
+re-enter password	registration	km	បញ្ចូល​លេខសំងាត់​ម្តង​ទៀត
+re-enter your password	registration	km	បញ្ចូលពាក្យសម្ងាត់របស់អ្នកឡើងវិញ
+register	common	km	ចុះឈ្មោះ
+register link at login screen	registration	km	ចុះឈ្មោះតំណនៅអេក្រង់ចូល
+register link at login screen?	admin	km	ចុះឈ្មោះតំណនៅអេក្រង់ចូល?
+registered	registration	km	បានចុះឈ្មោះ
+registered accounts expire	registration	km	គណនីដែលបានចុះឈ្មោះផុតកំណត់
+registration	common	km	ការចុះឈ្មោះ
+registration complete	registration	km	ការចុះឈ្មោះបានបញ្ចប់
+registration expires after	registration	km	ការចុះឈ្មោះផុតកំណត់បន្ទាប់ពី
+registration fields	registration	km	វាលចុះឈ្មោះ
+registration settings	admin	km	ការកំណត់ការចុះឈ្មោះ
+remove	registration	km	ដកចេញ
+repeat	registration	km	ធ្វើម្តងទៀត
+report all problems and abuse to	registration	km	រាយការណ៍រាល់បញ្ហា និងការបំពានទៅ
+required	registration	km	ទាមទារ
+response	registration	km	ការឆ្លើយតប
+select multiple to let the user choose	registration	km	ជ្រើសរើសច្រើនដើម្បីឱ្យអ្នកប្រើប្រាស់ជ្រើសរើស
+send email	admin	km	ផ្ញើអ៊ីមែល
+sorry, that username is already taken.	registration	km	សូមអភ័យទោស ឈ្មោះអ្នកប្រើប្រាស់នោះត្រូវបានយករួចហើយ។
+sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	km	សូមអភ័យទោស យើងកំពុងមានបញ្ហាក្នុងការបើកដំណើរការគណនីរបស់អ្នក។ ចំណាំថាតំណភ្ជាប់ដែលផ្ញើតាមអ៊ីមែលមានសុពលភាពតែក្នុងរយៈពេលពីរម៉ោងប៉ុណ្ណោះ។ ប្រសិនបើអ្នកគិតថាការពន្យារពេលនេះត្រូវបានផុតកំណត់ សូមព្យាយាមម្តងទៀត។ បើមិនដូច្នេះទេ សូមទាក់ទងអ្នកគ្រប់គ្រងគេហទំព័រ។
+sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	km	សូមអភ័យទោស យើងកំពុងមានបញ្ហាក្នុងការទាញយកព័ត៌មានដែលត្រូវការសម្រាប់ការផ្លាស់ប្តូរពាក្យសម្ងាត់របស់អ្នក។ ចំណាំថាតំណភ្ជាប់ដែលផ្ញើតាមអ៊ីមែលមានសុពលភាពតែក្នុងរយៈពេលពីរម៉ោងប៉ុណ្ណោះ។ ប្រសិនបើអ្នកគិតថាការពន្យារពេលនេះត្រូវបានផុតកំណត់ សូមព្យាយាមម្តងទៀត។ បើមិនដូច្នេះទេ សូមទាក់ទងអ្នកគ្រប់គ្រងគេហទំព័រ។
+street	registration	km	ផ្លូវ
+subject for confirmation email title: %1	registration	km	%1 អ៊ីមែលបញ្ជាក់
+terms of service	registration	km	លក្ខខណ្ឌ​នៃ​សេវាកម្ម
+terms of service text	admin	km	លក្ខខណ្ឌនៃសេវាកម្មអត្ថបទ
+text	registration	km	អត្ថបទ
+the anonymous user has probably no add rights for this addressbook.	registration	km	អ្នកប្រើប្រាស់អនាមិកប្រហែលគ្មានសិទ្ធិបន្ថែមសម្រាប់សៀវភៅអាសយដ្ឋាននេះទេ។
+the anonymous user needs add rights for it!	registration	km	អ្នកប្រើប្រាស់អនាមិកត្រូវការបន្ថែមសិទ្ធិសម្រាប់វា!
+the two passwords are not the same	registration	km	លេខសម្ងាត់ទាំងពីរមិនដូចគ្នាទេ។
+there was an error saving your data :-(	registration	km	មានកំហុសក្នុងការរក្សាទុកទិន្នន័យរបស់អ្នក។
+this module displays a registration form, and sends a confirmation email.	registration	km	ម៉ូឌុលនេះបង្ហាញទម្រង់ចុះឈ្មោះ ហើយផ្ញើអ៊ីមែលបញ្ជាក់។
+type	registration	km	ប្រភេទ
+unable to process confirmation.	registration	km	មិនអាចដំណើរការការបញ្ជាក់បានទេ។
+unable to send mail, contact your administrator	registration	km	មិនអាចផ្ញើសំបុត្របានទេ ទាក់ទងរដ្ឋបាលរបស់អ្នក។
+unknown first name	registration	km	មិនស្គាល់ឈ្មោះ
+unknown last name	registration	km	មិនស្គាល់នាមត្រកូល
+update/add	registration	km	ធ្វើបច្ចុប្បន្នភាព/បន្ថែម
+use email address	registration	km	ប្រើអាសយដ្ឋានអ៊ីមែល
+use html	admin	km	ប្រើ HTML
+use trial accounts?	admin	km	ប្រើគណនីសាកល្បង?
+username is	admin	km	ឈ្មោះអ្នកប្រើគឺ
+values 'for dropdown': comma separated), for 'dropdown from table': table,valuefield,displayfield	registration	km	តម្លៃ 'សម្រាប់ទម្លាក់ចុះ': សញ្ញាក្បៀសបំបែក), សម្រាប់ 'ទម្លាក់ចុះពីតារាង': តារាង វាលតម្លៃ វាលបង្ហាញ
+values (for dropdown only; comma separated)	registration	km	តម្លៃ - សម្រាប់ទម្លាក់ចុះតែប៉ុណ្ណោះ សញ្ញាក្បៀសបំបែក។
+verification	registration	km	ការផ្ទៀងផ្ទាត់
+we have sent a mail to your email account: %1 with your lost user ids.	registration	km	យើង​បាន​ផ្ញើ​សំបុត្រ​ទៅ​គណនី​អ៊ីមែល​របស់​អ្នក៖ %1 ជាមួយ​នឹង​លេខ​សម្គាល់​អ្នក​ប្រើ​ដែល​បាន​បាត់។
+we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	km	យើង​បាន​ផ្ញើ​សំបុត្រ​ជាមួយ​ការណែនាំ​ដើម្បី​ផ្លាស់ប្តូរ​ពាក្យសម្ងាត់​របស់អ្នក។ អ្នកគួរតែធ្វើតាមតំណដែលបានរួមបញ្ចូលក្នុងរយៈពេលពីរម៉ោង។ ប្រសិនបើអ្នកមិនធ្វើទេ អ្នកនឹងត្រូវចូលទៅកាន់អេក្រង់ពាក្យសម្ងាត់ដែលបាត់ម្តងទៀត។
+what to use as username	registration	km	អ្វីដែលត្រូវប្រើជាឈ្មោះអ្នកប្រើប្រាស់
+work phone	registration	km	ទូរស័ព្ទ​កន្លែងធ្វើការ
+wrong - try again ...	registration	km	ខុស - ព្យាយាមម្តងទៀត ...
+wrong session	registration	km	វគ្គខុស
+you can go back to the login page	registration	km	អ្នកអាចត្រលប់ទៅទំព័រចូល
+you don't have delete permission, address will be left if you manually register or cancel.	registration	km	អ្នកមិនមានការអនុញ្ញាតលុបទេ អាសយដ្ឋាននឹងត្រូវទុកចោល ប្រសិនបើអ្នកចុះឈ្មោះ ឬលុបចោលដោយដៃ។
+you don\'t have delete permission, address will be left if you manually register or cancel.	registration	km	អ្នកមិនមានការអនុញ្ញាតក្នុងការលុបទេ អាសយដ្ឋាននឹងត្រូវបានទុកចោល ប្រសិនបើអ្នកចុះឈ្មោះ ឬលុបចោលដោយដៃ។
+you have entered an invalid birthday	registration	km	អ្នកបានបញ្ចូលថ្ងៃកំណើតមិនត្រឹមត្រូវ
+you have entered an invalid email address	registration	km	អ្នកបានបញ្ចូលអាសយដ្ឋានអ៊ីមែលមិនត្រឹមត្រូវ
+you must enter a password	registration	km	អ្នកត្រូវតែបញ្ចូលពាក្យសម្ងាត់
+you must enter a username	registration	km	អ្នកត្រូវតែបញ្ចូលឈ្មោះអ្នកប្រើប្រាស់
+you must enter an email account	registration	km	អ្នកត្រូវតែបញ្ចូលគណនីអ៊ីមែល
+you must enter an email address	registration	km	អ្នកត្រូវតែបញ្ចូលអាសយដ្ឋានអ៊ីមែល
+you must fill in all of the required fields	registration	km	អ្នក​ត្រូវ​បំពេញ​គ្រប់​វាល​ដែល​ត្រូវ​ការ
+you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	km	អ្នកបានស្នើសុំផ្លាស់ប្តូរពាក្យសម្ងាត់របស់អ្នក។ សូមអនុវត្តតាម URL ខាងក្រោមដើម្បីធ្វើដូច្នេះ។ URL នេះនឹងផុតកំណត់ក្នុងរយៈពេលពីរម៉ោងទៀត។ បន្ទាប់ពីការពន្យារពេលនេះ អ្នកគួរតែឆ្លងកាត់នីតិវិធីដែលបាត់ពាក្យសម្ងាត់ម្តងទៀត។
+you specified a value for %1 that is not a choice	registration	km	អ្នកបានបញ្ជាក់តម្លៃសម្រាប់%1 ដែលមិនមែនជាជម្រើស
+your account is now active!	registration	km	គណនីរបស់អ្នកឥឡូវនេះសកម្មហើយ!
+your login is not available. time is expired	registration	km	ការចូលរបស់អ្នកមិនមានទេ។ ពេលវេលាផុតកំណត់
+your password was changed.	registration	km	ពាក្យសម្ងាត់របស់អ្នកត្រូវបានផ្លាស់ប្តូរ។
+your registration code is missing or incorrect.	registration	km	លេខកូដចុះឈ្មោះរបស់អ្នកបាត់ ឬមិនត្រឹមត្រូវ។
+zip code	registration	km	លេខ​កូដ​តំបន់
+zip/postal	registration	km	ZIP/ប្រៃសណីយ៍
