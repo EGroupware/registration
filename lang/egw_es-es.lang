@@ -90,6 +90,7 @@ unable to send mail, contact your administrator	registration	es-es	No se pudo en
 unknown first name	registration	es-es	Nombre de pila desconocido
 unknown last name	registration	es-es	Apellido desconocido
 update/add	registration	es-es	Actualizar/añadir
+use email address	registration	es-es	Usar dirección de correo-e
 use html	admin	es-es	usar HTML
 use trial accounts?	admin	es-es	¿Usar cuentas de prueba?
 username is	admin	es-es	El nombre de usuario es
