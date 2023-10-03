@@ -148,7 +148,7 @@ class registration_ui
 			{
 				if($field[0] == '#')
 				{
-					$cfs[] = substr($field, 1);
+					$cfs[substr($field, 1)] = true;
 				}
 			}
 			if(count($cfs))
@@ -156,7 +156,7 @@ class registration_ui
 				$data['show']['custom'] = true;
 				$data['show']['sep3'] = true;
 				$data['show']['sep4'] = true;
-				$template->setElementAttribute("custom", "fields", $cfs);
+				$data['custom'] = $cfs;
 			}
 		}
 
