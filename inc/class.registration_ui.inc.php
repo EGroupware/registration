@@ -143,6 +143,21 @@ class registration_ui
 		{
 			if (!is_array($fields = $config['show'])) $fields = explode(',', $fields);
 			$data['show'] += array_combine($fields, array_fill(0,count($fields),true));
+			$cfs = [];
+			foreach($data['show'] as $field => $show)
+			{
+				if($field[0] == '#')
+				{
+					$cfs[substr($field, 1)] = true;
+				}
+			}
+			if(count($cfs))
+			{
+				$data['show']['custom'] = true;
+				$data['show']['sep3'] = true;
+				$data['show']['sep4'] = true;
+				$data['custom'] = $cfs;
+			}
 		}
 
 		// what to use as account_lid, default ask user

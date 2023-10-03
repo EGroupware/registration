@@ -97,17 +97,10 @@
 				<row disabled="!@show[sep3]">
 					<hrule span="all"/>
 				</row>
-				<row disabled="!@show[custom1]">
-					<et2-image  src="gear"></et2-image>
-					<et2-description  value="@customlabel[1]"></et2-description>
-					<et2-textbox  id="@customfield[1]" span="4" class="inputFullWidth" required="1"></et2-textbox>
-					<et2-description  value="*" class="redItalic"></et2-description>
-				</row>
-				<row disabled="!@show[custom2]">
+                <row disabled="!@show[custom]">
 					<et2-description></et2-description>
-					<et2-description  value="@customlabel[2]"></et2-description>
-					<et2-textbox  id="@customfield[2]" span="4" class="inputFullWidth"></et2-textbox>
-				</row>
+                    <customfields fields="@custom" span="all" app="addressbook"></customfields>
+                </row>
 				<row disabled="!@show[sep4]">
 					<hrule span="all"/>
 				</row>
