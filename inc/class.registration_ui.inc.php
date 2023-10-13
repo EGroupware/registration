@@ -156,7 +156,7 @@ class registration_ui
 				$data['show']['custom'] = true;
 				$data['show']['sep3'] = true;
 				$data['show']['sep4'] = true;
-				$data['custom'] = $cfs;
+				$template->setElementAttribute("custom", "fields", $cfs);
 			}
 		}
 

@@ -99,7 +99,7 @@
 				</row>
                 <row disabled="!@show[custom]">
 					<et2-description></et2-description>
-                    <customfields fields="@custom" span="all" app="addressbook"></customfields>
+                    <customfields id="custom" span="all" app="addressbook"></customfields>
                 </row>
 				<row disabled="!@show[sep4]">
 					<hrule span="all"/>
