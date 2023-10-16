@@ -148,7 +148,7 @@ class registration_ui
 			{
 				if($field[0] == '#')
 				{
-					$cfs[substr($field, 1)] = true;
+					$cfs[] = substr($field, 1);
 				}
 			}
 			if(count($cfs))
