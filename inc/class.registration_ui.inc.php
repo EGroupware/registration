@@ -216,6 +216,7 @@ class registration_ui
 					{
 						$content['owner'] = $config['pending_addressbook'];
 						$content['private'] = 0;        // in case default_private is set
+						$content = array_merge($content, $content['custom'] ?? []);
 
 						// Set timestap to expiry, so we don't have to save both
 						$content['timestamp'] = time() + ($config['expiry'] * 3600);
