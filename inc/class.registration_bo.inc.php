@@ -245,10 +245,7 @@ class registration_bo extends Api\Storage\Tracking
 
 			// Anon user has no rights to edit accounts - you can't do this
 			//$addressbook->merge(array($registration['contact_id'], $account_id));
-			foreach($account as $key => &$value)
-			{
-				if(!$value) $value = $address[$key];
-			}
+			$account = array_merge($address, $account);
 
 			$addressbook->save($account, true);
 
