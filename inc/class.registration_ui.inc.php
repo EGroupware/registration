@@ -306,7 +306,7 @@ class registration_ui
 		$data = array();
 		if ($content['gologin'])
 		{
-			return Egw::redirect_link('/login.php');
+			return Egw::redirect_link('/logout.php');
 		}
 		// Deal with incoming
 		if($content && $content['email'])
@@ -375,7 +375,7 @@ class registration_ui
 		}
 		if ($content['gologin'])
 		{
-			return Egw::redirect_link('/login.php');
+			return Egw::redirect_link('/logout.php');
 		}
 		if($content && $content['username'])
 		{

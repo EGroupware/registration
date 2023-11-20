@@ -124,7 +124,7 @@
 					<et2-description></et2-description>
 					<et2-hbox  span="all">
 						<et2-button  label="Submit" class="login_recovery_btn" id="submitit"></et2-button>
-						<et2-button  align="center" class="login_recovery_btn" id="gologin" label="Go back to login" onclick="location.href='../login.php';"></et2-button>
+                        <et2-button align="center" class="login_recovery_btn" id="gologin" label="Go back to login" onclick="location.href='../logout.php';"></et2-button>
 						<et2-description  align="right" value="required fields *" class="redItalic"></et2-description>
 					</et2-hbox>
 				</row>
