@@ -2,7 +2,6 @@
 %s days	registration	fr	%s jours
 %s hours	registration	fr	%s heures
 %s please calculate the result	registration	fr	%s calculez s'il vous plait le résultat
-*	registration	fr	*
 13: error occured	registration	fr	13 : erreur
 <br>please contact the site administrator.	registration	fr	<br> Veuillez contacter l'administrateur du site
 [unknown first name]	registration	fr	[prénom inconnu]
@@ -28,9 +27,11 @@ an unknown error occured. <a href="%1">please try registering again.</a>	registr
 anonymous password	admin	fr	Mot de passe de l'utilisateur anonyme
 anonymous user	registration	fr	Utilisateur anonyme
 anonymous user needs access to registration application	registration	fr	L'utilisateur anonyme doit avoir un accès à l'application "enregistrement"
+ask user	registration	fr	Demander à l'utilisateur
 business phone	registration	fr	Téléphone (bureau)
 canceled	registration	fr	Annulé
 change password for user	registration	fr	Changer le mot de passe pour l'utilisateur
+choose your organization	registration	fr	Choisissez votre organisation
 city	registration	fr	Ville
 confirm	registration	fr	confirmer
 confirm registration	registration	fr	Confirmer l'enregistrement
@@ -97,15 +98,15 @@ registration expires after	registration	fr	L'enregistrement expire après
 registration fields	registration	fr	Champs de l'enregistrement
 registration settings	admin	fr	Paramètres d'enregistrement
 remove	registration	fr	Enlever
+repeat	registration	fr	Répéter
 report all problems and abuse to	registration	fr	Rapporter tous les problèmes et abus à
 required	registration	fr	Nécessaire
-required fields *	registration	fr	champs requis *
 response	registration	fr	Réponse
+select multiple to let the user choose	registration	fr	Selectionnez plusieurs valeurs pour laisser l'utilisateur choisir
 send email	admin	fr	Envoyer l'e-mail
 sorry, that username is already taken.	registration	fr	Désolé, ce nom d'utilisateur existe déjà.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	fr	Désolé mais nous avons des problèmes pour activer votre compte. Notez que le lien envoyé par e-mail n'est valable que pendant 2 heures. Si vous pensez que ce délai a expiré, réessayez. Sinon contactez votre administrateur.
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	fr	Désolé mais nous avons des problèmes pour récupérer l'information nécessaire pour changer le mot de passe. Notez que le lien envoyé par e-mail n'est valable que pendant 2 heures. Si vous pensez que ce délai a expiré, réessayez. Sinon, contactez votre administrateur.
-stadt	registration	fr	Ville
 street	registration	fr	Rue
 subject for confirmation email title: %1	registration	fr	%1 email de confirmation
 terms of service	registration	fr	Termes et Conditions
@@ -122,6 +123,7 @@ unable to send mail, contact your administrator	registration	fr	Impossible d'env
 unknown first name	registration	fr	Prénom inconnu
 unknown last name	registration	fr	Nom de famille inconnu
 update/add	registration	fr	Mettre à jour/Ajouter
+use email address	registration	fr	Utiliser l'adresse mail
 use html	admin	fr	utiliser HTML
 use trial accounts?	admin	fr	Utiliser des comptes à l'essai?
 username is	admin	fr	L'utilisateur est
@@ -130,6 +132,7 @@ values (for dropdown only; comma separated)	registration	fr	Valeurs (Pour Liste 
 verification	registration	fr	Vérification
 we have sent a mail to your email account: %1 with your lost user ids.	registration	fr	Nous avons envoyé un email sur l'adresse enregistré sur votre compte : %1 avec votre login ID perdu.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	fr	Nous vous avons envoyé un e-mail contenant les instructions pour modifier votre mot de passe. Vous devrez cliquer sur le lien dans les 2 heures. Si vous ne le faites pas, il faudra retourner à nouveau sur l'écran de récupération de mot de passe.
+what to use as username	registration	fr	Utiliser comme nom d'utilisateur
 work phone	registration	fr	Téléphone (bureau)
 wrong - try again ...	registration	fr	Faux - essayer à nouveau...
 wrong session	registration	fr	Mauvaise session
