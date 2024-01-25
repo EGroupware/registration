@@ -149,7 +149,7 @@ you must fill in all of the required fields	registration	en	You must fill in all
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	en	You requested to change your password. Please follow the URL below to do so. This URL will expire in two hours. After this delay you should go thru the lost password procedure again.
 you specified a value for %1 that is not a choice	registration	en	You specified a value for %1 that is not a choice
 your account is now active!	registration	en	Your account is now active!
-your login is not available. time is expired	registration	en	Your login is not available. Time is expired
+your login is not available. time is expired	registration	en	Your login is not available. Time is expired.
 your password was changed.	registration	en	Your password was changed.
 your registration code is missing or incorrect.	registration	en	Your registration code is missing or incorrect.
 zip code	registration	en	zip code

@@ -33,7 +33,7 @@ canceled	registration	fr	Annulé
 change password for user	registration	fr	Changer le mot de passe pour l'utilisateur
 choose your organization	registration	fr	Choisissez votre organisation
 city	registration	fr	Ville
-confirm	registration	fr	confirmer
+confirm	registration	fr	Confirmer
 confirm registration	registration	fr	Confirmer l'enregistrement
 confirmation email for %1 expires %2 link: %3	registration	fr	Ceci est une confirmation par email de %1. Veuillez cliquer sur le lien suivant pour terminer le processus d'enregistrement. %3 Ce lien va expirer %2.
 confirmed addressbook.	registration	fr	Carnet d'adresses des contacts confirmés
@@ -71,7 +71,7 @@ login page	registration	fr	Page de connexion
 lost login id	login	fr	ID de connexion perdu
 lost password	login	fr	Mot de passe perdu
 lost password link	registration	fr	Lien de perte de mot de passe
-lost password link at login screen?	admin	fr	Avez-vous perdu le lien vers le mot de passe sur l'écran de connexion?
+lost password link at login screen?	admin	fr	Avez-vous perdu le lien vers le mot de passe sur l'écran de connexion ?
 lost user account retrieval	registration	fr	Récupération du compte utilisateur perdu
 lost user id	registration	fr	ID utilisateur perdu
 lost user id link at login screen?	admin	fr	Avez-vous perdu le lien vers l'ID utilisateur sur l'écran de connexion ?
@@ -79,7 +79,7 @@ lost_user_id_message username: %1	registration	fr	Comptes utilisateur associés 
 missing registration	registration	fr	Enregistrement manquant
 mobile phone	registration	fr	Téléphone portable
 name sender to send notices from	admin	fr	Nom de l'expéditeur des messages envoyés
-not a user yet? register now	login	fr	Pas encore enregistré? S'enregistrer maintenant
+not a user yet? register now	login	fr	Pas encore enregistré ? S'enregistrer maintenant
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	fr	L'enregistrement en ligne n'est pas activé. Veuillez contacter votre administrateur pour plus d'informations sur l'enregistrement.
 order	registration	fr	Ordre
 please contact the site administrator.	registration	fr	Veuillez contacter l'administrateur du site.
@@ -115,7 +115,7 @@ text	registration	fr	Texte
 the anonymous user has probably no add rights for this addressbook.	registration	fr	L'utilisateur anonyme a probablement pas de droit d'ajout sur ce carnet d'adresses.
 the anonymous user needs add rights for it!	registration	fr	L'utilisateur anonyme doit avoir des droits d'ajout !
 the two passwords are not the same	registration	fr	Les deux mots de passe ne sont pas les mêmes
-there was an error saving your data :-(	registration	fr	ERREUR à l'enregistrement de données !
+there was an error saving your data :-(	registration	fr	Une erreur s'est produite lors de l'enregistrement de vos données.
 this module displays a registration form, and sends a confirmation email.	registration	fr	Ce module affiche un formulaire d'enregistrement (à EGroupware) et envoie une confirmation par email.
 type	registration	fr	Type
 unable to process confirmation.	registration	fr	Incapable de procéder à la confirmation
@@ -124,7 +124,7 @@ unknown first name	registration	fr	Prénom inconnu
 unknown last name	registration	fr	Nom de famille inconnu
 update/add	registration	fr	Mettre à jour/Ajouter
 use email address	registration	fr	Utiliser l'adresse mail
-use html	admin	fr	utiliser HTML
+use html	admin	fr	Utiliser HTML
 use trial accounts?	admin	fr	Utiliser des comptes à l'essai?
 username is	admin	fr	L'utilisateur est
 values 'for dropdown': comma separated), for 'dropdown from table': table,valuefield,displayfield	registration	fr	Valeur pour le dropdown (séparé par des virgules), pour un dropdown depuis une table : table, champ valeur, champ affiché
