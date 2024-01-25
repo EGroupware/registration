@@ -1,41 +1,63 @@
+%1 needs permission to delete - address remains.	registration	it	%1 ha bisogno di un permesso per essere cancellato - l'indirizzo rimane.
+%s days	registration	it	%s giorni
 %s hours	registration	it	%s ore
 %s please calculate the result	registration	it	%s per favore calcolare il risultato
+13: error occured	registration	it	13: si è verificato un errore
 <br>please contact the site administrator.	registration	it	<br>Per favore contatta l'amministratore del sito.
 [unknown first name]	registration	it	[nome sconosciuto]
 [unknown last name]	registration	it	[cognome sconosciuto]
-account	registration	it	Account
+abuse reduction - please wait %1 seconds and try again.	registration	it	Riduzione dell'abuso - attendere %1 secondi e riprovare.
+account	registration	it	Conto
 account %1 record could not be found, report to site administrator	registration	it	Il record dell'account %1 non è stato trovato, avvisa l'amministratore del sito
+account groups	registration	it	Gruppi di account
 account password retrieval	registration	it	Recupero password account
+account primary group	registration	it	Gruppo principale dell'account
 account registration	registration	it	Registrazione account
 activate account	admin	it	Attivazione account
 address	registration	it	Indirizzo
 address line 2	registration	it	Indirizzo linea 2
+addressbook the contacts should be saved to before they are confirmed	registration	it	Rubrica in cui salvare i contatti prima di confermarli
+addressbook the contacts should be saved to before they are confirmed.	registration	it	Rubrica in cui salvare i contatti prima di confermarli.
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	it	Dopo aver inserito il tuo indirizzo email, gli account utente associati con questo indirizzo email saranno inviati a quell'indirizzo.
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	it	Dopo aver inserito il tuo nome utente, le istruzioni per modificare la password saranno inviate all'indirizzo e-mail da te indicato in fase di registrazione.
+an error occured while updating your password. please contact the site administrator.	registration	it	Si è verificato un errore durante l'aggiornamento della password. Si prega di contattare l'amministratore del sito.
 an error occured. please contact our technical support and let them know.	registration	it	E' avvenuto un errore. Per favore contatta il nostro supporto tecnico e faglielo sapere.
+an error occured. please remove your cookies and try again.	registration	it	Si è verificato un errore. Rimuovere i cookie e riprovare.
+an unknown error occured. <a href="%1">please try registering again.</a>	registration	it	Si è verificato un errore sconosciuto. <a href="%1">Provare a registrarsi di nuovo.</a>
 anonymous password	admin	it	Password anonimo
 anonymous user	registration	it	Utente anonimo
+anonymous user needs access to registration application	registration	it	L'utente anonimo deve accedere all'applicazione di registrazione
+ask user	registration	it	Chiedere all'utente
 business phone	registration	it	Telefono ufficio
 canceled	registration	it	Cancellato
 change password for user	registration	it	Cambia password per utente
+choose your organization	registration	it	Vyberte si svou organizaci
 city	registration	it	Città
-confirm	registration	it	conferma
+confirm	registration	it	Conferma
+confirm registration	registration	it	Potvrzení registrace
+confirmation email for %1 expires %2 link: %3	registration	it	Toto je potvrzovací e-mail pro %1. Pro dokončení procesu klikněte na následující odkaz. %3 Platnost tohoto odkazu vyprší %2.
 confirmed addressbook.	registration	it	Rubrica confermata
 contact fields to show	registration	it	Campi di contatto da mostrare
+convert user login id to 7 bit string	admin	it	Převést přihlašovací ID uživatele na 7bitový řetězec
 custom etemplate for the contactform	registration	it	Template personalizzato per il modulo di contatto
 days until trial accounts expire	admin	it	Giorni prima della scadenza account di prova
 department	registration	it	Dipartimento
 display terms of service?	admin	it	Visualizza termini del servizio?
-email address	registration	it	indirizzo email
+do not send account registration email (manual processing by admin)	admin	it	Neposílat e-mail s registrací účtu (ruční zpracování správcem).
+email address	registration	it	Indirizzo email
 email address to display for support	admin	it	Indirizzo email da visualizzare per supporto
 email address to send notices from	admin	it	Indirizzo email da cui inviare notifiche
+enable registration	registration	it	Povolit registraci
 enable registration?	admin	it	Abilita Registrazione?
+enter password	registration	it	Zadejte heslo
 enter your new password	registration	it	Inserisci la tua nuova password
 expires	registration	it	Scade
 fax	registration	it	Fax
 global options	admin	it	Opzioni globali
+go back to login	registration	it	Torna al login
 home phone	registration	it	Telefono Abitazione
-hours	registration	it	ore
+hours	registration	it	Ore
+how long to confirm before registration expires? (hours)	registration	it	Quanto tempo per confermare prima che la registrazione scada? (ore)
 http password	admin	it	Password HTTP
 http username	admin	it	Username HTTP
 i have read the terms and conditions and agree by them.	registration	it	Ho letto i termini e le condizioni e li accetto.
@@ -44,67 +66,91 @@ if you did not request this change, simply ignore this message.	registration	it	
 immediately	admin	it	Immediatamente
 internet	registration	it	Internet
 ip	registration	it	IP
-lost login id	login	it	Id login persa
+login id	registration	it	ID di accesso
+login page	registration	it	Pagina di accesso
+lost login id	login	it	ID login persa
 lost password	login	it	Password persa
+lost password link	registration	it	Link per la password persa
 lost password link at login screen?	admin	it	Collegamento Password persa in schermata login?
 lost user account retrieval	registration	it	Recupero account utente perso
-lost user id	registration	it	Id Utente persa
+lost user id	registration	it	ID Utente persa
 lost user id link at login screen?	admin	it	Collegamento id utente persa in schermata login?
+lost_user_id_message username: %1	registration	it	Account utente associato a questo account di posta: %1
+missing registration	registration	it	Registrazione mancante
 mobile phone	registration	it	Telefono Mobile
+name sender to send notices from	admin	it	Nome del mittente da cui inviare le notifiche
 not a user yet? register now	login	it	Non sei ancora un utente? Registrati ora
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	it	La registrazione on-line non è attivata. Prego contatta gli amministratori del sito per maggiori informazioni circa la registrazione.
 order	registration	it	Ordine
+please contact the site administrator.	registration	it	Contattare l'amministratore del sito.
 prefix	registration	it	Prefisso
 problem sending email:	registration	it	Problema durante invio Email:
 re-enter password	registration	it	Re-inserisci password
 re-enter your password	registration	it	Re-inserisci la tua password
 register	common	it	Registrati
+register link at login screen	registration	it	Link di registrazione nella schermata di accesso
 register link at login screen?	admin	it	Link Registrati nella schermata di Login?
-registered	registration	it	registrato
+registered	registration	it	Registrato
+registered accounts expire	registration	it	I conti registrati scadono
 registration	common	it	Registrazione
+registration complete	registration	it	Registrazione completata
+registration expires after	registration	it	La registrazione scade dopo
+registration fields	registration	it	Campi di registrazione
 registration settings	admin	it	Impostazioni Registrazione
 remove	registration	it	RImuovi
+repeat	registration	it	Ripetere
 report all problems and abuse to	registration	it	Comunica tutti i problemi e gli abusi a
 required	registration	it	Richiesto
 response	registration	it	Responso
+select multiple to let the user choose	registration	it	Selezionare più volte per permettere all'utente di scegliere
 send email	admin	it	Invia email
-sorry, that username does not exist.	registration	it	Spiacente, questo username non esiste.
 sorry, that username is already taken.	registration	it	Spiacente, questo username è già utilizzato.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	it	Spiacente, stiamo avendo dei problemi per attivare il tuo account. Nota che i collegamenti inviati tramite email sono validi solo per due ore. Se pensi che questo tempo sia già passato, semplicemente riprova. Altrimenti, per favore contatta l'amministratore del sito.
+sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	it	Siamo spiacenti, abbiamo un problema nel recuperare le informazioni necessarie per la modifica della password. Si noti che i link inviati via e-mail sono validi solo per due ore. Se si ritiene che questo termine sia scaduto, è sufficiente riprovare. In caso contrario, contattare l'amministratore del sito.
 street	registration	it	Via
+subject for confirmation email title: %1	registration	it	E-mail di conferma %1
 terms of service	registration	it	Termini di Servizio
 terms of service text	admin	it	Testo Termini di Servizio
 text	registration	it	Testo
 the anonymous user has probably no add rights for this addressbook.	registration	it	L'utente anonimo non ha permessi di inserimento per questa rubrica
 the anonymous user needs add rights for it!	registration	it	L'utente anonimo ha bisogno di permessi di inserimento
 the two passwords are not the same	registration	it	Le due password non sono uguali
-there was an error saving your data :-(	registration	it	ERRORE durante il salvataggio dei dati!
+there was an error saving your data :-(	registration	it	Si è verificato un errore nel salvataggio dei dati.
+this module displays a registration form, and sends a confirmation email.	registration	it	Questo modulo visualizza un modulo di registrazione e invia un'e-mail di conferma.
 type	registration	it	Tipo
 unable to process confirmation.	registration	it	Impossibile processare la conferma
 unable to send mail, contact your administrator	registration	it	Impossibile inviare posta, contatta il tuo amministratore.
 unknown first name	registration	it	Nome sconosciuto
 unknown last name	registration	it	Cognome sconosciuto
 update/add	registration	it	Aggiorna/Aggiungi
-use html	admin	it	usa HTML
+use email address	registration	it	Utilizzare l'indirizzo e-mail
+use html	admin	it	Usa HTML
 use trial accounts?	admin	it	Utilizzare account di prova?
 username is	admin	it	Il Nome Utente è
+values 'for dropdown': comma separated), for 'dropdown from table': table,valuefield,displayfield	registration	it	Valori 'per la discesa': separati da virgole), Per 'discesa da tabella': tabella, campo valore, campo di visualizzazione
 values (for dropdown only; comma separated)	registration	it	Valori (Solo per A discesa; separati da virgole)
 verification	registration	it	Verifica
-we have sent a mail to your email account: %s with your lost user ids.	registration	it	Abbiamo spedito una email alla tua casella : %s con il tuo nome utente che hai perso
+we have sent a mail to your email account: %1 with your lost user ids.	registration	it	Abbiamo inviato una mail al vostro account di posta elettronica: %1 con i vostri ID utente persi.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	it	Ti abbiamo spedito un'email con le istruzione per cambiare la tua password. Devi cliccare sul seguente link entro due ore . Se non seguirai queste istruzioni dovrai richiedere la procedura di cambio password.
+what to use as username	registration	it	Cosa usare come nome utente
 work phone	registration	it	Telefono Ufficio
 wrong - try again ...	registration	it	Errato - riprovare ...
 wrong session	registration	it	Sessione errata
 you can go back to the login page	registration	it	Puoi tornare alla pagine di login
+you don't have delete permission, address will be left if you manually register or cancel.	registration	it	Non hai il permesso di cancellare, l'indirizzo sarà lasciato se ti registri o cancelli manualmente.
+you don\'t have delete permission, address will be left if you manually register or cancel.	registration	it	Non hai i permessi di cancellazione, l'indirizzo rimarrà se ti registri o cancelli manualmente.
 you have entered an invalid birthday	registration	it	Hai inserito un compleanno non valido
 you have entered an invalid email address	registration	it	Hai inserito un indirizzo email non valido
 you must enter a password	registration	it	Devi inserire una password
 you must enter a username	registration	it	Devi inserire un nome utente
 you must enter an email account	registration	it	Devi inserire un account email
+you must enter an email address	registration	it	È necessario inserire un indirizzo e-mail
 you must fill in all of the required fields	registration	it	Devi compilare tutti i campi richiesti
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	it	Hai richiesto di cambiare la tua password. Per cortesia clicca su link di seguito . Questo link avrà una durata di due ore . Dopo questo tempo dovrai rifare la procedura per richiedere il cambio password.
 you specified a value for %1 that is not a choice	registration	it	Hai specificato un valore per 1% ma non è una scelta valida
-your account is now active!	registration	it	Il tuo account ora è attivo !
+your account is now active!	registration	it	Il tuo account ora è attivo!
+your login is not available. time is expired	registration	it	Il login non è disponibile. Il tempo è scaduto.
 your password was changed.	registration	it	La tua password è stata cambiata
+your registration code is missing or incorrect.	registration	it	Il codice di registrazione è mancante o errato.
 zip code	registration	it	CAP
 zip/postal	registration	it	ZIP/Postale
