@@ -245,7 +245,7 @@ class registration_bo extends Api\Storage\Tracking
 
 			// Anon user has no rights to edit accounts - you can't do this
 			//$addressbook->merge(array($registration['contact_id'], $account_id));
-			$account = array_merge($address, $account);
+			$account = array_merge($address, array_filter($account));
 
 			$addressbook->save($account, true);
 
@@ -271,7 +271,7 @@ class registration_bo extends Api\Storage\Tracking
 		$registration['timestamp'] = time();
 		$registration['account_lid'] = null;
 		$registration['password'] = null;
-		$result = self::$so->save($registration);
+		//	$result = self::$so->save($registration);
 
 		// Run post confirmation code
 		if($registration['post_confirm_hook'])
