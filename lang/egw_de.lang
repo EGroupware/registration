@@ -3,7 +3,7 @@
 %s hours	registration	de	%s Stunden
 %s please calculate the result	registration	de	%s Bitte berechnen Sie das Ergebnis
 13: error occured	registration	de	13: Es ist ein Fehler aufgetreten
-<br>please contact the site administrator.	registration	de	<br> Bitte nehmen sie Kontakt mit dem Administrator auf.
+<br>please contact the site administrator.	registration	de	<br>Bitte nehmen sie Kontakt mit dem Administrator auf.
 [unknown first name]	registration	de	[Vornamen unbekannt]
 [unknown last name]	registration	de	[Nachnamen unbekannt]
 abuse reduction - please wait %1 seconds and try again.	registration	de	Missbrauchs Verdacht erkannt - Bitte warten Sie %1 Sekunden und versuchen Sie es dann nochmal.
@@ -80,7 +80,7 @@ missing registration	registration	de	Fehlende Registrierung
 mobile phone	registration	de	Mobiltelefon
 name sender to send notices from	admin	de	Name des Senders, um die Benachrichtigung zu senden
 not a user yet? register now	login	de	Noch kein Benutzer? Registrieren Sie sich jetzt
-on-line registration is not activated. please contact the site administrator for more information about registration.	registration	de	Die Online Registrierung ist nicht aktiviert. Bitte kontaktieren Sie den Administrator der Seite für weitere Informationen
+on-line registration is not activated. please contact the site administrator for more information about registration.	registration	de	Die Online-Registrierung ist nicht aktiviert. Bitte kontaktieren Sie den Administrator der Seite für weitere Informationen
 order	registration	de	Sortierung
 please contact the site administrator.	registration	de	Bitte kontaktieren Sie den Administrator.
 prefix	registration	de	Anrede
@@ -112,7 +112,7 @@ subject for confirmation email title: %1	registration	de	%1 Bestätigung per  E-
 terms of service	registration	de	Nutzungsbedingungen
 terms of service text	admin	de	Inhalt der Nutzungsbedingungen
 text	registration	de	Text
-the anonymous user has probably no add rights for this addressbook.	registration	de	Der anonyme Benutzer hat vermutlich keine Hinzufügen Rechte für dieses Adressbuch.
+the anonymous user has probably no add rights for this addressbook.	registration	de	Der anonyme Benutzer hat vermutlich keine Hinzufügen-Rechte für dieses Adressbuch.
 the anonymous user needs add rights for it!	registration	de	Der Anonymous Benutzer benötigt Hinzufügen Rechte dafür!
 the two passwords are not the same	registration	de	Die Passworte sind nicht gleich
 there was an error saving your data :-(	registration	de	Beim Speichern Ihrer Daten ist ein Fehler aufgetreten.

@@ -1,15 +1,15 @@
-address line 2	registration	tr	Adres 2. sat?r?
+address line 2	registration	tr	Adres satırı 2
 anonymous user	registration	tr	Anonim kullanıcı
-business phone	registration	tr	?? Telefon
+business phone	registration	tr	İş telefonu
 canceled	registration	tr	İptal Edildi
-city	registration	tr	?ehir
+city	registration	tr	Şehir
 department	registration	tr	Bölüm
 expires	registration	tr	Sona Eriyor
 fax	registration	tr	Fax
-home phone	registration	tr	Ev tel
-hours	registration	tr	saat
+home phone	registration	tr	Ev telefonu
+hours	registration	tr	Saat
 ip	registration	tr	IP
-mobile phone	registration	tr	Mobil Tel
+mobile phone	registration	tr	Mobil telefon
 order	registration	tr	Sıralama
 prefix	registration	tr	Önek
 re-enter password	registration	tr	Şifreyi yeniden giriniz
@@ -17,5 +17,5 @@ remove	registration	tr	Kaldır
 street	registration	tr	Cadde
 text	registration	tr	Metin
 the two passwords are not the same	registration	tr	İki şifre birbirinden farklı
-work phone	registration	tr	?? tel
+work phone	registration	tr	İş telefonu
 zip code	registration	tr	Posta Kodu
