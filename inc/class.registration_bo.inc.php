@@ -217,7 +217,7 @@ class registration_bo extends Api\Storage\Tracking
 
 		// Load address
 		$addressbook = new Api\Contacts();
-		$address = $addressbook->read($registration['contact_id']);
+		$address = $addressbook->read($registration['contact_id'], true);
 
 		// Load settings
 		if($registration['sitemgr_version'] && file_exist(EGW_SERVER_ROOT.'/sitemgr'))
@@ -241,7 +241,7 @@ class registration_bo extends Api\Storage\Tracking
 			$command->run();
 			// Read it back
 			$account_id = $GLOBALS['egw']->accounts->name2id($account['account_lid']);
-			$account = $addressbook->read("account:$account_id");
+			$account = $addressbook->read("account:$account_id", true);
 
 			// Anon user has no rights to edit accounts - you can't do this
 			//$addressbook->merge(array($registration['contact_id'], $account_id));
