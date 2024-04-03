@@ -202,7 +202,7 @@ class registration_ui
 						$content['account_lid'] = $content['email'] = $content['account_email'];
 						break;
 				}
-				// if user did NOT has to choose a primary group, use the once from config
+				// if user did NOT have to choose a primary group, use the once from config
 				if ($primary_groups <= 1 || empty($content['primary_group']))
 				{
 					$content['primary_group'] = $primary_groups[0];
@@ -254,7 +254,7 @@ class registration_ui
 				}
 			}
 		}
-		if($msg)
+		if(!empty($msg))
 		{
 			$data['message'] = $msg;
 		}
@@ -276,7 +276,7 @@ class registration_ui
 		if($account_ok)
 		{
 			$readonlys['__ALL__'] = true;
-			Api\Framework::message($msg ? $msg : 'Registration pending');
+			Api\Framework::message($msg ?? lang('Registration pending'));
 		}
 
 		Api\Translation::add_app('addressbook');
