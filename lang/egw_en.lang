@@ -36,6 +36,7 @@ city	registration	en	City
 confirm	registration	en	Confirm
 confirm registration	registration	en	Confirm registration
 confirmation email for %1 expires %2 link: %3	registration	en	This is a confirmation email for %1.  Please click the following link to complete the process.  %3  This link will expire %2.
+confirmation message sent	registration	en	Confirmation message sent
 confirmed addressbook.	registration	en	Confirmed address book
 contact fields to show	registration	en	Contact fields to show
 convert user login id to 7 bit string	admin	en	Convert user login ID to 7 bit string
@@ -96,11 +97,13 @@ registration	common	en	Registration
 registration complete	registration	en	Registration complete
 registration expires after	registration	en	Registration expires after
 registration fields	registration	en	Registration fields
+registration pending	registration	en	Registration pending
 registration settings	admin	en	Registration settings
 remove	registration	en	Remove
 repeat	registration	en	Repeat
 report all problems and abuse to	registration	en	Report all problems and abuse to
 required	registration	en	Required
+required fields *	registration	en	required fields *
 response	registration	en	Response
 select multiple to let the user choose	registration	en	Select multiple to let the user choose
 send email	admin	en	Send email

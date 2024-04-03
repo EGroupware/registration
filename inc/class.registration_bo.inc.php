@@ -186,8 +186,8 @@ class registration_bo extends Api\Storage\Tracking
 		{
 			$link = Api\Framework::getUrl(Api\Html::link($arguments['link'],  array('confirm' => $reg_info['register_code'])));
 		}
-		$subject = $arguments['subject'] ? $arguments['subject'] : lang('subject for confirmation email title: %1', $arguments['title']);
-		$message = $arguments['message'] ? $arguments['message'] : lang('confirmation email for %1 expires %2 link: %3', $arguments['title'], $time, $link);
+		$subject = $arguments['subject'] ?: lang('subject for confirmation email title: %1', $arguments['title']);
+		$message = $arguments['message'] ?: lang('confirmation email for %1 expires %2 link: %3', $arguments['title'], $time, $link);
 
 		if($config['tos_text']) $message .= "\n" . $config['tos_text'];
 		if($config['support_email']) $message .= "\n" . $config['support_email'];
@@ -201,7 +201,7 @@ class registration_bo extends Api\Storage\Tracking
 		$mail->setBody($message);
 		$mail->send();
 
-		return "Confirmation message sent";
+		return lang("Confirmation message sent");
 	}
 
 	/**
@@ -245,7 +245,15 @@ class registration_bo extends Api\Storage\Tracking
 
 			// Anon user has no rights to edit accounts - you can't do this
 			//$addressbook->merge(array($registration['contact_id'], $account_id));
-			$account = array_merge($address, array_filter($account));
+			$account = array_merge($address, array_filter($account, static function($value, $name)
+			{
+				// never overwrite these
+				if (in_array($name, ['id', 'owner', 'private', 'account_id']))
+				{
+					return true;
+				}
+				return !empty($value);
+			}, ARRAY_FILTER_USE_BOTH));
 
 			$addressbook->save($account, true);
 
@@ -255,7 +263,6 @@ class registration_bo extends Api\Storage\Tracking
 
 			// Link to the new contact
 			Link::link('registration', $registration['reg_id'], 'addressbook', $account['id']);
-
 		}
 		elseif ($config['confirmed_addressbook'])
 		{
@@ -288,10 +295,12 @@ class registration_bo extends Api\Storage\Tracking
 	/**
 	 * Check to see if registration info satisfies account requirements
 	 *
-	 * @param registration array
-	 * @param account optional array of info populated from $registration to be passed to user command
+	 * @param array $registration
+	 * @param account $account optional array of info populated from $registration to be passed to user command
+	 * @return bool
+	 * @throws on error
 	 */
-	public static function check_account($registration, &$account = array())
+	public static function check_account(array $registration, &$account = array())
 	{
 		$config = Api\Config::read('registration');
 		$account = array(
@@ -313,8 +322,7 @@ class registration_bo extends Api\Storage\Tracking
 		// Just check for validity, don't actually run
 		// Schedule in the future to get the checks, then delete it.
 		$command = new admin_cmd_edit_user(false, $account, $registration['password']);
-		$command->run(time() + 10000, true, false);
-		$command->delete();
+		$command->run(null, true, false, true);
 		return true;
 	}
 

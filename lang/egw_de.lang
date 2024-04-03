@@ -36,6 +36,7 @@ city	registration	de	Stadt
 confirm	registration	de	Bestätigen
 confirm registration	registration	de	Registrierung bestätigen
 confirmation email for %1 expires %2 link: %3	registration	de	Dies ist die Bestätigungsmail für %1. Bitte klicken Sie auf den folgenden Link, um die Registrierung abzuschließen. %3 Dieser Link läuft ab %2.
+confirmation message sent	registration	de	Bestätigungsmail gesendet
 confirmed addressbook.	registration	de	Adressbuch Eintrag bestätigt
 contact fields to show	registration	de	Kontaktfelder die angezeigt werden sollen
 convert user login id to 7 bit string	admin	de	Konvertiere Benutzer Login ID zu einem 7 Bit String
@@ -96,11 +97,13 @@ registration	common	de	Registrierung
 registration complete	registration	de	Abschluss der Registrierung
 registration expires after	registration	de	Registrierter Zugang läuft ab nach
 registration fields	registration	de	Felder der Registrierung
+registration pending	registration	de	Bestätigung der Registrierung ausstehend
 registration settings	admin	de	Registrierungseinstellungen
 remove	registration	de	Löschen
 repeat	registration	de	Wiederholen
 report all problems and abuse to	registration	de	Bitte melden Sie alle Probleme und Missbräuche an
 required	registration	de	Benötigt
+required fields *	registration	de	Benötigte Felder *
 response	registration	de	Antwort
 select multiple to let the user choose	registration	de	Mehrere auswählen, damit Benutzer wählen kann
 send email	admin	de	E-Mail senden
