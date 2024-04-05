@@ -28,6 +28,7 @@ anonymous password	admin	en	Anonymous password
 anonymous user	registration	en	Anonymous user
 anonymous user needs access to registration application	registration	en	Anonymous user needs access to registration application
 ask user	registration	en	Ask user
+body of confirmation mail	registration	en	Body of confirmation mail
 business phone	registration	en	Business phone
 canceled	registration	en	Canceled
 change password for user	registration	en	Change password for user
@@ -112,6 +113,7 @@ sorry, we are having a problem activating your account. note that links sent by 
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	en	Sorry, we are having a problem retrieving the information needed for changing your password. Note that links sent by email are only valid during two hours. If you think this delay was expired, just retry. Otherwise, please contact the site administrator.
 street	registration	en	Street
 subject for confirmation email title: %1	registration	en	%1 confirmation email
+subject of confirmation mail	registration	en	Subject of confirmation mail
 terms of service	registration	en	Terms of service
 terms of service text	admin	en	Terms of service text
 text	registration	en	Text

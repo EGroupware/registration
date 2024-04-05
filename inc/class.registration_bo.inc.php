@@ -186,15 +186,15 @@ class registration_bo extends Api\Storage\Tracking
 		{
 			$link = Api\Framework::getUrl(Api\Html::link($arguments['link'],  array('confirm' => $reg_info['register_code'])));
 		}
-		$subject = $arguments['subject'] ?: lang('subject for confirmation email title: %1', $arguments['title']);
-		$message = $arguments['message'] ?: lang('confirmation email for %1 expires %2 link: %3', $arguments['title'], $time, $link);
+		$subject = $arguments['subject'] ?? null ?: lang($config['mail_subject'] ?? 'subject for confirmation email title: %1', $arguments['title']);
+		$message = $arguments['message'] ?? null ?: lang($config['mail_body'] ?? 'confirmation email for %1 expires %2 link: %3', $arguments['title'], $time, $link);
 
 		if($config['tos_text']) $message .= "\n" . $config['tos_text'];
 		if($config['support_email']) $message .= "\n" . $config['support_email'];
 
 		$mail = new Api\Mailer(self::$mail_account);
-		$mail->From = $config['mail_nobody'] ? $config['mail_nobody'] : 'noreply@'.$GLOBALS['egw_info']['server']['mail_suffix'];
-		$mail->FromName = $config['name_nobody'] ? $config['name_nobody'] : 'eGroupWare '.lang('registration');
+		$mail->From = $config['mail_nobody'] ?? 'noreply@'.$GLOBALS['egw_info']['server']['mail_suffix'];
+		$mail->FromName = $config['name_nobody'] ?? 'eGroupWare '.lang('registration');
 		$mail->AddAddress($reg_info['email'], $reg_info['n_fileas']);
 		if($config['support_email']) $mail->AddReplyTo($config['support_email']);
 		$mail->addHeader('Subject', trim($subject));
