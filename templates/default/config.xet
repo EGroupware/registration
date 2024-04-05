@@ -2,10 +2,10 @@
 <!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2.0//EN" "https://www.egroupware.org/etemplate2.0.dtd">
 <overlay>
 	<template id="registration.config" template="" lang="" group="0" version="1.9.001">
-		<grid>
+		<grid width="100%">
 			<columns>
 				<column width="300px"/>
-				<column width="400px"/>
+				<column/>
 			</columns>
 			<rows>
 				<row disabled="!@message">
@@ -24,8 +24,8 @@
 					<et2-password  id="anonymous_pass" required="1"></et2-password>
 				</row>
 				<row>
-					<et2-description  value="Registered accounts expire"></et2-description>
-					<et2-select-number  label="%s days" id="accounts_expire" min="1" max="30" emptyLabel="Never"></et2-select-number>
+					<et2-description  value="Registered accounts expire" label="%s days" ></et2-description>
+					<et2-number id="accounts_expire" min="1" max="30" placeholder="Never"></et2-number>
 				</row>
 				<row>
 					<et2-description  value="What to use as username"></et2-description>
@@ -60,6 +60,16 @@
 				<row>
 					<et2-description  value="Email address to display for support"></et2-description>
 					<et2-url-email  id="support_email"></et2-url-email>
+				</row>
+				<row>
+					<et2-description  value="Subject of confirmation mail"></et2-description>
+					<et2-textbox id="mail_subject" placeholder="subject for confirmation email title: %1"></et2-textbox>
+				</row>
+				<row>
+					<et2-description  value="Body of confirmation mail" span="all"></et2-description>
+				</row>
+				<row>
+					<et2-textarea id="mail_body" placeholder="confirmation email for %1 expires %2 link: %3" rows="5" span="all"></et2-textarea>
 				</row>
 				<row>
 					<et2-description  value="Terms of Service text"></et2-description>
@@ -106,6 +116,7 @@
 				<row>
 					<et2-hbox  span="all">
 						<et2-button  label="Save" id="save"></et2-button>
+						<et2-button  label="Apply" id="apply"></et2-button>
 						<et2-button  label="Cancel" id="cancel"></et2-button>
 					</et2-hbox>
 				</row>

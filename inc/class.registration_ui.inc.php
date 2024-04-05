@@ -501,18 +501,14 @@ class registration_ui
 	 */
 	function config($content = array())
 	{
-		if(!$GLOBALS['egw_info']['user']['apps']['admin'])
+		if(empty($GLOBALS['egw_info']['user']['apps']['admin']))
 		{
 			Egw::redirect_link('/index.php');
 		}
-		if($content['cancel'])
-		{
-			Egw::redirect_link('/admin/index.php');
-		}
 
-		if($content['save'])
+		if(($save=!empty($content['save'])) || !empty($content['apply']))
 		{
-			unset($content['save']);
+			unset($content['save'], $content['apply']);
 
 			// Update async job to run as this user
 			$async = new Api\Asyncservice();
@@ -537,8 +533,13 @@ class registration_ui
 			}
 		}
 
-		$data = Api\Config::read('registration');
+		if ($save || !empty($content['cancel']))
+		{
+			Api\Framework::redirect_link('/admin/index.php?ajax=true', '', 'admin');
+		}
 
+		$data = Api\Config::read('registration');
+		if(!empty($data['accounts_expire']) && $data['accounts_expire'] < 0) $data['accounts_expire'] = null;
 
 		// Code uses username, widget wants ID
 		$data['anonymous_user'] = $GLOBALS['egw']->accounts->name2id($data['anonymous_user']);
@@ -549,7 +550,7 @@ class registration_ui
 			$data['message'] = lang('Anonymous user needs access to registration application');
 		}
 
-		if(!$data['name_nobody']) $data['name_nobody'] = 'eGroupWare '.lang('registration');
+		if(!$data['name_nobody']) $data['name_nobody'] = 'EGroupware '.lang('registration');
 		if(!$data['mail_nobody']) $data['mail_nobody'] = 'noreply@'.$GLOBALS['egw_info']['server']['mail_suffix'];
 
 		// Check for a mail account

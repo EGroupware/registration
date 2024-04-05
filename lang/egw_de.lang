@@ -28,6 +28,7 @@ anonymous password	admin	de	Passwort anonymer Benutzer
 anonymous user	registration	de	Anonymer Benutzer
 anonymous user needs access to registration application	registration	de	Der Anonymer Benutzer benötigt die Berechtigung auf die Anwendung Registrierung
 ask user	registration	de	Benutzer fragen
+body of confirmation mail	registration	de	Nachricht der Bestätigungsmail
 business phone	registration	de	Tel. geschäftl.
 canceled	registration	de	Abgesagt
 change password for user	registration	de	Password für Benutzer ändern
@@ -35,7 +36,7 @@ choose your organization	registration	de	Wählen Sie Ihre Organisation
 city	registration	de	Stadt
 confirm	registration	de	Bestätigen
 confirm registration	registration	de	Registrierung bestätigen
-confirmation email for %1 expires %2 link: %3	registration	de	Dies ist die Bestätigungsmail für %1. Bitte klicken Sie auf den folgenden Link, um die Registrierung abzuschließen. %3 Dieser Link läuft ab %2.
+confirmation email for %1 expires %2 link: %3	registration	de	Dies ist die Bestätigungsmail für %1.\n\nBitte klicken Sie auf den folgenden Link, um die Registrierung abzuschließen:\n%3\nDieser Link läuft ab %2.
 confirmation message sent	registration	de	Bestätigungsmail gesendet
 confirmed addressbook.	registration	de	Adressbuch Eintrag bestätigt
 contact fields to show	registration	de	Kontaktfelder die angezeigt werden sollen
@@ -112,6 +113,7 @@ sorry, we are having a problem activating your account. note that links sent by 
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	de	Entschuldigung, aber wir haben eine Problem Ihre Informationen zu bekommen, die nötig sind, um Ihr Passwort zu ändern. Bitte beachten Sie das der Link den Sie via E-Mail erhalten haben nur 2 Stunden gültig ist. Wenn Sie denken, das Die Zeit abgelaufen ist, versuchen Sie es erneut. Andernfalls benachrichtigen Sie den Administrator.
 street	registration	de	Straße
 subject for confirmation email title: %1	registration	de	%1 Bestätigung per  E-Mail
+subject of confirmation mail	registration	de	Betreff der Bestätigungsmail
 terms of service	registration	de	Nutzungsbedingungen
 terms of service text	admin	de	Inhalt der Nutzungsbedingungen
 text	registration	de	Text
