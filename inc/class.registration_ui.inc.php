@@ -280,7 +280,7 @@ class registration_ui
 			'/login.php?domain=' . $GLOBALS['egw_info']['user']['domain'] . '&cd=' .
 			$msg ?? lang('Registration pending')
 			);
-			setcookie('last_loginid', $registration['account_lid']);
+			Api\Session::egw_setcookie('last_loginid', $registration['account_lid'], time() + 1209600); /* For 2 weeks */
 			Api\Framework::redirect($GLOBALS['egw_info']['server']['webserver_url'] . "/logout.php");
 		}
 
