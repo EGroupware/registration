@@ -276,7 +276,12 @@ class registration_ui
 		if($account_ok)
 		{
 			$readonlys['__ALL__'] = true;
-			Api\Framework::message($msg ?? lang('Registration pending'));
+			Api\Cache::setSession('login', 'referer', $GLOBALS['egw_info']['server']['webserver_url'] .
+			'/login.php?domain=' . $GLOBALS['egw_info']['user']['domain'] . '&cd=' .
+			$msg ?? lang('Registration pending')
+			);
+			setcookie('last_loginid', $registration['account_lid']);
+			Api\Framework::redirect($GLOBALS['egw_info']['server']['webserver_url'] . "/logout.php");
 		}
 
 		Api\Translation::add_app('addressbook');
