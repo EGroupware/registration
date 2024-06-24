@@ -11,11 +11,13 @@ after you enter your username, instructions to change your password will be sent
 an error occured. please contact our technical support and let them know.	registration	pt	Ocorreu um erro. Por favor, contacte o nosso suporte técnico.
 anonymous password	admin	pt	Senha anónima
 anonymous user	registration	pt	Utilizador anónimo
+body of confirmation mail	registration	pt	Corpo do correio de confirmação
 business phone	registration	pt	Telefone
 canceled	registration	pt	Cancelado
 change password for user	registration	pt	Alterar a senha do utilizador
 city	registration	pt	Cidade
 confirm	registration	pt	Confirmar
+confirmation message sent	registration	pt	Mensagem de confirmação enviada
 days until trial accounts expire	admin	pt	Dias até expirar contas de teste
 department	registration	pt	Departamento
 display terms of service?	admin	pt	Apresentar os Termos de Serviço?
@@ -54,16 +56,19 @@ register	common	pt	Registar
 register link at login screen?	admin	pt	Registar ligação no ecrã de acesso?
 registered	registration	pt	registado
 registration	common	pt	Registo
+registration fields	registration	pt	Campos de registo
+registration pending	registration	pt	Registo pendente
 registration settings	admin	pt	Configurações do registo
 remove	registration	pt	Remover
 report all problems and abuse to	registration	pt	Reportar todos os problemas e abusos a
 required	registration	pt	Necessário
+required fields *	registration	pt	campos obrigatórios *
 response	registration	pt	Resposta
 send email	admin	pt	Enviar mensagem
-sorry, that username does not exist.	registration	pt	Lamentamos, mas esse nome de utilizador não existe.
 sorry, that username is already taken.	registration	pt	Lamentamos, mas esse nome de utilizador já existe.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	pt	Lamentamos, mas ocorreu um problema ao activar a sua conta. Tenha em atenção que as ligações, enviadas por correio electrónico, são válidas apenas por duas horas. Se pensa que esse tempo expirou, tente novamente. Caso contrário, contacte o administrador do sítio.
 street	registration	pt	Rua
+subject of confirmation mail	registration	pt	Assunto da mensagem de confirmação
 terms of service	registration	pt	Termos de Serviço
 terms of service text	admin	pt	Texto dos Termos de Serviço
 text	registration	pt	Texto
@@ -77,7 +82,6 @@ use html	admin	pt	utilizar HTML
 use trial accounts?	admin	pt	Utilizar contas de teste?
 username is	admin	pt	O nome de utilizador é
 values (for dropdown only; comma separated)	registration	pt	Valores (Para Listas apenas; separados por vírgulas)
-we have sent a mail to your email account: %s with your lost user ids.	registration	pt	Enviámos-lhe uma mensagem para a sua conta de correio electrónico: %s com as suas IDs de utilizador perdidas
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	pt	Enviámos-lhe uma mensagem com instruções para alterar a sua senha. Deve clicar na ligação apresentada até duas horas depois. Se não o fizer, terá de passar pelo ecrã de senha perdida novamente.
 work phone	registration	pt	Telefone de trabalho
 wrong session	registration	pt	Sessão errada

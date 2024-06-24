@@ -12,11 +12,13 @@ after you enter your username, instructions to change your password will be sent
 an error occured. please contact our technical support and let them know.	registration	sv	Ett fel uppstod. Var god och meddela support.
 anonymous password	admin	sv	Anonyma sessioners lösenord
 anonymous user	registration	sv	Anonym användare
+body of confirmation mail	registration	sv	Innehållet i bekräftelsemailet
 business phone	registration	sv	Företag: Telefon
 canceled	registration	sv	Avbruten
 change password for user	registration	sv	Ändra lösenord
 city	registration	sv	Stad
 confirm	registration	sv	bekräfta
+confirmation message sent	registration	sv	Bekräftelsemeddelande skickat
 days until trial accounts expire	admin	sv	Dagar tills provkonto förfaller
 department	registration	sv	Avdelning
 display terms of service?	admin	sv	Visa avtalet
@@ -54,16 +56,19 @@ register	common	sv	Registrera
 register link at login screen?	admin	sv	Länk till registreringen på Startsidan?
 registered	registration	sv	registrerad
 registration	common	sv	Registrering
+registration fields	registration	sv	Registreringsfält
+registration pending	registration	sv	Registrering i väntan på
 registration settings	admin	sv	Registrering alternativ
 remove	registration	sv	Radera
 report all problems and abuse to	registration	sv	Rapportera problem och missbruk till
 required	registration	sv	Krävs
+required fields *	registration	sv	obligatoriska fält *
 response	registration	sv	Svar
 send email	admin	sv	Skicka e-post
-sorry, that username does not exist.	registration	sv	Användarnamnet finns inte
 sorry, that username is already taken.	registration	sv	Användarnamnet redan upptaget
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	sv	Det är tyvärr problem med att aktivera din registrering. Notera att länkar skickade med e-post bara är giltiga i 2 timmar, om du misstänkter att den har förfallit var god och kontakta support. I annat fall försök igen.
 street	registration	sv	Gata
+subject of confirmation mail	registration	sv	Ämne för bekräftelsemail
 terms of service	registration	sv	Avtal
 terms of service text	admin	sv	Avtalstext
 text	registration	sv	Text
@@ -77,7 +82,6 @@ use html	admin	sv	Använd HTML
 use trial accounts?	admin	sv	Använd provkonton?
 username is	admin	sv	Användarnamnet är
 values (for dropdown only; comma separated)	registration	sv	Värden (endast komma separerad för rullgardin)
-we have sent a mail to your email account: %s with your lost user ids.	registration	sv	Ett e-post har skickats till din e-post adress: %s , med ditt saknade användar ID.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	sv	En bekräftelse på ditt nya konto har skickats. Klicka på länken för att aktivera det innom 2 timmar. Om du inte hinner måste du gå tillbaks till sidan för förlorade lösenord igen.
 work phone	registration	sv	Arbetstelefon
 wrong session	registration	sv	Fel session

@@ -3,10 +3,12 @@
 address line 2	registration	lv	Adreses 2. rindiņa
 anonymous password	admin	lv	Anonīmā parole
 anonymous user	registration	lv	Nezināmais lietotājs
+body of confirmation mail	registration	lv	Apstiprinājuma vēstules teksts
 business phone	registration	lv	Telefons
 canceled	registration	lv	Atcelts
 city	registration	lv	Pilsēta
 confirm	registration	lv	Apstiprināt
+confirmation message sent	registration	lv	Nosūtītā apstiprinājuma ziņa
 department	registration	lv	Nodaļa
 email address	registration	lv	e-pasta adrese
 email address to display for support	admin	lv	E-pasta adrese atbalstam
@@ -39,15 +41,18 @@ re-enter your password	registration	lv	Vēlreiz ievadi savu paroli
 register link at login screen?	admin	lv	Reģistrēt saiti pieteikšanās logā?
 registered	registration	lv	reģistrēts
 registration	common	lv	Reģistrācija
+registration fields	registration	lv	Reģistrācijas lauki
+registration pending	registration	lv	Reģistrācija gaida reģistrāciju
 registration settings	admin	lv	Reģistrācijas uzstādījumi
 remove	registration	lv	Pārvietot
 report all problems and abuse to	registration	lv	Par visām problēmām un nelegālām izmantošanām ziņot uz
 required	registration	lv	Pieprasīts
+required fields *	registration	lv	Obligātie lauki *
 send email	admin	lv	Sūtīt e-pastu
-sorry, that username does not exist.	registration	lv	Atvaino, šāds lietotājvārds neeksistē
 sorry, that username is already taken.	registration	lv	Atvaino, šis lietotājvārds jau ir aizņēmts
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	lv	Atvaino, mums ir problēmas aktivizējot tavu kontu. Atceries, ka saites, kuras nosūtītas pa e-pastu ir derīgas tikai divas stundas. Ja tu domā, ka laiks ir beidzies, pamēģini vēlreiz.Ja nesanāk, sazinies ar administratoru.
 street	registration	lv	Iela
+subject of confirmation mail	registration	lv	Apstiprinājuma vēstules temats
 terms of service	registration	lv	Apkalpošanas nosacījumi
 terms of service text	admin	lv	Apkalpošanas nosacījumu teksts
 text	registration	lv	Teksts

@@ -28,6 +28,7 @@ anonymous password	admin	cs	Anonymní heslo
 anonymous user	registration	cs	Anonymní uživatel
 anonymous user needs access to registration application	registration	cs	Anonymní uživatel potřebuje přístup k registrační aplikaci
 ask user	registration	cs	Zeptejte se uživatele
+body of confirmation mail	registration	cs	Tělo potvrzovacího e-mailu
 business phone	registration	cs	Firma - telefon
 canceled	registration	cs	Stornováno
 change password for user	registration	cs	Změnit heslo uživatele
@@ -36,6 +37,7 @@ city	registration	cs	Město
 confirm	registration	cs	Potvrdit
 confirm registration	registration	cs	Potvrzení registrace
 confirmation email for %1 expires %2 link: %3	registration	cs	Toto je potvrzovací e-mail pro %1. Pro dokončení procesu klikněte na následující odkaz. %3 Platnost tohoto odkazu vyprší %2.
+confirmation message sent	registration	cs	Odeslaná potvrzovací zpráva
 confirmed addressbook.	registration	cs	Potvrzený adresář
 contact fields to show	registration	cs	Zobrazovat položky kontaktu
 convert user login id to 7 bit string	admin	cs	Konvertovat přihlašovací ID uživatele na 7 bitový řetězec (ASCII)
@@ -96,19 +98,22 @@ registration	common	cs	Registrace
 registration complete	registration	cs	Dokončení registrace
 registration expires after	registration	cs	Registrace vyprší po
 registration fields	registration	cs	Registrační pole
+registration pending	registration	cs	Nevyřízená registrace
 registration settings	admin	cs	Nastavení registrace
 remove	registration	cs	Odstranit
 repeat	registration	cs	Opakování
 report all problems and abuse to	registration	cs	Hlásit všechny problémy a zneužívání (komu)
 required	registration	cs	Vyžadováno
+required fields *	registration	cs	povinná pole *
 response	registration	cs	Odpověď
 select multiple to let the user choose	registration	cs	Vyberte více, aby si uživatel mohl vybrat
 send email	admin	cs	Odeslat e-mail
-sorry, that username is already taken.	registration	cs	Lituji, takové uživatelské jméno se již používá
+sorry, that username is already taken.	registration	cs	Lituji, takové uživatelské jméno se již používá.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	cs	Lituji, ale máme problémy s aktivací Vašeho účtu. Pamatujte, že odkazy zasílané e-mailem jsou platné jen dvě hodiny. Pokud se domníváte, že jen vypršela stanovená lhůta, zkuste se zaregistrovat znovu. V opačném případě kontaktujte prosím administrátora.
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	cs	Lituji, ale máme problémy se získáním informací potřebných pro změnu Vašeho hesla. Pamatujte prosím, že odkazy zaslané e-mailem jsou platné jen 2 hodiny. Pokud se domníváte, že byla tato lhůta překročena, zkuste celý postup znovu. V opačném případě prosím zkontaktujte administrátora.
 street	registration	cs	Ulice
 subject for confirmation email title: %1	registration	cs	%1 potvrzovací e-mail
+subject of confirmation mail	registration	cs	Předmět potvrzovací zprávy
 terms of service	registration	cs	Podmínky používání služby
 terms of service text	admin	cs	Text Podmínek používání služby
 text	registration	cs	Text

@@ -28,6 +28,7 @@ anonymous password	admin	es-es	Contraseña anónima
 anonymous user	registration	es-es	Usuario anónimo
 anonymous user needs access to registration application	registration	es-es	Usuario anónimo necesita acceso a la aplicación de registro
 ask user	registration	es-es	Preguntar al usuario
+body of confirmation mail	registration	es-es	Cuerpo del correo de confirmación
 business phone	registration	es-es	Teléfono del trabajo
 canceled	registration	es-es	Cancelado
 change password for user	registration	es-es	Cambiar contraseña para el usuario
@@ -36,6 +37,7 @@ city	registration	es-es	Ciudad
 confirm	registration	es-es	Confirmar
 confirm registration	registration	es-es	Confirmar inscripción
 confirmation email for %1 expires %2 link: %3	registration	es-es	Este es un correo electrónico de confirmación para %1. Por favor, haga clic en el siguiente enlace para completar el proceso. %3 Este enlace caducará %2.
+confirmation message sent	registration	es-es	Mensaje de confirmación enviado
 confirmed addressbook.	registration	es-es	Libreta de direcciones confirmada
 contact fields to show	registration	es-es	Campos del contacto a mostrar
 convert user login id to 7 bit string	admin	es-es	Convertir el ID de inicio de sesión del usuario en una cadena de 7 bits
@@ -96,11 +98,13 @@ registration	common	es-es	Autorregistro
 registration complete	registration	es-es	Registro completo
 registration expires after	registration	es-es	El registro caduca después de
 registration fields	registration	es-es	Campos de registro
+registration pending	registration	es-es	Inscripción pendiente
 registration settings	admin	es-es	Configuración del autorregistro
 remove	registration	es-es	Borrar
 repeat	registration	es-es	Repetir
 report all problems and abuse to	registration	es-es	Informar de todos los problemas y abusos a
 required	registration	es-es	Requerido
+required fields *	registration	es-es	campos obligatorios *
 response	registration	es-es	Respuesta
 select multiple to let the user choose	registration	es-es	Seleccione múltiple para que el usuario elija
 send email	admin	es-es	Enviar correo
@@ -109,6 +113,7 @@ sorry, we are having a problem activating your account. note that links sent by 
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	es-es	Lo sentimos. En este instante tenemos un problema al recuperar la información necesaria para cambiar la contraseña. Tenga en cuenta que los enlaces enviados por correo electrónico tienen una validez de sólo dos horas. Si piensa que este retardo ha expirado, simplemente reintentelo. Si no, por favor, póngase en contacto con el administrador del sitio.
 street	registration	es-es	Calle
 subject for confirmation email title: %1	registration	es-es	%1 email de confirmación
+subject of confirmation mail	registration	es-es	Asunto del correo de confirmación
 terms of service	registration	es-es	Términos del servicio
 terms of service text	admin	es-es	Texto de términos del servicio
 text	registration	es-es	Texto

@@ -28,6 +28,7 @@ anonymous password	admin	it	Password anonimo
 anonymous user	registration	it	Utente anonimo
 anonymous user needs access to registration application	registration	it	L'utente anonimo deve accedere all'applicazione di registrazione
 ask user	registration	it	Chiedere all'utente
+body of confirmation mail	registration	it	Corpo della mail di conferma
 business phone	registration	it	Telefono ufficio
 canceled	registration	it	Cancellato
 change password for user	registration	it	Cambia password per utente
@@ -36,6 +37,7 @@ city	registration	it	Città
 confirm	registration	it	Conferma
 confirm registration	registration	it	Potvrzení registrace
 confirmation email for %1 expires %2 link: %3	registration	it	Toto je potvrzovací e-mail pro %1. Pro dokončení procesu klikněte na následující odkaz. %3 Platnost tohoto odkazu vyprší %2.
+confirmation message sent	registration	it	Messaggio di conferma inviato
 confirmed addressbook.	registration	it	Rubrica confermata
 contact fields to show	registration	it	Campi di contatto da mostrare
 convert user login id to 7 bit string	admin	it	Převést přihlašovací ID uživatele na 7bitový řetězec
@@ -96,11 +98,13 @@ registration	common	it	Registrazione
 registration complete	registration	it	Registrazione completata
 registration expires after	registration	it	La registrazione scade dopo
 registration fields	registration	it	Campi di registrazione
+registration pending	registration	it	Registrazione in corso
 registration settings	admin	it	Impostazioni Registrazione
 remove	registration	it	RImuovi
 repeat	registration	it	Ripetere
 report all problems and abuse to	registration	it	Comunica tutti i problemi e gli abusi a
 required	registration	it	Richiesto
+required fields *	registration	it	campi obbligatori *
 response	registration	it	Responso
 select multiple to let the user choose	registration	it	Selezionare più volte per permettere all'utente di scegliere
 send email	admin	it	Invia email
@@ -109,6 +113,7 @@ sorry, we are having a problem activating your account. note that links sent by 
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	it	Siamo spiacenti, abbiamo un problema nel recuperare le informazioni necessarie per la modifica della password. Si noti che i link inviati via e-mail sono validi solo per due ore. Se si ritiene che questo termine sia scaduto, è sufficiente riprovare. In caso contrario, contattare l'amministratore del sito.
 street	registration	it	Via
 subject for confirmation email title: %1	registration	it	E-mail di conferma %1
+subject of confirmation mail	registration	it	Oggetto della mail di conferma
 terms of service	registration	it	Termini di Servizio
 terms of service text	admin	it	Testo Termini di Servizio
 text	registration	it	Testo

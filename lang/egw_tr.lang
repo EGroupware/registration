@@ -1,8 +1,10 @@
 address line 2	registration	tr	Adres satırı 2
 anonymous user	registration	tr	Anonim kullanıcı
+body of confirmation mail	registration	tr	Onay postasının gövdesi
 business phone	registration	tr	İş telefonu
 canceled	registration	tr	İptal Edildi
 city	registration	tr	Şehir
+confirmation message sent	registration	tr	Onay mesajı gönderildi
 department	registration	tr	Bölüm
 expires	registration	tr	Sona Eriyor
 fax	registration	tr	Fax
@@ -13,8 +15,13 @@ mobile phone	registration	tr	Mobil telefon
 order	registration	tr	Sıralama
 prefix	registration	tr	Önek
 re-enter password	registration	tr	Şifreyi yeniden giriniz
+registration fields	registration	tr	Kayıt alanları
+registration pending	registration	tr	Kayıt bekleniyor
+registration settings	admin	tr	Kayıt ayarları
 remove	registration	tr	Kaldır
+required fields *	registration	tr	gerekli alanlar *
 street	registration	tr	Cadde
+subject of confirmation mail	registration	tr	Onay postasının konusu
 text	registration	tr	Metin
 the two passwords are not the same	registration	tr	İki şifre birbirinden farklı
 work phone	registration	tr	İş telefonu

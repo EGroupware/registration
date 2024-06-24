@@ -7,11 +7,13 @@ after you enter your username, instructions to change your password will be sent
 an error occured. please contact our technical support and let them know.	registration	da	Der skete en fejl. Underret venligst vores tekniske support.
 anonymous password	admin	da	Anonym adgangskode
 anonymous user	registration	da	Anonym bruger
+body of confirmation mail	registration	da	Brødtekst i bekræftelsesmail
 business phone	registration	da	Firma Telefonnummer
 canceled	registration	da	Annulleret
 change password for user	registration	da	Ændre adgangskode for bruger
 city	registration	da	By
 confirm	registration	da	Bekræft
+confirmation message sent	registration	da	Bekræftelsesmeddelelse sendt
 days until trial accounts expire	admin	da	Dage før prøvekonto udløber
 department	registration	da	Afdeling
 display terms of service?	admin	da	Vis betingelser?
@@ -40,15 +42,18 @@ re-enter password	registration	da	Genindtast adgangskode
 re-enter your password	registration	da	Genindtast din adgangskode
 register link at login screen?	admin	da	Link til registrering på login siden?
 registration	common	da	Registrering
+registration fields	registration	da	Registreringsfelter
+registration pending	registration	da	Afventende registrering
 registration settings	admin	da	Registrerings indstillinger
 remove	registration	da	Fjern
 report all problems and abuse to	registration	da	Reportere alle problemer og misbrug til
 required	registration	da	Krævet
+required fields *	registration	da	Påkrævede felter *.
 send email	admin	da	Send e-mail
-sorry, that username does not exist.	registration	da	Beklager, det brugernavn findes ikke.
 sorry, that username is already taken.	registration	da	Beklager, det brugernavn er allerede brugt.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	da	Beklager, vi har problemer med at aktivere din konto. Vær opmærksom på at linkene sendt via e-mails kun er gyldige i 2 timer. Hvis du tror tiden er udløbet, så prøv igen. Eller, kontakt venligst systemadministratoren.
 street	registration	da	Vej navn
+subject of confirmation mail	registration	da	Emne for bekræftelsesmail
 terms of service	registration	da	Betingelser
 terms of service text	admin	da	Betingelses tekst
 text	registration	da	Tekst

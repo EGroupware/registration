@@ -2,10 +2,12 @@
 address line 2	registration	el	Γραμμή Διευθύνσεων 2
 anonymous password	admin	el	Κωδικός ανωνύμου
 anonymous user	registration	el	Ανώνυμος χρήστης
+body of confirmation mail	registration	el	Σώμα του μηνύματος επιβεβαίωσης
 business phone	registration	el	Τηλέφωνο εργασίας
 canceled	registration	el	Ακυρώθηκε
 city	registration	el	Πόλη
 confirm	registration	el	Επιβεβαίωση
+confirmation message sent	registration	el	Αποστολή μηνύματος επιβεβαίωσης
 contact fields to show	registration	el	Πεδία επαφών προς προβολή
 custom etemplate for the contactform	registration	el	Προσαρμογή eΤαμπλέτας για τη φόρμα επαφών
 department	registration	el	Τμήμα
@@ -19,8 +21,13 @@ mobile phone	registration	el	Κινητό τηλέφωνο
 order	registration	el	Ταξινόμηση
 prefix	registration	el	Πρόθεμα
 re-enter password	registration	el	Ξανα-εισάγετε το συνθηματικό
+registration fields	registration	el	Πεδία εγγραφής
+registration pending	registration	el	Εκκρεμής εγγραφή
+registration settings	admin	el	Ρυθμίσεις εγγραφής
 remove	registration	el	αφαίρεση
+required fields *	registration	el	υποχρεωτικά πεδία *
 street	registration	el	Οδός
+subject of confirmation mail	registration	el	Θέμα του μηνύματος επιβεβαίωσης
 the anonymous user has probably no add rights for this addressbook.	registration	el	Ο ανώνυμος χρήστης δεν έχει πιθανότατα δικαίωμα προσθήκης σε αυτό το βιβλίο διευθύνσεων
 the anonymous user needs add rights for it!	registration	el	Ο ανώνυμος χρήστης χρειάζεται δικαιώματα για να προσθέσει σε αυτό!
 the two passwords are not the same	registration	el	Τα δυο συνθηματικά δέν είναι ίδια

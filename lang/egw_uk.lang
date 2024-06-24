@@ -1,9 +1,11 @@
 address line 2	registration	uk	Рядок 2
 anonymous user	registration	uk	Анонімний користувач
+body of confirmation mail	registration	uk	Текст листа з підтвердженням
 business phone	registration	uk	Телефон
 canceled	registration	uk	Відмінено
 city	registration	uk	Місто
 confirm	registration	uk	Підтвердити
+confirmation message sent	registration	uk	Підтвердження надіслано
 department	registration	uk	Департамент
 enter your new password	registration	uk	Введіть новий пароль
 expires	registration	uk	Обмежено
@@ -16,8 +18,13 @@ order	registration	uk	Послідовність
 prefix	registration	uk	Префікс
 re-enter password	registration	uk	Перевведіть пароль
 re-enter your password	registration	uk	Введіть пароль ще раз
+registration fields	registration	uk	Реєстраційні поля
+registration pending	registration	uk	Реєстрація очікує на розгляд
+registration settings	admin	uk	Налаштування реєстрації
 remove	registration	uk	Видалити
+required fields *	registration	uk	обов'язкові поля *
 street	registration	uk	Вулиця
+subject of confirmation mail	registration	uk	Тема листа з підтвердженням
 text	registration	uk	Текст
 the two passwords are not the same	registration	uk	Паролі не співпадають
 type	registration	uk	Тип

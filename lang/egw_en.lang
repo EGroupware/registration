@@ -36,7 +36,7 @@ choose your organization	registration	en	Choose your organization
 city	registration	en	City
 confirm	registration	en	Confirm
 confirm registration	registration	en	Confirm registration
-confirmation email for %1 expires %2 link: %3	registration	en	This is a confirmation email for %1.  Please click the following link to complete the process.  %3  This link will expire %2.
+confirmation email for %1 expires %2 link: %3	registration	en	This is a confirmation email for %1. Please click the following link to complete the process. %3 This link will expire %2.
 confirmation message sent	registration	en	Confirmation message sent
 confirmed addressbook.	registration	en	Confirmed address book
 contact fields to show	registration	en	Contact fields to show

@@ -22,6 +22,7 @@ an unknown error occured. <a href="%1">please try registering again.</a>	registr
 anonymous password	admin	ru	Пароль анонимного пользователя
 anonymous user	registration	ru	Анонимный пользователь
 anonymous user needs access to registration application	registration	ru	Анонимному пользователю требуется доступ к приложению регистрации
+body of confirmation mail	registration	ru	Тело письма с подтверждением
 business phone	registration	ru	Рабочий телефон
 canceled	registration	ru	Отменено
 change password for user	registration	ru	Изменить пароль дял пользователя
@@ -29,6 +30,7 @@ city	registration	ru	Город
 confirm	registration	ru	Подтвердить
 confirm registration	registration	ru	Подтвердить регистрацию
 confirmation email for %1 expires %2 link: %3	registration	ru	Email подтверждения для %1. Пожалуйста пройдите по ссылке для завершения. %3 Действие ссылки истекает %2.
+confirmation message sent	registration	ru	Отправленное подтверждающее сообщение
 confirmed addressbook.	registration	ru	Книга подтвержденных адресов
 contact fields to show	registration	ru	Отобразить поля контакта
 convert user login id to 7 bit string	admin	ru	Конвертировать идентификатор имени входа в 7-битную строку
@@ -79,19 +81,21 @@ register link at login screen?	admin	ru	Ссылка на регистрацию
 registered	registration	ru	Зарегистрирован
 registration	common	ru	Регистрация
 registration complete	registration	ru	Регистрация завершена
+registration fields	registration	ru	Поля регистрации
+registration pending	registration	ru	Ожидание регистрации
 registration settings	admin	ru	Установки регистрации
 remove	registration	ru	Удалить
 report all problems and abuse to	registration	ru	Сообщить о неполадках и злоупотреблениях
 required	registration	ru	Требуется
+required fields *	registration	ru	обязательные поля *
 response	registration	ru	Отклик
 send email	admin	ru	Отправить почту
-sorry, no account exists for %1	registration	ru	Извините, учетной записи %1 не существует
-sorry, that username does not exist.	registration	ru	Извините, это имя пользователя не существует
 sorry, that username is already taken.	registration	ru	Извините, это имя пользователя уже занято
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	ru	Извините, у нас проблема с активацией учетной записи. Заметьте, что ссылки высланные по электронной почте, действительны только два часа. Если Вы полагаете, что этот интервал может быть превышен - повторите регистрацию. Иначе обратитесь к администратору сайта.
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	ru	Извините, у нас проблемы при получении информации, необходимой для изменения Вашего пароля. Заметьте, что ссылка, высланная на ваш e-mail, действительна только два часа. Если Вы считаете, что это время прошло - просто повторите. Иначе - обратитесь к администратору сайта.
 street	registration	ru	Улица
 subject for confirmation email title: %1	registration	ru	%1 email подтверждения
+subject of confirmation mail	registration	ru	Тема письма с подтверждением
 terms of service	registration	ru	Период действия (terms) Сервиса
 terms of service text	admin	ru	Текст Периода действия Сервиса
 text	registration	ru	Текст
@@ -112,7 +116,6 @@ username is	admin	ru	Имя пользователя
 values 'for dropdown': comma separated), for 'dropdown from table': table,valuefield,displayfield	registration	ru	Значения 'Для Выпадающего списка': разделенные запятыми, Для 'Выпадающего списка Из Таблицы': таблица,полезначения,полепоказа
 values (for dropdown only; comma separated)	registration	ru	Значения (только для Сброса; разделенные запятыми)
 verification	registration	ru	Проверка
-we have sent a mail to your email account: %s with your lost user ids.	registration	ru	Мы выслали почтовое сообщение на Ваш адрес электронной почты: %s с вашыми утерянными идентификаторами пользователя.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	ru	Мы выслали почтовое сообщение с инструкциями по смене вашего пароля. Вы должны следовать включенной ссылкев течении двух часов. Если Вы этого не сделаете Вы опять попадете на страницу утерянного пароля.
 work phone	registration	ru	Рабочий телефон
 wrong - try again ...	registration	ru	Неправильно - попробуйте ещё ...
