@@ -14,11 +14,13 @@ after you enter your username, instructions to change your password will be sent
 an error occured. please contact our technical support and let them know.	registration	fi	Virhe tapahtui. Ota yhteyttä tekniseen tukeemme ja ilmoita asiasta.
 anonymous password	admin	fi	tuntematon salasana
 anonymous user	registration	fi	Anonyymi käyttäjä
+body of confirmation mail	registration	fi	Vahvistuspostin runko
 business phone	registration	fi	Puhelin (työ)
 canceled	registration	fi	Peruutettu
 change password for user	registration	fi	Muuta salasana käyttäjälle
 city	registration	fi	Kaupunki
 confirm	registration	fi	Vahvista
+confirmation message sent	registration	fi	Lähetetty vahvistusviesti
 contact fields to show	registration	fi	Näytä yhteytietojen kentät
 custom etemplate for the contactform	registration	fi	Muokkaa eMallipohja yhteystietokaavakkeelle
 days until trial accounts expire	admin	fi	Monenko päivän päästä käyttäjätunnus vanhenee
@@ -60,16 +62,19 @@ register	common	fi	rekisteröidy
 register link at login screen?	admin	fi	Rekisteröitymislinkki kirjautumissivulla?
 registered	registration	fi	rekisteröity
 registration	common	fi	Rekisteröityminen
+registration fields	registration	fi	Rekisteröintikentät
+registration pending	registration	fi	Rekisteröinti vireillä
 registration settings	admin	fi	Rekisteröitymisen asetukset
 remove	registration	fi	Poista
 report all problems and abuse to	registration	fi	Raportoi kaikista ongelmista ja väärinkäytöstä
 required	registration	fi	Pakollinen
+required fields *	registration	fi	pakolliset kentät *
 response	registration	fi	Vastaus
 send email	admin	fi	Lähetä sähköposti
-sorry, that username does not exist.	registration	fi	Valitan, käyttäjätunnusta ei löydy.
 sorry, that username is already taken.	registration	fi	Valitan, käyttäjätunnus on jo varattu
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	fi	Valitettavasti käyttäjätilisi aktivoinnissa on ongelma. Sinulle sähköpostiin lähetetty aktivointilinkki on voimassa vain kaksi tuntia. Jos luulet että tämä aika on ylittynyt, yritä uudestaan. Muuten, ota yhteyttä sivuston ylläpitäjään.
 street	registration	fi	Katuosoite
+subject of confirmation mail	registration	fi	Vahvistusviestin aihe
 terms of service	registration	fi	Toimitusehdot
 terms of service text	admin	fi	Toimitusehdot teksti
 text	registration	fi	Teksti
@@ -87,7 +92,6 @@ use trial accounts?	admin	fi	käytä kokeilu tunnuksia?
 username is	admin	fi	Käyttäjänimi on
 values (for dropdown only; comma separated)	registration	fi	Arvot (Vain pudotusvalikossa; pilkulla erotettuna)
 verification	registration	fi	Varmentaminen
-we have sent a mail to your email account: %s with your lost user ids.	registration	fi	Olemme lähettäneet sähköpostiisi: &s unohtamasi käyttäjätunnuksesi.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	fi	Olemme lähettäneet sähköpostiisi ohjeet salasanan vaihtamisesta. Siirry viestissä olevan linkin kautta sivulle kahden tunnin sisällä. Mikäli aikaraja ylittyy, sinun pitää pyytää salasanasi uudestaan.
 work phone	registration	fi	Työpuhelin
 wrong - try again ...	registration	fi	Väärin - yritä uudestaan ...

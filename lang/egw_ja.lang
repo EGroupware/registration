@@ -1,7 +1,9 @@
 address line 2	registration	ja	町域２
 anonymous user	registration	ja	匿名ユーザ
+body of confirmation mail	registration	ja	確認メール本文
 business phone	registration	ja	電話
 city	registration	ja	市区町村
+confirmation message sent	registration	ja	送信された確認メッセージ
 department	registration	ja	部署
 enter your new password	registration	ja	新しいパスワードを入力して下さい。
 expires	registration	ja	有効期限
@@ -13,7 +15,12 @@ prefix	registration	ja	プレフィックス
 re-enter password	registration	ja	パスワード再入力
 re-enter your password	registration	ja	パスワードを再入力して下さい。
 registered	registration	ja	registered
+registration fields	registration	ja	登録フィールド
+registration pending	registration	ja	登録保留
+registration settings	admin	ja	登録設定
 remove	registration	ja	削除
+required fields *	registration	ja	必須項目
 street	registration	ja	町域
+subject of confirmation mail	registration	ja	確認メールの件名
 work phone	registration	ja	勤務先TEL
 zip code	registration	ja	郵便番号

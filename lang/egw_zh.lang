@@ -17,11 +17,13 @@ an error occured. please remove your cookies and try again.	registration	zh	发�
 an unknown error occured. <a href="%1">please try registering again.</a>	registration	zh	发生一个未知错误。<a href="%1">请再次尝试登录。</a>
 anonymous password	admin	zh	匿名密码
 anonymous user	registration	zh	匿名用户
+body of confirmation mail	registration	zh	确认邮件正文
 business phone	registration	zh	商务电话
 canceled	registration	zh	取消
 change password for user	registration	zh	修改用户密码
 city	registration	zh	城市
 confirm	registration	zh	确认
+confirmation message sent	registration	zh	发送的确认信息
 contact fields to show	registration	zh	要显示的联系人字段
 convert user login id to 7 bit string	admin	zh	转换用户登录ID为7 bit 解码
 custom etemplate for the contactform	registration	zh	为联系人表单自定义模板
@@ -65,17 +67,20 @@ register	common	zh	注册
 register link at login screen?	admin	zh	注册链接在登录窗口
 registered	registration	zh	注册
 registration	common	zh	注册管理
+registration fields	registration	zh	注册字段
+registration pending	registration	zh	注册待定
 registration settings	admin	zh	注册设置
 remove	registration	zh	移除
 report all problems and abuse to	registration	zh	报告所有问题和滥用
 required	registration	zh	需要
+required fields *	registration	zh	必填字段 *
 response	registration	zh	回答
 send email	admin	zh	发送电子邮件
-sorry, that username does not exist.	registration	zh	抱歉，那用户名不存在。
 sorry, that username is already taken.	registration	zh	抱歉，那用户名已经被采取。
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	zh	抱歉，我们有一个问题激活您的帐户。注意在两小时内通过电子邮件链接是唯一有效的。如果您认为延迟送达是过期的，请再试。否则，请与站点管理员联系。
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	zh	对不起，为更改您的密码，我们需要检索所需要的信息。注意在两小时内通过电子邮件发送的链接是唯一有效的。如果你认为因迟延交付过期，可以再试。否则，请联络网站管理员。
 street	registration	zh	街道
+subject of confirmation mail	registration	zh	确认邮件主题
 terms of service	registration	zh	服务条款
 terms of service text	admin	zh	服务条款文本
 text	registration	zh	文本
@@ -94,7 +99,6 @@ username is	admin	zh	用户名是
 values 'for dropdown': comma separated), for 'dropdown from table': table,valuefield,displayfield	registration	zh	值为'下拉选单'：(逗号分隔)；为'下拉列表'：表、值字段、显示字段
 values (for dropdown only; comma separated)	registration	zh	值 (仅下拉框；逗号分隔)
 verification	registration	zh	认证
-we have sent a mail to your email account: %s with your lost user ids.	registration	zh	我们已经发送了邮件到您的信箱：由于 %s 您失去用户识别号。
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	zh	我们发送了邮件以指示改变您的密码。您在二个小时之内应该点击包括的链接。如果您未点击确认，您将必须再次回到丢失密码窗口。
 work phone	registration	zh	工作电话
 wrong - try again ...	registration	zh	错误，请重试...

@@ -5,10 +5,12 @@ address	registration	id	Alamat
 address line 2	registration	id	Alamat Baris 2
 anonymous password	admin	id	Anonymous password
 anonymous user	registration	id	Anonymous user
+body of confirmation mail	registration	id	Isi surat konfirmasi
 business phone	registration	id	Telepon Bisnis
 canceled	registration	id	Dibatalkan
 city	registration	id	Kota
 confirm	registration	id	konfirmasi
+confirmation message sent	registration	id	Pesan konfirmasi terkirim
 department	registration	id	Departemen
 email address	registration	id	alamat email
 enable registration?	admin	id	Bolehkan Pendaftaran?
@@ -33,12 +35,16 @@ re-enter your password	registration	id	Ulangi masukan Password
 register	common	id	daftar
 registered	registration	id	terdaftar
 registration	common	id	Pendaftaran
+registration fields	registration	id	Bidang pendaftaran
+registration pending	registration	id	Pendaftaran tertunda
 registration settings	admin	id	Pengaturan Pendaftaran
 remove	registration	id	Buang
 required	registration	id	Diperlukan
+required fields *	registration	id	bidang yang wajib diisi *
 response	registration	id	Tanggapan
 send email	admin	id	Kirim Email
 street	registration	id	Jalan
+subject of confirmation mail	registration	id	Perihal surat konfirmasi
 text	registration	id	Teks
 the two passwords are not the same	registration	id	Kedua password tidak sama
 there was an error saving your data :-(	registration	id	Ada kesalahan dalam menyimpan data anda :-(

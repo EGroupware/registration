@@ -4,10 +4,12 @@ address line 2	registration	no	Adresse Linje 2
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	no	Etter at du registrerer din e-mailadresse vil data forbundet med brukerkontoen sendes på e-mail til denne adressen.
 anonymous password	admin	no	Passord for anonyme brukere
 anonymous user	registration	no	Anonym bruker
+body of confirmation mail	registration	no	Brødtekst i bekreftelsesmailen
 business phone	registration	no	Telefon, Arbeid
 canceled	registration	no	Annullert
 city	registration	no	By
 confirm	registration	no	Bekreft
+confirmation message sent	registration	no	Sendt bekreftelsesmelding
 department	registration	no	Avdeling
 email address	registration	no	E-mailadresse
 email address to display for support	admin	no	E-mailadresse som vises for support
@@ -41,15 +43,18 @@ re-enter your password	registration	no	Skriv inn passord ditt på nytt
 register link at login screen?	admin	no	Registrere link på påloggingssiden?
 registered	registration	no	registrert
 registration	common	no	Registrering
+registration fields	registration	no	Registreringsfelt
+registration pending	registration	no	Registrering i påvente
 registration settings	admin	no	Innstillinger for registrering
 remove	registration	no	Fjerne
 report all problems and abuse to	registration	no	Rapporter alle feil og forstyrelser til
 required	registration	no	Nødvendig
+required fields *	registration	no	obligatoriske felter *
 send email	admin	no	Send e-mail
-sorry, that username does not exist.	registration	no	Beklager, brukernavn finnes ikke
 sorry, that username is already taken.	registration	no	Beklager, brukernavn allerede registrert
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	no	Beklager men vi har et problem med å aktivere din konto. Husk at lenker sendt via e-mail kun er gyldige i to timer.  Dersom du tror denne tiden var overskredet, prøv igjen.  Eller må du ta kontakt med EDB-ansvarlig
 street	registration	no	Gate
+subject of confirmation mail	registration	no	Emne for bekreftelsesmail
 terms of service	registration	no	Betingelser
 terms of service text	admin	no	Tekst for betingelser
 text	registration	no	Tekst

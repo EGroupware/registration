@@ -28,6 +28,7 @@ anonymous password	admin	sk	Anonymné heslo
 anonymous user	registration	sk	Anonymný používateľ
 anonymous user needs access to registration application	registration	sk	Anonymný používateľ potrebuje prístup k aplikácii Registrácia
 ask user	registration	sk	Opýtať sa používateľa
+body of confirmation mail	registration	sk	Telo potvrdzujúceho e-mailu
 business phone	registration	sk	Telefón (práca)
 canceled	registration	sk	Zrušené
 change password for user	registration	sk	Zmeniť heslo používateľa
@@ -36,6 +37,7 @@ city	registration	sk	Mesto
 confirm	registration	sk	Potvrdiť
 confirm registration	registration	sk	Potvrdiť registráciu
 confirmation email for %1 expires %2 link: %3	registration	sk	Toto je potvrdzovacia správa pre %1. Ak chcete dokončiť proces, kliknite na nasledujúci odkaz. %3 Tento odkaz vyprší %2.
+confirmation message sent	registration	sk	Odoslaná potvrdzujúca správa
 confirmed addressbook.	registration	sk	Potvrdený adresár
 contact fields to show	registration	sk	Polia kontaktu ktoré sa zobrazia
 convert user login id to 7 bit string	admin	sk	Konvertovať používateľské prihlasovacie ID na 7-bitový reťazec
@@ -96,19 +98,22 @@ registration	common	sk	Registrácia
 registration complete	registration	sk	Registrácia je hotová
 registration expires after	registration	sk	Registrácia vyprší po
 registration fields	registration	sk	Polia registrácie
+registration pending	registration	sk	Čaká sa na registráciu
 registration settings	admin	sk	Nastavenia Registrácie
 remove	registration	sk	Odstrániť
 repeat	registration	sk	Opakovať
 report all problems and abuse to	registration	sk	Všetky problémy a zneužitia hlásiť (komu)
 required	registration	sk	Povinné
+required fields *	registration	sk	povinné polia *
 response	registration	sk	Odpoveď
 select multiple to let the user choose	registration	sk	Vyberte viacero, aby si používateľ mohol vybrať
 send email	admin	sk	Poslať E-mail
-sorry, that username is already taken.	registration	sk	Ľutujem, takéto používateľské meno sa už používa
+sorry, that username is already taken.	registration	sk	Ľutujem, takéto používateľské meno sa už používa.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	sk	Ľutujem, nastali problémy s aktiváciou Vášho účtu. Upozornenie: odkazy odoslané E-mailom platia iba počas 2 hodín. Ak si myslíte, že tento čas už vypršal, skúste to znovu. V opačnom prípade prosím kontaktujte správcu stránky.
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	sk	Je nám ľúto, máme problémy so získavaním informácií, ktoré sú potrebné k zmene vášho hesla. Upozornenie: odkaz, ktorý ste obdržali e-mailom, platí iba dve hodiny. Ak si myslíte, že tento čas už uplynul, jednoducho to skúste znovu. V opačnom prípade kontaktujte správcu.
 street	registration	sk	Ulica
 subject for confirmation email title: %1	registration	sk	%1 potvrdzovací email
+subject of confirmation mail	registration	sk	Predmet potvrdzujúceho e-mailu
 terms of service	registration	sk	Podmienky používania
 terms of service text	admin	sk	Text podmienok používania
 text	registration	sk	Text

@@ -28,6 +28,7 @@ anonymous password	admin	fr	Mot de passe de l'utilisateur anonyme
 anonymous user	registration	fr	Utilisateur anonyme
 anonymous user needs access to registration application	registration	fr	L'utilisateur anonyme doit avoir un accès à l'application "enregistrement"
 ask user	registration	fr	Demander à l'utilisateur
+body of confirmation mail	registration	fr	Corps du message de confirmation
 business phone	registration	fr	Téléphone (bureau)
 canceled	registration	fr	Annulé
 change password for user	registration	fr	Changer le mot de passe pour l'utilisateur
@@ -36,6 +37,7 @@ city	registration	fr	Ville
 confirm	registration	fr	Confirmer
 confirm registration	registration	fr	Confirmer l'enregistrement
 confirmation email for %1 expires %2 link: %3	registration	fr	Ceci est une confirmation par email de %1. Veuillez cliquer sur le lien suivant pour terminer le processus d'enregistrement. %3 Ce lien va expirer %2.
+confirmation message sent	registration	fr	Envoi d'un message de confirmation
 confirmed addressbook.	registration	fr	Carnet d'adresses des contacts confirmés
 contact fields to show	registration	fr	Champ de contact à afficher
 convert user login id to 7 bit string	admin	fr	Convertissez l'ID login en une chaîne de 7 bits
@@ -96,11 +98,13 @@ registration	common	fr	Enregistrement
 registration complete	registration	fr	Enregistrement terminé
 registration expires after	registration	fr	L'enregistrement expire après
 registration fields	registration	fr	Champs de l'enregistrement
+registration pending	registration	fr	Enregistrement en cours
 registration settings	admin	fr	Paramètres d'enregistrement
 remove	registration	fr	Enlever
 repeat	registration	fr	Répéter
 report all problems and abuse to	registration	fr	Rapporter tous les problèmes et abus à
 required	registration	fr	Nécessaire
+required fields *	registration	fr	champs obligatoires *
 response	registration	fr	Réponse
 select multiple to let the user choose	registration	fr	Selectionnez plusieurs valeurs pour laisser l'utilisateur choisir
 send email	admin	fr	Envoyer l'e-mail
@@ -109,6 +113,7 @@ sorry, we are having a problem activating your account. note that links sent by 
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	fr	Désolé mais nous avons des problèmes pour récupérer l'information nécessaire pour changer le mot de passe. Notez que le lien envoyé par e-mail n'est valable que pendant 2 heures. Si vous pensez que ce délai a expiré, réessayez. Sinon, contactez votre administrateur.
 street	registration	fr	Rue
 subject for confirmation email title: %1	registration	fr	%1 email de confirmation
+subject of confirmation mail	registration	fr	Objet du courrier de confirmation
 terms of service	registration	fr	Termes et Conditions
 terms of service text	admin	fr	Texte des Termes et Conditions
 text	registration	fr	Texte
