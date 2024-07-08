@@ -1,5 +1,6 @@
 *.old
-*.old.xet
-*.old.lang
 *.old.inc.php
-/.idea/
+*.old.lang
+*.old.xet
+*.min.js*
+*.min.css*

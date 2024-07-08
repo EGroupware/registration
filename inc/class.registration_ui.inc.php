@@ -148,7 +148,7 @@ class registration_ui
 			{
 				if($field[0] == '#')
 				{
-					$cfs[substr($field, 1)] = true;
+					$cfs[] = substr($field, 1);
 				}
 			}
 			if(count($cfs))
@@ -276,7 +276,12 @@ class registration_ui
 		if($account_ok)
 		{
 			$readonlys['__ALL__'] = true;
-			Api\Framework::message($msg ?? lang('Registration pending'));
+			Api\Cache::setSession('login', 'referer', $GLOBALS['egw_info']['server']['webserver_url'] .
+			'/login.php?domain=' . $GLOBALS['egw_info']['user']['domain'] . '&cd=' .
+			$msg ?? lang('Registration pending')
+			);
+			Api\Session::egw_setcookie('last_loginid', $registration['account_lid'], time() + 1209600); /* For 2 weeks */
+			Api\Framework::redirect($GLOBALS['egw_info']['server']['webserver_url'] . "/logout.php");
 		}
 
 		Api\Translation::add_app('addressbook');
