@@ -1,3 +1,5 @@
+%s days	registration	el	%s ημέρες
+%s hours	registration	el	%s ώρες
 %s please calculate the result	registration	el	%s παρακαλώ υπολογίστε το αποτέλεσμα
 address line 2	registration	el	Γραμμή Διευθύνσεων 2
 anonymous password	admin	el	Κωδικός ανωνύμου
@@ -17,22 +19,32 @@ fax	registration	el	Fax
 home phone	registration	el	Τηλέφωνο οικίας
 hours	registration	el	Ωρες
 ip	registration	el	IP
+lost password	login	el	Χαμένος κωδικός πρόσβασης
 mobile phone	registration	el	Κινητό τηλέφωνο
+not a user yet? register now	login	el	Δεν είστε ακόμη χρήστης; Εγγραφείτε τώρα.
 order	registration	el	Ταξινόμηση
 prefix	registration	el	Πρόθεμα
 re-enter password	registration	el	Ξανα-εισάγετε το συνθηματικό
+registration	common	el	Εγγραφή
 registration fields	registration	el	Πεδία εγγραφής
 registration pending	registration	el	Εκκρεμής εγγραφή
 registration settings	admin	el	Ρυθμίσεις εγγραφής
 remove	registration	el	αφαίρεση
 required fields *	registration	el	υποχρεωτικά πεδία *
+sorry, that username is already taken.	registration	el	Συγγνώμη, αυτό το όνομα χρήστη είναι ήδη κατειλημμένο.
 street	registration	el	Οδός
 subject of confirmation mail	registration	el	Θέμα του μηνύματος επιβεβαίωσης
-the anonymous user has probably no add rights for this addressbook.	registration	el	Ο ανώνυμος χρήστης δεν έχει πιθανότατα δικαίωμα προσθήκης σε αυτό το βιβλίο διευθύνσεων
+terms of service	registration	el	Όροι υπηρεσίας
+terms of service text	admin	el	Κείμενο όρων υπηρεσίας
+text	registration	el	Κείμενο
+the anonymous user has probably no add rights for this addressbook.	registration	el	Ο ανώνυμος χρήστης δεν έχει πιθανότατα δικαίωμα προσθήκης σε αυτό το βιβλίο διευθύνσεων.
 the anonymous user needs add rights for it!	registration	el	Ο ανώνυμος χρήστης χρειάζεται δικαιώματα για να προσθέσει σε αυτό!
 the two passwords are not the same	registration	el	Τα δυο συνθηματικά δέν είναι ίδια
-there was an error saving your data :-(	registration	el	Υπήρξε ένα σφάλμα κατά την αποθήκευση των δεδομένων σας :-(
+there was an error saving your data :-(	registration	el	Υπήρξε ένα σφάλμα κατά την αποθήκευση των δεδομένων σας.
+use html	admin	el	Χρήση HTML
 verification	registration	el	Επαλήθευση
 work phone	registration	el	Τηλέφωνο Εργασίας
 wrong - try again ...	registration	el	Λάθος - προσπαθήστε ξανά ...
+you must enter a username	registration	el	Πρέπει να εισαγάγετε ένα όνομα χρήστη
+you must enter an email account	registration	el	Πρέπει να εισαγάγετε ένα όνομα χρήστη
 zip code	registration	el	Τ.Κ.

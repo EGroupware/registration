@@ -16,8 +16,7 @@ account registration	registration	en	Account registration
 activate account	admin	en	Activate account
 address	registration	en	Address
 address line 2	registration	en	Address line 2
-addressbook the contacts should be saved to before they are confirmed	registration	en	Addressbook the contacts should be saved to before they are confirmed
-addressbook the contacts should be saved to before they are confirmed.	registration	en	Address book the contacts should be saved to before they are confirmed.
+addressbook the contacts should be saved to before they are confirmed	registration	en	Address book the contacts should be saved to before they are confirmed
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	en	After you enter your email address, the user accounts associated with this email address will be mailed to that address.
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	en	After you enter your username, instructions to change your password will be sent to you by email to the address you gave when you registered.
 an error occured while updating your password. please contact the site administrator.	registration	en	An error occurred while updating your password. Please contact the site administrator.
@@ -28,7 +27,7 @@ anonymous password	admin	en	Anonymous password
 anonymous user	registration	en	Anonymous user
 anonymous user needs access to registration application	registration	en	Anonymous user needs access to registration application
 ask user	registration	en	Ask user
-body of confirmation mail	registration	en	Body of confirmation mail
+body of confirmation mail	registration	en	Body of confirmation email
 business phone	registration	en	Business phone
 canceled	registration	en	Canceled
 change password for user	registration	en	Change password for user
@@ -44,7 +43,6 @@ convert user login id to 7 bit string	admin	en	Convert user login ID to 7 bit st
 custom etemplate for the contactform	registration	en	Custom eTemplate for the contact form
 days until trial accounts expire	admin	en	Days until trial accounts expire
 department	registration	en	Department
-display terms of service?	admin	en	Display terms of service?
 do not send account registration email (manual processing by admin)	admin	en	Do not send account registration email (manual processing by admin)
 email address	registration	en	Email address
 email address to display for support	admin	en	Email address to display for support
@@ -73,10 +71,8 @@ login page	registration	en	Login page
 lost login id	login	en	Lost login ID
 lost password	login	en	Lost password
 lost password link	registration	en	Lost password link
-lost password link at login screen?	admin	en	Lost password link at login screen?
 lost user account retrieval	registration	en	Lost user account retrieval
 lost user id	registration	en	Lost user ID
-lost user id link at login screen?	admin	en	Lost user ID link at login screen?
 lost_user_id_message username: %1	registration	en	User accounts associated with this mail account: %1
 missing registration	registration	en	Missing registration
 mobile phone	registration	en	Mobile phone
@@ -91,7 +87,7 @@ re-enter password	registration	en	Re-enter password
 re-enter your password	registration	en	Re-enter your password
 register	common	en	Register
 register link at login screen	registration	en	Register link at login screen
-register link at login screen?	admin	en	Register link at login screen?
+register link at login screen?	admin	en	Register link at login screen
 registered	registration	en	Registered
 registered accounts expire	registration	en	Registered accounts expire
 registration	common	en	Registration
@@ -113,7 +109,7 @@ sorry, we are having a problem activating your account. note that links sent by 
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	en	Sorry, we are having a problem retrieving the information needed for changing your password. Note that links sent by email are only valid during two hours. If you think this delay was expired, just retry. Otherwise, please contact the site administrator.
 street	registration	en	Street
 subject for confirmation email title: %1	registration	en	%1 confirmation email
-subject of confirmation mail	registration	en	Subject of confirmation mail
+subject of confirmation mail	registration	en	Subject of confirmation email
 terms of service	registration	en	Terms of service
 terms of service text	admin	en	Terms of service text
 text	registration	en	Text
@@ -143,7 +139,7 @@ wrong - try again ...	registration	en	Wrong - try again ...
 wrong session	registration	en	Wrong session
 you can go back to the login page	registration	en	You can go back to the login page
 you don't have delete permission, address will be left if you manually register or cancel.	registration	en	You don't have delete permission, address will be left if you manually register or cancel.
-you don\'t have delete permission, address will be left if you manually register or cancel.	registration	en	You don\'t have delete permission, address will be left if you manually register or cancel.
+you don\'t have delete permission, address will be left if you manually register or cancel.	registration	en	You don't have delete permission, address will be left if you manually register or cancel.
 you have entered an invalid birthday	registration	en	You have entered an invalid birthday
 you have entered an invalid email address	registration	en	You have entered an invalid email address
 you must enter a password	registration	en	You must enter a password

@@ -1,37 +1,69 @@
+%s days	registration	bg	%s дни
+%s hours	registration	bg	%s часа
 %s please calculate the result	registration	bg	%s моля, изчислете резултата
 address line 2	registration	bg	Адрес ред 2
+addressbook the contacts should be saved to before they are confirmed	registration	bg	Адресна книга, в която трябва да се запишат контактите, преди да бъдат потвърдени
 body of confirmation mail	registration	bg	Тяло на писмото за потвърждение
 business phone	registration	bg	Служебен телефон
 canceled	registration	bg	Отменено
 city	registration	bg	Град
 confirm	registration	bg	Потвърди
 confirmation message sent	registration	bg	Изпратено съобщение за потвърждение
+confirmed addressbook.	registration	bg	Потвърдена адресна книга
 contact fields to show	registration	bg	Полета на контакта, които да се показват
 custom etemplate for the contactform	registration	bg	eTemplate по избор за формата за контакти
 department	registration	bg	Отдел
 email address	registration	bg	E-Mail адрес
+enable registration	registration	bg	Разрешаване на регистрацията
+enable registration?	admin	bg	Разрешаване на регистрацията?
 enter your new password	registration	bg	Въведете нова парола
 fax	registration	bg	Факс
 home phone	registration	bg	Домашен телефон
 hours	registration	bg	часа
+how long to confirm before registration expires? (hours)	registration	bg	Колко време трябва да се потвърди, преди регистрацията да изтече? (часове)
+internet	registration	bg	Интернет
+ip	registration	bg	IP
 mobile phone	registration	bg	Мобилен телефон
 order	registration	bg	Ред
 prefix	registration	bg	Префикс
 re-enter password	registration	bg	Въведете отново паролата
 re-enter your password	registration	bg	Въведете отново паролата
+register link at login screen	registration	bg	Връзка за регистрация в екрана за вход
+register link at login screen?	admin	bg	Връзка за регистрация в екрана за вход
 registered	registration	bg	регистрирано
+registered accounts expire	registration	bg	Регистрираните акаунти изтичат
+registration	common	bg	Регистрация
+registration complete	registration	bg	Регистрацията е завършена
+registration expires after	registration	bg	Регистрацията изтича след
 registration fields	registration	bg	Регистрационни полета
 registration pending	registration	bg	Очаква се регистрация
 registration settings	admin	bg	Настройки на регистрацията
 remove	registration	bg	премахване
+repeat	registration	bg	%1 имейл за потвърждение
 required fields *	registration	bg	задължителни полета *
+select multiple to let the user choose	registration	bg	Изберете няколко, за да позволите на потребителя да избере
+sorry, that username is already taken.	registration	bg	Съжаляваме, това потребителско име вече е заето.
 street	registration	bg	Улица
+subject for confirmation email title: %1	registration	bg	%1 имейл за потвърждение
 subject of confirmation mail	registration	bg	Тема на писмото за потвърждение
+terms of service	registration	bg	Условия на услугата
+terms of service text	admin	bg	Текст на условията на услугата
+text	registration	bg	Текст
 the anonymous user has probably no add rights for this addressbook.	registration	bg	Анонимният потребител вероятно няма право да добавя в този адресен указател.
 the two passwords are not the same	registration	bg	Паролите не съвпадат
-there was an error saving your data :-(	registration	bg	Грешка при запис на данните Ви :-(
+there was an error saving your data :-(	registration	bg	Грешка при запис на данните Ви.
+use html	admin	bg	Използвайте HTML
 verification	registration	bg	Проверка
 work phone	registration	bg	Служебен телефон
 wrong - try again ...	registration	bg	Грешка - опитайте отново
+you can go back to the login page	registration	bg	Можете да се върнете към страницата за вход
 you must enter a password	registration	bg	Трябва да въведете парола
+you must enter a username	registration	bg	Трябва да въведете потребителско име
+you must enter an email account	registration	bg	Трябва да въведете имейл акаунт
+you must enter an email address	registration	bg	Трябва да въведете имейл адрес
+your account is now active!	registration	bg	Вашият акаунт вече е активен!
+your login is not available. time is expired	registration	bg	Входът ви не е достъпен. Времето е изтекло.
+your password was changed.	registration	bg	Паролата ви е променена.
+your registration code is missing or incorrect.	registration	bg	Кодът ви за регистрация липсва или е грешен.
 zip code	registration	bg	Пощенски код
+zip/postal	registration	bg	Пощенски код

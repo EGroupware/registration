@@ -1,21 +1,22 @@
-%1 needs permission to delete - address remains.	registration	nl	%1 heeft toestemming nodig om te verwijderen - adres blijft bestaan
+%1 needs permission to delete - address remains.	registration	nl	%1 heeft toestemming nodig om te verwijderen - adres blijft bestaan.
 %s days	registration	nl	%s dagen
 %s hours	registration	nl	%s uren
 %s please calculate the result	registration	nl	%s bereken svp het resultaat
 13: error occured	registration	nl	13: fout opgetreden
-<br>please contact the site administrator.	registration	nl	<br />Neem svp contact op met de beheerder.
+<br>please contact the site administrator.	registration	nl	<br>Neem svp contact op met de beheerder.
 [unknown first name]	registration	nl	[onbekende voornaam]
 [unknown last name]	registration	nl	[onbekende achternaam]
 abuse reduction - please wait %1 seconds and try again.	registration	nl	Misbruik reductie - wacht svp %1 seconden en probeer het opnieuw.
 account	registration	nl	Account
 account %1 record could not be found, report to site administrator	registration	nl	Account %1 record is niet gevonden, meld dit aan de beheerder
+account groups	registration	nl	Accountgroepen
 account password retrieval	registration	nl	Account wachtwoord ophalen
+account primary group	registration	nl	Account primaire groep
 account registration	registration	nl	Account registratie
 activate account	admin	nl	Account activeren
 address	registration	nl	Adres
 address line 2	registration	nl	Adresregel 2
 addressbook the contacts should be saved to before they are confirmed	registration	nl	Adresboek contacten moet eerst worden bewaard voordat zij bevestigd kunnen worden
-addressbook the contacts should be saved to before they are confirmed.	registration	nl	Adresboek contacten moet eerst worden bewaard voordat zij bevestigd kunnen worden.
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	nl	Nadat u uw emailadres heeft ingevuld, zullen de gebruikeraccounts die aan dit emailadres gekoppeld zijn naar dat emailadres verzonden worden.
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	nl	Nadat u uw gebruikersnaam heeft ingevuld, zullen instructies voor het wijzigen van uw wachtwoord per email naar het bij registratie opgegeven emailadres worden gestuurd.
 an error occured while updating your password. please contact the site administrator.	registration	nl	Een fout is opgetreden tijdens het bijwerken van uw wachtwoord. Neem contact op met de site beheerder.
@@ -25,14 +26,16 @@ an unknown error occured. <a href="%1">please try registering again.</a>	registr
 anonymous password	admin	nl	Anoniem wachtwoord
 anonymous user	registration	nl	Anonieme gebruiker
 anonymous user needs access to registration application	registration	nl	Anonieme gebruikers hebben toegang nodig voor het registreren van toepassingen
+ask user	registration	nl	Gebruiker vragen
 body of confirmation mail	registration	nl	Inhoud van bevestigingsmail
 business phone	registration	nl	Telefoon Bedrijf
 canceled	registration	nl	Geannuleerd
 change password for user	registration	nl	Wijzig het wachtwoord voor gebruiker
+choose your organization	registration	nl	Kies uw organisatie
 city	registration	nl	Plaats
-confirm	registration	nl	bevestigen
+confirm	registration	nl	Bevestigen
 confirm registration	registration	nl	Bevestig registratie
-confirmation email for %1 expires %2 link: %3	registration	nl	Dit is bevestigings bericht voor %1. Klik op de volgende link om het proces te voltooien. %3 Deze link zal verlopen op %2
+confirmation email for %1 expires %2 link: %3	registration	nl	Dit is bevestigings bericht voor %1. Klik op de volgende link om het proces te voltooien. %3 Deze link zal verlopen op %2.
 confirmation message sent	registration	nl	Verzonden bevestigingsbericht
 confirmed addressbook.	registration	nl	Adresboek bevestigd
 contact fields to show	registration	nl	Contactvelden die getoond moeten worden
@@ -40,9 +43,8 @@ convert user login id to 7 bit string	admin	nl	Converteer de gebruikers login ID
 custom etemplate for the contactform	registration	nl	Aangepaste eTemplate voor het contactformulier
 days until trial accounts expire	admin	nl	Dagen totdat het proefaccount verloopt
 department	registration	nl	Afdeling
-display terms of service?	admin	nl	Dienstvoorwaarden tonen?
 do not send account registration email (manual processing by admin)	admin	nl	Stuur geen registratie bericht (handmatig proces door admin)
-email address	registration	nl	emailadres
+email address	registration	nl	Emailadres
 email address to display for support	admin	nl	Emailadres om weer te geven voor support
 email address to send notices from	admin	nl	Emailadres om rapportages naar te suren
 enable registration	registration	nl	Activeer registratie
@@ -52,9 +54,10 @@ enter your new password	registration	nl	Voer uw nieuwe wachtwoord in
 expires	registration	nl	Verloopt
 fax	registration	nl	Fax
 global options	admin	nl	Algemene opties
+go back to login	registration	nl	Ga terug naar login
 home phone	registration	nl	Privé telefoon
-hours	registration	nl	uren
-how long to confirm before registration expires? (hours)	registration	nl	Hoeveel tijd om aan te geven dat registratie verloopt ? (uren)
+hours	registration	nl	Uren
+how long to confirm before registration expires? (hours)	registration	nl	Hoeveel tijd om aan te geven dat registratie verloopt? (uren)
 http password	admin	nl	HTTP Wachtwoord
 http username	admin	nl	HTTP Gebruikersnaam
 i have read the terms and conditions and agree by them.	registration	nl	Ik heb de algemene voorwaarden gelezen en en ga ermee akkoord.
@@ -68,16 +71,14 @@ login page	registration	nl	Login pagina
 lost login id	login	nl	Login ID verloren
 lost password	login	nl	Wachtwoord verloren
 lost password link	registration	nl	Wachtwoord link kwijt
-lost password link at login screen?	admin	nl	Verloren wachtwoord-link  op het inlogscherm?
 lost user account retrieval	registration	nl	Verloren gebruikersaccount opzoeken
 lost user id	registration	nl	Gebruikers ID verloren
-lost user id link at login screen?	admin	nl	Verloren gebruikers ID link op het inlogscherm?
 lost_user_id_message username: %1	registration	nl	Gebruiker account die zijn gekoppeld aan dit berichten account: %1
 missing registration	registration	nl	Mis registratie
 mobile phone	registration	nl	Mobiel
 name sender to send notices from	admin	nl	Naam van de afzender waarvan meldingen worden verstuurd
 not a user yet? register now	login	nl	Nog niet een gebruiker? Registreer dan nu.
-on-line registration is not activated. please contact the site administrator for more information about registration.	registration	nl	On-line registratie is niet geactiveerd. Neem a.u.b. contact op met de beheerder voor meer informatie over het verkrijgen van een EGroupware-account
+on-line registration is not activated. please contact the site administrator for more information about registration.	registration	nl	On-line registratie is niet geactiveerd. Neem a.u.b. contact op met de beheerder voor meer informatie over het verkrijgen van een EGroupware-account.
 order	registration	nl	Volgorde
 please contact the site administrator.	registration	nl	Neem svp contact op met site beheerder.
 prefix	registration	nl	Voorvoegsel
@@ -85,8 +86,9 @@ problem sending email:	registration	nl	Probleem tijdens het verzenden van email:
 re-enter password	registration	nl	Voer wachtwoord opnieuw in
 re-enter your password	registration	nl	Voer uw wachtwoord opnieuw in
 register	common	nl	Registreer
-register link at login screen?	admin	nl	Registreer link op loginscherm?
-registered	registration	nl	geregistreerd
+register link at login screen	registration	nl	Link registreren op inlogscherm
+register link at login screen?	admin	nl	Registreer link op loginscherm
+registered	registration	nl	Geregistreerd
 registered accounts expire	registration	nl	Registratie van account loopt af
 registration	common	nl	Registratie
 registration complete	registration	nl	Registratie compleet
@@ -95,10 +97,12 @@ registration fields	registration	nl	Registratievelden
 registration pending	registration	nl	In afwachting van registratie
 registration settings	admin	nl	Registratie-instellingen
 remove	registration	nl	Verwijderen
+repeat	registration	nl	Herhaal
 report all problems and abuse to	registration	nl	Raporteer alle problemen en misbruik aan
 required	registration	nl	Noodzakelijk
 required fields *	registration	nl	verplichte velden *
 response	registration	nl	Reactie
+select multiple to let the user choose	registration	nl	Selecteer meerdere om de gebruiker te laten kiezen
 send email	admin	nl	Email verzenden
 sorry, that username is already taken.	registration	nl	Excuses, deze gebruikersnaam is reeds in gebruik.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	nl	Excuses, er lijkt een probleem te zijn ontstaan bij het activeren van uw account. Wij maken u erop attent dat links verzonden per email slechts 2 uur geldig zijn. Als uw link verlopen is, probeer dan uzelf opnieuw aan te melden. Anders kunt u contact opnemen met de beheerder.
@@ -111,8 +115,8 @@ terms of service text	admin	nl	Tekst dienstvoorwaarden
 text	registration	nl	Tekst
 the anonymous user has probably no add rights for this addressbook.	registration	nl	De anonieme gebruiker heeft waarschijnlijk geen toevoegrechten voor dit adresboek.
 the anonymous user needs add rights for it!	registration	nl	De anonieme gebruiker moet hier toevoegrechten voor hebben!
-the two passwords are not the same	registration	nl	De wachtwoorden die u heeft ingevoerd zijn niet hetzelfde.
-there was an error saving your data :-(	registration	nl	Er ontstond een fout tijdens het opslaan van uw gegevens :-(
+the two passwords are not the same	registration	nl	De wachtwoorden die u heeft ingevoerd zijn niet hetzelfde
+there was an error saving your data :-(	registration	nl	Er ontstond een fout tijdens het opslaan van uw gegevens.
 this module displays a registration form, and sends a confirmation email.	registration	nl	Deze module laat een registratie formulier zien, en stuurt een bericht ter bevestiging.
 type	registration	nl	Type
 unable to process confirmation.	registration	nl	Bevestiging niet mogelijk
@@ -120,17 +124,21 @@ unable to send mail, contact your administrator	registration	nl	Het is niet moge
 unknown first name	registration	nl	Onbekende voornaam
 unknown last name	registration	nl	Onbekende achternaam
 update/add	registration	nl	Bijwerken / toevoegen
-use html	admin	nl	gebruik HTML
-use trial accounts?	admin	nl	Gebruik testaccounts ?
+use email address	registration	nl	E-mailadres gebruiken
+use html	admin	nl	Gebruik HTML
+use trial accounts?	admin	nl	Gebruik testaccounts?
 username is	admin	nl	Gebruikersnaam is
-values 'for dropdown': comma separated), for 'dropdown from table': table,valuefield,displayfield	registration	nl	Waardes 'Voor Dropdown': komma gescheiden), Voor 'Dropdown van tabel': tabel, waarde veld, weergave veld.
-values (for dropdown only; comma separated)	registration	nl	Waarden voor dropdown-menu's? (gescheiden  door komma's)
+values 'for dropdown': comma separated), for 'dropdown from table': table,valuefield,displayfield	registration	nl	Waardes 'Voor Dropdown': komma gescheiden), Voor 'Dropdown van tabel': tabel, waarde veld, weergave veld
+values (for dropdown only; comma separated)	registration	nl	Waarden voor dropdown-menu's? (gescheiden door komma's)
 verification	registration	nl	Verificatie
+we have sent a mail to your email account: %1 with your lost user ids.	registration	nl	We hebben een e-mail gestuurd naar je e-mailaccount: %1 met je verloren gebruikers-ID's.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	nl	We hebben een email verzonden met instructies hoe u uw wachtwoord kunt wijzigen. U moet de link binnen twee uur opvolgen. Als u dat niet doet moet u opnieuw het vergeten-wachtwoord-scherm doorlopen.
+what to use as username	registration	nl	Wat te gebruiken als gebruikersnaam
 work phone	registration	nl	Telefoon werk
 wrong - try again ...	registration	nl	Fout - probeer het nogmaals ...
 wrong session	registration	nl	Verkeerde sessie
-you can go back to the login page	registration	nl	U kunt nu terug gaan naar de login pagina.
+you can go back to the login page	registration	nl	U kunt nu terug gaan naar de login pagina
+you don't have delete permission, address will be left if you manually register or cancel.	registration	nl	Je hebt geen verwijdertoestemming, het adres wordt achtergelaten als je handmatig registreert of annuleert.
 you don\'t have delete permission, address will be left if you manually register or cancel.	registration	nl	U heeft geen verwijder rechten, adres blijft zoals het is tenzij u handmatig registreert of nu afbreekt.
 you have entered an invalid birthday	registration	nl	U heeft een ongeldige geboortedatum ingevuld
 you have entered an invalid email address	registration	nl	U heeft een ongeldig emailadres ingevuld
@@ -142,7 +150,7 @@ you must fill in all of the required fields	registration	nl	U moet alle verplich
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	nl	U heeft verzocht om uw wachtwoord te wijzigen. Klik op de onderstaande link om dit te doen. De URL verloopt over twee uur. Na deze termijn moet u opnieuw het vergeten-wachtwoord-scherm doorlopen.
 you specified a value for %1 that is not a choice	registration	nl	U vulde een waarde in voor %1 die niet tot de keuzemogelijkheden behoort
 your account is now active!	registration	nl	Uw account is nu geactiveerd!
-your login is not available. time is expired	registration	nl	Uw login is niet beschikbaar. Tijd is verstreken
+your login is not available. time is expired	registration	nl	Uw login is niet beschikbaar. Tijd is verstreken.
 your password was changed.	registration	nl	Uw wachtwoord is gewijzigd.
 your registration code is missing or incorrect.	registration	nl	Uw registratie code ontbreekt of is onjuist.
 zip code	registration	nl	Postcode

@@ -8,7 +8,7 @@
 [unknown last name]	registration	cs	[neznámé příjmení]
 abuse reduction - please wait %1 seconds and try again.	registration	cs	Redukce zneužití - vyčkejte prosím %1 sekund a zkuste to znovu.
 account	registration	cs	Účet
-account %1 record could not be found, report to site administrator	registration	cs	Záznam pro účet %1 nebyl nalezen, nahlašte problém administrátorovi webu.
+account %1 record could not be found, report to site administrator	registration	cs	Záznam pro účet %1 nebyl nalezen, nahlašte problém administrátorovi webu
 account groups	registration	cs	Skupiny účtů
 account password retrieval	registration	cs	Získání hesla k účtu
 account primary group	registration	cs	Primární skupina účtu
@@ -17,7 +17,6 @@ activate account	admin	cs	Aktivovat účet
 address	registration	cs	Adresa
 address line 2	registration	cs	Adresa - řádek 2
 addressbook the contacts should be saved to before they are confirmed	registration	cs	Adresář, do kterého mají být kontakty uloženy před jejich potvrzením
-addressbook the contacts should be saved to before they are confirmed.	registration	cs	Adresář, do kterého by měly být kontakty uloženy před jejich potvrzením.
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	cs	Poté, co zadáte svoji e-mailovou adresu, uživatelské účty k této adrese přiřazené na ni budou odeslány.
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	cs	Poté, co zadáte své uživatelské jméno, instrukce pro změnu Vašeho hesla budou zaslány e-mailem na adresu, kterou jste uvedl(a) při registraci.
 an error occured while updating your password. please contact the site administrator.	registration	cs	Během aktualizace Vašeho hesla došlo k chybě. Zkontaktujte prosím administrátora webu.
@@ -44,7 +43,6 @@ convert user login id to 7 bit string	admin	cs	Konvertovat přihlašovací ID u�
 custom etemplate for the contactform	registration	cs	Uživatelsky definovaná eŠablona pro formulář kontaktu
 days until trial accounts expire	admin	cs	Dny zbývající do vypršení zkušebního účtu
 department	registration	cs	Oddělení
-display terms of service?	admin	cs	Zobrazit Podmínky používání služby?
 do not send account registration email (manual processing by admin)	admin	cs	Neposílat e-mail s registrací účtu (ruční zpracování správcem).
 email address	registration	cs	E-mailová adresa
 email address to display for support	admin	cs	E-mailová adresa pro zobrazení týmu podpory
@@ -73,25 +71,23 @@ login page	registration	cs	Přihlašovací stránka
 lost login id	login	cs	Ztracené přihlašovací ID
 lost password	login	cs	Ztracené heslo
 lost password link	registration	cs	Odkaz na ztracené heslo
-lost password link at login screen?	admin	cs	Zobrazovat odkaz pro ztrátu hesla na přihlašovací obrazovce?
 lost user account retrieval	registration	cs	Získání ztraceného uživatelského účtu
 lost user id	registration	cs	Ztracené uživatelské ID
-lost user id link at login screen?	admin	cs	Zobrazovat odkaz pro ztrátu uživ. id na přihlašovací obrazovce?
 lost_user_id_message username: %1	registration	cs	Uživatelské účty přidružené k tomuto poštovnímu účtu: %1
 missing registration	registration	cs	Chybějící registrace
 mobile phone	registration	cs	Mobilní telefon
 name sender to send notices from	admin	cs	Jméno odesílatele pro odesílání zpráv
-not a user yet? register now	login	cs	Nejste uživatelem? Zaregistrujte se
+not a user yet? register now	login	cs	Nejste uživatelem? Zaregistrujte se.
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	cs	On-line registrace není aktivována. Zkontaktujte prosím administrátora webu pro více informací k registraci.
 order	registration	cs	Pořadí
-please contact the site administrator.	registration	cs	Kontaktujte prosím administrátora webu
+please contact the site administrator.	registration	cs	Kontaktujte prosím administrátora webu.
 prefix	registration	cs	Titul/Oslovení
 problem sending email:	registration	cs	Problém s odesíláním e-mailu:
 re-enter password	registration	cs	Zadejte heslo znovu
 re-enter your password	registration	cs	Zadejte znovu své heslo
 register	common	cs	Registrovat
 register link at login screen	registration	cs	Odkaz na registraci na přihlašovací obrazovce
-register link at login screen?	admin	cs	Odkaz pro registraci na přihlašovací obrazovce?
+register link at login screen?	admin	cs	Odkaz pro registraci na přihlašovací obrazovce
 registered	registration	cs	Zaregistrované
 registered accounts expire	registration	cs	Platnost registrovaných účtů končí
 registration	common	cs	Registrace
@@ -133,7 +129,7 @@ use html	admin	cs	Používat HTML
 use trial accounts?	admin	cs	Používat zkušební účty?
 username is	admin	cs	Uživatelské jméno je
 values 'for dropdown': comma separated), for 'dropdown from table': table,valuefield,displayfield	registration	cs	Hodnoty pro rozbalovací seznam: oddělené čárkou; pro rozbalovací seznam z tabulky: tabulka, pole_hodnoty, pole_zobrazení
-values (for dropdown only; comma separated)	registration	cs	Hodnoty (jen pro rozbalovací menu; oddělené čárkami)
+values (for dropdown only; comma separated)	registration	cs	Hodnoty (jen pro rozbalovací menu; oddělené čárkami).
 verification	registration	cs	Ověření
 we have sent a mail to your email account: %1 with your lost user ids.	registration	cs	Na váš e-mailový účet jsme odeslali e-mail: %1 s vašimi ztracenými uživatelskými ID.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	cs	Zaslali jsme Vám e-mail s instrukcemi pro změnu Vašeho hesla. Obsažený odkaz by jste měl(a) navštívit během dvou hodin. Pokud tak neučiníte, budete muset znovu použít stránku pro ztracená hesla.

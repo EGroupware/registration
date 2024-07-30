@@ -1,59 +1,85 @@
+%1 needs permission to delete - address remains.	registration	et	%1 vajab luba kustutamiseks - aadress jääb.
+%s days	registration	et	%s päeva
+%s hours	registration	et	%s tundi
 13: error occured	registration	et	13: viga juhtus
 <br>please contact the site administrator.	registration	et	<br>Palun kontakteeru lehe administraatoriga..
 [unknown first name]	registration	et	[tundmatu eesnimi]
 [unknown last name]	registration	et	[tundmatu perekonnanimi]
+abuse reduction - please wait %1 seconds and try again.	registration	et	Kuritarvitamise vähendamine - palun oodake %1 sekundit ja proovige uuesti.
+account	registration	et	Konto
 account %1 record could not be found, report to site administrator	registration	et	Kontot %1 ei leitud, raporteeri lehe administraatorile
+account groups	registration	et	Konto rühmad
 account password retrieval	registration	et	Konto parooli taastamine
+account primary group	registration	et	Konto esmane grupp
 account registration	registration	et	Konto registreerimine
 activate account	admin	et	Aktiveeri konto
 address	registration	et	Aadress
+address line 2	registration	et	Aadressi rida 2
+addressbook the contacts should be saved to before they are confirmed	registration	et	Aadressiraamat, kuhu kontaktid tuleks salvestada enne nende kinnitamist
 an error occured while updating your password. please contact the site administrator.	registration	et	Viga juhtus parooli uuendamisel. Palun kontakteeru lehe administraatoriga.
+an error occured. please contact our technical support and let them know.	registration	et	Tekkis viga. Palun võtke ühendust tehnilise toega.
 an error occured. please remove your cookies and try again.	registration	et	Viga juhtus. Palun eemalda küpsised ja proovi uuesti.
 an unknown error occured. <a href="%1">please try registering again.</a>	registration	et	Tundmatu viga juhtus. <a href="%1">Palun proovi uuesti registreeruda.</a>
 anonymous password	admin	et	Anonüümse kasutaja parool
 anonymous user	registration	et	Anonymous kasutaja
+anonymous user needs access to registration application	registration	et	Anonüümne kasutaja vajab juurdepääsu registreerimisrakendusele
+ask user	registration	et	Küsi kasutajalt
 body of confirmation mail	registration	et	Kinnituskirja sisu
 canceled	registration	et	Tühistatud
+change password for user	registration	et	Muuda kasutaja parooli
+choose your organization	registration	et	Valige oma organisatsioon
 city	registration	et	Linn
 confirm	registration	et	kinnita
+confirm registration	registration	et	Registreerimise kinnitamine
 confirmation message sent	registration	et	Saadetud kinnitussõnum
+confirmed addressbook.	registration	et	Kinnitatud aadressiraamat
+custom etemplate for the contactform	registration	et	Kontaktvormi kohandatud eTemplate
 days until trial accounts expire	admin	et	Mitme päevapärast ajutised kontod kaotavad kehtivuse
-display terms of service?	admin	et	Näita Kasutustingimusi
-email address	registration	et	email aadress
-enable registration?	admin	et	Luba registreerimine ?
+do not send account registration email (manual processing by admin)	admin	et	Ära saada konto registreerimise e-kirja (manuaalne töötlemine administraatori poolt)
+email address	registration	et	Email aadress
+enable registration	registration	et	Luba registreerimine
+enable registration?	admin	et	Luba registreerimine?
+enter password	registration	et	Sisestage parool
 enter your new password	registration	et	Sisesta oma uus parool
 expires	registration	et	Aegub
 fax	registration	et	Faks
 global options	admin	et	Globaalsed omadused
+go back to login	registration	et	Tagasi sisselogimise juurde
+home phone	registration	et	Kodutelefon
 hours	registration	et	tundi
+how long to confirm before registration expires? (hours)	registration	et	How long to confirm before registration expires? (hours)
 http password	admin	et	HTTP Parool
 http username	admin	et	HTTP Kasutajanimi
 i have read the terms and conditions and agree by them.	registration	et	Lugesin kasutus eeskrju ja nõustun nendega.
 if you did not request this account, simply ignore this message.	registration	et	Kui sa ei küsinud seda kontot, lihtsalt ignoreeri seda teadet.
 if you did not request this change, simply ignore this message.	registration	et	Kui sa ei küsinud seda muustust, lihtsalt ignoreeri seda teadet.
 immediately	admin	et	Koheselt
+internet	registration	et	Internet
 ip	registration	et	IP
 lost login id	login	et	Kaotasid logimise id
 lost password	login	et	Kaotasid parooli
-lost password link at login screen?	admin	et	Kaotasid parooli link sisselogimise aknas?
-lost user id link at login screen?	admin	et	Kaotasid kasutajanime link sisselogimise aknas?
-not a user yet? register now	login	et	Pole veel kasutaja? Registreeru siit
+not a user yet? register now	login	et	Pole veel kasutaja? Registreeru siit.
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	et	On-line registreerumine pole aktiveeritud. Saamaks rohkem infot kontakteeru lehe administraatoriga.
 please contact the site administrator.	registration	et	Palun kontakteeru lehe administraatoriga.
 problem sending email:	registration	et	Probleem Emaili Saatmisel:
 re-enter password	registration	et	Korda parooli
 re-enter your password	registration	et	Korda oma parooli
-register	common	et	registreeru
-register link at login screen?	admin	et	Registreerumise link login aknas?
-registered	registration	et	registreeritud
+register	common	et	Registreeru
+register link at login screen	registration	et	Registreerimise link sisselogimisekraanil
+register link at login screen?	admin	et	Registreerimise link sisselogimisekraanil
+registered	registration	et	Registreeritud
 registration	common	et	Registreerimine
+registration complete	registration	et	Registreerimine lõpetatud
+registration expires after	registration	et	Registreerimine lõpeb pärast
 registration fields	registration	et	Registreerimise väljad
 registration pending	registration	et	Registreerimine pooleli
 registration settings	admin	et	Registreerimise setingud
 remove	registration	et	Eemalda
+repeat	registration	et	Kordus
 required	registration	et	Nõutav
 required fields *	registration	et	kohustuslikud väljad *
 response	registration	et	Vastus
+select multiple to let the user choose	registration	et	Valige mitu, et kasutaja saaks valida
 send email	admin	et	Saada Email
 sorry, that username is already taken.	registration	et	Vabandust, kasutajanimi juba võetud.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	et	Vabandust; meil on probleem sinu konto aktiveerimisel. Pane tähele, et link mis saadeti sinu e-mail on aktiivne ainult kahe tunnijooksul. Kui sa arvad see aeg oli aegunud, proovi uuesti. Teistel juhtudel palun kontakteeru lehe administraatoriga.
@@ -63,12 +89,15 @@ subject of confirmation mail	registration	et	Kinnituskirja teema
 terms of service	registration	et	Kasutus Eeskirjad
 terms of service text	admin	et	Kasutus Eeskirjad tekst
 text	registration	et	Tekst
+the anonymous user has probably no add rights for this addressbook.	registration	et	Anonüümsel kasutajal ei ole tõenäoliselt selle aadressiraamatu lisamise õigusi.
 the two passwords are not the same	registration	et	Kaks parooli ei ühti
+there was an error saving your data :-(	registration	et	Teie andmete salvestamisel tekkis viga.
+unable to process confirmation.	registration	et	Kinnitust ei ole võimalik töödelda.
 unable to send mail, contact your administrator	registration	et	Ei saa maili saata, kontakteeru administraatoriga.
 unknown first name	registration	et	Tundmatu eesnimi
 unknown last name	registration	et	Tundmatu perekonnanimi
 update/add	registration	et	Uuenda/ Lisa
-use html	admin	et	kasuta HTML
+use html	admin	et	Kasuta HTML
 use trial accounts?	admin	et	Kasuta ajutisi kontosid?
 username is	admin	et	Kasutajanimi on
 wrong - try again ...	registration	et	Vale - proovi uuesti ...
@@ -82,7 +111,8 @@ you must enter an email account	registration	et	Pead sisestama email aadressi
 you must enter an email address	registration	et	Pead sisestama email aadressi
 you must fill in all of the required fields	registration	et	Pead täitma kõik nõutavad väljad
 your account is now active!	registration	et	Sinu konto on nüüd aktiivne!
-your login is not available. time is expired	registration	et	Sinu logimine pole saadaval. Aeg sai läbi
+your login is not available. time is expired	registration	et	Sinu logimine pole saadaval. Aeg sai läbi.
 your password was changed.	registration	et	Sinu parool on muudetud.
 your registration code is missing or incorrect.	registration	et	Sinu registreerimise kood on puudu või vale.
+zip code	registration	et	Postiindeks
 zip/postal	registration	et	Indeks
