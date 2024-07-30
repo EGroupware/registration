@@ -6,7 +6,7 @@
 <br>please contact the site administrator.	registration	de	<br>Bitte nehmen sie Kontakt mit dem Administrator auf.
 [unknown first name]	registration	de	[Vornamen unbekannt]
 [unknown last name]	registration	de	[Nachnamen unbekannt]
-abuse reduction - please wait %1 seconds and try again.	registration	de	Missbrauchs Verdacht erkannt - Bitte warten Sie %1 Sekunden und versuchen Sie es dann nochmal.
+abuse reduction - please wait %1 seconds and try again.	registration	de	Missbrauchs Verdacht erkannt - Bitte warten Sie %1 Sekunden und versuchen Sie es dann noch einmal.
 account	registration	de	Benutzer
 account %1 record could not be found, report to site administrator	registration	de	Es konnte kein Eintrag: Account: %1 gefunden werden. Bitte benachrichtigen sie den Administrator
 account groups	registration	de	Gruppen für den Benutzer
@@ -16,8 +16,7 @@ account registration	registration	de	Benutzerkonto registrieren
 activate account	admin	de	Benutzerkonto aktivieren
 address	registration	de	Adresse
 address line 2	registration	de	Adresszeile 2
-addressbook the contacts should be saved to before they are confirmed	registration	de	Die Adresseinträge sollten gespeichert werden, bevor Sie bestätigt werden.
-addressbook the contacts should be saved to before they are confirmed.	registration	de	Die Adresseinträge sollten gespeichert werden, bevor Sie bestätigt werden.
+addressbook the contacts should be saved to before they are confirmed	registration	de	Adressbuch, in dem die Kontakte gespeichert werden sollen, bevor sie bestätigt werden
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	de	Nachdem Sie die E-Mail-Adresse eingegeben haben wird der Benutzer mit der entsprechenden Adresse benachrichtigt werden.
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	de	Nachdem Sie einen Benutzernamen eingegeben haben, werden weitere Informationen zum Ändern Ihres Passworts an die registrierte E-Mail-Adresse gesendet.
 an error occured while updating your password. please contact the site administrator.	registration	de	Es ist ein Fehler während der Aktualisierung Ihres Passworts aufgetreten. Benachrichtigen Sie bitte den Administrator.
@@ -30,29 +29,28 @@ anonymous user needs access to registration application	registration	de	Der Anon
 ask user	registration	de	Benutzer fragen
 body of confirmation mail	registration	de	Nachricht der Bestätigungsmail
 business phone	registration	de	Tel. geschäftl.
-canceled	registration	de	Abgesagt
+canceled	registration	de	Abgebrochen
 change password for user	registration	de	Password für Benutzer ändern
 choose your organization	registration	de	Wählen Sie Ihre Organisation
 city	registration	de	Stadt
 confirm	registration	de	Bestätigen
 confirm registration	registration	de	Registrierung bestätigen
-confirmation email for %1 expires %2 link: %3	registration	de	Dies ist die Bestätigungsmail für %1.\n\nBitte klicken Sie auf den folgenden Link, um die Registrierung abzuschließen:\n%3\nDieser Link läuft ab %2.
+confirmation email for %1 expires %2 link: %3	registration	de	Dies ist die Bestätigungsmail für %1.<br><br>Bitte klicken Sie auf den folgenden Link, um die Registrierung abzuschließen:<br>%3<br>Dieser Link läuft ab %2.
 confirmation message sent	registration	de	Bestätigungsmail gesendet
 confirmed addressbook.	registration	de	Adressbuch Eintrag bestätigt
 contact fields to show	registration	de	Kontaktfelder die angezeigt werden sollen
 convert user login id to 7 bit string	admin	de	Konvertiere Benutzer Login ID zu einem 7 Bit String
 custom etemplate for the contactform	registration	de	Eigenes eTemplate für das Kontaktformular
-days until trial accounts expire	admin	de	Nach wie vielen Tagen verfällt der Testzugang?
+days until trial accounts expire	admin	de	Nach wie vielen Tagen verfällt der Testzugang
 department	registration	de	Abteilung
-display terms of service?	admin	de	Nutzungsbedingungen anzeigen
-do not send account registration email (manual processing by admin)	admin	de	Keine Registrierung per E-Mail (Administrator bestätigt die Registrierung manuell).
+do not send account registration email (manual processing by admin)	admin	de	Keine Registrierung per E-Mail (Administrator bestätigt die Registrierung manuell)
 email address	registration	de	E-Mail-Adresse
-email address to display for support	admin	de	E-Mail-Adresse welche für den Support benutzt werden soll
-email address to send notices from	admin	de	E-Mail-Adresse an welche Informationen gesendet werden sollen
+email address to display for support	admin	de	E-Mail-Adresse, welche für den Support benutzt werden soll
+email address to send notices from	admin	de	E-Mail-Adresse, an welche Informationen gesendet werden sollen
 enable registration	registration	de	Registrierung einschalten
 enable registration?	admin	de	Registrierung einschalten?
 enter password	registration	de	Passwort eintragen
-enter your new password	registration	de	Bitte geben Sie das neue Passwort ein.
+enter your new password	registration	de	Bitte geben Sie das neue Passwort ein
 expires	registration	de	Abgelaufen
 fax	registration	de	Telefax
 global options	admin	de	Globale Optionen
@@ -72,21 +70,19 @@ login id	registration	de	Login ID
 login page	registration	de	Login Seite
 lost login id	login	de	Benutzername vergessen
 lost password	login	de	Passwort vergessen
-lost password link	registration	de	Linkt zur Passwort-Neuvergabe
-lost password link at login screen?	admin	de	Link für Passwort vergessen auf der Login-Seite anzeigen?
+lost password link	registration	de	Link zur Passwort-Neuvergabe
 lost user account retrieval	registration	de	Vergessene Benutzerdaten wiedergewinnen
 lost user id	registration	de	Benutzername vergessen
-lost user id link at login screen?	admin	de	Link für Benutzername vergessen auf Login-Seite anzeigen?
 lost_user_id_message username: %1	registration	de	Benutzer Konten, die mit dieser E-Mail-Adresse verbunden sind: %1
 missing registration	registration	de	Fehlende Registrierung
 mobile phone	registration	de	Mobiltelefon
 name sender to send notices from	admin	de	Name des Senders, um die Benachrichtigung zu senden
-not a user yet? register now	login	de	Noch kein Benutzer? Registrieren Sie sich jetzt
-on-line registration is not activated. please contact the site administrator for more information about registration.	registration	de	Die Online-Registrierung ist nicht aktiviert. Bitte kontaktieren Sie den Administrator der Seite für weitere Informationen
+not a user yet? register now	login	de	Noch kein Benutzer? Registrieren Sie sich jetzt.
+on-line registration is not activated. please contact the site administrator for more information about registration.	registration	de	Die Online-Registrierung ist nicht aktiviert. Bitte kontaktieren Sie den Administrator der Seite für weitere Informationen.
 order	registration	de	Sortierung
 please contact the site administrator.	registration	de	Bitte kontaktieren Sie den Administrator.
 prefix	registration	de	Anrede
-problem sending email:	registration	de	Beim Versenden der E-Mail ist ein Fehler aufgetreten
+problem sending email:	registration	de	Beim Versenden der E-Mail ist ein Fehler aufgetreten:
 re-enter password	registration	de	Passwort nochmals eingeben
 re-enter your password	registration	de	Bitte geben Sie Ihr Passwort nochmals ein
 register	common	de	Registrieren
@@ -108,11 +104,11 @@ required fields *	registration	de	Benötigte Felder *
 response	registration	de	Antwort
 select multiple to let the user choose	registration	de	Mehrere auswählen, damit Benutzer wählen kann
 send email	admin	de	E-Mail senden
-sorry, that username is already taken.	registration	de	Dieser Benutzername ist schon vergeben
+sorry, that username is already taken.	registration	de	Dieser Benutzername ist schon vergeben.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	de	Entschuldigen Sie, wir haben Probleme Ihr Benutzerkonto zu aktivieren. Bitte beachten Sie, dass die per Mail gesendeten Links nur zwei Stunden gültig sind. Wenn diese Zeit abgelaufen war, versuchen Sie es einfach nochmal. Wenn nicht kontaktieren Sie bitte den Administrator.
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	de	Entschuldigung, aber wir haben eine Problem Ihre Informationen zu bekommen, die nötig sind, um Ihr Passwort zu ändern. Bitte beachten Sie das der Link den Sie via E-Mail erhalten haben nur 2 Stunden gültig ist. Wenn Sie denken, das Die Zeit abgelaufen ist, versuchen Sie es erneut. Andernfalls benachrichtigen Sie den Administrator.
 street	registration	de	Straße
-subject for confirmation email title: %1	registration	de	%1 Bestätigung per  E-Mail
+subject for confirmation email title: %1	registration	de	%1 Bestätigung per E-Mail
 subject of confirmation mail	registration	de	Betreff der Bestätigungsmail
 terms of service	registration	de	Nutzungsbedingungen
 terms of service text	admin	de	Inhalt der Nutzungsbedingungen
@@ -121,7 +117,7 @@ the anonymous user has probably no add rights for this addressbook.	registration
 the anonymous user needs add rights for it!	registration	de	Der Anonymous Benutzer benötigt Hinzufügen Rechte dafür!
 the two passwords are not the same	registration	de	Die Passworte sind nicht gleich
 there was an error saving your data :-(	registration	de	Beim Speichern Ihrer Daten ist ein Fehler aufgetreten.
-this module displays a registration form, and sends a confirmation email.	registration	de	Dieses Modul erzeugt ein Registrierungsformular  und sendet eine Bestätigungsmail.
+this module displays a registration form, and sends a confirmation email.	registration	de	Dieses Modul erzeugt ein Registrierungsformular und sendet eine Bestätigungsmail.
 type	registration	de	Typ
 unable to process confirmation.	registration	de	Die Registrierung konnte nicht fortgeführt werden.
 unable to send mail, contact your administrator	registration	de	Es war nicht möglich eine E-Mail zu senden. Bitte nehmen sie Kontakt mit dem Administrator auf.
@@ -141,7 +137,7 @@ what to use as username	registration	de	Was soll als Benutzername verwendet werd
 work phone	registration	de	Tel dienstl.
 wrong - try again ...	registration	de	Falsch - nochmal versuchen ...
 wrong session	registration	de	Falsche Session
-you can go back to the login page	registration	de	Sie können zurück zur Anmelde Seite gehen.
+you can go back to the login page	registration	de	Sie können zurück zur Anmelde Seite gehen
 you don't have delete permission, address will be left if you manually register or cancel.	registration	de	Sie haben keine Löschberechtigung. Die Adresse bleibt erhalten, wenn Sie sich manuell anmelden oder abmelden.
 you don\'t have delete permission, address will be left if you manually register or cancel.	registration	de	Sie haben keine Löschberechtigung. Die Adresse bleibt erhalten, wenn Sie sich manuell anmelden oder abmelden.
 you have entered an invalid birthday	registration	de	Sie haben einen ungültigen Geburtstag eingegeben

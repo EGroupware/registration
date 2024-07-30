@@ -1,4 +1,10 @@
+%1 needs permission to delete - address remains.	registration	da	%1 har brug for tilladelse til at slette - adressen forbliver.
+%s days	registration	da	%s dage
+%s hours	registration	da	%s timer
+abuse reduction - please wait %1 seconds and try again.	registration	da	Reducering af misbrug - vent venligst %1 sekunder og prøv igen.
+account groups	registration	da	Kontogrupper
 account password retrieval	registration	da	Glemt adgangskode
+account primary group	registration	da	Kontoens primære gruppe
 account registration	registration	da	Konto registrering
 activate account	admin	da	Aktivere konto
 address	registration	da	Adresse
@@ -7,73 +13,103 @@ after you enter your username, instructions to change your password will be sent
 an error occured. please contact our technical support and let them know.	registration	da	Der skete en fejl. Underret venligst vores tekniske support.
 anonymous password	admin	da	Anonym adgangskode
 anonymous user	registration	da	Anonym bruger
+ask user	registration	da	Spørg brugeren
 body of confirmation mail	registration	da	Brødtekst i bekræftelsesmail
 business phone	registration	da	Firma Telefonnummer
 canceled	registration	da	Annulleret
 change password for user	registration	da	Ændre adgangskode for bruger
+choose your organization	registration	da	Vælg din organisation
 city	registration	da	By
 confirm	registration	da	Bekræft
+confirm registration	registration	da	Bekræft registrering
 confirmation message sent	registration	da	Bekræftelsesmeddelelse sendt
+contact fields to show	registration	da	Kontaktfelter, der skal vises
 days until trial accounts expire	admin	da	Dage før prøvekonto udløber
 department	registration	da	Afdeling
-display terms of service?	admin	da	Vis betingelser?
-email address	registration	da	e-mail adresse
+email address	registration	da	E-mail adresse
 email address to display for support	admin	da	E-mail adresse som vises for support
 email address to send notices from	admin	da	E-mail adresse som bruges til at sende system beskeder fra
+enable registration	registration	da	Aktivér registrering
 enable registration?	admin	da	Aktivere registrering
+enter password	registration	da	Indtast adgangskode
 enter your new password	registration	da	Indtast din nye adgangskode
 expires	registration	da	Udløber
 fax	registration	da	Fax
+global options	admin	da	Globale indstillinger
+go back to login	registration	da	Gå tilbage til login
 home phone	registration	da	Hjem telefon
 hours	registration	da	timer
+how long to confirm before registration expires? (hours)	registration	da	Hvor længe skal jeg bekræfte, før registreringen udløber? (timer)
 http password	admin	da	HTTP adgangskode
 http username	admin	da	HTTP brugernavn
 i have read the terms and conditions and agree by them.	registration	da	Jeg har læst betingelsene og acceptere dem.
 if you did not request this account, simply ignore this message.	registration	da	Hvis du ikke har anmodet om denne konto, så ignorere denne meddelse.
 if you did not request this change, simply ignore this message.	registration	da	Hvis du ikke har anmodet om denne ændring, så ignorere denne meddelse.
 immediately	admin	da	Straks
+internet	registration	da	Internet
 ip	registration	da	IP
+lost password	login	da	Glemt adgangskode
+lost user id	registration	da	Mistet bruger-ID
 mobile phone	registration	da	Mobiltelefonnummer
-not a user yet? register now	login	da	Ikke en bruger endnu? Registrere nu
+not a user yet? register now	login	da	Ikke en bruger endnu? Registrere nu.
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	da	Online registrering er ikke aktiveret. Kontakt venligst systemadministratoren for mere information om registrering.
 order	registration	da	Rækkefølge
 prefix	registration	da	Prefix
 re-enter password	registration	da	Genindtast adgangskode
 re-enter your password	registration	da	Genindtast din adgangskode
-register link at login screen?	admin	da	Link til registrering på login siden?
+register link at login screen	registration	da	Registreringslink på login-skærmen
+register link at login screen?	admin	da	Link til registrering på login siden
 registration	common	da	Registrering
+registration complete	registration	da	Registrering fuldført
+registration expires after	registration	da	Registreringen udløber efter
 registration fields	registration	da	Registreringsfelter
 registration pending	registration	da	Afventende registrering
 registration settings	admin	da	Registrerings indstillinger
 remove	registration	da	Fjern
+repeat	registration	da	Gentag
 report all problems and abuse to	registration	da	Reportere alle problemer og misbrug til
 required	registration	da	Krævet
 required fields *	registration	da	Påkrævede felter *.
+select multiple to let the user choose	registration	da	Vælg flere for at lade brugeren vælge
 send email	admin	da	Send e-mail
 sorry, that username is already taken.	registration	da	Beklager, det brugernavn er allerede brugt.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	da	Beklager, vi har problemer med at aktivere din konto. Vær opmærksom på at linkene sendt via e-mails kun er gyldige i 2 timer. Hvis du tror tiden er udløbet, så prøv igen. Eller, kontakt venligst systemadministratoren.
 street	registration	da	Vej navn
+subject for confirmation email title: %1	registration	da	%1 bekræftelses-e-mail
 subject of confirmation mail	registration	da	Emne for bekræftelsesmail
 terms of service	registration	da	Betingelser
 terms of service text	admin	da	Betingelses tekst
 text	registration	da	Tekst
 the two passwords are not the same	registration	da	Adgangskoderne du indtastede er ikke ens
 type	registration	da	Type
+unknown first name	registration	da	Ukendt fornavn
+unknown last name	registration	da	Ukendt efternavn
 update/add	registration	da	Opdatere/Tilføj
-use html	admin	da	brug HTML
+use html	admin	da	Brug HTML
 use trial accounts?	admin	da	Brug prøvekontoer
 username is	admin	da	Brugernavnet er
 values (for dropdown only; comma separated)	registration	da	Værdier (til Dropdown boks kun; Komma separeret)
+verification	registration	da	Bekræftelse
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	da	Vi har send en e-amil med instruktioner som at ændre din adgangskode. Du bør åbne linket i e-mail inden for 2 timer. Hvis du ikke gør det, vil du blive nød til at bruge gemt adgangskode igen.
+what to use as username	registration	da	Hvad skal du bruge som brugernavn
 work phone	registration	da	Arbejds telefon
+wrong - try again ...	registration	da	Forkert - prøv igen ...
 wrong session	registration	da	Forkert session
 you can go back to the login page	registration	da	Du kan gå tilbage til login siden.
+you don't have delete permission, address will be left if you manually register or cancel.	registration	da	Du har ikke tilladelse til at slette, adressen vil blive efterladt, hvis du registrerer eller annullerer manuelt.
+you don\'t have delete permission, address will be left if you manually register or cancel.	registration	da	Du har ikke tilladelse til at slette, adressen vil blive efterladt, hvis du registrerer eller annullerer manuelt.
 you have entered an invalid birthday	registration	da	Du har indtastet en ugyldig føselsdag
 you have entered an invalid email address	registration	da	Du har indtastet en ugyldig e-mail adresse
 you must enter a password	registration	da	Du skal indtaste en adgangskode
 you must enter a username	registration	da	Du skal indtaste et brugernavn
+you must enter an email account	registration	da	Du skal indtaste en e-mailkonto
+you must enter an email address	registration	da	You must enter an email address
 you must fill in all of the required fields	registration	da	Du skal udfylde alle krævede felter
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	da	Du har anmodet om at ændre din adgangskode. Brug venligst følgende link for at gøre det. Dette link virker kun i 2 timer. Efter den tid skal du igen anmode om at ændre adgangskoden igen.
+you specified a value for %1 that is not a choice	registration	da	Du har angivet en værdi for %1, som ikke er et valg
+your account is now active!	registration	da	Din konto er nu aktiv!
+your login is not available. time is expired	registration	da	Dit login er ikke tilgængeligt. Tiden er udløbet.
 your password was changed.	registration	da	Din adgangskode er ændret.
+your registration code is missing or incorrect.	registration	da	Din registreringskode mangler eller er forkert.
 zip code	registration	da	Postnummer
 zip/postal	registration	da	Postnummer

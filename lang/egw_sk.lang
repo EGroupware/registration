@@ -3,7 +3,7 @@
 %s hours	registration	sk	%s hodín
 %s please calculate the result	registration	sk	%s prosím vypočitajte výsledok
 13: error occured	registration	sk	13: nastala chyba
-<br>please contact the site administrator.	registration	sk	<br> Prosím kontaktujte správcu tejto stránky.
+<br>please contact the site administrator.	registration	sk	<br>Prosím kontaktujte správcu tejto stránky.
 [unknown first name]	registration	sk	[neznáme meno]
 [unknown last name]	registration	sk	[neznáme priezvisko]
 abuse reduction - please wait %1 seconds and try again.	registration	sk	Ochrana pred zneužitím - prosím počkajte %1 sekúnd a skúste znovu.
@@ -17,7 +17,6 @@ activate account	admin	sk	Aktivácia účtu
 address	registration	sk	Adresa
 address line 2	registration	sk	Adresa riadok 2
 addressbook the contacts should be saved to before they are confirmed	registration	sk	Adresár, do ktorého sa majú uložiť kontakty pred potvrdením
-addressbook the contacts should be saved to before they are confirmed.	registration	sk	Adresár, do ktorého sa majú uložiť kontakty pred potvrdením.
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	sk	Keď zadáte svoju E-mailovú adresy, používateľské účty súvisiace s touto adresou sa budú posielať na túto adresu.
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	sk	Keď zadáte svoje používateľské meno, pokyny k zmene Vášho hesla budú odoslané na E-mailovú adresu, ktorú ste uviedli pri registrácii.
 an error occured while updating your password. please contact the site administrator.	registration	sk	Počas aktualizácie vášho hesla nastala chyba. Prosím, kontaktujte správcu stránky.
@@ -44,7 +43,6 @@ convert user login id to 7 bit string	admin	sk	Konvertovať používateľské pr
 custom etemplate for the contactform	registration	sk	Vlastná eŠablóna pre kontaktný formulár
 days until trial accounts expire	admin	sk	Dní do vypršania skúšobného účtu
 department	registration	sk	Oddelenie
-display terms of service?	admin	sk	Zobraziť podmienky používania?
 do not send account registration email (manual processing by admin)	admin	sk	Neposielať email o registrácii účtu (manuálne spracovanie správcom)
 email address	registration	sk	E-mailová adresa
 email address to display for support	admin	sk	E-mailová adresa zobrazená podpornému tímu
@@ -59,7 +57,7 @@ global options	admin	sk	Globálne možnosti
 go back to login	registration	sk	Naspäť na prihlásenie
 home phone	registration	sk	Telefón (domov)
 hours	registration	sk	Hodín
-how long to confirm before registration expires? (hours)	registration	sk	Po koľko hodín umožniť potvrdenie pred vypršaním registrácie?
+how long to confirm before registration expires? (hours)	registration	sk	Ako dlho trvá potvrdenie pred vypršaním platnosti registrácie? (hodín)
 http password	admin	sk	HTTP heslo
 http username	admin	sk	HTTP používateľské meno
 i have read the terms and conditions and agree by them.	registration	sk	Prečítal/a som si podmienky a súhlasím s nimi.
@@ -73,15 +71,13 @@ login page	registration	sk	Prihlasovacia stránka
 lost login id	login	sk	Stratené prihlasovacie ID
 lost password	login	sk	Stratené heslo
 lost password link	registration	sk	Odkaz pre stratené heslo
-lost password link at login screen?	admin	sk	Stratený odkaz hesla na prihlasovacej stránke?
 lost user account retrieval	registration	sk	Stratené obnovenie hesla účtu
 lost user id	registration	sk	Stratené používateľské ID
-lost user id link at login screen?	admin	sk	Stratený odkaz používateľského ID na prihlasovacej stránke?
 lost_user_id_message username: %1	registration	sk	Používateľské účty spojené s týmto poštovým účtom: %1
 missing registration	registration	sk	Chýba registrácia
 mobile phone	registration	sk	Mobilný telefón
 name sender to send notices from	admin	sk	Meno odosielateľa, od ktorého majú pochádzať pripomienky
-not a user yet? register now	login	sk	Ešte nie ste používateľom? Zaregistrujte sa
+not a user yet? register now	login	sk	Ešte nie ste používateľom? Zaregistrujte sa.
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	sk	On-line registrácia nie je aktivovaná. Prosím kontaktujte správcu stránky ohľadom informácií o registrácii.
 order	registration	sk	Poradie
 please contact the site administrator.	registration	sk	Prosím, kontaktujte správcu tejto stránky.
@@ -89,9 +85,9 @@ prefix	registration	sk	Predpona
 problem sending email:	registration	sk	Problém pri odosielaní E-mailovej správy:
 re-enter password	registration	sk	Zadajte heslo znovu
 re-enter your password	registration	sk	Zadajte heslo znovu
-register	common	sk	registrovať
+register	common	sk	Registrovať
 register link at login screen	registration	sk	Odkaz na registráciu na prihlasovacej stránke
-register link at login screen?	admin	sk	Odkaz na registráciu na prihlasovacej stránke?
+register link at login screen?	admin	sk	Odkaz na registráciu na prihlasovacej stránke
 registered	registration	sk	Registrovaný
 registered accounts expire	registration	sk	Registrované účty vypršia
 registration	common	sk	Registrácia
@@ -112,16 +108,16 @@ sorry, that username is already taken.	registration	sk	Ľutujem, takéto použí
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	sk	Ľutujem, nastali problémy s aktiváciou Vášho účtu. Upozornenie: odkazy odoslané E-mailom platia iba počas 2 hodín. Ak si myslíte, že tento čas už vypršal, skúste to znovu. V opačnom prípade prosím kontaktujte správcu stránky.
 sorry, we are having a problem retrieving the information needed for changing your password. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	sk	Je nám ľúto, máme problémy so získavaním informácií, ktoré sú potrebné k zmene vášho hesla. Upozornenie: odkaz, ktorý ste obdržali e-mailom, platí iba dve hodiny. Ak si myslíte, že tento čas už uplynul, jednoducho to skúste znovu. V opačnom prípade kontaktujte správcu.
 street	registration	sk	Ulica
-subject for confirmation email title: %1	registration	sk	%1 potvrdzovací email
+subject for confirmation email title: %1	registration	sk	%1 potvrdzovací e-mailu
 subject of confirmation mail	registration	sk	Predmet potvrdzujúceho e-mailu
 terms of service	registration	sk	Podmienky používania
 terms of service text	admin	sk	Text podmienok používania
 text	registration	sk	Text
-the anonymous user has probably no add rights for this addressbook.	registration	sk	Anonymný používateľ pravdepodobne nemá práva na tento adresár
+the anonymous user has probably no add rights for this addressbook.	registration	sk	Anonymný používateľ pravdepodobne nemá práva na tento adresár.
 the anonymous user needs add rights for it!	registration	sk	Anonymný používateľ potrebuje na to oprávnenia!
 the two passwords are not the same	registration	sk	Tieto dve heslá sa odlišujú
 there was an error saving your data :-(	registration	sk	Pri ukladaní vašich údajov nastala chyba.
-this module displays a registration form, and sends a confirmation email.	registration	sk	Tento modul zobrazuje registračný formulár a posiela potvrdzovací email.
+this module displays a registration form, and sends a confirmation email.	registration	sk	Tento modul zobrazuje registračný formulár a posiela potvrdzovací e-mailu.
 type	registration	sk	Typ
 unable to process confirmation.	registration	sk	Nepodarilo sa spracovať potvrdenie.
 unable to send mail, contact your administrator	registration	sk	Nepodarilo sa odoslať správu, kontaktujte svojho správcu.
@@ -129,16 +125,17 @@ unknown first name	registration	sk	Neznáme meno
 unknown last name	registration	sk	Neznáme priezvisko
 update/add	registration	sk	Aktualizovať/Pridať
 use email address	registration	sk	Použiť emailovú adresu
-use html	admin	sk	použiť HTML
+use html	admin	sk	Použiť HTML
 use trial accounts?	admin	sk	Použiť skúšobné účty?
 username is	admin	sk	Používateľské meno je
-values (for dropdown only; comma separated)	registration	sk	Hodnoty (Iba pre rozbaľovacie; oddelené čiarkou)
+values 'for dropdown': comma separated), for 'dropdown from table': table,valuefield,displayfield	registration	sk	Hodnoty „pre drop down“: oddelené čiarkou), Pre „Drop down from table“: tabuľka, pole hodnoty, pole zobrazenia
+values (for dropdown only; comma separated)	registration	sk	Hodnoty (Iba pre rozbaľovacie; oddelené čiarkou).
 verification	registration	sk	Overenie
 we have sent a mail to your email account: %1 with your lost user ids.	registration	sk	Na vašu e-mailovú adresu %1 sme poslali správu s vaším strateným ID.
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	sk	Poslali sme E-mail s pokynmi ohľadom zmeny Vášho hesla. Prosím použite priložený odkaz do 2 hodín. Ak to neurobíte, budete musieť znovu navštíviť stránku pre stratené heslá.
 what to use as username	registration	sk	Čo sa má použiť ako používateľské meno
 work phone	registration	sk	Telefón (práca)
-wrong - try again ...	registration	sk	Chyba - skúste znovu...
+wrong - try again ...	registration	sk	Chyba - skúste znovu ...
 wrong session	registration	sk	Nesprávna relácia
 you can go back to the login page	registration	sk	Môžete sa vrátiť na prihlasovaciu stránku
 you don't have delete permission, address will be left if you manually register or cancel.	registration	sk	Nemáte oprávnenie na odstránenie. Ak manuálne zaregistrujete alebo zrušíte, adresa bude ponechaná.
@@ -153,7 +150,7 @@ you must fill in all of the required fields	registration	sk	Musíte vyplniť pov
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	sk	Požiadali ste o zmenu hesla. Prosím, použite nižšieuvedený odkaz, ktorý vyprší do 2 hodín. Ak to nespravíte, museli by ste absolvovať procedúru strateného hesla odznovu.
 you specified a value for %1 that is not a choice	registration	sk	Zadali ste pre %1 hodnotu, ktorá nie je povolená
 your account is now active!	registration	sk	Váš účet je odteraz aktívny!
-your login is not available. time is expired	registration	sk	Vaše prihlásenie nie je dostupné. Čas vypršal
+your login is not available. time is expired	registration	sk	Vaše prihlásenie nie je dostupné. Čas vypršal.
 your password was changed.	registration	sk	Vaše heslo bolo zmenené.
 your registration code is missing or incorrect.	registration	sk	Váš registračný kód chýba, alebo je chybný.
 zip code	registration	sk	PSČ

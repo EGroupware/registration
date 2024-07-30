@@ -1,36 +1,51 @@
+%s days	registration	lv	%s dienas
+%s hours	registration	lv	%s stundas
 [unknown first name]	registration	lv	[nezināms vārds]
 [unknown last name]	registration	lv	[nezināms uzvārds]
+abuse reduction - please wait %1 seconds and try again.	registration	lv	Ļaunprātīgas izmantošanas samazināšana - lūdzu, pagaidiet %1 sekundi un mēģiniet vēlreiz.
 address line 2	registration	lv	Adreses 2. rindiņa
 anonymous password	admin	lv	Anonīmā parole
 anonymous user	registration	lv	Nezināmais lietotājs
+anonymous user needs access to registration application	registration	lv	Anonīmam lietotājam nepieciešama piekļuve reģistrācijas lietojumprogrammai
+ask user	registration	lv	Jautāt lietotājam
 body of confirmation mail	registration	lv	Apstiprinājuma vēstules teksts
 business phone	registration	lv	Telefons
 canceled	registration	lv	Atcelts
+change password for user	registration	lv	Mainīt lietotāja paroli
+choose your organization	registration	lv	Izvēlieties savu organizāciju
 city	registration	lv	Pilsēta
 confirm	registration	lv	Apstiprināt
 confirmation message sent	registration	lv	Nosūtītā apstiprinājuma ziņa
+contact fields to show	registration	lv	Rādāmie kontaktu lauki
+days until trial accounts expire	admin	lv	Dienas līdz izmēģinājuma konta derīguma termiņa beigām
 department	registration	lv	Nodaļa
-email address	registration	lv	e-pasta adrese
+do not send account registration email (manual processing by admin)	admin	lv	Nesūtīt konta reģistrācijas e-pasta vēstuli (apstrādā administrators manuāli)
+email address	registration	lv	E-pasta adrese
 email address to display for support	admin	lv	E-pasta adrese atbalstam
 email address to send notices from	admin	lv	E-pasta adrese, no kuras sūtīt paziņojumus
+enable registration	registration	lv	Ieslēgt reģistrāciju
 enable registration?	admin	lv	Atļaut reģistrāciju?
+enter password	registration	lv	Ievadiet paroli
 enter your new password	registration	lv	Ievadi jauno paroli
 expires	registration	lv	Beigas
 fax	registration	lv	Fakss
+global options	admin	lv	Vispārējās opcijas
+go back to login	registration	lv	Atgriezties pie pieteikšanās
 home phone	registration	lv	Mājas telefons
-hours	registration	lv	stundas
+hours	registration	lv	Stundas
+how long to confirm before registration expires? (hours)	registration	lv	Cik ilgs laiks nepieciešams apstiprinājumam, pirms beidzas reģistrācijas termiņš? (stundas)
 http password	admin	lv	HTTP parole
 http username	admin	lv	HTTP lietotājvards
 i have read the terms and conditions and agree by them.	registration	lv	Esmu izlasījis nosacījumus un noteikumus un pierītu tiem.
-if you did not request this account, simply ignore this message.	registration	lv	Ja tu šō kontu nepieprasīji, vienkārši ignorē šo vēstuli
-if you did not request this change, simply ignore this message.	registration	lv	Ja tu nepieprasīji izmaiņas, vienkārši ignorē šo vēstuli
+if you did not request this account, simply ignore this message.	registration	lv	Ja tu šō kontu nepieprasīji, vienkārši ignorē šo vēstuli.
+if you did not request this change, simply ignore this message.	registration	lv	Ja tu nepieprasīji izmaiņas, vienkārši ignorē šo vēstuli.
 immediately	admin	lv	Nekavējoties
+internet	registration	lv	Internets
 ip	registration	lv	IP
-lost login id	login	lv	Pazudis pieteikšanās id
+lost login id	login	lv	Pazudis pieteikšanās ID
 lost password	login	lv	Pazaudēta parole
 lost user account retrieval	registration	lv	Pazaudēta lietotāja konta izgūšana
-lost user id	registration	lv	Pazaudēts lietotāja id
-lost user id link at login screen?	admin	lv	Pazaudēta lietotāja id saite pieteikšanās logā?
+lost user id	registration	lv	Pazaudēts lietotāja ID
 mobile phone	registration	lv	Mobīlais tālrunis
 not a user yet? register now	login	lv	Vēl neesi lietotājs? Reģistrēties tagad
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	lv	Tiešsaites reģīstrācija nav aktivizēta. Lūdzu sazinieties ar vietnes administratoru, lai iegūtu vairak informācijas par reģistrāciju
@@ -38,34 +53,48 @@ order	registration	lv	Kārtība
 prefix	registration	lv	Prefiks
 re-enter password	registration	lv	Vēlreiz ievadi paroli
 re-enter your password	registration	lv	Vēlreiz ievadi savu paroli
-register link at login screen?	admin	lv	Reģistrēt saiti pieteikšanās logā?
+register link at login screen	registration	lv	Reģistrācijas saite pieteikšanās ekrānā
+register link at login screen?	admin	lv	Reģistrēt saiti pieteikšanās logā
 registered	registration	lv	reģistrēts
 registration	common	lv	Reģistrācija
+registration complete	registration	lv	Register link at login screen
+registration expires after	registration	lv	Reģistrācija beidzas pēc
 registration fields	registration	lv	Reģistrācijas lauki
 registration pending	registration	lv	Reģistrācija gaida reģistrāciju
 registration settings	admin	lv	Reģistrācijas uzstādījumi
 remove	registration	lv	Pārvietot
+repeat	registration	lv	Atkārtojiet
 report all problems and abuse to	registration	lv	Par visām problēmām un nelegālām izmantošanām ziņot uz
 required	registration	lv	Pieprasīts
 required fields *	registration	lv	Obligātie lauki *
+select multiple to let the user choose	registration	lv	Izvēlieties vairākus, lai lietotājs varētu izvēlēties
 send email	admin	lv	Sūtīt e-pastu
-sorry, that username is already taken.	registration	lv	Atvaino, šis lietotājvārds jau ir aizņēmts
+sorry, that username is already taken.	registration	lv	Atvaino, šis lietotājvārds jau ir aizņēmts.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	lv	Atvaino, mums ir problēmas aktivizējot tavu kontu. Atceries, ka saites, kuras nosūtītas pa e-pastu ir derīgas tikai divas stundas. Ja tu domā, ka laiks ir beidzies, pamēģini vēlreiz.Ja nesanāk, sazinies ar administratoru.
 street	registration	lv	Iela
+subject for confirmation email title: %1	registration	lv	%1 apstiprinājuma e-pasts
 subject of confirmation mail	registration	lv	Apstiprinājuma vēstules temats
 terms of service	registration	lv	Apkalpošanas nosacījumi
 terms of service text	admin	lv	Apkalpošanas nosacījumu teksts
 text	registration	lv	Teksts
+the anonymous user has probably no add rights for this addressbook.	registration	lv	Iespējams, ka anonīmajam lietotājam nav šīs adrešu grāmatas pievienošanas tiesību.
 the two passwords are not the same	registration	lv	Divas paroles nav vienādas
 type	registration	lv	Tips
+unable to process confirmation.	registration	lv	Nav iespējams apstrādāt apstiprinājumu.
 unable to send mail, contact your administrator	registration	lv	Nevar nosūtīt vēstuli, sazinieties ar savu administratoru.
 unknown first name	registration	lv	Nezināms vārds
 unknown last name	registration	lv	Nezināms uzvārds
 update/add	registration	lv	Atjaunināt/pievienot
+use email address	registration	lv	Izmantot e-pasta adresi
 use html	admin	lv	lieto HTML
 use trial accounts?	admin	lv	Lietot izmēginajuma kontus?
 username is	admin	lv	Lietotājvārds ir
 values (for dropdown only; comma separated)	registration	lv	Vērtības (ar komatu atdalītas,tikai nolaižamajam lodziņam)
+we have sent a mail to your email account: %1 with your lost user ids.	registration	lv	Mēs esam nosūtījuši vēstuli uz jūsu e-pasta kontu: %1 ar jūsu pazaudētajiem lietotāja ID.
 work phone	registration	lv	Darba telefons
+you have entered an invalid birthday	registration	lv	Jūs ievadījāt nederīgu dzimšanas dienu
+you have entered an invalid email address	registration	lv	Jūs ievadījāt nederīgu e-pasta adresi
 you must enter a password	registration	lv	Tev jaievada parole
+you must enter a username	registration	lv	Jums jāievada lietotājvārds
+your account is now active!	registration	lv	Jūsu konts tagad ir aktīvs!
 zip code	registration	lv	Pasta inekss
