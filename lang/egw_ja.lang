@@ -1,20 +1,25 @@
 address line 2	registration	ja	町域２
+addressbook the contacts should be saved to before they are confirmed	registration	ja	連絡先を確認する前に保存するアドレス帳
 anonymous user	registration	ja	匿名ユーザ
 body of confirmation mail	registration	ja	確認メール本文
 business phone	registration	ja	電話
+canceled	registration	ja	キャンセル
 city	registration	ja	市区町村
 confirmation message sent	registration	ja	送信された確認メッセージ
+confirmed addressbook.	registration	ja	確認済みのアドレス帳
 department	registration	ja	部署
 enter your new password	registration	ja	新しいパスワードを入力して下さい。
 expires	registration	ja	有効期限
-fax	registration	ja	Fax
-home phone	registration	ja	自宅TEL
+fax	registration	ja	ファックス
+home phone	registration	ja	自宅の電話
 ip	registration	ja	IP
+not a user yet? register now	login	ja	まだユーザーではありませんか？今すぐ登録
 order	registration	ja	順序
 prefix	registration	ja	プレフィックス
 re-enter password	registration	ja	パスワード再入力
 re-enter your password	registration	ja	パスワードを再入力して下さい。
-registered	registration	ja	registered
+register link at login screen	registration	ja	ログイン画面の登録リンク
+registered	registration	ja	登録済み
 registration fields	registration	ja	登録フィールド
 registration pending	registration	ja	登録保留
 registration settings	admin	ja	登録設定
@@ -22,5 +27,6 @@ remove	registration	ja	削除
 required fields *	registration	ja	必須項目
 street	registration	ja	町域
 subject of confirmation mail	registration	ja	確認メールの件名
-work phone	registration	ja	勤務先TEL
+work phone	registration	ja	勤務先電話番号
 zip code	registration	ja	郵便番号
+zip/postal	registration	ja	郵便番号

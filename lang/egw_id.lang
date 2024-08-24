@@ -1,61 +1,93 @@
+%s days	registration	id	%s hari
 %s hours	registration	id	%s jam
 account registration	registration	id	Pendaftaran Akoun
 activate account	admin	id	Aktifkan Akoun
 address	registration	id	Alamat
 address line 2	registration	id	Alamat Baris 2
+addressbook the contacts should be saved to before they are confirmed	registration	id	Buku alamat tempat kontak harus disimpan sebelum dikonfirmasi
 anonymous password	admin	id	Anonymous password
 anonymous user	registration	id	Anonymous user
+ask user	registration	id	Tanya pengguna
 body of confirmation mail	registration	id	Isi surat konfirmasi
 business phone	registration	id	Telepon Bisnis
 canceled	registration	id	Dibatalkan
+change password for user	registration	id	Mengubah kata sandi untuk pengguna
+choose your organization	registration	id	Pilih organisasi Anda
 city	registration	id	Kota
-confirm	registration	id	konfirmasi
+confirm	registration	id	Konfirmasi
+confirm registration	registration	id	Konfirmasi pendaftaran
 confirmation message sent	registration	id	Pesan konfirmasi terkirim
+confirmed addressbook.	registration	id	Buku alamat yang telah dikonfirmasi
 department	registration	id	Departemen
-email address	registration	id	alamat email
-enable registration?	admin	id	Bolehkan Pendaftaran?
+email address	registration	id	Alamat email
+enable registration	registration	id	Aktifkan pendaftaran
+enable registration?	admin	id	Mengaktifkan pendaftaran?
+enter password	registration	id	Masukkan kata sandi
 enter your new password	registration	id	Masukan password baru anda
 expires	registration	id	Kadaluarsa
 fax	registration	id	Fax
 global options	admin	id	Opsi Global
+go back to login	registration	id	Kembali ke login
 home phone	registration	id	Telepon Rumah
-hours	registration	id	jam
+hours	registration	id	Jam
+how long to confirm before registration expires? (hours)	registration	id	Berapa lama untuk mengonfirmasi sebelum pendaftaran kedaluwarsa? (jam)
 http password	admin	id	HTTP Password
 http username	admin	id	HTTP Username
 immediately	admin	id	Segera saja
 internet	registration	id	Internet
 ip	registration	id	IP
-lost login id	login	id	Lupa LoginID
+lost login id	login	id	Lupa Login ID
 lost password	login	id	Lupa password
 mobile phone	registration	id	Telepon Bergerak
+not a user yet? register now	login	id	Belum menjadi pengguna? Daftar sekarang.
 order	registration	id	Urutan
 prefix	registration	id	Sebutan/Gelar
 re-enter password	registration	id	Ulangi masukan Password
 re-enter your password	registration	id	Ulangi masukan Password
-register	common	id	daftar
+register	common	id	Daftar
+register link at login screen	registration	id	Tautan pendaftaran di layar masuk
+register link at login screen?	admin	id	Tautan pendaftaran di layar masuk
 registered	registration	id	terdaftar
 registration	common	id	Pendaftaran
+registration complete	registration	id	Pendaftaran selesai
+registration expires after	registration	id	Pendaftaran akan kedaluwarsa setelah
 registration fields	registration	id	Bidang pendaftaran
 registration pending	registration	id	Pendaftaran tertunda
 registration settings	admin	id	Pengaturan Pendaftaran
 remove	registration	id	Buang
+repeat	registration	id	Ulangi
 required	registration	id	Diperlukan
 required fields *	registration	id	bidang yang wajib diisi *
 response	registration	id	Tanggapan
+select multiple to let the user choose	registration	id	Pilih beberapa untuk membiarkan pengguna memilih
 send email	admin	id	Kirim Email
+sorry, that username is already taken.	registration	id	Maaf, nama pengguna tersebut sudah digunakan.
 street	registration	id	Jalan
 subject of confirmation mail	registration	id	Perihal surat konfirmasi
 text	registration	id	Teks
 the two passwords are not the same	registration	id	Kedua password tidak sama
-there was an error saving your data :-(	registration	id	Ada kesalahan dalam menyimpan data anda :-(
+there was an error saving your data :-(	registration	id	Ada kesalahan dalam menyimpan data anda
 type	registration	id	Tipe
+unknown first name	registration	id	Nama depan tidak diketahui
+unknown last name	registration	id	Nama belakang tidak diketahui
 update/add	registration	id	Perbarui/Tambah
-use html	admin	id	gunakan HTML
+use email address	registration	id	Gunakan alamat email
+use html	admin	id	Gunakan HTML
 username is	admin	id	Nama pengguna yaitu
 verification	registration	id	Pengujian
+what to use as username	registration	id	Apa yang digunakan sebagai nama pengguna
 work phone	registration	id	Telepon Kerja
-wrong - try again ...	registration	id	Keliru - coba lagi...
+wrong - try again ...	registration	id	Keliru - coba lagi ...
 wrong session	registration	id	Wrong session
+you can go back to the login page	registration	id	Anda dapat kembali ke halaman login
+you have entered an invalid birthday	registration	id	Anda telah memasukkan tanggal lahir yang tidak valid
+you have entered an invalid email address	registration	id	Anda memasukkan alamat email yang tidak valid
 you must enter a password	registration	id	Anda harus mengisikan password
+you must enter a username	registration	id	Anda harus memasukkan nama pengguna
+you must enter an email account	registration	id	Anda harus memasukkan akun email
+you must enter an email address	registration	id	Anda harus memasukkan alamat email
+your account is now active!	registration	id	Akun Anda sekarang sudah aktif!
+your password was changed.	registration	id	Kata sandi Anda telah diubah.
+your registration code is missing or incorrect.	registration	id	Kode registrasi Anda hilang atau salah.
 zip code	registration	id	Kodepos
 zip/postal	registration	id	Kodepos

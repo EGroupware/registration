@@ -1,7 +1,17 @@
+%s days	registration	lt	%s dienų
+%s hours	registration	lt	%s valandų
+addressbook the contacts should be saved to before they are confirmed	registration	lt	Adresinė, į kurią adresatai turėtų būti įrašyti prieš juos patvirtinant
 body of confirmation mail	registration	lt	Patvirtinimo laiško tekstas
+canceled	registration	lt	Atšaukti
 confirmation message sent	registration	lt	Išsiųstas patvirtinimo pranešimas
+confirmed addressbook.	registration	lt	Patvirtinta adresų knygelė
+enable registration	registration	lt	Įjungti registraciją
+enable registration?	admin	lt	Įjungti registraciją?
+register link at login screen	registration	lt	Registracijos nuoroda prisijungimo ekrane
 registration fields	registration	lt	Registracijos laukai
 registration pending	registration	lt	Laukiama registracija
 registration settings	admin	lt	Registracijos nustatymai
 required fields *	registration	lt	privalomi laukai *
 subject of confirmation mail	registration	lt	Patvirtinimo laiško tema
+zip code	registration	lt	pašto kodas
+zip/postal	registration	lt	Pašto indeksas / pašto adresas
