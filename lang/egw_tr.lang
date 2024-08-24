@@ -1,10 +1,14 @@
+%s days	registration	tr	%s gün
+%s hours	registration	tr	%s saat
 address line 2	registration	tr	Adres satırı 2
+addressbook the contacts should be saved to before they are confirmed	registration	tr	Kişilerin onaylanmadan önce kaydedilmesi gereken adres defteri
 anonymous user	registration	tr	Anonim kullanıcı
 body of confirmation mail	registration	tr	Onay postasının gövdesi
 business phone	registration	tr	İş telefonu
 canceled	registration	tr	İptal Edildi
 city	registration	tr	Şehir
 confirmation message sent	registration	tr	Onay mesajı gönderildi
+confirmed addressbook.	registration	tr	Onaylanmış adres defteri
 department	registration	tr	Bölüm
 expires	registration	tr	Sona Eriyor
 fax	registration	tr	Fax
@@ -15,6 +19,8 @@ mobile phone	registration	tr	Mobil telefon
 order	registration	tr	Sıralama
 prefix	registration	tr	Önek
 re-enter password	registration	tr	Şifreyi yeniden giriniz
+register link at login screen	registration	tr	Giriş ekranındaki kayıt bağlantısı
+register link at login screen?	admin	tr	Giriş ekranındaki kayıt bağlantısı
 registration fields	registration	tr	Kayıt alanları
 registration pending	registration	tr	Kayıt bekleniyor
 registration settings	admin	tr	Kayıt ayarları
@@ -26,3 +32,4 @@ text	registration	tr	Metin
 the two passwords are not the same	registration	tr	İki şifre birbirinden farklı
 work phone	registration	tr	İş telefonu
 zip code	registration	tr	Posta Kodu
+zip/postal	registration	tr	Posta Kodu
