@@ -1,14 +1,8 @@
-%1 needs permission to delete - address remains.	registration	fi	%1 tarvitsee luvan poistaa - osoite säilyy.
-%s days	registration	fi	%s päivää
 %s hours	registration	fi	%s tuntia
 %s please calculate the result	registration	fi	%s, ole hyvä ja laske tulos
-<br>please contact the site administrator.	registration	fi	<br>Ota yhteyttä sivuston ylläpitäjään.
-[unknown first name]	registration	fi	[tuntematon etunimi]
-[unknown last name]	registration	fi	[tuntematon sukunimi]
-account %1 record could not be found, report to site administrator	registration	fi	Käyttäjätiliä %1 ei löydy, ilmoita asiasta sivuston ylläpitäjälle
-account groups	registration	fi	Tiliryhmät
+<br>please contact the site administrator.	registration	fi	<br> Ota yhteyttä sivuston ylläpitäjään.
+account %1 record could not be found, report to site administrator	registration	fi	Käyttäjätiliä %1 ei löydy, ilmoita asiasta sivuston ylläpitäjälle.
 account password retrieval	registration	fi	Salasanan nouto
-account primary group	registration	fi	Tilin ensisijainen ryhmä
 account registration	registration	fi	Tunnuksen luominen
 activate account	admin	fi	Aktivoi tunnus
 address	registration	fi	Osoite
@@ -18,36 +12,27 @@ after you enter your username, instructions to change your password will be sent
 an error occured. please contact our technical support and let them know.	registration	fi	Virhe tapahtui. Ota yhteyttä tekniseen tukeemme ja ilmoita asiasta.
 anonymous password	admin	fi	tuntematon salasana
 anonymous user	registration	fi	Anonyymi käyttäjä
-anonymous user needs access to registration application	registration	fi	Anonyymi käyttäjä tarvitsee pääsyn rekisteröintisovellukseen
-ask user	registration	fi	Kysy käyttäjältä
 body of confirmation mail	registration	fi	Vahvistuspostin runko
 business phone	registration	fi	Puhelin (työ)
 canceled	registration	fi	Peruutettu
 change password for user	registration	fi	Muuta salasana käyttäjälle
-choose your organization	registration	fi	Valitse organisaatiosi
 city	registration	fi	Kaupunki
 confirm	registration	fi	Vahvista
-confirm registration	registration	fi	Vahvista rekisteröinti
 confirmation message sent	registration	fi	Lähetetty vahvistusviesti
 contact fields to show	registration	fi	Näytä yhteytietojen kentät
 custom etemplate for the contactform	registration	fi	Muokkaa eMallipohja yhteystietokaavakkeelle
 days until trial accounts expire	admin	fi	Monenko päivän päästä käyttäjätunnus vanhenee
 department	registration	fi	Osasto
-do not send account registration email (manual processing by admin)	admin	fi	Älä lähetä sähköpostiviestiä tilin rekisteröinnistä (ylläpitäjä käsittelee sen manuaalisesti)
 email address	registration	fi	Sähköpostiosoite
 email address to display for support	admin	fi	Sähköpostiosoite näytetään käyttäjätuelle
 email address to send notices from	admin	fi	Sähköpostiosoite lähettää huomautukset
-enable registration	registration	fi	Ota rekisteröinti käyttöön
 enable registration?	admin	fi	Salli rekisteröityminen?
-enter password	registration	fi	Syötä salasana
 enter your new password	registration	fi	Anna uusi salasanasi
 expires	registration	fi	Vanhentuu
 fax	registration	fi	Faksi
 global options	admin	fi	Yleiset asetukset
-go back to login	registration	fi	Palaa takaisin kirjautumiseen
 home phone	registration	fi	Puhelin (yksit.)
 hours	registration	fi	tuntia
-how long to confirm before registration expires? (hours)	registration	fi	Kuinka kauan vahvistus kestää ennen kuin rekisteröinti päättyy? (tuntia)
 http password	admin	fi	HTTP salasana
 http username	admin	fi	HTTP käyttäjätunnus
 i have read the terms and conditions and agree by them.	registration	fi	Olen lukenut palvelun käyttöehdot ja hyväksyn ne.
@@ -58,7 +43,6 @@ internet	registration	fi	Internet
 ip	registration	fi	IP
 lost login id	login	fi	Kirjautumistunnus hävinnyt
 lost password	login	fi	Salasana hävinnyt
-lost password link	registration	fi	Kadonneen salasanan linkki
 lost user account retrieval	registration	fi	Käyttäjätilin nouto hävinnyt
 lost user id	registration	fi	Käyttäjä ID hävinnyt
 mobile phone	registration	fi	Matkapuhelin
@@ -69,28 +53,22 @@ prefix	registration	fi	Etuliite
 problem sending email:	registration	fi	Ongelma lähetettäessä sähköpostia:
 re-enter password	registration	fi	Salasana uudelleen
 re-enter your password	registration	fi	Anna salasanasi uudelleen
-register	common	fi	Rekisteröidy
-register link at login screen	registration	fi	Rekisteröitymislinkki kirjautumisnäytössä
-register link at login screen?	admin	fi	Rekisteröitymislinkki kirjautumissivulla
-registered	registration	fi	Rekisteröity
+register	common	fi	rekisteröidy
+register link at login screen?	admin	fi	Rekisteröitymislinkki kirjautumissivulla?
+registered	registration	fi	rekisteröity
 registration	common	fi	Rekisteröityminen
-registration complete	registration	fi	Rekisteröinti suoritettu
-registration expires after	registration	fi	Rekisteröinti päättyy
 registration fields	registration	fi	Rekisteröintikentät
 registration pending	registration	fi	Rekisteröinti vireillä
 registration settings	admin	fi	Rekisteröitymisen asetukset
 remove	registration	fi	Poista
-repeat	registration	fi	Toista
 report all problems and abuse to	registration	fi	Raportoi kaikista ongelmista ja väärinkäytöstä
 required	registration	fi	Pakollinen
 required fields *	registration	fi	pakolliset kentät *
 response	registration	fi	Vastaus
-select multiple to let the user choose	registration	fi	Valitse useita, jotta käyttäjä voi valita
 send email	admin	fi	Lähetä sähköposti
 sorry, that username is already taken.	registration	fi	Valitan, käyttäjätunnus on jo varattu
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	fi	Valitettavasti käyttäjätilisi aktivoinnissa on ongelma. Sinulle sähköpostiin lähetetty aktivointilinkki on voimassa vain kaksi tuntia. Jos luulet että tämä aika on ylittynyt, yritä uudestaan. Muuten, ota yhteyttä sivuston ylläpitäjään.
 street	registration	fi	Katuosoite
-subject for confirmation email title: %1	registration	fi	%1 vahvistussähköposti
 subject of confirmation mail	registration	fi	Vahvistusviestin aihe
 terms of service	registration	fi	Toimitusehdot
 terms of service text	admin	fi	Toimitusehdot teksti
@@ -98,22 +76,18 @@ text	registration	fi	Teksti
 the anonymous user has probably no add rights for this addressbook.	registration	fi	Tuntemattomalla käyttäjällä ei ole lisäämiseen tarvittavia ACL-oikeuksia tässä osoitekirjassa.
 the anonymous user needs add rights for it!	registration	fi	Tuntematon käyttäjä tarvitsee lisäämiseen tarvittavat ACL-oikeudet!
 the two passwords are not the same	registration	fi	Salasanat eivät vastaa toisiaan
-there was an error saving your data :-(	registration	fi	Virhe tallennettaessa.
-this module displays a registration form, and sends a confirmation email.	registration	fi	Tämä moduuli näyttää rekisteröintilomakkeen ja lähettää vahvistussähköpostin.
+there was an error saving your data :-(	registration	fi	Virhe tallennettaessa!
 type	registration	fi	Tyyppi
-unable to process confirmation.	registration	fi	Vahvistusta ei pystytä käsittelemään.
 unable to send mail, contact your administrator	registration	fi	Viestiä ei voida lähettää, ota yhteyttä pääkäyttäjään.
 unknown first name	registration	fi	Tuntematon etunimi
 unknown last name	registration	fi	Tuntematon sukunimi
 update/add	registration	fi	Päivitä / Lisää
-use email address	registration	fi	Käytä sähköpostiosoitetta
 use html	admin	fi	käytä HTML
 use trial accounts?	admin	fi	käytä kokeilu tunnuksia?
 username is	admin	fi	Käyttäjänimi on
 values (for dropdown only; comma separated)	registration	fi	Arvot (Vain pudotusvalikossa; pilkulla erotettuna)
 verification	registration	fi	Varmentaminen
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	fi	Olemme lähettäneet sähköpostiisi ohjeet salasanan vaihtamisesta. Siirry viestissä olevan linkin kautta sivulle kahden tunnin sisällä. Mikäli aikaraja ylittyy, sinun pitää pyytää salasanasi uudestaan.
-what to use as username	registration	fi	Mitä käytetään käyttäjänimenä
 work phone	registration	fi	Työpuhelin
 wrong - try again ...	registration	fi	Väärin - yritä uudestaan ...
 wrong session	registration	fi	Väärä istunto
@@ -123,13 +97,12 @@ you have entered an invalid email address	registration	fi	Sähköpostiosoite ei 
 you must enter a password	registration	fi	Anna salasana
 you must enter a username	registration	fi	Anna käyttäjätunnus
 you must enter an email account	registration	fi	Anna sähköpostiosoitteesi
-you must enter an email address	registration	fi	Sinun on annettava sähköpostiosoite
 you must fill in all of the required fields	registration	fi	Täytä kaikki pakolliset kentät
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	fi	Pyysitte uutta salasanaa. Siirry sivullemme viestissä olevasta linkistä aktivoidaksesi uuden salasanan. Tämä osoite on voimassa vain kaksi tuntia. Mikäli et käy sivulla kahden tunnin sisällä, joudut pyytämään salasanaa uudestaan.
 you specified a value for %1 that is not a choice	registration	fi	Määritit arvon kohtaan %1 joka ei ole kelvollinen
 your account is now active!	registration	fi	Käyttäjätilisi on aktivoitu!
-your login is not available. time is expired	registration	fi	Kirjautumisesi ei ole käytettävissä. Aika on kulunut umpeen.
 your password was changed.	registration	fi	Salasanasi on vaihdettu.
-your registration code is missing or incorrect.	registration	fi	Rekisteröintikoodisi puuttuu tai on virheellinen.
 zip code	registration	fi	Postinumero
 zip/postal	registration	fi	Postinumero
+[unknown first name]	registration	fi	[tuntematon etunimi]
+[unknown last name]	registration	fi	[tuntematon sukunimi]

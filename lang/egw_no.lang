@@ -1,57 +1,43 @@
-%s days	registration	no	%s dager
-%s hours	registration	no	%s timer
-[unknown first name]	registration	no	[Ukjent fornavn]
-[unknown last name]	registration	no	[Ukjent etternavn]
 address line 2	registration	no	Adresse Linje 2
-addressbook the contacts should be saved to before they are confirmed	registration	no	Adressebok som kontaktene skal lagres i før de bekreftes
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	no	Etter at du registrerer din e-mailadresse vil data forbundet med brukerkontoen sendes på e-mail til denne adressen.
 anonymous password	admin	no	Passord for anonyme brukere
 anonymous user	registration	no	Anonym bruker
-anonymous user needs access to registration application	registration	no	Anonym bruker trenger tilgang til registreringsapplikasjonen
-ask user	registration	no	Spør brukeren
 body of confirmation mail	registration	no	Brødtekst i bekreftelsesmailen
 business phone	registration	no	Telefon, Arbeid
 canceled	registration	no	Annullert
 city	registration	no	By
 confirm	registration	no	Bekreft
 confirmation message sent	registration	no	Sendt bekreftelsesmelding
-confirmed addressbook.	registration	no	Bekreftet adressebok
 department	registration	no	Avdeling
 email address	registration	no	E-mailadresse
 email address to display for support	admin	no	E-mailadresse som vises for support
 email address to send notices from	admin	no	E-mailadresse å sende meldinger fra
-enable registration	registration	no	Tillate registrering
 enable registration?	admin	no	Tillate registrering?
-enter password	registration	no	Skriv inn passord
 enter your new password	registration	no	Skriv inn ditt nye passord
 expires	registration	no	Går ut
 fax	registration	no	Telefaks
-go back to login	registration	no	Gå tilbake til innlogging
 home phone	registration	no	Telefon, Hjemme
 hours	registration	no	timer
-how long to confirm before registration expires? (hours)	registration	no	Hvor lang tid tar det før registreringen utløper? (timer)
 http password	admin	no	HTTP Passord
 http username	admin	no	HTTP Brukernavn
-i have read the terms and conditions and agree by them.	registration	no	Jeg har lest betingelsene og forbeholdene og aksepterer disse.
-if you did not request this account, simply ignore this message.	registration	no	Dersom du ikke forespurte etter denne kontoen; ignorer denne meldingen.
-if you did not request this change, simply ignore this message.	registration	no	Dersom du ikke forespurte denne endringen; ignorer denne meldingen.
+i have read the terms and conditions and agree by them.	registration	no	Jeg har lest betingelsene og forbeholdene og aksepterer disse
+if you did not request this account, simply ignore this message.	registration	no	Dersom du ikke forespurte etter denne kontoen; ignorer denne meldingen
+if you did not request this change, simply ignore this message.	registration	no	Dersom du ikke forespurte denne endringen; ignorer denne meldingen
 immediately	admin	no	Straks
-internet	registration	no	Internett
 ip	registration	no	IP
 lost login id	login	no	Siste loginident
 lost password	login	no	Glemt passordet
 lost user account retrieval	registration	no	Gjenfinne glemt brukerident
 lost user id	registration	no	Glemt brukerident
 mobile phone	registration	no	Mobiltelefon
-not a user yet? register now	login	no	Ikke registrert bruker ennå?  Registrer nå.
-on-line registration is not activated. please contact the site administrator for more information about registration.	registration	no	Online-registrering er ikke aktivert. Kontakt EDB-ansvarlig for mer informasjon om registrering.
+not a user yet? register now	login	no	Ikke registrert bruker ennå?  Registrer nå
+on-line registration is not activated. please contact the site administrator for more information about registration.	registration	no	Online-registrering er ikke aktivert.  Kontakt EDB-ansvarlig for mer informasjon om registrering.
 order	registration	no	Sortering
 prefix	registration	no	Forstavelse
 re-enter password	registration	no	Skriv inn passord på nytt
 re-enter your password	registration	no	Skriv inn passord ditt på nytt
-register link at login screen	registration	no	Registrer lenke på påloggingsskjermen
-register link at login screen?	admin	no	Registrere link på påloggingssiden
-registered	registration	no	Registrert
+register link at login screen?	admin	no	Registrere link på påloggingssiden?
+registered	registration	no	registrert
 registration	common	no	Registrering
 registration fields	registration	no	Registreringsfelt
 registration pending	registration	no	Registrering i påvente
@@ -61,8 +47,8 @@ report all problems and abuse to	registration	no	Rapporter alle feil og forstyre
 required	registration	no	Nødvendig
 required fields *	registration	no	obligatoriske felter *
 send email	admin	no	Send e-mail
-sorry, that username is already taken.	registration	no	Beklager, brukernavn allerede registrert.
-sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	no	Beklager men vi har et problem med å aktivere din konto. Husk at lenker sendt via e-mail kun er gyldige i to timer.  Dersom du tror denne tiden var overskredet, prøv igjen.  Eller må du ta kontakt med EDB-ansvarlig.
+sorry, that username is already taken.	registration	no	Beklager, brukernavn allerede registrert
+sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	no	Beklager men vi har et problem med å aktivere din konto. Husk at lenker sendt via e-mail kun er gyldige i to timer.  Dersom du tror denne tiden var overskredet, prøv igjen.  Eller må du ta kontakt med EDB-ansvarlig
 street	registration	no	Gate
 subject of confirmation mail	registration	no	Emne for bekreftelsesmail
 terms of service	registration	no	Betingelser
@@ -70,15 +56,16 @@ terms of service text	admin	no	Tekst for betingelser
 text	registration	no	Tekst
 the two passwords are not the same	registration	no	De to passordene er ikke like
 type	registration	no	Type
-unable to send mail, contact your administrator	registration	no	Ikke i stand til å sende mail, kontakt EDB-ansvarlig.
+unable to send mail, contact your administrator	registration	no	Ikke i stand til å sende mail, kontakt EDB-ansvarlig
 unknown first name	registration	no	Ukjent fornavn
 unknown last name	registration	no	Ukent etternavn
 update/add	registration	no	Oppdater/registrer
-use html	admin	no	Bruk HTML
+use html	admin	no	bruk HTML
 use trial accounts?	admin	no	Bruke prøvekonti?
 username is	admin	no	Brukernavn er
 values (for dropdown only; comma separated)	registration	no	Verdier (For nedtrekk, kommaseparert)
 work phone	registration	no	Telefon arbeid
 you must enter a password	registration	no	Du må skrive inn et passord
 zip code	registration	no	Postnummer
-zip/postal	registration	no	Postnummer
+[unknown first name]	registration	no	[Ukjent fornavn]
+[unknown last name]	registration	no	[Ukjent etternavn]

@@ -1,7 +1,5 @@
 %s please calculate the result	registration	zh-tw	%s 請計算結果
 <br>please contact the site administrator.	registration	zh-tw	<br>請聯絡網站管理員。
-[unknown first name]	registration	zh-tw	[不明的名稱]
-[unknown last name]	registration	zh-tw	[不明的姓氏]
 account %1 record could not be found, report to site administrator	registration	zh-tw	找不到 %1 資料，回報給網站管理員
 account password retrieval	registration	zh-tw	遺忘密碼
 account registration	registration	zh-tw	註冊帳號
@@ -22,7 +20,6 @@ contact fields to show	registration	zh-tw	要顯示的聯絡人欄位
 custom etemplate for the contactform	registration	zh-tw	自訂 eTemplate 的聯絡表單
 days until trial accounts expire	admin	zh-tw	測試帳號到期天數
 department	registration	zh-tw	部門
-display terms of service?	admin	zh-tw	顯示服務條款？
 email address	registration	zh-tw	電子郵件
 email address to display for support	admin	zh-tw	客服信箱
 email address to send notices from	admin	zh-tw	系統訊息寄件人
@@ -42,10 +39,8 @@ immediately	admin	zh-tw	立即
 ip	registration	zh-tw	網路位址
 lost login id	login	zh-tw	忘記帳號
 lost password	login	zh-tw	忘記密碼
-lost password link at login screen?	admin	zh-tw	在登入畫面顯示遺失密碼查詢功能？
 lost user account retrieval	registration	zh-tw	忘記帳號查詢
 lost user id	registration	zh-tw	遺失的使用者帳號
-lost user id link at login screen?	admin	zh-tw	在登入畫面顯示遺忘帳號查詢功能？
 mobile phone	registration	zh-tw	行動電話
 not a user yet? register now	login	zh-tw	還沒成為會員？立刻註冊
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	zh-tw	目前無法線上註冊，請聯絡網站管理員
@@ -63,7 +58,6 @@ report all problems and abuse to	registration	zh-tw	回報錯誤給
 required	registration	zh-tw	必填
 response	registration	zh-tw	回應
 send email	admin	zh-tw	傳送郵件
-sorry, that username does not exist.	registration	zh-tw	抱歉，這個帳號不存在。
 sorry, that username is already taken.	registration	zh-tw	抱歉，這個帳號已經有人使用。
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	zh-tw	抱歉，我們無法啟用您的帳號！啟用帳號的手續必須要在兩個鐘頭內完成，如果您超過了這個時間，請重新註冊。如果有其他疑問請洽網站管理員。
 street	registration	zh-tw	地址
@@ -84,7 +78,6 @@ use trial accounts?	admin	zh-tw	使用試用帳號？
 username is	admin	zh-tw	帳號是
 values (for dropdown only; comma separated)	registration	zh-tw	下拉式選單數值(逗號分隔)
 verification	registration	zh-tw	確認
-we have sent a mail to your email account: %s with your lost user ids.	registration	zh-tw	我們已經寄送通知道您的信箱帳號： %s ，其中包含您遺失的帳號資料。
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	zh-tw	我們已經寄出修改密碼的說明，您必須在兩個鐘頭內根據其中的指示操作；如果您超過了這個時間，您就必須要重新提出修改密碼的需求。
 work phone	registration	zh-tw	工作電話
 wrong - try again ...	registration	zh-tw	錯誤，請重試...
@@ -102,3 +95,5 @@ your account is now active!	registration	zh-tw	您的帳號已經啟用
 your password was changed.	registration	zh-tw	您的密碼已經修改
 zip code	registration	zh-tw	郵遞區號
 zip/postal	registration	zh-tw	郵遞區號
+[unknown first name]	registration	zh-tw	[不明的名稱]
+[unknown last name]	registration	zh-tw	[不明的姓氏]

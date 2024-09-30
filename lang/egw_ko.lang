@@ -1,5 +1,4 @@
 address line 2	registration	ko	주소 2
-addressbook the contacts should be saved to before they are confirmed	registration	ko	주소록에 연락처를 저장한 후 확인해야 합니다.
 anonymous password	admin	ko	익명 암호
 anonymous user	registration	ko	익명 사용자
 body of confirmation mail	registration	ko	확인 메일 본문
@@ -8,7 +7,6 @@ canceled	registration	ko	취소됨
 city	registration	ko	도시
 confirm	registration	ko	확인
 confirmation message sent	registration	ko	확인 메시지 전송
-confirmed addressbook.	registration	ko	확인된 주소록
 department	registration	ko	부서
 enter your new password	registration	ko	새로운 암호를 입력
 expires	registration	ko	만료
@@ -20,7 +18,6 @@ mobile phone	registration	ko	이동전화
 prefix	registration	ko	접두어
 re-enter password	registration	ko	비밀번호 재입력
 re-enter your password	registration	ko	새로운 암호 확인
-register link at login screen	registration	ko	로그인 화면의 등록 링크
 registered	registration	ko	등록됨
 registration fields	registration	ko	등록 필드
 registration pending	registration	ko	등록 보류 중
@@ -33,4 +30,3 @@ the two passwords are not the same	registration	ko	두 비밀번호가 다릅니
 work phone	registration	ko	직장 전화
 you must enter a password	registration	ko	패스워드를 입력해야 합니다.
 zip code	registration	ko	우편번호
-zip/postal	registration	ko	우편번호/우편

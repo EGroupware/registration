@@ -4,8 +4,6 @@
 %s please calculate the result	registration	de	%s Bitte berechnen Sie das Ergebnis
 13: error occured	registration	de	13: Es ist ein Fehler aufgetreten
 <br>please contact the site administrator.	registration	de	<br>Bitte nehmen sie Kontakt mit dem Administrator auf.
-[unknown first name]	registration	de	[Vornamen unbekannt]
-[unknown last name]	registration	de	[Nachnamen unbekannt]
 abuse reduction - please wait %1 seconds and try again.	registration	de	Missbrauchs Verdacht erkannt - Bitte warten Sie %1 Sekunden und versuchen Sie es dann noch einmal.
 account	registration	de	Benutzer
 account %1 record could not be found, report to site administrator	registration	de	Es konnte kein Eintrag: Account: %1 gefunden werden. Bitte benachrichtigen sie den Administrator
@@ -124,7 +122,7 @@ unable to send mail, contact your administrator	registration	de	Es war nicht mö
 unknown first name	registration	de	Vorname unbekannt
 unknown last name	registration	de	Nachname unbekannt
 update/add	registration	de	Ändern / Hinzufügen
-use email address	registration	de	Benutze E-Mail Adresse
+use email address	registration	de	Benutze E-Mail-Adresse
 use html	admin	de	HTML benutzen
 use trial accounts?	admin	de	Testzugänge benutzen?
 username is	admin	de	Benutzername ist
@@ -155,3 +153,5 @@ your password was changed.	registration	de	Ihr Passwort wurde geändert.
 your registration code is missing or incorrect.	registration	de	Ihr Registrierungscode fehlt oder ist ungültig.
 zip code	registration	de	Postleitzahl
 zip/postal	registration	de	Postleitzahl
+[unknown first name]	registration	de	[Vornamen unbekannt]
+[unknown last name]	registration	de	[Nachnamen unbekannt]

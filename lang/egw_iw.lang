@@ -14,7 +14,6 @@ city	registration	iw	עיר
 confirm	registration	iw	אישורך
 days until trial accounts expire	admin	iw	ימים את שיפוג תוקפו של חשבון הדמו
 department	registration	iw	מחלקה
-display terms of service?	admin	iw	?להציג את תנאי השרות
 email address	registration	iw	כתובת דואר אלקטרוני
 email address to display for support	admin	iw	כתובת דוא"ל של התמיכה
 email address to send notices from	admin	iw	כתובת דוא"ל שיהווה מקור ההודעות
@@ -45,7 +44,6 @@ remove	registration	iw	הסר
 report all problems and abuse to	registration	iw	-דווח על כל בעיה או שימוש פוגע ל
 required	registration	iw	נדרש
 send email	admin	iw	שלח דוא"ל
-sorry, that username does not exist.	registration	iw	מצטער, שם משתמש זה לא קיים
 sorry, that username is already taken.	registration	iw	מצטער, שם משתמש זה כבר בשימוש
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	iw	מצטער, יש בעיה בהפעלת החשבון שלך. שים לב שהקישורים הנשלחים בדואר אלקטרוני פועלים למשך שעתיים בלבד. אם לדעתך זמן זה עבר, נסה שוב. אחרת, נה לדווח למנהל
 street	registration	iw	רחוב

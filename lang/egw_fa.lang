@@ -1,6 +1,4 @@
 <br>please contact the site administrator.	registration	fa	لطفا با مدیر سایت تماس بگیرید
-[unknown first name]	registration	fa	[نام ناشناخته]
-[unknown last name]	registration	fa	[نام خانوادگی ناشناخته]
 account password retrieval	registration	fa	دریافت گذرواژه حساب کاربری
 account registration	registration	fa	ثبت حساب کاربری
 activate account	admin	fa	فعال سازی حساب کاربری
@@ -18,7 +16,6 @@ city	registration	fa	شهر
 confirm	registration	fa	تأیید
 days until trial accounts expire	admin	fa	مدت(روز) تا حسابها منقضی شوند
 department	registration	fa	قسمت
-display terms of service?	admin	fa	نمایش نحوه خدمات دهی؟
 email address	registration	fa	نشانی رایانامه
 email address to display for support	admin	fa	نشانی رایانامه برای نمایش جهت پشتیبانی
 email address to send notices from	admin	fa	نشانی رایانامه ای که از طرف آن ازسال می شود
@@ -38,10 +35,8 @@ immediately	admin	fa	فوری
 ip	registration	fa	IP
 lost login id	login	fa	فراموشی شناسه کاربری
 lost password	login	fa	فراموشی گذرواژه
-lost password link at login screen?	admin	fa	پیوند گذرواژه در صفحه ورود را فراموش کردید؟
 lost user account retrieval	registration	fa	دریافت حساب کاربری را فراموش کردید؟
 lost user id	registration	fa	فراموشی شناسه کاربری
-lost user id link at login screen?	admin	fa	پیوند شناسه کاربری در صفحه ورود را فراموش کردید؟
 mobile phone	registration	fa	تلفن همراه
 not a user yet? register now	login	fa	شناسه کاربری ندارید؟ هم اکنون ثبت نام کنید.
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	fa	ثبت نام برخط فعال نشده است لطفا با مدیر سایت برای دریافت اطلاعات بیشتر تماس بگیرید
@@ -60,7 +55,6 @@ report all problems and abuse to	registration	fa	گزارش همه مشکلات
 required	registration	fa	لازم
 response	registration	fa	پاسخ
 send email	admin	fa	ارسال رایانامه
-sorry, that username does not exist.	registration	fa	متأسفانه نام کاربری موجود نیست
 sorry, that username is already taken.	registration	fa	متأسفانه نام کاربری قبلا ثبت شده است
 street	registration	fa	خیابان
 terms of service	registration	fa	شرایط خدمات
@@ -76,7 +70,6 @@ use html	admin	fa	استفاده از زنگام
 use trial accounts?	admin	fa	استفاده از حسابهای آزمایشی؟
 username is	admin	fa	سبک شناسه کاربری
 values (for dropdown only; comma separated)	registration	fa	مقادیر(فقط برای پائین افتادنی، جدا کردن با ویرگول)
-we have sent a mail to your email account: %s with your lost user ids.	registration	fa	ما یک رایانامه به نشانی رایانامه حسابتان ارسال کردیم: %s که شامل شناسه کاربری گم شده شماست
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	fa	ما یک رایانامه شامل راهنمای تغییر گذرواژه برایتن ارسال کردیم. برای استفاده از آن فقط تا دو ساعت دیگر وقت دارید. در غیر اینصورت باید مجددا در صفحه اصلی پیوند مربوط به فراموشی گذرواژه را دنبال کنید
 work phone	registration	fa	شماره محل کار
 wrong session	registration	fa	نشست غلط
@@ -90,3 +83,5 @@ you requested to change your password. please follow the url below to do so. thi
 you specified a value for %1 that is not a choice	registration	fa	شما مقداری را برای %1 مشخص کردید که جزو انتخابها نبوده است
 zip code	registration	fa	کد پستی
 zip/postal	registration	fa	کد پستی
+[unknown first name]	registration	fa	[نام ناشناخته]
+[unknown last name]	registration	fa	[نام خانوادگی ناشناخته]

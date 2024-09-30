@@ -1,17 +1,12 @@
-%s days	registration	zh	%s 天
-%s hours	registration	zh	%s 小时
 %s please calculate the result	registration	zh	%s 请计算结果
 13: error occured	registration	zh	13：错误发生
 <br>please contact the site administrator.	registration	zh	请联系网站管理员
-[unknown first name]	registration	zh	[未知名字]
-[unknown last name]	registration	zh	[未知姓氏]
 account %1 record could not be found, report to site administrator	registration	zh	帐户 %1 的纪录未找到，报告网站管理员
 account password retrieval	registration	zh	帐户密码取回
 account registration	registration	zh	帐户注册
 activate account	admin	zh	激活帐户
 address	registration	zh	地址
 address line 2	registration	zh	地址 2
-addressbook the contacts should be saved to before they are confirmed	registration	zh	确认联系人前应将其保存到的通讯簿
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	zh	在您输入您的邮件地址之后，与此邮件地址相关的用户帐户将发送邮件到该地址。
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	zh	在您输入您的用户名之后，指令改变您的密码将由电子邮件发送到您登录时提供的地址。
 an error occured while updating your password. please contact the site administrator.	registration	zh	当更新您的密码时发生错误。请与站点管理员联系。
@@ -20,16 +15,13 @@ an error occured. please remove your cookies and try again.	registration	zh	发�
 an unknown error occured. <a href="%1">please try registering again.</a>	registration	zh	发生一个未知错误。<a href="%1">请再次尝试登录。</a>
 anonymous password	admin	zh	匿名密码
 anonymous user	registration	zh	匿名用户
-ask user	registration	zh	询问用户
 body of confirmation mail	registration	zh	确认邮件正文
 business phone	registration	zh	商务电话
 canceled	registration	zh	取消
 change password for user	registration	zh	修改用户密码
-choose your organization	registration	zh	选择您的组织
 city	registration	zh	城市
 confirm	registration	zh	确认
 confirmation message sent	registration	zh	发送的确认信息
-confirmed addressbook.	registration	zh	确认地址簿
 contact fields to show	registration	zh	要显示的联系人字段
 convert user login id to 7 bit string	admin	zh	转换用户登录ID为7 bit 解码
 custom etemplate for the contactform	registration	zh	为联系人表单自定义模板
@@ -58,7 +50,7 @@ lost user account retrieval	registration	zh	丢失的用户帐号找回
 lost user id	registration	zh	丢失用户 ID
 mobile phone	registration	zh	移动电话
 name sender to send notices from	admin	zh	发送通知的发件人从
-not a user yet? register now	login	zh	不是用户？ 现在注册。
+not a user yet? register now	login	zh	不是用户？ 现在注册
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	zh	在线注册没有激活。请与网站管理员联系了解关于注册的更多信息。
 order	registration	zh	排序
 please contact the site administrator.	registration	zh	请联系网站管理员。
@@ -67,7 +59,6 @@ problem sending email:	registration	zh	发送邮件问题：
 re-enter password	registration	zh	重输密码
 re-enter your password	registration	zh	重输您的密码
 register	common	zh	注册
-register link at login screen	registration	zh	登录屏幕上的注册链接
 register link at login screen?	admin	zh	注册链接在登录窗口
 registered	registration	zh	注册
 registration	common	zh	注册管理
@@ -91,22 +82,21 @@ text	registration	zh	文本
 the anonymous user has probably no add rights for this addressbook.	registration	zh	匿名用户也许没有为该通讯簿的添加权限。
 the anonymous user needs add rights for it!	registration	zh	匿名用户需要为它增加权限！
 the two passwords are not the same	registration	zh	二个密码不是相同
-there was an error saving your data :-(	registration	zh	保存您的数据时发生一个错误。
+there was an error saving your data :-(	registration	zh	保存您的数据时发生一个错误：-(
 type	registration	zh	类型
 unable to send mail, contact your administrator	registration	zh	无法发送邮件，与您的管理员联系。
 unknown first name	registration	zh	未知用户名
 unknown last name	registration	zh	未知用户姓
 update/add	registration	zh	更新/添加
-use email address	registration	zh	使用电子邮件地址
 use html	admin	zh	使用 HTML
 use trial accounts?	admin	zh	使用试用帐户？
 username is	admin	zh	用户名是
 values 'for dropdown': comma separated), for 'dropdown from table': table,valuefield,displayfield	registration	zh	值为'下拉选单'：(逗号分隔)；为'下拉列表'：表、值字段、显示字段
-values (for dropdown only; comma separated)	registration	zh	值 (仅下拉框；逗号分隔)。
+values (for dropdown only; comma separated)	registration	zh	值 (仅下拉框；逗号分隔)
 verification	registration	zh	认证
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	zh	我们发送了邮件以指示改变您的密码。您在二个小时之内应该点击包括的链接。如果您未点击确认，您将必须再次回到丢失密码窗口。
 work phone	registration	zh	工作电话
-wrong - try again ...	registration	zh	错误，请重试 ...
+wrong - try again ...	registration	zh	错误，请重试...
 wrong session	registration	zh	错误会话
 you can go back to the login page	registration	zh	您可以返回到注册页
 you have entered an invalid birthday	registration	zh	您输入了一个无效出生日期
@@ -119,8 +109,10 @@ you must fill in all of the required fields	registration	zh	您必须填写所�
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	zh	您已请求更改您的密码，请点击以下网址链接继续。该链接在二小时后将过期，在此期限过后，您将面临再次失去密码。
 you specified a value for %1 that is not a choice	registration	zh	您为 %1 指定了一个不是选择的值
 your account is now active!	registration	zh	您的帐户已激活！
-your login is not available. time is expired	registration	zh	您的登录是无效的。时间过期。
+your login is not available. time is expired	registration	zh	您的登录是无效的。时间过期
 your password was changed.	registration	zh	您的密码已更改。
 your registration code is missing or incorrect.	registration	zh	您的注册码丢失或是不正确的。
 zip code	registration	zh	邮政编码
 zip/postal	registration	zh	邮政编码
+[unknown first name]	registration	zh	[未知名字]
+[unknown last name]	registration	zh	[未知姓氏]

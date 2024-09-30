@@ -1,7 +1,5 @@
 %s days	registration	lv	%s dienas
 %s hours	registration	lv	%s stundas
-[unknown first name]	registration	lv	[nezināms vārds]
-[unknown last name]	registration	lv	[nezināms uzvārds]
 abuse reduction - please wait %1 seconds and try again.	registration	lv	Ļaunprātīgas izmantošanas samazināšana - lūdzu, pagaidiet %1 sekundi un mēģiniet vēlreiz.
 address line 2	registration	lv	Adreses 2. rindiņa
 anonymous password	admin	lv	Anonīmā parole
@@ -98,3 +96,5 @@ you must enter a password	registration	lv	Tev jaievada parole
 you must enter a username	registration	lv	Jums jāievada lietotājvārds
 your account is now active!	registration	lv	Jūsu konts tagad ir aktīvs!
 zip code	registration	lv	Pasta inekss
+[unknown first name]	registration	lv	[nezināms vārds]
+[unknown last name]	registration	lv	[nezināms uzvārds]

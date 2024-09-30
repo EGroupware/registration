@@ -4,8 +4,6 @@
 %s please calculate the result	registration	sk	%s prosím vypočitajte výsledok
 13: error occured	registration	sk	13: nastala chyba
 <br>please contact the site administrator.	registration	sk	<br>Prosím kontaktujte správcu tejto stránky.
-[unknown first name]	registration	sk	[neznáme meno]
-[unknown last name]	registration	sk	[neznáme priezvisko]
 abuse reduction - please wait %1 seconds and try again.	registration	sk	Ochrana pred zneužitím - prosím počkajte %1 sekúnd a skúste znovu.
 account	registration	sk	Účet
 account %1 record could not be found, report to site administrator	registration	sk	Záznam o účte %1 sa nepodarilo nájsť, oznámte to správcovi stránky
@@ -155,3 +153,5 @@ your password was changed.	registration	sk	Vaše heslo bolo zmenené.
 your registration code is missing or incorrect.	registration	sk	Váš registračný kód chýba, alebo je chybný.
 zip code	registration	sk	PSČ
 zip/postal	registration	sk	PSČ
+[unknown first name]	registration	sk	[neznáme meno]
+[unknown last name]	registration	sk	[neznáme priezvisko]
