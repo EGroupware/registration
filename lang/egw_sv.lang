@@ -1,55 +1,38 @@
-%1 needs permission to delete - address remains.	registration	sv	%1 behöver tillstånd för att radera - adressen finns kvar.
-%s days	registration	sv	%s dagar
-%s hours	registration	sv	%s timmar
 <br>please contact the site administrator.	registration	sv	<br> Var god och kontakta sajt administratören.
-[unknown first name]	registration	sv	[okänt förnamn]
-[unknown last name]	registration	sv	[okänt efternamn]
-abuse reduction - please wait %1 seconds and try again.	registration	sv	Missbruksreducering - vänta %1 sekunder och försök igen.
-account	registration	sv	Konto
 account %1 record could not be found, report to site administrator	registration	sv	Konto %1 post kunde inte hittas, rapportera till sajt administratören.
-account groups	registration	sv	Kontogrupper
 account password retrieval	registration	sv	Hämta lösenord
-account primary group	registration	sv	Konto primär grupp
 account registration	registration	sv	Konto registrering
 activate account	admin	sv	Aktivera konto
 address	registration	sv	Adress
 address line 2	registration	sv	Adressrad 2
-addressbook the contacts should be saved to before they are confirmed	registration	sv	Adressbok som kontakterna ska sparas i innan de bekräftas
 after you enter your email address, the user accounts associated with this email address will be mailed to that address.	registration	sv	Efter att du anget e-postadressen kommer tillhörande användarkonto att underättas.
 after you enter your username, instructions to change your password will be sent to you by e-mail to the address you gave when you registered.	registration	sv	Efter att du registrerat ett användarnamn skickas instruktioner om hur du ska ändra ditt lösenord till e-postadressen du anget.
 an error occured. please contact our technical support and let them know.	registration	sv	Ett fel uppstod. Var god och meddela support.
 anonymous password	admin	sv	Anonyma sessioners lösenord
 anonymous user	registration	sv	Anonym användare
-ask user	registration	sv	Fråga användaren
 body of confirmation mail	registration	sv	Innehållet i bekräftelsemailet
 business phone	registration	sv	Företag: Telefon
 canceled	registration	sv	Avbruten
 change password for user	registration	sv	Ändra lösenord
-choose your organization	registration	sv	Välj din organisation
 city	registration	sv	Stad
 confirm	registration	sv	bekräfta
-confirm registration	registration	sv	Bekräfta registrering
 confirmation message sent	registration	sv	Bekräftelsemeddelande skickat
 days until trial accounts expire	admin	sv	Dagar tills provkonto förfaller
 department	registration	sv	Avdelning
-do not send account registration email (manual processing by admin)	admin	sv	Skicka inte e-post för registrering av konto (manuell behandling av administratör)
 email address	registration	sv	E-postadress
 email address to display for support	admin	sv	E-postadress till support
 email address to send notices from	admin	sv	E-postadress att skicka meddelanden till
-enable registration	registration	sv	Aktivera registrering
-enable registration?	admin	sv	Aktivera registrering?
-enter password	registration	sv	Ange lösenord
+enable registration?	admin	sv	Aktivera registrering
 enter your new password	registration	sv	Ange lösenord
 expires	registration	sv	Förfaller
 fax	registration	sv	Telefax
 home phone	registration	sv	Hem: Telefon
 hours	registration	sv	Timmar
-how long to confirm before registration expires? (hours)	registration	sv	Hur lång tid tar det att bekräfta innan registreringen upphör att gälla? (timmar)
 http password	admin	sv	HTTP lösenord
 http username	admin	sv	HTTP användare
-i have read the terms and conditions and agree by them.	registration	sv	Jag har läst och godkänner avtalet.
-if you did not request this account, simply ignore this message.	registration	sv	Var god och ignorera meddelandet om du inte begärt kontot.
-if you did not request this change, simply ignore this message.	registration	sv	Var god och ignorera meddelandet om du inte begärt ändringen.
+i have read the terms and conditions and agree by them.	registration	sv	Jag har läst och godkänner avtalet
+if you did not request this account, simply ignore this message.	registration	sv	Var god och ignorera meddelandet om du inte begärt kontot
+if you did not request this change, simply ignore this message.	registration	sv	Var god och ignorera meddelandet om du inte begärt ändringen
 immediately	admin	sv	Omedelbart
 ip	registration	sv	IP
 lost login id	login	sv	Glömt inloggnings ID
@@ -57,7 +40,7 @@ lost password	login	sv	Glömt lösenordet
 lost user account retrieval	registration	sv	Glömt användarkonto återskapning
 lost user id	registration	sv	Glömt användar ID
 mobile phone	registration	sv	Mobilnummer
-not a user yet? register now	login	sv	Ännu inget konto? Registrera dig här.
+not a user yet? register now	login	sv	Ännu inget konto? Registrera dig här
 on-line registration is not activated. please contact the site administrator for more information about registration.	registration	sv	Online registrering inte tillgänglig. Var god och kontakta support för mer information.
 order	registration	sv	Ordning
 prefix	registration	sv	Prefix
@@ -65,8 +48,8 @@ problem sending email:	registration	sv	Problem att skicka e-post:
 re-enter password	registration	sv	Återge lösenordet
 re-enter your password	registration	sv	Återge lösenordet
 register	common	sv	Registrera
-register link at login screen?	admin	sv	Länk till registreringen på Startsidan
-registered	registration	sv	Registrerad
+register link at login screen?	admin	sv	Länk till registreringen på Startsidan?
+registered	registration	sv	registrerad
 registration	common	sv	Registrering
 registration fields	registration	sv	Registreringsfält
 registration pending	registration	sv	Registrering i väntan på
@@ -77,7 +60,7 @@ required	registration	sv	Krävs
 required fields *	registration	sv	obligatoriska fält *
 response	registration	sv	Svar
 send email	admin	sv	Skicka e-post
-sorry, that username is already taken.	registration	sv	Användarnamnet redan upptaget.
+sorry, that username is already taken.	registration	sv	Användarnamnet redan upptaget
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	sv	Det är tyvärr problem med att aktivera din registrering. Notera att länkar skickade med e-post bara är giltiga i 2 timmar, om du misstänkter att den har förfallit var god och kontakta support. I annat fall försök igen.
 street	registration	sv	Gata
 subject of confirmation mail	registration	sv	Ämne för bekräftelsemail
@@ -93,23 +76,22 @@ update/add	registration	sv	Uppdatera/Lägg till
 use html	admin	sv	Använd HTML
 use trial accounts?	admin	sv	Använd provkonton?
 username is	admin	sv	Användarnamnet är
-values (for dropdown only; comma separated)	registration	sv	Värden (endast komma separerad för rullgardin).
+values (for dropdown only; comma separated)	registration	sv	Värden (endast komma separerad för rullgardin)
 we have sent a mail with instructions to change your password. you should follow the included link within two hours. if you do not, you will have to go to the lost password screen again.	registration	sv	En bekräftelse på ditt nya konto har skickats. Klicka på länken för att aktivera det innom 2 timmar. Om du inte hinner måste du gå tillbaks till sidan för förlorade lösenord igen.
 work phone	registration	sv	Arbetstelefon
 wrong session	registration	sv	Fel session
-you can go back to the login page	registration	sv	Du kan gå tillbaks till inloggningen
+you can go back to the login page	registration	sv	Du kan gå tillbaks till inloggningen.
 you have entered an invalid birthday	registration	sv	Ogiltig födelsedag
 you have entered an invalid email address	registration	sv	Ogiltig e-postadress
 you must enter a password	registration	sv	Ange lösenord
 you must enter a username	registration	sv	Ange användarnamn
 you must enter an email account	registration	sv	Du måste ange en e-postadress
-you must enter an email address	registration	sv	Du måste ange en e-postadress
 you must fill in all of the required fields	registration	sv	Fylla i begärda fält
 you requested to change your password. please follow the url below to do so. this url will expire in two hours. after this delay you should go thru the lost password procedure again.	registration	sv	Följ URL för att byta lösenord. Klicka på länken för att aktivera det innom 2 timmar. Om du inte hinner måste du gå tillbaks till sidan för förlorade lösenord igen.
 you specified a value for %1 that is not a choice	registration	sv	Du specificerade ett värde för %1 som inte tillgängligt
 your account is now active!	registration	sv	Ditt konto är nu aktivt!
-your login is not available. time is expired	registration	sv	Din inloggning är inte tillgänglig. Tiden har löpt ut.
 your password was changed.	registration	sv	Ditt lösenord är ändrat.
-your registration code is missing or incorrect.	registration	sv	Din registreringskod saknas eller är felaktig.
 zip code	registration	sv	Postnummer
 zip/postal	registration	sv	Postnummer
+[unknown first name]	registration	sv	[okänt förnamn]
+[unknown last name]	registration	sv	[okänt efternamn]

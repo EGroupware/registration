@@ -4,8 +4,6 @@
 %s please calculate the result	registration	cs	%s prosím spočítejte výsledek
 13: error occured	registration	cs	13: došlo k chybě
 <br>please contact the site administrator.	registration	cs	<br>Kontatujte prosím administrátora webu.
-[unknown first name]	registration	cs	[neznámé křestní jméno]
-[unknown last name]	registration	cs	[neznámé příjmení]
 abuse reduction - please wait %1 seconds and try again.	registration	cs	Redukce zneužití - vyčkejte prosím %1 sekund a zkuste to znovu.
 account	registration	cs	Účet
 account %1 record could not be found, report to site administrator	registration	cs	Záznam pro účet %1 nebyl nalezen, nahlašte problém administrátorovi webu
@@ -155,3 +153,5 @@ your password was changed.	registration	cs	Vaše heslo bylo změněno.
 your registration code is missing or incorrect.	registration	cs	Váš registrační kód chybí nebo je neplatný.
 zip code	registration	cs	PSČ
 zip/postal	registration	cs	PSČ
+[unknown first name]	registration	cs	[neznámé křestní jméno]
+[unknown last name]	registration	cs	[neznámé příjmení]

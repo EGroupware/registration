@@ -4,8 +4,6 @@
 %s please calculate the result	registration	en	%s please calculate the result
 13: error occured	registration	en	13: error occured
 <br>please contact the site administrator.	registration	en	<br>Please contact the site administrator.
-[unknown first name]	registration	en	[unknown first name]
-[unknown last name]	registration	en	[unknown last name]
 abuse reduction - please wait %1 seconds and try again.	registration	en	Abuse reduction - please wait %1 seconds and try again.
 account	registration	en	Account
 account %1 record could not be found, report to site administrator	registration	en	Account %1 record could not be found, report to site administrator
@@ -155,3 +153,5 @@ your password was changed.	registration	en	Your password was changed.
 your registration code is missing or incorrect.	registration	en	Your registration code is missing or incorrect.
 zip code	registration	en	zip code
 zip/postal	registration	en	ZIP/Postal
+[unknown first name]	registration	en	[unknown first name]
+[unknown last name]	registration	en	[unknown last name]

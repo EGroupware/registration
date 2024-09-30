@@ -13,7 +13,6 @@ city	registration	ca	Població
 confirm	registration	ca	confirmar
 days until trial accounts expire	admin	ca	Dies fins que caduqui el compte de prova
 department	registration	ca	Departament
-display terms of service?	admin	ca	Mostrar les Condicions del Servei?
 email address	registration	ca	adreça de correu
 email address to display for support	admin	ca	Adreça de Correu a mostrar per suport
 email address to send notices from	admin	ca	Adreça de Correu per enviar noticies
@@ -42,7 +41,6 @@ remove	registration	ca	Esborra
 report all problems and abuse to	registration	ca	Informar de tots els problemes i abusos
 required	registration	ca	Obligatori
 send email	admin	ca	Enviar Correu
-sorry, that username does not exist.	registration	ca	Aquest nom d'usuari no existeix.
 sorry, that username is already taken.	registration	ca	Aquest nom d'usuari ja està ocupat.
 sorry, we are having a problem activating your account. note that links sent by e-mail are only valid during two hours. if you think this delay was expired, just retry. otherwise, please contact the site administrator.	registration	ca	Perdó, tenim un problema activant el vostre compte. Teniu en compte que els enllaços enviats per correu son vàlids només durant dues hores. Si penseu que aquest interval ha caducat, només teniu que tornar a provar. Altrament, contacteu amb l'administrador del lloc.
 street	registration	ca	Carrer

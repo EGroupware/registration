@@ -4,8 +4,6 @@
 %s please calculate the result	registration	pt-br	%s por favor calcule o resultado
 13: error occured	registration	pt-br	13: ocorreu um erro
 <br>please contact the site administrator.	registration	pt-br	<br>Por favor, contacte o administrador do servidor.
-[unknown first name]	registration	pt-br	[primeiro nome desconhecido]
-[unknown last name]	registration	pt-br	[último nome desconhecido]
 abuse reduction - please wait %1 seconds and try again.	registration	pt-br	Redução de abuso - aguarde %1 segundos e tente novamente.
 account	registration	pt-br	Conta
 account %1 record could not be found, report to site administrator	registration	pt-br	Registro de conta %1 não pôde ser encontrado. Informe ao administrador do servidor
@@ -155,3 +153,5 @@ your password was changed.	registration	pt-br	Sua senha foi alterada.
 your registration code is missing or incorrect.	registration	pt-br	Seu código de registro está faltando ou incorreto.
 zip code	registration	pt-br	CEP
 zip/postal	registration	pt-br	CEP
+[unknown first name]	registration	pt-br	[primeiro nome desconhecido]
+[unknown last name]	registration	pt-br	[último nome desconhecido]

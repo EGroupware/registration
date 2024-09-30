@@ -3,8 +3,6 @@
 %s hours	registration	et	%s tundi
 13: error occured	registration	et	13: viga juhtus
 <br>please contact the site administrator.	registration	et	<br>Palun kontakteeru lehe administraatoriga..
-[unknown first name]	registration	et	[tundmatu eesnimi]
-[unknown last name]	registration	et	[tundmatu perekonnanimi]
 abuse reduction - please wait %1 seconds and try again.	registration	et	Kuritarvitamise vähendamine - palun oodake %1 sekundit ja proovige uuesti.
 account	registration	et	Konto
 account %1 record could not be found, report to site administrator	registration	et	Kontot %1 ei leitud, raporteeri lehe administraatorile
@@ -116,3 +114,5 @@ your password was changed.	registration	et	Sinu parool on muudetud.
 your registration code is missing or incorrect.	registration	et	Sinu registreerimise kood on puudu või vale.
 zip code	registration	et	Postiindeks
 zip/postal	registration	et	Indeks
+[unknown first name]	registration	et	[tundmatu eesnimi]
+[unknown last name]	registration	et	[tundmatu perekonnanimi]

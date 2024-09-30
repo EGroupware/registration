@@ -4,8 +4,6 @@
 %s please calculate the result	registration	es-es	%s por favor, calcule el resultado
 13: error occured	registration	es-es	13: ocurrió un error
 <br>please contact the site administrator.	registration	es-es	<br>Por favor, póngase en contacto con el administrador del sitio.
-[unknown first name]	registration	es-es	[nombre de pila desconocido]
-[unknown last name]	registration	es-es	[apellido desconocido]
 abuse reduction - please wait %1 seconds and try again.	registration	es-es	Reducción de abuso - por favor espere %1 segundos e inténtelo de nuevo.
 account	registration	es-es	Cuenta
 account %1 record could not be found, report to site administrator	registration	es-es	No se pudo encontrar el registro para la cuenta %1. Informe al administrador del sitio
@@ -155,3 +153,5 @@ your password was changed.	registration	es-es	Se ha cambiado la contraseña.
 your registration code is missing or incorrect.	registration	es-es	Su código de registro falta o es incorrecto.
 zip code	registration	es-es	Código postal
 zip/postal	registration	es-es	Código postal
+[unknown first name]	registration	es-es	[nombre de pila desconocido]
+[unknown last name]	registration	es-es	[apellido desconocido]
