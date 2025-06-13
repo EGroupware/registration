@@ -453,12 +453,19 @@ class registration_ui
 
 			// Change password
 			$auth = new Api\Auth();
-			if($auth->change_password(false, $content['password'], $account_id))
+			try
 			{
-				// No need to keep this record
-				registration_bo::delete($content['reg_id']);
+				if($auth->change_password(false, $content['password'], $account_id))
+				{
+					// No need to keep this record
+					registration_bo::delete($content['reg_id']);
 
-				return Egw::redirect_link('/login.php',array( 'cd' => lang('Your password was changed.')));
+					return Egw::redirect_link('/login.php', array('cd' => lang('Your password was changed.')));
+				}
+			}
+			catch (Exception $e)
+			{
+				$data['message'] = $e->getMessage();
 			}
 		}
 
