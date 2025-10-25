@@ -33,17 +33,12 @@ class registration_sitemgr extends addressbook_contactform
 	/**
 	 * Shows the contactform and stores the submitted data
 	 *
-	 * @param array $content=null submitted eTemplate content
-	 * @param int $addressbook=null int owner-id of addressbook to save contacts to
-	 * @param array $fields=null field-names to show
-	 * @param string $msg=null message to show after submitting the form
-	 * @param string $email=null comma-separated email addresses
-	 * @param string $tpl_name=null custom etemplate to use
-	 * @param string $subject=null subject for email
-	 * @param string $copytoreceiver=false send a copy of notification to receiver
-	 * @return string html content
+	 * @param ?array $content=null submitted eTemplate content
+	 * @param $block
+	 * @param $properties
+	 * @return array|mixed|string|string[]
 	 */
-	function display(array $content=null,$block=array(),$properties=array())
+	function display(?array $content=null, $block=array(), $properties=array())
 	{
 		if($_GET['confirm']) {
 			return $this->confirm($_content, $block, $properties);
