@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2.0//EN" "https://www.egroupware.org/etemplate2.0.dtd">
 <overlay>
-	<template id="addressbook.contactform" template="" lang="" group="0" version="1.5.001">
+	<et2-template  id="addressbook.contactform" template="" lang="" group="0" version="1.5.001">
 		<grid width="600px">
 			<columns>
 				<column width="20px"/>
@@ -106,8 +106,7 @@
 				</row>
 				<row valign="top" disabled="!@show[note]">
 					<et2-image  src="edit.png"></et2-image>
-					<et2-description  value="Message"></et2-description>
-					<et2-textarea  id="note" rows="5" cols="45" span="4" class="inputFullWidth" required="1"></et2-textarea>
+					<et2-description  value="Message"></et2-description><et2-ai  span="4"><et2-textarea  id="note" rows="5" cols="45" class="inputFullWidth" required="1"></et2-textarea></et2-ai>
 				</row>
 				<row disabled="!@show[sep5]">
 					<hrule span="all"/>
@@ -124,17 +123,17 @@
 					<et2-description></et2-description>
 					<et2-hbox  span="all">
 						<et2-button  label="Submit" class="login_recovery_btn" id="submitit"></et2-button>
-                        <et2-button align="center" class="login_recovery_btn" id="gologin" label="Go back to login" onclick="location.href='../logout.php';"></et2-button>
+                        <et2-button  align="center" class="login_recovery_btn" id="gologin" label="Go back to login" onclick="location.href='../logout.php';"></et2-button>
 						<et2-description  align="right" value="required fields *" class="redItalic"></et2-description>
 					</et2-hbox>
 				</row>
 			</rows>
 		</grid>
-		<styles>
+		<et2-styles>
 			.width100 textarea { width: 99%; }
-		</styles>
-	</template>
-	<template id="registration.registration_form" template="" lang="" group="0" version="1.9.001">
+		</et2-styles>
+	</et2-template>
+	<et2-template  id="registration.registration_form" template="" lang="" group="0" version="1.9.001">
 		<grid width="600px">
 			<columns>
 				<column width="20px"/>
@@ -177,12 +176,12 @@
 					<hrule span="all"/>
 				</row>
 				<row>
-					<template id="addressbook.contactform" span="all"/>
+					<et2-template  id="addressbook.contactform" span="all"></et2-template>
 				</row>
 			</rows>
 		</grid>
-		<styles>
+		<et2-styles>
 			.et2_container {height: initial;}
-		</styles>
-	</template>
+		</et2-styles>
+	</et2-template>
 </overlay>
