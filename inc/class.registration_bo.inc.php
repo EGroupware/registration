@@ -237,7 +237,8 @@ class registration_bo extends Api\Storage\Tracking
 		if($config['register_for'] === 'account' && self::check_account(array_merge($address ?: [], $registration), $account))
 		{
 			// Add a new account
-			$command = new admin_cmd_edit_user(false, $account, $account['password']);
+			$command = new admin_cmd_create_user($account, $account['password']);
+			$command->skipAdminCheck();
 			$command->run();
 			// Read it back
 			$account_id = $GLOBALS['egw']->accounts->name2id($account['account_lid']);
@@ -303,6 +304,18 @@ class registration_bo extends Api\Storage\Tracking
 	public static function check_account(array $registration, &$account = array())
 	{
 		$config = Api\Config::read('registration');
+
+		// primary_group is offered to the user as a <select> of admin-configured choices
+		// (registration_ui shows one only if config has more than one) - never trust a
+		// submitted value that is not actually one of those configured choices
+		$configured_groups = is_array($config['primary_group']) ? $config['primary_group'] :
+			array_filter(explode(',', (string)$config['primary_group']));
+		$primary_group = $registration['primary_group'] ?? null;
+		if (!$primary_group || !in_array($primary_group, $configured_groups))
+		{
+			$primary_group = reset($configured_groups) ?: null;
+		}
+
 		$account = array(
 			'account_lid'           => $registration['account_lid'],
 			'account_firstname'     => $registration['n_given'],
@@ -311,7 +324,7 @@ class registration_bo extends Api\Storage\Tracking
 			'account_passwd'        => $registration['password'],
 			'account_passwd2'       => $registration['password2'],
 			'account_active'        => true,
-			'account_primary_group' => $registration['primary_group'] ?: $config['primary_group'],
+			'account_primary_group' => $primary_group,
 			'account_groups'        => $config['groups'] ?: [],
 			'account_expires'       => null,
 		);
@@ -321,7 +334,8 @@ class registration_bo extends Api\Storage\Tracking
 		}
 		// Just check for validity, don't actually run
 		// Schedule in the future to get the checks, then delete it.
-		$command = new admin_cmd_edit_user(false, $account, $registration['password']);
+		$command = new admin_cmd_create_user($account, $registration['password']);
+		$command->skipAdminCheck();
 		$command->run(null, true, false, true);
 		return true;
 	}
