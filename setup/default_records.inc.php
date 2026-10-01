@@ -12,14 +12,17 @@
 use EGroupware\Api;
 
 // Install expiry timer
-$anonymous = $GLOBALS['egw_setup']->add_account($anonuser='anonymous','SiteMgr','User',$anonpasswd='anonymous','NoGroup');
+// password of "anonymous" is always a random one (setup::add_account()) and is NOT stored: the registration
+// creates its anonymous session without authentication, but only for an account with the 'anonymous' ACL
+$anonymous = $GLOBALS['egw_setup']->add_account($anonuser='anonymous','SiteMgr','User','anonymous','NoGroup');
+$GLOBALS['egw_setup']->add_acl('phpgwapi', 'anonymous', $anonymous);
+$GLOBALS['egw_setup']->add_acl('registration', 'run', $anonymous);
 $async = new Api\Asyncservice();
 $async->set_timer(array('hour' => '*'),'registration-purge','registration.registration_bo.purge_expired',null, $anonymous);
 
 // Default configuration
 $config = array(
 	'anonymous_user'	=> $anonuser,
-	'anonymous_pass'	=> $anonpasswd,
 	'accounts_expire'	=> -1,	// Never
 	'enable_registration'	=> false,
 	'register_link'		=> false,

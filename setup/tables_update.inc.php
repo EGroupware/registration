@@ -179,3 +179,39 @@ function registration_upgrade23_1()
 {
 	return $GLOBALS['setup_info']['registration']['currentver'] = '26.1';
 }
+
+/**
+ * Remove the no longer used, plain-text "anonymous_pass" config: the anonymous session is created without a password
+ *
+ * The anonymous user needs the right to run the registration app, which was only documented, but never set up.
+ * It is only granted to an account which already is an anonymous one ('anonymous' ACL of phpgwapi), we never turn
+ * a regular user into an anonymous one here.
+ *
+ * @return string
+ */
+function registration_upgrade26_1()
+{
+	$db = $GLOBALS['egw_setup']->db;
+	$db->delete($GLOBALS['egw_setup']->config_table, array(
+		'config_app' => 'registration',
+		'config_name' => 'anonymous_pass',
+	), __LINE__, __FILE__);
+
+	$anonymous_lid = $db->select($GLOBALS['egw_setup']->config_table, 'config_value', array(
+		'config_app' => 'registration',
+		'config_name' => 'anonymous_user',
+	), __LINE__, __FILE__)->fetchColumn();
+	if ($anonymous_lid && ($anonymous_id = $db->select('egw_accounts', 'account_id', array(
+		'account_lid' => $anonymous_lid,
+		'account_type' => 'u',
+	), __LINE__, __FILE__)->fetchColumn()) && $db->select($GLOBALS['egw_setup']->acl_table, 'acl_account', array(
+		'acl_appname' => 'phpgwapi',
+		'acl_location' => 'anonymous',
+		'acl_account' => $anonymous_id,
+	), __LINE__, __FILE__)->fetchColumn())
+	{
+		$GLOBALS['egw_setup']->add_acl('registration', 'run', (int)$anonymous_id);
+	}
+
+	return $GLOBALS['setup_info']['registration']['currentver'] = '26.1.001';
+}
