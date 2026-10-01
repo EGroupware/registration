@@ -18,25 +18,31 @@
 use EGroupware\Api;
 
 	/**
-	 * Check if we allow anon access and with which creditials
+	 * Check if we allow anon access and create the anonymous session
 	 *
-	 * @param array &$anon_account anon account_info with keys 'login', 'passwd' and optional 'passwd_type'
-	 * @return boolean true if we allow anon access, false otherwise
+	 * The session is created without authentication (no password is stored or needed), but only for an account
+	 * carrying the 'anonymous' ACL, see registration_bo::anonymous_account().
+	 *
+	 * @param array &$anon_account NOT used
+	 * @return string|boolean session-id if a session was created, false otherwise
 	 */
 	function registration_check_anon_access(&$anon_account)
 	{
-		$config = Api\Config::read('registration');
-		if ($config['enable_registration'] && $config['anonymous_user'])
+		unset($anon_account);
+		if (!($account_id = registration_bo::anonymous_account()))
 		{
-			$anon_account = array(
-				'login'  => $config['anonymous_user'],
-				'passwd' => $config['anonymous_pass'],
-				'passwd_type' => 'text',
-			);
-			return true;
+			return false;
 		}
-		return false;
-	 }
+		$session = $GLOBALS['egw']->session;
+		if (!($sessionid = $session->create(
+			$GLOBALS['egw']->accounts->id2name($account_id).'@'.$GLOBALS['egw_info']['user']['domain'],
+			'', 'text', false, false)))
+		{
+			error_log(__FUNCTION__."() could not create anonymous session for account #$account_id: $session->reason");
+			return false;
+		}
+		return $sessionid;
+	}
 
 	// if confirmation id is given, redirect to confirm
 	if(!empty($_GET['confirm']))

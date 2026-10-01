@@ -561,6 +561,10 @@ class registration_ui
 		{
 			$data['message'] = lang('Anonymous user needs access to registration application');
 		}
+		elseif ($data['anonymous_user'] && !$GLOBALS['egw']->acl->get_specific_rights_for_account($data['anonymous_user'], 'anonymous', 'phpgwapi'))
+		{
+			$data['message'] = lang('Anonymous user needs the "anonymous" ACL (Admin > Users > ACL), it is used without a password.');
+		}
 
 		if(!$data['name_nobody']) $data['name_nobody'] = 'EGroupware '.lang('registration');
 		if(!$data['mail_nobody']) $data['mail_nobody'] = 'noreply@'.$GLOBALS['egw_info']['server']['mail_suffix'];

@@ -21,10 +21,6 @@
 					<et2-select-account  id="anonymous_user" required="1"></et2-select-account>
 				</row>
 				<row>
-					<et2-description  value="Anonymous password"></et2-description>
-					<et2-password  id="anonymous_pass" required="1"></et2-password>
-				</row>
-				<row>
 					<et2-description  value="Registered accounts expire" label="%s days" ></et2-description>
 					<et2-number  id="accounts_expire" min="1" max="30" placeholder="Never"></et2-number>
 				</row>

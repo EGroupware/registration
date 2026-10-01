@@ -420,6 +420,32 @@ class registration_bo extends Api\Storage\Tracking
 	}
 
 	/**
+	 * Account-id of the user an (anonymous) registration session may be created for, without authenticating
+	 *
+	 * The session is created without a password, so the configured "anonymous_user" has to be a real
+	 * anonymous account (carries the 'anonymous' ACL of phpgwapi), otherwise anyone could get a session
+	 * of whatever (eg. admin-) account was configured.
+	 *
+	 * @param ?array $config =null default Api\Config::read('registration')
+	 * @return int|false account_id or false, if registration is disabled or the configured user is not usable
+	 */
+	public static function anonymous_account(?array $config=null)
+	{
+		$config = $config ?? Api\Config::read('registration');
+		if (empty($config['enable_registration']) || empty($config['anonymous_user']))
+		{
+			return false;
+		}
+		$accounts = Api\Accounts::getInstance();
+		if (!($account_id = $accounts->name2id($config['anonymous_user'], 'account_lid', 'u')) ||
+			!$GLOBALS['egw']->acl->get_specific_rights_for_account($account_id, 'anonymous', 'phpgwapi'))
+		{
+			return false;
+		}
+		return (int)$account_id;
+	}
+
+	/**
 	 * Get a list of pages with registration blocks
 	 *
 	 * The list is used for login module "Register" link
