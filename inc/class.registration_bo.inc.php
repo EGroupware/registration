@@ -480,7 +480,7 @@ class registration_bo extends Api\Storage\Tracking
 	public static function purge_expired()
 	{
 		$expire = $GLOBALS['egw']->db->quote($GLOBALS['egw']->db->to_timestamp(time()));
-		$query = array('status' => self::PENDING, 'timestamp <= ' . $expire);
+		$query = array('status' => self::PENDING, Api\Db\SqlFragment::raw('timestamp <= ' . $expire));
 
 		// Clear contact information
 		$expired = self::$so->search($query, array('reg_id','contact_id','post_confirm_hook'));
